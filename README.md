@@ -1,18 +1,18 @@
-# Red Sox Team Tracker
+# Brewers Team Tracker
 
-This repository — a growing work in progress — feeds [Red Sox Data Bot](https://redsoxdata.bot), a statistical dashboard about the Boston Red Sox's performance. It is a fork of [Matt Stiles](https://mattstiles.me/)' incredible [Dodgers Data Bot](https://dodgersdata.bot/). 
+This repository — a growing work in progress — feeds [Brewers Data Bot](https://redsoxdata.bot), a statistical dashboard about the Milwaukee Brewers's performance. It is a fork of [Matt Stiles](https://mattstiles.me/)' incredible [Dodgers Data Bot](https://dodgersdata.bot/). 
 
-The code executes an automated workflow to fetch, process and store the team's current standings along with historical game-by-game records dating back to 1901. It also collects batting and pitching data, among other statistics, for the same period. These records are processed and used to bake out the site using the Jekyll static site generator, in concert with Github Pages, and D3.js for charts. 
+The code executes an automated workflow to fetch, process and store the team's current standings along with historical game-by-game records dating back to 1970. It also collects batting and pitching data, among other statistics, for the same period. These records are processed and used to bake out the site using the Jekyll static site generator, in concert with Github Pages, and D3.js for charts. 
 
-The data is sourced from the heroes at [Baseball Reference](https://www.baseball-reference.com/teams/BOS/2025-schedule-scores.shtml) and [Baseball Savant](https://baseballsavant.mlb.com/) and consolidated into unified datasets for analysis and visualization purposes only. The resulting site is a non-commercial fan project.
+The data is sourced from the heroes at [Baseball Reference](https://www.baseball-reference.com/teams/MIL/2025-schedule-scores.shtml) and [Baseball Savant](https://baseballsavant.mlb.com/) and consolidated into unified datasets for analysis and visualization purposes only. The resulting site is a non-commercial fan project.
 
 ## Automated Bluesky Posts
 
-In addition to the data processing scripts, the repository contains scripts that generate and post daily updates to Bluesky at [@redsoxbot.bsky.social](https://bsky.app/profile/redsoxbot.bsky.social).
+In addition to the data processing scripts, the repository contains scripts that generate and post daily updates to Bluesky at [@mkebrewers-bot.bsky.social](https://bsky.app/profile/mkebrewers-bot.bsky.social).
 
 - **Daily summaries**: The `scripts/23_post_daily_summaries.py` script fetches the latest team summary data and posts about the team's overall performance, batting and pitching statistics. This is automated by the `.github/workflows/post_summaries.yml` workflow, which runs at different times throughout the day (3pm, 5pm, 7pm, 9pm, 11pm ET) to provide timely updates.
 - **Lineup and pitching matchup**: The `scripts/17_fetch_lineup.py` script fetches the daily starting lineup and posts the pitching matchup once it's announced. This is automated by the `.github/workflows/tweet_lineup.yml` workflow, which checks hourly from 8am-7pm ET.
-- **News roundup**: The `scripts/24_fetch_news.py` script fetches the top Red Sox-related headlines and posts them. This is automated by the `.github/workflows/post_news.yml` workflow.
+- **News roundup**: The `scripts/24_fetch_news.py` script fetches the top Brewers-related headlines and posts them. This is automated by the `.github/workflows/post_news.yml` workflow.
 - **Transactions**: The `scripts/26_post_transactions.py` script posts about roster transactions. This is automated by the `.github/workflows/post_transactions.yml` workflow.
 
 All posts include a character limit check (300 characters for Bluesky) and use S3 to track which updates have already been posted to avoid duplicates.
@@ -49,9 +49,9 @@ Separate tweet/automation scripts are documented in the sections below (lineups,
 
 ### What they do:
 
-1. **Fetch current season, batting and pitching data**: Download the current season's game-by-game standings for the Boston Red Sox from [Baseball Reference](https://www.baseball-reference.com/teams/BOS/2025-schedule-scores.shtml). The latest season's batting statitics for each player also fetched, as are the latest season's pitching statistics for each pitcher and the team as a whole.
+1. **Fetch current season, batting and pitching data**: Download the current season's game-by-game standings for the Milwaukee Brewers from [Baseball Reference](https://www.baseball-reference.com/teams/MIL/2025-schedule-scores.shtml). The latest season's batting statitics for each player also fetched, as are the latest season's pitching statistics for each pitcher and the team as a whole.
 2. **Process data**: Cleans and formats the fetched standings and batting data for consistency with the historical dataset.
-3. **Concatenate with historic data**: Merges the current season's data for batting and standings with pre-existing datasets containing records for the 1901 to present seasons.
+3. **Concatenate with historic data**: Merges the current season's data for batting and standings with pre-existing datasets containing records for the 1970 to present seasons.
 4. **Save and export data**: Outputs the combined datasets in CSV, JSON and Parquet formats.
 5. **Upload to AWS S3**: Uploads the files to an AWS S3 bucket for use and archiving.
 
@@ -67,7 +67,7 @@ The repository uses GitHub Actions to automate the execution of the scripts each
 
 ## Configuration and usage
 
-To utilize this repository for your own tracking or analysis on the Red Sox or another team, follow these steps:
+To utilize this repository for your own tracking or analysis on the Brewers or another team, follow these steps:
 
 1. **Fork the repository**: Create a copy of this repository under your own GitHub account.
 2. **Configure secrets**: Add the following secrets to your repository settings for secure AWS S3 uploads (optional):
@@ -85,7 +85,7 @@ The project uses AWS S3 to store and serve processed data files. Here's how to s
 1. Log into the [AWS Console](https://console.aws.amazon.com/)
 2. Navigate to **S3** service
 3. Click **Create bucket**
-4. Choose a bucket name (e.g., `redsox-data` or `your-domain.com`)
+4. Choose a bucket name (e.g., `mkebrewers-data` or `your-domain.com`)
 5. Select your preferred **region** (e.g., `us-west-1`)
 6. **Uncheck** "Block all public access" (data files need to be publicly readable)
 7. Acknowledge the warning about public access
@@ -116,7 +116,7 @@ Add a bucket policy to allow public read access to your data files:
 ### Step 3: Create IAM User for GitHub Actions
 
 1. Navigate to **IAM** service → **Users** → **Add users**
-2. Username: `github-actions-redsox-data` (or similar)
+2. Username: `github-actions-mkebrewers-data` (or similar)
 3. Select **Access key - Programmatic access**
 4. Click **Next: Permissions**
 5. Click **Attach existing policies directly**
@@ -128,8 +128,8 @@ Add a bucket policy to allow public read access to your data files:
 
 All scripts use `scripts/config.py` for S3 configuration. Verify these settings:
 
-- `S3_BUCKET`: Your bucket name (e.g., `"redsox-data"`)
-- `S3_PREFIX`: Path prefix for Red Sox data (e.g., `"redsox"`)
+- `S3_BUCKET`: Your bucket name (e.g., `"mkebrewers-data"`)
+- `S3_PREFIX`: Path prefix for Brewers data (e.g., `"redsox"`)
 - `AWS_REGION`: Your bucket's region (e.g., `"us-west-1"`)
 
 ## Web Hosting Configuration
@@ -144,7 +144,7 @@ The easiest and most cost-effective hosting solution. Already configured in this
 2. Under **Source**, select **Deploy from a branch**
 3. Choose branch: **gh-pages**
 4. Click **Save**
-5. Your site will be available at: `https://yourusername.github.io/redsox-data/`
+5. Your site will be available at: `https://yourusername.github.io/mkebrewers-data/`
 
 **Custom Domain (Optional):**
 - Add a `CNAME` file to the root with your domain (already done: `redsoxdata.bot`)
@@ -218,7 +218,7 @@ The project requires these secrets to be configured in GitHub repository setting
 |------------|-------------|---------------|--------------|
 | `AWS_ACCESS_KEY_ID` | AWS IAM user access key | Created in IAM setup (see AWS S3 section) | Data uploads to S3 |
 | `AWS_SECRET_ACCESS_KEY` | AWS IAM user secret key | Created in IAM setup (see AWS S3 section) | Data uploads to S3 |
-| `BLUESKY_HANDLE` | Bluesky account handle | Your Bluesky handle (e.g., `redsoxbot.bsky.social`) | Automated Bluesky posts |
+| `BLUESKY_HANDLE` | Bluesky account handle | Your Bluesky handle (e.g., `mkebrewers-bot.bsky.social`) | Automated Bluesky posts |
 | `BLUESKY_APP_PASSWORD` | Bluesky app-specific password | Generate at [bsky.app/settings/app-passwords](https://bsky.app/settings/app-passwords) | Automated Bluesky posts |
 
 **Important:** `BLUESKY_APP_PASSWORD` is NOT your account password. Generate a new app password specifically for this bot in your Bluesky settings.
@@ -339,10 +339,10 @@ After the first game has been played (data is typically available on Baseball Re
 2. Wait for next scheduled run (or trigger manually via "Run workflow")
 3. Check that all scripts complete successfully
 4. Verify 2026 data files appear on S3:
-   - `redsox_standings_1901_present.json`
-   - `redsox_player_batting_current_table.json`
-   - `redsox_pitching_top_kbb_starters.json`
-   - `redsox_umpires_2026.json`
+   - `brewers_standings_1970_present.json`
+   - `brewers_player_batting_current_table.json`
+   - `brewers_pitching_top_kbb_starters.json`
+   - `brewers_umpires_2026.json`
 
 #### 6. Verify Website Updates
 
@@ -460,7 +460,7 @@ bundle update
 
 **Manual backups (recommended quarterly):**
 ```bash
-aws s3 sync s3://redsox-data/redsox ./backups/redsox-$(date +%Y%m%d)
+aws s3 sync s3://mkebrewers-data/redsox ./backups/redsox-$(date +%Y%m%d)
 ```
 
 ### Cost Monitoring
@@ -563,14 +563,14 @@ Error: NoCredentialsError
 
 **Solutions:**
 1. Clear browser cache completely
-2. Verify `_sass/custom.scss` was updated with Red Sox colors
+2. Verify `_sass/custom.scss` was updated with Brewers colors
 3. Check `assets/css/main.scss` imports custom.scss
 4. Rebuild locally: `bundle exec jekyll build`
 5. Check browser console for CSS 404 errors
 
 **If colors are wrong:**
 - Search codebase for `#005a9c` (Dodgers blue) — should find none
-- Red Sox colors should be: `#BD3039` (red) and `#0C2340` (navy)
+- Brewers colors should be: `#BD3039` (red) and `#0C2340` (navy)
 
 ### Data Not Appearing in Charts
 
@@ -578,12 +578,12 @@ Error: NoCredentialsError
 
 **Solutions:**
 1. Check browser console for JavaScript errors
-2. Verify data file exists: `https://redsox-data/redsox/data/standings/redsox_standings_1901_present_optimized.json`
+2. Verify data file exists: `https://mkebrewers-data/redsox/data/standings/brewers_standings_1970_present_optimized.json`
 3. Check `assets/js/dashboard.js` points to correct data URL
 4. Ensure S3 bucket policy allows public read access
 5. Test data endpoint with curl:
    ```bash
-   curl -I https://redsox-data/redsox/data/standings/redsox_standings_1901_present_optimized.json
+   curl -I https://mkebrewers-data/redsox/data/standings/brewers_standings_1970_present_optimized.json
    # Should return HTTP 200
    ```
 
@@ -611,39 +611,39 @@ The processed datasets are uploaded to an AWS S3 bucket.
 
 **Latest season summary**
 
-- [JSON](https://redsox-data/redsox/data/standings/season_summary_latest.json)
-- [CSV](https://redsox-data/redsox/data/standings/season_summary_latest.csv)
+- [JSON](https://mkebrewers-data/redsox/data/standings/season_summary_latest.json)
+- [CSV](https://mkebrewers-data/redsox/data/standings/season_summary_latest.csv)
 
-**Game-by-game standings, 1901 to present:**
+**Game-by-game standings, 1970 to present:**
 
-- [JSON](https://redsox-data/redsox/data/standings/redsox_standings_1901_present.json)
-- [CSV](https://redsox-data/redsox/data/standings/redsox_standings_1901_present.csv)
-- [Parquet](https://redsox-data/redsox/data/standings/redsox_standings_1901_present.parquet)
+- [JSON](https://mkebrewers-data/redsox/data/standings/brewers_standings_1970_present.json)
+- [CSV](https://mkebrewers-data/redsox/data/standings/brewers_standings_1970_present.csv)
+- [Parquet](https://mkebrewers-data/redsox/data/standings/brewers_standings_1970_present.parquet)
 
 ### Batting
 
-**Season-by-season batting statistics, by player, 1901 to present:**
+**Season-by-season batting statistics, by player, 1970 to present:**
 
-- [JSON](https://redsox-data/redsox/data/batting/redsox_player_batting_1901_present.json)
-- [CSV](https://redsox-data/redsox/data/batting/redsox_player_batting_1901_present.csv)
-- [Parquet](https://redsox-data/redsox/data/batting/redsox_player_batting_1901_present.parquet)
+- [JSON](https://mkebrewers-data/redsox/data/batting/brewers_player_batting_1970_present.json)
+- [CSV](https://mkebrewers-data/redsox/data/batting/brewers_player_batting_1970_present.csv)
+- [Parquet](https://mkebrewers-data/redsox/data/batting/brewers_player_batting_1970_present.parquet)
 
 **Other current season player batting statistics:**
 - Batting average, on-base and slugging percentage and walks, home runs and strikeouts by plate appearance via Baseball Savant.
-    - [JSON](https://redsox-data/redsox/data/batting/redsox_player_batting_current_table.json)
-    - [CSV](https://redsox-data/redsox/data/batting/redsox_player_batting_current_table.csv)
-    - [Parquet](https://redsox-data/redsox/data/batting/redsox_player_batting_current_table.parquet)
+    - [JSON](https://mkebrewers-data/redsox/data/batting/brewers_player_batting_current_table.json)
+    - [CSV](https://mkebrewers-data/redsox/data/batting/brewers_player_batting_current_table.csv)
+    - [Parquet](https://mkebrewers-data/redsox/data/batting/brewers_player_batting_current_table.parquet)
 
-**Season-by-season batting at the team level, 1901 to present:**
+**Season-by-season batting at the team level, 1970 to present:**
 - How the team ranks or ranked in the league by season
-    - [JSON](https://redsox-data/redsox/data/batting/redsox_team_batting_ranks_1901_present.json)
-    - [CSV](https://redsox-data/redsox/data/batting/redsox_team_batting_ranks_1901_present.csv)
-    - [Parquet](https://redsox-data/redsox/data/batting/redsox_team_batting_ranks_1901_present.parquet)
+    - [JSON](https://mkebrewers-data/redsox/data/batting/brewers_team_batting_ranks_1970_present.json)
+    - [CSV](https://mkebrewers-data/redsox/data/batting/brewers_team_batting_ranks_1970_present.csv)
+    - [Parquet](https://mkebrewers-data/redsox/data/batting/brewers_team_batting_ranks_1970_present.parquet)
 
 - Team aggregates by season for major batting stats: hits, homers, strikeouts, etc.
-    - [JSON](https://redsox-data/redsox/data/batting/redsox_team_batting_1901_present.json)
-    - [CSV](https://redsox-data/redsox/data/batting/redsox_team_batting_1901_present.csv)
-    - [Parquet](https://redsox-data/redsox/data/batting/redsox_team_batting_1901_present.parquet)
+    - [JSON](https://mkebrewers-data/redsox/data/batting/brewers_team_batting_1970_present.json)
+    - [CSV](https://mkebrewers-data/redsox/data/batting/brewers_team_batting_1970_present.csv)
+    - [Parquet](https://mkebrewers-data/redsox/data/batting/brewers_team_batting_1970_present.parquet)
 
 #### xwOBA (current season)
 
@@ -651,31 +651,31 @@ The processed datasets are uploaded to an AWS S3 bucket.
 - Filters to a maintained allowlist of regular batters and normalizes names to match roster output
 - Writes outputs and uploads to S3
   - Current timeseries per allowed batter
-    - [JSON](https://redsox-data/redsox/data/batting/redsox_xwoba_current.json)
-    - [CSV](https://redsox-data/redsox/data/batting/redsox_xwoba_current.csv)
-    - [Parquet](https://redsox-data/redsox/data/batting/redsox_xwoba_current.parquet)
+    - [JSON](https://mkebrewers-data/redsox/data/batting/brewers_xwoba_current.json)
+    - [CSV](https://mkebrewers-data/redsox/data/batting/brewers_xwoba_current.csv)
+    - [Parquet](https://mkebrewers-data/redsox/data/batting/brewers_xwoba_current.parquet)
   - League average xwOBA snapshot
-    - [JSON](https://redsox-data/redsox/data/batting/league_avg_xwoba.json)
+    - [JSON](https://mkebrewers-data/redsox/data/batting/league_avg_xwoba.json)
 
 ### Pitching
 
 **Current season pitching:**
 - Team aggregates for major pitching stats: runs, ERA, etc.
-    - [JSON](https://redsox-data/redsox/data/pitching/redsox_pitching_totals_current.json)
-    - [CSV](https://redsox-data/redsox/data/pitching/redsox_pitching_totals_current.csv)
-    - [Parquet](https://redsox-data/redsox/data/pitching/redsox_pitching_totals_current.parquet)
+    - [JSON](https://mkebrewers-data/redsox/data/pitching/brewers_pitching_totals_current.json)
+    - [CSV](https://mkebrewers-data/redsox/data/pitching/brewers_pitching_totals_current.csv)
+    - [Parquet](https://mkebrewers-data/redsox/data/pitching/brewers_pitching_totals_current.parquet)
 
 - Team's league ranking for major pitching stats: runs, ERA, etc.
 
-    - [JSON](https://redsox-data/redsox/data/pitching/redsox_pitching_ranks_current.json)
-    - [CSV](https://redsox-data/redsox/data/pitching/redsox_pitching_ranks_current.csv)
-    - [Parquet](https://redsox-data/redsox/data/pitching/redsox_pitching_ranks_current.parquet)
+    - [JSON](https://mkebrewers-data/redsox/data/pitching/brewers_pitching_ranks_current.json)
+    - [CSV](https://mkebrewers-data/redsox/data/pitching/brewers_pitching_ranks_current.csv)
+    - [Parquet](https://mkebrewers-data/redsox/data/pitching/brewers_pitching_ranks_current.parquet)
 
 ---
 
 ## Notes
 
-This project, which started as a mere fork of the Dodgers Data Bot, will hopefully be adding some new and different features. If you have questions, [drop a line](mailto:sogrady@gmail.com). 
+This project, which started as a mere fork of the Dodgers Data Bot, will hopefully be adding some new and different features. If you have questions, [drop a line](mailto:twallac10@gmail.com). 
 
 ## Contributions
 

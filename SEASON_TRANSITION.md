@@ -1,6 +1,6 @@
 # Season Transition Checklist
 
-This guide walks through updating the Red Sox Data Bot for a new season.
+This guide walks through updating the Brewers Data Bot for a new season.
 
 ## Quick Start
 
@@ -82,7 +82,7 @@ Verify your S3 bucket is set up for 2026 paths:
 
 ```bash
 # Test S3 access
-aws s3 ls s3://redsox-data/redsox/data/ --profile haekeo
+aws s3 ls s3://mkebrewers-data/redsox/data/ --profile haekeo
 ```
 
 Ensure bucket policy allows public read access to `redsox/data/*` paths.
@@ -93,8 +93,8 @@ Ensure bucket policy allows public read access to `redsox/data/*` paths.
 
 Watch the first automated `fetch.yml` workflow run:
 
-1. Go to https://github.com/sogrady/redsox-bot/actions
-2. Click on "Fetch and Process Red Sox Data"
+1. Go to https://github.com/twallac10/mkebrewers-bot/actions
+2. Click on "Fetch and Process Brewers Data"
 3. Monitor the most recent run
 
 Common issues:
@@ -108,18 +108,18 @@ After the first successful run, check that 2026 data files exist:
 
 **Local files:**
 ```bash
-ls -lh data/standings/redsox_standings_1901_present.json
+ls -lh data/standings/brewers_standings_1970_present.json
 ls -lh _data/standings/all_teams_standings_metrics_2026.json
 ```
 
 **S3 files:**
 ```bash
-curl -I https://redsox-data.s3.amazonaws.com/redsox/data/standings/redsox_standings_1901_present.json
+curl -I https://mkebrewers-data.s3.amazonaws.com/redsox/data/standings/brewers_standings_1970_present.json
 ```
 
 ### 3. Test the Live Site
 
-Visit https://redsox.bot and verify:
+Visit https://mkebrewers.bot and verify:
 
 - [ ] Final 2025 standings still show in "Final regular season standings"
 - [ ] 2026 current season data starts appearing once games are played
@@ -131,8 +131,8 @@ Visit https://redsox.bot and verify:
 
 Wait for the first scheduled Bluesky post, then verify:
 
-1. Check https://bsky.app/profile/redsoxbot.bsky.social
-2. Verify posts are appearing with Red Sox 2026 stats
+1. Check https://bsky.app/profile/mkebrewers-bot.bsky.social
+2. Verify posts are appearing with Brewers 2026 stats
 3. Check workflow runs in GitHub Actions for any errors
 
 ## During Season Maintenance
@@ -191,8 +191,8 @@ When playoffs begin (usually early October), you need to uncomment the postseaso
 The automated workflows will generate postseason data files. Copy them to the assets directory:
 
 ```bash
-cp data/postseason/redsox_postseason_stats_2026.json assets/data/postseason/
-cp data/postseason/redsox_postseason_series_2026.json assets/data/postseason/
+cp data/postseason/brewers_postseason_stats_2026.json assets/data/postseason/
+cp data/postseason/brewers_postseason_series_2026.json assets/data/postseason/
 ```
 
 **Step 3: Commit and push**
@@ -212,7 +212,7 @@ The postseason section will now display on the homepage with playoff journey and
 The site should automatically switch to showing 2026 once data exists. If it doesn't:
 
 1. Check browser console for JavaScript errors
-2. Verify `redsox_standings_1901_present.json` includes 2026 data
+2. Verify `brewers_standings_1970_present.json` includes 2026 data
 3. Clear browser cache and reload
 
 ### Bluesky Posts Not Working
@@ -223,7 +223,7 @@ The site should automatically switch to showing 2026 once data exists. If it doe
 
 2. Test locally:
    ```bash
-   export BLUESKY_HANDLE="redsoxbot.bsky.social"
+   export BLUESKY_HANDLE="mkebrewers-bot.bsky.social"
    export BLUESKY_APP_PASSWORD="your-app-password"
    python scripts/23_post_daily_summaries.py --type summary
    ```
@@ -260,7 +260,7 @@ The site should automatically switch to showing 2026 once data exists. If it doe
 |--------|-------------|
 | `AWS_ACCESS_KEY_ID` | AWS IAM user access key |
 | `AWS_SECRET_ACCESS_KEY` | AWS IAM user secret key |
-| `BLUESKY_HANDLE` | Bluesky handle (e.g., redsoxbot.bsky.social) |
+| `BLUESKY_HANDLE` | Bluesky handle (e.g., mkebrewers-bot.bsky.social) |
 | `BLUESKY_APP_PASSWORD` | Bluesky app password (NOT your account password) |
 
 ### Useful Commands
@@ -276,7 +276,7 @@ git status
 git log --oneline -10
 
 # Check S3 files
-aws s3 ls s3://redsox-data/redsox/data/standings/ --profile haekeo
+aws s3 ls s3://mkebrewers-data/redsox/data/standings/ --profile haekeo
 
 # Test Bluesky post
 python scripts/23_post_daily_summaries.py --type summary --force

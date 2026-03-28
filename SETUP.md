@@ -1,6 +1,6 @@
-# Red Sox Data Bot - Complete Setup Guide
+# Brewers Data Bot - Complete Setup Guide
 
-This guide will walk you through setting up the Red Sox Data Bot from scratch. Follow these steps in order for a smooth setup experience.
+This guide will walk you through setting up the Brewers Data Bot from scratch. Follow these steps in order for a smooth setup experience.
 
 ## Prerequisites
 
@@ -24,8 +24,8 @@ Before you begin, ensure you have:
 ### Step 2: Clone Your Fork
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/redsox-bot.git
-cd redsox-bot
+git clone https://github.com/YOUR-USERNAME/mkebrewers-bot.git
+cd mkebrewers-bot
 ```
 
 ### Step 3: Install Dependencies
@@ -84,7 +84,7 @@ bundle install
 1. Navigate to **IAM** service
 2. Click **Users** in the left sidebar
 3. Click **Add users**
-4. User name: `github-actions-redsox-bot`
+4. User name: `github-actions-mkebrewers-bot`
 5. Select **Access key - Programmatic access**
 6. Click **Next: Permissions**
 7. Select **Attach existing policies directly**
@@ -186,7 +186,7 @@ bundle exec jekyll serve
 ```
 
 Visit `http://localhost:4000` in your browser. You should see:
-- Red Sox branding and colors
+- Brewers branding and colors
 - Charts (if data files exist)
 - Roster and transactions pages
 
@@ -203,14 +203,14 @@ Visit `http://localhost:4000` in your browser. You should see:
 5. Once complete, your site will be live!
 
 **Access your site:**
-- Default URL: `https://YOUR-USERNAME.github.io/redsox-bot/`
+- Default URL: `https://YOUR-USERNAME.github.io/mkebrewers-bot/`
 - Custom domain (if configured): `https://redsoxdata.bot/`
 
 ### Step 14: Verify Deployment
 
 Visit your site and check:
 - [ ] Site loads without errors
-- [ ] Red Sox colors are visible (red #BD3039, navy #0C2340)
+- [ ] Brewers colors are visible (red #BD3039, navy #0C2340)
 - [ ] No Dodgers branding remains
 - [ ] Dashboard charts display data
 - [ ] Roster page loads
@@ -359,7 +359,7 @@ During the off-season (November-February):
 ### "Charts are empty on the site"
 
 **Check:**
-1. Data files exist in S3: `https://YOUR-BUCKET-NAME.s3.amazonaws.com/redsox/data/standings/redsox_standings_1901_present_optimized.json`
+1. Data files exist in S3: `https://YOUR-BUCKET-NAME.s3.amazonaws.com/redsox/data/standings/brewers_standings_1970_present_optimized.json`
 2. Bucket policy allows public read access
 3. Browser console for JavaScript errors (F12 → Console)
 4. File path in `assets/js/dashboard.js` matches S3 file names
@@ -367,8 +367,8 @@ During the off-season (November-February):
 ### "Still seeing Dodgers branding"
 
 **This means the conversion wasn't complete. Check:**
-- `_sass/custom.scss` — should use Red Sox colors (#BD3039, #0C2340)
-- `about.md` — should reference Red Sox, not Dodgers
+- `_sass/custom.scss` — should use Brewers colors (#BD3039, #0C2340)
+- `about.md` — should reference Brewers, not Dodgers
 - Clear browser cache completely
 - Hard refresh: Cmd+Shift+R (Mac) or Ctrl+F5 (Windows)
 
@@ -385,7 +385,7 @@ You're fully set up when you can check all these boxes:
 - [ ] Site deployed to GitHub Pages
 - [ ] Site accessible at your URL
 - [ ] Dashboard charts displaying data
-- [ ] Red Sox branding visible (no Dodgers references)
+- [ ] Brewers branding visible (no Dodgers references)
 - [ ] Automated workflows running on schedule
 - [ ] AWS billing set up and monitored
 
@@ -423,4 +423,4 @@ If you run into issues:
 
 ---
 
-**Congratulations!** 🎉 Your Red Sox Data Bot is now live and automatically updating.
+**Congratulations!** 🎉 Your Brewers Data Bot is now live and automatically updating.
