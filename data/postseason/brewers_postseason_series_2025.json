@@ -1,0 +1,34 @@
+[
+  {
+    "round": "Wild Card",
+    "series_name": "AL Wild Card Series",
+    "status": "upcoming",
+    "opponent": "?",
+    "result": "?"
+  },
+  {
+    "round": "ALDS",
+    "series_name": "AL Division Series",
+    "status": "completed",
+    "opponent": "Chicago Cubs",
+    "result": "MIL wins 3-2",
+    "wins": 3,
+    "losses": 2
+  },
+  {
+    "round": "ALCS",
+    "series_name": "AL Championship Series",
+    "status": "completed",
+    "opponent": "Los Angeles Dodgers",
+    "result": "LAD wins 4-0",
+    "wins": 4,
+    "losses": 0
+  },
+  {
+    "round": "World Series",
+    "series_name": "World Series",
+    "status": "upcoming",
+    "opponent": "?",
+    "result": "?"
+  }
+]

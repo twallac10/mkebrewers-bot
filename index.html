@@ -1,0 +1,1254 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.1 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- http-equiv="X-UA-Compatible" content="IE=edge" -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7JPCT3BCN6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7JPCT3BCN6');
+</script>
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+
+<!-- begin _includes/seo.html -->
+<!-- DEBUG: page.path=index.markdown, page.url=/, page.permalink=/, page.name=index.markdown --><title>Brewers Data Bot</title>
+<meta name="description" content="An auto-updating team dashboard that answers the question: How are the Brewers doing?">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Brewers Data Bot">
+<meta property="og:title" content="Brewers Data Bot">
+<meta property="og:url" content="https://mkebrewers.bot/">
+
+
+  <meta property="og:description" content="An auto-updating team dashboard that answers the question: How are the Brewers doing?">
+
+
+
+  <meta property="og:image" content="https://mkebrewers.bot/assets/images/meta_card.png">
+
+
+
+  <meta name="twitter:site" content="@twallac10">
+  <meta name="twitter:title" content="Brewers Data Bot">
+  <meta name="twitter:description" content="An auto-updating team dashboard that answers the question: How are the Brewers doing?">
+  <meta name="twitter:url" content="https://mkebrewers.bot/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://mkebrewers.bot/assets/images/meta_card.png">
+  
+
+  
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://mkebrewers.bot/">
+
+
+
+
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+    "name": "Brewers Data Bot",
+    "url": "https://mkebrewers.bot/"
+}
+</script>
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Brewers Data Bot Feed">
+
+
+<!-- Handheld Friendly -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="manifest" href="/assets/images/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#BD3039">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<meta name="msapplication-TileColor" content="#BD3039">
+<meta name="msapplication-config" content="/assets/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="Brewers Data Bot" href="https://mkebrewers.bot/feed.xml" />
+
+
+
+<script type="text/javascript">
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/site.webmanifest">
+<link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!-- end custom head snippets -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="layout--default">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">
+          Brewers Data Bot
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+                <a
+                  href="/roster/"
+                  
+                  
+                >Team</a>
+              </li><li class="masthead__menu-item">
+                <a
+                  href="/transactions/"
+                  
+                  
+                >Moves</a>
+              </li><li class="masthead__menu-item">
+                <a
+                  href="/about/"
+                  
+                  
+                >About</a>
+              </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <div class="container">
+
+<div class="minimal-header">
+  
+  
+  <div class="minimal-trend-icon">
+    
+        <i class="fa-solid fa-arrow-trend-up"></i>
+    
+  </div>
+  <h1 class="minimal-headline">How are the Brewers doing?</h1>
+  <p class="minimal-subhead">
+    
+    
+    <span class="highlight">MILWAUKEE</span> <span class="updated">(March 28)</span> — The Brewers have compiled a <span class="highlight">1-0</span> record in the 2026 regular season, a <span class="highlight">100%</span> winning percentage.  The last game was a <span class="highlight">14-2</span> home <span class="highlight">win</span>. and the next game is Sunday at 11:10 p.m. PT at <span class="highlight">American Family Field</span>.
+  </p>
+</div>
+
+<!-- Postseason section hidden for 2026 regular season
+<div class="postseason-stats-section">
+  <h2 class="stat-group postseason-header">Postseason 2025</h2>
+
+  <h3 class="visual-subhead">Playoff journey</h3>
+  <div class="playoff-journey" id="playoff-journey">
+  </div>
+
+  <h3 class="visual-subhead">Team hitting</h3>
+  <div class="postseason-grid" id="postseason-grid">
+  </div>
+  <p class="note">Note: Top 12 players in order of plate appearances.</p>
+</div>
+-->
+
+
+
+<div class="container mt-4">
+<h2 class="stat-group performance-header">Regular season performance and standings</h2>
+<h3 class="visual-subhead"><span class="win">Wins</span>, <span class="loss">losses</span> and run differential</h3>
+<div id="chart-container" class="chart-container" style="position: relative;">
+<div id="results-chart"></div>
+</div>
+  <div class="row">
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Wins</div>
+          <div class="stat-card-value">1</div>
+          <p class="stat-card-context">This point last season: 0</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Losses</div>
+          <div class="stat-card-value">0</div>
+          <p class="stat-card-context">This point last season: 1</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Record</div>
+          <div class="stat-card-value">1-0</div>
+          <p class="stat-card-context">This point last season: 0-1</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Win percentage</div>
+          <div class="stat-card-value">100%</div>
+          <p class="stat-card-context">This point last season: 0%</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Games up/back</div>
+          <div class="stat-card-value">0.5</div>
+          <p class="stat-card-context">Division rank: 2nd</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Avg. home attendance</div>
+          <div class="stat-card-value">nan</div>
+          <p class="stat-card-context">Home games this season: 0</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Runs</div>
+          <div class="stat-card-value">14</div>
+          <p class="stat-card-context">League rank: 1st</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Runs against</div>
+          <div class="stat-card-value">2</div>
+          <p class="stat-card-context">This point last season: 4</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Run differential</div>
+          <div class="stat-card-value">12</div>
+          <p class="stat-card-context">This point last season: -2</p>
+        </div>
+      </div>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+<!-- <h3 class="visual-subhead">Projected <span class="win">wins</span> this season</h3>
+<p class="chart-chatter">This chart shows the Brewers' actual <span class="underline-wins">wins</span> so far, the projected <span class="underline-mean-projection">mean</span> number of final wins and the 95% <span class="highlight-ci">confidence interval</span> around that projection.</p>
+<div id="wins-projection-chart-ci" class="chart-container"></div>
+<p class="note">Note: The projection is based on 10,000 simulations. For games played, it shows actual wins. For future games, it simulates outcomes by randomly drawing from the Brewers' win/loss results so far this season, then calculates the mean and a 95% confidence range.</p> -->
+
+<h3 class="visual-subhead">Cumulative <span class="win">wins</span>: Then and now</h3>
+<p class="chart-chatter">Compare this year's win trajectory with the past.</p>
+<select id="year-select">
+  <option>Previous seasons</option>
+</select>
+<div id="cumulative-wins-chart"></div>
+
+<h3 class="visual-subhead">Standings: Games <span class="win">up</span> or <span class="loss">back</span></h3>
+<div id="d3-container" style="width: 100%; padding-bottom: 20px;"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="stat-group">Final regular season standings</h2>
+
+<h3 class="visual-subhead">National League standings by division</h3>
+<div class="tables-container standings-tables">
+  <div class="table-wrapper">
+    <h3 class="stat-card-label">NL East</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>W%</th>
+          <th>GB</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>Miami Marlins</td>
+          <td>1.000</td>
+          <td>-</td>
+        </tr>
+        
+        <tr>
+          <td>New York Mets</td>
+          <td>1.000</td>
+          <td>-</td>
+        </tr>
+        
+        <tr>
+          <td>Atlanta Braves</td>
+          <td>1.000</td>
+          <td>0.5</td>
+        </tr>
+        
+        <tr>
+          <td>Washington Nationals</td>
+          <td>.500</td>
+          <td>1</td>
+        </tr>
+        
+        <tr>
+          <td>Philadelphia Phillies</td>
+          <td>.500</td>
+          <td>1</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  <div class="table-wrapper">
+    <h3 class="stat-card-label">NL Central</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>W%</th>
+          <th>GB</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>St. Louis Cardinals</td>
+          <td>1.000</td>
+          <td>-</td>
+        </tr>
+        
+        <tr class="brewers-row">
+          <td>Milwaukee Brewers</td>
+          <td>1.000</td>
+          <td>0.5</td>
+        </tr>
+        
+        <tr>
+          <td>Chicago Cubs</td>
+          <td>.500</td>
+          <td>1</td>
+        </tr>
+        
+        <tr>
+          <td>Cincinnati Reds</td>
+          <td>.000</td>
+          <td>1.5</td>
+        </tr>
+        
+        <tr>
+          <td>Pittsburgh Pirates</td>
+          <td>.000</td>
+          <td>2</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  <div class="table-wrapper">
+    <h3 class="stat-card-label">NL West</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>W%</th>
+          <th>GB</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>Los Angeles Dodgers</td>
+          <td>1.000</td>
+          <td>-</td>
+        </tr>
+        
+        <tr>
+          <td>Arizona Diamondbacks</td>
+          <td>.000</td>
+          <td>2</td>
+        </tr>
+        
+        <tr>
+          <td>Colorado Rockies</td>
+          <td>.000</td>
+          <td>2</td>
+        </tr>
+        
+        <tr>
+          <td>San Francisco Giants</td>
+          <td>.000</td>
+          <td>2</td>
+        </tr>
+        
+        <tr>
+          <td>San Diego Padres</td>
+          <td>.000</td>
+          <td>2</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- <h3 class="visual-subhead">Playoff bracket: <em>If the postseason started today</em></h3>
+<div id="playoff-bracket-container">
+  <div class="bracket-section">
+    <h4 class="bracket-league-title">National League</h4>
+    <div class="bracket-grid nl-bracket">
+      <div class="bracket-column wildcards">
+        <div class="stat-card-label">Wild card</div>
+        <div class="wildcard-matchup">
+          <div class="wildcard-team seed-6" data-seed="6">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">TBD</span>
+              <span class="team-seed">6</span>
+            </span>
+          </div>
+          <div class="vs">vs</div>
+          <div class="wildcard-team seed-3" data-seed="3">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">TBD</span>
+              <span class="team-seed">3</span>
+            </span>
+          </div>
+        </div>
+        <div class="wildcard-matchup">
+          <div class="wildcard-team seed-5" data-seed="5">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">TBD</span>
+              <span class="team-seed">5</span>
+            </span>
+          </div>
+          <div class="vs">vs</div>
+          <div class="wildcard-team seed-4" data-seed="4">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">TBD</span>
+              <span class="team-seed">4</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="bracket-column division-series">
+        <div class="stat-card-label">Division series</div>
+        <div class="ds-matchup">
+          <div class="ds-team seed-1" data-seed="1">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">TBD</span>
+              <span class="team-seed">1</span>
+            </span>
+          </div>
+          <div class="vs">vs</div>
+          <div class="ds-team wc-winner">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">Wild card winner</span>
+              <span class="team-seed"></span>
+            </span>
+          </div>
+        </div>
+        <div class="ds-matchup">
+          <div class="ds-team seed-2" data-seed="2">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">TBD</span>
+              <span class="team-seed">2</span>
+            </span>
+          </div>
+          <div class="vs">vs</div>
+          <div class="ds-team wc-winner">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">Wild card winner</span>
+              <span class="team-seed"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="bracket-column championship">
+        <div class="stat-card-label">NLCS</div>
+        <div class="cs-matchup">
+          <div class="cs-team">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">DS winner</span>
+              <span class="team-seed"></span>
+            </span>
+          </div>
+          <div class="vs">vs</div>
+          <div class="cs-team">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">DS winner</span>
+              <span class="team-seed"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bracket-section">
+    <h4 class="bracket-league-title">American League</h4>
+    <div class="bracket-grid al-bracket">
+      <div class="bracket-column wildcards">
+        <div class="stat-card-label">Wild card</div>
+        <div class="wildcard-matchup">
+          <div class="wildcard-team seed-6" data-seed="6">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">TBD</span>
+              <span class="team-seed">6</span>
+            </span>
+          </div>
+          <div class="vs">vs</div>
+          <div class="wildcard-team seed-3" data-seed="3">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">TBD</span>
+              <span class="team-seed">3</span>
+            </span>
+          </div>
+        </div>
+        <div class="wildcard-matchup">
+          <div class="wildcard-team seed-5" data-seed="5">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">TBD</span>
+              <span class="team-seed">5</span>
+            </span>
+          </div>
+          <div class="vs">vs</div>
+          <div class="wildcard-team seed-4" data-seed="4">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">TBD</span>
+              <span class="team-seed">4</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="bracket-column division-series">
+        <div class="stat-card-label">Division series</div>
+        <div class="ds-matchup">
+          <div class="ds-team seed-1" data-seed="1">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">TBD</span>
+              <span class="team-seed">1</span>
+            </span>
+          </div>
+          <div class="vs">vs</div>
+          <div class="ds-team wc-winner">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">Wild card winner</span>
+              <span class="team-seed"></span>
+            </span>
+          </div>
+        </div>
+        <div class="ds-matchup">
+          <div class="ds-team seed-2" data-seed="2">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">TBD</span>
+              <span class="team-seed">2</span>
+            </span>
+          </div>
+          <div class="vs">vs</div>
+          <div class="ds-team wc-winner">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">Wild card winner</span>
+              <span class="team-seed"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="bracket-column championship">
+        <div class="stat-card-label">ALCS</div>
+        <div class="cs-matchup">
+          <div class="cs-team">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">DS winner</span>
+              <span class="team-seed"></span>
+            </span>
+          </div>
+          <div class="vs">vs</div>
+          <div class="cs-team">
+            <span class="team-logo"></span>
+            <span class="team-info">
+              <span class="team-name">DS winner</span>
+              <span class="team-seed"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="world-series-section">
+    <h4 class="bracket-league-title">World Series</h4>
+    <div class="ws-matchup">
+      <div class="ws-team nl-champion">
+        <span class="team-logo"></span>
+        <span class="team-info">
+          <span class="team-name">NL champion</span>
+          <span class="team-seed"></span>
+        </span>
+      </div>
+      <div class="vs">vs</div>
+      <div class="ws-team al-champion">
+        <span class="team-logo"></span>
+        <span class="team-info">
+          <span class="team-name">AL champion</span>
+          <span class="team-seed"></span>
+        </span>
+      </div>
+    </div>
+  </div> -->
+</div>
+
+<h2 class="stat-group">Team hitting</h2>
+  <div class="row">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Batting average</div>
+          <div class="stat-card-value">.364</div>
+          <p class="stat-card-context">Last decade average: nan</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Home runs</div>
+          <div class="stat-card-value">2</div>
+          <p class="stat-card-context">League rank: 10th</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Home runs/game</div>
+          <div class="stat-card-value">2.0</div>
+          <p class="stat-card-context">Last decade average: N/A</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">On-base percentage</div>
+          <div class="stat-card-value">.512</div>
+          <p class="stat-card-context">Last decade average: nan</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Stolen bases</div>
+          <div class="stat-card-value">1</div>
+          <p class="stat-card-context">League rank: 7th</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Stolen bases/game</div>
+          <div class="stat-card-value">1.0</div>
+          <p class="stat-card-context">Rate all last season: N/A</p>
+        </div>
+      </div>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+<div class="small-chart-container">
+  <h3 class="visual-subhead">Cumulative <span class="win">doubles</span></h3>
+  <div id="cumulative-doubles-chart" class="small-chart"></div>
+</div>
+
+<div class="small-chart-container">
+  <h3 class="visual-subhead">Cumulative <span class="win">home runs</span></h3>
+  <div id="cumulative-homers-chart" class="small-chart"></div>
+</div>
+
+<h2 class="stat-group">Player hitting</h2>
+<p class="chart-chatter">Darker shades represent <span class="win">better</span> performance.</p>
+<div class="tables-container">
+  <div class="table-wrapper">
+      <h3 class="visual-subhead">Batting average and on-base and slugging percentages</h3>
+      <table id="table-1" class="data-table">
+          <thead>
+              <tr>
+                  <th>Player</th>
+                  <th>Pos</th>
+                  <th class="table-value">BA</th>
+                  <th class="table-value">OB%</th>
+                  <th class="table-value">SLG%</th>
+              </tr>
+          </thead>
+          <tbody></tbody>
+      </table>
+  </div>
+  <div class="table-wrapper">
+      <h3 class="visual-subhead">Walks, home runs and strikeouts per plate appearance</h3>
+      <table id="table-2" class="data-table">
+          <thead>
+              <tr>
+                  <th>Player</th>
+                  <th>PA</th>
+                  <th class="table-value">BB/A</th>
+                  <th class="table-value">HR/A</th>
+                  <th class="table-value">SO/A</th>
+              </tr>
+          </thead>
+          <tbody></tbody>
+      </table>
+     
+  </div>
+   <p class="note">Note: Tables and charts include top batters by plate appearances.</p>
+</div>
+
+  <h3 class="visual-subhead">Recent form: Expected weighted on-base average</h3>
+  <p class="chart-chatter">Rolling 100-plate appearance <span class="anno-xwoba">xwOBA</span> for each Brewers batter compared to the <span class="anno-mean">league average</span>. This stat predicts a player's offensive contributions based on the quality of contact they make with the ball.</p>
+  <div id="xwoba-grid" class="xwoba-grid-container">
+  </div>
+
+  <!-- <h2 class="stat-group">Shohei stats</h2>
+
+  <h3 class="visual-subhead">50-50 trend</h3>
+  <p id="shohei-comparison-subhead" class="chart-chatter"></p>
+  <div class="charts-container">
+    <div id="shohei-homers-chart" class="small-chart-container"></div>
+    <div id="shohei-sb-chart" class="small-chart-container"></div>
+  </div> -->
+
+  <h2 class="stat-group">Umpire scorecard</h2>
+<div class="scorecard-row">
+  <div class="scorecard-left">
+  <h3 class="visual-subhead">Strike zone analysis</h3>
+  <p class="chart-chatter">How often do Brewers batters get called strikes on pitches outside the strike zone? Correctly called <span style="background-color: #53A796; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">strikes</span> vs. pitches that were actually <span style="background-color: #F18851; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">balls</span>:</p>
+    <div id="umpire-scorecard-chart"></div>
+  </div>
+  <div class="scorecard-right">
+    <h3 class="visual-subhead">Worst calls of the season</h3>
+    <div id="umpire-worst-calls"></div>
+  </div>
+</div>
+ <p class="note">Note: Strike zone calls are determined by Baseball Savant and <a href="https://github.com/twallac10/mkebrewers-bot/blob/main/scripts/20_fetch_game_pitches.py">collected</a> after each game from its gamefeed API. Download the data <a href="/data/pitches/brewers_pitches_2026.json">here</a>.</p>
+  
+
+  <h2 class="stat-group">Pitching</h2>
+  <div class="row">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Strikeouts</div>
+          <div class="stat-card-value">20</div>
+          <p class="stat-card-context">League rank: 8th</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">Walks</div>
+          <div class="stat-card-value">5</div>
+          <p class="stat-card-context">League rank: 16th</p>
+        </div>
+      </div>
+      
+    
+      
+      <div class="col-md-4">
+        <div class="stat-card mb-4">
+          <div class="stat-card-label">ERA</div>
+          <div class="stat-card-value">2.00</div>
+          <p class="stat-card-context">League rank: 7th</p>
+        </div>
+      </div>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+<h3 class="visual-subhead">Top pitchers by strikeout-to-walk ratio</h3>
+<p class="chart-chatter">Darker shades of <span class="win">red</span> represent better performance.</p>
+<div class="tables-container">
+    <div class="table-wrapper">
+        <h4 class="table-subhead">Starting pitchers</h4>
+        <table id="pitching-kbb-starters-table" class="data-table pitching-table">
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th class="table-value">ERA+</th>
+                    <th class="table-value">FIP</th>
+                    <th class="table-value">SO/BB</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div class="table-wrapper">
+        <h4 class="table-subhead">Relievers</h4>
+        <table id="pitching-kbb-relievers-table" class="data-table pitching-table">
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th class="table-value">ERA+</th>
+                    <th class="table-value">FIP</th>
+                    <th class="table-value">SO/BB</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+<p class="note">Top 5 starters (minimum 30 IP) and relievers (minimum 10 IP), sorted by strikeout-to-walk ratio.</p>
+
+<div class="large-chart-container">
+<h3 class="visual-subhead">Team <span class="win">ERA</span> over season: Then and now</h3>
+<div id="cumulative-era-chart"></div>
+</div>
+
+<div class="small-chart-container">
+  <h3 class="visual-subhead">Cumulative <span class="win">strikeouts</span></h3>
+  <div id="cumulative-strikeouts-chart" class="small-chart"></div>
+</div>
+
+<div class="small-chart-container">
+  <h3 class="visual-subhead">Cumulative <span class="win">hits</span> allowed</h3>
+  <div id="cumulative-hits-chart" class="small-chart"></div>
+</div>
+
+  <!-- <h2 class="stat-group">Umpire scorecard (pitching)</h2>
+<div class="scorecard-row">
+  <div class="scorecard-left">
+  <h3 class="visual-subhead">Pitching strike zone analysis</h3>
+  <p class="chart-chatter">How often are Dodgers pitchers charged with <span style="background-color: #F18851; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">balls</span> that were actually <span style="background-color: #53A796; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">strikes</span>?</p>
+    <div id="umpire-scorecard-pitching-chart"></div>
+  </div>
+  <div class="scorecard-right">
+    <h3 class="visual-subhead">Worst calls against Dodgers pitchers</h3>
+    <div id="umpire-worst-calls-pitching"></div>
+  </div>
+</div>
+ <p class="note">Note: Strike zone calls are determined by Baseball Savant and <a href="https://github.com/stiles/dodgers/blob/main/scripts/20_fetch_game_pitches.py">collected</a> after each game from its gamefeed API. Download the data <a href="https://stilesdata.com/dodgers/data/pitches/dodgers_pitches_thrown_2025.json">here</a>.</p> -->
+
+  <h2 class="stat-group">Schedule</h2>
+    <div id="schedule-section" class="schedule-tables">
+      <div class="table-wrapper">
+          <h3 class="visual-subhead">Last 10 games</h3>
+          <table id="last-games" class="data-table">
+              <thead>
+                  <tr>
+                      <th>Date</th>
+                      <th>Opponent</th>
+                      <th>Place</th>
+                      <th>Result</th>
+                  </tr>
+              </thead>
+              <tbody></tbody>
+          </table>
+      </div>
+      <div class="table-wrapper">
+          <h3 class="visual-subhead">Next 10</h3>
+          <table id="next-games" class="data-table">
+              <thead>
+                  <tr>
+                      <th>Date</th>
+                      <th>Opponent</th>
+                      <th>Place</th>
+                      <th>Time CT</th>
+                  </tr>
+              </thead>
+              <tbody></tbody>
+          </table>
+      </div>
+    </div>
+
+<h2 class="stat-group">Fan support</h2>
+<p id="max-attendance-info"></p>
+<div class="tables-container">
+    <div class="table-wrapper">
+        <h3 class="visual-subhead">National League</h3>
+        <table id="nl-table" class="data-table"></table>
+    </div>
+    <div class="table-wrapper">
+        <h3 class="visual-subhead">American League</h3>
+        <table id="al-table" class="data-table"></table>
+    </div>
+</div>
+
+</div>
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+
+<script src="/assets/js/dashboard.js"></script>
+
+<style>
+@media (max-width: 767px) {
+  .row {
+    display: block;
+  }
+  .small-chart-container {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Desktop - force equal width distribution */
+@media (min-width: 901px) {
+  #schedule-section {
+    display: flex !important;
+    gap: 20px !important;
+    justify-content: space-between !important;
+  }
+  #schedule-section .table-wrapper {
+    flex: 1 1 calc(50% - 10px) !important;
+    width: calc(50% - 10px) !important;
+    max-width: calc(50% - 10px) !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+  #schedule-section .table-wrapper table {
+    width: 100% !important;
+    table-layout: fixed !important;
+  }
+}
+
+@media (max-width: 900px) {
+  #schedule-section {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  #schedule-section .table-wrapper {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 0 20px 0 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-sizing: border-box !important;
+  }
+  #schedule-section .table-wrapper:last-child {
+    margin-bottom: 0 !important;
+  }
+  #last-games,
+  #next-games {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    margin: 0 !important;
+    table-layout: fixed !important;
+    box-sizing: border-box !important;
+  }
+  #last-games *,
+  #next-games * {
+    box-sizing: border-box !important;
+  }
+  /* Force override any external CSS */
+  body #schedule-section table {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  #schedule-section h3.visual-subhead {
+    margin: 15px 0 10px 0 !important;
+  }
+  #schedule-section h3.visual-subhead:first-child {
+    margin-top: 0 !important;
+  }
+}
+</style>
+
+
+      
+    </div>
+
+
+    <div class="site-footer">
+  <div class="footer-content">
+    <div class="footer-main">
+      <div class="footer-info">
+        <h3 class="footer-title">Brewers Data Bot</h3>
+        <p class="footer-description">
+          A dashboard tracking the Milwaukee Brewers season with real-time stats, standings and performance analysis.
+        </p>
+        <div class="footer-links">
+          <a href="/about/" class="footer-link">About</a>
+          <a href="https://github.com/twallac10/mkebrewers-bot" class="footer-link">Code</a>
+          <a href="https://github.com/twallac10/mkebrewers-bot/tree/main/data" class="footer-link">Data</a>
+        </div>
+        <div class="footer-stats">
+          <div class="footer-meta">Updated: March 28, 2026 at 6 PM</div>
+          <div class="footer-meta">Sources: MLB/Baseball Savant, Baseball Reference</div>
+        </div>
+      </div>
+      <div class="footer-social">
+        <a href="http://github.com/twallac10/mkebrewers-bot" class="footer-social-link"><i class="fa-brands fa-fw fa-github"></i></a>
+        <a href="https://bsky.app/profile/mkebrewers-bot.bsky.social" class="footer-social-link" title="Follow on Bluesky">
+          <svg width="18" height="18" viewBox="0 0 600 530" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+            <path d="M135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; 2026 <a href="https://github.com/twallac10">Brewers Bot</a>.</p>
+    </div>
+  </div>
+</div>
+
+
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+  
+    <script src="/assets/js/mobile-nav.js"></script>
+  
+
+
+  </body>
+</html>

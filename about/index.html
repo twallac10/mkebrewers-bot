@@ -1,0 +1,272 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.1 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- http-equiv="X-UA-Compatible" content="IE=edge" -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7JPCT3BCN6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7JPCT3BCN6');
+</script>
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+
+<!-- begin _includes/seo.html -->
+<!-- DEBUG: page.path=about.md, page.url=/about/, page.permalink=/about/, page.name=about.md --><title>About | Milwaukee Brewers stats dashboard - Brewers Data Bot</title>
+<meta name="description" content="Learn about the Brewers Data Bot dashboard, an auto-updating tracker for Milwaukee Brewers stats and performance.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Brewers Data Bot">
+<meta property="og:title" content="About | Milwaukee Brewers stats dashboard">
+<meta property="og:url" content="https://mkebrewers.bot/about/">
+
+
+  <meta property="og:description" content="Learn about the Brewers Data Bot dashboard, an auto-updating tracker for Milwaukee Brewers stats and performance.">
+
+
+
+  <meta property="og:image" content="https://mkebrewers.bot/">
+
+
+
+  <meta name="twitter:site" content="@twallac10">
+  <meta name="twitter:title" content="About | Milwaukee Brewers stats dashboard">
+  <meta name="twitter:description" content="Learn about the Brewers Data Bot dashboard, an auto-updating tracker for Milwaukee Brewers stats and performance.">
+  <meta name="twitter:url" content="https://mkebrewers.bot/about/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://mkebrewers.bot/">
+  
+
+  
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://mkebrewers.bot/about/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Brewers Data Bot Feed">
+
+
+<!-- Handheld Friendly -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="manifest" href="/assets/images/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#BD3039">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<meta name="msapplication-TileColor" content="#BD3039">
+<meta name="msapplication-config" content="/assets/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="Brewers Data Bot" href="https://mkebrewers.bot/feed.xml" />
+
+
+
+<script type="text/javascript">
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/site.webmanifest">
+<link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!-- end custom head snippets -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="layout--default">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">
+          Brewers Data Bot
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+                <a
+                  href="/roster/"
+                  
+                  
+                >Team</a>
+              </li><li class="masthead__menu-item">
+                <a
+                  href="/transactions/"
+                  
+                  
+                >Moves</a>
+              </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <div class="container">
+    <div class="minimal-header">
+        <h1 class="minimal-headline">About this project</h1>
+    </div>
+    <div class="text-container">
+        <h2 class="about-subhead">What's going on here?</h2>
+
+        <p>Brewers Data Bot is a Milwaukee Brewers version of <a href="https://dodgersdata.bot/">Dodgers Data Bot</a>, built by <a href="https://mattstiles.me/">Matt Stiles</a>. His site is an auto-updating dashboard that tracks how the Los Angeles Dodgers are doing — today and in the context of franchise history - this one does the same thing, but for the Milwaukee Brewers instead. It was modified by me, Terry Wallace, with help from Claude Code.</p>
+
+        <p>Every day during the season, the bot pulls fresh stats from <a href="https://baseballsavant.mlb.com/">Baseball Savant</a> and <a href="https://www.baseball-reference.com/">Baseball Reference</a> — standings, batting averages, and more — then turns them into clean, readable charts and tables that capture the story of the season.</p>
+
+        <p>The goal? Make baseball data approachable. Show how the team is performing now, how it stacks up against more than half a century of Brewers history, and what might be coming next.</p>
+
+        <h2 class="about-subhead">Why it exists</h2>
+
+        <p>Matt Stiles created the original dashboard and was kind enough to release <a href="https://github.com/stiles/dodgers">the code</a> under an open source license. As a Brewers fan, I wanted an equivalent for Milwaukee. With help from Claude Code, the Brewers Data Bot came to life.</p>
+
+        <h2 class="about-subhead">Thanks</h2>
+
+        <p>Many thanks to Matt for coming up with the original idea for Dodgers Data Bot, and for going even further and sharing his hard work so that it could be adapted for other teams. Thanks also to <a href="https://github.com/sogrady">Steve O'Grady</a> whose <a href="https://redsox.bot">Red Sox Data Bot</a> served as the direct basis for this project. And thanks to Claude Code and its designers for making this possible.</p>
+
+        <h2 class="about-subhead">Join the conversation</h2>
+
+        <p><a href="https://github.com/twallac10/mkebrewers-bot">Check out the code on GitHub</a> or drop a suggestion.</p>
+
+        <p>Go Brew Crew!</p>
+    </div>
+</div>
+
+      
+    </div>
+
+
+    <div class="site-footer">
+  <div class="footer-content">
+    <div class="footer-main">
+      <div class="footer-info">
+        <h3 class="footer-title">Brewers Data Bot</h3>
+        <p class="footer-description">
+          A dashboard tracking the Milwaukee Brewers season with real-time stats, standings and performance analysis.
+        </p>
+        <div class="footer-links">
+          <a href="/about/" class="footer-link">About</a>
+          <a href="https://github.com/twallac10/mkebrewers-bot" class="footer-link">Code</a>
+          <a href="https://github.com/twallac10/mkebrewers-bot/tree/main/data" class="footer-link">Data</a>
+        </div>
+        <div class="footer-stats">
+          <div class="footer-meta">Updated: March 28, 2026 at 6 PM</div>
+          <div class="footer-meta">Sources: MLB/Baseball Savant, Baseball Reference</div>
+        </div>
+      </div>
+      <div class="footer-social">
+        <a href="http://github.com/twallac10/mkebrewers-bot" class="footer-social-link"><i class="fa-brands fa-fw fa-github"></i></a>
+        <a href="https://bsky.app/profile/mkebrewers-bot.bsky.social" class="footer-social-link" title="Follow on Bluesky">
+          <svg width="18" height="18" viewBox="0 0 600 530" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+            <path d="M135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; 2026 <a href="https://github.com/twallac10">Brewers Bot</a>.</p>
+    </div>
+  </div>
+</div>
+
+
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+  
+    <script src="/assets/js/mobile-nav.js"></script>
+  
+
+
+  </body>
+</html>

@@ -1,0 +1,62 @@
+{
+    "season_summary": {
+        "correct_strikes_pct": 90.625,
+        "incorrect_strikes_pct": 9.375,
+        "total_called_strikes": 32,
+        "bad_calls_count": 3
+    },
+    "last_game_summary": {
+        "date": "March 28, 2026",
+        "correct_strikes_pct": 100.0,
+        "incorrect_strikes_pct": 0.0,
+        "total_called_strikes": 2,
+        "bad_calls_count": 0,
+        "home_plate_umpire": "Bruce Dreckman"
+    },
+    "worst_calls_of_season": [
+        {
+            "distance_inches": 1.8137085765,
+            "batter": "Sal Frelick",
+            "pitcher": "Jedixson Paez",
+            "pitch_type": "4-Seam Fastball",
+            "velocity_mph": 92.4,
+            "date": "2026-03-26",
+            "date_formatted": "March 26, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=233f996a-704d-37ff-8cd9-ba84b70cae99"
+        },
+        {
+            "distance_inches": 0.2029082408,
+            "batter": "Joey Ortiz",
+            "pitcher": "Sean Newcomb",
+            "pitch_type": "4-Seam Fastball",
+            "velocity_mph": 93.7,
+            "date": "2026-03-26",
+            "date_formatted": "March 26, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=2a270b8a-df57-35fc-971c-dd3ad6701339"
+        },
+        {
+            "distance_inches": 0.1894317599,
+            "batter": "Brice Turang",
+            "pitcher": "Shane Smith",
+            "pitch_type": "4-Seam Fastball",
+            "velocity_mph": 95.3,
+            "date": "2026-03-26",
+            "date_formatted": "March 26, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=62b26a71-78ca-327a-94bd-31f8b0c228dd"
+        }
+    ],
+    "pitching_season_summary": {
+        "correct_balls_pct": 100.0,
+        "incorrect_balls_pct": 0.0,
+        "total_called_balls": 65,
+        "bad_calls_count": 0
+    },
+    "pitching_last_game_summary": {
+        "date": "March 28, 2026",
+        "correct_balls_pct": 100.0,
+        "incorrect_balls_pct": 0.0,
+        "total_called_balls": 12,
+        "bad_calls_count": 0
+    },
+    "pitching_worst_calls_of_season": []
+}
