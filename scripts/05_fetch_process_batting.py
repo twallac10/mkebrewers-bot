@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Boston Red Sox batting: Combine current season with historical archive
-# > This notebook downloads the team's current batting tables from [Baseball Reference](https://www.baseball-reference.com/teams/BOS/2024-batting.shtml), combines it with a historical archive to 1901 and outputs the data to CSV, JSON and Parquet formats for later analysis and visualization.
+# # Milwaukee Brewers batting: Combine current season with historical archive
+# > This notebook downloads the team's current batting tables from [Baseball Reference](https://www.baseball-reference.com/teams/MIL/2024-batting.shtml), combines it with a historical archive to 1970 and outputs the data to CSV, JSON and Parquet formats for later analysis and visualization.
 
 # Import Python tools and Jupyter config
 
@@ -205,15 +205,15 @@ try:
     formats = ["csv", "json", "parquet"]
     save_dataframe(
         players_full_df,
-        f"../data/batting/redsox_player_batting_1958_present",
+        f"../data/batting/brewers_player_batting_1958_present",
         formats,
     )
     save_dataframe(
-        team_full_df, f"../data/batting/redsox_team_batting_1958_present", formats
+        team_full_df, f"../data/batting/brewers_team_batting_1958_present", formats
     )
     save_dataframe(
         team_ranks_full_df,
-        f"../data/batting/redsox_team_batting_ranks_1958_present",
+        f"../data/batting/brewers_team_batting_ranks_1958_present",
         formats,
     )
 except Exception as e:
@@ -223,7 +223,7 @@ except Exception as e:
 player_current_table_df = player_totals_df.copy()
 save_dataframe(
     player_current_table_df,
-    f"../data/batting/redsox_player_batting_current_table",
+    f"../data/batting/brewers_player_batting_current_table",
     formats,
 )
 
@@ -267,21 +267,21 @@ def save_to_s3(df, base_path, s3_bucket, formats=["csv", "json", "parquet"]):
 # Save to S3
 save_to_s3(
     players_full_df,
-    "redsox/data/batting/redsox_player_batting_1958_present",
-    "redsox-data",
+    "mkebrewers/data/batting/brewers_player_batting_1958_present",
+    "mkebrewers-data",
 )
 save_to_s3(
     team_full_df,
-    "redsox/data/batting/redsox_team_batting_1958_present",
-    "redsox-data",
+    "mkebrewers/data/batting/brewers_team_batting_1958_present",
+    "mkebrewers-data",
 )
 save_to_s3(
     team_ranks_full_df,
-    "redsox/data/batting/redsox_team_batting_ranks_1958_present",
-    "redsox-data",
+    "mkebrewers/data/batting/brewers_team_batting_ranks_1958_present",
+    "mkebrewers-data",
 )
 save_to_s3(
     player_current_table_df,
-    "redsox/data/batting/redsox_player_batting_current_table",
-    "redsox-data",
+    "mkebrewers/data/batting/brewers_player_batting_current_table",
+    "mkebrewers-data",
 )

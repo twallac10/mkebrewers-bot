@@ -15,13 +15,13 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # Output files
 output_dir = "data/postseason"
-json_file = f"{output_dir}/redsox_postseason_stats_2025.json"
-series_file = f"{output_dir}/redsox_postseason_series_2025.json"
+json_file = f"{output_dir}/brewers_postseason_stats_2025.json"
+series_file = f"{output_dir}/brewers_postseason_series_2025.json"
 
 # S3 configuration
-s3_bucket = "redsox-data"
-s3_key_stats = "redsox/data/postseason/redsox_postseason_stats_2025.json"
-s3_key_series = "redsox/data/postseason/redsox_postseason_series_2025.json"
+s3_bucket = "mkebrewers-data"
+s3_key_stats = "mkebrewers/data/postseason/brewers_postseason_stats_2025.json"
+s3_key_series = "mkebrewers/data/postseason/brewers_postseason_series_2025.json"
 
 # AWS session
 is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
@@ -40,13 +40,13 @@ s3 = session.resource('s3')
 
 def fetch_roster_data():
     """Fetch roster data from local file or URL"""
-    local_file = "_data/roster/redsox_roster_current.json"
+    local_file = "_data/roster/brewers_roster_current.json"
     if os.path.exists(local_file):
         with open(local_file, 'r') as f:
             return json.load(f)
     else:
         # Fallback to URL
-        s3_key_json = "https://redsox-data.s3.amazonaws.com/redsox/data/roster/redsox_roster_current.json"
+        s3_key_json = "https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/roster/brewers_roster_current.json"
         response = requests.get(s3_key_json)
         return response.json()
 
@@ -172,7 +172,7 @@ def fetch_postseason_series():
                                 series_name = series_status.get('shortName', 'Unknown Series')
                                 game_date = game.get('gameDate', '')
                                 
-                                logging.info(f"Found Red Sox game: {series_name} on {game_date}")
+                                logging.info(f"Found Brewers game: {series_name} on {game_date}")
                                 logging.info(f"Series status: {series_status}")
                                 
                                 # Determine series info

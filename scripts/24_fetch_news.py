@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # --- Environment Variables & AWS/S3 ---
 is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
-s3_bucket_name = "redsox-data"
+s3_bucket_name = "mkebrewers-data"
 
 if is_github_actions:
     session = boto3.Session(
@@ -29,7 +29,7 @@ s3_resource = session.resource("s3")
 
 def get_last_post_date(post_type):
     """Reads the last post date for a given type from S3."""
-    s3_key = f"redsox/data/bluesky/last_post_date_{post_type}.txt"
+    s3_key = f"mkebrewers/data/bluesky/last_post_date_{post_type}.txt"
     try:
         obj = s3_resource.Object(s3_bucket_name, s3_key)
         last_date_str = obj.get()['Body'].read().decode('utf-8').strip()
@@ -41,7 +41,7 @@ def get_last_post_date(post_type):
 
 def set_last_post_date(date_str, post_type):
     """Writes the last post date for a given type to S3."""
-    s3_key = f"redsox/data/bluesky/last_post_date_{post_type}.txt"
+    s3_key = f"mkebrewers/data/bluesky/last_post_date_{post_type}.txt"
     obj = s3_resource.Object(s3_bucket_name, s3_key)
     obj.put(Body=date_str)
     logging.info(f"Successfully updated last post date for '{post_type}' to: {date_str}")
@@ -66,7 +66,7 @@ def post_to_bluesky(post_text, post_type):
     except Exception as e:
         logging.error(f"Failed to post to Bluesky: {e}")
 
-# TODO: Add Boston Globe and other Red Sox-specific news sources.
+# TODO: Add Milwaukee Journal Sentinel and other Brewers-specific news sources.
 
 def fetch_mlb_news():
     """
@@ -144,7 +144,7 @@ def should_post_news():
         return False
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Fetch Red Sox news and optionally post to Bluesky.")
+    parser = argparse.ArgumentParser(description="Fetch Brewers news and optionally post to Bluesky.")
     parser.add_argument("--post", action="store_true", help="Post the news roundup to Bluesky.")
     parser.add_argument("--force", action="store_true", help="Force posting regardless of time (still respects daily limit).")
     args = parser.parse_args()

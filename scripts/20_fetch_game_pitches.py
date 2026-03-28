@@ -15,10 +15,10 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # === Configuration ===
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "..", "data", "pitches")
-S3_BUCKET = "redsox-data"
+S3_BUCKET = "mkebrewers-data"
 current_year_for_paths = datetime.now().year
-S3_KEY_CSV = f"redsox/data/pitches/redsox_pitches_{current_year_for_paths}.csv"
-S3_KEY_JSON = f"redsox/data/pitches/redsox_pitches_{current_year_for_paths}.json"
+S3_KEY_CSV = f"mkebrewers/data/pitches/brewers_pitches_{current_year_for_paths}.csv"
+S3_KEY_JSON = f"mkebrewers/data/pitches/brewers_pitches_{current_year_for_paths}.json"
 
 # === AWS Session Setup ===
 is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
@@ -191,8 +191,8 @@ all_pitches = []
 all_pitches_thrown_by_team = []
 
 # Load existing datasets from public URLs to support incremental updates
-public_to_url = f"https://redsox-data/{S3_KEY_JSON}"
-public_by_url = f"https://redsox-data/redsox/data/pitches/redsox_pitches_thrown_{current_year_for_paths}.json"
+public_to_url = f"https://mkebrewers-data.s3.amazonaws.com/{S3_KEY_JSON}"
+public_by_url = f"https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitches/brewers_pitches_thrown_{current_year_for_paths}.json"
 existing_to_df = load_existing_json(public_to_url)
 existing_by_df = load_existing_json(public_by_url)
 processed_gamepks_to = set(existing_to_df['game_pk'].unique()) if not existing_to_df.empty and 'game_pk' in existing_to_df.columns else set()
@@ -203,14 +203,14 @@ for game_info in tqdm(all_team_games, desc="Analyzing games"):
 
     # Pitches thrown to Team batters (skip if already processed)
     if gpk not in processed_gamepks_to:
-        all_pitches.extend(analyze_pitches(game_info, team_role="thrown_to_redsox"))
+        all_pitches.extend(analyze_pitches(game_info, team_role="thrown_to_brewers"))
 
     # Pitches thrown BY Team pitchers (skip if already processed)
     if gpk not in processed_gamepks_by:
         ts = game_info.get("team_side")
         other_side = "away_batters" if ts == "home_batters" else "home_batters"
         all_pitches_thrown_by_team.extend(
-            analyze_pitches(game_info, batting_side_override=other_side, team_role="thrown_by_redsox")
+            analyze_pitches(game_info, batting_side_override=other_side, team_role="thrown_by_brewers")
         )
 
 # === Results ===
@@ -242,10 +242,10 @@ df_by_team = combine_and_dedupe(existing_by_df, df_by_team)
 
 # === Export the data ===
 os.makedirs(OUTPUT_DIR, exist_ok=True)
-csv_path = os.path.join(OUTPUT_DIR, f"redsox_pitches_{current_year}.csv")
-json_path = os.path.join(OUTPUT_DIR, f"redsox_pitches_{current_year}.json")
-csv_path_by = os.path.join(OUTPUT_DIR, f"redsox_pitches_thrown_{current_year}.csv")
-json_path_by = os.path.join(OUTPUT_DIR, f"redsox_pitches_thrown_{current_year}.json")
+csv_path = os.path.join(OUTPUT_DIR, f"brewers_pitches_{current_year}.csv")
+json_path = os.path.join(OUTPUT_DIR, f"brewers_pitches_{current_year}.json")
+csv_path_by = os.path.join(OUTPUT_DIR, f"brewers_pitches_thrown_{current_year}.csv")
+json_path_by = os.path.join(OUTPUT_DIR, f"brewers_pitches_thrown_{current_year}.json")
 
 df.to_csv(csv_path, index=False)
 print(f"Pitch data saved locally to {csv_path}")
@@ -266,8 +266,8 @@ try:
     print(f"Successfully uploaded {os.path.basename(json_path)} to {S3_BUCKET}/{S3_KEY_JSON}")
 
     # Upload thrown-by-Team files
-    s3_key_csv_by = f"redsox/data/pitches/redsox_pitches_thrown_{current_year_for_paths}.csv"
-    s3_key_json_by = f"redsox/data/pitches/redsox_pitches_thrown_{current_year_for_paths}.json"
+    s3_key_csv_by = f"mkebrewers/data/pitches/brewers_pitches_thrown_{current_year_for_paths}.csv"
+    s3_key_json_by = f"mkebrewers/data/pitches/brewers_pitches_thrown_{current_year_for_paths}.json"
     s3.Bucket(S3_BUCKET).upload_file(csv_path_by, s3_key_csv_by)
     print(f"Successfully uploaded {os.path.basename(csv_path_by)} to {S3_BUCKET}/{s3_key_csv_by}")
     s3.Bucket(S3_BUCKET).upload_file(json_path_by, s3_key_json_by)

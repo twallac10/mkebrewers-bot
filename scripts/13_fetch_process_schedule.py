@@ -2,8 +2,8 @@
 # coding: utf-8
 
 """
-Boston Red Sox schedule snapshot
-This notebook downloads the team's current standings table from [Baseball Reference](https://www.baseball-reference.com/teams/LAD/2024-schedule-scores.shtml) and creates a results/schedule table listing five games in the past and future.
+Milwaukee Brewers schedule snapshot
+This notebook downloads the team's current standings table from [Baseball Reference](https://www.baseball-reference.com/teams/MIL/2024-schedule-scores.shtml) and creates a results/schedule table listing five games in the past and future.
 """
 
 # Import Python tools
@@ -55,7 +55,6 @@ mlb_teams = {
     "ARI": "Arizona Diamondbacks",
     "ATL": "Atlanta Braves",
     "BAL": "Baltimore Orioles",
-    "BOS": "Boston Red Sox",
     "CHC": "Chicago Cubs",
     "CHW": "Chicago White Sox",
     "CIN": "Cincinnati Reds",
@@ -88,10 +87,10 @@ mlb_teams = {
 year = pd.to_datetime("now").strftime("%Y")
 url = f"https://www.baseball-reference.com/teams/{config.TEAM_ID_BBREF}/{year}-schedule-scores.shtml"
 output_dir = "data/standings"
-csv_file = f"{output_dir}/redsox_schedule.csv"
-json_file = f"{output_dir}/redsox_schedule.json"
-parquet_file = f"{output_dir}/redsox_schedule.parquet"
-s3_bucket = "redsox-data"
+csv_file = f"{output_dir}/brewers_schedule.csv"
+json_file = f"{output_dir}/brewers_schedule.json"
+parquet_file = f"{output_dir}/brewers_schedule.parquet"
+s3_bucket = "mkebrewers-data"
 
 def fetch_clean_current_schedule(url, year):
     response = requests.get(url)
@@ -193,6 +192,6 @@ def save_to_s3(df, base_path, s3_bucket, formats):
             logging.error(f"Failed to upload {fmt} to S3: {e}")
 
 # Saving files locally and to S3
-file_path = os.path.join(data_dir, 'redsox_schedule')
+file_path = os.path.join(data_dir, 'brewers_schedule')
 formats = ["csv", "json"]
-save_to_s3(schedule_df, "redsox/data/standings/redsox_schedule", "redsox-data", formats)
+save_to_s3(schedule_df, "mkebrewers/data/standings/brewers_schedule", "mkebrewers-data", formats)

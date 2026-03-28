@@ -2,7 +2,7 @@
 # coding: utf-8
 
 """
-Boston Red Sox cumulative batting statistics by season, 1901-present
+Milwaukee Brewers cumulative batting statistics by season, 1970-present
 Fetches game-by-game cumulative totals for hits, doubles, home runs, walks,
 strikeouts and other statistics from Baseball Reference, looping through all years.
 """
@@ -38,7 +38,7 @@ s3_resource = session.resource("s3")
 base_dir = os.getcwd()
 data_dir = os.path.join(base_dir, 'data', 'batting', 'archive')
 
-START_YEAR = 1901
+START_YEAR = 1970
 current_year = datetime.date.today().year
 END_YEAR = current_year  # will fall back gracefully if no data for current year
 
@@ -150,6 +150,6 @@ def save_to_s3(df, base_path, s3_bucket, formats):
 
 
 formats = ["csv", "json", "parquet"]
-file_path = os.path.join(data_dir, 'redsox_historic_batting_gamelogs')
+file_path = os.path.join(data_dir, 'brewers_historic_batting_gamelogs')
 save_dataframe(optimized_df, file_path, formats)
-save_to_s3(optimized_df, "redsox/data/batting/archive/redsox_historic_batting_gamelogs", "redsox-data", formats)
+save_to_s3(optimized_df, "mkebrewers/data/batting/archive/brewers_historic_batting_gamelogs", "mkebrewers-data", formats)

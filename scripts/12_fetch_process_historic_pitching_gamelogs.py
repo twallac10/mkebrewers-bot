@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# Boston Red Sox pitching logs by season, 1901-present
+# Milwaukee Brewers pitching logs by season, 1970-present
 # Fetches game-by-game cumulative totals for strikeouts, hits allowed, ERA, etc.
 # from Baseball Reference, looping through all years.
 
@@ -40,7 +40,7 @@ headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
 }
 
-START_YEAR = 1901
+START_YEAR = 1970
 # Use last completed season (current year during season, previous year in off-season)
 current_year = datetime.date.today().year
 END_YEAR = current_year  # will fall back if no data available
@@ -155,6 +155,6 @@ def save_to_s3(df, base_path, s3_bucket, formats):
 
 
 formats = ["csv", "json", "parquet"]
-file_path = os.path.join(data_dir, 'redsox_historic_pitching_gamelogs_1901-present')
+file_path = os.path.join(data_dir, 'brewers_historic_pitching_gamelogs_1970-present')
 save_dataframe(optimized_df, file_path, formats)
-save_to_s3(optimized_df, "redsox/data/pitching/redsox_historic_pitching_gamelogs_1901-present", "redsox-data", formats)
+save_to_s3(optimized_df, "mkebrewers/data/pitching/brewers_historic_pitching_gamelogs_1970-present", "mkebrewers-data", formats)

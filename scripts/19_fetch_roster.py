@@ -18,17 +18,17 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # Output config
 output_dir = "data/roster"
 jekyll_data_dir = "_data/roster"
-csv_file = f"{output_dir}/redsox_roster_current.csv"
-json_file = f"{output_dir}/redsox_roster_current.json"
-transactions_csv_file = f"{output_dir}/redsox_transactions_current.csv"
-transactions_json_file = f"{output_dir}/redsox_transactions_current.json"
-transactions_archive_json_file = f"{output_dir}/redsox_transactions_archive.json"
-s3_bucket = "redsox-data"
-s3_key_csv = "redsox/data/roster/redsox_roster_current.csv"
-s3_key_json = "redsox/data/roster/redsox_roster_current.json"
-s3_key_transactions_csv = "redsox/data/roster/redsox_transactions_current.csv"
-s3_key_transactions_json = "redsox/data/roster/redsox_transactions_current.json"
-s3_key_transactions_archive_json = "redsox/data/roster/redsox_transactions_archive.json"
+csv_file = f"{output_dir}/brewers_roster_current.csv"
+json_file = f"{output_dir}/brewers_roster_current.json"
+transactions_csv_file = f"{output_dir}/brewers_transactions_current.csv"
+transactions_json_file = f"{output_dir}/brewers_transactions_current.json"
+transactions_archive_json_file = f"{output_dir}/brewers_transactions_archive.json"
+s3_bucket = "mkebrewers-data"
+s3_key_csv = "mkebrewers/data/roster/brewers_roster_current.csv"
+s3_key_json = "mkebrewers/data/roster/brewers_roster_current.json"
+s3_key_transactions_csv = "mkebrewers/data/roster/brewers_transactions_current.csv"
+s3_key_transactions_json = "mkebrewers/data/roster/brewers_transactions_current.json"
+s3_key_transactions_archive_json = "mkebrewers/data/roster/brewers_transactions_archive.json"
 
 # AWS session (same logic as your other scripts)
 is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'

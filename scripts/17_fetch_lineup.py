@@ -2,7 +2,7 @@
 # coding: utf-8
 
 """
-Fetches and parses the Red Sox daily starting lineup from MLB.com.
+Fetches and parses the Brewers daily starting lineup from MLB.com.
 Saves the data locally and uploads to S3.
 """
 
@@ -29,7 +29,7 @@ is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
 
 # AWS credentials and session initialization
 aws_region = "us-west-1"
-s3_bucket_name = "redsox-data" # Consistent with other scripts
+s3_bucket_name = "mkebrewers-data" # Consistent with other scripts
 
 # Conditional AWS session creation based on the environment
 if is_github_actions:
@@ -46,7 +46,7 @@ s3_resource = session.resource("s3")
 def get_last_post_date():
     """Reads the last post date from S3."""
     try:
-        obj = s3_resource.Object(s3_bucket_name, "redsox/data/bluesky/last_lineup_post_date.txt")
+        obj = s3_resource.Object(s3_bucket_name, "mkebrewers/data/bluesky/last_lineup_post_date.txt")
         last_date_str = obj.get()['Body'].read().decode('utf-8').strip()
         logging.info(f"Last post date found in S3: {last_date_str}")
         return last_date_str
@@ -62,7 +62,7 @@ def get_last_post_date():
 def set_last_post_date(date_str):
     """Writes the last post date to S3."""
     try:
-        obj = s3_resource.Object(s3_bucket_name, "redsox/data/bluesky/last_lineup_post_date.txt")
+        obj = s3_resource.Object(s3_bucket_name, "mkebrewers/data/bluesky/last_lineup_post_date.txt")
         obj.put(Body=date_str)
         logging.info(f"Successfully updated last post date in S3 to: {date_str}")
     except Exception as e:
@@ -311,7 +311,7 @@ def fetch_schedule_data(target_date_iso: str):
     Fetch the Red Sox schedule and return the row matching the provided ISO date (YYYY-MM-DD)
     with placement == 'next'. Only returns the row if game_start looks like a real time.
     """
-    schedule_url = "https://redsox-data/redsox/data/standings/redsox_schedule.json"
+    schedule_url = "https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_schedule.json"
     logging.info(f"Fetching schedule from: {schedule_url}")
 
     # Convert ISO date to the schedule's 'date' format, e.g. 'Aug 26'
@@ -351,7 +351,7 @@ def fetch_schedule_data(target_date_iso: str):
         return None
 
 def main():
-    parser = argparse.ArgumentParser(description="Fetch Red Sox lineup and optionally post pitching matchup to Bluesky.")
+    parser = argparse.ArgumentParser(description="Fetch Brewers lineup and optionally post pitching matchup to Bluesky.")
     parser.add_argument("--post", action="store_true", help="Post the pitching matchup to Bluesky if available.")
     parser.add_argument("--force", action="store_true", help="Post even if today's post was already recorded.")
     args = parser.parse_args()
@@ -397,9 +397,9 @@ def main():
         logging.info(f"Successfully fetched and parsed lineup data for {current_date_str}. Shape: {lineup_df.shape}")
         
         # Define base file name and S3 path
-        base_filename = f"redsox_lineup_{current_date_str}"
+        base_filename = f"brewers_lineup_{current_date_str}"
         local_base_path = os.path.join(local_output_dir, base_filename)
-        s3_base_path = f"redsox/data/lineups/{base_filename}"
+        s3_base_path = f"mkebrewers/data/lineups/{base_filename}"
 
         # Save locally
         try:
@@ -437,10 +437,10 @@ def main():
                 # Add game start time if available
                 if next_game and next_game.get('game_start'):
                     line3 = f"First pitch: {next_game['game_start']} (Local)."
-                    line4 = f"More: https://redsox.bot"
+                    line4 = f"More: https://mkebrewers.bot"
                     tweet_text = f"{line1}\n\n{line2}\n\n{line3}"
                 else:
-                    line3 = f"More: https://redsox.bot"
+                    line3 = f"More: https://mkebrewers.bot"
                     tweet_text = f"{line1}\n\n{line2}"
 
                 logging.info("Generated post text:")
@@ -456,7 +456,7 @@ def main():
                 else:
                     logging.info("Dry run: --post flag not provided. Not posting to Bluesky.")
             else:
-                logging.warning("Could not identify both Red Sox and opponent pitcher.")
+                logging.warning("Could not identify both Brewers and opponent pitcher.")
         else:
             logging.info("Not enough pitcher data to generate a tweet.")
     else:

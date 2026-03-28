@@ -2,14 +2,14 @@
 # coding: utf-8
 
 """
-Collect season home plate umpires for all Red Sox games and save to JSON + S3.
+Collect season home plate umpires for all Brewers games and save to JSON + S3.
 
 Data source:
 - MLB StatsAPI live feed: https://statsapi.mlb.com/api/v1.1/game/{gamePk}/feed/live
 
 Output:
-- data/pitches/redsox_umpires_{year}.json
-- s3://redsox-data/redsox/data/pitches/redsox_umpires_{year}.json
+- data/pitches/brewers_umpires_{year}.json
+- s3://mkebrewers-data/mkebrewers/data/pitches/brewers_umpires_{year}.json
 
 Idempotent: Reuses existing output and appends only missing game_pks.
 Also reuses local Savant gamefeeds (data/gamefeeds/*.json) to seed game_pks.
@@ -37,10 +37,10 @@ LOCAL_OUT_DIR = os.path.join(BASE_DIR, "data", "pitches")
 
 # Using config.CURRENT_YEAR - set to 2025 for off-season, update to 2026 when season starts
 YEAR = config.CURRENT_YEAR
-LOCAL_OUT_PATH = os.path.join(LOCAL_OUT_DIR, f"redsox_umpires_{YEAR}.json")
+LOCAL_OUT_PATH = os.path.join(LOCAL_OUT_DIR, f"brewers_umpires_{YEAR}.json")
 
-S3_BUCKET = "redsox-data"
-S3_KEY = f"redsox/data/pitches/redsox_umpires_{YEAR}.json"
+S3_BUCKET = "mkebrewers-data"
+S3_KEY = f"mkebrewers/data/pitches/brewers_umpires_{YEAR}.json"
 
 
 def get_session():

@@ -9,14 +9,14 @@ import pandas as pd
 
 from scripts import config
 
-BUCKET = "redsox-data"
-BOXES_KEY_JSON = "redsox/data/standings/redsox_boxscores.json"
-BOXES_KEY_CSV = "redsox/data/standings/redsox_boxscores.csv"
-LOCAL_BOXES_JSON = os.path.join("data", "standings", "redsox_boxscores.json")
-LOCAL_BOXES_CSV = os.path.join("data", "standings", "redsox_boxscores.csv")
+BUCKET = "mkebrewers-data"
+BOXES_KEY_JSON = "mkebrewers/data/standings/brewers_boxscores.json"
+BOXES_KEY_CSV = "mkebrewers/data/standings/brewers_boxscores.csv"
+LOCAL_BOXES_JSON = os.path.join("data", "standings", "brewers_boxscores.json")
+LOCAL_BOXES_CSV = os.path.join("data", "standings", "brewers_boxscores.csv")
 
-OUT_KEY_JSON = "redsox/data/standings/redsox_wins_losses_current.json"
-LOCAL_OUT_JSON = os.path.join("data", "standings", "redsox_wins_losses_current.json")
+OUT_KEY_JSON = "mkebrewers/data/standings/brewers_wins_losses_current.json"
+LOCAL_OUT_JSON = os.path.join("data", "standings", "brewers_wins_losses_current.json")
 
 
 def get_s3_client(profile_name: Optional[str]) -> boto3.client:

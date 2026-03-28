@@ -15,8 +15,8 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # Environment Variables & AWS/S3
 is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
-s3_bucket_name = "redsox-data"
-s3_key_transactions_archive = "redsox/data/roster/redsox_transactions_archive.json"
+s3_bucket_name = "mkebrewers-data"
+s3_key_transactions_archive = "mkebrewers/data/roster/brewers_transactions_archive.json"
 
 if is_github_actions:
     session = boto3.Session(region_name="us-west-1")
@@ -28,7 +28,7 @@ s3_resource = session.resource("s3")
 
 def get_posted_transactions():
     """Reads the list of already posted transaction IDs from S3."""
-    s3_key = "redsox/data/bluesky/posted_transactions.json"
+    s3_key = "mkebrewers/data/bluesky/posted_transactions.json"
     try:
         obj = s3_resource.Object(s3_bucket_name, s3_key)
         posted_data = json.loads(obj.get()['Body'].read().decode('utf-8'))
@@ -40,7 +40,7 @@ def get_posted_transactions():
 
 def add_posted_transaction(transaction_id):
     """Adds a transaction ID to the list of posted transactions in S3."""
-    s3_key = "redsox/data/bluesky/posted_transactions.json"
+    s3_key = "mkebrewers/data/bluesky/posted_transactions.json"
 
     # Get existing posted transactions
     posted_ids = get_posted_transactions()

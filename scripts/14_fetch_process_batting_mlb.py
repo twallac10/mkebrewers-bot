@@ -138,12 +138,12 @@ def save_to_s3(df, base_path, s3_bucket, formats):
 
 
 # Saving files locally and to S3
-file_path = os.path.join(data_dir, "redsox_player_batting_current_table")
+file_path = os.path.join(data_dir, "brewers_player_batting_current_table")
 formats = ["csv", "json", "parquet"]
 # save_dataframe(optimized_df, file_path, formats)
 save_to_s3(
     df,
-    "redsox/data/batting/redsox_player_batting_current_table",
-    "redsox-data",
+    "mkebrewers/data/batting/brewers_player_batting_current_table",
+    "mkebrewers-data",
     formats,
 )

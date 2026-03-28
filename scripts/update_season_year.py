@@ -156,14 +156,14 @@ Examples:
     print(f"\n{BOLD}2. Postseason Data Files{RESET}")
     dashboard_file = repo_root / "assets/js/dashboard.js"
     if update_file(dashboard_file, [
-        (f'/assets/data/postseason/redsox_postseason_stats_{old_year}.json',
-         f'/assets/data/postseason/redsox_postseason_stats_{new_year}.json'),
-        (f'redsox/data/postseason/redsox_postseason_stats_{old_year}.json',
-         f'redsox/data/postseason/redsox_postseason_stats_{new_year}.json'),
-        (f'/assets/data/postseason/redsox_postseason_series_{old_year}.json',
-         f'/assets/data/postseason/redsox_postseason_series_{new_year}.json'),
-        (f'redsox/data/postseason/redsox_postseason_series_{old_year}.json',
-         f'redsox/data/postseason/redsox_postseason_series_{new_year}.json'),
+        (f'/assets/data/postseason/brewers_postseason_stats_{old_year}.json',
+         f'/assets/data/postseason/brewers_postseason_stats_{new_year}.json'),
+        (f'mkebrewers/data/postseason/brewers_postseason_stats_{old_year}.json',
+         f'mkebrewers/data/postseason/brewers_postseason_stats_{new_year}.json'),
+        (f'/assets/data/postseason/brewers_postseason_series_{old_year}.json',
+         f'/assets/data/postseason/brewers_postseason_series_{new_year}.json'),
+        (f'mkebrewers/data/postseason/brewers_postseason_series_{old_year}.json',
+         f'mkebrewers/data/postseason/brewers_postseason_series_{new_year}.json'),
     ], args.dry_run):
         files_updated += 1
 
@@ -214,8 +214,7 @@ Examples:
     # 5. Update pitch data download links
     print(f"\n{BOLD}5. Pitch Data Download Links{RESET}")
     if update_file(index_file, [
-        (f'dodgers_pitches_{old_year}.json', f'redsox_pitches_{new_year}.json'),
-        (f'redsox_pitches_{old_year}.json', f'redsox_pitches_{new_year}.json'),
+        (f'brewers_pitches_{old_year}.json', f'brewers_pitches_{new_year}.json'),
     ], args.dry_run):
         files_updated += 1
 

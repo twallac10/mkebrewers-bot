@@ -23,7 +23,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 # --- Environment Variables & AWS/S3 ---
 is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
-s3_bucket_name = "redsox-data"
+s3_bucket_name = "mkebrewers-data"
 
 if is_github_actions:
     session = boto3.Session(
@@ -40,7 +40,7 @@ s3_resource = session.resource("s3")
 # --- Bluesky & S3 Functions ---
 def get_last_post_date(post_type):
     """Reads the last post date for a given type from S3."""
-    s3_key = f"redsox/data/bluesky/last_post_date_{post_type}.txt"
+    s3_key = f"mkebrewers/data/bluesky/last_post_date_{post_type}.txt"
     try:
         obj = s3_resource.Object(s3_bucket_name, s3_key)
         last_date_str = obj.get()['Body'].read().decode('utf-8').strip()
@@ -56,7 +56,7 @@ def get_last_post_date(post_type):
 
 def set_last_post_date(date_str, post_type):
     """Writes the last post date for a given type to S3."""
-    s3_key = f"redsox/data/bluesky/last_post_date_{post_type}.txt"
+    s3_key = f"mkebrewers/data/bluesky/last_post_date_{post_type}.txt"
     try:
         obj = s3_resource.Object(s3_bucket_name, s3_key)
         obj.put(Body=date_str)
@@ -113,7 +113,7 @@ def determine_summary_type():
         return None
 
 def main():
-    parser = argparse.ArgumentParser(description="Post daily Red Sox summary updates to Bluesky.")
+    parser = argparse.ArgumentParser(description="Post daily Brewers summary updates to Bluesky.")
     parser.add_argument("--type", type=str, required=True, choices=['auto', 'summary', 'batting', 'pitching'], help="The type of update to post. Use 'auto' to determine based on time.")
     args = parser.parse_args()
 
@@ -140,7 +140,7 @@ def main():
     logging.info(f"Proceeding to post summary of type: {summary_type}")
 
     # Fetch data
-    url = "https://redsox-data.s3.amazonaws.com/redsox/data/standings/season_summary_latest.json"
+    url = "https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/season_summary_latest.json"
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -196,7 +196,7 @@ def main():
             f"• OBP: {obp}\n"
             f"• Home Runs: {hr_val} ({hr_rank} in MLB)\n"
             f"• Stolen Bases: {sb_val} ({sb_rank} in MLB)\n\n"
-            f"More: https://redsox.bot"
+            f"More: https://mkebrewers.bot"
         )
 
     elif summary_type == 'pitching':
@@ -214,7 +214,7 @@ def main():
             f"• ERA: {era_val} ({era_rank} in MLB)\n"
             f"• Strikeouts: {so_val} ({so_rank} in MLB)\n"
             f"• Walks: {walks_val} ({walks_rank} in MLB)\n\n"
-            f"More: https://redsox.bot"
+            f"More: https://mkebrewers.bot"
         )
 
     if post_text:

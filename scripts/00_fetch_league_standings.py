@@ -33,7 +33,7 @@ is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
 aws_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
 aws_secret_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
 aws_region = "us-west-1"
-s3_bucket_name = "redsox-data"
+s3_bucket_name = "mkebrewers-data"
 
 # Conditional AWS session creation based on the environment
 if is_github_actions:
@@ -174,7 +174,7 @@ def main():
     local_filename = f"all_teams_standings_metrics_{CURRENT_YEAR}.json"
     local_file_path = os.path.join(local_dir, local_filename)
     jekyll_file_path = os.path.join(data_dir_for_jekyll, local_filename) # Path for Jekyll data file
-    s3_key = f"redsox/data/standings/{local_filename}" # Path on S3
+    s3_key = f"mkebrewers/data/standings/{local_filename}" # Path on S3
 
     try:
         os.makedirs(local_dir, exist_ok=True)

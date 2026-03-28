@@ -25,11 +25,11 @@ logging.basicConfig(
 from scripts import config
 
 DODGERS_TEAM_ID = config.TEAM_ID
-BUCKET = "redsox-data"
-ARCHIVE_KEY_JSON = "redsox/data/standings/redsox_boxscores.json"
-ARCHIVE_KEY_CSV = "redsox/data/standings/redsox_boxscores.csv"  # legacy fallback
-LOCAL_ARCHIVE_JSON = os.path.join("data", "standings", "redsox_boxscores.json")
-LOCAL_ARCHIVE_CSV = os.path.join("data", "standings", "redsox_boxscores.csv")
+BUCKET = "mkebrewers-data"
+ARCHIVE_KEY_JSON = "mkebrewers/data/standings/brewers_boxscores.json"
+ARCHIVE_KEY_CSV = "mkebrewers/data/standings/brewers_boxscores.csv"  # legacy fallback
+LOCAL_ARCHIVE_JSON = os.path.join("data", "standings", "brewers_boxscores.json")
+LOCAL_ARCHIVE_CSV = os.path.join("data", "standings", "brewers_boxscores.csv")
 
 
 def get_s3_client(profile_name: Optional[str] = None):
@@ -375,7 +375,7 @@ def save_archive(df: pd.DataFrame, profile_name: Optional[str] = None) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Update Red Sox boxscore archive from Baseball Savant")
+    parser = argparse.ArgumentParser(description="Update Brewers boxscore archive from Baseball Savant")
     parser.add_argument(
         "--profile",
         default=os.environ.get("AWS_PROFILE"),

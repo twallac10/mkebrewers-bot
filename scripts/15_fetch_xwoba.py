@@ -2,8 +2,8 @@
 # coding: utf-8
 
 """
-Boston Red Sox xwOBA Data
-This script downloads xwOBA data from Baseball Savant for all current Red Sox players.
+Milwaukee Brewers xwOBA Data
+This script downloads xwOBA data from Baseball Savant for all current Brewers players.
 """
 
 import os
@@ -29,13 +29,13 @@ CURRENT_YEAR = config.CURRENT_YEAR
 
 # Configuration
 output_dir = "data/batting"
-csv_file = f"{output_dir}/redsox_xwoba_current.csv"
-json_file = f"{output_dir}/redsox_xwoba_current.json"
-parquet_file = f"{output_dir}/redsox_xwoba_current.parquet"
-s3_bucket = "redsox-data"
-s3_key_csv = "redsox/data/batting/redsox_xwoba_current.csv"
-s3_key_json = "redsox/data/batting/redsox_xwoba_current.json"
-s3_key_parquet = "redsox/data/batting/redsox_xwoba_current.parquet"
+csv_file = f"{output_dir}/brewers_xwoba_current.csv"
+json_file = f"{output_dir}/brewers_xwoba_current.json"
+parquet_file = f"{output_dir}/brewers_xwoba_current.parquet"
+s3_bucket = "mkebrewers-data"
+s3_key_csv = "mkebrewers/data/batting/brewers_xwoba_current.csv"
+s3_key_json = "mkebrewers/data/batting/brewers_xwoba_current.json"
+s3_key_parquet = "mkebrewers/data/batting/brewers_xwoba_current.parquet"
 
 # Allowlist of batter names to include (expected input: "First Last")
 ALLOWED_BATTERS = [
@@ -154,7 +154,7 @@ ALLOWED_NORMALIZED = build_allowed_set(ALLOWED_BATTERS)
 
 def fetch_player_ids():
     """
-    Scrape the Red Sox roster page to get all player IDs.
+    Scrape the Brewers roster page to get all player IDs.
     Uses the current year dynamically to ensure we're getting the current roster.
     """
     logging.info(f"Fetching player IDs from roster page for {CURRENT_YEAR} season.")
@@ -428,7 +428,7 @@ def main():
             s3.Bucket(s3_bucket).upload_file(parquet_file, s3_key_parquet)
             s3.Bucket(s3_bucket).upload_file(
                 f'{output_dir}/league_avg_xwoba.json',
-                'redsox/data/batting/league_avg_xwoba.json'
+                'mkebrewers/data/batting/league_avg_xwoba.json'
             )
             logging.info("Files successfully uploaded to S3.")
         else:

@@ -121,9 +121,9 @@ def visualize_called_strikes(file_path, output_dir):
     print(f"Plot saved to {output_path}")
 
 if __name__ == "__main__":
-    # Example usage with Red Sox data
+    # Example usage with Brewers data
     import datetime
     current_year = datetime.datetime.now().year
-    file_path = f'data/pitches/redsox_pitches_{current_year}.json'
+    file_path = f'data/pitches/brewers_pitches_{current_year}.json'
     output_dir = 'images'
     visualize_called_strikes(file_path, output_dir) 

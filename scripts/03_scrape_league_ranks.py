@@ -2,7 +2,7 @@
 # coding: utf-8
 
 """
-Fetches and parses the Red Sox league ranks from MLB.com.
+Fetches and parses the Brewers league ranks from MLB.com.
 Saves the data locally and uploads to S3.
 """
 
@@ -37,7 +37,7 @@ is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
 aws_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
 aws_secret_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
 aws_region = "us-west-1"
-s3_bucket_name = "redsox-data" # Consistent with other scripts
+s3_bucket_name = "mkebrewers-data" # Consistent with other scripts
 
 # Conditional AWS session creation based on the environment
 s3_resource = None
@@ -107,7 +107,7 @@ def get_team_rank_for_stat(stat_name: str, stat_group: str, team_name_query: str
 
 def main():
     """
-    Main function to fetch Red Sox league ranks for specified stats.
+    Main function to fetch Brewers league ranks for specified stats.
     """
     team_ranks = {}
     team_to_find = config.TEAM_FULL_NAME
@@ -128,15 +128,15 @@ def main():
         else:
             team_ranks[f'pitching_{stat}'] = 'Not found'
 
-    logging.info("Red Sox League Ranks:")
+    logging.info("Brewers League Ranks:")
     for stat, rank in team_ranks.items():
         logging.info(f"  {stat.replace('_', ' ').title()}: {rank}")
 
     # Define file paths
     local_dir = os.path.join("data", "standings")
-    local_filename = f"redsox_league_ranks_{CURRENT_YEAR}.json"
+    local_filename = f"brewers_league_ranks_{CURRENT_YEAR}.json"
     local_file_path = os.path.join(local_dir, local_filename)
-    s3_key = f"redsox/standings/{local_filename}" # S3 key structure
+    s3_key = f"mkebrewers/standings/{local_filename}" # S3 key structure
 
     # Ensure local directory exists
     try:

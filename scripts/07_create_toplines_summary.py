@@ -3,7 +3,7 @@
 
 
 """
-Boston Red Sox toplines
+Milwaukee Brewers toplines
 This notebook extracts key statistics from the project's processed tables for display in a dashboard.
 """
 
@@ -63,7 +63,7 @@ def read_parquet_s3(url, sort_by=None):
         df = pd.read_parquet(url)
     except Exception as e:
         # Try local file as fallback
-        local_path = url.replace('https://redsox-data.s3.amazonaws.com/', '../')
+        local_path = url.replace('https://mkebrewers-data.s3.amazonaws.com/', '../')
         logging.info(f"Could not read from S3, trying local path: {local_path}")
         df = pd.read_parquet(local_path)
     if sort_by and sort_by in df.columns:
@@ -133,12 +133,12 @@ def compute_games_up_back_from_live(live_df: pd.DataFrame, team_name: str) -> Un
         return None
 
 # URLs for data
-standings_live_url = f"https://redsox-data.s3.amazonaws.com/redsox/data/standings/all_teams_standings_metrics_{config.CURRENT_YEAR}.json"
-standings_url = f"https://redsox-data.s3.amazonaws.com/redsox/data/standings/redsox_standings_1901_present.parquet"
-batting_url = f"https://redsox-data.s3.amazonaws.com/redsox/data/batting/redsox_team_batting_1958_present.parquet"
-pitching_url = 'https://redsox-data.s3.amazonaws.com/redsox/data/pitching/redsox_pitching_totals_current.parquet'
-# pitching_ranks_url = 'https://redsox-data/dodgers/data/pitching/dodgers_pitching_ranks_current.parquet' # Removed
-# batting_ranks_url = 'https://redsox-data/dodgers/data/batting/dodgers_team_batting_ranks_1958_present.parquet' # Removed
+standings_live_url = f"https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/all_teams_standings_metrics_{config.CURRENT_YEAR}.json"
+standings_url = f"https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_standings_1970_present.parquet"
+batting_url = f"https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_team_batting_1958_present.parquet"
+pitching_url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_pitching_totals_current.parquet'
+# pitching_ranks_url = 'https://mkebrewers-data/mkebrewers/data/pitching/brewers_pitching_ranks_current.parquet' # Removed
+# batting_ranks_url = 'https://mkebrewers-data/mkebrewers/data/batting/brewers_team_batting_ranks_1958_present.parquet' # Removed
 
 mlb_teams = {
     "ARI": "Arizona Diamondbacks",
@@ -180,7 +180,7 @@ last_year = str(config.CURRENT_YEAR - 1)  # Previous year
 
 # Load league ranks data from JSON
 league_ranks_data = {}
-ranks_file_path = os.path.join(base_dir, 'data', 'standings', f'redsox_league_ranks_{year}.json')
+ranks_file_path = os.path.join(base_dir, 'data', 'standings', f'brewers_league_ranks_{year}.json')
 try:
     with open(ranks_file_path, 'r') as f:
         league_ranks_data = json.load(f)
@@ -558,11 +558,11 @@ def generate_postseason_summary():
     """Generate a summary of the current postseason status"""
     try:
         # Try to load postseason series data
-        postseason_file = "data/postseason/redsox_postseason_series_2025.json"
+        postseason_file = "data/postseason/brewers_postseason_series_2025.json"
         if os.path.exists(postseason_file):
             with open(postseason_file, 'r') as f:
                 postseason_data = json.load(f)
-            
+
             # Find current series status
             current_series = None
             completed_series = []
@@ -739,7 +739,7 @@ def generate_summary(
         
         try:
             # Load postseason series data to check for transitions
-            postseason_file = "data/postseason/redsox_postseason_series_2025.json"
+            postseason_file = "data/postseason/brewers_postseason_series_2025.json"
             if os.path.exists(postseason_file):
                 with open(postseason_file, 'r') as f:
                     postseason_data = json.load(f)
@@ -812,7 +812,7 @@ def generate_summary(
                 # Extract current series info to compare
                 current_series_info = ""
                 try:
-                    postseason_file = "data/postseason/redsox_postseason_series_2025.json"
+                    postseason_file = "data/postseason/brewers_postseason_series_2025.json"
                     if os.path.exists(postseason_file):
                         with open(postseason_file, 'r') as f:
                             postseason_data = json.load(f)
@@ -976,6 +976,6 @@ def save_to_s3(df, base_path, s3_bucket, formats=["csv", "json"]):
         logging.info(f"Uploaded {fmt} to {s3_bucket}/{file_path}")
 
 try:
-    save_to_s3(summary_df, "redsox/data/standings/season_summary_latest", "redsox-data")
+    save_to_s3(summary_df, "mkebrewers/data/standings/season_summary_latest", "mkebrewers-data")
 except Exception as e:
     logging.warning(f"Could not upload to S3: {e}. Local file saved successfully.")

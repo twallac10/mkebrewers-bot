@@ -7,8 +7,8 @@ from botocore.exceptions import NoCredentialsError
 
 # === Configuration ===
 LOCAL_JSON_PATH = "data/summary/umpire_summary.json"
-S3_BUCKET = "redsox-data"
-S3_KEY = "redsox/data/summary/umpire_summary.json"
+S3_BUCKET = "mkebrewers-data"
+S3_KEY = "mkebrewers/data/summary/umpire_summary.json"
 
 # === AWS Session Setup ===
 is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
@@ -244,4 +244,4 @@ def analyze_pitches(file_path, thrown_by_file_path=None):
 
 if __name__ == "__main__":
     year = pd.to_datetime("now").strftime("%Y")
-    analyze_pitches(f'data/pitches/redsox_pitches_{year}.json', thrown_by_file_path=f'data/pitches/redsox_pitches_thrown_{year}.json') 
+    analyze_pitches(f'data/pitches/brewers_pitches_{year}.json', thrown_by_file_path=f'data/pitches/brewers_pitches_thrown_{year}.json')

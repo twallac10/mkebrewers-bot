@@ -2,8 +2,8 @@
 # coding: utf-8
 
 """
-Boston Red Sox season outcomes
-> This notebook downloads the team's past season outcomes table from [Baseball Reference](https://www.baseball-reference.com/teams/LAD/) and outputs the data to CSV, JSON and Parquet formats for later analysis and visualization.
+Milwaukee Brewers season outcomes
+> This notebook downloads the team's past season outcomes table from [Baseball Reference](https://www.baseball-reference.com/teams/MIL/) and outputs the data to CSV, JSON and Parquet formats for later analysis and visualization.
 """
 
 import os
@@ -156,10 +156,10 @@ def save_to_s3(df, base_path, s3_bucket, formats):
             logging.error(f"Failed to upload {fmt} to S3: {e}")
 
 # Saving files locally and to S3
-file_path = os.path.join(data_dir, 'redsox_season_outcomes')
+file_path = os.path.join(data_dir, 'brewers_season_outcomes')
 formats = ["csv", "json", "parquet"]
 save_dataframe(history_df, file_path, formats)
-save_to_s3(history_df, "redsox/data/standings/redsox_season_outcomes", "redsox-data", formats)
+save_to_s3(history_df, "mkebrewers/data/standings/brewers_season_outcomes", "mkebrewers-data", formats)
 
-file_path = os.path.join(data_dir, 'dodgers_season_outcomes')
+file_path = os.path.join(data_dir, 'brewers_season_outcomes')
 formats = ["csv", "json", "parquet"]

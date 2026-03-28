@@ -2,8 +2,8 @@
 # coding: utf-8
 
 """
-Boston Red Sox pitching
-This script downloads the team's current pitching table from [Baseball Reference](https://www.baseball-reference.com/teams/BOS/{YEAR}-pitching.shtml#all_team_pitching) and outputs the data to CSV, JSON and Parquet formats for later analysis and visualization.
+Milwaukee Brewers pitching
+This script downloads the team's current pitching table from [Baseball Reference](https://www.baseball-reference.com/teams/MIL/{YEAR}-pitching.shtml#all_team_pitching) and outputs the data to CSV, JSON and Parquet formats for later analysis and visualization.
 """
 
 # Import Python tools
@@ -136,10 +136,10 @@ def save_dataframe(df, path_without_extension, formats):
 
 # Save local files
 formats = ["csv", "json", "parquet"]
-save_dataframe(totals, f"data/pitching/redsox_pitching_totals_current", formats)
-save_dataframe(ranks, f"data/pitching/redsox_pitching_ranks_current", formats)
-save_dataframe(top_starters, f"data/pitching/redsox_pitching_top_kbb_starters", formats)
-save_dataframe(top_relievers, f"data/pitching/redsox_pitching_top_kbb_relievers", formats)
+save_dataframe(totals, f"data/pitching/brewers_pitching_totals_current", formats)
+save_dataframe(ranks, f"data/pitching/brewers_pitching_ranks_current", formats)
+save_dataframe(top_starters, f"data/pitching/brewers_pitching_top_kbb_starters", formats)
+save_dataframe(top_relievers, f"data/pitching/brewers_pitching_top_kbb_relievers", formats)
 
 
 def save_to_s3(df, base_path, s3_bucket, formats=["csv", "json", "parquet"], profile_name=None):
@@ -185,21 +185,21 @@ def save_to_s3(df, base_path, s3_bucket, formats=["csv", "json", "parquet"], pro
 # Save to S3
 save_to_s3(
     totals,
-    "redsox/data/pitching/redsox_pitching_totals_current",
-    "redsox-data",
+    "mkebrewers/data/pitching/brewers_pitching_totals_current",
+    "mkebrewers-data",
 )
 save_to_s3(
     ranks,
-    "redsox/data/pitching/redsox_pitching_ranks_current",
-    "redsox-data",
+    "mkebrewers/data/pitching/brewers_pitching_ranks_current",
+    "mkebrewers-data",
 )
 save_to_s3(
     top_starters,
-    "redsox/data/pitching/redsox_pitching_top_kbb_starters",
-    "redsox-data",
+    "mkebrewers/data/pitching/brewers_pitching_top_kbb_starters",
+    "mkebrewers-data",
 )
 save_to_s3(
     top_relievers,
-    "redsox/data/pitching/redsox_pitching_top_kbb_relievers",
-    "redsox-data",
+    "mkebrewers/data/pitching/brewers_pitching_top_kbb_relievers",
+    "mkebrewers-data",
 )
