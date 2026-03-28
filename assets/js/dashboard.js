@@ -18,7 +18,7 @@ function getEffectiveCurrentYear(data) {
 async function fetchData() {
   try {
     const response = await d3.json(
-      '/data/standings/redsox_standings_1901_present_optimized.json'
+      '/data/standings/brewers_standings_1970_present_optimized.json'
     );
     // Group data by year, converting the year to a string for consistency
     const groupedByYear = d3.group(response, (d) => d.year.toString());
@@ -227,7 +227,7 @@ fetchData();
 
 async function fetchGameData() {
   try {
-    const response = await d3.json('https://redsox-data.s3.amazonaws.com/redsox/data/standings/redsox_wins_losses_current.json');
+    const response = await d3.json('https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_wins_losses_current.json');
     response.reverse(); // Reverse the array to start from the beginning of the season
     renderRunDiffChart(response);
   } catch (error) {
@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   async function fetchCumulativeWinsData() {
       try {
-          const response = await d3.json('https://redsox-data.s3.amazonaws.com/redsox/data/standings/redsox_standings_1901_present.json');
+          const response = await d3.json('https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_standings_1970_present.json');
           // Group data by year
           groupedByYear = d3.group(response, (d) => d.year);
           populateYearSelect(Array.from(groupedByYear.keys()));
@@ -580,7 +580,7 @@ document.addEventListener('DOMContentLoaded', function() {
       async function fetchData() {
         try {
           const response = await d3.json(
-            'https://redsox-data.s3.amazonaws.com/redsox/data/batting/archive/redsox_historic_batting_gamelogs.json'
+            'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/archive/brewers_historic_batting_gamelogs.json'
           );
           const groupedData = d3.group(response, (d) => d.year.toString());
           const maxVal = d3.max(response, d => Math.max(d['2b_cum'], d['hr_cum']));
@@ -759,7 +759,7 @@ document.addEventListener('DOMContentLoaded', function() {
   async function fetchData() {
     try {
       const response = await d3.json(
-        'https://redsox-data.s3.amazonaws.com/redsox/data/pitching/redsox_historic_pitching_gamelogs_1901-present.json'
+        'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_historic_pitching_gamelogs_1901-present.json'
       );
       const groupedData = d3.group(response, (d) => d.year.toString());
       const maxVal = d3.max(response, d => Math.max(d['so_cum'], d['h_cum']));
@@ -922,7 +922,7 @@ document.addEventListener('DOMContentLoaded', function() {
   async function fetchCumulativeERAData() {
     try {
       const response = await d3.json(
-        'https://redsox-data.s3.amazonaws.com/redsox/data/pitching/redsox_historic_pitching_gamelogs_1901-present.json'
+        'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_historic_pitching_gamelogs_1901-present.json'
       );
       // Group data by year
       const groupedByYear = d3.group(response, (d) => d.year.toString());
@@ -1109,7 +1109,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const fetchDataAndRenderTables = async () => {
     try {
-      const response = await fetch('https://redsox-data.s3.amazonaws.com/redsox/data/standings/redsox_schedule.json');
+      const response = await fetch('https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_schedule.json');
       const games = await response.json();
 
       const lastGames = games.filter(game => game.placement === 'last');
@@ -1128,7 +1128,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const url = 'https://redsox-data.s3.amazonaws.com/redsox/data/batting/redsox_player_batting_current_table.json';
+  const url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_current_table.json';
 
   const fetchDataAndRenderBattingTables = async () => {
       try {
@@ -1241,7 +1241,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // document.addEventListener('DOMContentLoaded', function () {
-//     const url = 'https://redsox-data.s3.amazonaws.com/redsox/data/batting/redsox_player_batting_current_table.json';
+//     const url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_current_table.json';
 
 //     const fetchDataAndRenderBattingTables = async () => {
 //         try {
@@ -1367,7 +1367,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const fetchDataAndRenderTables = async () => {
     try {
-      const response = await fetch('https://redsox-data.s3.amazonaws.com/redsox/data/standings/redsox_schedule.json');
+      const response = await fetch('https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_schedule.json');
       const games = await response.json();
 
       const lastGames = games.filter(game => game.placement === 'last');
@@ -1386,7 +1386,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const url = 'https://redsox-data.s3.amazonaws.com/redsox/data/batting/redsox_player_batting_current_table.json';
+  const url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_current_table.json';
 
   const fetchDataAndRenderBattingTables = async () => {
       try {
@@ -1499,7 +1499,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // document.addEventListener('DOMContentLoaded', function () {
-//     const url = 'https://redsox-data.s3.amazonaws.com/redsox/data/batting/redsox_player_batting_current_table.json';
+//     const url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_current_table.json';
 
 //     const fetchDataAndRenderBattingTables = async () => {
 //         try {
@@ -1625,7 +1625,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const fetchDataAndRenderTables = async () => {
     try {
-      const response = await fetch('https://redsox-data.s3.amazonaws.com/redsox/data/standings/redsox_schedule.json');
+      const response = await fetch('https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_schedule.json');
       const games = await response.json();
 
       const lastGames = games.filter(game => game.placement === 'last');
@@ -1644,7 +1644,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const url = 'https://redsox-data.s3.amazonaws.com/redsox/data/batting/redsox_player_batting_current_table.json';
+  const url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_current_table.json';
 
   const fetchDataAndRenderBattingTables = async () => {
       try {
@@ -1757,7 +1757,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // document.addEventListener('DOMContentLoaded', function () {
-//     const url = 'https://redsox-data.s3.amazonaws.com/redsox/data/batting/redsox_player_batting_current_table.json';
+//     const url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_current_table.json';
 
 //     const fetchDataAndRenderBattingTables = async () => {
 //         try {
@@ -1883,7 +1883,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const fetchDataAndRenderTables = async () => {
     try {
-      const response = await fetch('https://redsox-data.s3.amazonaws.com/redsox/data/standings/redsox_schedule.json');
+      const response = await fetch('https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_schedule.json');
       const games = await response.json();
 
       const lastGames = games.filter(game => game.placement === 'last');
@@ -1902,7 +1902,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const url = 'https://redsox-data.s3.amazonaws.com/redsox/data/batting/redsox_player_batting_current_table.json';
+  const url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_current_table.json';
 
   const fetchDataAndRenderBattingTables = async () => {
       try {
@@ -2015,7 +2015,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // document.addEventListener('DOMContentLoaded', function () {
-//     const url = 'https://redsox-data.s3.amazonaws.com/redsox/data/batting/redsox_player_batting_current_table.json';
+//     const url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_current_table.json';
 
 //     const fetchDataAndRenderBattingTables = async () => {
 //         try {
@@ -2141,7 +2141,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const fetchDataAndRenderTables = async () => {
     try {
-      const response = await fetch('https://redsox-data.s3.amazonaws.com/redsox/data/standings/redsox_schedule.json');
+      const response = await fetch('https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_schedule.json');
       const games = await response.json();
 
       const lastGames = games.filter(game => game.placement === 'last');
@@ -2160,7 +2160,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const url = 'https://redsox-data.s3.amazonaws.com/redsox/data/batting/redsox_player_batting_current_table.json';
+  const url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_current_table.json';
 
   const fetchDataAndRenderBattingTables = async () => {
       try {
@@ -2273,7 +2273,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // document.addEventListener('DOMContentLoaded', function () {
-//     const url = 'https://redsox-data.s3.amazonaws.com/redsox/data/batting/redsox_player_batting_current_table.json';
+//     const url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_current_table.json';
 
 //     const fetchDataAndRenderBattingTables = async () => {
 //         try {
@@ -2372,7 +2372,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   async function fetchTableData() {
     try {
-      const response = await d3.json('https://redsox-data.s3.amazonaws.com/redsox/data/standings/mlb_team_attendance.json');
+      const response = await d3.json('https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/mlb_team_attendance.json');
       renderTables(response);
       renderMaxAttendanceInfo(response);
     } catch (error) {
@@ -2427,12 +2427,12 @@ document.addEventListener('DOMContentLoaded', function () {
       .style('width', '100%')
       .each(function(d) {
         const barWidth = (d.attend_game / maxAttendance) * 100;
-        const isRedSox = d.team === 'Boston Red Sox';
+        const isBrewers = d.team === 'Milwaukee Brewers';
         d3.select(this).append('div')
-          .attr('class', `attendance-bar-bg ${isRedSox ? 'attendance-bar-redsox' : ''}`)
+          .attr('class', `attendance-bar-bg ${isBrewers ? 'attendance-bar-brewers' : ''}`)
           .style('width', `${barWidth}%`);
         d3.select(this).append('div')
-          .attr('class', `attendance-bar-text ${isRedSox ? 'attendance-bar-redsox' : ''}`)
+          .attr('class', `attendance-bar-text ${isBrewers ? 'attendance-bar-brewers' : ''}`)
           .text(() => {
             // Check if attend_game is a valid number; if not, use 0.
             return (d.attend_game != null && !isNaN(d.attend_game))
@@ -2461,7 +2461,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // xwOBA charts
 async function fetchAndRenderXwoba() {
   try {
-    const data = await d3.json('https://redsox-data.s3.amazonaws.com/redsox/data/batting/redsox_xwoba_current.json');
+    const data = await d3.json('https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_xwoba_current.json');
     
     const playerGroups = d3.group(data, d => d.player_name);
     const players = Array.from(playerGroups.keys()).sort();
@@ -2642,8 +2642,8 @@ document.addEventListener('DOMContentLoaded', fetchAndRenderXwoba);
 
 document.addEventListener('DOMContentLoaded', function () {
   async function fetchShoheiData() {
-    const hrUrl = 'https://redsox-data.s3.amazonaws.com/redsox/data/batting/shohei_home_runs_cumulative_timeseries_combined.json';
-    const sbUrl = 'https://redsox-data.s3.amazonaws.com/redsox/data/batting/shohei_stolen_bases_cumulative_timeseries_combined.json';
+    const hrUrl = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/shohei_home_runs_cumulative_timeseries_combined.json';
+    const sbUrl = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/shohei_stolen_bases_cumulative_timeseries_combined.json';
     const [hrData, sbData] = await Promise.all([d3.json(hrUrl), d3.json(sbUrl)]);
     return { hrData, sbData };
   }
@@ -3058,7 +3058,7 @@ document.addEventListener('DOMContentLoaded', function () {
 async function fetchWinsProjectionDataWithCI() {
   try {
     // Fetch data from the new single endpoint that includes timeseries data
-    const response = await d3.json('https://redsox-data.s3.amazonaws.com/redsox/data/standings/redsox_wins_projection_timeseries.json');
+    const response = await d3.json('https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_wins_projection_timeseries.json');
 
     if (!response || !response.timeseries) {
         console.error('Invalid data structure received for wins projection CI chart.');
@@ -3329,7 +3329,7 @@ if (document.readyState === 'loading') {
 (function () {
   async function fetchUmpireData() {
     try {
-      const response = await d3.json('https://redsox-data.s3.amazonaws.com/redsox/data/summary/umpire_summary.json');
+      const response = await d3.json('https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/summary/umpire_summary.json');
       renderUmpireScorecard(response);
       } catch (error) {
       console.error('Failed to fetch umpire scorecard data:', error);
@@ -3485,7 +3485,7 @@ if (document.readyState === 'loading') {
 (function () {
   async function fetchUmpireDataPitching() {
     try {
-      const response = await d3.json('https://redsox-data.s3.amazonaws.com/redsox/data/summary/umpire_summary.json');
+      const response = await d3.json('https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/summary/umpire_summary.json');
       renderUmpireScorecardPitching(response);
     } catch (error) {
       console.error('Failed to fetch umpire scorecard pitching data:', error);
@@ -3609,8 +3609,8 @@ document.addEventListener('DOMContentLoaded', function () {
   async function fetchOhtaniPitchData() {
     try {
       const cacheBuster = `?v=${Date.now()}`;
-      const mixResponse = await d3.json(`https://redsox-data.s3.amazonaws.com/redsox/data/pitching/shohei_ohtani_pitch_mix.json${cacheBuster}`);
-      const pitchesResponse = await d3.json(`https://redsox-data.s3.amazonaws.com/redsox/data/pitching/shohei_ohtani_pitches.json${cacheBuster}`);
+      const mixResponse = await d3.json(`https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/shohei_ohtani_pitch_mix.json${cacheBuster}`);
+      const pitchesResponse = await d3.json(`https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/shohei_ohtani_pitches.json${cacheBuster}`);
       
       // Calculate total pitches and games
       const totalPitches = pitchesResponse.length;
@@ -3786,7 +3786,7 @@ async function fetchPlayoffBracketData() {
   for (let yearOffset = 0; yearOffset <= 1; yearOffset++) {
     try {
       const yearToFetch = currentYear - yearOffset;
-      const response = await fetch(`https://redsox-data.s3.amazonaws.com/redsox/data/standings/all_teams_standings_metrics_${yearToFetch}.json`);
+      const response = await fetch(`https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/all_teams_standings_metrics_${yearToFetch}.json`);
 
       if (!response.ok) {
         if (yearOffset === 0) {
@@ -3869,7 +3869,7 @@ function calculatePlayoffSeeds(standings) {
 
 function getTeamAbbreviation(teamName) {
   const abbrevMap = {
-    'Boston Red Sox': 'LAD',
+    'Los Angeles Dodgers': 'LAD',
     'New York Yankees': 'NYY',
     'Los Angeles Angels': 'LAA',
     'Houston Astros': 'HOU',
@@ -3906,8 +3906,8 @@ function getTeamAbbreviation(teamName) {
 function getTeamMascot(teamName) {
   // Extract just the mascot/nickname from full team name
   const mascotMap = {
-    'Boston Red Sox': 'Red Sox',
-    'New York Yankees': 'Yankees', 
+    'Los Angeles Dodgers': 'Dodgers',
+    'New York Yankees': 'Yankees',
     'Los Angeles Angels': 'Angels',
     'Houston Astros': 'Astros',
     'Atlanta Braves': 'Braves',
@@ -3922,7 +3922,6 @@ function getTeamMascot(teamName) {
     'Colorado Rockies': 'Rockies',
     'Toronto Blue Jays': 'Blue Jays',
     'Baltimore Orioles': 'Orioles',
-    'Boston Red Sox': 'Red Sox',
     'Tampa Bay Rays': 'Rays',
     'Cleveland Guardians': 'Guardians',
     'Detroit Tigers': 'Tigers',
@@ -3991,9 +3990,9 @@ function populateTeamSlot(element, team) {
   };
   logoImg.src = logoUrl;
   
-  // Special styling for Red Sox
-  if (teamAbbr === 'BOS') {
-    element.classList.add('redsox-team');
+  // Special styling for Brewers
+  if (teamAbbr === 'MIL') {
+    element.classList.add('brewers-team');
   }
 }
 
@@ -4088,8 +4087,8 @@ document.addEventListener('DOMContentLoaded', function() {
 async function fetchPostseasonStats() {
   try {
     // Try local path first (for development), then fallback to S3
-    const localUrl = '/assets/data/postseason/redsox_postseason_stats_2025.json';
-    const s3Url = 'https://redsox-data.s3.amazonaws.com/redsox/data/postseason/redsox_postseason_stats_2025.json';
+    const localUrl = '/assets/data/postseason/brewers_postseason_stats_2025.json';
+    const s3Url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/postseason/brewers_postseason_stats_2025.json';
     
     let response = await fetch(localUrl);
     if (!response.ok) {
@@ -4200,8 +4199,8 @@ async function initPostseasonStats() {
 async function fetchPlayoffJourney() {
   try {
     // Try local path first (for development), then fallback to S3
-    const localUrl = '/assets/data/postseason/redsox_postseason_series_2025.json';
-    const s3Url = 'https://redsox-data.s3.amazonaws.com/redsox/data/postseason/redsox_postseason_series_2025.json';
+    const localUrl = '/assets/data/postseason/brewers_postseason_series_2025.json';
+    const s3Url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/postseason/brewers_postseason_series_2025.json';
     
     let response = await fetch(localUrl);
     if (!response.ok) {
@@ -4280,8 +4279,8 @@ async function initPlayoffJourney() {
 
 // Pitching K/BB tables
 document.addEventListener('DOMContentLoaded', function () {
-  const startersUrl = 'https://redsox-data.s3.amazonaws.com/redsox/data/pitching/redsox_pitching_top_kbb_starters.json';
-  const relieversUrl = 'https://redsox-data.s3.amazonaws.com/redsox/data/pitching/redsox_pitching_top_kbb_relievers.json';
+  const startersUrl = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_pitching_top_kbb_starters.json';
+  const relieversUrl = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_pitching_top_kbb_relievers.json';
 
   const fetchDataAndRenderPitchingTable = async () => {
       try {
