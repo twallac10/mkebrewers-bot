@@ -17,17 +17,18 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      packages: read
+    container:
+      image: ghcr.io/twallac10/mkebrewers-bot:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
     defaults:
       run:
         working-directory: ${{github.workspace}}  # This sets the working directory for all run commands
-    
+
     steps:
     - uses: actions/checkout@v4
-    
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.9'
 
     - name: Set up AWS Credentials
       uses: aws-actions/configure-aws-credentials@v4
@@ -36,33 +37,12 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-2
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install pytz geopandas tqdm pyarrow fastparquet lxml beautifulsoup4 altair_saver altair-stiles vl-convert-python
-    
     - name: Create necessary directories
       run: |
         mkdir -p data/pitching
         mkdir -p data/batting/archive
         mkdir -p data/pitches
         mkdir -p data/postseason
-
-    - name: Install Fonts
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y fonts-roboto
-
-    - name: Set up Ruby for Jekyll
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.0' # Match the version to your Gemfile or latest stable release
-
-    - name: Install Bundler and Jekyll dependencies
-      run: |
-        gem install bundler
-        bundle install
 
     - name: Run scripts
       env:
@@ -109,21 +89,21 @@ jobs:
         publish_dir: ./_site  # The output folder of Jekyll build
         publish_branch: gh-pages
         force_orphan: false  # Preserve git history to avoid conflicts
-        allow_empty_commit: false  
+        allow_empty_commit: false
 
     - name: Check for changes
       id: changes
       run: |
         git add .
         git diff --staged --quiet || echo "changes=true" >> $GITHUB_OUTPUT
-  
+
     - name: Commit updated files
       if: steps.changes.outputs.changes == 'true'
       run: |
         git config --global user.name 'Terry Wallace'
         git config --global user.email 'twallac10@example.com'
         git commit -m "Automated update of Brewers data, visuals"
-  
+
     - name: Push changes
       if: steps.changes.outputs.changes == 'true'
       run: git pull --rebase && git push

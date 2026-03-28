@@ -15,14 +15,16 @@ jobs:
   post_summary:
     name: Post Daily Summary Updates to Bluesky
     runs-on: ubuntu-latest
+    permissions:
+      packages: read
+    container:
+      image: ghcr.io/twallac10/mkebrewers-bot:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.9'
 
       - name: Set up AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -30,9 +32,6 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
 
       - name: Run Post Summary Script
         env:
