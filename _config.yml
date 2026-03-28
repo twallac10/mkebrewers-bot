@@ -18,25 +18,25 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Red Sox Data Bot
-name: Red Sox Data Bot
-owner: Red Sox Bot
-owner_url: https://github.com/sogrady
-headline: How are the Red Sox doing?
-email: sogrady@example.com
+title: Brewers Data Bot
+name: Brewers Data Bot
+owner: Brewers Bot
+owner_url: https://github.com/twallac10
+headline: How are the Brewers doing?
+email: twallac10@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  An auto-updating baseball statistics dashboard that answers the question: How are the Red Sox doing?
+  An auto-updating baseball statistics dashboard that answers the question: How are the Brewers doing?
 baseurl: ""
-url: "https://redsox.bot"
+url: "https://mkebrewers.bot"
 
 # SEO and social settings
 logo: ""
 og_image: ""
-twitter_username: sogrady
-github_username:  sogrady
+twitter_username: twallac10
+github_username: twallac10
 
 # Site Author
-author: sogrady
+author: twallac10
 
 # Build settings
 theme: minimal-mistakes-jekyll
@@ -61,11 +61,11 @@ destination: ./_site
 
 # Social Sharing
 twitter:
-  username: sogrady
+  username: twallac10
 
 # Production settings
 # Masthead title and subtitle
-masthead_title: "Red Sox Data Bot"
+masthead_title: "Brewers Data Bot"
 
 # Defaults
 defaults:
@@ -93,12 +93,9 @@ after_footer_scripts:
 # Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/stiles"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/stiles"
+      url: "https://github.com/twallac10/mkebrewers-bot"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:mattstiles@gmail.com"
+      url: "mailto:twallac10@example.com"

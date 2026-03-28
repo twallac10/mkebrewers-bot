@@ -1,13 +1,13 @@
-# Configuration for Red Sox Dashboard Scripts
+# Configuration for Brewers Dashboard Scripts
 
-TEAM_ID = 111
-TEAM_NAME = "Red Sox"
-TEAM_CITY = "Boston"
-TEAM_ABBR = "BOS"
-TEAM_NAME_SIMPLE = "Red Sox"
-TEAM_ID_BBREF = "BOS"
-TEAM_TIMEZONE = "America/New_York"
-TEAM_FULL_NAME = "Boston Red Sox"
+TEAM_ID = 158
+TEAM_NAME = "Brewers"
+TEAM_CITY = "Milwaukee"
+TEAM_ABBR = "MIL"
+TEAM_NAME_SIMPLE = "Brewers"
+TEAM_ID_BBREF = "MIL"
+TEAM_TIMEZONE = "America/Chicago"
+TEAM_FULL_NAME = "Milwaukee Brewers"
 
 # Season/Year Configuration
 # Set to current year for in-season mode, or last completed year for off-season
