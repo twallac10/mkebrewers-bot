@@ -1,0 +1,51 @@
+name: Post News Roundup to Bluesky
+
+on:
+  schedule:
+    # Runs every 3 hours during daytime hours CT (converted to UTC)
+    - cron: '0 15,18,21,0 * * *'  # 9 AM, 12 PM, 3 PM, 6 PM CT (during season)
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force posting regardless of time constraints'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+jobs:
+  post_news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Set up AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run news fetch and post to Bluesky
+        env:
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            python scripts/24_fetch_news.py --post --force
+          else
+            python scripts/24_fetch_news.py --post
+          fi

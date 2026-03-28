@@ -1,0 +1,71 @@
+name: fetch_historical
+
+on:
+  schedule:
+    - cron: '0 6 * * 0'  # Every Sunday at 6am UTC
+  workflow_dispatch:      # Also allow manual trigger
+
+jobs:
+  fetch_historical:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 90
+    defaults:
+      run:
+        working-directory: ${{github.workspace}}
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
+
+    - name: Set up AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-2
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytz pyarrow fastparquet lxml beautifulsoup4
+
+    - name: Create necessary directories
+      run: |
+        mkdir -p data/pitching
+        mkdir -p data/batting/archive
+
+    - name: Fetch historical pitching gamelogs (1901-present)
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/12_fetch_process_historic_pitching_gamelogs.py
+
+    - name: Fetch historical batting gamelogs (1901-present)
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/10_fetch_process_historic_batting_gamelogs.py
+
+    - name: Check for changes
+      id: changes
+      run: |
+        git add .
+        git diff --staged --quiet || echo "changes=true" >> $GITHUB_OUTPUT
+
+    - name: Commit updated files
+      if: steps.changes.outputs.changes == 'true'
+      run: |
+        git config --global user.name 'Terry Wallace'
+        git config --global user.email 'twallac10@example.com'
+        git commit -m "Automated update of Brewers historical gamelog data"
+
+    - name: Push changes
+      if: steps.changes.outputs.changes == 'true'
+      run: git pull --rebase && git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

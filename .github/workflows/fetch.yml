@@ -1,0 +1,131 @@
+name: fetch
+
+on:
+  schedule:
+    - cron: '0 8,12,15,23 * 3-10 *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: fetch-data
+  cancel-in-progress: true
+
+jobs:
+  update_and_deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    defaults:
+      run:
+        working-directory: ${{github.workspace}}  # This sets the working directory for all run commands
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
+
+    - name: Set up AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-2
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytz geopandas tqdm pyarrow fastparquet lxml beautifulsoup4 altair_saver altair-stiles vl-convert-python
+    
+    - name: Create necessary directories
+      run: |
+        mkdir -p data/pitching
+        mkdir -p data/batting/archive
+        mkdir -p data/pitches
+        mkdir -p data/postseason
+
+    - name: Install Fonts
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y fonts-roboto
+
+    - name: Set up Ruby for Jekyll
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0' # Match the version to your Gemfile or latest stable release
+
+    - name: Install Bundler and Jekyll dependencies
+      run: |
+        gem install bundler
+        bundle install
+
+    - name: Run scripts
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: |
+        # Historical data first (needed by later scripts)
+        python scripts/29_fetch_historical_standings.py
+
+        # In-season scripts
+        python scripts/00_fetch_league_standings.py
+        python scripts/02_update_boxscores_archive.py
+        python scripts/03_scrape_league_ranks.py
+        python scripts/04_fetch_process_standings.py
+        python scripts/05_fetch_process_batting.py
+        python scripts/06_fetch_process_pitching.py
+        python scripts/07_create_toplines_summary.py
+        python scripts/09_build_wins_losses_from_boxscores.py
+        python scripts/13_fetch_process_schedule.py
+        python scripts/18_generate_projection.py
+
+        # These work year-round
+        python scripts/19_fetch_roster.py
+        python scripts/28_fetch_postseason_stats.py
+        python scripts/15_fetch_xwoba.py
+        python scripts/27_collect_umpires.py
+        # Historical gamelogs (~15 min each) run in fetch_historical.yml instead
+        # python scripts/08_fetch_process_season_outcomes.py
+        # python scripts/10_fetch_process_historic_batting_gamelogs.py
+        python scripts/11_fetch_process_attendance.py
+        # python scripts/12_fetch_process_historic_pitching_gamelogs.py
+        # python scripts/14_fetch_process_batting_mlb.py
+        python scripts/20_fetch_game_pitches.py
+        python scripts/21_summarize_pitch_data.py
+
+    - name: Build Jekyll site
+      run: bundle exec jekyll build
+      env:
+        TZ: America/Chicago
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site  # The output folder of Jekyll build
+        publish_branch: gh-pages
+        force_orphan: false  # Preserve git history to avoid conflicts
+        allow_empty_commit: false  
+
+    - name: Check for changes
+      id: changes
+      run: |
+        git add .
+        git diff --staged --quiet || echo "changes=true" >> $GITHUB_OUTPUT
+  
+    - name: Commit updated files
+      if: steps.changes.outputs.changes == 'true'
+      run: |
+        git config --global user.name 'Terry Wallace'
+        git config --global user.email 'twallac10@example.com'
+        git commit -m "Automated update of Brewers data, visuals"
+  
+    - name: Push changes
+      if: steps.changes.outputs.changes == 'true'
+      run: git pull --rebase && git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

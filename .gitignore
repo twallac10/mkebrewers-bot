@@ -1,0 +1,41 @@
+_site/
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+videos/
+processed_videos/
+
+.DS_Store
+
+# Environment and credentials
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+.aws/
+credentials
+
+# Ignore all generated data files
+data/*
+!data/roster/
+data/roster/*
+!data/roster/avatars/
+!data/archive/
+!data/archive/*
+_data/
+!_data/navigation.yml
+!_data/team.yml
+
+# Compiled CSS
+assets/css/style.css
+
+# Plan/spec docs (development only)
+docs/superpowers/
