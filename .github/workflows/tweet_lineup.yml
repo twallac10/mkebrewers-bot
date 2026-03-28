@@ -2,8 +2,8 @@ name: Post Lineup to Bluesky
 
 on:
   schedule:
-    # Runs hourly, but the job will only proceed between 8am and 6pm ET.
-    - cron: '0 12-23 * * *'  # Every hour from 5 AM to 4 PM PT (during season)
+    # Runs hourly, but the job will only proceed between 8am and 6pm CT.
+    - cron: '0 12-23 * * *'  # Every hour from 6 AM to 5 PM CT (during season)
   workflow_dispatch:
 
 jobs:
@@ -13,8 +13,8 @@ jobs:
     - name: Check Time in Team Timezone
       id: time_check
       run: |
-        if [[ $(TZ="America/New_York" date +'%H') -ge 8 && $(TZ="America/New_York" date +'%H') -lt 18 ]]; then
-          echo "Proceeding, it's between 8am and 6pm ET."
+        if [[ $(TZ="America/Chicago" date +'%H') -ge 8 && $(TZ="America/Chicago" date +'%H') -lt 18 ]]; then
+          echo "Proceeding, it's between 8am and 6pm CT."
           echo "proceed=true" >> $GITHUB_OUTPUT
         else
           echo "Stopping, it's outside of 8am-6pm ET."

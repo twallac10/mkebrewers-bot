@@ -60,9 +60,9 @@ jobs:
     - name: Commit updated files
       if: steps.changes.outputs.changes == 'true'
       run: |
-        git config --global user.name 'Stephen O'\''Grady'
-        git config --global user.email 'sog@redmonk.com'
-        git commit -m "Automated update of Red Sox historical gamelog data"
+        git config --global user.name 'Terry Wallace'
+        git config --global user.email 'twallac10@example.com'
+        git commit -m "Automated update of Brewers historical gamelog data"
 
     - name: Push changes
       if: steps.changes.outputs.changes == 'true'

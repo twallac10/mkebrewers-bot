@@ -2,8 +2,8 @@ name: Post Daily Summaries to Bluesky
 
 on:
   schedule:
-    # Runs every 2 hours during daytime hours PT (converted to UTC)
-    - cron: '0 15,17,19,21,23 * * *'  # 8 AM, 10 AM, 12 PM, 2 PM, 4 PM PT (during season)
+    # Runs every 2 hours during daytime hours CT (converted to UTC)
+    - cron: '0 15,17,19,21,23 * * *'  # 9 AM, 11 AM, 1 PM, 3 PM, 5 PM CT (during season)
   workflow_dispatch:
     inputs:
       summary_type:

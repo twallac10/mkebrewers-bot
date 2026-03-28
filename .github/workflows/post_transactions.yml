@@ -2,8 +2,8 @@ name: Post Transaction Updates to Bluesky
 
 on:
   schedule:
-    # Runs every 2 hours during daytime hours PT (converted to UTC)
-    - cron: '0 14,16,18,20,22,0,2 * * *'  # 7 AM, 9 AM, 11 AM, 1 PM, 3 PM, 5 PM, 7 PM PT (during season)
+    # Runs every 2 hours during daytime hours CT (converted to UTC)
+    - cron: '0 14,16,18,20,22,0,2 * * *'  # 8 AM, 10 AM, 12 PM, 2 PM, 4 PM, 6 PM, 8 PM CT (during season)
   workflow_dispatch:
     inputs:
       force:

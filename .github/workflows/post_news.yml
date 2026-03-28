@@ -2,8 +2,8 @@ name: Post News Roundup to Bluesky
 
 on:
   schedule:
-    # Runs every 3 hours during daytime hours PT (converted to UTC)
-    - cron: '0 15,18,21,0 * * *'  # 8 AM, 11 AM, 2 PM, 5 PM PT (during season)
+    # Runs every 3 hours during daytime hours CT (converted to UTC)
+    - cron: '0 15,18,21,0 * * *'  # 9 AM, 12 PM, 3 PM, 6 PM CT (during season)
   workflow_dispatch:
     inputs:
       force:

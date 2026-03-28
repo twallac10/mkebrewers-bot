@@ -100,7 +100,7 @@ jobs:
     - name: Build Jekyll site
       run: bundle exec jekyll build
       env:
-        TZ: America/New_York
+        TZ: America/Chicago
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
@@ -120,9 +120,9 @@ jobs:
     - name: Commit updated files
       if: steps.changes.outputs.changes == 'true'
       run: |
-        git config --global user.name 'Stephen O'\''Grady'
-        git config --global user.email 'sog@redmonk.com'
-        git commit -m "Automated update of Red Sox data, visuals"
+        git config --global user.name 'Terry Wallace'
+        git config --global user.email 'twallac10@example.com'
+        git commit -m "Automated update of Brewers data, visuals"
   
     - name: Push changes
       if: steps.changes.outputs.changes == 'true'
