@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Transactions | Boston Red Sox moves & trades
-description: An auto-updating log of recent Red Sox player transactions.
+title: Transactions | Milwaukee Brewers moves & trades
+description: An auto-updating log of recent Brewers player transactions.
 permalink: /transactions/
-canonical_url: https://redsoxdata.bot/transactions/
+canonical_url: https://mkebrewers.bot/transactions/
 header:
   og_image: /assets/images/meta_card.png
 twitter:
@@ -13,11 +13,11 @@ twitter:
 <div class="container">
   <div class="minimal-header">
     <h1 class="minimal-headline">Recent transactions</h1>
-    <p class="minimal-subhead">A log of the team's last 100 player moves, according to <a href="https://www.mlb.com/redsox/roster/transactions">Major League Baseball</a>: </p>
+    <p class="minimal-subhead">A log of the team's last 100 player moves, according to <a href="https://www.mlb.com/brewers/roster/transactions">Major League Baseball</a>: </p>
   </div>
 
-  {% assign transactions = site.data.roster.redsox_transactions_current %}
-  {% assign players_roster = site.data.roster.redsox_roster_current %}
+  {% assign transactions = site.data.roster.brewers_transactions_current %}
+  {% assign players_roster = site.data.roster.brewers_roster_current %}
 
   <div class="transactions-grid">
     {% for transaction in transactions %}

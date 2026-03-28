@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Current roster | Boston Red Sox player details
-description: Full Red Sox roster, including active and 40-man players, with photos and details.
+title: Current roster | Milwaukee Brewers player details
+description: Full Brewers roster, including active and 40-man players, with photos and details.
 permalink: /roster/
-canonical_url: https://redsoxdata.bot/roster/
+canonical_url: https://mkebrewers.bot/roster/
 header:
   og_image: /assets/images/meta_card.png
 twitter:
@@ -13,7 +13,7 @@ twitter:
 <div class="container">
   <div class="minimal-header">
     <h1 class="minimal-headline">Who's on the roster?</h1>
-    <p class="minimal-subhead">The team's active roster holds up to 26 players who can take the field in games. The 40-man roster includes those players but also prospects, injured starters or minor leaguers with contracts who are eligible to be called up. The latest breakdown, according to <a href="https://www.mlb.com/redsox/roster">Major League Baseball</a>: </p>
+    <p class="minimal-subhead">The team's active roster holds up to 26 players who can take the field in games. The 40-man roster includes those players but also prospects, injured starters or minor leaguers with contracts who are eligible to be called up. The latest breakdown, according to <a href="https://www.mlb.com/brewers/roster">Major League Baseball</a>: </p>
   </div>
 
   <div class="tabs" id="roster-tabs">
@@ -22,7 +22,7 @@ twitter:
   </div>
 
   <div id="roster-active" class="roster-tab-content">
-    {% assign players = site.data.roster.redsox_roster_current %}
+    {% assign players = site.data.roster.brewers_roster_current %}
     {% assign active_players = players | where: "is_active_roster", true %}
     {% assign position_groups = active_players | map: "position_group" | uniq %}
     {% for group in position_groups %}
