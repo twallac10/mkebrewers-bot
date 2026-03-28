@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Boston Red Sox stats dashboard | Updated data & analysis"
-description: "An auto-updating team dashboard that answers the question: How are the Red Sox doing?"
+title: "Milwaukee Brewers stats dashboard | Updated data & analysis"
+description: "An auto-updating team dashboard that answers the question: How are the Brewers doing?"
 permalink: /
-canonical_url: https://redsoxdata.bot/
+canonical_url: https://mkebrewers.bot/
 header:
   og_image: /assets/images/meta_card.png
 twitter:
@@ -68,9 +68,9 @@ twitter:
   </div>
 
 <!-- <h3 class="visual-subhead">Projected <span class="win">wins</span> this season</h3>
-<p class="chart-chatter">This chart shows the Dodgers' actual <span class="underline-wins">wins</span> so far, the projected <span class="underline-mean-projection">mean</span> number of final wins and the 95% <span class="highlight-ci">confidence interval</span> around that projection.</p>
+<p class="chart-chatter">This chart shows the Brewers' actual <span class="underline-wins">wins</span> so far, the projected <span class="underline-mean-projection">mean</span> number of final wins and the 95% <span class="highlight-ci">confidence interval</span> around that projection.</p>
 <div id="wins-projection-chart-ci" class="chart-container"></div>
-<p class="note">Note: The projection is based on 10,000 simulations. For games played, it shows actual wins. For future games, it simulates outcomes by randomly drawing from the Dodgers' win/loss results so far this season, then calculates the mean and a 95% confidence range.</p> -->
+<p class="note">Note: The projection is based on 10,000 simulations. For games played, it shows actual wins. For future games, it simulates outcomes by randomly drawing from the Brewers' win/loss results so far this season, then calculates the mean and a 95% confidence range.</p> -->
 
 <h3 class="visual-subhead">Cumulative <span class="win">wins</span>: Then and now</h3>
 <p class="chart-chatter">Compare this year's win trajectory with the past.</p>
@@ -105,19 +105,19 @@ twitter:
   {% assign teams_array = standings_data %}
 {% endif %}
 
-{% assign al_teams = teams_array | where_exp: "item", "item.league_name == 'American League'" %}
-{% if al_teams == nil %} {% assign al_teams = "" | split: "" %} {% endif %}
+{% assign nl_teams = teams_array | where_exp: "item", "item.league_name == 'National League'" %}
+{% if nl_teams == nil %} {% assign nl_teams = "" | split: "" %} {% endif %}
 
-{% assign al_east = al_teams | where_exp: "item", "item.division_name == 'American League East'" | sort: "division_rank" %}
-{% assign al_central = al_teams | where_exp: "item", "item.division_name == 'American League Central'" | sort: "division_rank" %}
-{% assign al_west = al_teams | where_exp: "item", "item.division_name == 'American League West'" | sort: "division_rank" %}
+{% assign nl_east = nl_teams | where_exp: "item", "item.division_name == 'National League East'" | sort: "division_rank" %}
+{% assign nl_central = nl_teams | where_exp: "item", "item.division_name == 'National League Central'" | sort: "division_rank" %}
+{% assign nl_west = nl_teams | where_exp: "item", "item.division_name == 'National League West'" | sort: "division_rank" %}
 
 <h2 class="stat-group">Final regular season standings</h2>
 
-<h3 class="visual-subhead">American League standings by division</h3>
+<h3 class="visual-subhead">National League standings by division</h3>
 <div class="tables-container standings-tables">
   <div class="table-wrapper">
-    <h3 class="stat-card-label">AL East</h3>
+    <h3 class="stat-card-label">NL East</h3>
     <table class="data-table">
       <thead>
         <tr>
@@ -127,8 +127,8 @@ twitter:
         </tr>
       </thead>
       <tbody>
-        {% for team in al_east %}
-        <tr {% if team.team_name == "Boston Red Sox" %}class="dodgers-row"{% endif %}>
+        {% for team in nl_east %}
+        <tr {% if team.team_name == "Milwaukee Brewers" %}class="brewers-row"{% endif %}>
           <td>{{ team.team_name }}</td>
           <td>{{ team.winning_percentage }}</td>
           <td>{{ team.games_back }}</td>
@@ -138,7 +138,7 @@ twitter:
     </table>
   </div>
   <div class="table-wrapper">
-    <h3 class="stat-card-label">AL Central</h3>
+    <h3 class="stat-card-label">NL Central</h3>
     <table class="data-table">
       <thead>
         <tr>
@@ -148,8 +148,8 @@ twitter:
         </tr>
       </thead>
       <tbody>
-        {% for team in al_central %}
-        <tr>
+        {% for team in nl_central %}
+        <tr {% if team.team_name == "Milwaukee Brewers" %}class="brewers-row"{% endif %}>
           <td>{{ team.team_name }}</td>
           <td>{{ team.winning_percentage }}</td>
           <td>{{ team.games_back }}</td>
@@ -159,7 +159,7 @@ twitter:
     </table>
   </div>
   <div class="table-wrapper">
-    <h3 class="stat-card-label">AL West</h3>
+    <h3 class="stat-card-label">NL West</h3>
     <table class="data-table">
       <thead>
         <tr>
@@ -169,9 +169,9 @@ twitter:
         </tr>
       </thead>
       <tbody>
-        {% for team in al_west %}
-        <tr>
-         <td>{{ team.team_name }}</td>
+        {% for team in nl_west %}
+        <tr {% if team.team_name == "Milwaukee Brewers" %}class="brewers-row"{% endif %}>
+          <td>{{ team.team_name }}</td>
           <td>{{ team.winning_percentage }}</td>
           <td>{{ team.games_back }}</td>
         </tr>
@@ -468,7 +468,7 @@ twitter:
 </div>
 
   <h3 class="visual-subhead">Recent form: Expected weighted on-base average</h3>
-  <p class="chart-chatter">Rolling 100-plate appearance <span class='anno-xwoba'>xwOBA</span> for each Red Sox batter compared to the <span class='anno-mean'>league average</span>. This stat predicts a player's offensive contributions based on the quality of contact they make with the ball.</p>
+  <p class="chart-chatter">Rolling 100-plate appearance <span class='anno-xwoba'>xwOBA</span> for each Brewers batter compared to the <span class='anno-mean'>league average</span>. This stat predicts a player's offensive contributions based on the quality of contact they make with the ball.</p>
   <div id="xwoba-grid" class="xwoba-grid-container">
   </div>
 
@@ -485,7 +485,7 @@ twitter:
 <div class="scorecard-row">
   <div class="scorecard-left">
   <h3 class="visual-subhead">Strike zone analysis</h3>
-  <p class="chart-chatter">How often do Red Sox batters get called strikes on pitches outside the strike zone? Correctly called <span style="background-color: #53A796; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">strikes</span> vs. pitches that were actually <span style="background-color: #F18851; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">balls</span>:</p>
+  <p class="chart-chatter">How often do Brewers batters get called strikes on pitches outside the strike zone? Correctly called <span style="background-color: #53A796; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">strikes</span> vs. pitches that were actually <span style="background-color: #F18851; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">balls</span>:</p>
     <div id="umpire-scorecard-chart"></div>
   </div>
   <div class="scorecard-right">
@@ -493,7 +493,7 @@ twitter:
     <div id="umpire-worst-calls"></div>
   </div>
 </div>
- <p class="note">Note: Strike zone calls are determined by Baseball Savant and <a href="https://github.com/sogrady/redsox-bot/blob/main/scripts/20_fetch_game_pitches.py">collected</a> after each game from its gamefeed API. Download the data <a href="/data/pitches/redsox_pitches_2026.json">here</a>.</p>
+ <p class="note">Note: Strike zone calls are determined by Baseball Savant and <a href="https://github.com/twallac10/mkebrewers-bot/blob/main/scripts/20_fetch_game_pitches.py">collected</a> after each game from its gamefeed API. Download the data <a href="/data/pitches/brewers_pitches_2026.json">here</a>.</p>
   
 
   <h2 class="stat-group">Pitching</h2>
@@ -598,7 +598,7 @@ twitter:
                       <th>Date</th>
                       <th>Opponent</th>
                       <th>Place</th>
-                      <th>Time PT</th>
+                      <th>Time CT</th>
                   </tr>
               </thead>
               <tbody></tbody>
