@@ -22,7 +22,7 @@ from scripts import config
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # --- Environment Variables & AWS/S3 ---
-is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
+is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true' or os.getenv('AWS_ACCESS_KEY_ID') is not None
 s3_bucket_name = "mkebrewers-data"
 
 if is_github_actions:

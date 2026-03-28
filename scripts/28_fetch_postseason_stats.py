@@ -24,7 +24,7 @@ s3_key_stats = "mkebrewers/data/postseason/brewers_postseason_stats_2025.json"
 s3_key_series = "mkebrewers/data/postseason/brewers_postseason_series_2025.json"
 
 # AWS session
-is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
+is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true' or os.getenv('AWS_ACCESS_KEY_ID') is not None
 aws_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
 aws_secret_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
 aws_region = "us-east-2"

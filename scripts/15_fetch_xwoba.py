@@ -63,7 +63,7 @@ NAME_CORRECTIONS = {
 
 # AWS session and S3 resource
 # Determine if running in a GitHub Actions environment
-is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
+is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true' or os.getenv('AWS_ACCESS_KEY_ID') is not None
 
 # AWS credentials and session initialization
 aws_key_id = os.environ.get("AWS_ACCESS_KEY_ID")

@@ -21,7 +21,7 @@ S3_KEY_CSV = f"mkebrewers/data/pitches/brewers_pitches_{current_year_for_paths}.
 S3_KEY_JSON = f"mkebrewers/data/pitches/brewers_pitches_{current_year_for_paths}.json"
 
 # === AWS Session Setup ===
-is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
+is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true' or os.getenv('AWS_ACCESS_KEY_ID') is not None
 if is_github_actions:
     aws_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
     aws_secret_key = os.environ.get("AWS_SECRET_ACCESS_KEY")

@@ -14,7 +14,7 @@ import time
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Environment Variables & AWS/S3
-is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
+is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true' or os.getenv('AWS_ACCESS_KEY_ID') is not None
 s3_bucket_name = "mkebrewers-data"
 s3_key_transactions_archive = "mkebrewers/data/roster/brewers_transactions_archive.json"
 

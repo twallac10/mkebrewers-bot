@@ -29,7 +29,7 @@ def get_s3_client(profile_name: Optional[str]) -> boto3.client:
         session = boto3.session.Session(profile_name=profile_name)
         return session.client("s3")
 
-    if os.environ.get("GITHUB_ACTIONS") == "true":
+    if os.environ.get("GITHUB_ACTIONS") == "true" or os.environ.get("AWS_ACCESS_KEY_ID"):
         return boto3.client("s3")
 
     env_profile = os.environ.get("AWS_PROFILE")
