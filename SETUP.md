@@ -71,7 +71,7 @@ bundle install
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/redsox/*"
+            "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/mkebrewers/*"
         }
     ]
 }
@@ -126,7 +126,7 @@ Edit `scripts/config.py` to match your setup:
 ```python
 # S3 Configuration
 S3_BUCKET = "your-bucket-name"  # Change to your bucket name
-S3_PREFIX = "redsox"
+S3_PREFIX = "mkebrewers"
 AWS_REGION = "us-west-1"  # Change if you used a different region
 ```
 
@@ -162,12 +162,12 @@ Check that data was uploaded to S3:
 
 1. Go to **AWS Console** → **S3**
 2. Click on your bucket
-3. Navigate to `redsox/data/`
+3. Navigate to `mkebrewers/data/`
 4. You should see folders: `standings/`, `batting/`, `pitching/`, etc.
 5. Test public access with curl:
 
 ```bash
-curl -I https://YOUR-BUCKET-NAME.s3.us-west-1.amazonaws.com/redsox/data/standings/season_summary_latest.json
+curl -I https://YOUR-BUCKET-NAME.s3.us-west-1.amazonaws.com/mkebrewers/data/standings/season_summary_latest.json
 # Should return HTTP 200 OK
 ```
 
@@ -204,7 +204,7 @@ Visit `http://localhost:4000` in your browser. You should see:
 
 **Access your site:**
 - Default URL: `https://YOUR-USERNAME.github.io/mkebrewers-bot/`
-- Custom domain (if configured): `https://redsoxdata.bot/`
+- Custom domain (if configured): `https://mkebrewersdata.bot/`
 
 ### Step 14: Verify Deployment
 
@@ -221,7 +221,7 @@ Visit your site and check:
 
 ### Step 15: Configure DNS
 
-If you have a custom domain (e.g., `redsoxdata.bot`):
+If you have a custom domain (e.g., `mkebrewersdata.bot`):
 
 1. Log into your domain registrar (Namecheap, Google Domains, etc.)
 2. Go to DNS settings for your domain
@@ -247,14 +247,14 @@ CNAME   www     YOUR-USERNAME.github.io         Automatic
 ### Step 16: Configure Custom Domain in GitHub
 
 1. Go to **Settings** → **Pages**
-2. Under **Custom domain**, enter your domain: `redsoxdata.bot`
+2. Under **Custom domain**, enter your domain: `mkebrewersdata.bot`
 3. Click **Save**
 4. Wait for DNS check to complete (can take 5-60 minutes)
 5. Once verified, check **Enforce HTTPS**
 
 **Verify DNS propagation:**
 ```bash
-dig redsoxdata.bot +short
+dig mkebrewersdata.bot +short
 # Should show GitHub Pages IPs
 ```
 
@@ -359,7 +359,7 @@ During the off-season (November-February):
 ### "Charts are empty on the site"
 
 **Check:**
-1. Data files exist in S3: `https://YOUR-BUCKET-NAME.s3.amazonaws.com/redsox/data/standings/brewers_standings_1970_present_optimized.json`
+1. Data files exist in S3: `https://YOUR-BUCKET-NAME.s3.amazonaws.com/mkebrewers/data/standings/brewers_standings_1970_present_optimized.json`
 2. Bucket policy allows public read access
 3. Browser console for JavaScript errors (F12 → Console)
 4. File path in `assets/js/dashboard.js` matches S3 file names

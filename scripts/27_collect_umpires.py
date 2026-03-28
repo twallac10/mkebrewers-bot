@@ -72,7 +72,7 @@ def find_local_gamepks(gamefeeds_dir: str) -> List[int]:
 
 
 def fetch_season_schedule_gamepks(year: int) -> List[Tuple[int, str]]:
-    """Return list of (gamePk, date_iso) for all Red Sox games in the given year."""
+    """Return list of (gamePk, date_iso) for all Brewers games in the given year."""
     params = {
         "sportId": 1,
         "teamId": TEAM_ID,

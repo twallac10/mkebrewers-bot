@@ -1300,7 +1300,7 @@ label {
 .underline-wins {
   text-decoration: underline;
   text-decoration-color: #005A9C;
-  /* Red Sox red for the underline */
+  /* Brewers blue for the underline */
   -webkit-text-decoration-color: #005A9C;
   /* Safari */
   text-decoration-thickness: 2px;
@@ -1342,7 +1342,7 @@ label {
   }
 }
 
-// Highlight for Red Sox row in standings
+// Highlight for Brewers row in standings
 .standings-tables .data-table tr.brewers-row td {
   color: c.$team-primary;
   font-weight: bold;

@@ -172,7 +172,7 @@ def analyze_pitches(game_info, batting_side_override: str = None, team_role: str
                 "pz": pz,
                 "sz_bot": sz_bot,
                 "sz_top": sz_top,
-                "team_role": team_role or "thrown_to_redsox",
+                "team_role": team_role or "thrown_to_brewers",
             })
     rows.sort(key=lambda p: (p.get('inning', 0), p.get('ab_number', 0), p.get('pitch_number', 0)))
     return rows

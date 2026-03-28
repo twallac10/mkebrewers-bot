@@ -155,8 +155,8 @@ def fetch_postseason_series():
             if 'series' in data:
                 logging.info(f"Found {len(data['series'])} series groups")
             
-            # Extract Red Sox-relevant series information
-            redsox_series = []
+            # Extract Brewers-relevant series information
+            brewers_series = []
             
             if 'series' in data:
                 for series_group in data['series']:
@@ -191,9 +191,9 @@ def fetch_postseason_series():
                                 }
                                 
                                 # Avoid duplicates by checking if we already have this series
-                                existing_series = next((s for s in redsox_series if s['series_name'] == series_name), None)
+                                existing_series = next((s for s in brewers_series if s['series_name'] == series_name), None)
                                 if not existing_series:
-                                    redsox_series.append(series_info)
+                                    brewers_series.append(series_info)
                                     logging.info(f"Added new series: {series_name} vs {series_info['opponent']} - {series_info['result']}")
                                 else:
                                     # Update with latest info if this game is more recent
@@ -201,11 +201,11 @@ def fetch_postseason_series():
                                         existing_series.update(series_info)
                                         logging.info(f"Updated series: {series_name} with more recent data")
             
-            if redsox_series:
-                logging.info(f"Successfully found {len(redsox_series)} Red Sox series with URL {i+1}")
-                return redsox_series
+            if brewers_series:
+                logging.info(f"Successfully found {len(brewers_series)} Brewers series with URL {i+1}")
+                return brewers_series
             else:
-                logging.warning(f"No Red Sox series found with URL {i+1}")
+                logging.warning(f"No Brewers series found with URL {i+1}")
                 
         except Exception as e:
             logging.error(f"Error with API URL {i+1}: {e}")

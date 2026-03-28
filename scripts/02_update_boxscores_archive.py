@@ -24,7 +24,7 @@ logging.basicConfig(
 
 from scripts import config
 
-DODGERS_TEAM_ID = config.TEAM_ID
+BREWERS_TEAM_ID = config.TEAM_ID
 BUCKET = "mkebrewers-data"
 ARCHIVE_KEY_JSON = "mkebrewers/data/standings/brewers_boxscores.json"
 ARCHIVE_KEY_CSV = "mkebrewers/data/standings/brewers_boxscores.csv"  # legacy fallback
@@ -221,7 +221,7 @@ def get_los_angeles_date_iso() -> str:
     return la_now.strftime("%Y-%m-%d")
 
 
-def get_dodgers_final_gamepks_for_date(date_iso: str) -> List[int]:
+def get_brewers_final_gamepks_for_date(date_iso: str) -> List[int]:
     """Query MLB Stats API schedule for the given local date and return any
     Team gamePk values that are Final.
     """
@@ -233,19 +233,19 @@ def get_dodgers_final_gamepks_for_date(date_iso: str) -> List[int]:
         logging.warning(f"Failed to fetch schedule data for {date_iso}")
         return []
 
-    dodgers_pks: List[int] = []
+    brewers_pks: List[int] = []
     for day in payload.get("dates", []):
         for game in day.get("games", []):
             teams = game.get("teams", {})
             home_id = teams.get("home", {}).get("team", {}).get("id")
             away_id = teams.get("away", {}).get("team", {}).get("id")
             status = game.get("status", {}).get("detailedState")
-            if status == "Final" and (home_id == DODGERS_TEAM_ID or away_id == DODGERS_TEAM_ID):
+            if status == "Final" and (home_id == BREWERS_TEAM_ID or away_id == BREWERS_TEAM_ID):
                 try:
-                    dodgers_pks.append(int(game.get("gamePk")))
+                    brewers_pks.append(int(game.get("gamePk")))
                 except (TypeError, ValueError):
                     continue
-    return dodgers_pks
+    return brewers_pks
 
 
 def extract_runs_by_inning(linescore_innings: List[dict], side: str) -> List[int]:
@@ -285,7 +285,7 @@ def build_boxscore_row(gamefeed: dict) -> Optional[dict]:
         status = sb.get("status", {}).get("detailedState")
         is_final = status == "Final"
 
-        team_is_home = home_id == DODGERS_TEAM_ID
+        team_is_home = home_id == BREWERS_TEAM_ID
         if team_is_home:
             team_runs = home_runs
             opponent_runs = away_runs
@@ -385,7 +385,7 @@ def main() -> None:
 
     current_year = pd.Timestamp.now().year
     gamelogs_url = (
-        f"https://baseballsavant.mlb.com/team/{DODGERS_TEAM_ID}?view=gamelogs&nav=hitting&season={current_year}"
+        f"https://baseballsavant.mlb.com/team/{BREWERS_TEAM_ID}?view=gamelogs&nav=hitting&season={current_year}"
     )
     html = fetch_text(gamelogs_url)
     
@@ -408,7 +408,7 @@ def main() -> None:
 
     # Augment with same-day Final games from MLB schedule (LA local date)
     la_date = get_los_angeles_date_iso()
-    schedule_pks = set(get_dodgers_final_gamepks_for_date(la_date))
+    schedule_pks = set(get_brewers_final_gamepks_for_date(la_date))
     candidate_pks.update(schedule_pks)
 
     for game_pk in sorted(candidate_pks):

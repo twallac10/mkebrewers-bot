@@ -1,6 +1,6 @@
 # Brewers Team Tracker
 
-This repository — a growing work in progress — feeds [Brewers Data Bot](https://redsoxdata.bot), a statistical dashboard about the Milwaukee Brewers's performance. It is a fork of [Matt Stiles](https://mattstiles.me/)' incredible [Dodgers Data Bot](https://dodgersdata.bot/). 
+This repository — a growing work in progress — feeds [Brewers Data Bot](https://mkebrewersdata.bot), a statistical dashboard about the Milwaukee Brewers's performance. It is a fork of [Matt Stiles](https://mattstiles.me/)' incredible [Dodgers Data Bot](https://dodgersdata.bot/).
 
 The code executes an automated workflow to fetch, process and store the team's current standings along with historical game-by-game records dating back to 1970. It also collects batting and pitching data, among other statistics, for the same period. These records are processed and used to bake out the site using the Jekyll static site generator, in concert with Github Pages, and D3.js for charts. 
 
@@ -107,7 +107,7 @@ Add a bucket policy to allow public read access to your data files:
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::your-bucket-name/redsox/*"
+            "Resource": "arn:aws:s3:::your-bucket-name/mkebrewers/*"
         }
     ]
 }
@@ -129,7 +129,7 @@ Add a bucket policy to allow public read access to your data files:
 All scripts use `scripts/config.py` for S3 configuration. Verify these settings:
 
 - `S3_BUCKET`: Your bucket name (e.g., `"mkebrewers-data"`)
-- `S3_PREFIX`: Path prefix for Brewers data (e.g., `"redsox"`)
+- `S3_PREFIX`: Path prefix for Brewers data (e.g., `"mkebrewers"`)
 - `AWS_REGION`: Your bucket's region (e.g., `"us-west-1"`)
 
 ## Web Hosting Configuration
@@ -147,7 +147,7 @@ The easiest and most cost-effective hosting solution. Already configured in this
 5. Your site will be available at: `https://yourusername.github.io/mkebrewers-data/`
 
 **Custom Domain (Optional):**
-- Add a `CNAME` file to the root with your domain (already done: `redsoxdata.bot`)
+- Add a `CNAME` file to the root with your domain (already done: `mkebrewersdata.bot`)
 - Configure DNS (see Domain Setup section below)
 - Enable **Enforce HTTPS** in Pages settings
 
@@ -176,7 +176,7 @@ Both platforms offer:
 
 ## Domain Setup
 
-If you're using a custom domain like `redsoxdata.bot`:
+If you're using a custom domain like `mkebrewersdata.bot`:
 
 ### DNS Configuration
 
@@ -200,7 +200,7 @@ CNAME   www     yourusername.github.io
 ### Verification Steps
 
 1. After updating DNS, wait 5-60 minutes for propagation
-2. Test with: `dig redsoxdata.bot +short` (should show GitHub Pages IPs)
+2. Test with: `dig mkebrewersdata.bot +short` (should show GitHub Pages IPs)
 3. Visit your domain in a browser
 4. In GitHub Pages settings, verify custom domain and enable **Enforce HTTPS**
 
@@ -346,7 +346,7 @@ After the first game has been played (data is typically available on Baseball Re
 
 #### 6. Verify Website Updates
 
-Check your site (redsoxdata.bot):
+Check your site (mkebrewersdata.bot):
 - ✅ Current standings show 2026 season
 - ✅ Batting/pitching tables show 2026 stats
 - ✅ Schedule shows upcoming 2026 games
@@ -460,7 +460,7 @@ bundle update
 
 **Manual backups (recommended quarterly):**
 ```bash
-aws s3 sync s3://mkebrewers-data/redsox ./backups/redsox-$(date +%Y%m%d)
+aws s3 sync s3://mkebrewers-data/mkebrewers ./backups/mkebrewers-$(date +%Y%m%d)
 ```
 
 ### Cost Monitoring
@@ -578,12 +578,12 @@ Error: NoCredentialsError
 
 **Solutions:**
 1. Check browser console for JavaScript errors
-2. Verify data file exists: `https://mkebrewers-data/redsox/data/standings/brewers_standings_1970_present_optimized.json`
+2. Verify data file exists: `https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_standings_1970_present_optimized.json`
 3. Check `assets/js/dashboard.js` points to correct data URL
 4. Ensure S3 bucket policy allows public read access
 5. Test data endpoint with curl:
    ```bash
-   curl -I https://mkebrewers-data/redsox/data/standings/brewers_standings_1970_present_optimized.json
+   curl -I https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_standings_1970_present_optimized.json
    # Should return HTTP 200
    ```
 
@@ -611,39 +611,39 @@ The processed datasets are uploaded to an AWS S3 bucket.
 
 **Latest season summary**
 
-- [JSON](https://mkebrewers-data/redsox/data/standings/season_summary_latest.json)
-- [CSV](https://mkebrewers-data/redsox/data/standings/season_summary_latest.csv)
+- [JSON](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/season_summary_latest.json)
+- [CSV](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/season_summary_latest.csv)
 
 **Game-by-game standings, 1970 to present:**
 
-- [JSON](https://mkebrewers-data/redsox/data/standings/brewers_standings_1970_present.json)
-- [CSV](https://mkebrewers-data/redsox/data/standings/brewers_standings_1970_present.csv)
-- [Parquet](https://mkebrewers-data/redsox/data/standings/brewers_standings_1970_present.parquet)
+- [JSON](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_standings_1970_present.json)
+- [CSV](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_standings_1970_present.csv)
+- [Parquet](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_standings_1970_present.parquet)
 
 ### Batting
 
 **Season-by-season batting statistics, by player, 1970 to present:**
 
-- [JSON](https://mkebrewers-data/redsox/data/batting/brewers_player_batting_1970_present.json)
-- [CSV](https://mkebrewers-data/redsox/data/batting/brewers_player_batting_1970_present.csv)
-- [Parquet](https://mkebrewers-data/redsox/data/batting/brewers_player_batting_1970_present.parquet)
+- [JSON](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_1970_present.json)
+- [CSV](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_1970_present.csv)
+- [Parquet](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_1970_present.parquet)
 
 **Other current season player batting statistics:**
 - Batting average, on-base and slugging percentage and walks, home runs and strikeouts by plate appearance via Baseball Savant.
-    - [JSON](https://mkebrewers-data/redsox/data/batting/brewers_player_batting_current_table.json)
-    - [CSV](https://mkebrewers-data/redsox/data/batting/brewers_player_batting_current_table.csv)
-    - [Parquet](https://mkebrewers-data/redsox/data/batting/brewers_player_batting_current_table.parquet)
+    - [JSON](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_current_table.json)
+    - [CSV](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_current_table.csv)
+    - [Parquet](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_player_batting_current_table.parquet)
 
 **Season-by-season batting at the team level, 1970 to present:**
 - How the team ranks or ranked in the league by season
-    - [JSON](https://mkebrewers-data/redsox/data/batting/brewers_team_batting_ranks_1970_present.json)
-    - [CSV](https://mkebrewers-data/redsox/data/batting/brewers_team_batting_ranks_1970_present.csv)
-    - [Parquet](https://mkebrewers-data/redsox/data/batting/brewers_team_batting_ranks_1970_present.parquet)
+    - [JSON](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_team_batting_ranks_1970_present.json)
+    - [CSV](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_team_batting_ranks_1970_present.csv)
+    - [Parquet](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_team_batting_ranks_1970_present.parquet)
 
 - Team aggregates by season for major batting stats: hits, homers, strikeouts, etc.
-    - [JSON](https://mkebrewers-data/redsox/data/batting/brewers_team_batting_1970_present.json)
-    - [CSV](https://mkebrewers-data/redsox/data/batting/brewers_team_batting_1970_present.csv)
-    - [Parquet](https://mkebrewers-data/redsox/data/batting/brewers_team_batting_1970_present.parquet)
+    - [JSON](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_team_batting_1970_present.json)
+    - [CSV](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_team_batting_1970_present.csv)
+    - [Parquet](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_team_batting_1970_present.parquet)
 
 #### xwOBA (current season)
 
@@ -651,25 +651,25 @@ The processed datasets are uploaded to an AWS S3 bucket.
 - Filters to a maintained allowlist of regular batters and normalizes names to match roster output
 - Writes outputs and uploads to S3
   - Current timeseries per allowed batter
-    - [JSON](https://mkebrewers-data/redsox/data/batting/brewers_xwoba_current.json)
-    - [CSV](https://mkebrewers-data/redsox/data/batting/brewers_xwoba_current.csv)
-    - [Parquet](https://mkebrewers-data/redsox/data/batting/brewers_xwoba_current.parquet)
+    - [JSON](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_xwoba_current.json)
+    - [CSV](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_xwoba_current.csv)
+    - [Parquet](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/brewers_xwoba_current.parquet)
   - League average xwOBA snapshot
-    - [JSON](https://mkebrewers-data/redsox/data/batting/league_avg_xwoba.json)
+    - [JSON](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/league_avg_xwoba.json)
 
 ### Pitching
 
 **Current season pitching:**
 - Team aggregates for major pitching stats: runs, ERA, etc.
-    - [JSON](https://mkebrewers-data/redsox/data/pitching/brewers_pitching_totals_current.json)
-    - [CSV](https://mkebrewers-data/redsox/data/pitching/brewers_pitching_totals_current.csv)
-    - [Parquet](https://mkebrewers-data/redsox/data/pitching/brewers_pitching_totals_current.parquet)
+    - [JSON](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_pitching_totals_current.json)
+    - [CSV](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_pitching_totals_current.csv)
+    - [Parquet](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_pitching_totals_current.parquet)
 
 - Team's league ranking for major pitching stats: runs, ERA, etc.
 
-    - [JSON](https://mkebrewers-data/redsox/data/pitching/brewers_pitching_ranks_current.json)
-    - [CSV](https://mkebrewers-data/redsox/data/pitching/brewers_pitching_ranks_current.csv)
-    - [Parquet](https://mkebrewers-data/redsox/data/pitching/brewers_pitching_ranks_current.parquet)
+    - [JSON](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_pitching_ranks_current.json)
+    - [CSV](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_pitching_ranks_current.csv)
+    - [Parquet](https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_pitching_ranks_current.parquet)
 
 ---
 

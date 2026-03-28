@@ -159,7 +159,7 @@ if __name__ == '__main__':
 
     articles = []
 
-    # TODO: Add Boston Globe or other Red Sox specific sources.
+    # TODO: Add Milwaukee Journal Sentinel or other Brewers specific sources.
 
     mlb_news = fetch_mlb_news()
     if mlb_news:

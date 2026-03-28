@@ -308,7 +308,7 @@ def post_to_bluesky(post_text, current_date_str):
 
 def fetch_schedule_data(target_date_iso: str):
     """
-    Fetch the Red Sox schedule and return the row matching the provided ISO date (YYYY-MM-DD)
+    Fetch the Brewers schedule and return the row matching the provided ISO date (YYYY-MM-DD)
     with placement == 'next'. Only returns the row if game_start looks like a real time.
     """
     schedule_url = "https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_schedule.json"

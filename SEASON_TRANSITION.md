@@ -82,10 +82,10 @@ Verify your S3 bucket is set up for 2026 paths:
 
 ```bash
 # Test S3 access
-aws s3 ls s3://mkebrewers-data/redsox/data/ --profile haekeo
+aws s3 ls s3://mkebrewers-data/mkebrewers/data/ --profile haekeo
 ```
 
-Ensure bucket policy allows public read access to `redsox/data/*` paths.
+Ensure bucket policy allows public read access to `mkebrewers/data/*` paths.
 
 ## Opening Day Tasks
 
@@ -114,7 +114,7 @@ ls -lh _data/standings/all_teams_standings_metrics_2026.json
 
 **S3 files:**
 ```bash
-curl -I https://mkebrewers-data.s3.amazonaws.com/redsox/data/standings/brewers_standings_1970_present.json
+curl -I https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_standings_1970_present.json
 ```
 
 ### 3. Test the Live Site
@@ -276,7 +276,7 @@ git status
 git log --oneline -10
 
 # Check S3 files
-aws s3 ls s3://mkebrewers-data/redsox/data/standings/ --profile haekeo
+aws s3 ls s3://mkebrewers-data/mkebrewers/data/standings/ --profile haekeo
 
 # Test Bluesky post
 python scripts/23_post_daily_summaries.py --type summary --force
