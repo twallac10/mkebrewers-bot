@@ -1343,7 +1343,7 @@ label {
 }
 
 // Highlight for Red Sox row in standings
-.standings-tables .data-table tr.redsox-row td {
+.standings-tables .data-table tr.brewers-row td {
   color: c.$team-primary;
   font-weight: bold;
 }
@@ -2605,7 +2605,7 @@ label {
     border-color: #BD3039;
   }
 
-  &.redsox-team {
+  &.brewers-team {
     background: linear-gradient(135deg, #BD3039 0%, #0C2340 100%);
     color: white;
     border-color: #BD3039;
@@ -2678,7 +2678,7 @@ label {
   color: #a3a2a2;
   text-align: left;
 
-  .redsox-team & {
+  .brewers-team & {
     color: rgba(255, 255, 255, 0.8);
   }
 
@@ -2706,7 +2706,7 @@ label {
   top: 50%;
   transform: translateY(-50%);
 
-  .redsox-team & {
+  .brewers-team & {
     background: #BD3039;
     color: white;
     border-color: white;
