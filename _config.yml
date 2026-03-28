@@ -1,0 +1,104 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Red Sox Data Bot
+name: Red Sox Data Bot
+owner: Red Sox Bot
+owner_url: https://github.com/sogrady
+headline: How are the Red Sox doing?
+email: sogrady@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  An auto-updating baseball statistics dashboard that answers the question: How are the Red Sox doing?
+baseurl: ""
+url: "https://redsox.bot"
+
+# SEO and social settings
+logo: ""
+og_image: ""
+twitter_username: sogrady
+github_username:  sogrady
+
+# Site Author
+author: sogrady
+
+# Build settings
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default"
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - notebooks
+  - scripts
+  - any_other_directory_or_file
+
+layout: single
+
+sass:
+  sass_dir: _sass
+  style: compressed  # or expanded for easier debugging
+  quiet_deps: true
+
+destination: ./_site
+
+# Social Sharing
+twitter:
+  username: sogrady
+
+# Production settings
+# Masthead title and subtitle
+masthead_title: "Red Sox Data Bot"
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # Homepage
+  - scope:
+      path: "index.markdown"
+    values:
+      layout: default
+
+# Scripts
+after_footer_scripts:
+  - "/assets/js/mobile-nav.js"
+
+# Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/stiles"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/stiles"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:mattstiles@gmail.com"

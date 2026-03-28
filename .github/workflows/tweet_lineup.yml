@@ -1,0 +1,53 @@
+name: Post Lineup to Bluesky
+
+on:
+  schedule:
+    # Runs hourly, but the job will only proceed between 8am and 6pm ET.
+    - cron: '0 12-23 * * *'  # Every hour from 5 AM to 4 PM PT (during season)
+  workflow_dispatch:
+
+jobs:
+  post_lineup:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check Time in Team Timezone
+      id: time_check
+      run: |
+        if [[ $(TZ="America/New_York" date +'%H') -ge 8 && $(TZ="America/New_York" date +'%H') -lt 18 ]]; then
+          echo "Proceeding, it's between 8am and 6pm ET."
+          echo "proceed=true" >> $GITHUB_OUTPUT
+        else
+          echo "Stopping, it's outside of 8am-6pm ET."
+          echo "proceed=false" >> $GITHUB_OUTPUT
+        fi
+
+    - uses: actions/checkout@v4
+      if: steps.time_check.outputs.proceed == 'true'
+
+    - name: Set up Python
+      if: steps.time_check.outputs.proceed == 'true'
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
+
+    - name: Set up AWS Credentials
+      if: steps.time_check.outputs.proceed == 'true'
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-west-1
+
+    - name: Install dependencies
+      if: steps.time_check.outputs.proceed == 'true'
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Fetch lineup and post to Bluesky
+      if: steps.time_check.outputs.proceed == 'true'
+      env:
+        BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+        BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/17_fetch_lineup.py --post

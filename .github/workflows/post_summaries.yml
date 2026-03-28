@@ -1,0 +1,47 @@
+name: Post Daily Summaries to Bluesky
+
+on:
+  schedule:
+    # Runs every 2 hours during daytime hours PT (converted to UTC)
+    - cron: '0 15,17,19,21,23 * * *'  # 8 AM, 10 AM, 12 PM, 2 PM, 4 PM PT (during season)
+  workflow_dispatch:
+    inputs:
+      summary_type:
+        description: 'Type of summary to post (auto, summary, batting, pitching)'
+        required: false
+        default: 'auto'
+
+jobs:
+  post_summary:
+    name: Post Daily Summary Updates to Bluesky
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Set up AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-west-1
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Post Summary Script
+        env:
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          if [ "${{ github.event.inputs.summary_type }}" = "" ]; then
+            python scripts/23_post_daily_summaries.py --type auto
+          else
+            python scripts/23_post_daily_summaries.py --type ${{ github.event.inputs.summary_type }}
+          fi

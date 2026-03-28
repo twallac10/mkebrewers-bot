@@ -1,0 +1,14 @@
+requests
+pandas
+beautifulsoup4
+boto3
+lxml
+python-dateutil
+faker
+ipykernel
+notebook
+matplotlib
+tqdm
+seaborn
+atproto>=0.0.55
+html5lib
