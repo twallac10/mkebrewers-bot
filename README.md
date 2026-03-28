@@ -86,7 +86,7 @@ The project uses AWS S3 to store and serve processed data files. Here's how to s
 2. Navigate to **S3** service
 3. Click **Create bucket**
 4. Choose a bucket name (e.g., `mkebrewers-data` or `your-domain.com`)
-5. Select your preferred **region** (e.g., `us-west-1`)
+5. Select your preferred **region** (e.g., `us-east-2`)
 6. **Uncheck** "Block all public access" (data files need to be publicly readable)
 7. Acknowledge the warning about public access
 8. Click **Create bucket**
@@ -130,7 +130,7 @@ All scripts use `scripts/config.py` for S3 configuration. Verify these settings:
 
 - `S3_BUCKET`: Your bucket name (e.g., `"mkebrewers-data"`)
 - `S3_PREFIX`: Path prefix for Brewers data (e.g., `"mkebrewers"`)
-- `AWS_REGION`: Your bucket's region (e.g., `"us-west-1"`)
+- `AWS_REGION`: Your bucket's region (e.g., `"us-east-2"`)
 
 ## Web Hosting Configuration
 

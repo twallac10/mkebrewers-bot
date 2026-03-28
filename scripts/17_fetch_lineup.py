@@ -28,7 +28,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
 
 # AWS credentials and session initialization
-aws_region = "us-west-1"
+aws_region = "us-east-2"
 s3_bucket_name = "mkebrewers-data" # Consistent with other scripts
 
 # Conditional AWS session creation based on the environment
@@ -38,7 +38,7 @@ if is_github_actions:
     )
     logging.info("Running in GitHub Actions environment. Using environment variables for AWS credentials.")
 else:
-    profile_name = os.environ.get("AWS_PERSONAL_PROFILE", "haekeo")
+    profile_name = os.environ.get("AWS_PERSONAL_PROFILE", "default")
     session = boto3.Session(profile_name=profile_name, region_name=aws_region)
 
 s3_resource = session.resource("s3")

@@ -82,7 +82,7 @@ Verify your S3 bucket is set up for 2026 paths:
 
 ```bash
 # Test S3 access
-aws s3 ls s3://mkebrewers-data/mkebrewers/data/ --profile haekeo
+aws s3 ls s3://mkebrewers-data/mkebrewers/data/ --profile default
 ```
 
 Ensure bucket policy allows public read access to `mkebrewers/data/*` paths.
@@ -276,7 +276,7 @@ git status
 git log --oneline -10
 
 # Check S3 files
-aws s3 ls s3://mkebrewers-data/mkebrewers/data/standings/ --profile haekeo
+aws s3 ls s3://mkebrewers-data/mkebrewers/data/standings/ --profile default
 
 # Test Bluesky post
 python scripts/23_post_daily_summaries.py --type summary --force

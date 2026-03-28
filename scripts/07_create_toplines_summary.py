@@ -952,13 +952,13 @@ def save_to_s3(df, base_path, s3_bucket, formats=["csv", "json"]):
         session = boto3.Session(
             aws_access_key_id=aws_access_key_id,
             aws_secret_access_key=aws_secret_access_key,
-            region_name="us-west-1"
+            region_name="us-east-2"
         )
         logging.info("Using AWS credentials from environment variables for S3 upload.")
     else:
         # Fallback to local AWS profile if environment variables are not set
-        profile_name = os.environ.get("AWS_PERSONAL_PROFILE", "haekeo")
-        session = boto3.Session(profile_name=profile_name, region_name="us-west-1")
+        profile_name = os.environ.get("AWS_PERSONAL_PROFILE", "default")
+        session = boto3.Session(profile_name=profile_name, region_name="us-east-2")
         logging.info(f"Using AWS profile '{profile_name}' for S3 upload.")
         
     s3_resource = session.resource("s3")

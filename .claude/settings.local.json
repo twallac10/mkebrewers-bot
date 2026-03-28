@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /Users/wally/projects/redsox-bot/scripts/*.py)",
+      "Bash(git checkout:*)",
+      "Bash(cp /Users/wally/projects/redsox-bot/_layouts/*.html _layouts/)",
+      "Bash(cp -r /Users/wally/projects/redsox-bot/_includes/ _includes/)",
+      "Bash(cp /Users/wally/projects/redsox-bot/_sass/minimal-mistakes/*.scss _sass/minimal-mistakes/)",
+      "Bash(cp /Users/wally/projects/redsox-bot/_sass/minimal-mistakes/skins/*.scss _sass/minimal-mistakes/skins/)",
+      "Bash(cp /Users/wally/projects/redsox-bot/_sass/variables/*.scss _sass/variables/)",
+      "Bash(cp /Users/wally/projects/redsox-bot/_sass/tools/*.scss _sass/tools/)",
+      "Bash(cp /Users/wally/projects/redsox-bot/assets/js/*.js assets/js/)",
+      "Bash(cp /Users/wally/projects/redsox-bot/assets/images/*.png assets/images/)",
+      "Bash(cp /Users/wally/projects/redsox-bot/assets/images/*.webp assets/images/)",
+      "Bash(cp /Users/wally/projects/redsox-bot/assets/images/*.ico assets/images/)",
+      "Bash(cp /Users/wally/projects/redsox-bot/assets/images/*.svg assets/images/)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(ls:*)",
+      "Bash(sed -e 's/Boston Red Sox/Milwaukee Brewers/g' -e 's/Red Sox/Brewers/g' -e s/redsox-bot/mkebrewers-bot/g -e s/redsox.bot/mkebrewers.bot/g -e s/redsox-data/mkebrewers-data/g -e s/sogrady/twallac10/g -e \"s/Stephen O''''Grady/Terry Wallace/g\" -e \"s/Steve O''''Grady/Terry Wallace/g\" -e s/bBOSb/MIL/g -e 's/Fenway Park/American Family Field/g' -e s/America/New_York/America/Chicago/g -e s/redsox_/brewers_/g -e s/redsoxbot/mkebrewers-bot/g README.md)",
+      "Read(//tmp/**)",
+      "Bash(head -20 grep -n \"BOS\\\\|redsox\\\\b\" /Users/wally/projects/mkebrewers-bot/SEASON_TRANSITION.md)",
+      "Bash(python -m py_compile scripts/config.py)",
+      "Bash(python3 -m py_compile scripts/config.py)",
+      "Bash(python3 -m py_compile scripts/02_update_boxscores_archive.py)",
+      "Bash(python3 -m py_compile scripts/20_fetch_game_pitches.py)",
+      "Bash(python3 -m py_compile scripts/28_fetch_postseason_stats.py)",
+      "Bash(python3 -m py_compile scripts/17_fetch_lineup.py)",
+      "Bash(python3 -m py_compile scripts/24_fetch_news.py)",
+      "Bash(python3:*)",
+      "Bash(bundle install:*)",
+      "Bash(ruby --version)",
+      "Bash(brew list:*)",
+      "Bash(rbenv versions:*)",
+      "Bash(rvm list:*)",
+      "Bash(find scripts:*)"
+    ]
+  }
+}

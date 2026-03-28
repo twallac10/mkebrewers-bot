@@ -34,7 +34,7 @@ s3_key_transactions_archive_json = "mkebrewers/data/roster/brewers_transactions_
 is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
 aws_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
 aws_secret_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
-aws_region = "us-west-1"
+aws_region = "us-east-2"
 s3 = None
 
 try:
@@ -45,7 +45,7 @@ try:
             region_name=aws_region
         )
     else:
-        profile_name = os.environ.get("AWS_PERSONAL_PROFILE", "haekeo")
+        profile_name = os.environ.get("AWS_PERSONAL_PROFILE", "default")
         session = boto3.Session(profile_name=profile_name, region_name=aws_region)
     s3 = session.resource('s3')
     logging.info("AWS S3 session initialized successfully")

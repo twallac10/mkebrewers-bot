@@ -25,14 +25,14 @@ is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
 if is_github_actions:
     aws_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
     aws_secret_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
-    aws_region = "us-west-1"
+    aws_region = "us-east-2"
     session = boto3.Session(
         aws_access_key_id=aws_key_id,
         aws_secret_access_key=aws_secret_key,
         region_name=aws_region
     )
 else:
-    session = boto3.Session(profile_name="haekeo", region_name="us-west-1")
+    session = boto3.Session(profile_name="default", region_name="us-east-2")
 s3 = session.resource('s3')
 
 # === Date Range for the current regular season ===

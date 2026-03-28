@@ -39,7 +39,7 @@ def get_s3_client(profile_name: Optional[str] = None):
     1) Explicit CLI profile
     2) If running in GitHub Actions, use default chain (env/role)
     3) AWS_PROFILE env var
-    4) Local fallback profile 'haekeo'
+    4) Local fallback profile 'default'
     """
     if profile_name:
         session = boto3.session.Session(profile_name=profile_name)
@@ -49,7 +49,7 @@ def get_s3_client(profile_name: Optional[str] = None):
         return boto3.client("s3")
 
     env_profile = os.environ.get("AWS_PROFILE")
-    resolved = env_profile or "haekeo"
+    resolved = env_profile or "default"
     session = boto3.session.Session(profile_name=resolved)
     return session.client("s3")
 
@@ -379,7 +379,7 @@ def main() -> None:
     parser.add_argument(
         "--profile",
         default=os.environ.get("AWS_PROFILE"),
-        help="AWS profile to use for S3 (omit on GitHub Actions; locally defaults to 'haekeo')",
+        help="AWS profile to use for S3 (omit on GitHub Actions; locally defaults to 'default')",
     )
     args = parser.parse_args()
 

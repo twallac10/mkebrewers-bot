@@ -27,7 +27,7 @@ s3_key_series = "mkebrewers/data/postseason/brewers_postseason_series_2025.json"
 is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
 aws_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
 aws_secret_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
-aws_region = "us-west-1"
+aws_region = "us-east-2"
 if is_github_actions:
     session = boto3.Session(
         aws_access_key_id=aws_key_id,
@@ -35,7 +35,7 @@ if is_github_actions:
         region_name=aws_region
     )
 else:
-    session = boto3.Session(profile_name="haekeo", region_name=aws_region)
+    session = boto3.Session(profile_name="default", region_name=aws_region)
 s3 = session.resource('s3')
 
 def fetch_roster_data():

@@ -36,7 +36,7 @@ is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
 # AWS credentials and session initialization
 aws_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
 aws_secret_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
-aws_region = "us-west-1"
+aws_region = "us-east-2"
 s3_bucket_name = "mkebrewers-data" # Consistent with other scripts
 
 # Conditional AWS session creation based on the environment
@@ -51,7 +51,7 @@ try:
         logging.info("Running in GitHub Actions environment. Using environment variables for AWS credentials.")
         s3_resource = session.resource("s3")
     else:
-        profile_name = os.environ.get("AWS_PERSONAL_PROFILE", "haekeo")
+        profile_name = os.environ.get("AWS_PERSONAL_PROFILE", "default")
         session = boto3.Session(profile_name=profile_name, region_name=aws_region)
         logging.info(f"Running locally. Using AWS profile: {profile_name}")
         s3_resource = session.resource("s3")

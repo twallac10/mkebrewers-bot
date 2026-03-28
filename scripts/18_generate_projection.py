@@ -35,14 +35,14 @@ def upload_json_to_s3(data_dict, bucket_name, object_key):
     aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
     aws_secret_access_key = os.getenv("AWS_SECRET_ACCESS_KEY")
     
-    session_params = {"region_name": "us-west-1"} # Default region
+    session_params = {"region_name": "us-east-2"} # Default region
 
     if aws_access_key_id and aws_secret_access_key:
         session_params["aws_access_key_id"] = aws_access_key_id
         session_params["aws_secret_access_key"] = aws_secret_access_key
         logging.info("Using AWS credentials from environment variables for S3 upload.")
     else:
-        profile_name = os.environ.get("AWS_PERSONAL_PROFILE", "haekeo")
+        profile_name = os.environ.get("AWS_PERSONAL_PROFILE", "default")
         session_params["profile_name"] = profile_name
         logging.info(f"Using AWS profile '{profile_name}' for S3 upload.")
         

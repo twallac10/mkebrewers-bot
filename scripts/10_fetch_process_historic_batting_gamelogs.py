@@ -22,7 +22,7 @@ is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
 
 aws_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
 aws_secret_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
-aws_region = "us-west-1"
+aws_region = "us-east-2"
 
 if is_github_actions:
     session = boto3.Session(
@@ -31,7 +31,7 @@ if is_github_actions:
         region_name=aws_region
     )
 else:
-    session = boto3.Session(profile_name="haekeo", region_name=aws_region)
+    session = boto3.Session(profile_name="default", region_name=aws_region)
 
 s3_resource = session.resource("s3")
 

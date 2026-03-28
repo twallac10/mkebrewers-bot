@@ -19,10 +19,10 @@ s3_bucket_name = "mkebrewers-data"
 s3_key_transactions_archive = "mkebrewers/data/roster/brewers_transactions_archive.json"
 
 if is_github_actions:
-    session = boto3.Session(region_name="us-west-1")
+    session = boto3.Session(region_name="us-east-2")
 else:
-    profile_name = os.environ.get("AWS_PERSONAL_PROFILE", "haekeo")
-    session = boto3.Session(profile_name=profile_name, region_name="us-west-1")
+    profile_name = os.environ.get("AWS_PERSONAL_PROFILE", "default")
+    session = boto3.Session(profile_name=profile_name, region_name="us-east-2")
 
 s3_resource = session.resource("s3")
 

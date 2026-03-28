@@ -49,7 +49,7 @@ bundle install
 2. Navigate to **S3** service
 3. Click **Create bucket**
 4. Enter bucket name: `your-domain.com` (or any unique name)
-5. Select region: `us-west-1` (or your preferred region)
+5. Select region: `us-east-2` (or your preferred region)
 6. **Uncheck** "Block all public access"
 7. Acknowledge the public access warning
 8. Click **Create bucket**
@@ -127,7 +127,7 @@ Edit `scripts/config.py` to match your setup:
 # S3 Configuration
 S3_BUCKET = "your-bucket-name"  # Change to your bucket name
 S3_PREFIX = "mkebrewers"
-AWS_REGION = "us-west-1"  # Change if you used a different region
+AWS_REGION = "us-east-2"  # Change if you used a different region
 ```
 
 **Commit your changes:**
@@ -167,7 +167,7 @@ Check that data was uploaded to S3:
 5. Test public access with curl:
 
 ```bash
-curl -I https://YOUR-BUCKET-NAME.s3.us-west-1.amazonaws.com/mkebrewers/data/standings/season_summary_latest.json
+curl -I https://YOUR-BUCKET-NAME.s3.us-east-2.amazonaws.com/mkebrewers/data/standings/season_summary_latest.json
 # Should return HTTP 200 OK
 ```
 

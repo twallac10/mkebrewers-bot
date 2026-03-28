@@ -52,10 +52,10 @@ def get_session():
         return boto3.Session(
             aws_access_key_id=aws_key_id,
             aws_secret_access_key=aws_secret_key,
-            region_name="us-west-1",
+            region_name="us-east-2",
         )
     # Local default profile fallback
-    return boto3.Session(profile_name=os.environ.get("AWS_PERSONAL_PROFILE", "haekeo"), region_name="us-west-1")
+    return boto3.Session(profile_name=os.environ.get("AWS_PERSONAL_PROFILE", "default"), region_name="us-east-2")
 
 
 def find_local_gamepks(gamefeeds_dir: str) -> List[int]:
