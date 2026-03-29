@@ -131,11 +131,16 @@ def fetch_clean_current_schedule(url, year):
 def convert_time_to_local_manual(time_str):
     try:
         time = datetime.strptime(time_str, '%I:%M %p')
-        # BBRef is usually ET. If team is ET, no change needed.
-        # If team is PT, subtract 3 hours.
-        if config.TEAM_TIMEZONE == "America/Los_Angeles":
-            time -= timedelta(hours=3)
-        # Add other timezones if needed
+        # BBRef times are ET. Convert based on team timezone offset from ET.
+        tz_offsets = {
+            "America/New_York": 0,
+            "America/Chicago": -1,
+            "America/Denver": -2,
+            "America/Los_Angeles": -3,
+        }
+        offset = tz_offsets.get(config.TEAM_TIMEZONE, 0)
+        if offset:
+            time += timedelta(hours=offset)
         return time.strftime('%-I:%M %p')
     except Exception as e:
         logging.error(f"Failed to convert time: {e}")

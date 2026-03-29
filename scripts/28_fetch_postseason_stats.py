@@ -105,18 +105,18 @@ def get_next_game_info(series_data):
                                 venue_name = game.get('venue', {}).get('name', '')
                                 
                                 if game_datetime:
-                                    # Parse the game time and convert to PT
+                                    # Parse the game time and convert to team timezone
                                     try:
                                         game_dt = parser.parse(game_datetime)
-                                        pt_tz = pytz.timezone('US/Pacific')
-                                        game_pt = game_dt.astimezone(pt_tz)
-                                        
+                                        team_tz = pytz.timezone(config.TEAM_TIMEZONE)
+                                        game_local = game_dt.astimezone(team_tz)
+
                                         next_game_info = {
                                             'opponent': away_team if home_team == config.TEAM_FULL_NAME else home_team,
                                             'venue': venue_name,
-                                            'datetime_pt': game_pt,
-                                            'time_pt': game_pt.strftime('%-I:%M p.m. PT'),
-                                            'day': game_pt.strftime('%A'),
+                                            'datetime_pt': game_local,
+                                            'time_pt': game_local.strftime('%-I:%M p.m. CT'),
+                                            'day': game_local.strftime('%A'),
                                             'is_home': home_team == config.TEAM_FULL_NAME
                                         }
                                         

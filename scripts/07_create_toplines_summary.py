@@ -25,35 +25,24 @@ from scripts import config
 # Base directory calculation for file paths
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Get the update time
-def get_pacific_time():
-    utc_zone = timezone.utc
-    utc_time = datetime.now(utc_zone)
-    pacific_offset = timedelta(hours=-8)
-    if utc_time.astimezone(timezone.utc).replace(tzinfo=None).month in {4, 5, 6, 7, 8, 9, 10}:
-        pacific_offset = timedelta(hours=-7)
-    pacific_zone = timezone(pacific_offset)
-    pacific_time = utc_time.astimezone(pacific_zone)
-    formatted_time = pacific_time.strftime("%B %-d, %Y, %-I:%M %p PT")
-    return formatted_time
+# Get the update time in team timezone
+import pytz
+_team_tz = pytz.timezone(config.TEAM_TIMEZONE)
+
+def get_team_time():
+    now = datetime.now(pytz.utc).astimezone(_team_tz)
+    return now.strftime("%B %-d, %Y, %-I:%M %p CT")
 
 # Store the update time
-update_time = get_pacific_time()
+update_time = get_team_time()
 
 # Get the update date
-def get_pacific_date():
-    utc_zone = timezone.utc
-    utc_time = datetime.now(utc_zone)
-    pacific_offset = timedelta(hours=-8)
-    if utc_time.astimezone(timezone.utc).replace(tzinfo=None).month in {4, 5, 6, 7, 8, 9, 10}:
-        pacific_offset = timedelta(hours=-7)
-    pacific_zone = timezone(pacific_offset)
-    pacific_time = utc_time.astimezone(pacific_zone)
-    formatted_date = pacific_time.strftime("%B %-d")
-    return formatted_date
+def get_team_date():
+    now = datetime.now(pytz.utc).astimezone(_team_tz)
+    return now.strftime("%B %-d")
 
 # Store the update date
-update_date = get_pacific_date()
+update_date = get_team_date()
 
 def read_parquet_s3(url, sort_by=None):
     """Read a Parquet file from the S3 URL or local fallback.
@@ -527,14 +516,12 @@ def get_next_game_info():
                 if game.get('status', {}).get('abstractGameState') == 'Preview':
                     # Parse game info
                     game_date_utc = datetime.fromisoformat(game['gameDate'].replace('Z', '+00:00'))
-                    # Convert to PT using pytz for proper DST handling
-                    import pytz
-                    pt_tz = pytz.timezone('US/Pacific')
-                    game_date_pt = game_date_utc.astimezone(pt_tz)
-                    
+                    # Convert to team timezone for proper DST handling
+                    game_date_local = game_date_utc.astimezone(_team_tz)
+
                     # Format day and time
-                    day_name = game_date_pt.strftime('%A')  # Monday, Tuesday, etc.
-                    time_str = game_date_pt.strftime('%-I:%M p.m. PT')
+                    day_name = game_date_local.strftime('%A')  # Monday, Tuesday, etc.
+                    time_str = game_date_local.strftime('%-I:%M p.m. CT')
                     
                     # Get venue info and highlight it
                     venue_name = game.get('venue', {}).get('name', '')

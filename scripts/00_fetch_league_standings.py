@@ -53,9 +53,9 @@ s3_resource = session.resource("s3")
 CURRENT_YEAR = datetime.now().year
 
 def get_pacific_time_string():
-    """Get current time formatted as 'Sept. 14 at 2:35 p.m. Pacific Time'"""
-    pacific = pytz.timezone('US/Pacific')
-    now = datetime.now(pacific)
+    """Get current time formatted as 'Sept. 14 at 2:35 p.m. Central Time'"""
+    team_tz = pytz.timezone(config.TEAM_TIMEZONE)
+    now = datetime.now(team_tz)
     
     # Format month (abbreviated with period)
     month = now.strftime('%b') + '.'
@@ -82,7 +82,7 @@ def get_pacific_time_string():
     
     time_str = f"{hour_str}:{minute:02d} {period}"
     
-    return f"{month} {day} at {time_str} Pacific Time"
+    return f"{month} {day} at {time_str} Central Time"
 
 def format_games_back(gb_value):
     """Formats games back to be an int if a whole number, otherwise a float."""
@@ -190,7 +190,7 @@ def main():
         last_updated = get_pacific_time_string()
         standings_with_metadata = {
             "last_updated": last_updated,
-            "last_updated_iso": datetime.now(pytz.timezone('US/Pacific')).isoformat(),
+            "last_updated_iso": datetime.now(pytz.timezone(config.TEAM_TIMEZONE)).isoformat(),
             "teams": all_standings_data
         }
         
