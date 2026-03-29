@@ -36,8 +36,14 @@ jobs:
 
     - name: Create necessary directories
       run: |
+        mkdir -p data/standings
         mkdir -p data/pitching
         mkdir -p data/batting/archive
+
+    - name: Fetch historical standings (1970-present)
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/29_fetch_historical_standings.py
 
     - name: Fetch historical pitching gamelogs (1901-present)
       env:
