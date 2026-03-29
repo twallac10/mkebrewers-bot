@@ -163,7 +163,7 @@ function renderChart(data) {
     .attr('x', isMobile ? xScale(80) : xScale(110))
     .attr('y', yScale(-10))
     .attr('class', 'anno')
-    .text(`Past: 1901-${parseInt(currentYear) - 1}`)
+    .text(`Past: 1970-${parseInt(currentYear) - 1}`)
     .attr('text-anchor', 'start')
     .style('stroke', '#fff')
     .style('stroke-width', '4px')
@@ -686,7 +686,7 @@ document.addEventListener('DOMContentLoaded', function() {
           .attr('x', isMobile ? xScale(90) : xScale(90))
           .attr('y', yScale(100))
           .attr('class', 'anno')
-          .text(`Past: 1901-${parseInt(currentYear) - 1}`)
+          .text(`Past: 1970-${parseInt(currentYear) - 1}`)
           .attr('text-anchor', 'start')
           .style('stroke', '#fff')
           .style('stroke-width', '4px')
@@ -863,7 +863,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .attr('x', isMobile ? xScale(110) : xScale(110))
       .attr('y', yScale(600))
       .attr('class', 'anno')
-      .text(`Past: 1901-${parseInt(currentYear) - 1}`)
+      .text(`Past: 1970-${parseInt(currentYear) - 1}`)
       .attr('text-anchor', 'start')
       .style('stroke', '#fff')
       .style('stroke-width', '4px')
@@ -1063,7 +1063,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .attr('x', isMobile ? xScale(80) : xScale(110)) // Adjusted for mobile
       .attr('y', yScale(2))
       .attr('class', 'anno')
-      .text(`Past: 1901-${currentYear - 1}`)
+      .text(`Past: 1970-${currentYear - 1}`)
       .attr('text-anchor', 'start')
       .style('stroke', '#fff')
       .style('stroke-width', '4px')
@@ -2443,17 +2443,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function renderMaxAttendanceInfo(data) {
-    const sorted = [...data].sort((a, b) => b.attend_game - a.attend_game);
+    const withAttendance = data.filter(d => d.attend_game != null && !isNaN(d.attend_game));
+    const sorted = [...withAttendance].sort((a, b) => b.attend_game - a.attend_game);
     const brewers = sorted.find(d => d.team === 'Milwaukee Brewers');
     if (!brewers) return;
 
     const rank = sorted.indexOf(brewers) + 1;
+    const teamsWithGames = sorted.length;
     let maxAttendanceText;
     if (rank === 1) {
       maxAttendanceText = `The average attendance at ${brewers.name} so far this season is <span class='win'>${brewers.attend_game.toLocaleString()}</span>, more than any other franchise in Major League Baseball.`;
     } else {
       const ordinal = rank === 2 ? '2nd' : rank === 3 ? '3rd' : `${rank}th`;
-      maxAttendanceText = `The average attendance at ${brewers.name} so far this season is <span class='win'>${brewers.attend_game.toLocaleString()}</span>, ranking ${ordinal} in Major League Baseball.`;
+      maxAttendanceText = `The average attendance at ${brewers.name} so far this season is <span class='win'>${brewers.attend_game.toLocaleString()}</span>, ranking ${ordinal} among the ${teamsWithGames} teams that have played home games.`;
     }
 
     d3.select('#max-attendance-info').html(maxAttendanceText);
