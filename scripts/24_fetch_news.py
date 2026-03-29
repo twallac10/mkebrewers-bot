@@ -144,35 +144,39 @@ def should_post_news():
         return False
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Fetch Brewers news and optionally post to Bluesky.")
-    parser.add_argument("--post", action="store_true", help="Post the news roundup to Bluesky.")
-    parser.add_argument("--force", action="store_true", help="Force posting regardless of time (still respects daily limit).")
-    args = parser.parse_args()
+    try:
+        parser = argparse.ArgumentParser(description="Fetch Brewers news and optionally post to Bluesky.")
+        parser.add_argument("--post", action="store_true", help="Post the news roundup to Bluesky.")
+        parser.add_argument("--force", action="store_true", help="Force posting regardless of time (still respects daily limit).")
+        args = parser.parse_args()
 
-    post_type = "news"
-    team_tz = ZoneInfo(config.TEAM_TIMEZONE)
-    today_str = datetime.now(team_tz).strftime('%Y-%m-%d')
+        post_type = "news"
+        team_tz = ZoneInfo(config.TEAM_TIMEZONE)
+        today_str = datetime.now(team_tz).strftime('%Y-%m-%d')
 
-    # Check if we should post (unless forced)
-    if not args.force and not should_post_news():
-        exit()
+        # Check if we should post (unless forced)
+        if not args.force and not should_post_news():
+            exit()
 
-    articles = []
+        articles = []
 
-    # TODO: Add Milwaukee Journal Sentinel or other Brewers specific sources.
+        # TODO: Add Milwaukee Journal Sentinel or other Brewers specific sources.
 
-    mlb_news = fetch_mlb_news()
-    if mlb_news:
-        articles.append(mlb_news)
+        mlb_news = fetch_mlb_news()
+        if mlb_news:
+            articles.append(mlb_news)
 
-    if articles:
-        post_text = format_news_post(articles)
-        print("--- Generated Post ---")
-        print(post_text)
+        if articles:
+            post_text = format_news_post(articles)
+            print("--- Generated Post ---")
+            print(post_text)
 
-        if args.post:
-            post_to_bluesky(post_text, post_type)
+            if args.post:
+                post_to_bluesky(post_text, post_type)
+            else:
+                logging.info("Dry run: --post flag not provided. Not posting to Bluesky.")
         else:
-            logging.info("Dry run: --post flag not provided. Not posting to Bluesky.")
-    else:
-        logging.info("No articles found to post.")
+            logging.info("No articles found to post.")
+    except Exception as e:
+        logging.error(f"Script failed: {e}")
+        import sys; sys.exit(1)

@@ -169,4 +169,8 @@ def main():
         logging.warning(f"Local file {local_file_path} not found. Skipping S3 upload.")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        logging.error(f"Script failed: {e}")
+        import sys; sys.exit(1)

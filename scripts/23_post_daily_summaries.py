@@ -224,4 +224,8 @@ def main():
         logging.error("Failed to generate post text.")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        logging.error(f"Script failed: {e}")
+        import sys; sys.exit(1)

@@ -218,6 +218,7 @@ try:
     )
 except Exception as e:
     print(f"An error occurred: {e}")
+    import sys; sys.exit(1)
 
 # Create current table for display (current season only)
 player_current_table_df = player_totals_df.copy()
