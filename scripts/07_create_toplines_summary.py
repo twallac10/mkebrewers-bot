@@ -319,8 +319,9 @@ def run_differential(standings):
     runs_against_last = standings_last_season['ra'].sum()
     run_diff = runs - runs_against
     run_diff_last = runs_last - runs_against_last
-    mean_attendance = standings.query('home_away == "home"')['attendance'].mean()
-    home_games_count = len(standings.query('home_away == "home"'))
+    home_games = standings.query('home_away == "home"')
+    home_games_count = len(home_games)
+    mean_attendance = home_games['attendance'].mean() if home_games_count > 0 else 0
     formatted_mean_attendance = f"{mean_attendance:,.0f}"
     
     return runs, runs_last, runs_rank, runs_against, runs_against_last, run_diff, run_diff_last, mean_attendance, formatted_mean_attendance, home_games_count
