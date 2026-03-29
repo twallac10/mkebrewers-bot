@@ -148,7 +148,10 @@ def fetch_current_year_data(url, year):
 def load_historic_data(filepath):
     logging.info("Loading historic data.")
     historic_df = pd.read_parquet(filepath)
-    historic_df["gm"] = historic_df["gm"].astype(int)
+
+    # Fill NaN values before integer conversion to avoid "Cannot convert non-finite values" error
+    for col in ["r", "ra", "attendance", "gm", "rank"]:
+        historic_df[col] = historic_df[col].fillna(0)
     historic_df[["r", "ra", "attendance", "gm", "rank"]] = historic_df[
         ["r", "ra", "attendance", "gm", "rank"]
     ].astype(int)
@@ -157,6 +160,10 @@ def load_historic_data(filepath):
     historic_df['win_pct'] = (historic_df['wins'] / historic_df['gm']).round(2)
     historic_df['game_day'] = pd.to_datetime(historic_df['game_date']).dt.day_name()
     historic_df["result"] = historic_df["result"].str.split("-", expand=True)[0]
+
+    # Clean home_away column in case historic parquet has stale values
+    historic_df.loc[historic_df["home_away"] == "@", "home_away"] = "away"
+    historic_df.loc[~historic_df["home_away"].isin(["home", "away"]), "home_away"] = "home"
 
     if 'game_date' in historic_df.columns and historic_df['game_date'].dtype == 'object':
         historic_df['game_date'] = pd.to_datetime(historic_df['game_date'])
