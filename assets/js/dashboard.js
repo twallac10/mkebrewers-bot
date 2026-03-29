@@ -2443,10 +2443,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function renderMaxAttendanceInfo(data) {
-    const maxAttendanceTeam = data.reduce((max, team) => (team.attend_game > max.attend_game ? team : max), data[0]);
-    const maxAttendanceText = `The average attendance to see the ${maxAttendanceTeam.team} at ${maxAttendanceTeam.name} so far this season is <span class='win'>${maxAttendanceTeam.attend_game.toLocaleString()}</span>, more than any other franchise in Major League Baseball.`;
+    const sorted = [...data].sort((a, b) => b.attend_game - a.attend_game);
+    const brewers = sorted.find(d => d.team === 'Milwaukee Brewers');
+    if (!brewers) return;
 
-    // Insert the text into a paragraph element
+    const rank = sorted.indexOf(brewers) + 1;
+    let maxAttendanceText;
+    if (rank === 1) {
+      maxAttendanceText = `The average attendance at ${brewers.name} so far this season is <span class='win'>${brewers.attend_game.toLocaleString()}</span>, more than any other franchise in Major League Baseball.`;
+    } else {
+      const ordinal = rank === 2 ? '2nd' : rank === 3 ? '3rd' : `${rank}th`;
+      maxAttendanceText = `The average attendance at ${brewers.name} so far this season is <span class='win'>${brewers.attend_game.toLocaleString()}</span>, ranking ${ordinal} in Major League Baseball.`;
+    }
+
     d3.select('#max-attendance-info').html(maxAttendanceText);
   }
 

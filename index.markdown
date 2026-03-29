@@ -564,15 +564,15 @@ twitter:
 <div class="scorecard-row">
   <div class="scorecard-left">
   <h3 class="visual-subhead">Pitching strike zone analysis</h3>
-  <p class="chart-chatter">How often are Dodgers pitchers charged with <span style="background-color: #F18851; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">balls</span> that were actually <span style="background-color: #53A796; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">strikes</span>?</p>
+  <p class="chart-chatter">How often are Brewers pitchers charged with <span style="background-color: #F18851; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">balls</span> that were actually <span style="background-color: #53A796; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">strikes</span>?</p>
     <div id="umpire-scorecard-pitching-chart"></div>
   </div>
   <div class="scorecard-right">
-    <h3 class="visual-subhead">Worst calls against Dodgers pitchers</h3>
+    <h3 class="visual-subhead">Worst calls against Brewers pitchers</h3>
     <div id="umpire-worst-calls-pitching"></div>
   </div>
 </div>
- <p class="note">Note: Strike zone calls are determined by Baseball Savant and <a href="https://github.com/stiles/dodgers/blob/main/scripts/20_fetch_game_pitches.py">collected</a> after each game from its gamefeed API. Download the data <a href="https://stilesdata.com/dodgers/data/pitches/dodgers_pitches_thrown_2025.json">here</a>.</p> -->
+ <p class="note">Note: Strike zone calls are determined by Baseball Savant and collected after each game from its gamefeed API.</p> -->
 
   <h2 class="stat-group">Schedule</h2>
     <div id="schedule-section" class="schedule-tables">
