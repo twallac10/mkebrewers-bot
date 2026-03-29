@@ -18,7 +18,7 @@ function getEffectiveCurrentYear(data) {
 async function fetchData() {
   try {
     const response = await d3.json(
-      '/data/standings/brewers_standings_1970_present_optimized.json'
+      'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_standings_1970_present.json'
     );
     // Group data by year, converting the year to a string for consistency
     const groupedByYear = d3.group(response, (d) => d.year.toString());
@@ -2638,8 +2638,8 @@ document.addEventListener('DOMContentLoaded', fetchAndRenderXwoba);
 
 
 
-// Shohei 50-50 watch charts
-
+// Shohei 50-50 watch charts — REMOVED (Red Sox specific)
+/* Shohei charts removed - not applicable to Brewers
 document.addEventListener('DOMContentLoaded', function () {
   async function fetchShoheiData() {
     const hrUrl = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/batting/shohei_home_runs_cumulative_timeseries_combined.json';
@@ -3050,7 +3050,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   initializeShoheiCharts();
 });
-
+*/
 
 
 // New Wins Projection Chart with Confidence Interval
@@ -3600,7 +3600,8 @@ if (document.readyState === 'loading') {
   }
 })();
 
-// Shohei Ohtani Pitching Visualization
+// Shohei Ohtani Pitching Visualization — REMOVED (Red Sox specific)
+/* Shohei pitching visualization removed - not applicable to Brewers
 document.addEventListener('DOMContentLoaded', function () {
   if (!document.getElementById('shohei-pitching-container')) {
     return;
@@ -3777,6 +3778,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   fetchOhtaniPitchData();
 });
+*/
 
 // Playoff Bracket Functions
 async function fetchPlayoffBracketData() {

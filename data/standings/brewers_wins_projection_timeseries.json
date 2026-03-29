@@ -1,6 +1,6 @@
 {
-    "games_played": 1,
-    "current_wins": 1,
+    "games_played": 2,
+    "current_wins": 2,
     "current_losses": 0,
     "timeseries": [
         {
@@ -8,6 +8,12 @@
             "mean_projected_wins": 1.0,
             "lower_ci_wins": 1.0,
             "upper_ci_wins": 1.0
+        },
+        {
+            "game_number": 2,
+            "mean_projected_wins": 2.0,
+            "lower_ci_wins": 2.0,
+            "upper_ci_wins": 2.0
         }
     ],
     "message": "Not enough games played for a meaningful projection (minimum 10 games required)."

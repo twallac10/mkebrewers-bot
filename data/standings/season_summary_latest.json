@@ -34,9 +34,9 @@
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":0.5,
+        "value":0,
         "category":"standings",
-        "context_value":"2nd",
+        "context_value":"1st",
         "context_value_label":"Division rank"
     },
     {
@@ -84,7 +84,7 @@
         "stat":"home_runs",
         "value":2,
         "category":"batting",
-        "context_value":"11th",
+        "context_value":"13th",
         "context_value_label":"League rank"
     },
     {
@@ -108,7 +108,7 @@
         "stat":"stolen_bases",
         "value":1,
         "category":"batting",
-        "context_value":"2nd",
+        "context_value":"1st",
         "context_value_label":"League rank"
     },
     {
@@ -124,7 +124,7 @@
         "stat":"strikeouts",
         "value":"20",
         "category":"pitching",
-        "context_value":"8th",
+        "context_value":"3rd",
         "context_value_label":"League rank"
     },
     {
@@ -132,7 +132,7 @@
         "stat":"walks",
         "value":"5",
         "category":"pitching",
-        "context_value":"17th",
+        "context_value":"11th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"2.00",
         "category":"pitching",
-        "context_value":"9th",
+        "context_value":"3rd",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"March 28, 2026, 4:22 PM PT",
+        "value":"March 28, 2026, 6:52 PM PT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(March 28)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>1-0<\/span> record in the 2026 regular season, a <span class='highlight'>100%<\/span> winning percentage.  The last game was a <span class='highlight'>14-2<\/span> home <span class='highlight'>win<\/span>. and the next game is Sunday at 11:10 p.m. PT at <span class='highlight'>American Family Field<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(March 28)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>2-0<\/span> record in the 2026 regular season, a <span class='highlight'>100%<\/span> winning percentage.  The last game was a <span class='highlight'>6-1<\/span> home <span class='highlight'>win<\/span>. and the next game is Sunday at 11:10 p.m. PT at <span class='highlight'>American Family Field<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
