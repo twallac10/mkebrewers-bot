@@ -463,4 +463,8 @@ def main():
         logging.info(f"No lineup data processed for {current_date_str}. No files will be saved or uploaded.")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        logging.error(f"Script failed: {e}")
+        import sys; sys.exit(1)

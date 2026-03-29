@@ -47,35 +47,150 @@ jobs:
         mkdir -p data/pitches
         mkdir -p data/postseason
 
-    - name: Run scripts
+    - name: Fetch league standings
+      id: s00
+      continue-on-error: true
       env:
         PYTHONPATH: ${{ github.workspace }}
-      run: |
-        # In-season scripts
-        python scripts/00_fetch_league_standings.py
-        python scripts/02_update_boxscores_archive.py
-        python scripts/03_scrape_league_ranks.py
-        python scripts/04_fetch_process_standings.py
-        python scripts/05_fetch_process_batting.py
-        python scripts/06_fetch_process_pitching.py
-        python scripts/07_create_toplines_summary.py
-        python scripts/09_build_wins_losses_from_boxscores.py
-        python scripts/13_fetch_process_schedule.py
-        python scripts/18_generate_projection.py
+      run: python scripts/00_fetch_league_standings.py
 
-        # These work year-round
-        python scripts/19_fetch_roster.py
-        python scripts/28_fetch_postseason_stats.py
-        python scripts/15_fetch_xwoba.py
-        python scripts/27_collect_umpires.py
-        # Historical gamelogs (~15 min each) run in fetch_historical.yml instead
-        # python scripts/08_fetch_process_season_outcomes.py
-        # python scripts/10_fetch_process_historic_batting_gamelogs.py
-        python scripts/11_fetch_process_attendance.py
-        # python scripts/12_fetch_process_historic_pitching_gamelogs.py
-        # python scripts/14_fetch_process_batting_mlb.py
-        python scripts/20_fetch_game_pitches.py
-        python scripts/21_summarize_pitch_data.py
+    - name: Update boxscores archive
+      id: s02
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/02_update_boxscores_archive.py
+
+    - name: Scrape league ranks
+      id: s03
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/03_scrape_league_ranks.py
+
+    - name: Fetch and process standings
+      id: s04
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/04_fetch_process_standings.py
+
+    - name: Fetch and process batting
+      id: s05
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/05_fetch_process_batting.py
+
+    - name: Fetch and process pitching
+      id: s06
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/06_fetch_process_pitching.py
+
+    - name: Create toplines summary
+      id: s07
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/07_create_toplines_summary.py
+
+    - name: Build wins/losses from boxscores
+      id: s09
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/09_build_wins_losses_from_boxscores.py
+
+    - name: Fetch and process schedule
+      id: s13
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/13_fetch_process_schedule.py
+
+    - name: Generate projection
+      id: s18
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/18_generate_projection.py
+
+    - name: Fetch roster
+      id: s19
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/19_fetch_roster.py
+
+    - name: Fetch postseason stats
+      id: s28
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/28_fetch_postseason_stats.py
+
+    - name: Fetch xwOBA
+      id: s15
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/15_fetch_xwoba.py
+
+    - name: Collect umpires
+      id: s27
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/27_collect_umpires.py
+
+    - name: Fetch and process attendance
+      id: s11
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/11_fetch_process_attendance.py
+
+    - name: Fetch game pitches
+      id: s20
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/20_fetch_game_pitches.py
+
+    - name: Summarize pitch data
+      id: s21
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/21_summarize_pitch_data.py
+
+    - name: Check for script failures
+      run: |
+        failed=""
+        [ "${{ steps.s00.outcome }}" = "failure" ] && failed="$failed 00_fetch_league_standings"
+        [ "${{ steps.s02.outcome }}" = "failure" ] && failed="$failed 02_update_boxscores_archive"
+        [ "${{ steps.s03.outcome }}" = "failure" ] && failed="$failed 03_scrape_league_ranks"
+        [ "${{ steps.s04.outcome }}" = "failure" ] && failed="$failed 04_fetch_process_standings"
+        [ "${{ steps.s05.outcome }}" = "failure" ] && failed="$failed 05_fetch_process_batting"
+        [ "${{ steps.s06.outcome }}" = "failure" ] && failed="$failed 06_fetch_process_pitching"
+        [ "${{ steps.s07.outcome }}" = "failure" ] && failed="$failed 07_create_toplines_summary"
+        [ "${{ steps.s09.outcome }}" = "failure" ] && failed="$failed 09_build_wins_losses"
+        [ "${{ steps.s13.outcome }}" = "failure" ] && failed="$failed 13_fetch_process_schedule"
+        [ "${{ steps.s18.outcome }}" = "failure" ] && failed="$failed 18_generate_projection"
+        [ "${{ steps.s19.outcome }}" = "failure" ] && failed="$failed 19_fetch_roster"
+        [ "${{ steps.s28.outcome }}" = "failure" ] && failed="$failed 28_fetch_postseason_stats"
+        [ "${{ steps.s15.outcome }}" = "failure" ] && failed="$failed 15_fetch_xwoba"
+        [ "${{ steps.s27.outcome }}" = "failure" ] && failed="$failed 27_collect_umpires"
+        [ "${{ steps.s11.outcome }}" = "failure" ] && failed="$failed 11_fetch_process_attendance"
+        [ "${{ steps.s20.outcome }}" = "failure" ] && failed="$failed 20_fetch_game_pitches"
+        [ "${{ steps.s21.outcome }}" = "failure" ] && failed="$failed 21_summarize_pitch_data"
+        if [ -n "$failed" ]; then
+          echo "::error::The following scripts failed:$failed"
+          exit 1
+        fi
+        echo "All scripts completed successfully."
 
     - name: Build Jekyll site
       run: bundle exec jekyll build

@@ -428,4 +428,8 @@ def main():
         print(f"{i:2d}. {name}: {games}G, {pa} PA, {avg} AVG, {hr} HR, {rbi} RBI")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        logging.error(f"Script failed: {e}")
+        import sys; sys.exit(1)

@@ -158,41 +158,45 @@ def should_post_transactions():
         return False
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description=f"Post new {config.TEAM_NAME_SIMPLE} transactions to Bluesky.")
-    parser.add_argument("--post", action="store_true", help="Post new transactions to Bluesky.")
-    parser.add_argument("--force", action="store_true", help="Force posting regardless of time constraints.")
-    args = parser.parse_args()
+    try:
+        parser = argparse.ArgumentParser(description=f"Post new {config.TEAM_NAME_SIMPLE} transactions to Bluesky.")
+        parser.add_argument("--post", action="store_true", help="Post new transactions to Bluesky.")
+        parser.add_argument("--force", action="store_true", help="Force posting regardless of time constraints.")
+        args = parser.parse_args()
 
-    # Check if we should post (unless forced)
-    if not args.force and not should_post_transactions():
-        exit()
+        # Check if we should post (unless forced)
+        if not args.force and not should_post_transactions():
+            exit()
 
-    # Fetch new transactions
-    new_transactions = fetch_new_transactions()
+        # Fetch new transactions
+        new_transactions = fetch_new_transactions()
 
-    if new_transactions:
-        logging.info(f"Found {len(new_transactions)} new transactions to potentially post")
+        if new_transactions:
+            logging.info(f"Found {len(new_transactions)} new transactions to potentially post")
 
-        posts_made = 0
-        for transaction in new_transactions:
-            transaction_id = create_transaction_id(transaction)
-            post_text = format_transaction_post(transaction)
+            posts_made = 0
+            for transaction in new_transactions:
+                transaction_id = create_transaction_id(transaction)
+                post_text = format_transaction_post(transaction)
 
-            print(f"--- Transaction Post {posts_made + 1} ---")
-            print(f"ID: {transaction_id}")
-            print(f"Post: {post_text}")
-            print()
+                print(f"--- Transaction Post {posts_made + 1} ---")
+                print(f"ID: {transaction_id}")
+                print(f"Post: {post_text}")
+                print()
+
+                if args.post:
+                    success = post_to_bluesky(post_text, transaction_id)
+                    if success:
+                        posts_made += 1
+                        # Add a small delay between posts to be respectful to Bluesky's API
+                        time.sleep(2)
+                else:
+                    logging.info("Dry run: --post flag not provided. Not posting to Bluesky.")
 
             if args.post:
-                success = post_to_bluesky(post_text, transaction_id)
-                if success:
-                    posts_made += 1
-                    # Add a small delay between posts to be respectful to Bluesky's API
-                    time.sleep(2)
-            else:
-                logging.info("Dry run: --post flag not provided. Not posting to Bluesky.")
-
-        if args.post:
-            logging.info(f"Successfully posted {posts_made} transaction posts to Bluesky")
-    else:
-        logging.info("No new transactions found to post.")
+                logging.info(f"Successfully posted {posts_made} transaction posts to Bluesky")
+        else:
+            logging.info("No new transactions found to post.")
+    except Exception as e:
+        logging.error(f"Script failed: {e}")
+        import sys; sys.exit(1)
