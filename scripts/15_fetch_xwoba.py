@@ -39,26 +39,23 @@ s3_key_parquet = "mkebrewers/data/batting/brewers_xwoba_current.parquet"
 
 # Allowlist of batter names to include (expected input: "First Last")
 ALLOWED_BATTERS = [
-    "Rafael Devers",
-    "Triston Casas",
-    "Jarren Duran",
-    "Masataka Yoshida",
-    "Trevor Story",
-    "Wilyer Abreu",
-    "Ceddanne Rafaela",
-    "Connor Wong",
-    "Rob Refsnyder",
-    "Vaughn Grissom",
-    "Enmanuel Valdez",
-    "David Hamilton",
+    "William Contreras",
+    "Willy Adames",
+    "Jackson Chourio",
+    "Sal Frelick",
+    "Joey Ortiz",
+    "Brice Turang",
+    "Christian Yelich",
+    "Garrett Mitchell",
+    "Rhys Hoskins",
+    "Blake Perkins",
+    "Oliver Dunn",
+    "Eric Haase",
 ]
 
 # Known corrections to help match allowlist typos or alternate spellings
 NAME_CORRECTIONS = {
     # normalized "first last" -> corrected normalized "first last"
-    "teo hernandex": "teoscar hernandez",
-    "teo hernandez": "teoscar hernandez",
-    "hyeseong kim": "hyeseong kim",  # keep as-is; normalization handles hyphens/accents
 }
 
 # AWS session and S3 resource
@@ -266,7 +263,7 @@ def fetch_player_xwoba(player_name, player_id):
         # Convert max_game_date from UTC to Pacific Time
         if 'max_game_date' in player_df.columns:
             player_df['max_game_date'] = pd.to_datetime(player_df['max_game_date'])
-            player_df['max_game_date'] = player_df['max_game_date'].dt.tz_convert('America/Los_Angeles')
+            player_df['max_game_date'] = player_df['max_game_date'].dt.tz_convert('America/Chicago')
             # Format the date for better readability
             player_df['max_game_date'] = player_df['max_game_date'].dt.strftime('%Y-%m-%d %H:%M:%S %Z')
             
