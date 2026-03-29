@@ -86,7 +86,7 @@ def fetch_current_year_data(url, year):
     # Split, format date
     src[["weekday", "date"]] = src["date"].str.split(", ", expand=True)
     src["date"] = src["date"].str.replace(" (1)", "").str.replace(" (2)", "")
-    src["game_date"] = pd.to_datetime(src["date"] + ", " + src["year"], format="%b %d, %Y").astype(str)
+    src["game_date"] = pd.to_datetime(src["date"] + ", " + src["year"], format="%b %d, %Y")
 
     # Clean home-away column
     src.loc[src.home_away == "@", "home_away"] = "away"
