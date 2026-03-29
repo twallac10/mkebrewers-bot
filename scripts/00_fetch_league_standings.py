@@ -14,6 +14,7 @@ from datetime import datetime
 import json
 from typing import List, Dict, Any, Optional
 import pytz
+from scripts import config
 
 HEADERS = {
     'sec-ch-ua-platform': '"macOS"',
