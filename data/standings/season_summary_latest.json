@@ -84,7 +84,7 @@
         "stat":"home_runs",
         "value":2,
         "category":"batting",
-        "context_value":"10th",
+        "context_value":"11th",
         "context_value_label":"League rank"
     },
     {
@@ -108,7 +108,7 @@
         "stat":"stolen_bases",
         "value":1,
         "category":"batting",
-        "context_value":"7th",
+        "context_value":"2nd",
         "context_value_label":"League rank"
     },
     {
@@ -132,7 +132,7 @@
         "stat":"walks",
         "value":"5",
         "category":"pitching",
-        "context_value":"16th",
+        "context_value":"17th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"2.00",
         "category":"pitching",
-        "context_value":"7th",
+        "context_value":"9th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"March 28, 2026, 3:43 PM PT",
+        "value":"March 28, 2026, 4:22 PM PT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
