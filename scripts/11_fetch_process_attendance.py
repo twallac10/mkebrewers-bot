@@ -80,6 +80,7 @@ gdf.loc[gdf["league"] == "American", "league"] = 'AL'
 gdf.loc[gdf["team"] == "Houston Astros", "league"] = 'AL'
 gdf.loc[gdf["team"] == "Oakland Athletics", "name"] = 'Oakland Coliseum'
 gdf.loc[gdf["team"] == "Baltimore Orioles", "name"] = 'Camden Yards'
+gdf.loc[gdf["team"] == "Milwaukee Brewers", "name"] = 'American Family Field'
 
 
 """
