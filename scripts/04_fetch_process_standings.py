@@ -56,32 +56,28 @@ def fetch_current_year_data(url, year):
     soup = BeautifulSoup(response.content, 'html.parser')
     src = (pd.read_html(StringIO(str(soup)))[0].query("Tm !='Tm' and Inn != 'Game Preview, and Matchups'")
               .drop(["Unnamed: 2", "Streak", "Orig. Scheduled"], axis=1)
-              .rename(columns={"Unnamed: 4": "home_away"})
-              .assign(season=year))
-    
-    src.columns = src.columns.str.lower().str.replace("/", "_").str.replace("-", "-")
-    src.columns = [
-        "gm",
-        "date",
-        "tm",
-        "home_away",
-        "opp",
-        "result",
-        "r",
-        "ra",
-        "inn",
-        "record",
-        "rank",
-        "gb",
-        "win",
-        "loss",
-        "save",
-        "time",
-        "day_night",
-        "attendance",
-        "cli",
-        "year",
-    ]
+              .rename(columns={
+                  "Gm#": "gm",
+                  "Date": "date",
+                  "Tm": "tm",
+                  "Unnamed: 4": "home_away",
+                  "Opp": "opp",
+                  "W/L": "result",
+                  "R": "r",
+                  "RA": "ra",
+                  "Inn": "inn",
+                  "W-L": "record",
+                  "Rank": "rank",
+                  "GB": "gb",
+                  "Win": "win",
+                  "Loss": "loss",
+                  "Save": "save",
+                  "Time": "time",
+                  "D/N": "day_night",
+                  "Attendance": "attendance",
+                  "cLI": "cli",
+              })
+              .assign(year=year))
 
     # Convert date types where needed
     src["gm"] = src["gm"].astype(int)
