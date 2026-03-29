@@ -51,9 +51,6 @@ jobs:
       env:
         PYTHONPATH: ${{ github.workspace }}
       run: |
-        # Historical data first (needed by later scripts)
-        python scripts/29_fetch_historical_standings.py
-
         # In-season scripts
         python scripts/00_fetch_league_standings.py
         python scripts/02_update_boxscores_archive.py

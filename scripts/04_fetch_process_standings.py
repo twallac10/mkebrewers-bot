@@ -174,15 +174,22 @@ def main():
         logging.info("Output directory checked/created.")
 
         src_df = fetch_current_year_data(url, year)
-        # historic_df = load_historic_data(historic_file)
-        # For now, if historic file doesn't exist, just use current year or empty
+        # Try local file first, then download from S3
+        if not os.path.exists(historic_file):
+            logging.info("Historic file not found locally, downloading from S3.")
+            try:
+                s3.Bucket(s3_bucket).download_file(s3_key_parquet, historic_file)
+                logging.info(f"Downloaded historic parquet from S3.")
+            except Exception as e:
+                logging.warning(f"Could not download historic parquet from S3: {e}")
+
         if os.path.exists(historic_file):
              historic_df = load_historic_data(historic_file)
              if historic_df['game_date'].dtype != 'datetime64[ns]':
                 historic_df['game_date'] = pd.to_datetime(historic_df['game_date'])
              df = pd.concat([src_df, historic_df]).sort_values("game_date", ascending=False).drop_duplicates(subset=['gm', 'year']).reset_index(drop=True)
         else:
-             logging.warning(f"Historic file {historic_file} not found. Using only current year data.")
+             logging.warning(f"Historic file not available. Using only current year data.")
              df = src_df.sort_values("game_date", ascending=False).reset_index(drop=True)
 
         
