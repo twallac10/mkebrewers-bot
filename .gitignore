@@ -39,3 +39,6 @@ assets/css/style.css
 
 # Plan/spec docs (development only)
 docs/superpowers/
+
+# Claude Code local settings
+.claude/settings.local.json
