@@ -3,7 +3,7 @@ name: Post Lineup to Bluesky
 on:
   schedule:
     # Runs hourly, but the job will only proceed between 8am and 6pm CT.
-    - cron: '0 12-23 * * *'  # Every hour from 6 AM to 5 PM CT (during season)
+    - cron: '0 12-23 * * *'  # Every hour from 7 AM to 6 PM CDT (runtime TZ check limits to 8 AM–6 PM CT)
   workflow_dispatch:
 
 jobs:

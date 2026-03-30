@@ -341,13 +341,11 @@ def home_run_stats(batting_now, batting_past):
 
 def batting_and_stolen_base_stats(batting_now, batting_past, games):
     batting_average = batting_now["ba"].iloc[0]
-    batting_average_decade = str(round(
-        batting_past.head(10)["ba"].astype(float).mean(), 3
-    )).replace("0.", ".")
+    _ba_mean = batting_past.head(10)["ba"].astype(float).mean()
+    batting_average_decade = str(round(_ba_mean, 3)).replace("0.", ".") if not pd.isna(_ba_mean) else 'N/A'
     on_base_pct = batting_now["obp"].iloc[0]
-    on_base_pct_decade = str(round(
-        batting_past.head(10)["obp"].astype(float).mean(), 3
-    )).replace("0.", ".")
+    _obp_mean = batting_past.head(10)["obp"].astype(float).mean()
+    on_base_pct_decade = str(round(_obp_mean, 3)).replace("0.", ".") if not pd.isna(_obp_mean) else 'N/A'
     stolen_bases = int(batting_now["sb"].iloc[0])
     stolen_bases_rank = to_ordinal(league_ranks_data.get('hitting_stolenBases', 'N/A'))
     stolen_bases_game = round(stolen_bases / games, 2) if games > 0 else 0

@@ -2,7 +2,7 @@ name: fetch
 
 on:
   schedule:
-    - cron: '0 8,12,15,23 * 3-10 *'
+    - cron: '0 8,12,15,23 * 3-10 *'  # 3 AM, 7 AM, 10 AM, 6 PM CDT (UTC-5), Mar-Oct only
   workflow_dispatch:
   push:
     branches:
