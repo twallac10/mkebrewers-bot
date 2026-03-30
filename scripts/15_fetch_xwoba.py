@@ -157,14 +157,20 @@ def fetch_player_ids():
     logging.info(f"Fetching player IDs from roster page for {CURRENT_YEAR} season.")
     team_url = f'https://baseballsavant.mlb.com/team/{config.TEAM_ID}?view=statcast&nav=hitting&season={CURRENT_YEAR}'
     logging.info(f"Making request to: {team_url}")
-    
+
     try:
-        response = requests.get(team_url, headers=headers)
-        logging.info(f"Response status code: {response.status_code}")
-        
+        response = None
+        for attempt in range(1, 4):
+            response = requests.get(team_url, headers=headers)
+            logging.info(f"Response status code (attempt {attempt}): {response.status_code}")
+            if response.status_code == 200:
+                break
+            logging.warning(f"Attempt {attempt} failed with status {response.status_code}. Retrying in {attempt * 10}s...")
+            time.sleep(attempt * 10)
+
         if response.status_code != 200:
-            logging.error(f"Failed to fetch roster page. Status code: {response.status_code}")
-            logging.error(f"Response content: {response.text[:500]}")  # First 500 chars of response
+            logging.error(f"Failed to fetch roster page after 3 attempts. Status code: {response.status_code}")
+            logging.error(f"Response content: {response.text[:500]}")
             return {}
             
         logging.info("Successfully fetched roster page")
