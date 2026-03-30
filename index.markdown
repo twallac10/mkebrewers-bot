@@ -87,10 +87,14 @@ twitter:
 
 {% comment %} Try to load current year's data using the dynamic filename key {% endcomment %}
 {% assign standings_data = site.data.standings[dynamic_filename_key] %}
+{% assign is_current_season = true %}
+{% assign standings_year = current_year_str %}
 
 {% comment %} Fallback to 2025 data if current year's data is not found (off-season handling). {% endcomment %}
 {% if standings_data == nil %}
   {% assign standings_data = site.data.standings.all_teams_standings_metrics_2025 %}
+  {% assign is_current_season = false %}
+  {% assign standings_year = "2025" %}
 {% endif %}
 
 {% comment %} If all potential data sources are nil, default to an empty array to prevent errors. {% endcomment %}
@@ -112,7 +116,11 @@ twitter:
 {% assign nl_central = nl_teams | where_exp: "item", "item.division_name == 'National League Central'" | sort: "division_rank" %}
 {% assign nl_west = nl_teams | where_exp: "item", "item.division_name == 'National League West'" | sort: "division_rank" %}
 
-<h2 class="stat-group">Final regular season standings</h2>
+{% if is_current_season %}
+<h2 class="stat-group">{{ standings_year }} regular season standings</h2>
+{% else %}
+<h2 class="stat-group">Final {{ standings_year }} regular season standings</h2>
+{% endif %}
 
 <h3 class="visual-subhead">National League standings by division</h3>
 <div class="tables-container standings-tables">
