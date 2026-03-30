@@ -90,11 +90,13 @@ twitter:
 {% assign is_current_season = true %}
 {% assign standings_year = current_year_str %}
 
-{% comment %} Fallback to 2025 data if current year's data is not found (off-season handling). {% endcomment %}
+{% comment %} Fallback to prior year data if current year's data is not found (off-season handling). {% endcomment %}
 {% if standings_data == nil %}
-  {% assign standings_data = site.data.standings.all_teams_standings_metrics_2025 %}
+  {% assign prev_year = current_year_str | minus: 1 %}
+  {% assign prev_year_key = "all_teams_standings_metrics_" | append: prev_year %}
+  {% assign standings_data = site.data.standings[prev_year_key] %}
   {% assign is_current_season = false %}
-  {% assign standings_year = "2025" %}
+  {% assign standings_year = prev_year | append: "" %}
 {% endif %}
 
 {% comment %} If all potential data sources are nil, default to an empty array to prevent errors. {% endcomment %}
