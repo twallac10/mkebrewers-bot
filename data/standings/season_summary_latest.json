@@ -76,7 +76,7 @@
         "stat":"batting_average",
         "value":".348",
         "category":"batting",
-        "context_value":"nan",
+        "context_value":"N\/A",
         "context_value_label":"Last decade average"
     },
     {
@@ -100,7 +100,7 @@
         "stat":"on_base_pct",
         "value":".464",
         "category":"batting",
-        "context_value":"nan",
+        "context_value":"N\/A",
         "context_value_label":"Last decade average"
     },
     {
@@ -124,7 +124,7 @@
         "stat":"strikeouts",
         "value":"31",
         "category":"pitching",
-        "context_value":"3rd",
+        "context_value":"5th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"1.50",
         "category":"pitching",
-        "context_value":"11th",
+        "context_value":"12th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"March 29, 2026, 6:13 PM CT",
+        "value":"March 29, 2026, 10:01 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
