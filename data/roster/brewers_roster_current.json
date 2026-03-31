@@ -252,24 +252,6 @@
     "slug":"william-contreras"
   },
   {
-    "player_id":"691620",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/691620\/headshot\/silo\/current",
-    "name":"Jeferson Quero",
-    "player_url":"\/player\/691620",
-    "jersey":"15",
-    "position_group":"Catchers",
-    "bat_throw":"R\/R",
-    "height":"6' 0\"",
-    "weight":"203",
-    "dob":"10\/08\/2002",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"jeferson-quero"
-  },
-  {
     "player_id":"596142",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/596142\/headshot\/silo\/current",
     "name":"Gary Sánchez",
@@ -412,6 +394,24 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"brandon-lockridge"
+  },
+  {
+    "player_id":"682641",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/682641\/headshot\/silo\/current",
+    "name":"Luis Matos",
+    "player_url":"\/player\/682641",
+    "jersey":"21",
+    "position_group":"Outfielders",
+    "bat_throw":"R\/R",
+    "height":"5' 11\"",
+    "weight":"205",
+    "dob":"01\/28\/2002",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"luis-matos"
   },
   {
     "player_id":"669003",
