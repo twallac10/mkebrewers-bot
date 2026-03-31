@@ -34,9 +34,9 @@
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":1,
+        "value":0,
         "category":"standings",
-        "context_value":"1st",
+        "context_value":"2nd",
         "context_value_label":"Division rank"
     },
     {
@@ -84,7 +84,7 @@
         "stat":"home_runs",
         "value":4,
         "category":"batting",
-        "context_value":"10th",
+        "context_value":"8th",
         "context_value_label":"League rank"
     },
     {
@@ -124,7 +124,7 @@
         "stat":"strikeouts",
         "value":"43",
         "category":"pitching",
-        "context_value":"5th",
+        "context_value":"3rd",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"3.33",
         "category":"pitching",
-        "context_value":"12th",
+        "context_value":"8th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"March 30, 2026, 6:16 PM CT",
+        "value":"March 31, 2026, 3:31 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(March 30)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>3-0<\/span> record in the 2026 regular season, a <span class='highlight'>100%<\/span> winning percentage.  The last game was a <span class='highlight'>9-7<\/span> home <span class='highlight'>win<\/span>. and the next game is Tuesday at 6:40 p.m. CT at <span class='highlight'>American Family Field<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(March 31)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>3-1<\/span> record in the 2026 regular season, a <span class='highlight'>75%<\/span> winning percentage.  The last game was a <span class='highlight'>2-3<\/span> home <span class='highlight'>loss<\/span>. and the next game is Tuesday at 6:40 p.m. CT at <span class='highlight'>American Family Field<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -162,7 +162,7 @@
     {
         "stat_label":"Last game result",
         "stat":"last_game_result",
-        "value":"win",
+        "value":"loss",
         "category":"summary",
         "context_value":"",
         "context_value_label":""

@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 95.45454545454545,
-        "incorrect_strikes_pct": 4.545454545454547,
-        "total_called_strikes": 66,
-        "bad_calls_count": 3
+        "correct_strikes_pct": 95.6043956043956,
+        "incorrect_strikes_pct": 4.395604395604394,
+        "total_called_strikes": 91,
+        "bad_calls_count": 4
     },
     "last_game_summary": {
-        "date": "March 29, 2026",
-        "correct_strikes_pct": 100.0,
-        "incorrect_strikes_pct": 0.0,
-        "total_called_strikes": 34,
-        "bad_calls_count": 0,
-        "home_plate_umpire": "Carlos Torres"
+        "date": "March 30, 2026",
+        "correct_strikes_pct": 96.0,
+        "incorrect_strikes_pct": 4.0,
+        "total_called_strikes": 25,
+        "bad_calls_count": 1,
+        "home_plate_umpire": "Jeremie Rehak"
     },
     "worst_calls_of_season": [
         {
@@ -23,6 +23,16 @@
             "date": "2026-03-26",
             "date_formatted": "March 26, 2026",
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=233f996a-704d-37ff-8cd9-ba84b70cae99"
+        },
+        {
+            "distance_inches": 0.2754536408,
+            "batter": "Garrett Mitchell",
+            "pitcher": "Nick Martinez",
+            "pitch_type": "4-Seam Fastball",
+            "velocity_mph": 92.8,
+            "date": "2026-03-30",
+            "date_formatted": "March 30, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=b1b8aa7f-0765-3e4e-9fab-c0ec7dd536bc"
         },
         {
             "distance_inches": 0.2029082408,
@@ -46,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.12403100775194,
-        "incorrect_balls_pct": 3.875968992248062,
-        "total_called_balls": 129,
-        "bad_calls_count": 5
+        "correct_balls_pct": 95.34883720930233,
+        "incorrect_balls_pct": 4.6511627906976685,
+        "total_called_balls": 172,
+        "bad_calls_count": 8
     },
     "pitching_last_game_summary": {
-        "date": "March 29, 2026",
-        "correct_balls_pct": 92.1875,
-        "incorrect_balls_pct": 7.8125,
-        "total_called_balls": 64,
-        "bad_calls_count": 5
+        "date": "March 30, 2026",
+        "correct_balls_pct": 93.02325581395348,
+        "incorrect_balls_pct": 6.976744186046517,
+        "total_called_balls": 43,
+        "bad_calls_count": 3
     },
     "pitching_worst_calls_of_season": []
 }
