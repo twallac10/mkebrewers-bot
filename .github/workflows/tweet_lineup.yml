@@ -19,6 +19,7 @@ jobs:
     steps:
     - name: Check Time in Team Timezone
       id: time_check
+      shell: bash
       run: |
         if [[ $(TZ="America/Chicago" date +'%H') -ge 8 && $(TZ="America/Chicago" date +'%H') -lt 18 ]]; then
           echo "Proceeding, it's between 8am and 6pm CT."
