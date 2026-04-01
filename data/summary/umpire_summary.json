@@ -1,19 +1,29 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 95.6043956043956,
-        "incorrect_strikes_pct": 4.395604395604394,
-        "total_called_strikes": 91,
-        "bad_calls_count": 4
+        "correct_strikes_pct": 94.16666666666667,
+        "incorrect_strikes_pct": 5.833333333333329,
+        "total_called_strikes": 120,
+        "bad_calls_count": 7
     },
     "last_game_summary": {
-        "date": "March 30, 2026",
-        "correct_strikes_pct": 96.0,
-        "incorrect_strikes_pct": 4.0,
-        "total_called_strikes": 25,
-        "bad_calls_count": 1,
-        "home_plate_umpire": "Jeremie Rehak"
+        "date": "March 31, 2026",
+        "correct_strikes_pct": 89.65517241379311,
+        "incorrect_strikes_pct": 10.34482758620689,
+        "total_called_strikes": 29,
+        "bad_calls_count": 3,
+        "home_plate_umpire": "Dan Iassogna"
     },
     "worst_calls_of_season": [
+        {
+            "distance_inches": 2.0050163116,
+            "batter": "Sal Frelick",
+            "pitcher": "Shane McClanahan",
+            "pitch_type": "4-Seam Fastball",
+            "velocity_mph": 95.0,
+            "date": "2026-03-31",
+            "date_formatted": "March 31, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=7561ef91-bc95-309b-abd4-4cf687954618"
+        },
         {
             "distance_inches": 1.8137085765,
             "batter": "Sal Frelick",
@@ -25,6 +35,16 @@
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=233f996a-704d-37ff-8cd9-ba84b70cae99"
         },
         {
+            "distance_inches": 0.5069285697,
+            "batter": "Brice Turang",
+            "pitcher": "Yoendrys G\u00f3mez",
+            "pitch_type": "4-Seam Fastball",
+            "velocity_mph": 95.4,
+            "date": "2026-03-31",
+            "date_formatted": "March 31, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=0c9b401f-ab75-39e1-a253-279c5ed1db96"
+        },
+        {
             "distance_inches": 0.2754536408,
             "batter": "Garrett Mitchell",
             "pitcher": "Nick Martinez",
@@ -33,40 +53,20 @@
             "date": "2026-03-30",
             "date_formatted": "March 30, 2026",
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=b1b8aa7f-0765-3e4e-9fab-c0ec7dd536bc"
-        },
-        {
-            "distance_inches": 0.2029082408,
-            "batter": "Joey Ortiz",
-            "pitcher": "Sean Newcomb",
-            "pitch_type": "4-Seam Fastball",
-            "velocity_mph": 93.7,
-            "date": "2026-03-26",
-            "date_formatted": "March 26, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=2a270b8a-df57-35fc-971c-dd3ad6701339"
-        },
-        {
-            "distance_inches": 0.1894317599,
-            "batter": "Brice Turang",
-            "pitcher": "Shane Smith",
-            "pitch_type": "4-Seam Fastball",
-            "velocity_mph": 95.3,
-            "date": "2026-03-26",
-            "date_formatted": "March 26, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=62b26a71-78ca-327a-94bd-31f8b0c228dd"
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.34883720930233,
-        "incorrect_balls_pct": 4.6511627906976685,
-        "total_called_balls": 172,
-        "bad_calls_count": 8
+        "correct_balls_pct": 95.39170506912443,
+        "incorrect_balls_pct": 4.608294930875573,
+        "total_called_balls": 217,
+        "bad_calls_count": 10
     },
     "pitching_last_game_summary": {
-        "date": "March 30, 2026",
-        "correct_balls_pct": 93.02325581395348,
-        "incorrect_balls_pct": 6.976744186046517,
-        "total_called_balls": 43,
-        "bad_calls_count": 3
+        "date": "March 31, 2026",
+        "correct_balls_pct": 95.55555555555556,
+        "incorrect_balls_pct": 4.444444444444443,
+        "total_called_balls": 45,
+        "bad_calls_count": 2
     },
     "pitching_worst_calls_of_season": []
 }
