@@ -5,18 +5,18 @@ Record,record,4-1,standings,1-4,This point last season
 Win percentage,win_pct,80%,standings,20%,This point last season
 Games up/back,games_up_back,1,standings,1st,Division rank
 Avg. home attendance,mean_attendance,"30,360",standings,5,Home games this season
-Runs,runs,37,standings,2nd,League rank
+Runs,runs,37,standings,1st,League rank
 Runs against,runs_against,15,standings,47,This point last season
 Run differential,run_differential,22,standings,-27,This point last season
 Batting average,batting_average,.286,batting,N/A,Last decade average
-Home runs,home_runs,7,batting,7th,League rank
+Home runs,home_runs,7,batting,5th,League rank
 Home runs/game,home_runs_game,1.4,batting,N/A,Last decade average
 On-base percentage,on_base_pct,.394,batting,N/A,Last decade average
 Stolen bases,stolen_bases,13,batting,1st,League rank
 Stolen bases/game,stolen_bases_game,2.6,batting,N/A,Rate all last season
-Strikeouts,strikeouts,65,pitching,4th,League rank
+Strikeouts,strikeouts,65,pitching,3rd,League rank
 Walks,walks,18,pitching,14th,League rank
-ERA,era,3.00,pitching,6th,League rank
-Last updated,update_time,"April 1, 2026, 10:35 AM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(April 1)</span> — The Brewers have compiled a <span class='highlight'>4-1</span> record in the 2026 regular season, a <span class='highlight'>80%</span> winning percentage.  The last game was a <span class='highlight'>6-2</span> home <span class='highlight'>win</span>. and the next game is Wednesday at 12:40 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
+ERA,era,3.00,pitching,5th,League rank
+Last updated,update_time,"April 1, 2026, 6:17 PM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(April 1)</span> — The Brewers have compiled a <span class='highlight'>5-1</span> record in the 2026 regular season, a <span class='highlight'>83%</span> winning percentage.  The last game was a <span class='highlight'>8-2</span> home <span class='highlight'>win</span>. and the next game is Friday at 6:45 p.m. CT at <span class='highlight'>Kauffman Stadium</span>.",summary,,
 Last game result,last_game_result,win,summary,,

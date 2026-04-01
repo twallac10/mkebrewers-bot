@@ -1,19 +1,29 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 94.16666666666667,
-        "incorrect_strikes_pct": 5.833333333333329,
-        "total_called_strikes": 120,
-        "bad_calls_count": 7
+        "correct_strikes_pct": 93.24324324324324,
+        "incorrect_strikes_pct": 6.756756756756758,
+        "total_called_strikes": 148,
+        "bad_calls_count": 10
     },
     "last_game_summary": {
-        "date": "March 31, 2026",
-        "correct_strikes_pct": 89.65517241379311,
-        "incorrect_strikes_pct": 10.34482758620689,
-        "total_called_strikes": 29,
+        "date": "April 1, 2026",
+        "correct_strikes_pct": 89.28571428571429,
+        "incorrect_strikes_pct": 10.714285714285708,
+        "total_called_strikes": 28,
         "bad_calls_count": 3,
-        "home_plate_umpire": "Dan Iassogna"
+        "home_plate_umpire": "CB Bucknor"
     },
     "worst_calls_of_season": [
+        {
+            "distance_inches": 3.1258824816,
+            "batter": "Joey Ortiz",
+            "pitcher": "Drew Rasmussen",
+            "pitch_type": "Cutter",
+            "velocity_mph": 89.0,
+            "date": "2026-04-01",
+            "date_formatted": "April 1, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=2cdc2e40-9539-3b9b-8fa8-25dfbb822ea1"
+        },
         {
             "distance_inches": 2.0050163116,
             "batter": "Sal Frelick",
@@ -35,38 +45,28 @@
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=233f996a-704d-37ff-8cd9-ba84b70cae99"
         },
         {
-            "distance_inches": 0.5069285697,
-            "batter": "Brice Turang",
-            "pitcher": "Yoendrys G\u00f3mez",
+            "distance_inches": 1.0629441236,
+            "batter": "Christian Yelich",
+            "pitcher": "Drew Rasmussen",
             "pitch_type": "4-Seam Fastball",
-            "velocity_mph": 95.4,
-            "date": "2026-03-31",
-            "date_formatted": "March 31, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=0c9b401f-ab75-39e1-a253-279c5ed1db96"
-        },
-        {
-            "distance_inches": 0.2754536408,
-            "batter": "Garrett Mitchell",
-            "pitcher": "Nick Martinez",
-            "pitch_type": "4-Seam Fastball",
-            "velocity_mph": 92.8,
-            "date": "2026-03-30",
-            "date_formatted": "March 30, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=b1b8aa7f-0765-3e4e-9fab-c0ec7dd536bc"
+            "velocity_mph": 96.4,
+            "date": "2026-04-01",
+            "date_formatted": "April 1, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=0099e23b-a6c2-3f5e-8517-56ac362bfd2e"
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.39170506912443,
-        "incorrect_balls_pct": 4.608294930875573,
-        "total_called_balls": 217,
-        "bad_calls_count": 10
+        "correct_balls_pct": 95.80152671755725,
+        "incorrect_balls_pct": 4.198473282442748,
+        "total_called_balls": 262,
+        "bad_calls_count": 11
     },
     "pitching_last_game_summary": {
-        "date": "March 31, 2026",
-        "correct_balls_pct": 95.55555555555556,
-        "incorrect_balls_pct": 4.444444444444443,
+        "date": "April 1, 2026",
+        "correct_balls_pct": 97.77777777777777,
+        "incorrect_balls_pct": 2.2222222222222285,
         "total_called_balls": 45,
-        "bad_calls_count": 2
+        "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": []
 }
