@@ -84,7 +84,7 @@
         "stat":"home_runs",
         "value":8,
         "category":"batting",
-        "context_value":"5th",
+        "context_value":"6th",
         "context_value_label":"League rank"
     },
     {
@@ -132,7 +132,7 @@
         "stat":"walks",
         "value":"21",
         "category":"pitching",
-        "context_value":"16th",
+        "context_value":"18th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"2.83",
         "category":"pitching",
-        "context_value":"4th",
+        "context_value":"3rd",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"April 2, 2026, 6:15 PM CT",
+        "value":"April 3, 2026, 3:24 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(April 2)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>5-1<\/span> record in the 2026 regular season, a <span class='highlight'>83%<\/span> winning percentage.  The last game was a <span class='highlight'>8-2<\/span> home <span class='highlight'>win<\/span>. and the next game is Friday at 6:45 p.m. CT at <span class='highlight'>Kauffman Stadium<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(April 3)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>5-1<\/span> record in the 2026 regular season, a <span class='highlight'>83%<\/span> winning percentage.  The last game was a <span class='highlight'>8-2<\/span> home <span class='highlight'>win<\/span>. and the next game is Friday at 6:45 p.m. CT at <span class='highlight'>Kauffman Stadium<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
