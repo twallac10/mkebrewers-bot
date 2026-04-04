@@ -52,7 +52,7 @@
         "stat":"runs",
         "value":45,
         "category":"standings",
-        "context_value":"1st",
+        "context_value":"2nd",
         "context_value_label":"League rank"
     },
     {
@@ -124,7 +124,7 @@
         "stat":"strikeouts",
         "value":"76",
         "category":"pitching",
-        "context_value":"5th",
+        "context_value":"7th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"2.83",
         "category":"pitching",
-        "context_value":"3rd",
+        "context_value":"4th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"April 3, 2026, 6:15 PM CT",
+        "value":"April 4, 2026, 3:18 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(April 3)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>5-1<\/span> record in the 2026 regular season, a <span class='highlight'>83%<\/span> winning percentage.  The last game was a <span class='highlight'>N\/A-N\/A<\/span> away <span class='highlight'>loss<\/span>. and the next game is Saturday at 1:10 p.m. CT at <span class='highlight'>Kauffman Stadium<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(April 4)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>5-1<\/span> record in the 2026 regular season, a <span class='highlight'>83%<\/span> winning percentage.  The last game was a <span class='highlight'>N\/A-N\/A<\/span> away <span class='highlight'>loss<\/span>. and the next game is Saturday at 1:10 p.m. CT at <span class='highlight'>Kauffman Stadium<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
