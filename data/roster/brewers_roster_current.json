@@ -72,24 +72,6 @@
     "slug":"kyle-harrison"
   },
   {
-    "player_id":"701656",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/701656\/headshot\/silo\/current",
-    "name":"Logan Henderson",
-    "player_url":"\/player\/701656",
-    "jersey":"43",
-    "position_group":"Pitchers",
-    "bat_throw":"R\/R",
-    "height":"6' 0\"",
-    "weight":"209",
-    "dob":"03\/02\/2002",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"logan-henderson"
-  },
-  {
     "player_id":"657649",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/657649\/headshot\/silo\/current",
     "name":"Jared Koenig",

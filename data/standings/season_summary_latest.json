@@ -84,7 +84,7 @@
         "stat":"home_runs",
         "value":9,
         "category":"batting",
-        "context_value":"9th",
+        "context_value":"8th",
         "context_value_label":"League rank"
     },
     {
@@ -124,7 +124,7 @@
         "stat":"strikeouts",
         "value":"94",
         "category":"pitching",
-        "context_value":"4th",
+        "context_value":"3rd",
         "context_value_label":"League rank"
     },
     {
@@ -132,7 +132,7 @@
         "stat":"walks",
         "value":"34",
         "category":"pitching",
-        "context_value":"7th",
+        "context_value":"8th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"3.17",
         "category":"pitching",
-        "context_value":"6th",
+        "context_value":"8th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"April 5, 2026, 10:14 AM CT",
+        "value":"April 5, 2026, 6:13 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(April 5)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>6-2<\/span> record in the 2026 regular season, a <span class='highlight'>75%<\/span> winning percentage.  The last game was a <span class='highlight'>2-8<\/span> away <span class='highlight'>loss<\/span>. and the next game is Sunday at 1:10 p.m. CT at <span class='highlight'>Kauffman Stadium<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(April 5)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>7-2<\/span> record in the 2026 regular season, a <span class='highlight'>78%<\/span> winning percentage.  The last game was a <span class='highlight'>8-5<\/span> away <span class='highlight'>win<\/span>. and the next game is Monday at 5:45 p.m. CT at <span class='highlight'>Fenway Park<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -162,7 +162,7 @@
     {
         "stat_label":"Last game result",
         "stat":"last_game_result",
-        "value":"loss",
+        "value":"win",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
