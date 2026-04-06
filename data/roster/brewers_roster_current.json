@@ -36,6 +36,24 @@
     "slug":"aaron-ashby"
   },
   {
+    "player_id":"675660",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/675660\/headshot\/silo\/current",
+    "name":"Shane Drohan",
+    "player_url":"\/player\/675660",
+    "jersey":"55",
+    "position_group":"Pitchers",
+    "bat_throw":"L\/L",
+    "height":"6' 2\"",
+    "weight":"202",
+    "dob":"01\/07\/1999",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"shane-drohan"
+  },
+  {
     "player_id":"669084",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/669084\/headshot\/silo\/current",
     "name":"DL Hall",
@@ -70,24 +88,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"kyle-harrison"
-  },
-  {
-    "player_id":"657649",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/657649\/headshot\/silo\/current",
-    "name":"Jared Koenig",
-    "player_url":"\/player\/657649",
-    "jersey":"47",
-    "position_group":"Pitchers",
-    "bat_throw":"R\/L",
-    "height":"6' 5\"",
-    "weight":"244",
-    "dob":"01\/24\/1994",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"jared-koenig"
   },
   {
     "player_id":"656730",
