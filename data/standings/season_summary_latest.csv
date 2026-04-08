@@ -3,9 +3,9 @@ Wins,wins,8,standings,6,This point last season
 Losses,losses,3,standings,5,This point last season
 Record,record,8-3,standings,6-5,This point last season
 Win percentage,win_pct,73%,standings,55%,This point last season
-Games up/back,games_up_back,0,standings,2nd,Division rank
+Games up/back,games_up_back,0.5,standings,2nd,Division rank
 Avg. home attendance,mean_attendance,"28,958",standings,6,Home games this season
-Runs,runs,70,standings,3rd,League rank
+Runs,runs,70,standings,4th,League rank
 Runs against,runs_against,41,standings,65,This point last season
 Run differential,run_differential,29,standings,-16,This point last season
 Batting average,batting_average,.263,batting,N/A,Last decade average
@@ -15,8 +15,8 @@ On-base percentage,on_base_pct,.367,batting,N/A,Last decade average
 Stolen bases,stolen_bases,22,batting,1st,League rank
 Stolen bases/game,stolen_bases_game,2.0,batting,N/A,Rate all last season
 Strikeouts,strikeouts,118,pitching,4th,League rank
-Walks,walks,46,pitching,11th,League rank
-ERA,era,3.43,pitching,10th,League rank
-Last updated,update_time,"April 8, 2026, 10:36 AM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(April 8)</span> — The Brewers have compiled a <span class='highlight'>8-3</span> record in the 2026 regular season, a <span class='highlight'>73%</span> winning percentage.  The last game was a <span class='highlight'>2-3</span> away <span class='highlight'>loss</span>. and the next game is Wednesday at 12:35 p.m. CT at <span class='highlight'>Fenway Park</span>.",summary,,
+Walks,walks,46,pitching,6th,League rank
+ERA,era,3.43,pitching,12th,League rank
+Last updated,update_time,"April 8, 2026, 6:18 PM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(April 8)</span> — The Brewers have compiled a <span class='highlight'>8-4</span> record in the 2026 regular season, a <span class='highlight'>67%</span> winning percentage.  The last game was a <span class='highlight'>0-5</span> away <span class='highlight'>loss</span>. and the next game is Friday at 6:40 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
 Last game result,last_game_result,loss,summary,,
