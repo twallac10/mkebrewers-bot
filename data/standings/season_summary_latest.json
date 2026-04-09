@@ -34,9 +34,9 @@
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":0,
+        "value":0.5,
         "category":"standings",
-        "context_value":"2nd",
+        "context_value":"1st",
         "context_value_label":"Division rank"
     },
     {
@@ -84,7 +84,7 @@
         "stat":"home_runs",
         "value":10,
         "category":"batting",
-        "context_value":"18th",
+        "context_value":"19th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"3.77",
         "category":"pitching",
-        "context_value":"12th",
+        "context_value":"13th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"April 9, 2026, 10:38 AM CT",
+        "value":"April 9, 2026, 6:20 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
