@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 94.42379182156134,
-        "incorrect_strikes_pct": 5.576208178438662,
-        "total_called_strikes": 269,
-        "bad_calls_count": 15
+        "correct_strikes_pct": 93.35548172757476,
+        "incorrect_strikes_pct": 6.644518272425245,
+        "total_called_strikes": 301,
+        "bad_calls_count": 20
     },
     "last_game_summary": {
-        "date": "April 10, 2026",
-        "correct_strikes_pct": 88.88888888888889,
-        "incorrect_strikes_pct": 11.111111111111114,
-        "total_called_strikes": 27,
-        "bad_calls_count": 3,
-        "home_plate_umpire": "Mark Wegner"
+        "date": "April 11, 2026",
+        "correct_strikes_pct": 84.375,
+        "incorrect_strikes_pct": 15.625,
+        "total_called_strikes": 32,
+        "bad_calls_count": 5,
+        "home_plate_umpire": "Bruce Dreckman"
     },
     "worst_calls_of_season": [
         {

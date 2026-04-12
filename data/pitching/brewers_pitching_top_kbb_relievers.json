@@ -2,7 +2,13 @@
     {
         "name":"Aaron Ashby*",
         "era+":101.0,
-        "fip":2.48,
+        "fip":2.45,
         "so_bb":3.6
+    },
+    {
+        "name":"Brandon Sproat",
+        "era+":37.0,
+        "fip":9.12,
+        "so_bb":1.0
     }
 ]
