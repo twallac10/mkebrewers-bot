@@ -124,7 +124,7 @@
         "stat":"strikeouts",
         "value":"142",
         "category":"pitching",
-        "context_value":"10th",
+        "context_value":"11th",
         "context_value_label":"League rank"
     },
     {
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"April 13, 2026, 10:36 AM CT",
+        "value":"April 13, 2026, 6:22 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
