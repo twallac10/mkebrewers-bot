@@ -378,6 +378,24 @@
     "slug":"sal-frelick"
   },
   {
+    "player_id":"675659",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/675659\/headshot\/silo\/current",
+    "name":"Greg Jones",
+    "player_url":"\/player\/675659",
+    "jersey":"40",
+    "position_group":"Outfielders",
+    "bat_throw":"S\/R",
+    "height":"6' 0\"",
+    "weight":"189",
+    "dob":"03\/07\/1998",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"greg-jones"
+  },
+  {
     "player_id":"663604",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/663604\/headshot\/silo\/current",
     "name":"Brandon Lockridge",
@@ -448,23 +466,5 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"blake-perkins"
-  },
-  {
-    "player_id":"592885",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/592885\/headshot\/silo\/current",
-    "name":"Christian Yelich",
-    "player_url":"\/player\/592885",
-    "jersey":"22",
-    "position_group":"Outfielders",
-    "bat_throw":"L\/R",
-    "height":"6' 4\"",
-    "weight":"220",
-    "dob":"12\/05\/1991",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"christian-yelich"
   }
 ]

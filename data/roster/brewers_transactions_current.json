@@ -1,5 +1,26 @@
 [
   {
+    "date":"2026-04-14",
+    "transaction":"Brewers placed LF Christian Yelich on the 10-day injured list retroactive to April 13, 2026. Left groin strain.",
+    "players":[
+      "Christian Yelich"
+    ]
+  },
+  {
+    "date":"2026-04-14",
+    "transaction":"Brewers selected the contract of RF Greg Jones from Nashville Sounds.",
+    "players":[
+      "Greg Jones"
+    ]
+  },
+  {
+    "date":"2026-04-14",
+    "transaction":"Brewers placed LHP Rob Zastryzny on the 60-day injured list. Left shoulder strain.",
+    "players":[
+      "Rob Zastryzny"
+    ]
+  },
+  {
     "date":"2026-04-10",
     "transaction":"Brewers recalled RHP Easton McGee from Nashville Sounds.",
     "players":[
@@ -8,16 +29,16 @@
   },
   {
     "date":"2026-04-09",
-    "transaction":"Brewers optioned LHP Shane Drohan to Nashville Sounds.",
+    "transaction":"Brewers signed free agent RHP Reiss Knehr to a minor league contract.",
     "players":[
-      "Shane Drohan"
+      "Reiss Knehr"
     ]
   },
   {
     "date":"2026-04-09",
-    "transaction":"Brewers signed free agent RHP Reiss Knehr to a minor league contract.",
+    "transaction":"Brewers optioned LHP Shane Drohan to Nashville Sounds.",
     "players":[
-      "Reiss Knehr"
+      "Shane Drohan"
     ]
   },
   {
@@ -92,13 +113,6 @@
   },
   {
     "date":"2026-03-31",
-    "transaction":"Brewers sent RF Steward Berroa on a rehab assignment to Nashville Sounds.",
-    "players":[
-      "Steward Berroa"
-    ]
-  },
-  {
-    "date":"2026-03-31",
     "transaction":"Brewers activated RF Luis Matos.",
     "players":[
       "Luis Matos"
@@ -113,16 +127,16 @@
   },
   {
     "date":"2026-03-31",
-    "transaction":"Brewers optioned C Jeferson Quero to Nashville Sounds.",
+    "transaction":"Brewers sent RF Steward Berroa on a rehab assignment to Nashville Sounds.",
     "players":[
-      "Jeferson Quero"
+      "Steward Berroa"
     ]
   },
   {
-    "date":"2026-03-30",
-    "transaction":"Brewers designated LHP Sammy Peralta for assignment.",
+    "date":"2026-03-31",
+    "transaction":"Brewers optioned C Jeferson Quero to Nashville Sounds.",
     "players":[
-      "Sammy Peralta"
+      "Jeferson Quero"
     ]
   },
   {
@@ -133,10 +147,10 @@
     ]
   },
   {
-    "date":"2026-03-28",
-    "transaction":"Brewers placed 1B Andrew Vaughn on the 10-day injured list retroactive to March 27, 2026. Left hamate fracture.",
+    "date":"2026-03-30",
+    "transaction":"Brewers designated LHP Sammy Peralta for assignment.",
     "players":[
-      "Andrew Vaughn"
+      "Sammy Peralta"
     ]
   },
   {
@@ -144,6 +158,13 @@
     "transaction":"Brewers recalled C Jeferson Quero from Nashville Sounds.",
     "players":[
       "Jeferson Quero"
+    ]
+  },
+  {
+    "date":"2026-03-28",
+    "transaction":"Brewers placed 1B Andrew Vaughn on the 10-day injured list retroactive to March 27, 2026. Left hamate fracture.",
+    "players":[
+      "Andrew Vaughn"
     ]
   },
   {
@@ -169,6 +190,13 @@
   },
   {
     "date":"2026-03-25",
+    "transaction":"Brewers placed LHP Rob Zastryzny on the 15-day injured list retroactive to March 22, 2026. Left shoulder strain.",
+    "players":[
+      "Rob Zastryzny"
+    ]
+  },
+  {
+    "date":"2026-03-25",
     "transaction":"Brewers placed RHP Quinn Priester on the 15-day injured list retroactive to March 22, 2026. Right thoracic outlet syndrome.",
     "players":[
       "Quinn Priester"
@@ -179,13 +207,6 @@
     "transaction":"Brewers placed RHP Craig Yoho on the 15-day injured list retroactive to March 22, 2026. Right calf strain.",
     "players":[
       "Craig Yoho"
-    ]
-  },
-  {
-    "date":"2026-03-25",
-    "transaction":"Brewers placed LHP Rob Zastryzny on the 15-day injured list retroactive to March 22, 2026. Left shoulder strain.",
-    "players":[
-      "Rob Zastryzny"
     ]
   },
   {
@@ -204,13 +225,6 @@
   },
   {
     "date":"2026-03-24",
-    "transaction":"Brewers placed LF Akil Baddoo on the 60-day injured list. Left quad strain.",
-    "players":[
-      "Akil Baddoo"
-    ]
-  },
-  {
-    "date":"2026-03-24",
     "transaction":"Tampa Bay Rays traded RHP Jake Woodford to Brewers for RHP K.C. Hunt and cash.",
     "players":[
       "Jake Woodford",
@@ -218,10 +232,38 @@
     ]
   },
   {
+    "date":"2026-03-24",
+    "transaction":"Brewers placed LF Akil Baddoo on the 60-day injured list. Left quad strain.",
+    "players":[
+      "Akil Baddoo"
+    ]
+  },
+  {
+    "date":"2026-03-22",
+    "transaction":"2B Jadyn Fielder assigned to Brewers.",
+    "players":[
+      "Jadyn Fielder"
+    ]
+  },
+  {
+    "date":"2026-03-22",
+    "transaction":"LHP Anfernny Reyes assigned to Brewers.",
+    "players":[
+      "Anfernny Reyes"
+    ]
+  },
+  {
     "date":"2026-03-22",
     "transaction":"LHP Jose Meneses assigned to Brewers.",
     "players":[
       "Jose Meneses"
+    ]
+  },
+  {
+    "date":"2026-03-22",
+    "transaction":"RF Kay-Lan Nicasia assigned to Brewers.",
+    "players":[
+      "Kay-Lan Nicasia"
     ]
   },
   {
@@ -239,34 +281,6 @@
     ]
   },
   {
-    "date":"2026-03-22",
-    "transaction":"LHP Anfernny Reyes assigned to Brewers.",
-    "players":[
-      "Anfernny Reyes"
-    ]
-  },
-  {
-    "date":"2026-03-22",
-    "transaction":"RF Kay-Lan Nicasia assigned to Brewers.",
-    "players":[
-      "Kay-Lan Nicasia"
-    ]
-  },
-  {
-    "date":"2026-03-22",
-    "transaction":"2B Jadyn Fielder assigned to Brewers.",
-    "players":[
-      "Jadyn Fielder"
-    ]
-  },
-  {
-    "date":"2026-03-19",
-    "transaction":"Brewers optioned CF Blake Perkins to Nashville Sounds.",
-    "players":[
-      "Blake Perkins"
-    ]
-  },
-  {
     "date":"2026-03-19",
     "transaction":"Brewers optioned 3B Tyler Black to Nashville Sounds.",
     "players":[
@@ -281,6 +295,13 @@
     ]
   },
   {
+    "date":"2026-03-19",
+    "transaction":"Brewers optioned CF Blake Perkins to Nashville Sounds.",
+    "players":[
+      "Blake Perkins"
+    ]
+  },
+  {
     "date":"2026-03-18",
     "transaction":"C Eric Martinez assigned to Brewers.",
     "players":[
@@ -289,16 +310,16 @@
   },
   {
     "date":"2026-03-16",
-    "transaction":"Brewers optioned RHP Carlos Rodriguez to Nashville Sounds.",
+    "transaction":"C David García assigned to Brewers.",
     "players":[
-      "Carlos Rodriguez"
+      "David García"
     ]
   },
   {
     "date":"2026-03-16",
-    "transaction":"C David García assigned to Brewers.",
+    "transaction":"Brewers optioned RHP Carlos Rodriguez to Nashville Sounds.",
     "players":[
-      "David García"
+      "Carlos Rodriguez"
     ]
   },
   {
@@ -338,23 +359,16 @@
   },
   {
     "date":"2026-03-09",
-    "transaction":"Brewers optioned LHP Sammy Peralta to Nashville Sounds.",
-    "players":[
-      "Sammy Peralta"
-    ]
-  },
-  {
-    "date":"2026-03-09",
     "transaction":"Brewers optioned C Jeferson Quero to Nashville Sounds.",
     "players":[
       "Jeferson Quero"
     ]
   },
   {
-    "date":"2026-03-08",
-    "transaction":"Brewers reassigned C Jeferson Quero to the minor leagues.",
+    "date":"2026-03-09",
+    "transaction":"Brewers optioned LHP Sammy Peralta to Nashville Sounds.",
     "players":[
-      "Jeferson Quero"
+      "Sammy Peralta"
     ]
   },
   {
@@ -362,6 +376,13 @@
     "transaction":"Brewers optioned RHP Coleman Crow to Nashville Sounds.",
     "players":[
       "Coleman Crow"
+    ]
+  },
+  {
+    "date":"2026-03-08",
+    "transaction":"Brewers reassigned C Jeferson Quero to the minor leagues.",
+    "players":[
+      "Jeferson Quero"
     ]
   },
   {
@@ -408,16 +429,23 @@
   },
   {
     "date":"2026-02-27",
-    "transaction":"C Marco Dinges assigned to Brewers.",
+    "transaction":"C Marco Dinges roster status changed by Brewers.",
     "players":[
       "Marco Dinges"
     ]
   },
   {
     "date":"2026-02-27",
-    "transaction":"C Marco Dinges roster status changed by Brewers.",
+    "transaction":"C Marco Dinges assigned to Brewers.",
     "players":[
       "Marco Dinges"
+    ]
+  },
+  {
+    "date":"2026-02-24",
+    "transaction":"CF José Anderson roster status changed by Brewers.",
+    "players":[
+      "José Anderson"
     ]
   },
   {
@@ -430,13 +458,6 @@
   {
     "date":"2026-02-24",
     "transaction":"CF José Anderson assigned to Brewers.",
-    "players":[
-      "José Anderson"
-    ]
-  },
-  {
-    "date":"2026-02-24",
-    "transaction":"CF José Anderson roster status changed by Brewers.",
     "players":[
       "José Anderson"
     ]
@@ -464,9 +485,86 @@
   },
   {
     "date":"2026-02-22",
-    "transaction":"RHP Tyler Renz roster status changed by Brewers.",
+    "transaction":"RHP Kaleb Bowman assigned to Brewers.",
     "players":[
-      "Tyler Renz"
+      "Kaleb Bowman"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"RHP Jack Seppings assigned to Brewers.",
+    "players":[
+      "Jack Seppings"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"SS Ethan Murray roster status changed by Brewers.",
+    "players":[
+      "Ethan Murray"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"3B Juan Baez assigned to Brewers.",
+    "players":[
+      "Juan Baez"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"1B Blake Burke assigned to Brewers.",
+    "players":[
+      "Blake Burke"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"RHP Jesus Flores assigned to Brewers.",
+    "players":[
+      "Jesus Flores"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"LHP Brian Fitzpatrick assigned to Brewers.",
+    "players":[
+      "Brian Fitzpatrick"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"RHP Tanner Gillis assigned to Brewers.",
+    "players":[
+      "Tanner Gillis"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"CF Dasan Brown assigned to Brewers.",
+    "players":[
+      "Dasan Brown"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"RHP Joshua Quezada assigned to Brewers.",
+    "players":[
+      "Joshua Quezada"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"RHP Bishop Letson assigned to Brewers.",
+    "players":[
+      "Bishop Letson"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"RHP Patricio Aquino assigned to Brewers.",
+    "players":[
+      "Patricio Aquino"
     ]
   },
   {
@@ -485,128 +583,23 @@
   },
   {
     "date":"2026-02-22",
-    "transaction":"RHP Jack Seppings assigned to Brewers.",
+    "transaction":"CF Dylan O'Rae assigned to Brewers.",
     "players":[
-      "Jack Seppings"
+      "Dylan O'Rae"
     ]
   },
   {
     "date":"2026-02-22",
-    "transaction":"RHP Bishop Letson assigned to Brewers.",
+    "transaction":"RHP Ryan Birchard assigned to Brewers.",
     "players":[
-      "Bishop Letson"
+      "Ryan Birchard"
     ]
   },
   {
     "date":"2026-02-22",
-    "transaction":"RHP Jesus Flores assigned to Brewers.",
+    "transaction":"LF Jacob Hurtubise assigned to Brewers.",
     "players":[
-      "Jesus Flores"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"RHP Travis Smith assigned to Brewers.",
-    "players":[
-      "Travis Smith"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"SS Daniel Guilarte assigned to Brewers.",
-    "players":[
-      "Daniel Guilarte"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"OF Jheremy Vargas assigned to Brewers.",
-    "players":[
-      "Jheremy Vargas"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"2B Mike Boeve roster status changed by Brewers.",
-    "players":[
-      "Mike Boeve"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"3B Eric Bitonti assigned to Brewers.",
-    "players":[
-      "Eric Bitonti"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"SS Ethan Murray roster status changed by Brewers.",
-    "players":[
-      "Ethan Murray"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"RHP Bryce Meccage assigned to Brewers.",
-    "players":[
-      "Bryce Meccage"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"SS Brady Ebel assigned to Brewers.",
-    "players":[
-      "Brady Ebel"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"RHP Bryan Rivera assigned to Brewers.",
-    "players":[
-      "Bryan Rivera"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"RHP Tyler Renz assigned to Brewers.",
-    "players":[
-      "Tyler Renz"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"RHP Patricio Aquino assigned to Brewers.",
-    "players":[
-      "Patricio Aquino"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"1B Blake Burke assigned to Brewers.",
-    "players":[
-      "Blake Burke"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"CF Dasan Brown assigned to Brewers.",
-    "players":[
-      "Dasan Brown"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"2B Mike Boeve assigned to Brewers.",
-    "players":[
-      "Mike Boeve"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"RHP Joshua Quezada assigned to Brewers.",
-    "players":[
-      "Joshua Quezada"
+      "Jacob Hurtubise"
     ]
   },
   {
@@ -618,9 +611,51 @@
   },
   {
     "date":"2026-02-22",
-    "transaction":"RHP Ryan Birchard assigned to Brewers.",
+    "transaction":"SS Ethan Murray assigned to Brewers.",
     "players":[
-      "Ryan Birchard"
+      "Ethan Murray"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"RHP Travis Smith assigned to Brewers.",
+    "players":[
+      "Travis Smith"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"RHP Joe Corbett assigned to Brewers.",
+    "players":[
+      "Joe Corbett"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"RHP Tyler Renz assigned to Brewers.",
+    "players":[
+      "Tyler Renz"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"RHP Bryan Rivera assigned to Brewers.",
+    "players":[
+      "Bryan Rivera"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"2B Mike Boeve assigned to Brewers.",
+    "players":[
+      "Mike Boeve"
+    ]
+  },
+  {
+    "date":"2026-02-22",
+    "transaction":"RHP Bryce Meccage assigned to Brewers.",
+    "players":[
+      "Bryce Meccage"
     ]
   },
   {
@@ -639,37 +674,23 @@
   },
   {
     "date":"2026-02-22",
-    "transaction":"LF Jacob Hurtubise assigned to Brewers.",
+    "transaction":"SS Brady Ebel assigned to Brewers.",
     "players":[
-      "Jacob Hurtubise"
+      "Brady Ebel"
     ]
   },
   {
     "date":"2026-02-22",
-    "transaction":"3B Juan Baez assigned to Brewers.",
+    "transaction":"SS Daniel Guilarte assigned to Brewers.",
     "players":[
-      "Juan Baez"
+      "Daniel Guilarte"
     ]
   },
   {
     "date":"2026-02-22",
-    "transaction":"SS Ethan Murray assigned to Brewers.",
+    "transaction":"2B Mike Boeve roster status changed by Brewers.",
     "players":[
-      "Ethan Murray"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"LHP Brian Fitzpatrick assigned to Brewers.",
-    "players":[
-      "Brian Fitzpatrick"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"RHP Kaleb Bowman assigned to Brewers.",
-    "players":[
-      "Kaleb Bowman"
+      "Mike Boeve"
     ]
   },
   {
@@ -677,27 +698,6 @@
     "transaction":"RHP Yerlin Rodriguez assigned to Brewers.",
     "players":[
       "Yerlin Rodriguez"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"RHP Joe Corbett assigned to Brewers.",
-    "players":[
-      "Joe Corbett"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"LHP Bjorn Johnson assigned to Brewers.",
-    "players":[
-      "Bjorn Johnson"
-    ]
-  },
-  {
-    "date":"2026-02-22",
-    "transaction":"RHP Tanner Gillis assigned to Brewers.",
-    "players":[
-      "Tanner Gillis"
     ]
   }
 ]
