@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 93.49845201238391,
-        "incorrect_strikes_pct": 6.501547987616092,
-        "total_called_strikes": 323,
-        "bad_calls_count": 21
+        "correct_strikes_pct": 92.65536723163842,
+        "incorrect_strikes_pct": 7.344632768361578,
+        "total_called_strikes": 354,
+        "bad_calls_count": 26
     },
     "last_game_summary": {
-        "date": "April 12, 2026",
-        "correct_strikes_pct": 95.45454545454545,
-        "incorrect_strikes_pct": 4.545454545454547,
-        "total_called_strikes": 22,
-        "bad_calls_count": 1,
-        "home_plate_umpire": "Carlos Torres"
+        "date": "April 14, 2026",
+        "correct_strikes_pct": 83.87096774193549,
+        "incorrect_strikes_pct": 16.129032258064512,
+        "total_called_strikes": 31,
+        "bad_calls_count": 5,
+        "home_plate_umpire": "David Rackley"
     },
     "worst_calls_of_season": [
         {
@@ -45,28 +45,28 @@
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=233f996a-704d-37ff-8cd9-ba84b70cae99"
         },
         {
-            "distance_inches": 1.2614186867,
-            "batter": "William Contreras",
-            "pitcher": "Jake Irvin",
-            "pitch_type": "Slider",
-            "velocity_mph": 82.3,
-            "date": "2026-04-10",
-            "date_formatted": "April 10, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=0cb5ce0c-c299-3022-a2cd-aa6423cdbb55"
+            "distance_inches": 1.7957272814,
+            "batter": "David Hamilton",
+            "pitcher": "Kevin Gausman",
+            "pitch_type": "4-Seam Fastball",
+            "velocity_mph": 93.5,
+            "date": "2026-04-14",
+            "date_formatted": "April 14, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=f9d11763-d237-3ce6-91a0-4ce804c36440"
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 94.14634146341463,
-        "incorrect_balls_pct": 5.853658536585371,
-        "total_called_balls": 615,
-        "bad_calls_count": 36
+        "correct_balls_pct": 94.3076923076923,
+        "incorrect_balls_pct": 5.692307692307693,
+        "total_called_balls": 650,
+        "bad_calls_count": 37
     },
     "pitching_last_game_summary": {
-        "date": "April 12, 2026",
-        "correct_balls_pct": 95.23809523809523,
-        "incorrect_balls_pct": 4.761904761904773,
-        "total_called_balls": 42,
-        "bad_calls_count": 2
+        "date": "April 14, 2026",
+        "correct_balls_pct": 97.14285714285714,
+        "incorrect_balls_pct": 2.857142857142861,
+        "total_called_balls": 35,
+        "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": []
 }
