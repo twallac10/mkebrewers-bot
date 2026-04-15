@@ -5,18 +5,18 @@ Record,record,8-8,standings,8-8,This point last season
 Win percentage,win_pct,50%,standings,50%,This point last season
 Games up/back,games_up_back,1.5,standings,4th,Division rank
 Avg. home attendance,mean_attendance,"29,245",standings,10,Home games this season
-Runs,runs,87,standings,7th,League rank
+Runs,runs,87,standings,8th,League rank
 Runs against,runs_against,73,standings,84,This point last season
 Run differential,run_differential,14,standings,-3,This point last season
 Batting average,batting_average,.240,batting,N/A,Last decade average
-Home runs,home_runs,18,batting,13th,League rank
+Home runs,home_runs,18,batting,15th,League rank
 Home runs/game,home_runs_game,1.12,batting,N/A,Last decade average
 On-base percentage,on_base_pct,.343,batting,N/A,Last decade average
 Stolen bases,stolen_bases,26,batting,1st,League rank
 Stolen bases/game,stolen_bases_game,1.62,batting,N/A,Rate all last season
-Strikeouts,strikeouts,149,pitching,14th,League rank
-Walks,walks,65,pitching,12th,League rank
+Strikeouts,strikeouts,149,pitching,16th,League rank
+Walks,walks,65,pitching,15th,League rank
 ERA,era,4.37,pitching,22nd,League rank
-Last updated,update_time,"April 15, 2026, 10:33 AM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(April 15)</span> — The Brewers have compiled a <span class='highlight'>8-8</span> record in the 2026 regular season, a <span class='highlight'>50%</span> winning percentage.  The last game was a <span class='highlight'>7-9</span> home <span class='highlight'>loss</span>. and the next game is Wednesday at 6:40 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
+Last updated,update_time,"April 15, 2026, 6:21 PM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(April 15)</span> — The Brewers have compiled a <span class='highlight'>8-8</span> record in the 2026 regular season, a <span class='highlight'>50%</span> winning percentage.  The last game was a <span class='highlight'>7-9</span> home <span class='highlight'>loss</span>. and the next game is Thursday at 12:40 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
 Last game result,last_game_result,loss,summary,,
