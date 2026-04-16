@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 92.34828496042216,
-        "incorrect_strikes_pct": 7.651715039577837,
-        "total_called_strikes": 379,
-        "bad_calls_count": 29
+        "correct_strikes_pct": 92.01995012468828,
+        "incorrect_strikes_pct": 7.980049875311721,
+        "total_called_strikes": 401,
+        "bad_calls_count": 32
     },
     "last_game_summary": {
-        "date": "April 15, 2026",
-        "correct_strikes_pct": 88.0,
-        "incorrect_strikes_pct": 12.0,
-        "total_called_strikes": 25,
+        "date": "April 16, 2026",
+        "correct_strikes_pct": 86.36363636363636,
+        "incorrect_strikes_pct": 13.63636363636364,
+        "total_called_strikes": 22,
         "bad_calls_count": 3,
-        "home_plate_umpire": "Chris Guccione"
+        "home_plate_umpire": "Nestor Ceja"
     },
     "worst_calls_of_season": [
         {
@@ -23,6 +23,16 @@
             "date": "2026-04-01",
             "date_formatted": "April 1, 2026",
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=2cdc2e40-9539-3b9b-8fa8-25dfbb822ea1"
+        },
+        {
+            "distance_inches": 2.4263780997,
+            "batter": "David Hamilton",
+            "pitcher": "Patrick Corbin",
+            "pitch_type": "Slider",
+            "velocity_mph": 76.5,
+            "date": "2026-04-16",
+            "date_formatted": "April 16, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=689dde2d-2748-318a-ae30-fa9855dc6a05"
         },
         {
             "distance_inches": 2.0050163116,
@@ -43,30 +53,20 @@
             "date": "2026-03-26",
             "date_formatted": "March 26, 2026",
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=233f996a-704d-37ff-8cd9-ba84b70cae99"
-        },
-        {
-            "distance_inches": 1.7957272814,
-            "batter": "David Hamilton",
-            "pitcher": "Kevin Gausman",
-            "pitch_type": "4-Seam Fastball",
-            "velocity_mph": 93.5,
-            "date": "2026-04-14",
-            "date_formatted": "April 14, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=f9d11763-d237-3ce6-91a0-4ce804c36440"
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 94.39655172413794,
-        "incorrect_balls_pct": 5.603448275862064,
-        "total_called_balls": 696,
-        "bad_calls_count": 39
+        "correct_balls_pct": 94.5054945054945,
+        "incorrect_balls_pct": 5.494505494505503,
+        "total_called_balls": 728,
+        "bad_calls_count": 40
     },
     "pitching_last_game_summary": {
-        "date": "April 15, 2026",
-        "correct_balls_pct": 95.65217391304348,
-        "incorrect_balls_pct": 4.347826086956516,
-        "total_called_balls": 46,
-        "bad_calls_count": 2
+        "date": "April 16, 2026",
+        "correct_balls_pct": 96.875,
+        "incorrect_balls_pct": 3.125,
+        "total_called_balls": 32,
+        "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": []
 }
