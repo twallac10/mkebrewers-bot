@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 92.01995012468828,
-        "incorrect_strikes_pct": 7.980049875311721,
-        "total_called_strikes": 401,
+        "correct_strikes_pct": 92.03980099502488,
+        "incorrect_strikes_pct": 7.960199004975124,
+        "total_called_strikes": 402,
         "bad_calls_count": 32
     },
     "last_game_summary": {
-        "date": "April 16, 2026",
-        "correct_strikes_pct": 86.36363636363636,
-        "incorrect_strikes_pct": 13.63636363636364,
-        "total_called_strikes": 22,
-        "bad_calls_count": 3,
-        "home_plate_umpire": "Nestor Ceja"
+        "date": "April 17, 2026",
+        "correct_strikes_pct": 100.0,
+        "incorrect_strikes_pct": 0.0,
+        "total_called_strikes": 1,
+        "bad_calls_count": 0,
+        "home_plate_umpire": "Derek Thomas"
     },
     "worst_calls_of_season": [
         {
