@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 94.5054945054945,
-        "incorrect_balls_pct": 5.494505494505503,
-        "total_called_balls": 728,
-        "bad_calls_count": 40
+        "correct_balls_pct": 94.65648854961832,
+        "incorrect_balls_pct": 5.343511450381683,
+        "total_called_balls": 786,
+        "bad_calls_count": 42
     },
     "pitching_last_game_summary": {
-        "date": "April 16, 2026",
-        "correct_balls_pct": 96.875,
-        "incorrect_balls_pct": 3.125,
-        "total_called_balls": 32,
-        "bad_calls_count": 1
+        "date": "April 17, 2026",
+        "correct_balls_pct": 96.55172413793103,
+        "incorrect_balls_pct": 3.448275862068968,
+        "total_called_balls": 58,
+        "bad_calls_count": 2
     },
     "pitching_worst_calls_of_season": []
 }
