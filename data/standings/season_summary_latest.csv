@@ -3,20 +3,20 @@ Wins,wins,12,standings,11,This point last season
 Losses,losses,8,standings,9,This point last season
 Record,record,12-8,standings,11-9,This point last season
 Win percentage,win_pct,60%,standings,55%,This point last season
-Games up/back,games_up_back,0.5,standings,3rd,Division rank
+Games up/back,games_up_back,1.5,standings,5th,Division rank
 Avg. home attendance,mean_attendance,"28,254",standings,13,Home games this season
-Runs,runs,103,standings,9th,League rank
+Runs,runs,103,standings,10th,League rank
 Runs against,runs_against,82,standings,97,This point last season
 Run differential,run_differential,21,standings,0,This point last season
 Batting average,batting_average,.235,batting,N/A,Last decade average
-Home runs,home_runs,19,batting,18th,League rank
+Home runs,home_runs,19,batting,20th,League rank
 Home runs/game,home_runs_game,0.95,batting,N/A,Last decade average
 On-base percentage,on_base_pct,.344,batting,N/A,Last decade average
 Stolen bases,stolen_bases,32,batting,1st,League rank
 Stolen bases/game,stolen_bases_game,1.6,batting,N/A,Rate all last season
 Strikeouts,strikeouts,176,pitching,15th,League rank
-Walks,walks,75,pitching,14th,League rank
-ERA,era,3.87,pitching,13th,League rank
-Last updated,update_time,"April 19, 2026, 10:18 AM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(April 19)</span> — The Brewers have compiled a <span class='highlight'>12-8</span> record in the 2026 regular season, a <span class='highlight'>60%</span> winning percentage.  The last game was a <span class='highlight'>5-2</span> away <span class='highlight'>win</span>. and the next game is Sunday at 12:40 p.m. CT at <span class='highlight'>loanDepot park</span>.",summary,,
-Last game result,last_game_result,win,summary,,
+Walks,walks,75,pitching,13th,League rank
+ERA,era,3.87,pitching,11th,League rank
+Last updated,update_time,"April 19, 2026, 6:16 PM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(April 19)</span> — The Brewers have compiled a <span class='highlight'>12-9</span> record in the 2026 regular season, a <span class='highlight'>57%</span> winning percentage.  The last game was a <span class='highlight'>3-5</span> away <span class='highlight'>loss</span>. and the next game is Tuesday at 5:40 p.m. CT at <span class='highlight'>Comerica Park</span>.",summary,,
+Last game result,last_game_result,loss,summary,,
