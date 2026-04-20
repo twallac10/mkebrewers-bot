@@ -1,26 +1,26 @@
 [
     {
         "name":"Aaron Ashby*",
-        "era+":126.0,
-        "fip":2.19,
+        "era+":125.0,
+        "fip":2.2,
         "so_bb":3.67
     },
     {
         "name":"Grant Anderson",
-        "era+":121.0,
-        "fip":3.12,
+        "era+":128.0,
+        "fip":3.13,
         "so_bb":1.5
     },
     {
         "name":"Brandon Sproat",
-        "era+":59.0,
-        "fip":6.24,
+        "era+":58.0,
+        "fip":6.25,
         "so_bb":1.45
     },
     {
         "name":"Angel Zerpa*",
         "era+":71.0,
-        "fip":4.76,
+        "fip":4.77,
         "so_bb":1.0
     }
 ]
