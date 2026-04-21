@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 92.0086393088553,
-        "incorrect_strikes_pct": 7.991360691144706,
-        "total_called_strikes": 463,
-        "bad_calls_count": 37
+        "correct_strikes_pct": 91.9831223628692,
+        "incorrect_strikes_pct": 8.016877637130804,
+        "total_called_strikes": 474,
+        "bad_calls_count": 38
     },
     "last_game_summary": {
-        "date": "April 19, 2026",
-        "correct_strikes_pct": 89.28571428571429,
-        "incorrect_strikes_pct": 10.714285714285708,
-        "total_called_strikes": 28,
-        "bad_calls_count": 3,
-        "home_plate_umpire": "Jansen Visconti"
+        "date": "April 21, 2026",
+        "correct_strikes_pct": 90.9090909090909,
+        "incorrect_strikes_pct": 9.090909090909093,
+        "total_called_strikes": 11,
+        "bad_calls_count": 1,
+        "home_plate_umpire": "Emil Jimenez"
     },
     "worst_calls_of_season": [
         {
@@ -35,6 +35,16 @@
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=689dde2d-2748-318a-ae30-fa9855dc6a05"
         },
         {
+            "distance_inches": 2.1761973915,
+            "batter": "Jake Bauers",
+            "pitcher": "Keider Montero",
+            "pitch_type": "Changeup",
+            "velocity_mph": 86.9,
+            "date": "2026-04-21",
+            "date_formatted": "April 21, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=ad3cb710-c39e-31e5-8f33-3da729f3c447"
+        },
+        {
             "distance_inches": 2.0050163116,
             "batter": "Sal Frelick",
             "pitcher": "Shane McClanahan",
@@ -43,30 +53,20 @@
             "date": "2026-03-31",
             "date_formatted": "March 31, 2026",
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=7561ef91-bc95-309b-abd4-4cf687954618"
-        },
-        {
-            "distance_inches": 1.8137085765,
-            "batter": "Sal Frelick",
-            "pitcher": "Jedixson Paez",
-            "pitch_type": "4-Seam Fastball",
-            "velocity_mph": 92.4,
-            "date": "2026-03-26",
-            "date_formatted": "March 26, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=233f996a-704d-37ff-8cd9-ba84b70cae99"
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.06880733944955,
-        "incorrect_balls_pct": 4.931192660550451,
-        "total_called_balls": 872,
-        "bad_calls_count": 43
+        "correct_balls_pct": 94.90950226244344,
+        "incorrect_balls_pct": 5.090497737556561,
+        "total_called_balls": 884,
+        "bad_calls_count": 45
     },
     "pitching_last_game_summary": {
-        "date": "April 19, 2026",
-        "correct_balls_pct": 100.0,
-        "incorrect_balls_pct": 0.0,
-        "total_called_balls": 53,
-        "bad_calls_count": 0
+        "date": "April 21, 2026",
+        "correct_balls_pct": 83.33333333333334,
+        "incorrect_balls_pct": 16.666666666666657,
+        "total_called_balls": 12,
+        "bad_calls_count": 2
     },
     "pitching_worst_calls_of_season": []
 }
