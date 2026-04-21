@@ -34,7 +34,7 @@
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":1.5,
+        "value":2,
         "category":"standings",
         "context_value":"5th",
         "context_value_label":"Division rank"
@@ -124,7 +124,7 @@
         "stat":"strikeouts",
         "value":"189",
         "category":"pitching",
-        "context_value":"15th",
+        "context_value":"17th",
         "context_value_label":"League rank"
     },
     {
@@ -132,7 +132,7 @@
         "stat":"walks",
         "value":"80",
         "category":"pitching",
-        "context_value":"15th",
+        "context_value":"16th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"3.85",
         "category":"pitching",
-        "context_value":"11th",
+        "context_value":"12th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"April 20, 2026, 6:20 PM CT",
+        "value":"April 21, 2026, 3:44 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(April 20)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>12-9<\/span> record in the 2026 regular season, a <span class='highlight'>57%<\/span> winning percentage.  The last game was a <span class='highlight'>3-5<\/span> away <span class='highlight'>loss<\/span>. and the next game is Tuesday at 5:40 p.m. CT at <span class='highlight'>Comerica Park<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(April 21)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>12-9<\/span> record in the 2026 regular season, a <span class='highlight'>57%<\/span> winning percentage.  The last game was a <span class='highlight'>3-5<\/span> away <span class='highlight'>loss<\/span>. and the next game is Tuesday at 5:40 p.m. CT at <span class='highlight'>Comerica Park<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""

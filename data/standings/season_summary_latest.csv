@@ -3,7 +3,7 @@ Wins,wins,12,standings,11,This point last season
 Losses,losses,9,standings,10,This point last season
 Record,record,12-9,standings,11-10,This point last season
 Win percentage,win_pct,56%,standings,52%,This point last season
-Games up/back,games_up_back,1.5,standings,5th,Division rank
+Games up/back,games_up_back,2,standings,5th,Division rank
 Avg. home attendance,mean_attendance,"28,220",standings,12,Home games this season
 Runs,runs,106,standings,10th,League rank
 Runs against,runs_against,87,standings,100,This point last season
@@ -14,9 +14,9 @@ Home runs/game,home_runs_game,0.9,batting,N/A,Last decade average
 On-base percentage,on_base_pct,.339,batting,N/A,Last decade average
 Stolen bases,stolen_bases,33,batting,1st,League rank
 Stolen bases/game,stolen_bases_game,1.57,batting,N/A,Rate all last season
-Strikeouts,strikeouts,189,pitching,15th,League rank
-Walks,walks,80,pitching,15th,League rank
-ERA,era,3.85,pitching,11th,League rank
-Last updated,update_time,"April 20, 2026, 6:20 PM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(April 20)</span> — The Brewers have compiled a <span class='highlight'>12-9</span> record in the 2026 regular season, a <span class='highlight'>57%</span> winning percentage.  The last game was a <span class='highlight'>3-5</span> away <span class='highlight'>loss</span>. and the next game is Tuesday at 5:40 p.m. CT at <span class='highlight'>Comerica Park</span>.",summary,,
+Strikeouts,strikeouts,189,pitching,17th,League rank
+Walks,walks,80,pitching,16th,League rank
+ERA,era,3.85,pitching,12th,League rank
+Last updated,update_time,"April 21, 2026, 3:44 AM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(April 21)</span> — The Brewers have compiled a <span class='highlight'>12-9</span> record in the 2026 regular season, a <span class='highlight'>57%</span> winning percentage.  The last game was a <span class='highlight'>3-5</span> away <span class='highlight'>loss</span>. and the next game is Tuesday at 5:40 p.m. CT at <span class='highlight'>Comerica Park</span>.",summary,,
 Last game result,last_game_result,loss,summary,,
