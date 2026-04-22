@@ -1,25 +1,31 @@
 [
     {
+        "name":"Jake Woodford",
+        "era+":70.0,
+        "fip":3.61,
+        "so_bb":3.5
+    },
+    {
         "name":"Aaron Ashby*",
-        "era+":126.0,
-        "fip":2.2,
-        "so_bb":3.67
+        "era+":136.0,
+        "fip":2.4,
+        "so_bb":3.0
     },
     {
         "name":"Grant Anderson",
-        "era+":128.0,
-        "fip":3.13,
-        "so_bb":1.5
+        "era+":151.0,
+        "fip":2.99,
+        "so_bb":1.67
     },
     {
         "name":"Brandon Sproat",
-        "era+":58.0,
-        "fip":6.25,
+        "era+":59.0,
+        "fip":6.26,
         "so_bb":1.45
     },
     {
         "name":"Angel Zerpa*",
-        "era+":71.0,
+        "era+":72.0,
         "fip":4.77,
         "so_bb":1.0
     }
