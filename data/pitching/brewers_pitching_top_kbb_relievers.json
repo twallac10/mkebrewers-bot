@@ -8,12 +8,12 @@
     {
         "name":"Aaron Ashby*",
         "era+":136.0,
-        "fip":2.4,
+        "fip":2.41,
         "so_bb":3.0
     },
     {
         "name":"Grant Anderson",
-        "era+":151.0,
+        "era+":152.0,
         "fip":2.99,
         "so_bb":1.67
     },
@@ -24,9 +24,9 @@
         "so_bb":1.45
     },
     {
-        "name":"Angel Zerpa*",
-        "era+":72.0,
-        "fip":4.77,
-        "so_bb":1.0
+        "name":"DL Hall*",
+        "era+":178.0,
+        "fip":4.68,
+        "so_bb":1.4
     }
 ]

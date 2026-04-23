@@ -10,33 +10,33 @@
     {
         "stat_label":"Losses",
         "stat":"losses",
-        "value":9,
+        "value":10,
         "category":"standings",
-        "context_value":10,
+        "context_value":11,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Record",
         "stat":"record",
-        "value":"13-9",
+        "value":"13-10",
         "category":"standings",
-        "context_value":"12-10",
+        "context_value":"12-11",
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Win percentage",
         "stat":"win_pct",
-        "value":"59%",
+        "value":"56%",
         "category":"standings",
-        "context_value":"55%",
+        "context_value":"52%",
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":1.5,
+        "value":2,
         "category":"standings",
-        "context_value":"3rd",
+        "context_value":"5th",
         "context_value_label":"Division rank"
     },
     {
@@ -50,31 +50,31 @@
     {
         "stat_label":"Runs",
         "stat":"runs",
-        "value":118,
+        "value":120,
         "category":"standings",
-        "context_value":"7th",
+        "context_value":"8th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Runs against",
         "stat":"runs_against",
-        "value":91,
+        "value":96,
         "category":"standings",
-        "context_value":101,
+        "context_value":106,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Run differential",
         "stat":"run_differential",
-        "value":27,
+        "value":24,
         "category":"standings",
-        "context_value":11,
+        "context_value":8,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Batting average",
         "stat":"batting_average",
-        "value":".241",
+        "value":".239",
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Last decade average"
@@ -90,7 +90,7 @@
     {
         "stat_label":"Home runs\/game",
         "stat":"home_runs_game",
-        "value":0.86,
+        "value":0.83,
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Last decade average"
@@ -98,7 +98,7 @@
     {
         "stat_label":"On-base percentage",
         "stat":"on_base_pct",
-        "value":".344",
+        "value":".342",
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Last decade average"
@@ -106,7 +106,7 @@
     {
         "stat_label":"Stolen bases",
         "stat":"stolen_bases",
-        "value":33,
+        "value":35,
         "category":"batting",
         "context_value":"1st",
         "context_value_label":"League rank"
@@ -114,7 +114,7 @@
     {
         "stat_label":"Stolen bases\/game",
         "stat":"stolen_bases_game",
-        "value":1.5,
+        "value":1.52,
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Rate all last season"
@@ -122,7 +122,7 @@
     {
         "stat_label":"Strikeouts",
         "stat":"strikeouts",
-        "value":"198",
+        "value":"204",
         "category":"pitching",
         "context_value":"17th",
         "context_value_label":"League rank"
@@ -130,23 +130,23 @@
     {
         "stat_label":"Walks",
         "stat":"walks",
-        "value":"85",
+        "value":"88",
         "category":"pitching",
-        "context_value":"14th",
+        "context_value":"15th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"ERA",
         "stat":"era",
-        "value":"3.86",
+        "value":"3.93",
         "category":"pitching",
-        "context_value":"11th",
+        "context_value":"12th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"April 22, 2026, 6:22 PM CT",
+        "value":"April 23, 2026, 3:44 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(April 22)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>13-9<\/span> record in the 2026 regular season, a <span class='highlight'>59%<\/span> winning percentage.  The last game was a <span class='highlight'>12-4<\/span> away <span class='highlight'>win<\/span>. and the next game is Thursday at 12:10 p.m. CT at <span class='highlight'>Comerica Park<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(April 23)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>13-10<\/span> record in the 2026 regular season, a <span class='highlight'>56%<\/span> winning percentage.  The last game was a <span class='highlight'>2-5<\/span> away <span class='highlight'>loss<\/span>. and the next game is Thursday at 12:10 p.m. CT at <span class='highlight'>Comerica Park<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -162,7 +162,7 @@
     {
         "stat_label":"Last game result",
         "stat":"last_game_result",
-        "value":"win",
+        "value":"loss",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
