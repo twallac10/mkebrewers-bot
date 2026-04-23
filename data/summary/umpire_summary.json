@@ -1,19 +1,29 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 92.14876033057851,
-        "incorrect_strikes_pct": 7.8512396694214885,
-        "total_called_strikes": 484,
-        "bad_calls_count": 38
+        "correct_strikes_pct": 91.55206286836936,
+        "incorrect_strikes_pct": 8.447937131630638,
+        "total_called_strikes": 509,
+        "bad_calls_count": 43
     },
     "last_game_summary": {
-        "date": "April 22, 2026",
-        "correct_strikes_pct": 100.0,
-        "incorrect_strikes_pct": 0.0,
-        "total_called_strikes": 10,
-        "bad_calls_count": 0,
-        "home_plate_umpire": "Mike Muchlinski"
+        "date": "April 23, 2026",
+        "correct_strikes_pct": 80.0,
+        "incorrect_strikes_pct": 20.0,
+        "total_called_strikes": 25,
+        "bad_calls_count": 5,
+        "home_plate_umpire": "Gabe Morales"
     },
     "worst_calls_of_season": [
+        {
+            "distance_inches": 3.3385205247,
+            "batter": "Joey Ortiz",
+            "pitcher": "Burch Smith",
+            "pitch_type": "4-Seam Fastball",
+            "velocity_mph": 94.5,
+            "date": "2026-04-23",
+            "date_formatted": "April 23, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=5807f059-02a1-3538-9ad0-f1d1682b306c"
+        },
         {
             "distance_inches": 3.1258824816,
             "batter": "Joey Ortiz",
@@ -35,38 +45,28 @@
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=689dde2d-2748-318a-ae30-fa9855dc6a05"
         },
         {
-            "distance_inches": 2.1761973915,
-            "batter": "Jake Bauers",
-            "pitcher": "Keider Montero",
-            "pitch_type": "Changeup",
-            "velocity_mph": 86.9,
-            "date": "2026-04-21",
-            "date_formatted": "April 21, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=ad3cb710-c39e-31e5-8f33-3da729f3c447"
-        },
-        {
-            "distance_inches": 2.0050163116,
-            "batter": "Sal Frelick",
-            "pitcher": "Shane McClanahan",
-            "pitch_type": "4-Seam Fastball",
-            "velocity_mph": 95.0,
-            "date": "2026-03-31",
-            "date_formatted": "March 31, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=7561ef91-bc95-309b-abd4-4cf687954618"
+            "distance_inches": 2.3943387951,
+            "batter": "Luis Rengifo",
+            "pitcher": "Tyler Holton",
+            "pitch_type": "Cutter",
+            "velocity_mph": 85.9,
+            "date": "2026-04-23",
+            "date_formatted": "April 23, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=fb0faaae-513e-3149-84f4-19e57129d6b8"
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 94.69613259668508,
-        "incorrect_balls_pct": 5.303867403314925,
-        "total_called_balls": 905,
+        "correct_balls_pct": 94.98432601880877,
+        "incorrect_balls_pct": 5.015673981191227,
+        "total_called_balls": 957,
         "bad_calls_count": 48
     },
     "pitching_last_game_summary": {
-        "date": "April 22, 2026",
-        "correct_balls_pct": 85.71428571428571,
-        "incorrect_balls_pct": 14.285714285714292,
-        "total_called_balls": 21,
-        "bad_calls_count": 3
+        "date": "April 23, 2026",
+        "correct_balls_pct": 100.0,
+        "incorrect_balls_pct": 0.0,
+        "total_called_balls": 52,
+        "bad_calls_count": 0
     },
     "pitching_worst_calls_of_season": []
 }
