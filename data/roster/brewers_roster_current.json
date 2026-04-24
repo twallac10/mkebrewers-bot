@@ -36,6 +36,24 @@
     "slug":"aaron-ashby"
   },
   {
+    "player_id":"675660",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/675660\/headshot\/silo\/current",
+    "name":"Shane Drohan",
+    "player_url":"\/player\/675660",
+    "jersey":"55",
+    "position_group":"Pitchers",
+    "bat_throw":"L\/L",
+    "height":"6' 2\"",
+    "weight":"202",
+    "dob":"01\/07\/1999",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"shane-drohan"
+  },
+  {
     "player_id":"669084",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/669084\/headshot\/silo\/current",
     "name":"DL Hall",
@@ -124,24 +142,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"chad-patrick"
-  },
-  {
-    "player_id":"692230",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/692230\/headshot\/silo\/current",
-    "name":"Carlos Rodriguez",
-    "player_url":"\/player\/692230",
-    "jersey":"27",
-    "position_group":"Pitchers",
-    "bat_throw":"R\/R",
-    "height":"5' 11\"",
-    "weight":"203",
-    "dob":"11\/27\/2001",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"carlos-rodriguez"
   },
   {
     "player_id":"687075",
@@ -288,6 +288,24 @@
     "slug":"jake-bauers"
   },
   {
+    "player_id":"672012",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/672012\/headshot\/silo\/current",
+    "name":"Tyler Black",
+    "player_url":"\/player\/672012",
+    "jersey":"7",
+    "position_group":"Infielders",
+    "bat_throw":"L\/R",
+    "height":"6' 0\"",
+    "weight":"208",
+    "dob":"07\/26\/2000",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"tyler-black"
+  },
+  {
     "player_id":"666152",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/666152\/headshot\/silo\/current",
     "name":"David Hamilton",
@@ -412,24 +430,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"brandon-lockridge"
-  },
-  {
-    "player_id":"682641",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/682641\/headshot\/silo\/current",
-    "name":"Luis Matos",
-    "player_url":"\/player\/682641",
-    "jersey":"21",
-    "position_group":"Outfielders",
-    "bat_throw":"R\/R",
-    "height":"5' 11\"",
-    "weight":"205",
-    "dob":"01\/28\/2002",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"luis-matos"
   },
   {
     "player_id":"669003",
