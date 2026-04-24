@@ -7,26 +7,26 @@
     },
     {
         "name":"Aaron Ashby*",
-        "era+":136.0,
-        "fip":2.41,
-        "so_bb":3.0
+        "era+":140.0,
+        "fip":2.62,
+        "so_bb":2.67
     },
     {
         "name":"Grant Anderson",
-        "era+":152.0,
-        "fip":2.99,
-        "so_bb":1.67
+        "era+":157.0,
+        "fip":2.85,
+        "so_bb":1.83
     },
     {
-        "name":"Brandon Sproat",
-        "era+":59.0,
-        "fip":6.26,
-        "so_bb":1.45
+        "name":"Angel Zerpa*",
+        "era+":69.0,
+        "fip":5.4,
+        "so_bb":1.4
     },
     {
         "name":"DL Hall*",
-        "era+":178.0,
-        "fip":4.68,
+        "era+":179.0,
+        "fip":4.69,
         "so_bb":1.4
     }
 ]
