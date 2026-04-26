@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.38240574506284,
-        "incorrect_strikes_pct": 8.61759425493716,
-        "total_called_strikes": 557,
+        "correct_strikes_pct": 91.76672384219555,
+        "incorrect_strikes_pct": 8.233276157804454,
+        "total_called_strikes": 583,
         "bad_calls_count": 48
     },
     "last_game_summary": {
-        "date": "April 25, 2026",
+        "date": "April 26, 2026",
         "correct_strikes_pct": 100.0,
         "incorrect_strikes_pct": 0.0,
         "total_called_strikes": 26,
         "bad_calls_count": 0,
-        "home_plate_umpire": "Scott Barry"
+        "home_plate_umpire": "Manny Gonzalez"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.1048951048951,
-        "incorrect_balls_pct": 4.895104895104893,
-        "total_called_balls": 1001,
-        "bad_calls_count": 49
+        "correct_balls_pct": 95.06641366223909,
+        "incorrect_balls_pct": 4.933586337760914,
+        "total_called_balls": 1054,
+        "bad_calls_count": 52
     },
     "pitching_last_game_summary": {
-        "date": "April 25, 2026",
-        "correct_balls_pct": 100.0,
-        "incorrect_balls_pct": 0.0,
-        "total_called_balls": 5,
-        "bad_calls_count": 0
+        "date": "April 26, 2026",
+        "correct_balls_pct": 94.33962264150944,
+        "incorrect_balls_pct": 5.660377358490564,
+        "total_called_balls": 53,
+        "bad_calls_count": 3
     },
     "pitching_worst_calls_of_season": []
 }
