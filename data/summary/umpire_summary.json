@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.96045197740112,
-        "incorrect_strikes_pct": 9.03954802259888,
-        "total_called_strikes": 531,
+        "correct_strikes_pct": 91.38240574506284,
+        "incorrect_strikes_pct": 8.61759425493716,
+        "total_called_strikes": 557,
         "bad_calls_count": 48
     },
     "last_game_summary": {
-        "date": "April 24, 2026",
-        "correct_strikes_pct": 77.27272727272727,
-        "incorrect_strikes_pct": 22.727272727272734,
-        "total_called_strikes": 22,
-        "bad_calls_count": 5,
-        "home_plate_umpire": "Tom Hanahan"
+        "date": "April 25, 2026",
+        "correct_strikes_pct": 100.0,
+        "incorrect_strikes_pct": 0.0,
+        "total_called_strikes": 26,
+        "bad_calls_count": 0,
+        "home_plate_umpire": "Scott Barry"
     },
     "worst_calls_of_season": [
         {

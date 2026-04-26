@@ -2,12 +2,12 @@
     "hitting_runs": 11,
     "hitting_stolenBases": 1,
     "hitting_homeRuns": 26,
-    "hitting_battingAverage": 20,
-    "hitting_onBasePlusSlugging": 23,
+    "hitting_battingAverage": 23,
+    "hitting_onBasePlusSlugging": 26,
     "hitting_sluggingPercentage": 29,
-    "hitting_onBasePercentage": 7,
-    "pitching_strikeouts": 20,
-    "pitching_walks": 16,
-    "pitching_earnedRunAverage": 12,
-    "pitching_walksAndHitsPerInningPitched": 14
+    "hitting_onBasePercentage": 10,
+    "pitching_strikeouts": 14,
+    "pitching_walks": 14,
+    "pitching_earnedRunAverage": 11,
+    "pitching_walksAndHitsPerInningPitched": 15
 }
