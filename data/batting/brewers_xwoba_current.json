@@ -1,1202 +1,1202 @@
 [
   {
     "year":"2026",
-    "max_game_date":"2026-04-24 19:00:00 CDT",
+    "max_game_date":"2026-04-25 19:00:00 CDT",
     "rn":"1",
-    "x_numer":"26.737488",
+    "x_numer":"27.192668",
     "x_denom":"100",
-    "xwoba":0.26737488,
+    "xwoba":0.27192668,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"1"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-24 19:00:00 CDT",
+    "max_game_date":"2026-04-25 19:00:00 CDT",
     "rn":"2",
-    "x_numer":"27.097488",
+    "x_numer":"27.046668",
     "x_denom":"100",
-    "xwoba":0.27097488,
+    "xwoba":0.27046668,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"2"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-24 19:00:00 CDT",
+    "max_game_date":"2026-04-25 19:00:00 CDT",
     "rn":"3",
-    "x_numer":"27.340488",
+    "x_numer":"27.046668",
     "x_denom":"100",
-    "xwoba":0.27340488,
+    "xwoba":0.27046668,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"3"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-23 19:00:00 CDT",
+    "max_game_date":"2026-04-24 19:00:00 CDT",
     "rn":"4",
-    "x_numer":"26.683566",
+    "x_numer":"26.749668",
     "x_denom":"100",
-    "xwoba":0.26683566,
+    "xwoba":0.26749668,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"4"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-23 19:00:00 CDT",
+    "max_game_date":"2026-04-24 19:00:00 CDT",
     "rn":"5",
-    "x_numer":"26.270566",
+    "x_numer":"27.109668",
     "x_denom":"100",
-    "xwoba":0.26270566,
+    "xwoba":0.27109668,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"5"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-22 19:00:00 CDT",
+    "max_game_date":"2026-04-24 19:00:00 CDT",
     "rn":"6",
-    "x_numer":"26.070566",
+    "x_numer":"27.352668",
     "x_denom":"100",
-    "xwoba":0.26070566,
+    "xwoba":0.27352668,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"6"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-21 19:00:00 CDT",
+    "max_game_date":"2026-04-23 19:00:00 CDT",
     "rn":"7",
-    "x_numer":"25.729566",
+    "x_numer":"26.694719",
     "x_denom":"100",
-    "xwoba":0.25729566,
+    "xwoba":0.26694719,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"7"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-21 19:00:00 CDT",
+    "max_game_date":"2026-04-23 19:00:00 CDT",
     "rn":"8",
-    "x_numer":"25.609566",
+    "x_numer":"26.281719",
     "x_denom":"100",
-    "xwoba":0.25609566,
+    "xwoba":0.26281719,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"8"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-21 19:00:00 CDT",
+    "max_game_date":"2026-04-22 19:00:00 CDT",
     "rn":"9",
-    "x_numer":"26.194063",
+    "x_numer":"26.081719",
     "x_denom":"100",
-    "xwoba":0.26194063,
+    "xwoba":0.26081719,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"9"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-21 19:00:00 CDT",
     "rn":"10",
-    "x_numer":"25.814063",
+    "x_numer":"25.740719",
     "x_denom":"100",
-    "xwoba":0.25814063,
+    "xwoba":0.25740719,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"10"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-20 19:00:00 CDT",
+    "max_game_date":"2026-04-21 19:00:00 CDT",
     "rn":"11",
-    "x_numer":"25.776063",
+    "x_numer":"25.620719",
     "x_denom":"100",
-    "xwoba":0.25776063,
+    "xwoba":0.25620719,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"11"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-20 19:00:00 CDT",
+    "max_game_date":"2026-04-21 19:00:00 CDT",
     "rn":"12",
-    "x_numer":"25.067141",
+    "x_numer":"26.205216",
     "x_denom":"100",
-    "xwoba":0.25067141,
+    "xwoba":0.26205216,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"12"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-20 19:00:00 CDT",
+    "max_game_date":"2026-04-21 19:00:00 CDT",
     "rn":"13",
-    "x_numer":"25.581141",
+    "x_numer":"25.825216",
     "x_denom":"100",
-    "xwoba":0.25581141,
+    "xwoba":0.25825216,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"13"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-20 19:00:00 CDT",
     "rn":"14",
-    "x_numer":"25.576141",
+    "x_numer":"25.787216",
     "x_denom":"100",
-    "xwoba":0.25576141,
+    "xwoba":0.25787216,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"14"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-18 19:00:00 CDT",
+    "max_game_date":"2026-04-20 19:00:00 CDT",
     "rn":"15",
-    "x_numer":"25.445141",
+    "x_numer":"25.077267",
     "x_denom":"100",
-    "xwoba":0.25445141,
+    "xwoba":0.25077267,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"15"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-17 19:00:00 CDT",
+    "max_game_date":"2026-04-20 19:00:00 CDT",
     "rn":"16",
-    "x_numer":"25.439141",
+    "x_numer":"25.591267",
     "x_denom":"100",
-    "xwoba":0.25439141,
+    "xwoba":0.25591267,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"16"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-17 19:00:00 CDT",
+    "max_game_date":"2026-04-20 19:00:00 CDT",
     "rn":"17",
-    "x_numer":"25.894141",
+    "x_numer":"25.586267",
     "x_denom":"100",
-    "xwoba":0.25894141,
+    "xwoba":0.25586267,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"17"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-17 19:00:00 CDT",
+    "max_game_date":"2026-04-18 19:00:00 CDT",
     "rn":"18",
-    "x_numer":"25.876141",
+    "x_numer":"25.455267",
     "x_denom":"100",
-    "xwoba":0.25876141,
+    "xwoba":0.25455267,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"18"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-17 19:00:00 CDT",
     "rn":"19",
-    "x_numer":"26.562638",
+    "x_numer":"25.449267",
     "x_denom":"100",
-    "xwoba":0.26562638,
+    "xwoba":0.25449267,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"19"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-17 19:00:00 CDT",
     "rn":"20",
-    "x_numer":"27.336638",
+    "x_numer":"25.904267",
     "x_denom":"100",
-    "xwoba":0.27336638,
+    "xwoba":0.25904267,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"20"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-16 19:00:00 CDT",
+    "max_game_date":"2026-04-17 19:00:00 CDT",
     "rn":"21",
-    "x_numer":"27.374638",
+    "x_numer":"25.886267",
     "x_denom":"100",
-    "xwoba":0.27374638,
+    "xwoba":0.25886267,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"21"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-16 19:00:00 CDT",
+    "max_game_date":"2026-04-17 19:00:00 CDT",
     "rn":"22",
-    "x_numer":"27.329638",
+    "x_numer":"26.572764",
     "x_denom":"100",
-    "xwoba":0.27329638,
+    "xwoba":0.26572764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"22"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-16 19:00:00 CDT",
+    "max_game_date":"2026-04-17 19:00:00 CDT",
     "rn":"23",
-    "x_numer":"27.584638",
+    "x_numer":"27.346764",
     "x_denom":"100",
-    "xwoba":0.27584638,
+    "xwoba":0.27346764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"23"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-16 19:00:00 CDT",
     "rn":"24",
-    "x_numer":"27.536638",
+    "x_numer":"27.384764",
     "x_denom":"100",
-    "xwoba":0.27536638,
+    "xwoba":0.27384764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"24"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-16 19:00:00 CDT",
     "rn":"25",
-    "x_numer":"28.040638",
+    "x_numer":"27.339764",
     "x_denom":"100",
-    "xwoba":0.28040638,
+    "xwoba":0.27339764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"25"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-16 19:00:00 CDT",
     "rn":"26",
-    "x_numer":"28.633638",
+    "x_numer":"27.594764",
     "x_denom":"100",
-    "xwoba":0.28633638,
+    "xwoba":0.27594764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"26"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-14 19:00:00 CDT",
+    "max_game_date":"2026-04-16 19:00:00 CDT",
     "rn":"27",
-    "x_numer":"28.099638",
+    "x_numer":"27.546764",
     "x_denom":"100",
-    "xwoba":0.28099638,
+    "xwoba":0.27546764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"27"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-14 19:00:00 CDT",
+    "max_game_date":"2026-04-16 19:00:00 CDT",
     "rn":"28",
-    "x_numer":"27.938638",
+    "x_numer":"28.050764",
     "x_denom":"100",
-    "xwoba":0.27938638,
+    "xwoba":0.28050764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"28"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-14 19:00:00 CDT",
+    "max_game_date":"2026-04-16 19:00:00 CDT",
     "rn":"29",
-    "x_numer":"28.184638",
+    "x_numer":"28.643764",
     "x_denom":"100",
-    "xwoba":0.28184638,
+    "xwoba":0.28643764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"29"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-14 19:00:00 CDT",
     "rn":"30",
-    "x_numer":"27.942638",
+    "x_numer":"28.109764",
     "x_denom":"100",
-    "xwoba":0.27942638,
+    "xwoba":0.28109764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"30"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-13 19:00:00 CDT",
+    "max_game_date":"2026-04-14 19:00:00 CDT",
     "rn":"31",
-    "x_numer":"27.942638",
+    "x_numer":"27.948764",
     "x_denom":"100",
-    "xwoba":0.27942638,
+    "xwoba":0.27948764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"31"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-13 19:00:00 CDT",
+    "max_game_date":"2026-04-14 19:00:00 CDT",
     "rn":"32",
-    "x_numer":"27.870638",
+    "x_numer":"28.194764",
     "x_denom":"100",
-    "xwoba":0.27870638,
+    "xwoba":0.28194764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"32"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-13 19:00:00 CDT",
+    "max_game_date":"2026-04-14 19:00:00 CDT",
     "rn":"33",
-    "x_numer":"27.359716",
+    "x_numer":"27.952764",
     "x_denom":"100",
-    "xwoba":0.27359716,
+    "xwoba":0.27952764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"33"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-13 19:00:00 CDT",
     "rn":"34",
-    "x_numer":"27.967716",
+    "x_numer":"27.952764",
     "x_denom":"100",
-    "xwoba":0.27967716,
+    "xwoba":0.27952764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"34"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-13 19:00:00 CDT",
     "rn":"35",
-    "x_numer":"27.361794",
+    "x_numer":"27.880764",
     "x_denom":"100",
-    "xwoba":0.27361794,
+    "xwoba":0.27880764,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"35"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-13 19:00:00 CDT",
     "rn":"36",
-    "x_numer":"26.712794",
+    "x_numer":"27.368815",
     "x_denom":"100",
-    "xwoba":0.26712794,
+    "xwoba":0.27368815,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"36"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-11 19:00:00 CDT",
+    "max_game_date":"2026-04-13 19:00:00 CDT",
     "rn":"37",
-    "x_numer":"26.714794",
+    "x_numer":"27.976815",
     "x_denom":"100",
-    "xwoba":0.26714794,
+    "xwoba":0.27976815,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"37"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-11 19:00:00 CDT",
+    "max_game_date":"2026-04-13 19:00:00 CDT",
     "rn":"38",
-    "x_numer":"26.767794",
+    "x_numer":"27.369866",
     "x_denom":"100",
-    "xwoba":0.26767794,
+    "xwoba":0.27369866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"38"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-11 19:00:00 CDT",
+    "max_game_date":"2026-04-13 19:00:00 CDT",
     "rn":"39",
-    "x_numer":"26.587794",
+    "x_numer":"26.720866",
     "x_denom":"100",
-    "xwoba":0.26587794,
+    "xwoba":0.26720866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"39"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-11 19:00:00 CDT",
     "rn":"40",
-    "x_numer":"27.121794",
+    "x_numer":"26.722866",
     "x_denom":"100",
-    "xwoba":0.27121794,
+    "xwoba":0.26722866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"40"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-10 19:00:00 CDT",
+    "max_game_date":"2026-04-11 19:00:00 CDT",
     "rn":"41",
-    "x_numer":"27.055794",
+    "x_numer":"26.775866",
     "x_denom":"100",
-    "xwoba":0.27055794,
+    "xwoba":0.26775866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"41"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-10 19:00:00 CDT",
+    "max_game_date":"2026-04-11 19:00:00 CDT",
     "rn":"42",
-    "x_numer":"27.055794",
+    "x_numer":"26.595866",
     "x_denom":"100",
-    "xwoba":0.27055794,
+    "xwoba":0.26595866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"42"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-10 19:00:00 CDT",
+    "max_game_date":"2026-04-11 19:00:00 CDT",
     "rn":"43",
-    "x_numer":"27.075794",
+    "x_numer":"27.129866",
     "x_denom":"100",
-    "xwoba":0.27075794,
+    "xwoba":0.27129866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"43"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-10 19:00:00 CDT",
     "rn":"44",
-    "x_numer":"27.029794",
+    "x_numer":"27.063866",
     "x_denom":"100",
-    "xwoba":0.27029794,
+    "xwoba":0.27063866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"44"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-09 19:00:00 CDT",
+    "max_game_date":"2026-04-10 19:00:00 CDT",
     "rn":"45",
-    "x_numer":"26.905794",
+    "x_numer":"27.063866",
     "x_denom":"100",
-    "xwoba":0.26905794,
+    "xwoba":0.27063866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"45"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-09 19:00:00 CDT",
+    "max_game_date":"2026-04-10 19:00:00 CDT",
     "rn":"46",
-    "x_numer":"26.827794",
+    "x_numer":"27.083866",
     "x_denom":"100",
-    "xwoba":0.26827794,
+    "xwoba":0.27083866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"46"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-09 19:00:00 CDT",
+    "max_game_date":"2026-04-10 19:00:00 CDT",
     "rn":"47",
-    "x_numer":"26.766794",
+    "x_numer":"27.037866",
     "x_denom":"100",
-    "xwoba":0.26766794,
+    "xwoba":0.27037866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"47"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-07 19:00:00 CDT",
+    "max_game_date":"2026-04-09 19:00:00 CDT",
     "rn":"48",
-    "x_numer":"26.900794",
+    "x_numer":"26.913866",
     "x_denom":"100",
-    "xwoba":0.26900794,
+    "xwoba":0.26913866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"48"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-07 19:00:00 CDT",
+    "max_game_date":"2026-04-09 19:00:00 CDT",
     "rn":"49",
-    "x_numer":"26.952794",
+    "x_numer":"26.835866",
     "x_denom":"100",
-    "xwoba":0.26952794,
+    "xwoba":0.26835866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"49"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-07 19:00:00 CDT",
+    "max_game_date":"2026-04-09 19:00:00 CDT",
     "rn":"50",
-    "x_numer":"26.445794",
+    "x_numer":"26.774866",
     "x_denom":"100",
-    "xwoba":0.26445794,
+    "xwoba":0.26774866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"50"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-07 19:00:00 CDT",
     "rn":"51",
-    "x_numer":"26.298794",
+    "x_numer":"26.908866",
     "x_denom":"100",
-    "xwoba":0.26298794,
+    "xwoba":0.26908866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"51"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-06 19:00:00 CDT",
+    "max_game_date":"2026-04-07 19:00:00 CDT",
     "rn":"52",
-    "x_numer":"26.305794",
+    "x_numer":"26.960866",
     "x_denom":"100",
-    "xwoba":0.26305794,
+    "xwoba":0.26960866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"52"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-06 19:00:00 CDT",
+    "max_game_date":"2026-04-07 19:00:00 CDT",
     "rn":"53",
-    "x_numer":"25.915872",
+    "x_numer":"26.453866",
     "x_denom":"100",
-    "xwoba":0.25915872,
+    "xwoba":0.26453866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"53"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-06 19:00:00 CDT",
+    "max_game_date":"2026-04-07 19:00:00 CDT",
     "rn":"54",
-    "x_numer":"25.435872",
+    "x_numer":"26.306866",
     "x_denom":"100",
-    "xwoba":0.25435872,
+    "xwoba":0.26306866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"54"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-06 19:00:00 CDT",
     "rn":"55",
-    "x_numer":"25.554872",
+    "x_numer":"26.313866",
     "x_denom":"100",
-    "xwoba":0.25554872,
+    "xwoba":0.26313866,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"55"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-05 19:00:00 CDT",
+    "max_game_date":"2026-04-06 19:00:00 CDT",
     "rn":"56",
-    "x_numer":"25.495872",
+    "x_numer":"25.922917",
     "x_denom":"100",
-    "xwoba":0.25495872,
+    "xwoba":0.25922917,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"56"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-05 19:00:00 CDT",
+    "max_game_date":"2026-04-06 19:00:00 CDT",
     "rn":"57",
-    "x_numer":"26.5495747027027033",
+    "x_numer":"25.442917",
     "x_denom":"100",
-    "xwoba":0.265495747,
+    "xwoba":0.25442917,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"57"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-05 19:00:00 CDT",
+    "max_game_date":"2026-04-06 19:00:00 CDT",
     "rn":"58",
-    "x_numer":"26.5495747027027033",
+    "x_numer":"25.561917",
     "x_denom":"100",
-    "xwoba":0.265495747,
+    "xwoba":0.25561917,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"58"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-05 19:00:00 CDT",
     "rn":"59",
-    "x_numer":"26.5555747027027033",
+    "x_numer":"25.502917",
     "x_denom":"100",
-    "xwoba":0.265555747,
+    "xwoba":0.25502917,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"59"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-05 19:00:00 CDT",
     "rn":"60",
-    "x_numer":"26.5765747027027033",
+    "x_numer":"26.5566197027027033",
     "x_denom":"100",
-    "xwoba":0.265765747,
+    "xwoba":0.265566197,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"60"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-03 19:00:00 CDT",
+    "max_game_date":"2026-04-05 19:00:00 CDT",
     "rn":"61",
-    "x_numer":"26.51028428165007185",
+    "x_numer":"26.5566197027027033",
     "x_denom":"100",
-    "xwoba":0.2651028428,
+    "xwoba":0.265566197,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"61"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-03 19:00:00 CDT",
+    "max_game_date":"2026-04-05 19:00:00 CDT",
     "rn":"62",
-    "x_numer":"26.51678128165007185",
+    "x_numer":"26.5626197027027033",
     "x_denom":"100",
-    "xwoba":0.2651678128,
+    "xwoba":0.265626197,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"62"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-04-03 19:00:00 CDT",
+    "max_game_date":"2026-04-05 19:00:00 CDT",
     "rn":"63",
-    "x_numer":"27.20827828165007185",
+    "x_numer":"26.5836197027027033",
     "x_denom":"100",
-    "xwoba":0.2720827828,
+    "xwoba":0.265836197,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"63"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-03 19:00:00 CDT",
     "rn":"64",
-    "x_numer":"27.04335628165007185",
+    "x_numer":"26.51630228165007185",
     "x_denom":"100",
-    "xwoba":0.2704335628,
+    "xwoba":0.2651630228,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"64"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-03 19:00:00 CDT",
     "rn":"65",
-    "x_numer":"27.48885328165007185",
+    "x_numer":"26.52279928165007185",
     "x_denom":"100",
-    "xwoba":0.2748885328,
+    "xwoba":0.2652279928,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"65"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-03 19:00:00 CDT",
     "rn":"66",
-    "x_numer":"27.68685328165007185",
+    "x_numer":"27.21429628165007185",
     "x_denom":"100",
-    "xwoba":0.2768685328,
+    "xwoba":0.2721429628,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"66"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-31 19:00:00 CDT",
+    "max_game_date":"2026-04-03 19:00:00 CDT",
     "rn":"67",
-    "x_numer":"27.60385328165007185",
+    "x_numer":"27.04834728165007185",
     "x_denom":"100",
-    "xwoba":0.2760385328,
+    "xwoba":0.2704834728,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"67"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-31 19:00:00 CDT",
+    "max_game_date":"2026-04-03 19:00:00 CDT",
     "rn":"68",
-    "x_numer":"27.60385328165007185",
+    "x_numer":"27.49384428165007185",
     "x_denom":"100",
-    "xwoba":0.2760385328,
+    "xwoba":0.2749384428,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"68"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-31 19:00:00 CDT",
+    "max_game_date":"2026-04-03 19:00:00 CDT",
     "rn":"69",
-    "x_numer":"27.46585328165007185",
+    "x_numer":"27.69184428165007185",
     "x_denom":"100",
-    "xwoba":0.2746585328,
+    "xwoba":0.2769184428,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"69"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-31 19:00:00 CDT",
     "rn":"70",
-    "x_numer":"27.46585328165007185",
+    "x_numer":"27.60884428165007185",
     "x_denom":"100",
-    "xwoba":0.2746585328,
+    "xwoba":0.2760884428,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"70"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-30 19:00:00 CDT",
+    "max_game_date":"2026-03-31 19:00:00 CDT",
     "rn":"71",
-    "x_numer":"27.53885328165007185",
+    "x_numer":"27.60884428165007185",
     "x_denom":"100",
-    "xwoba":0.2753885328,
+    "xwoba":0.2760884428,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"71"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-30 19:00:00 CDT",
+    "max_game_date":"2026-03-31 19:00:00 CDT",
     "rn":"72",
-    "x_numer":"28.08685328165007185",
+    "x_numer":"27.47084428165007185",
     "x_denom":"100",
-    "xwoba":0.2808685328,
+    "xwoba":0.2747084428,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"72"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-30 19:00:00 CDT",
+    "max_game_date":"2026-03-31 19:00:00 CDT",
     "rn":"73",
-    "x_numer":"28.66385328165007185",
+    "x_numer":"27.47084428165007185",
     "x_denom":"100",
-    "xwoba":0.2866385328,
+    "xwoba":0.2747084428,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"73"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-30 19:00:00 CDT",
     "rn":"74",
-    "x_numer":"28.63985328165007185",
+    "x_numer":"27.54384428165007185",
     "x_denom":"100",
-    "xwoba":0.2863985328,
+    "xwoba":0.2754384428,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"74"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-29 19:00:00 CDT",
+    "max_game_date":"2026-03-30 19:00:00 CDT",
     "rn":"75",
-    "x_numer":"29.20435028165007185",
+    "x_numer":"28.09184428165007185",
     "x_denom":"100",
-    "xwoba":0.2920435028,
+    "xwoba":0.2809184428,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"75"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-29 19:00:00 CDT",
+    "max_game_date":"2026-03-30 19:00:00 CDT",
     "rn":"76",
-    "x_numer":"28.56400428165007185",
+    "x_numer":"28.66884428165007185",
     "x_denom":"100",
-    "xwoba":0.2856400428,
+    "xwoba":0.2866884428,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"76"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-29 19:00:00 CDT",
+    "max_game_date":"2026-03-30 19:00:00 CDT",
     "rn":"77",
-    "x_numer":"28.33100428165007185",
+    "x_numer":"28.64484428165007185",
     "x_denom":"100",
-    "xwoba":0.2833100428,
+    "xwoba":0.2864484428,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"77"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-29 19:00:00 CDT",
     "rn":"78",
-    "x_numer":"28.24700428165007185",
+    "x_numer":"29.20934128165007185",
     "x_denom":"100",
-    "xwoba":0.2824700428,
+    "xwoba":0.2920934128,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"78"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-28 19:00:00 CDT",
+    "max_game_date":"2026-03-29 19:00:00 CDT",
     "rn":"79",
-    "x_numer":"28.11400428165007185",
+    "x_numer":"28.56811228165007185",
     "x_denom":"100",
-    "xwoba":0.2811400428,
+    "xwoba":0.2856811228,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"79"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-28 19:00:00 CDT",
+    "max_game_date":"2026-03-29 19:00:00 CDT",
     "rn":"80",
-    "x_numer":"27.64108228165007185",
+    "x_numer":"28.33511228165007185",
     "x_denom":"100",
-    "xwoba":0.2764108228,
+    "xwoba":0.2833511228,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"80"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-28 19:00:00 CDT",
+    "max_game_date":"2026-03-29 19:00:00 CDT",
     "rn":"81",
-    "x_numer":"28.33257928165007185",
+    "x_numer":"28.25111228165007185",
     "x_denom":"100",
-    "xwoba":0.2833257928,
+    "xwoba":0.2825111228,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"81"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-28 19:00:00 CDT",
     "rn":"82",
-    "x_numer":"27.72057928165007185",
+    "x_numer":"28.11811228165007185",
     "x_denom":"100",
-    "xwoba":0.2772057928,
+    "xwoba":0.2811811228,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"82"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-28 19:00:00 CDT",
     "rn":"83",
-    "x_numer":"27.86865728165007185",
+    "x_numer":"27.64416328165007185",
     "x_denom":"100",
-    "xwoba":0.2786865728,
+    "xwoba":0.2764416328,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"83"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-27 19:00:00 CDT",
+    "max_game_date":"2026-03-28 19:00:00 CDT",
     "rn":"84",
-    "x_numer":"27.78765728165007185",
+    "x_numer":"28.33566028165007185",
     "x_denom":"100",
-    "xwoba":0.2778765728,
+    "xwoba":0.2833566028,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"84"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-27 19:00:00 CDT",
+    "max_game_date":"2026-03-28 19:00:00 CDT",
     "rn":"85",
-    "x_numer":"28.12765728165007185",
+    "x_numer":"27.72366028165007185",
     "x_denom":"100",
-    "xwoba":0.2812765728,
+    "xwoba":0.2772366028,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"85"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-27 19:00:00 CDT",
+    "max_game_date":"2026-03-28 19:00:00 CDT",
     "rn":"86",
-    "x_numer":"28.00165728165007185",
+    "x_numer":"27.87071128165007185",
     "x_denom":"100",
-    "xwoba":0.2800165728,
+    "xwoba":0.2787071128,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"86"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-27 19:00:00 CDT",
     "rn":"87",
-    "x_numer":"28.00165728165007185",
+    "x_numer":"27.78971128165007185",
     "x_denom":"100",
-    "xwoba":0.2800165728,
+    "xwoba":0.2778971128,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"87"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-25 19:00:00 CDT",
+    "max_game_date":"2026-03-27 19:00:00 CDT",
     "rn":"88",
-    "x_numer":"28.11465728165007185",
+    "x_numer":"28.12971128165007185",
     "x_denom":"100",
-    "xwoba":0.2811465728,
+    "xwoba":0.2812971128,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"88"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-25 19:00:00 CDT",
+    "max_game_date":"2026-03-27 19:00:00 CDT",
     "rn":"89",
-    "x_numer":"27.65765728165007185",
+    "x_numer":"28.00371128165007185",
     "x_denom":"100",
-    "xwoba":0.2765765728,
+    "xwoba":0.2800371128,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"89"
   },
   {
     "year":"2026",
-    "max_game_date":"2026-03-25 19:00:00 CDT",
+    "max_game_date":"2026-03-27 19:00:00 CDT",
     "rn":"90",
-    "x_numer":"27.18373528165007185",
+    "x_numer":"28.00371128165007185",
     "x_denom":"100",
-    "xwoba":0.2718373528,
+    "xwoba":0.2800371128,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"90"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-25 19:00:00 CDT",
     "rn":"91",
-    "x_numer":"25.50073528165007185",
+    "x_numer":"28.11671128165007185",
     "x_denom":"100",
-    "xwoba":0.2550073528,
+    "xwoba":0.2811671128,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"91"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-25 19:00:00 CDT",
     "rn":"92",
-    "x_numer":"25.51873528165007185",
+    "x_numer":"27.65971128165007185",
     "x_denom":"100",
-    "xwoba":0.2551873528,
+    "xwoba":0.2765971128,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"92"
   },
   {
-    "year":"2025",
-    "max_game_date":"2025-10-16 19:00:00 CDT",
+    "year":"2026",
+    "max_game_date":"2026-03-25 19:00:00 CDT",
     "rn":"93",
-    "x_numer":"24.89181328165007185",
+    "x_numer":"27.18476228165007185",
     "x_denom":"100",
-    "xwoba":0.2489181328,
+    "xwoba":0.2718476228,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"93"
   },
   {
-    "year":"2025",
-    "max_game_date":"2025-10-16 19:00:00 CDT",
+    "year":"2026",
+    "max_game_date":"2026-03-25 19:00:00 CDT",
     "rn":"94",
-    "x_numer":"24.97281328165007185",
+    "x_numer":"25.50176228165007185",
     "x_denom":"100",
-    "xwoba":0.2497281328,
+    "xwoba":0.2550176228,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"94"
   },
   {
-    "year":"2025",
-    "max_game_date":"2025-10-16 19:00:00 CDT",
+    "year":"2026",
+    "max_game_date":"2026-03-25 19:00:00 CDT",
     "rn":"95",
-    "x_numer":"24.67381328165007185",
+    "x_numer":"25.51976228165007185",
     "x_denom":"100",
-    "xwoba":0.2467381328,
+    "xwoba":0.2551976228,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"95"
   },
   {
     "year":"2025",
     "max_game_date":"2025-10-16 19:00:00 CDT",
     "rn":"96",
+    "x_numer":"24.89181328165007185",
+    "x_denom":"100",
+    "xwoba":0.2489181328,
+    "player_name":"Sal Frelick",
+    "player_id":"686217",
+    "league_avg_xwoba":0.3125736434,
+    "rn_fwd":"96"
+  },
+  {
+    "year":"2025",
+    "max_game_date":"2025-10-16 19:00:00 CDT",
+    "rn":"97",
+    "x_numer":"24.97281328165007185",
+    "x_denom":"100",
+    "xwoba":0.2497281328,
+    "player_name":"Sal Frelick",
+    "player_id":"686217",
+    "league_avg_xwoba":0.3125736434,
+    "rn_fwd":"97"
+  },
+  {
+    "year":"2025",
+    "max_game_date":"2025-10-16 19:00:00 CDT",
+    "rn":"98",
+    "x_numer":"24.67381328165007185",
+    "x_denom":"100",
+    "xwoba":0.2467381328,
+    "player_name":"Sal Frelick",
+    "player_id":"686217",
+    "league_avg_xwoba":0.3125736434,
+    "rn_fwd":"98"
+  },
+  {
+    "year":"2025",
+    "max_game_date":"2025-10-16 19:00:00 CDT",
+    "rn":"99",
     "x_numer":"24.68481328165007185",
     "x_denom":"100",
     "xwoba":0.2468481328,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
-    "rn_fwd":"96"
-  },
-  {
-    "year":"2025",
-    "max_game_date":"2025-10-15 19:00:00 CDT",
-    "rn":"97",
-    "x_numer":"25.06481328165007185",
-    "x_denom":"100",
-    "xwoba":0.2506481328,
-    "player_name":"Sal Frelick",
-    "player_id":"686217",
-    "league_avg_xwoba":0.313,
-    "rn_fwd":"97"
-  },
-  {
-    "year":"2025",
-    "max_game_date":"2025-10-15 19:00:00 CDT",
-    "rn":"98",
-    "x_numer":"25.51381328165007185",
-    "x_denom":"100",
-    "xwoba":0.2551381328,
-    "player_name":"Sal Frelick",
-    "player_id":"686217",
-    "league_avg_xwoba":0.313,
-    "rn_fwd":"98"
-  },
-  {
-    "year":"2025",
-    "max_game_date":"2025-10-15 19:00:00 CDT",
-    "rn":"99",
-    "x_numer":"26.20531028165007185",
-    "x_denom":"100",
-    "xwoba":0.2620531028,
-    "player_name":"Sal Frelick",
-    "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"99"
   },
   {
     "year":"2025",
     "max_game_date":"2025-10-15 19:00:00 CDT",
     "rn":"100",
-    "x_numer":"26.89680728165007185",
+    "x_numer":"25.06481328165007185",
     "x_denom":"100",
-    "xwoba":0.2689680728,
+    "xwoba":0.2506481328,
     "player_name":"Sal Frelick",
     "player_id":"686217",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"100"
   },
   {
@@ -1208,7 +1208,7 @@
     "xwoba":0.32564407,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"1"
   },
   {
@@ -1220,7 +1220,7 @@
     "xwoba":0.32552407,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"2"
   },
   {
@@ -1232,7 +1232,7 @@
     "xwoba":0.3269282665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"3"
   },
   {
@@ -1244,7 +1244,7 @@
     "xwoba":0.3282682665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"4"
   },
   {
@@ -1256,7 +1256,7 @@
     "xwoba":0.3330782665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"5"
   },
   {
@@ -1268,7 +1268,7 @@
     "xwoba":0.3298382665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"6"
   },
   {
@@ -1280,7 +1280,7 @@
     "xwoba":0.3291682665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"7"
   },
   {
@@ -1292,7 +1292,7 @@
     "xwoba":0.3263082665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"8"
   },
   {
@@ -1304,7 +1304,7 @@
     "xwoba":0.3204682665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"9"
   },
   {
@@ -1316,7 +1316,7 @@
     "xwoba":0.3204682665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"10"
   },
   {
@@ -1328,7 +1328,7 @@
     "xwoba":0.3267282665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"11"
   },
   {
@@ -1340,7 +1340,7 @@
     "xwoba":0.3297182665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"12"
   },
   {
@@ -1352,7 +1352,7 @@
     "xwoba":0.3322182665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"13"
   },
   {
@@ -1364,7 +1364,7 @@
     "xwoba":0.3251987765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"14"
   },
   {
@@ -1376,7 +1376,7 @@
     "xwoba":0.3407537765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"15"
   },
   {
@@ -1388,7 +1388,7 @@
     "xwoba":0.3408537765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"16"
   },
   {
@@ -1400,7 +1400,7 @@
     "xwoba":0.3395137765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"17"
   },
   {
@@ -1412,7 +1412,7 @@
     "xwoba":0.3304737765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"18"
   },
   {
@@ -1424,7 +1424,7 @@
     "xwoba":0.3334437765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"19"
   },
   {
@@ -1436,7 +1436,7 @@
     "xwoba":0.3333937765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"20"
   },
   {
@@ -1448,7 +1448,7 @@
     "xwoba":0.3306237765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"21"
   },
   {
@@ -1460,7 +1460,7 @@
     "xwoba":0.3235242865,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"22"
   },
   {
@@ -1472,7 +1472,7 @@
     "xwoba":0.3237242865,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"23"
   },
   {
@@ -1484,7 +1484,7 @@
     "xwoba":0.3237242865,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"24"
   },
   {
@@ -1496,7 +1496,7 @@
     "xwoba":0.3237242865,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"25"
   },
   {
@@ -1508,7 +1508,7 @@
     "xwoba":0.3235397665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"26"
   },
   {
@@ -1520,7 +1520,7 @@
     "xwoba":0.3260797665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"27"
   },
   {
@@ -1532,7 +1532,7 @@
     "xwoba":0.3189802765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"28"
   },
   {
@@ -1544,7 +1544,7 @@
     "xwoba":0.3221452465,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"29"
   },
   {
@@ -1556,7 +1556,7 @@
     "xwoba":0.3188257565,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"30"
   },
   {
@@ -1568,7 +1568,7 @@
     "xwoba":0.3124157565,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"31"
   },
   {
@@ -1580,7 +1580,7 @@
     "xwoba":0.3101862665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"32"
   },
   {
@@ -1592,7 +1592,7 @@
     "xwoba":0.3111762665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"33"
   },
   {
@@ -1604,7 +1604,7 @@
     "xwoba":0.3129262665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"34"
   },
   {
@@ -1616,7 +1616,7 @@
     "xwoba":0.3183662665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"35"
   },
   {
@@ -1628,7 +1628,7 @@
     "xwoba":0.3161267765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"36"
   },
   {
@@ -1640,7 +1640,7 @@
     "xwoba":0.3161267765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"37"
   },
   {
@@ -1652,7 +1652,7 @@
     "xwoba":0.3246067765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"38"
   },
   {
@@ -1664,7 +1664,7 @@
     "xwoba":0.3214272865,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"39"
   },
   {
@@ -1676,7 +1676,7 @@
     "xwoba":0.3266322565,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"40"
   },
   {
@@ -1688,7 +1688,7 @@
     "xwoba":0.3195327665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"41"
   },
   {
@@ -1700,7 +1700,7 @@
     "xwoba":0.3253027665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"42"
   },
   {
@@ -1712,7 +1712,7 @@
     "xwoba":0.3253027665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"43"
   },
   {
@@ -1724,7 +1724,7 @@
     "xwoba":0.3199127665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"44"
   },
   {
@@ -1736,7 +1736,7 @@
     "xwoba":0.3289227665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"45"
   },
   {
@@ -1748,7 +1748,7 @@
     "xwoba":0.3281227665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"46"
   },
   {
@@ -1760,7 +1760,7 @@
     "xwoba":0.3297627665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"47"
   },
   {
@@ -1772,7 +1772,7 @@
     "xwoba":0.3366777365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"48"
   },
   {
@@ -1784,7 +1784,7 @@
     "xwoba":0.3435927065,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"49"
   },
   {
@@ -1796,7 +1796,7 @@
     "xwoba":0.3375327065,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"50"
   },
   {
@@ -1808,7 +1808,7 @@
     "xwoba":0.3304332165,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"51"
   },
   {
@@ -1820,7 +1820,7 @@
     "xwoba":0.3263737265,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"52"
   },
   {
@@ -1832,7 +1832,7 @@
     "xwoba":0.3180437265,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"53"
   },
   {
@@ -1844,7 +1844,7 @@
     "xwoba":0.3109442365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"54"
   },
   {
@@ -1856,7 +1856,7 @@
     "xwoba":0.3124242365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"55"
   },
   {
@@ -1868,7 +1868,7 @@
     "xwoba":0.3032142365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"56"
   },
   {
@@ -1880,7 +1880,7 @@
     "xwoba":0.3109842365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"57"
   },
   {
@@ -1892,7 +1892,7 @@
     "xwoba":0.3080442365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"58"
   },
   {
@@ -1904,7 +1904,7 @@
     "xwoba":0.3082142365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"59"
   },
   {
@@ -1916,7 +1916,7 @@
     "xwoba":0.3154742365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"60"
   },
   {
@@ -1928,7 +1928,7 @@
     "xwoba":0.3155976365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"61"
   },
   {
@@ -1940,7 +1940,7 @@
     "xwoba":0.3186176365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"62"
   },
   {
@@ -1952,7 +1952,7 @@
     "xwoba":0.3198976365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"63"
   },
   {
@@ -1964,7 +1964,7 @@
     "xwoba":0.3244276365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"64"
   },
   {
@@ -1976,7 +1976,7 @@
     "xwoba":0.3238776365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"65"
   },
   {
@@ -1988,7 +1988,7 @@
     "xwoba":0.3266676365,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"66"
   },
   {
@@ -2000,7 +2000,7 @@
     "xwoba":0.3335589465,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"67"
   },
   {
@@ -2012,7 +2012,7 @@
     "xwoba":0.3149589465,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"68"
   },
   {
@@ -2024,7 +2024,7 @@
     "xwoba":0.2948889465,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"69"
   },
   {
@@ -2036,7 +2036,7 @@
     "xwoba":0.2936389465,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"70"
   },
   {
@@ -2048,7 +2048,7 @@
     "xwoba":0.2936389465,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"71"
   },
   {
@@ -2060,7 +2060,7 @@
     "xwoba":0.2936389465,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"72"
   },
   {
@@ -2072,7 +2072,7 @@
     "xwoba":0.2849789465,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"73"
   },
   {
@@ -2084,7 +2084,7 @@
     "xwoba":0.2918702565,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"74"
   },
   {
@@ -2096,7 +2096,7 @@
     "xwoba":0.2926202565,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"75"
   },
   {
@@ -2108,7 +2108,7 @@
     "xwoba":0.2948502565,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"76"
   },
   {
@@ -2120,7 +2120,7 @@
     "xwoba":0.3017415665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"77"
   },
   {
@@ -2132,7 +2132,7 @@
     "xwoba":0.3014215665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"78"
   },
   {
@@ -2144,7 +2144,7 @@
     "xwoba":0.3013915665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"79"
   },
   {
@@ -2156,7 +2156,7 @@
     "xwoba":0.3061115665,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"80"
   },
   {
@@ -2168,7 +2168,7 @@
     "xwoba":0.2990120765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"81"
   },
   {
@@ -2180,7 +2180,7 @@
     "xwoba":0.2990120765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"82"
   },
   {
@@ -2192,7 +2192,7 @@
     "xwoba":0.2986420765,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"83"
   },
   {
@@ -2204,7 +2204,7 @@
     "xwoba":0.2981825865,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"84"
   },
   {
@@ -2216,7 +2216,7 @@
     "xwoba":0.2979825865,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"85"
   },
   {
@@ -2228,7 +2228,7 @@
     "xwoba":0.2914130965,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"86"
   },
   {
@@ -2240,7 +2240,7 @@
     "xwoba":0.2896530965,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"87"
   },
   {
@@ -2252,7 +2252,7 @@
     "xwoba":0.2987227119,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"88"
   },
   {
@@ -2264,7 +2264,7 @@
     "xwoba":0.2987227119,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"89"
   },
   {
@@ -2276,7 +2276,7 @@
     "xwoba":0.2978527119,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"90"
   },
   {
@@ -2288,7 +2288,7 @@
     "xwoba":0.3032653609,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"91"
   },
   {
@@ -2300,7 +2300,7 @@
     "xwoba":0.3032653609,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"92"
   },
   {
@@ -2312,7 +2312,7 @@
     "xwoba":0.2952853609,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"93"
   },
   {
@@ -2324,7 +2324,7 @@
     "xwoba":0.2941953609,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"94"
   },
   {
@@ -2336,7 +2336,7 @@
     "xwoba":0.2942153609,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"95"
   },
   {
@@ -2348,7 +2348,7 @@
     "xwoba":0.2936453609,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"96"
   },
   {
@@ -2360,7 +2360,7 @@
     "xwoba":0.2944853609,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"97"
   },
   {
@@ -2372,7 +2372,7 @@
     "xwoba":0.2884503909,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"98"
   },
   {
@@ -2384,7 +2384,7 @@
     "xwoba":0.2899303909,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"99"
   },
   {
@@ -2396,739 +2396,739 @@
     "xwoba":0.2986903909,
     "player_name":"Garrett Mitchell",
     "player_id":"669003",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"100"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-24 19:00:00 CDT",
     "rn":"1",
-    "x_numer":"26.34311642857142857",
+    "x_numer":"26.35030542857142857",
     "x_denom":"100",
-    "xwoba":0.2634311643,
+    "xwoba":0.2635030543,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"1"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-24 19:00:00 CDT",
     "rn":"2",
-    "x_numer":"26.61711642857142857",
+    "x_numer":"26.62430542857142857",
     "x_denom":"100",
-    "xwoba":0.2661711643,
+    "xwoba":0.2662430543,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"2"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-24 19:00:00 CDT",
     "rn":"3",
-    "x_numer":"26.68011642857142857",
+    "x_numer":"26.68730542857142857",
     "x_denom":"100",
-    "xwoba":0.2668011643,
+    "xwoba":0.2668730543,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"3"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-24 19:00:00 CDT",
     "rn":"4",
-    "x_numer":"26.15411642857142857",
+    "x_numer":"26.16130542857142857",
     "x_denom":"100",
-    "xwoba":0.2615411643,
+    "xwoba":0.2616130543,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"4"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-23 19:00:00 CDT",
     "rn":"5",
-    "x_numer":"25.44519442857142857",
+    "x_numer":"25.45135642857142857",
     "x_denom":"100",
-    "xwoba":0.2544519443,
+    "xwoba":0.2545135643,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"5"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-22 19:00:00 CDT",
     "rn":"6",
-    "x_numer":"25.43719442857142857",
+    "x_numer":"25.44335642857142857",
     "x_denom":"100",
-    "xwoba":0.2543719443,
+    "xwoba":0.2544335643,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"6"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-22 19:00:00 CDT",
     "rn":"7",
-    "x_numer":"25.28427242857142857",
+    "x_numer":"25.28940742857142857",
     "x_denom":"100",
-    "xwoba":0.2528427243,
+    "xwoba":0.2528940743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"7"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-22 19:00:00 CDT",
     "rn":"8",
-    "x_numer":"25.03427242857142857",
+    "x_numer":"25.03940742857142857",
     "x_denom":"100",
-    "xwoba":0.2503427243,
+    "xwoba":0.2503940743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"8"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-22 19:00:00 CDT",
     "rn":"9",
-    "x_numer":"24.77727242857142857",
+    "x_numer":"24.78240742857142857",
     "x_denom":"100",
-    "xwoba":0.2477727243,
+    "xwoba":0.2478240743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"9"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-21 19:00:00 CDT",
     "rn":"10",
-    "x_numer":"25.34627242857142857",
+    "x_numer":"25.35140742857142857",
     "x_denom":"100",
-    "xwoba":0.2534627243,
+    "xwoba":0.2535140743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"10"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-21 19:00:00 CDT",
     "rn":"11",
-    "x_numer":"25.40327242857142857",
+    "x_numer":"25.40840742857142857",
     "x_denom":"100",
-    "xwoba":0.2540327243,
+    "xwoba":0.2540840743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"11"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-20 19:00:00 CDT",
     "rn":"12",
-    "x_numer":"25.66027242857142857",
+    "x_numer":"25.66540742857142857",
     "x_denom":"100",
-    "xwoba":0.2566027243,
+    "xwoba":0.2566540743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"12"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-17 19:00:00 CDT",
     "rn":"13",
-    "x_numer":"26.56327242857142857",
+    "x_numer":"26.56840742857142857",
     "x_denom":"100",
-    "xwoba":0.2656327243,
+    "xwoba":0.2656840743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"13"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-17 19:00:00 CDT",
     "rn":"14",
-    "x_numer":"26.83427242857142857",
+    "x_numer":"26.83940742857142857",
     "x_denom":"100",
-    "xwoba":0.2683427243,
+    "xwoba":0.2683940743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"14"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-17 19:00:00 CDT",
     "rn":"15",
-    "x_numer":"26.49235042857142857",
+    "x_numer":"26.49645842857142857",
     "x_denom":"100",
-    "xwoba":0.2649235043,
+    "xwoba":0.2649645843,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"15"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-17 19:00:00 CDT",
     "rn":"16",
-    "x_numer":"26.99435042857142857",
+    "x_numer":"26.99845842857142857",
     "x_denom":"100",
-    "xwoba":0.2699435043,
+    "xwoba":0.2699845843,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"16"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-15 19:00:00 CDT",
     "rn":"17",
-    "x_numer":"26.34342842857142857",
+    "x_numer":"26.34650942857142857",
     "x_denom":"100",
-    "xwoba":0.2634342843,
+    "xwoba":0.2634650943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"17"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-15 19:00:00 CDT",
     "rn":"18",
-    "x_numer":"26.68142842857142857",
+    "x_numer":"26.68450942857142857",
     "x_denom":"100",
-    "xwoba":0.2668142843,
+    "xwoba":0.2668450943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"18"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-14 19:00:00 CDT",
     "rn":"19",
-    "x_numer":"26.03550642857142857",
+    "x_numer":"26.03756042857142857",
     "x_denom":"100",
-    "xwoba":0.2603550643,
+    "xwoba":0.2603756043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"19"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-14 19:00:00 CDT",
     "rn":"20",
-    "x_numer":"26.25650642857142857",
+    "x_numer":"26.25856042857142857",
     "x_denom":"100",
-    "xwoba":0.2625650643,
+    "xwoba":0.2625856043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"20"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-14 19:00:00 CDT",
     "rn":"21",
-    "x_numer":"25.71550642857142857",
+    "x_numer":"25.71756042857142857",
     "x_denom":"100",
-    "xwoba":0.2571550643,
+    "xwoba":0.2571756043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"21"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-13 19:00:00 CDT",
     "rn":"22",
-    "x_numer":"25.81450642857142857",
+    "x_numer":"25.81656042857142857",
     "x_denom":"100",
-    "xwoba":0.2581450643,
+    "xwoba":0.2581656043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"22"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-13 19:00:00 CDT",
     "rn":"23",
-    "x_numer":"26.24350642857142857",
+    "x_numer":"26.24556042857142857",
     "x_denom":"100",
-    "xwoba":0.2624350643,
+    "xwoba":0.2624556043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"23"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-13 19:00:00 CDT",
     "rn":"24",
-    "x_numer":"26.02150642857142857",
+    "x_numer":"26.02356042857142857",
     "x_denom":"100",
-    "xwoba":0.2602150643,
+    "xwoba":0.2602356043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"24"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-13 19:00:00 CDT",
     "rn":"25",
-    "x_numer":"25.78550642857142857",
+    "x_numer":"25.78756042857142857",
     "x_denom":"100",
-    "xwoba":0.2578550643,
+    "xwoba":0.2578756043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"25"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-11 19:00:00 CDT",
     "rn":"26",
-    "x_numer":"25.73750642857142857",
+    "x_numer":"25.73956042857142857",
     "x_denom":"100",
-    "xwoba":0.2573750643,
+    "xwoba":0.2573956043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"26"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-11 19:00:00 CDT",
     "rn":"27",
-    "x_numer":"25.79250642857142857",
+    "x_numer":"25.79456042857142857",
     "x_denom":"100",
-    "xwoba":0.2579250643,
+    "xwoba":0.2579456043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"27"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-11 19:00:00 CDT",
     "rn":"28",
-    "x_numer":"25.78050642857142857",
+    "x_numer":"25.78256042857142857",
     "x_denom":"100",
-    "xwoba":0.2578050643,
+    "xwoba":0.2578256043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"28"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-11 19:00:00 CDT",
     "rn":"29",
-    "x_numer":"25.65750642857142857",
+    "x_numer":"25.65956042857142857",
     "x_denom":"100",
-    "xwoba":0.2565750643,
+    "xwoba":0.2565956043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"29"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-10 19:00:00 CDT",
     "rn":"30",
-    "x_numer":"25.87050642857142857",
+    "x_numer":"25.87256042857142857",
     "x_denom":"100",
-    "xwoba":0.2587050643,
+    "xwoba":0.2587256043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"30"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-10 19:00:00 CDT",
     "rn":"31",
-    "x_numer":"25.90750642857142857",
+    "x_numer":"25.90956042857142857",
     "x_denom":"100",
-    "xwoba":0.2590750643,
+    "xwoba":0.2590956043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"31"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-10 19:00:00 CDT",
     "rn":"32",
-    "x_numer":"25.90650642857142857",
+    "x_numer":"25.90856042857142857",
     "x_denom":"100",
-    "xwoba":0.2590650643,
+    "xwoba":0.2590856043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"32"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-10 19:00:00 CDT",
     "rn":"33",
-    "x_numer":"25.66850642857142857",
+    "x_numer":"25.67056042857142857",
     "x_denom":"100",
-    "xwoba":0.2566850643,
+    "xwoba":0.2567056043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"33"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-07 19:00:00 CDT",
     "rn":"34",
-    "x_numer":"25.70950642857142857",
+    "x_numer":"25.71156042857142857",
     "x_denom":"100",
-    "xwoba":0.2570950643,
+    "xwoba":0.2571156043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"34"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-07 19:00:00 CDT",
     "rn":"35",
-    "x_numer":"26.14450642857142857",
+    "x_numer":"26.14656042857142857",
     "x_denom":"100",
-    "xwoba":0.2614450643,
+    "xwoba":0.2614656043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"35"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-07 19:00:00 CDT",
     "rn":"36",
-    "x_numer":"26.13550642857142857",
+    "x_numer":"26.13756042857142857",
     "x_denom":"100",
-    "xwoba":0.2613550643,
+    "xwoba":0.2613756043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"36"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-06 19:00:00 CDT",
     "rn":"37",
-    "x_numer":"25.62250642857142857",
+    "x_numer":"25.62456042857142857",
     "x_denom":"100",
-    "xwoba":0.2562250643,
+    "xwoba":0.2562456043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"37"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-06 19:00:00 CDT",
     "rn":"38",
-    "x_numer":"25.54850642857142857",
+    "x_numer":"25.55056042857142857",
     "x_denom":"100",
-    "xwoba":0.2554850643,
+    "xwoba":0.2555056043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"38"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-06 19:00:00 CDT",
     "rn":"39",
-    "x_numer":"25.42650642857142857",
+    "x_numer":"25.42856042857142857",
     "x_denom":"100",
-    "xwoba":0.2542650643,
+    "xwoba":0.2542856043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"39"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-06 19:00:00 CDT",
     "rn":"40",
-    "x_numer":"25.30550642857142857",
+    "x_numer":"25.30756042857142857",
     "x_denom":"100",
-    "xwoba":0.2530550643,
+    "xwoba":0.2530756043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"40"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-04 19:00:00 CDT",
     "rn":"41",
-    "x_numer":"25.24850642857142857",
+    "x_numer":"25.25056042857142857",
     "x_denom":"100",
-    "xwoba":0.2524850643,
+    "xwoba":0.2525056043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"41"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-04 19:00:00 CDT",
     "rn":"42",
-    "x_numer":"25.21450642857142857",
+    "x_numer":"25.21656042857142857",
     "x_denom":"100",
-    "xwoba":0.2521450643,
+    "xwoba":0.2521656043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"42"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-04 19:00:00 CDT",
     "rn":"43",
-    "x_numer":"25.40950642857142857",
+    "x_numer":"25.41156042857142857",
     "x_denom":"100",
-    "xwoba":0.2540950643,
+    "xwoba":0.2541156043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"43"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-04 19:00:00 CDT",
     "rn":"44",
-    "x_numer":"25.49850642857142857",
+    "x_numer":"25.50056042857142857",
     "x_denom":"100",
-    "xwoba":0.2549850643,
+    "xwoba":0.2550056043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"44"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-03 19:00:00 CDT",
     "rn":"45",
-    "x_numer":"25.98450642857142857",
+    "x_numer":"25.98656042857142857",
     "x_denom":"100",
-    "xwoba":0.2598450643,
+    "xwoba":0.2598656043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"45"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-03 19:00:00 CDT",
     "rn":"46",
-    "x_numer":"25.68450642857142857",
+    "x_numer":"25.68656042857142857",
     "x_denom":"100",
-    "xwoba":0.2568450643,
+    "xwoba":0.2568656043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"46"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-03 19:00:00 CDT",
     "rn":"47",
-    "x_numer":"25.65150642857142857",
+    "x_numer":"25.65356042857142857",
     "x_denom":"100",
-    "xwoba":0.2565150643,
+    "xwoba":0.2565356043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"47"
   },
   {
     "year":"2026",
     "max_game_date":"2026-04-03 19:00:00 CDT",
     "rn":"48",
-    "x_numer":"25.87650642857142857",
+    "x_numer":"25.87856042857142857",
     "x_denom":"100",
-    "xwoba":0.2587650643,
+    "xwoba":0.2587856043,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"48"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-31 19:00:00 CDT",
     "rn":"49",
-    "x_numer":"26.56800342857142857",
+    "x_numer":"26.57005742857142857",
     "x_denom":"100",
-    "xwoba":0.2656800343,
+    "xwoba":0.2657005743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"49"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-31 19:00:00 CDT",
     "rn":"50",
-    "x_numer":"26.57800342857142857",
+    "x_numer":"26.58005742857142857",
     "x_denom":"100",
-    "xwoba":0.2657800343,
+    "xwoba":0.2658005743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"50"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-31 19:00:00 CDT",
     "rn":"51",
-    "x_numer":"26.13000342857142857",
+    "x_numer":"26.13205742857142857",
     "x_denom":"100",
-    "xwoba":0.2613000343,
+    "xwoba":0.2613205743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"51"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-31 19:00:00 CDT",
     "rn":"52",
-    "x_numer":"26.06500342857142857",
+    "x_numer":"26.06705742857142857",
     "x_denom":"100",
-    "xwoba":0.2606500343,
+    "xwoba":0.2606705743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"52"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-30 19:00:00 CDT",
     "rn":"53",
-    "x_numer":"25.37700342857142857",
+    "x_numer":"25.37905742857142857",
     "x_denom":"100",
-    "xwoba":0.2537700343,
+    "xwoba":0.2537905743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"53"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-30 19:00:00 CDT",
     "rn":"54",
-    "x_numer":"25.72900342857142857",
+    "x_numer":"25.73105742857142857",
     "x_denom":"100",
-    "xwoba":0.2572900343,
+    "xwoba":0.2573105743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"54"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-30 19:00:00 CDT",
     "rn":"55",
-    "x_numer":"26.06100342857142857",
+    "x_numer":"26.06305742857142857",
     "x_denom":"100",
-    "xwoba":0.2606100343,
+    "xwoba":0.2606305743,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"55"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-30 19:00:00 CDT",
     "rn":"56",
-    "x_numer":"25.40008142857142857",
+    "x_numer":"25.40110842857142857",
     "x_denom":"100",
-    "xwoba":0.2540008143,
+    "xwoba":0.2540110843,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"56"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-28 19:00:00 CDT",
     "rn":"57",
-    "x_numer":"25.27808142857142857",
+    "x_numer":"25.27910842857142857",
     "x_denom":"100",
-    "xwoba":0.2527808143,
+    "xwoba":0.2527910843,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"57"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-28 19:00:00 CDT",
     "rn":"58",
-    "x_numer":"25.27808142857142857",
+    "x_numer":"25.27910842857142857",
     "x_denom":"100",
-    "xwoba":0.2527808143,
+    "xwoba":0.2527910843,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"58"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-28 19:00:00 CDT",
     "rn":"59",
-    "x_numer":"25.00908142857142857",
+    "x_numer":"25.01010842857142857",
     "x_denom":"100",
-    "xwoba":0.2500908143,
+    "xwoba":0.2501010843,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"59"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-28 19:00:00 CDT",
     "rn":"60",
-    "x_numer":"25.42108142857142857",
+    "x_numer":"25.42210842857142857",
     "x_denom":"100",
-    "xwoba":0.2542108143,
+    "xwoba":0.2542210843,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"60"
   },
   {
     "year":"2026",
     "max_game_date":"2026-03-28 19:00:00 CDT",
     "rn":"61",
-    "x_numer":"25.78208142857142857",
+    "x_numer":"25.78310842857142857",
     "x_denom":"100",
-    "xwoba":0.2578208143,
+    "xwoba":0.2578310843,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"61"
   },
   {
@@ -3140,7 +3140,7 @@
     "xwoba":0.2519415943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"62"
   },
   {
@@ -3152,7 +3152,7 @@
     "xwoba":0.2539415943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"63"
   },
   {
@@ -3164,7 +3164,7 @@
     "xwoba":0.2538915943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"64"
   },
   {
@@ -3176,7 +3176,7 @@
     "xwoba":0.2502915943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"65"
   },
   {
@@ -3188,7 +3188,7 @@
     "xwoba":0.2508515943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"66"
   },
   {
@@ -3200,7 +3200,7 @@
     "xwoba":0.2491665643,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"67"
   },
   {
@@ -3212,7 +3212,7 @@
     "xwoba":0.2439765643,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"68"
   },
   {
@@ -3224,7 +3224,7 @@
     "xwoba":0.2416665643,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"69"
   },
   {
@@ -3236,7 +3236,7 @@
     "xwoba":0.2426465643,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"70"
   },
   {
@@ -3248,7 +3248,7 @@
     "xwoba":0.2499865643,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"71"
   },
   {
@@ -3260,7 +3260,7 @@
     "xwoba":0.2491165643,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"72"
   },
   {
@@ -3272,7 +3272,7 @@
     "xwoba":0.2451315943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"73"
   },
   {
@@ -3284,7 +3284,7 @@
     "xwoba":0.2464815943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"74"
   },
   {
@@ -3296,7 +3296,7 @@
     "xwoba":0.2510215943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"75"
   },
   {
@@ -3308,7 +3308,7 @@
     "xwoba":0.2503215943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"76"
   },
   {
@@ -3320,7 +3320,7 @@
     "xwoba":0.2414315943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"77"
   },
   {
@@ -3332,7 +3332,7 @@
     "xwoba":0.2389215943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"78"
   },
   {
@@ -3344,7 +3344,7 @@
     "xwoba":0.2351415943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"79"
   },
   {
@@ -3356,7 +3356,7 @@
     "xwoba":0.2274415943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"80"
   },
   {
@@ -3368,7 +3368,7 @@
     "xwoba":0.2279215943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"81"
   },
   {
@@ -3380,7 +3380,7 @@
     "xwoba":0.2271415943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"82"
   },
   {
@@ -3392,7 +3392,7 @@
     "xwoba":0.2304215943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"83"
   },
   {
@@ -3404,7 +3404,7 @@
     "xwoba":0.2377915943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"84"
   },
   {
@@ -3416,7 +3416,7 @@
     "xwoba":0.2350615943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"85"
   },
   {
@@ -3428,7 +3428,7 @@
     "xwoba":0.2355215943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"86"
   },
   {
@@ -3440,7 +3440,7 @@
     "xwoba":0.2393015943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"87"
   },
   {
@@ -3452,7 +3452,7 @@
     "xwoba":0.2462165643,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"88"
   },
   {
@@ -3464,7 +3464,7 @@
     "xwoba":0.2495665643,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"89"
   },
   {
@@ -3476,7 +3476,7 @@
     "xwoba":0.2457015943,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"90"
   },
   {
@@ -3488,7 +3488,7 @@
     "xwoba":0.2448666243,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"91"
   },
   {
@@ -3500,7 +3500,7 @@
     "xwoba":0.2496666243,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"92"
   },
   {
@@ -3512,7 +3512,7 @@
     "xwoba":0.2502266243,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"93"
   },
   {
@@ -3524,7 +3524,7 @@
     "xwoba":0.2562066243,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"94"
   },
   {
@@ -3536,7 +3536,7 @@
     "xwoba":0.2594166243,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"95"
   },
   {
@@ -3548,7 +3548,7 @@
     "xwoba":0.25611491,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"96"
   },
   {
@@ -3560,7 +3560,7 @@
     "xwoba":0.25702491,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"97"
   },
   {
@@ -3572,7 +3572,7 @@
     "xwoba":0.25699491,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"98"
   },
   {
@@ -3584,7 +3584,7 @@
     "xwoba":0.25672491,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"99"
   },
   {
@@ -3596,7 +3596,7 @@
     "xwoba":0.25582491,
     "player_name":"Joey Ortiz",
     "player_id":"687401",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"100"
   },
   {
@@ -3608,7 +3608,7 @@
     "xwoba":0.32604592,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"1"
   },
   {
@@ -3620,7 +3620,7 @@
     "xwoba":0.33672592,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"2"
   },
   {
@@ -3632,7 +3632,7 @@
     "xwoba":0.33544592,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"3"
   },
   {
@@ -3644,7 +3644,7 @@
     "xwoba":0.32735592,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"4"
   },
   {
@@ -3656,7 +3656,7 @@
     "xwoba":0.33215541,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"5"
   },
   {
@@ -3668,7 +3668,7 @@
     "xwoba":0.33217541,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"6"
   },
   {
@@ -3680,7 +3680,7 @@
     "xwoba":0.32960541,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"7"
   },
   {
@@ -3692,7 +3692,7 @@
     "xwoba":0.3361449,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"8"
   },
   {
@@ -3704,7 +3704,7 @@
     "xwoba":0.3416849,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"9"
   },
   {
@@ -3716,7 +3716,7 @@
     "xwoba":0.3428749,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"10"
   },
   {
@@ -3728,7 +3728,7 @@
     "xwoba":0.3356049,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"11"
   },
   {
@@ -3740,7 +3740,7 @@
     "xwoba":0.3366149,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"12"
   },
   {
@@ -3752,7 +3752,7 @@
     "xwoba":0.3360549,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"13"
   },
   {
@@ -3764,7 +3764,7 @@
     "xwoba":0.3359049,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"14"
   },
   {
@@ -3776,7 +3776,7 @@
     "xwoba":0.3352049,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"15"
   },
   {
@@ -3788,7 +3788,7 @@
     "xwoba":0.3352949,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"16"
   },
   {
@@ -3800,7 +3800,7 @@
     "xwoba":0.3269049,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"17"
   },
   {
@@ -3812,7 +3812,7 @@
     "xwoba":0.33346987,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"18"
   },
   {
@@ -3824,7 +3824,7 @@
     "xwoba":0.33324987,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"19"
   },
   {
@@ -3836,7 +3836,7 @@
     "xwoba":0.33371987,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"20"
   },
   {
@@ -3848,7 +3848,7 @@
     "xwoba":0.33825987,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"21"
   },
   {
@@ -3860,7 +3860,7 @@
     "xwoba":0.34173987,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"22"
   },
   {
@@ -3872,7 +3872,7 @@
     "xwoba":0.34377484,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"23"
   },
   {
@@ -3884,7 +3884,7 @@
     "xwoba":0.33666484,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"24"
   },
   {
@@ -3896,7 +3896,7 @@
     "xwoba":0.33792484,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"25"
   },
   {
@@ -3908,7 +3908,7 @@
     "xwoba":0.33138484,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"26"
   },
   {
@@ -3920,7 +3920,7 @@
     "xwoba":0.3337139309,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"27"
   },
   {
@@ -3932,7 +3932,7 @@
     "xwoba":0.3381939309,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"28"
   },
   {
@@ -3944,7 +3944,7 @@
     "xwoba":0.3378039309,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"29"
   },
   {
@@ -3956,7 +3956,7 @@
     "xwoba":0.35087155,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"30"
   },
   {
@@ -3968,7 +3968,7 @@
     "xwoba":0.35162155,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"31"
   },
   {
@@ -3980,7 +3980,7 @@
     "xwoba":0.34914206,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"32"
   },
   {
@@ -3992,7 +3992,7 @@
     "xwoba":0.34879206,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"33"
   },
   {
@@ -4004,7 +4004,7 @@
     "xwoba":0.35086206,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"34"
   },
   {
@@ -4016,7 +4016,7 @@
     "xwoba":0.34764703,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"35"
   },
   {
@@ -4028,7 +4028,7 @@
     "xwoba":0.34814703,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"36"
   },
   {
@@ -4040,7 +4040,7 @@
     "xwoba":0.33943703,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"37"
   },
   {
@@ -4052,7 +4052,7 @@
     "xwoba":0.33837703,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"38"
   },
   {
@@ -4064,7 +4064,7 @@
     "xwoba":0.33838703,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"39"
   },
   {
@@ -4076,7 +4076,7 @@
     "xwoba":0.32896703,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"40"
   },
   {
@@ -4088,7 +4088,7 @@
     "xwoba":0.3396573748,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"41"
   },
   {
@@ -4100,7 +4100,7 @@
     "xwoba":0.3461173748,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"42"
   },
   {
@@ -4112,7 +4112,7 @@
     "xwoba":0.3503773748,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"43"
   },
   {
@@ -4124,7 +4124,7 @@
     "xwoba":0.3498873748,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"44"
   },
   {
@@ -4136,7 +4136,7 @@
     "xwoba":0.3500973748,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"45"
   },
   {
@@ -4148,7 +4148,7 @@
     "xwoba":0.3514673748,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"46"
   },
   {
@@ -4160,7 +4160,7 @@
     "xwoba":0.3563673748,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"47"
   },
   {
@@ -4172,7 +4172,7 @@
     "xwoba":0.3518773748,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"48"
   },
   {
@@ -4184,7 +4184,7 @@
     "xwoba":0.3517273748,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"49"
   },
   {
@@ -4196,7 +4196,7 @@
     "xwoba":0.3483173748,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"50"
   },
   {
@@ -4208,7 +4208,7 @@
     "xwoba":0.3538173748,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"51"
   },
   {
@@ -4220,7 +4220,7 @@
     "xwoba":0.3483078848,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"52"
   },
   {
@@ -4232,7 +4232,7 @@
     "xwoba":0.3501778848,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"53"
   },
   {
@@ -4244,7 +4244,7 @@
     "xwoba":0.3430783948,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"54"
   },
   {
@@ -4256,7 +4256,7 @@
     "xwoba":0.3430883948,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"55"
   },
   {
@@ -4268,7 +4268,7 @@
     "xwoba":0.3384783948,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"56"
   },
   {
@@ -4280,7 +4280,7 @@
     "xwoba":0.3394083948,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"57"
   },
   {
@@ -4292,7 +4292,7 @@
     "xwoba":0.3322383948,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"58"
   },
   {
@@ -4304,7 +4304,7 @@
     "xwoba":0.3375433648,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"59"
   },
   {
@@ -4316,7 +4316,7 @@
     "xwoba":0.3419133648,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"60"
   },
   {
@@ -4328,7 +4328,7 @@
     "xwoba":0.3450783348,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"61"
   },
   {
@@ -4340,7 +4340,7 @@
     "xwoba":0.3544469062,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"62"
   },
   {
@@ -4352,7 +4352,7 @@
     "xwoba":0.3547069062,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"63"
   },
   {
@@ -4364,7 +4364,7 @@
     "xwoba":0.3508169062,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"64"
   },
   {
@@ -4376,7 +4376,7 @@
     "xwoba":0.3536369062,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"65"
   },
   {
@@ -4388,7 +4388,7 @@
     "xwoba":0.3523169062,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"66"
   },
   {
@@ -4400,7 +4400,7 @@
     "xwoba":0.3537418762,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"67"
   },
   {
@@ -4412,7 +4412,7 @@
     "xwoba":0.3554318762,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"68"
   },
   {
@@ -4424,7 +4424,7 @@
     "xwoba":0.3537018762,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"69"
   },
   {
@@ -4436,7 +4436,7 @@
     "xwoba":0.3630459387,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"70"
   },
   {
@@ -4448,7 +4448,7 @@
     "xwoba":0.3628759387,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"71"
   },
   {
@@ -4460,7 +4460,7 @@
     "xwoba":0.3698759387,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"72"
   },
   {
@@ -4472,7 +4472,7 @@
     "xwoba":0.3627764487,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"73"
   },
   {
@@ -4484,7 +4484,7 @@
     "xwoba":0.3681214187,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"74"
   },
   {
@@ -4496,7 +4496,7 @@
     "xwoba":0.3721014187,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"75"
   },
   {
@@ -4508,7 +4508,7 @@
     "xwoba":0.3762314187,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"76"
   },
   {
@@ -4520,7 +4520,7 @@
     "xwoba":0.3739914187,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"77"
   },
   {
@@ -4532,7 +4532,7 @@
     "xwoba":0.3729819287,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"78"
   },
   {
@@ -4544,7 +4544,7 @@
     "xwoba":0.3727974087,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"79"
   },
   {
@@ -4556,7 +4556,7 @@
     "xwoba":0.3749074087,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"80"
   },
   {
@@ -4568,7 +4568,7 @@
     "xwoba":0.3812509087,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"81"
   },
   {
@@ -4580,7 +4580,7 @@
     "xwoba":0.3816009087,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"82"
   },
   {
@@ -4592,7 +4592,7 @@
     "xwoba":0.3775709087,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"83"
   },
   {
@@ -4604,7 +4604,7 @@
     "xwoba":0.3774914187,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"84"
   },
   {
@@ -4616,7 +4616,7 @@
     "xwoba":0.3690614187,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"85"
   },
   {
@@ -4628,7 +4628,7 @@
     "xwoba":0.3719742759,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"86"
   },
   {
@@ -4640,7 +4640,7 @@
     "xwoba":0.3744142759,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"87"
   },
   {
@@ -4652,7 +4652,7 @@
     "xwoba":0.3700542759,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"88"
   },
   {
@@ -4664,7 +4664,7 @@
     "xwoba":0.3680042759,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"89"
   },
   {
@@ -4676,7 +4676,7 @@
     "xwoba":0.3751942759,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"90"
   },
   {
@@ -4688,7 +4688,7 @@
     "xwoba":0.3765542759,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"91"
   },
   {
@@ -4700,7 +4700,7 @@
     "xwoba":0.3834692459,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"92"
   },
   {
@@ -4712,7 +4712,7 @@
     "xwoba":0.3765792459,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"93"
   },
   {
@@ -4724,7 +4724,7 @@
     "xwoba":0.3590792459,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"94"
   },
   {
@@ -4736,7 +4736,7 @@
     "xwoba":0.3511092459,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"95"
   },
   {
@@ -4748,7 +4748,7 @@
     "xwoba":0.3522592459,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"96"
   },
   {
@@ -4760,7 +4760,7 @@
     "xwoba":0.3522092459,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"97"
   },
   {
@@ -4772,7 +4772,7 @@
     "xwoba":0.3527792459,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"98"
   },
   {
@@ -4784,7 +4784,7 @@
     "xwoba":0.3476597559,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"99"
   },
   {
@@ -4796,7 +4796,7 @@
     "xwoba":0.3476597559,
     "player_name":"William Contreras",
     "player_id":"661388",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"100"
   },
   {
@@ -4808,7 +4808,7 @@
     "xwoba":0.40159031,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"1"
   },
   {
@@ -4820,7 +4820,7 @@
     "xwoba":0.40030031,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"2"
   },
   {
@@ -4832,7 +4832,7 @@
     "xwoba":0.39592031,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"3"
   },
   {
@@ -4844,7 +4844,7 @@
     "xwoba":0.39592031,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"4"
   },
   {
@@ -4856,7 +4856,7 @@
     "xwoba":0.39662031,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"5"
   },
   {
@@ -4868,7 +4868,7 @@
     "xwoba":0.40220031,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"6"
   },
   {
@@ -4880,7 +4880,7 @@
     "xwoba":0.41282082,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"7"
   },
   {
@@ -4892,7 +4892,7 @@
     "xwoba":0.40360082,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"8"
   },
   {
@@ -4904,7 +4904,7 @@
     "xwoba":0.39619082,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"9"
   },
   {
@@ -4916,7 +4916,7 @@
     "xwoba":0.40329031,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"10"
   },
   {
@@ -4928,7 +4928,7 @@
     "xwoba":0.40093082,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"11"
   },
   {
@@ -4940,7 +4940,7 @@
     "xwoba":0.40424082,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"12"
   },
   {
@@ -4952,7 +4952,7 @@
     "xwoba":0.40424082,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"13"
   },
   {
@@ -4964,7 +4964,7 @@
     "xwoba":0.40892082,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"14"
   },
   {
@@ -4976,7 +4976,7 @@
     "xwoba":0.40691082,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"15"
   },
   {
@@ -4988,7 +4988,7 @@
     "xwoba":0.40629082,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"16"
   },
   {
@@ -5000,7 +5000,7 @@
     "xwoba":0.41259082,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"17"
   },
   {
@@ -5012,7 +5012,7 @@
     "xwoba":0.41950579,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"18"
   },
   {
@@ -5024,7 +5024,7 @@
     "xwoba":0.41872579,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"19"
   },
   {
@@ -5036,7 +5036,7 @@
     "xwoba":0.42441579,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"20"
   },
   {
@@ -5048,7 +5048,7 @@
     "xwoba":0.4173163,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"21"
   },
   {
@@ -5060,7 +5060,7 @@
     "xwoba":0.41021681,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"22"
   },
   {
@@ -5072,7 +5072,7 @@
     "xwoba":0.41431681,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"23"
   },
   {
@@ -5084,7 +5084,7 @@
     "xwoba":0.40658681,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"24"
   },
   {
@@ -5096,7 +5096,7 @@
     "xwoba":0.41040681,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"25"
   },
   {
@@ -5108,7 +5108,7 @@
     "xwoba":0.40289681,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"26"
   },
   {
@@ -5120,7 +5120,7 @@
     "xwoba":0.40042681,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"27"
   },
   {
@@ -5132,7 +5132,7 @@
     "xwoba":0.39474681,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"28"
   },
   {
@@ -5144,7 +5144,7 @@
     "xwoba":0.39421681,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"29"
   },
   {
@@ -5156,7 +5156,7 @@
     "xwoba":0.38736732,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"30"
   },
   {
@@ -5168,7 +5168,7 @@
     "xwoba":0.4052792349,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"31"
   },
   {
@@ -5180,7 +5180,7 @@
     "xwoba":0.3958992349,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"32"
   },
   {
@@ -5192,7 +5192,7 @@
     "xwoba":0.3895292349,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"33"
   },
   {
@@ -5204,7 +5204,7 @@
     "xwoba":0.3877164116,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"34"
   },
   {
@@ -5216,7 +5216,7 @@
     "xwoba":0.3815764116,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"35"
   },
   {
@@ -5228,7 +5228,7 @@
     "xwoba":0.3672664116,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"36"
   },
   {
@@ -5240,7 +5240,7 @@
     "xwoba":0.3601669216,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"37"
   },
   {
@@ -5252,7 +5252,7 @@
     "xwoba":0.3577969216,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"38"
   },
   {
@@ -5264,7 +5264,7 @@
     "xwoba":0.3577969216,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"39"
   },
   {
@@ -5276,7 +5276,7 @@
     "xwoba":0.3506974316,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"40"
   },
   {
@@ -5288,7 +5288,7 @@
     "xwoba":0.3513974316,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"41"
   },
   {
@@ -5300,7 +5300,7 @@
     "xwoba":0.3557024016,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"42"
   },
   {
@@ -5312,7 +5312,7 @@
     "xwoba":0.3524024016,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"43"
   },
   {
@@ -5324,7 +5324,7 @@
     "xwoba":0.3521124016,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"44"
   },
   {
@@ -5336,7 +5336,7 @@
     "xwoba":0.3522324016,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"45"
   },
   {
@@ -5348,7 +5348,7 @@
     "xwoba":0.3363724016,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"46"
   },
   {
@@ -5360,7 +5360,7 @@
     "xwoba":0.3363724016,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"47"
   },
   {
@@ -5372,7 +5372,7 @@
     "xwoba":0.3428724016,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"48"
   },
   {
@@ -5384,7 +5384,7 @@
     "xwoba":0.3357729116,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"49"
   },
   {
@@ -5396,7 +5396,7 @@
     "xwoba":0.3322029116,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"50"
   },
   {
@@ -5408,7 +5408,7 @@
     "xwoba":0.3348329116,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"51"
   },
   {
@@ -5420,7 +5420,7 @@
     "xwoba":0.3313029116,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"52"
   },
   {
@@ -5432,7 +5432,7 @@
     "xwoba":0.3365578816,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"53"
   },
   {
@@ -5444,7 +5444,7 @@
     "xwoba":0.3434728516,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"54"
   },
   {
@@ -5456,7 +5456,7 @@
     "xwoba":0.3522028516,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"55"
   },
   {
@@ -5468,7 +5468,7 @@
     "xwoba":0.3450928516,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"56"
   },
   {
@@ -5480,7 +5480,7 @@
     "xwoba":0.3520078216,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"57"
   },
   {
@@ -5492,7 +5492,7 @@
     "xwoba":0.3538078216,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"58"
   },
   {
@@ -5504,7 +5504,7 @@
     "xwoba":0.351062776,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"59"
   },
   {
@@ -5516,7 +5516,7 @@
     "xwoba":0.331172776,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"60"
   },
   {
@@ -5528,7 +5528,7 @@
     "xwoba":0.316392776,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"61"
   },
   {
@@ -5540,7 +5540,7 @@
     "xwoba":0.307762776,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"62"
   },
   {
@@ -5552,7 +5552,7 @@
     "xwoba":0.310762776,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"63"
   },
   {
@@ -5564,7 +5564,7 @@
     "xwoba":0.303663286,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"64"
   },
   {
@@ -5576,7 +5576,7 @@
     "xwoba":0.312603286,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"65"
   },
   {
@@ -5588,7 +5588,7 @@
     "xwoba":0.320073286,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"66"
   },
   {
@@ -5600,7 +5600,7 @@
     "xwoba":0.321793286,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"67"
   },
   {
@@ -5612,7 +5612,7 @@
     "xwoba":0.319013286,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"68"
   },
   {
@@ -5624,7 +5624,7 @@
     "xwoba":0.3290050251,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"69"
   },
   {
@@ -5636,7 +5636,7 @@
     "xwoba":0.3219055351,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"70"
   },
   {
@@ -5648,7 +5648,7 @@
     "xwoba":0.3200555351,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"71"
   },
   {
@@ -5660,7 +5660,7 @@
     "xwoba":0.3198710151,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"72"
   },
   {
@@ -5672,7 +5672,7 @@
     "xwoba":0.3193010151,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"73"
   },
   {
@@ -5684,7 +5684,7 @@
     "xwoba":0.3159415251,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"74"
   },
   {
@@ -5696,7 +5696,7 @@
     "xwoba":0.3203064951,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"75"
   },
   {
@@ -5708,7 +5708,7 @@
     "xwoba":0.3172664951,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"76"
   },
   {
@@ -5720,7 +5720,7 @@
     "xwoba":0.3105770051,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"77"
   },
   {
@@ -5732,7 +5732,7 @@
     "xwoba":0.3151045051,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"78"
   },
   {
@@ -5744,7 +5744,7 @@
     "xwoba":0.3206745051,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"79"
   },
   {
@@ -5756,7 +5756,7 @@
     "xwoba":0.3270945051,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"80"
   },
   {
@@ -5768,7 +5768,7 @@
     "xwoba":0.3272245051,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"81"
   },
   {
@@ -5780,7 +5780,7 @@
     "xwoba":0.3272245051,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"82"
   },
   {
@@ -5792,7 +5792,7 @@
     "xwoba":0.3250745051,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"83"
   },
   {
@@ -5804,7 +5804,7 @@
     "xwoba":0.3250445051,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"84"
   },
   {
@@ -5816,7 +5816,7 @@
     "xwoba":0.3213845051,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"85"
   },
   {
@@ -5828,7 +5828,7 @@
     "xwoba":0.3142850151,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"86"
   },
   {
@@ -5840,7 +5840,7 @@
     "xwoba":0.3214150151,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"87"
   },
   {
@@ -5852,7 +5852,7 @@
     "xwoba":0.3214150151,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"88"
   },
   {
@@ -5864,7 +5864,7 @@
     "xwoba":0.3220650151,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"89"
   },
   {
@@ -5876,7 +5876,7 @@
     "xwoba":0.3218804951,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"90"
   },
   {
@@ -5888,7 +5888,7 @@
     "xwoba":0.3133954651,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"91"
   },
   {
@@ -5900,7 +5900,7 @@
     "xwoba":0.3195504351,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"92"
   },
   {
@@ -5912,7 +5912,7 @@
     "xwoba":0.3124509451,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"93"
   },
   {
@@ -5924,7 +5924,7 @@
     "xwoba":0.3088709451,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"94"
   },
   {
@@ -5936,7 +5936,7 @@
     "xwoba":0.3098709451,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"95"
   },
   {
@@ -5948,7 +5948,7 @@
     "xwoba":0.3129659151,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"96"
   },
   {
@@ -5960,7 +5960,7 @@
     "xwoba":0.3058664251,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"97"
   },
   {
@@ -5972,7 +5972,7 @@
     "xwoba":0.3029864251,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"98"
   },
   {
@@ -5984,7 +5984,7 @@
     "xwoba":0.3040464251,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"99"
   },
   {
@@ -5996,7 +5996,7 @@
     "xwoba":0.3080364251,
     "player_name":"Brice Turang",
     "player_id":"668930",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"100"
   },
   {
@@ -6008,7 +6008,7 @@
     "xwoba":0.2903525417,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"1"
   },
   {
@@ -6020,7 +6020,7 @@
     "xwoba":0.2893625417,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"2"
   },
   {
@@ -6032,7 +6032,7 @@
     "xwoba":0.2901025417,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"3"
   },
   {
@@ -6044,7 +6044,7 @@
     "xwoba":0.2901025417,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"4"
   },
   {
@@ -6056,7 +6056,7 @@
     "xwoba":0.2830030517,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"5"
   },
   {
@@ -6068,7 +6068,7 @@
     "xwoba":0.2902030517,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"6"
   },
   {
@@ -6080,7 +6080,7 @@
     "xwoba":0.2878130517,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"7"
   },
   {
@@ -6092,7 +6092,7 @@
     "xwoba":0.2876030517,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"8"
   },
   {
@@ -6104,7 +6104,7 @@
     "xwoba":0.2769330517,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"9"
   },
   {
@@ -6116,7 +6116,7 @@
     "xwoba":0.2769330517,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"10"
   },
   {
@@ -6128,7 +6128,7 @@
     "xwoba":0.2795330517,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"11"
   },
   {
@@ -6140,7 +6140,7 @@
     "xwoba":0.2814430517,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"12"
   },
   {
@@ -6152,7 +6152,7 @@
     "xwoba":0.2772530517,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"13"
   },
   {
@@ -6164,7 +6164,7 @@
     "xwoba":0.2777630517,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"14"
   },
   {
@@ -6176,7 +6176,7 @@
     "xwoba":0.2792730517,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"15"
   },
   {
@@ -6188,7 +6188,7 @@
     "xwoba":0.2723135617,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"16"
   },
   {
@@ -6200,7 +6200,7 @@
     "xwoba":0.2795035617,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"17"
   },
   {
@@ -6212,7 +6212,7 @@
     "xwoba":0.2826185317,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"18"
   },
   {
@@ -6224,7 +6224,7 @@
     "xwoba":0.2872935017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"19"
   },
   {
@@ -6236,7 +6236,7 @@
     "xwoba":0.2878735017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"20"
   },
   {
@@ -6248,7 +6248,7 @@
     "xwoba":0.2816835017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"21"
   },
   {
@@ -6260,7 +6260,7 @@
     "xwoba":0.2792535017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"22"
   },
   {
@@ -6272,7 +6272,7 @@
     "xwoba":0.2813235017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"23"
   },
   {
@@ -6284,7 +6284,7 @@
     "xwoba":0.2839235017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"24"
   },
   {
@@ -6296,7 +6296,7 @@
     "xwoba":0.2896535017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"25"
   },
   {
@@ -6308,7 +6308,7 @@
     "xwoba":0.2900835017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"26"
   },
   {
@@ -6320,7 +6320,7 @@
     "xwoba":0.2885535017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"27"
   },
   {
@@ -6332,7 +6332,7 @@
     "xwoba":0.2868535017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"28"
   },
   {
@@ -6344,7 +6344,7 @@
     "xwoba":0.2868535017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"29"
   },
   {
@@ -6356,7 +6356,7 @@
     "xwoba":0.2901335017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"30"
   },
   {
@@ -6368,7 +6368,7 @@
     "xwoba":0.2847035017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"31"
   },
   {
@@ -6380,7 +6380,7 @@
     "xwoba":0.2876935017,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"32"
   },
   {
@@ -6392,7 +6392,7 @@
     "xwoba":0.2972830139,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"33"
   },
   {
@@ -6404,7 +6404,7 @@
     "xwoba":0.3021430139,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"34"
   },
   {
@@ -6416,7 +6416,7 @@
     "xwoba":0.3031730139,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"35"
   },
   {
@@ -6428,7 +6428,7 @@
     "xwoba":0.3036430139,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"36"
   },
   {
@@ -6440,7 +6440,7 @@
     "xwoba":0.3105579839,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"37"
   },
   {
@@ -6452,7 +6452,7 @@
     "xwoba":0.3141079839,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"38"
   },
   {
@@ -6464,7 +6464,7 @@
     "xwoba":0.3194829839,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"39"
   },
   {
@@ -6476,7 +6476,7 @@
     "xwoba":0.3204129839,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"40"
   },
   {
@@ -6488,7 +6488,7 @@
     "xwoba":0.3215729839,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"41"
   },
   {
@@ -6500,7 +6500,7 @@
     "xwoba":0.3195229839,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"42"
   },
   {
@@ -6512,7 +6512,7 @@
     "xwoba":0.3314144125,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"43"
   },
   {
@@ -6524,7 +6524,7 @@
     "xwoba":0.3335344125,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"44"
   },
   {
@@ -6536,7 +6536,7 @@
     "xwoba":0.3217344125,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"45"
   },
   {
@@ -6548,7 +6548,7 @@
     "xwoba":0.3167644125,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"46"
   },
   {
@@ -6560,7 +6560,7 @@
     "xwoba":0.3188344125,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"47"
   },
   {
@@ -6572,7 +6572,7 @@
     "xwoba":0.3188344125,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"48"
   },
   {
@@ -6584,7 +6584,7 @@
     "xwoba":0.3245144125,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"49"
   },
   {
@@ -6596,7 +6596,7 @@
     "xwoba":0.3216344125,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"50"
   },
   {
@@ -6608,7 +6608,7 @@
     "xwoba":0.3161144125,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"51"
   },
   {
@@ -6620,7 +6620,7 @@
     "xwoba":0.3099149225,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"52"
   },
   {
@@ -6632,7 +6632,7 @@
     "xwoba":0.3035949225,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"53"
   },
   {
@@ -6644,7 +6644,7 @@
     "xwoba":0.3031649225,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"54"
   },
   {
@@ -6656,7 +6656,7 @@
     "xwoba":0.3176299225,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"55"
   },
   {
@@ -6668,7 +6668,7 @@
     "xwoba":0.3171399225,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"56"
   },
   {
@@ -6680,7 +6680,7 @@
     "xwoba":0.3126149525,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"57"
   },
   {
@@ -6692,7 +6692,7 @@
     "xwoba":0.3086849525,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"58"
   },
   {
@@ -6704,7 +6704,7 @@
     "xwoba":0.3086849525,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"59"
   },
   {
@@ -6716,7 +6716,7 @@
     "xwoba":0.3086849525,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"60"
   },
   {
@@ -6728,7 +6728,7 @@
     "xwoba":0.3086849525,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"61"
   },
   {
@@ -6740,7 +6740,7 @@
     "xwoba":0.3248399525,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"62"
   },
   {
@@ -6752,7 +6752,7 @@
     "xwoba":0.3273399525,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"63"
   },
   {
@@ -6764,7 +6764,7 @@
     "xwoba":0.3306299525,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"64"
   },
   {
@@ -6776,7 +6776,7 @@
     "xwoba":0.3342099525,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"65"
   },
   {
@@ -6788,7 +6788,7 @@
     "xwoba":0.3342099525,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"66"
   },
   {
@@ -6800,7 +6800,7 @@
     "xwoba":0.3337099525,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"67"
   },
   {
@@ -6812,7 +6812,7 @@
     "xwoba":0.3293849825,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"68"
   },
   {
@@ -6824,7 +6824,7 @@
     "xwoba":0.3398803923,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"69"
   },
   {
@@ -6836,7 +6836,7 @@
     "xwoba":0.3435703923,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"70"
   },
   {
@@ -6848,7 +6848,7 @@
     "xwoba":0.3549203923,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"71"
   },
   {
@@ -6860,7 +6860,7 @@
     "xwoba":0.3613353623,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"72"
   },
   {
@@ -6872,7 +6872,7 @@
     "xwoba":0.3613353623,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"73"
   },
   {
@@ -6884,7 +6884,7 @@
     "xwoba":0.3611453623,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"74"
   },
   {
@@ -6896,7 +6896,7 @@
     "xwoba":0.3563953623,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"75"
   },
   {
@@ -6908,7 +6908,7 @@
     "xwoba":0.3563953623,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"76"
   },
   {
@@ -6920,7 +6920,7 @@
     "xwoba":0.3587053623,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"77"
   },
   {
@@ -6932,7 +6932,7 @@
     "xwoba":0.3599853623,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"78"
   },
   {
@@ -6944,7 +6944,7 @@
     "xwoba":0.3550103923,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"79"
   },
   {
@@ -6956,7 +6956,7 @@
     "xwoba":0.365672178,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"80"
   },
   {
@@ -6968,7 +6968,7 @@
     "xwoba":0.365042178,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"81"
   },
   {
@@ -6980,7 +6980,7 @@
     "xwoba":0.3762670391,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"82"
   },
   {
@@ -6992,7 +6992,7 @@
     "xwoba":0.3838170391,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"83"
   },
   {
@@ -7004,7 +7004,7 @@
     "xwoba":0.3799170391,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"84"
   },
   {
@@ -7016,7 +7016,7 @@
     "xwoba":0.3816615846,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"85"
   },
   {
@@ -7028,7 +7028,7 @@
     "xwoba":0.3880165546,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"86"
   },
   {
@@ -7040,7 +7040,7 @@
     "xwoba":0.3866765546,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"87"
   },
   {
@@ -7052,7 +7052,7 @@
     "xwoba":0.3860415246,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"88"
   },
   {
@@ -7064,7 +7064,7 @@
     "xwoba":0.3791265546,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"89"
   },
   {
@@ -7076,7 +7076,7 @@
     "xwoba":0.3685871929,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"90"
   },
   {
@@ -7088,7 +7088,7 @@
     "xwoba":0.3665271929,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"91"
   },
   {
@@ -7100,7 +7100,7 @@
     "xwoba":0.3708971929,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"92"
   },
   {
@@ -7112,7 +7112,7 @@
     "xwoba":0.3702471929,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"93"
   },
   {
@@ -7124,7 +7124,7 @@
     "xwoba":0.3598151929,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"94"
   },
   {
@@ -7136,7 +7136,7 @@
     "xwoba":0.3539102229,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"95"
   },
   {
@@ -7148,7 +7148,7 @@
     "xwoba":0.3602551929,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"96"
   },
   {
@@ -7160,7 +7160,7 @@
     "xwoba":0.3631651929,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"97"
   },
   {
@@ -7172,7 +7172,7 @@
     "xwoba":0.3576923029,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"98"
   },
   {
@@ -7184,7 +7184,7 @@
     "xwoba":0.3659223029,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"99"
   },
   {
@@ -7196,7 +7196,7 @@
     "xwoba":0.3698823029,
     "player_name":"Christian Yelich",
     "player_id":"592885",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"100"
   },
   {
@@ -7208,7 +7208,7 @@
     "xwoba":0.2896271977,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"1"
   },
   {
@@ -7220,7 +7220,7 @@
     "xwoba":0.2944771977,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"2"
   },
   {
@@ -7232,7 +7232,7 @@
     "xwoba":0.2892671977,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"3"
   },
   {
@@ -7244,7 +7244,7 @@
     "xwoba":0.2881371977,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"4"
   },
   {
@@ -7256,7 +7256,7 @@
     "xwoba":0.2880871977,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"5"
   },
   {
@@ -7268,7 +7268,7 @@
     "xwoba":0.2856449077,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"6"
   },
   {
@@ -7280,7 +7280,7 @@
     "xwoba":0.2808254177,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"7"
   },
   {
@@ -7292,7 +7292,7 @@
     "xwoba":0.2839654177,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"8"
   },
   {
@@ -7304,7 +7304,7 @@
     "xwoba":0.2839654177,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"9"
   },
   {
@@ -7316,7 +7316,7 @@
     "xwoba":0.2894080844,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"10"
   },
   {
@@ -7328,7 +7328,7 @@
     "xwoba":0.2936730544,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"11"
   },
   {
@@ -7340,7 +7340,7 @@
     "xwoba":0.2938530544,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"12"
   },
   {
@@ -7352,7 +7352,7 @@
     "xwoba":0.2938030544,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"13"
   },
   {
@@ -7364,7 +7364,7 @@
     "xwoba":0.2971030544,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"14"
   },
   {
@@ -7376,7 +7376,7 @@
     "xwoba":0.2971030544,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"15"
   },
   {
@@ -7388,7 +7388,7 @@
     "xwoba":0.2983230544,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"16"
   },
   {
@@ -7400,7 +7400,7 @@
     "xwoba":0.2949635644,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"17"
   },
   {
@@ -7412,7 +7412,7 @@
     "xwoba":0.2957035644,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"18"
   },
   {
@@ -7424,7 +7424,7 @@
     "xwoba":0.2945335644,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"19"
   },
   {
@@ -7436,7 +7436,7 @@
     "xwoba":0.2920640744,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"20"
   },
   {
@@ -7448,7 +7448,7 @@
     "xwoba":0.2919340744,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"21"
   },
   {
@@ -7460,7 +7460,7 @@
     "xwoba":0.2871440744,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"22"
   },
   {
@@ -7472,7 +7472,7 @@
     "xwoba":0.2874540744,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"23"
   },
   {
@@ -7484,7 +7484,7 @@
     "xwoba":0.2943690444,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"24"
   },
   {
@@ -7496,7 +7496,7 @@
     "xwoba":0.2966190444,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"25"
   },
   {
@@ -7508,7 +7508,7 @@
     "xwoba":0.3043390444,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"26"
   },
   {
@@ -7520,7 +7520,7 @@
     "xwoba":0.3070290444,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"27"
   },
   {
@@ -7532,7 +7532,7 @@
     "xwoba":0.3102990444,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"28"
   },
   {
@@ -7544,7 +7544,7 @@
     "xwoba":0.3142690444,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"29"
   },
   {
@@ -7556,7 +7556,7 @@
     "xwoba":0.3094190444,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"30"
   },
   {
@@ -7568,7 +7568,7 @@
     "xwoba":0.3094190444,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"31"
   },
   {
@@ -7580,7 +7580,7 @@
     "xwoba":0.3163340144,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"32"
   },
   {
@@ -7592,7 +7592,7 @@
     "xwoba":0.3195840144,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"33"
   },
   {
@@ -7604,7 +7604,7 @@
     "xwoba":0.3181245244,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"34"
   },
   {
@@ -7616,7 +7616,7 @@
     "xwoba":0.3181245244,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"35"
   },
   {
@@ -7628,7 +7628,7 @@
     "xwoba":0.3179245244,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"36"
   },
   {
@@ -7640,7 +7640,7 @@
     "xwoba":0.3217445244,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"37"
   },
   {
@@ -7652,7 +7652,7 @@
     "xwoba":0.3238445244,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"38"
   },
   {
@@ -7664,7 +7664,7 @@
     "xwoba":0.3190245244,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"39"
   },
   {
@@ -7676,7 +7676,7 @@
     "xwoba":0.3135545244,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"40"
   },
   {
@@ -7688,7 +7688,7 @@
     "xwoba":0.3064550344,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"41"
   },
   {
@@ -7700,7 +7700,7 @@
     "xwoba":0.3063750344,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"42"
   },
   {
@@ -7712,7 +7712,7 @@
     "xwoba":0.2998650344,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"43"
   },
   {
@@ -7724,7 +7724,7 @@
     "xwoba":0.2997150344,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"44"
   },
   {
@@ -7736,7 +7736,7 @@
     "xwoba":0.2996850344,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"45"
   },
   {
@@ -7748,7 +7748,7 @@
     "xwoba":0.3066000044,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"46"
   },
   {
@@ -7760,7 +7760,7 @@
     "xwoba":0.3025450344,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"47"
   },
   {
@@ -7772,7 +7772,7 @@
     "xwoba":0.3031250344,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"48"
   },
   {
@@ -7784,7 +7784,7 @@
     "xwoba":0.2962100644,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"49"
   },
   {
@@ -7796,7 +7796,7 @@
     "xwoba":0.2887323371,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"50"
   },
   {
@@ -7808,7 +7808,7 @@
     "xwoba":0.2894523371,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"51"
   },
   {
@@ -7820,7 +7820,7 @@
     "xwoba":0.2848773671,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"52"
   },
   {
@@ -7832,7 +7832,7 @@
     "xwoba":0.2844973671,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"53"
   },
   {
@@ -7844,7 +7844,7 @@
     "xwoba":0.2864973671,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"54"
   },
   {
@@ -7856,7 +7856,7 @@
     "xwoba":0.2899873671,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"55"
   },
   {
@@ -7868,7 +7868,7 @@
     "xwoba":0.2906602571,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"56"
   },
   {
@@ -7880,7 +7880,7 @@
     "xwoba":0.2937452271,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"57"
   },
   {
@@ -7892,7 +7892,7 @@
     "xwoba":0.2940952271,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"58"
   },
   {
@@ -7904,7 +7904,7 @@
     "xwoba":0.3010101971,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"59"
   },
   {
@@ -7916,7 +7916,7 @@
     "xwoba":0.292379591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"60"
   },
   {
@@ -7928,7 +7928,7 @@
     "xwoba":0.299429591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"61"
   },
   {
@@ -7940,7 +7940,7 @@
     "xwoba":0.296219591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"62"
   },
   {
@@ -7952,7 +7952,7 @@
     "xwoba":0.291299591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"63"
   },
   {
@@ -7964,7 +7964,7 @@
     "xwoba":0.291299591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"64"
   },
   {
@@ -7976,7 +7976,7 @@
     "xwoba":0.287519591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"65"
   },
   {
@@ -7988,7 +7988,7 @@
     "xwoba":0.284649591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"66"
   },
   {
@@ -8000,7 +8000,7 @@
     "xwoba":0.279709591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"67"
   },
   {
@@ -8012,7 +8012,7 @@
     "xwoba":0.276839591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"68"
   },
   {
@@ -8024,7 +8024,7 @@
     "xwoba":0.278199591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"69"
   },
   {
@@ -8036,7 +8036,7 @@
     "xwoba":0.279229591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"70"
   },
   {
@@ -8048,7 +8048,7 @@
     "xwoba":0.272169591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"71"
   },
   {
@@ -8060,7 +8060,7 @@
     "xwoba":0.275359591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"72"
   },
   {
@@ -8072,7 +8072,7 @@
     "xwoba":0.270489591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"73"
   },
   {
@@ -8084,7 +8084,7 @@
     "xwoba":0.267879591,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"74"
   },
   {
@@ -8096,7 +8096,7 @@
     "xwoba":0.263984621,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"75"
   },
   {
@@ -8108,7 +8108,7 @@
     "xwoba":0.260754621,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"76"
   },
   {
@@ -8120,7 +8120,7 @@
     "xwoba":0.2666177789,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"77"
   },
   {
@@ -8132,7 +8132,7 @@
     "xwoba":0.2687777789,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"78"
   },
   {
@@ -8144,7 +8144,7 @@
     "xwoba":0.2732111123,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"79"
   },
   {
@@ -8156,7 +8156,7 @@
     "xwoba":0.2787511123,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"80"
   },
   {
@@ -8168,7 +8168,7 @@
     "xwoba":0.2795611123,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"81"
   },
   {
@@ -8180,7 +8180,7 @@
     "xwoba":0.2752261423,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"82"
   },
   {
@@ -8192,7 +8192,7 @@
     "xwoba":0.2786061423,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"83"
   },
   {
@@ -8204,7 +8204,7 @@
     "xwoba":0.2810061423,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"84"
   },
   {
@@ -8216,7 +8216,7 @@
     "xwoba":0.2797361423,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"85"
   },
   {
@@ -8228,7 +8228,7 @@
     "xwoba":0.2798261423,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"86"
   },
   {
@@ -8240,7 +8240,7 @@
     "xwoba":0.2745661423,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"87"
   },
   {
@@ -8252,7 +8252,7 @@
     "xwoba":0.2745661423,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"88"
   },
   {
@@ -8264,7 +8264,7 @@
     "xwoba":0.2790561423,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"89"
   },
   {
@@ -8276,7 +8276,7 @@
     "xwoba":0.2799011123,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"90"
   },
   {
@@ -8288,7 +8288,7 @@
     "xwoba":0.2868160823,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"91"
   },
   {
@@ -8300,7 +8300,7 @@
     "xwoba":0.2799260823,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"92"
   },
   {
@@ -8312,7 +8312,7 @@
     "xwoba":0.2776760823,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"93"
   },
   {
@@ -8324,7 +8324,7 @@
     "xwoba":0.2804560823,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"94"
   },
   {
@@ -8336,7 +8336,7 @@
     "xwoba":0.2845660823,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"95"
   },
   {
@@ -8348,7 +8348,7 @@
     "xwoba":0.2805111123,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"96"
   },
   {
@@ -8360,7 +8360,7 @@
     "xwoba":0.2804411123,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"97"
   },
   {
@@ -8372,7 +8372,7 @@
     "xwoba":0.2819979544,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"98"
   },
   {
@@ -8384,7 +8384,7 @@
     "xwoba":0.2813667779,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"99"
   },
   {
@@ -8396,7 +8396,7 @@
     "xwoba":0.2776418079,
     "player_name":"Blake Perkins",
     "player_id":"663368",
-    "league_avg_xwoba":0.313,
+    "league_avg_xwoba":0.3125736434,
     "rn_fwd":"100"
   }
 ]
