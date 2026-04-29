@@ -54,6 +54,24 @@
     "slug":"shane-drohan"
   },
   {
+    "player_id":"702153",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/702153\/headshot\/silo\/current",
+    "name":"Brian Fitzpatrick",
+    "player_url":"\/player\/702153",
+    "jersey":"35",
+    "position_group":"Pitchers",
+    "bat_throw":"S\/L",
+    "height":"6' 7\"",
+    "weight":"225",
+    "dob":"06\/01\/2000",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"brian-fitzpatrick"
+  },
+  {
     "player_id":"669084",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/669084\/headshot\/silo\/current",
     "name":"DL Hall",
@@ -214,24 +232,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"brandon-woodruff"
-  },
-  {
-    "player_id":"672582",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/672582\/headshot\/silo\/current",
-    "name":"Angel Zerpa",
-    "player_url":"\/player\/672582",
-    "jersey":"61",
-    "position_group":"Pitchers",
-    "bat_throw":"L\/L",
-    "height":"6' 0\"",
-    "weight":"237",
-    "dob":"09\/27\/1999",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"angel-zerpa"
   },
   {
     "player_id":"661388",

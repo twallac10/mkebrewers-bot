@@ -5,18 +5,18 @@ Record,record,15-13,standings,13-15,This point last season
 Win percentage,win_pct,54%,standings,46%,This point last season
 Games up/back,games_up_back,3.5,standings,4th,Division rank
 Avg. home attendance,mean_attendance,"28,649",standings,19,Home games this season
-Runs,runs,145,standings,8th,League rank
+Runs,runs,145,standings,9th,League rank
 Runs against,runs_against,115,standings,128,This point last season
 Run differential,run_differential,30,standings,11,This point last season
 Batting average,batting_average,.238,batting,N/A,Last decade average
-Home runs,home_runs,20,batting,28th,League rank
+Home runs,home_runs,20,batting,29th,League rank
 Home runs/game,home_runs_game,0.71,batting,N/A,Last decade average
 On-base percentage,on_base_pct,.335,batting,N/A,Last decade average
 Stolen bases,stolen_bases,36,batting,1st,League rank
 Stolen bases/game,stolen_bases_game,1.29,batting,N/A,Rate all last season
-Strikeouts,strikeouts,258,pitching,11th,League rank
-Walks,walks,105,pitching,15th,League rank
-ERA,era,3.75,pitching,8th,League rank
-Last updated,update_time,"April 29, 2026, 10:45 AM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(April 29)</span> — The Brewers have compiled a <span class='highlight'>15-13</span> record in the 2026 regular season, a <span class='highlight'>54%</span> winning percentage.  The last game was a <span class='highlight'>13-2</span> home <span class='highlight'>win</span>. and the next game is Wednesday at 6:40 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
+Strikeouts,strikeouts,258,pitching,13th,League rank
+Walks,walks,105,pitching,16th,League rank
+ERA,era,3.75,pitching,7th,League rank
+Last updated,update_time,"April 29, 2026, 6:24 PM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(April 29)</span> — The Brewers have compiled a <span class='highlight'>15-13</span> record in the 2026 regular season, a <span class='highlight'>54%</span> winning percentage.  The last game was a <span class='highlight'>13-2</span> home <span class='highlight'>win</span>. and the next game is Thursday at 12:40 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
 Last game result,last_game_result,win,summary,,
