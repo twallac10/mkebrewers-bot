@@ -52,7 +52,7 @@
         "stat":"runs",
         "value":147,
         "category":"standings",
-        "context_value":"9th",
+        "context_value":"6th",
         "context_value_label":"League rank"
     },
     {
@@ -84,7 +84,7 @@
         "stat":"home_runs",
         "value":20,
         "category":"batting",
-        "context_value":"29th",
+        "context_value":"28th",
         "context_value_label":"League rank"
     },
     {
@@ -124,7 +124,7 @@
         "stat":"strikeouts",
         "value":"268",
         "category":"pitching",
-        "context_value":"10th",
+        "context_value":"7th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"3.83",
         "category":"pitching",
-        "context_value":"8th",
+        "context_value":"6th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"April 30, 2026, 10:40 AM CT",
+        "value":"April 30, 2026, 6:23 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(April 30)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>15-14<\/span> record in the 2026 regular season, a <span class='highlight'>52%<\/span> winning percentage.  The last game was a <span class='highlight'>2-6<\/span> home <span class='highlight'>loss<\/span>. and the next game is Thursday at 12:40 p.m. CT at <span class='highlight'>American Family Field<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(April 30)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>16-14<\/span> record in the 2026 regular season, a <span class='highlight'>53%<\/span> winning percentage.  The last game was a <span class='highlight'>13-1<\/span> home <span class='highlight'>win<\/span>. and the next game is Friday at 5:45 p.m. CT at <span class='highlight'>Nationals Park<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -162,7 +162,7 @@
     {
         "stat_label":"Last game result",
         "stat":"last_game_result",
-        "value":"loss",
+        "value":"win",
         "category":"summary",
         "context_value":"",
         "context_value_label":""

@@ -1,19 +1,29 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.88767550702028,
-        "incorrect_strikes_pct": 8.112324492979724,
-        "total_called_strikes": 641,
-        "bad_calls_count": 52
+        "correct_strikes_pct": 91.34328358208955,
+        "incorrect_strikes_pct": 8.656716417910445,
+        "total_called_strikes": 670,
+        "bad_calls_count": 58
     },
     "last_game_summary": {
-        "date": "April 29, 2026",
-        "correct_strikes_pct": 96.96969696969697,
-        "incorrect_strikes_pct": 3.030303030303031,
-        "total_called_strikes": 33,
-        "bad_calls_count": 1,
-        "home_plate_umpire": "Alfonso M\u00e1rquez"
+        "date": "April 30, 2026",
+        "correct_strikes_pct": 79.3103448275862,
+        "incorrect_strikes_pct": 20.689655172413794,
+        "total_called_strikes": 29,
+        "bad_calls_count": 6,
+        "home_plate_umpire": "Mike Estabrook"
     },
     "worst_calls_of_season": [
+        {
+            "distance_inches": 11.4791959752,
+            "batter": "Tyler Black",
+            "pitcher": "James McCann",
+            "pitch_type": "Eephus",
+            "velocity_mph": 40.0,
+            "date": "2026-04-30",
+            "date_formatted": "April 30, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=1a4e3ac5-884f-3bb7-8ad1-444a0287a26e"
+        },
         {
             "distance_inches": 3.3385205247,
             "batter": "Joey Ortiz",
@@ -43,30 +53,20 @@
             "date": "2026-04-16",
             "date_formatted": "April 16, 2026",
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=689dde2d-2748-318a-ae30-fa9855dc6a05"
-        },
-        {
-            "distance_inches": 2.3943387951,
-            "batter": "Luis Rengifo",
-            "pitcher": "Tyler Holton",
-            "pitch_type": "Cutter",
-            "velocity_mph": 85.9,
-            "date": "2026-04-23",
-            "date_formatted": "April 23, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=fb0faaae-513e-3149-84f4-19e57129d6b8"
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.1931330472103,
-        "incorrect_balls_pct": 4.806866952789704,
-        "total_called_balls": 1165,
-        "bad_calls_count": 56
+        "correct_balls_pct": 94.91666666666667,
+        "incorrect_balls_pct": 5.083333333333329,
+        "total_called_balls": 1200,
+        "bad_calls_count": 61
     },
     "pitching_last_game_summary": {
-        "date": "April 29, 2026",
-        "correct_balls_pct": 95.23809523809523,
-        "incorrect_balls_pct": 4.761904761904773,
-        "total_called_balls": 63,
-        "bad_calls_count": 3
+        "date": "April 30, 2026",
+        "correct_balls_pct": 85.71428571428571,
+        "incorrect_balls_pct": 14.285714285714292,
+        "total_called_balls": 35,
+        "bad_calls_count": 5
     },
     "pitching_worst_calls_of_season": []
 }
