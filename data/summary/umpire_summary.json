@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.61184210526315,
-        "incorrect_strikes_pct": 8.38815789473685,
-        "total_called_strikes": 608,
-        "bad_calls_count": 51
+        "correct_strikes_pct": 91.88767550702028,
+        "incorrect_strikes_pct": 8.112324492979724,
+        "total_called_strikes": 641,
+        "bad_calls_count": 52
     },
     "last_game_summary": {
-        "date": "April 28, 2026",
-        "correct_strikes_pct": 88.0,
-        "incorrect_strikes_pct": 12.0,
-        "total_called_strikes": 25,
-        "bad_calls_count": 3,
-        "home_plate_umpire": "Lance Barrett"
+        "date": "April 29, 2026",
+        "correct_strikes_pct": 96.96969696969697,
+        "incorrect_strikes_pct": 3.030303030303031,
+        "total_called_strikes": 33,
+        "bad_calls_count": 1,
+        "home_plate_umpire": "Alfonso M\u00e1rquez"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.19056261343013,
-        "incorrect_balls_pct": 4.8094373865698685,
-        "total_called_balls": 1102,
-        "bad_calls_count": 53
+        "correct_balls_pct": 95.1931330472103,
+        "incorrect_balls_pct": 4.806866952789704,
+        "total_called_balls": 1165,
+        "bad_calls_count": 56
     },
     "pitching_last_game_summary": {
-        "date": "April 28, 2026",
-        "correct_balls_pct": 97.91666666666666,
-        "incorrect_balls_pct": 2.083333333333343,
-        "total_called_balls": 48,
-        "bad_calls_count": 1
+        "date": "April 29, 2026",
+        "correct_balls_pct": 95.23809523809523,
+        "incorrect_balls_pct": 4.761904761904773,
+        "total_called_balls": 63,
+        "bad_calls_count": 3
     },
     "pitching_worst_calls_of_season": []
 }
