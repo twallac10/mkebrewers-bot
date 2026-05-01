@@ -1,5 +1,33 @@
 [
   {
+    "date":"2026-05-01",
+    "transaction":"Brewers placed RHP Brandon Woodruff on the 15-day injured list. Right shoulder inflammation.",
+    "players":[
+      "Brandon Woodruff"
+    ]
+  },
+  {
+    "date":"2026-05-01",
+    "transaction":"Brewers recalled RHP Easton McGee from Nashville Sounds.",
+    "players":[
+      "Easton McGee"
+    ]
+  },
+  {
+    "date":"2026-04-29",
+    "transaction":"Brewers sent CF Jackson Chourio on a rehab assignment to Nashville Sounds.",
+    "players":[
+      "Jackson Chourio"
+    ]
+  },
+  {
+    "date":"2026-04-29",
+    "transaction":"Brewers sent 1B Andrew Vaughn on a rehab assignment to Nashville Sounds.",
+    "players":[
+      "Andrew Vaughn"
+    ]
+  },
+  {
     "date":"2026-04-29",
     "transaction":"Brewers placed LHP Angel Zerpa on the 15-day injured list retroactive to April 26, 2026. Left forearm tightness.",
     "players":[
@@ -22,15 +50,15 @@
   },
   {
     "date":"2026-04-24",
-    "transaction":"Brewers signed free agent Josue Jean to a minor league contract.",
-    "players":null
+    "transaction":"Brewers designated RF Luis Matos for assignment.",
+    "players":[
+      "Luis Matos"
+    ]
   },
   {
     "date":"2026-04-24",
-    "transaction":"Brewers optioned RHP Carlos Rodriguez to Nashville Sounds.",
-    "players":[
-      "Carlos Rodriguez"
-    ]
+    "transaction":"Brewers signed free agent Josue Jean to a minor league contract.",
+    "players":null
   },
   {
     "date":"2026-04-24",
@@ -41,16 +69,16 @@
   },
   {
     "date":"2026-04-24",
-    "transaction":"Brewers recalled LHP Shane Drohan from Nashville Sounds.",
+    "transaction":"Brewers optioned RHP Carlos Rodriguez to Nashville Sounds.",
     "players":[
-      "Shane Drohan"
+      "Carlos Rodriguez"
     ]
   },
   {
     "date":"2026-04-24",
-    "transaction":"Brewers designated RF Luis Matos for assignment.",
+    "transaction":"Brewers recalled LHP Shane Drohan from Nashville Sounds.",
     "players":[
-      "Luis Matos"
+      "Shane Drohan"
     ]
   },
   {
@@ -90,23 +118,16 @@
   },
   {
     "date":"2026-04-18",
-    "transaction":"Brewers recalled RHP Carlos Rodriguez from Nashville Sounds.",
-    "players":[
-      "Carlos Rodriguez"
-    ]
-  },
-  {
-    "date":"2026-04-18",
     "transaction":"Brewers optioned RHP Coleman Crow to Nashville Sounds.",
     "players":[
       "Coleman Crow"
     ]
   },
   {
-    "date":"2026-04-17",
-    "transaction":"Brewers recalled RHP Coleman Crow from Nashville Sounds.",
+    "date":"2026-04-18",
+    "transaction":"Brewers recalled RHP Carlos Rodriguez from Nashville Sounds.",
     "players":[
-      "Coleman Crow"
+      "Carlos Rodriguez"
     ]
   },
   {
@@ -118,6 +139,13 @@
   },
   {
     "date":"2026-04-17",
+    "transaction":"Brewers recalled RHP Coleman Crow from Nashville Sounds.",
+    "players":[
+      "Coleman Crow"
+    ]
+  },
+  {
+    "date":"2026-04-17",
     "transaction":"Brewers signed free agent OF Jesus Mancera to a minor league contract.",
     "players":[
       "Jesus Mancera"
@@ -125,9 +153,9 @@
   },
   {
     "date":"2026-04-16",
-    "transaction":"LHP Kyle Harrison changed number to 52.",
+    "transaction":"C William Contreras changed number to 24.",
     "players":[
-      "Kyle Harrison"
+      "William Contreras"
     ]
   },
   {
@@ -135,6 +163,13 @@
     "transaction":"SS Joey Ortiz changed number to 3.",
     "players":[
       "Joey Ortiz"
+    ]
+  },
+  {
+    "date":"2026-04-16",
+    "transaction":"LHP Aaron Ashby changed number to 26.",
+    "players":[
+      "Aaron Ashby"
     ]
   },
   {
@@ -153,16 +188,9 @@
   },
   {
     "date":"2026-04-16",
-    "transaction":"RHP Jake Woodford changed number to 41.",
+    "transaction":"C Gary Sánchez changed number to 99.",
     "players":[
-      "Jake Woodford"
-    ]
-  },
-  {
-    "date":"2026-04-16",
-    "transaction":"RHP Brandon Woodruff changed number to 53.",
-    "players":[
-      "Brandon Woodruff"
+      "Gary Sánchez"
     ]
   },
   {
@@ -174,13 +202,6 @@
   },
   {
     "date":"2026-04-16",
-    "transaction":"RHP Abner Uribe changed number to 45.",
-    "players":[
-      "Abner Uribe"
-    ]
-  },
-  {
-    "date":"2026-04-16",
     "transaction":"LHP Angel Zerpa changed number to 61.",
     "players":[
       "Angel Zerpa"
@@ -188,9 +209,30 @@
   },
   {
     "date":"2026-04-16",
-    "transaction":"LHP Aaron Ashby changed number to 26.",
+    "transaction":"RHP Abner Uribe changed number to 45.",
     "players":[
-      "Aaron Ashby"
+      "Abner Uribe"
+    ]
+  },
+  {
+    "date":"2026-04-16",
+    "transaction":"RHP Brandon Woodruff changed number to 53.",
+    "players":[
+      "Brandon Woodruff"
+    ]
+  },
+  {
+    "date":"2026-04-16",
+    "transaction":"RHP Jake Woodford changed number to 41.",
+    "players":[
+      "Jake Woodford"
+    ]
+  },
+  {
+    "date":"2026-04-16",
+    "transaction":"3B Luis Rengifo changed number to 13.",
+    "players":[
+      "Luis Rengifo"
     ]
   },
   {
@@ -202,9 +244,9 @@
   },
   {
     "date":"2026-04-16",
-    "transaction":"C William Contreras changed number to 24.",
+    "transaction":"RF Greg Jones changed number to 40.",
     "players":[
-      "William Contreras"
+      "Greg Jones"
     ]
   },
   {
@@ -216,9 +258,16 @@
   },
   {
     "date":"2026-04-16",
-    "transaction":"LHP DL Hall changed number to 37.",
+    "transaction":"RF Luis Matos changed number to 21.",
     "players":[
-      "DL Hall"
+      "Luis Matos"
+    ]
+  },
+  {
+    "date":"2026-04-16",
+    "transaction":"LHP Kyle Harrison changed number to 52.",
+    "players":[
+      "Kyle Harrison"
     ]
   },
   {
@@ -230,30 +279,9 @@
   },
   {
     "date":"2026-04-16",
-    "transaction":"2B David Hamilton changed number to 6.",
+    "transaction":"RHP Chad Patrick changed number to 39.",
     "players":[
-      "David Hamilton"
-    ]
-  },
-  {
-    "date":"2026-04-16",
-    "transaction":"LF Brandon Lockridge changed number to 20.",
-    "players":[
-      "Brandon Lockridge"
-    ]
-  },
-  {
-    "date":"2026-04-16",
-    "transaction":"RHP Easton McGee changed number to 50.",
-    "players":[
-      "Easton McGee"
-    ]
-  },
-  {
-    "date":"2026-04-16",
-    "transaction":"RF Luis Matos changed number to 21.",
-    "players":[
-      "Luis Matos"
+      "Chad Patrick"
     ]
   },
   {
@@ -272,30 +300,30 @@
   },
   {
     "date":"2026-04-16",
-    "transaction":"RHP Chad Patrick changed number to 39.",
+    "transaction":"RHP Easton McGee changed number to 50.",
     "players":[
-      "Chad Patrick"
+      "Easton McGee"
     ]
   },
   {
     "date":"2026-04-16",
-    "transaction":"C Gary Sánchez changed number to 99.",
+    "transaction":"LF Brandon Lockridge changed number to 20.",
     "players":[
-      "Gary Sánchez"
+      "Brandon Lockridge"
     ]
   },
   {
     "date":"2026-04-16",
-    "transaction":"3B Luis Rengifo changed number to 13.",
+    "transaction":"2B David Hamilton changed number to 6.",
     "players":[
-      "Luis Rengifo"
+      "David Hamilton"
     ]
   },
   {
     "date":"2026-04-16",
-    "transaction":"RF Greg Jones changed number to 40.",
+    "transaction":"LHP DL Hall changed number to 37.",
     "players":[
-      "Greg Jones"
+      "DL Hall"
     ]
   },
   {
@@ -307,9 +335,9 @@
   },
   {
     "date":"2026-04-15",
-    "transaction":"RHP Chad Patrick changed number to 42.",
+    "transaction":"RF Sal Frelick changed number to 42.",
     "players":[
-      "Chad Patrick"
+      "Sal Frelick"
     ]
   },
   {
@@ -321,93 +349,16 @@
   },
   {
     "date":"2026-04-15",
-    "transaction":"RF Luis Matos changed number to 42.",
+    "transaction":"RHP Grant Anderson changed number to 42.",
     "players":[
-      "Luis Matos"
+      "Grant Anderson"
     ]
   },
   {
     "date":"2026-04-15",
-    "transaction":"3B Luis Rengifo changed number to 42.",
+    "transaction":"RHP Easton McGee changed number to 42.",
     "players":[
-      "Luis Rengifo"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"2B Brice Turang changed number to 42.",
-    "players":[
-      "Brice Turang"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"LF Brandon Lockridge changed number to 42.",
-    "players":[
-      "Brandon Lockridge"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"Arizona Diamondbacks traded RHP Junior Fernández to Brewers.",
-    "players":[
-      "Junior Fernández"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"RHP Jacob Misiorowski changed number to 42.",
-    "players":[
-      "Jacob Misiorowski"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"RHP Brandon Sproat changed number to 42.",
-    "players":[
-      "Brandon Sproat"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"RHP Trevor Megill changed number to 42.",
-    "players":[
-      "Trevor Megill"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"C Gary Sánchez changed number to 42.",
-    "players":[
-      "Gary Sánchez"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"RHP Jake Woodford changed number to 42.",
-    "players":[
-      "Jake Woodford"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"SS Joey Ortiz changed number to 42.",
-    "players":[
-      "Joey Ortiz"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"CF Garrett Mitchell changed number to 42.",
-    "players":[
-      "Garrett Mitchell"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"CF Blake Perkins changed number to 42.",
-    "players":[
-      "Blake Perkins"
+      "Easton McGee"
     ]
   },
   {
@@ -419,9 +370,44 @@
   },
   {
     "date":"2026-04-15",
-    "transaction":"LHP Kyle Harrison changed number to 42.",
+    "transaction":"RF Greg Jones changed number to 42.",
     "players":[
-      "Kyle Harrison"
+      "Greg Jones"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"Arizona Diamondbacks traded RHP Junior Fernández to Brewers.",
+    "players":[
+      "Junior Fernández"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"3B Luis Rengifo changed number to 42.",
+    "players":[
+      "Luis Rengifo"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"2B David Hamilton changed number to 42.",
+    "players":[
+      "David Hamilton"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"CF Garrett Mitchell changed number to 42.",
+    "players":[
+      "Garrett Mitchell"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"RHP Chad Patrick changed number to 42.",
+    "players":[
+      "Chad Patrick"
     ]
   },
   {
@@ -440,44 +426,16 @@
   },
   {
     "date":"2026-04-15",
-    "transaction":"RHP Easton McGee changed number to 42.",
+    "transaction":"SS Joey Ortiz changed number to 42.",
     "players":[
-      "Easton McGee"
+      "Joey Ortiz"
     ]
   },
   {
     "date":"2026-04-15",
-    "transaction":"RHP Grant Anderson changed number to 42.",
+    "transaction":"RHP Jake Woodford changed number to 42.",
     "players":[
-      "Grant Anderson"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"2B David Hamilton changed number to 42.",
-    "players":[
-      "David Hamilton"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"RF Greg Jones changed number to 42.",
-    "players":[
-      "Greg Jones"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"1B Jake Bauers changed number to 42.",
-    "players":[
-      "Jake Bauers"
-    ]
-  },
-  {
-    "date":"2026-04-15",
-    "transaction":"RF Sal Frelick changed number to 42.",
-    "players":[
-      "Sal Frelick"
+      "Jake Woodford"
     ]
   },
   {
@@ -489,9 +447,79 @@
   },
   {
     "date":"2026-04-15",
+    "transaction":"C Gary Sánchez changed number to 42.",
+    "players":[
+      "Gary Sánchez"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"2B Brice Turang changed number to 42.",
+    "players":[
+      "Brice Turang"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"RHP Jacob Misiorowski changed number to 42.",
+    "players":[
+      "Jacob Misiorowski"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"LF Brandon Lockridge changed number to 42.",
+    "players":[
+      "Brandon Lockridge"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"1B Jake Bauers changed number to 42.",
+    "players":[
+      "Jake Bauers"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"RF Luis Matos changed number to 42.",
+    "players":[
+      "Luis Matos"
+    ]
+  },
+  {
+    "date":"2026-04-15",
     "transaction":"C William Contreras changed number to 42.",
     "players":[
       "William Contreras"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"LHP Kyle Harrison changed number to 42.",
+    "players":[
+      "Kyle Harrison"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"CF Blake Perkins changed number to 42.",
+    "players":[
+      "Blake Perkins"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"RHP Brandon Sproat changed number to 42.",
+    "players":[
+      "Brandon Sproat"
+    ]
+  },
+  {
+    "date":"2026-04-15",
+    "transaction":"RHP Trevor Megill changed number to 42.",
+    "players":[
+      "Trevor Megill"
     ]
   },
   {
@@ -524,16 +552,16 @@
   },
   {
     "date":"2026-04-09",
-    "transaction":"Brewers signed free agent RHP Reiss Knehr to a minor league contract.",
+    "transaction":"Brewers optioned LHP Shane Drohan to Nashville Sounds.",
     "players":[
-      "Reiss Knehr"
+      "Shane Drohan"
     ]
   },
   {
     "date":"2026-04-09",
-    "transaction":"Brewers optioned LHP Shane Drohan to Nashville Sounds.",
+    "transaction":"Brewers signed free agent RHP Reiss Knehr to a minor league contract.",
     "players":[
-      "Shane Drohan"
+      "Reiss Knehr"
     ]
   },
   {
@@ -566,23 +594,16 @@
   },
   {
     "date":"2026-04-04",
-    "transaction":"Colorado Rockies claimed LHP Sammy Peralta off waivers from Brewers.",
-    "players":[
-      "Sammy Peralta"
-    ]
-  },
-  {
-    "date":"2026-04-04",
     "transaction":"Brewers recalled RHP Logan Henderson from Nashville Sounds.",
     "players":[
       "Logan Henderson"
     ]
   },
   {
-    "date":"2026-04-03",
-    "transaction":"Brewers designated RF Steward Berroa for assignment.",
+    "date":"2026-04-04",
+    "transaction":"Colorado Rockies claimed LHP Sammy Peralta off waivers from Brewers.",
     "players":[
-      "Steward Berroa"
+      "Sammy Peralta"
     ]
   },
   {
@@ -590,6 +611,13 @@
     "transaction":"Brewers selected the contract of SS Cooper Pratt from Nashville Sounds.",
     "players":[
       "Cooper Pratt"
+    ]
+  },
+  {
+    "date":"2026-04-03",
+    "transaction":"Brewers designated RF Steward Berroa for assignment.",
+    "players":[
+      "Steward Berroa"
     ]
   },
   {
@@ -604,6 +632,13 @@
     "transaction":"Brewers optioned RF Steward Berroa to Nashville Sounds.",
     "players":[
       "Steward Berroa"
+    ]
+  },
+  {
+    "date":"2026-03-31",
+    "transaction":"Brewers activated RF Luis Matos.",
+    "players":[
+      "Luis Matos"
     ]
   },
   {
@@ -628,13 +663,6 @@
     ]
   },
   {
-    "date":"2026-03-31",
-    "transaction":"Brewers activated RF Luis Matos.",
-    "players":[
-      "Luis Matos"
-    ]
-  },
-  {
     "date":"2026-03-30",
     "transaction":"Brewers designated LHP Sammy Peralta for assignment.",
     "players":[
@@ -650,16 +678,16 @@
   },
   {
     "date":"2026-03-28",
-    "transaction":"Brewers recalled C Jeferson Quero from Nashville Sounds.",
+    "transaction":"Brewers placed 1B Andrew Vaughn on the 10-day injured list retroactive to March 27, 2026. Left hamate fracture.",
     "players":[
-      "Jeferson Quero"
+      "Andrew Vaughn"
     ]
   },
   {
     "date":"2026-03-28",
-    "transaction":"Brewers placed 1B Andrew Vaughn on the 10-day injured list retroactive to March 27, 2026. Left hamate fracture.",
+    "transaction":"Brewers recalled C Jeferson Quero from Nashville Sounds.",
     "players":[
-      "Andrew Vaughn"
+      "Jeferson Quero"
     ]
   },
   {
@@ -667,34 +695,6 @@
     "transaction":"Los Angeles Dodgers traded RF Damon Keith to Brewers.",
     "players":[
       "Damon Keith"
-    ]
-  },
-  {
-    "date":"2026-03-26",
-    "transaction":"Brewers placed CF Jackson Chourio on the 10-day injured list retroactive to March 25, 2026. Left hand fracture.",
-    "players":[
-      "Jackson Chourio"
-    ]
-  },
-  {
-    "date":"2026-03-26",
-    "transaction":"Brewers recalled CF Blake Perkins from Nashville Sounds.",
-    "players":[
-      "Blake Perkins"
-    ]
-  },
-  {
-    "date":"2026-03-25",
-    "transaction":"Brewers placed RF Steward Berroa on the 10-day injured list retroactive to March 22, 2026. Right shoulder strain.",
-    "players":[
-      "Steward Berroa"
-    ]
-  },
-  {
-    "date":"2026-03-25",
-    "transaction":"Brewers placed LHP Rob Zastryzny on the 15-day injured list retroactive to March 22, 2026. Left shoulder strain.",
-    "players":[
-      "Rob Zastryzny"
     ]
   }
 ]
