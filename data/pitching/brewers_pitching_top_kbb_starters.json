@@ -2,7 +2,13 @@
     {
         "name":"Jacob Misiorowski",
         "era+":125.0,
-        "fip":3.24,
+        "fip":3.26,
         "so_bb":3.92
+    },
+    {
+        "name":"Brandon Woodruff",
+        "era+":115.0,
+        "fip":4.0,
+        "so_bb":3.57
     }
 ]
