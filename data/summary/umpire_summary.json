@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.31075110456554,
-        "incorrect_strikes_pct": 8.68924889543446,
-        "total_called_strikes": 679,
-        "bad_calls_count": 59
+        "correct_strikes_pct": 91.57303370786516,
+        "incorrect_strikes_pct": 8.426966292134836,
+        "total_called_strikes": 712,
+        "bad_calls_count": 60
     },
     "last_game_summary": {
-        "date": "May 1, 2026",
-        "correct_strikes_pct": 88.88888888888889,
-        "incorrect_strikes_pct": 11.111111111111114,
-        "total_called_strikes": 9,
+        "date": "May 2, 2026",
+        "correct_strikes_pct": 96.96969696969697,
+        "incorrect_strikes_pct": 3.030303030303031,
+        "total_called_strikes": 33,
         "bad_calls_count": 1,
-        "home_plate_umpire": "Junior Valentine"
+        "home_plate_umpire": "Jordan Baker"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 94.96699669966998,
-        "incorrect_balls_pct": 5.033003300330023,
-        "total_called_balls": 1212,
-        "bad_calls_count": 61
+        "correct_balls_pct": 94.90039840637449,
+        "incorrect_balls_pct": 5.099601593625508,
+        "total_called_balls": 1255,
+        "bad_calls_count": 64
     },
     "pitching_last_game_summary": {
-        "date": "May 1, 2026",
-        "correct_balls_pct": 100.0,
-        "incorrect_balls_pct": 0.0,
-        "total_called_balls": 12,
-        "bad_calls_count": 0
+        "date": "May 2, 2026",
+        "correct_balls_pct": 93.02325581395348,
+        "incorrect_balls_pct": 6.976744186046517,
+        "total_called_balls": 43,
+        "bad_calls_count": 3
     },
     "pitching_worst_calls_of_season": []
 }

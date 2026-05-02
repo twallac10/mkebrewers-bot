@@ -132,7 +132,7 @@
         "stat":"walks",
         "value":"116",
         "category":"pitching",
-        "context_value":"13th",
+        "context_value":"15th",
         "context_value_label":"League rank"
     },
     {
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"May 2, 2026, 10:21 AM CT",
+        "value":"May 2, 2026, 6:20 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(May 2)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>17-14<\/span> record in the 2026 regular season, a <span class='highlight'>55%<\/span> winning percentage.  The last game was a <span class='highlight'>6-1<\/span> away <span class='highlight'>win<\/span>. and the next game is Saturday at 3:05 p.m. CT at <span class='highlight'>Nationals Park<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(May 2)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>18-14<\/span> record in the 2026 regular season, a <span class='highlight'>56%<\/span> winning percentage.  The last game was a <span class='highlight'>4-1<\/span> away <span class='highlight'>win<\/span>. and the next game is Sunday at 12:35 p.m. CT at <span class='highlight'>Nationals Park<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
