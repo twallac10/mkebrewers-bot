@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.57303370786516,
-        "incorrect_strikes_pct": 8.426966292134836,
-        "total_called_strikes": 712,
-        "bad_calls_count": 60
+        "correct_strikes_pct": 91.5875169606513,
+        "incorrect_strikes_pct": 8.4124830393487,
+        "total_called_strikes": 737,
+        "bad_calls_count": 62
     },
     "last_game_summary": {
-        "date": "May 2, 2026",
-        "correct_strikes_pct": 96.96969696969697,
-        "incorrect_strikes_pct": 3.030303030303031,
-        "total_called_strikes": 33,
-        "bad_calls_count": 1,
-        "home_plate_umpire": "Jordan Baker"
+        "date": "May 3, 2026",
+        "correct_strikes_pct": 92.0,
+        "incorrect_strikes_pct": 8.0,
+        "total_called_strikes": 25,
+        "bad_calls_count": 2,
+        "home_plate_umpire": "Rob Drake"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 94.90039840637449,
-        "incorrect_balls_pct": 5.099601593625508,
-        "total_called_balls": 1255,
-        "bad_calls_count": 64
+        "correct_balls_pct": 94.94163424124513,
+        "incorrect_balls_pct": 5.058365758754874,
+        "total_called_balls": 1285,
+        "bad_calls_count": 65
     },
     "pitching_last_game_summary": {
-        "date": "May 2, 2026",
-        "correct_balls_pct": 93.02325581395348,
-        "incorrect_balls_pct": 6.976744186046517,
-        "total_called_balls": 43,
-        "bad_calls_count": 3
+        "date": "May 3, 2026",
+        "correct_balls_pct": 96.66666666666667,
+        "incorrect_balls_pct": 3.3333333333333286,
+        "total_called_balls": 30,
+        "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": []
 }
