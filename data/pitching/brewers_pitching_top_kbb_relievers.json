@@ -1,19 +1,19 @@
 [
     {
-        "name":"Jake Woodford",
-        "era+":98.0,
-        "fip":2.95,
-        "so_bb":5.5
-    },
-    {
         "name":"Abner Uribe",
-        "era+":116.0,
+        "era+":117.0,
         "fip":2.66,
         "so_bb":4.67
     },
     {
+        "name":"Jake Woodford",
+        "era+":103.0,
+        "fip":3.02,
+        "so_bb":4.0
+    },
+    {
         "name":"Aaron Ashby*",
-        "era+":163.0,
+        "era+":164.0,
         "fip":2.39,
         "so_bb":2.62
     },
@@ -25,7 +25,7 @@
     },
     {
         "name":"Grant Anderson",
-        "era+":127.0,
+        "era+":128.0,
         "fip":4.01,
         "so_bb":2.5
     }
