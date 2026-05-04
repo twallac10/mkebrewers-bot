@@ -378,6 +378,42 @@
     "slug":"brice-turang"
   },
   {
+    "player_id":"683734",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/683734\/headshot\/silo\/current",
+    "name":"Andrew Vaughn",
+    "player_url":"\/player\/683734",
+    "jersey":"28",
+    "position_group":"Infielders",
+    "bat_throw":"R\/R",
+    "height":"5' 10\"",
+    "weight":"215",
+    "dob":"04\/03\/1998",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"andrew-vaughn"
+  },
+  {
+    "player_id":"694192",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/694192\/headshot\/silo\/current",
+    "name":"Jackson Chourio",
+    "player_url":"\/player\/694192",
+    "jersey":"11",
+    "position_group":"Outfielders",
+    "bat_throw":"R\/R",
+    "height":"6' 1\"",
+    "weight":"199",
+    "dob":"03\/11\/2004",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"jackson-chourio"
+  },
+  {
     "player_id":"686217",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/686217\/headshot\/silo\/current",
     "name":"Sal Frelick",
@@ -394,24 +430,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"sal-frelick"
-  },
-  {
-    "player_id":"675659",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/675659\/headshot\/silo\/current",
-    "name":"Greg Jones",
-    "player_url":"\/player\/675659",
-    "jersey":"14",
-    "position_group":"Outfielders",
-    "bat_throw":"S\/R",
-    "height":"6' 0\"",
-    "weight":"189",
-    "dob":"03\/07\/1998",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"greg-jones"
   },
   {
     "player_id":"663604",
@@ -448,23 +466,5 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"garrett-mitchell"
-  },
-  {
-    "player_id":"663368",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/663368\/headshot\/silo\/current",
-    "name":"Blake Perkins",
-    "player_url":"\/player\/663368",
-    "jersey":"16",
-    "position_group":"Outfielders",
-    "bat_throw":"S\/R",
-    "height":"6' 0\"",
-    "weight":"185",
-    "dob":"09\/10\/1996",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"blake-perkins"
   }
 ]
