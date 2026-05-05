@@ -1,8 +1,8 @@
 [
     {
         "name":"Jacob Misiorowski",
-        "era+":147.0,
-        "fip":2.99,
+        "era+":146.0,
+        "fip":2.98,
         "so_bb":3.93
     },
     {
@@ -10,5 +10,11 @@
         "era+":116.0,
         "fip":4.01,
         "so_bb":3.57
+    },
+    {
+        "name":"Chad Patrick",
+        "era+":121.0,
+        "fip":4.23,
+        "so_bb":1.25
     }
 ]
