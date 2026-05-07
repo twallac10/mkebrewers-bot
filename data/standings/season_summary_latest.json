@@ -34,9 +34,9 @@
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":5,
+        "value":5.5,
         "category":"standings",
-        "context_value":"3rd",
+        "context_value":"4th",
         "context_value_label":"Division rank"
     },
     {
@@ -52,7 +52,7 @@
         "stat":"runs",
         "value":181,
         "category":"standings",
-        "context_value":"7th",
+        "context_value":"9th",
         "context_value_label":"League rank"
     },
     {
@@ -108,7 +108,7 @@
         "stat":"stolen_bases",
         "value":38,
         "category":"batting",
-        "context_value":"2nd",
+        "context_value":"3rd",
         "context_value_label":"League rank"
     },
     {
@@ -124,7 +124,7 @@
         "stat":"strikeouts",
         "value":"327",
         "category":"pitching",
-        "context_value":"9th",
+        "context_value":"10th",
         "context_value_label":"League rank"
     },
     {
@@ -132,7 +132,7 @@
         "stat":"walks",
         "value":"126",
         "category":"pitching",
-        "context_value":"17th",
+        "context_value":"18th",
         "context_value_label":"League rank"
     },
     {
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"May 7, 2026, 10:49 AM CT",
+        "value":"May 7, 2026, 6:23 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
