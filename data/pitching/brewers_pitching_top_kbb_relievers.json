@@ -1,32 +1,32 @@
 [
     {
         "name":"Abner Uribe",
-        "era+":117.0,
-        "fip":2.66,
+        "era+":105.0,
+        "fip":2.69,
         "so_bb":4.67
     },
     {
         "name":"Jake Woodford",
         "era+":96.0,
-        "fip":2.78,
+        "fip":2.77,
         "so_bb":4.67
     },
     {
-        "name":"Aaron Ashby*",
-        "era+":163.0,
-        "fip":2.38,
-        "so_bb":2.62
+        "name":"Trevor Megill",
+        "era+":68.0,
+        "fip":2.22,
+        "so_bb":3.0
     },
     {
-        "name":"Trevor Megill",
-        "era+":71.0,
-        "fip":2.48,
-        "so_bb":2.6
+        "name":"Aaron Ashby*",
+        "era+":178.0,
+        "fip":2.49,
+        "so_bb":2.5
     },
     {
         "name":"Grant Anderson",
-        "era+":133.0,
-        "fip":3.97,
+        "era+":132.0,
+        "fip":3.96,
         "so_bb":2.5
     }
 ]
