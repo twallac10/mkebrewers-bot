@@ -1,32 +1,32 @@
 [
     {
         "name":"Jacob Misiorowski",
-        "era+":169.0,
-        "fip":2.63,
+        "era+":167.0,
+        "fip":2.62,
         "so_bb":4.12
     },
     {
         "name":"Brandon Woodruff (15-day IL)",
         "era+":115.0,
-        "fip":4.0,
+        "fip":3.98,
         "so_bb":3.57
     },
     {
         "name":"Kyle Harrison*",
-        "era+":172.0,
-        "fip":3.28,
+        "era+":171.0,
+        "fip":3.26,
         "so_bb":3.15
     },
     {
         "name":"Brandon Sproat",
-        "era+":71.0,
-        "fip":6.0,
+        "era+":70.0,
+        "fip":5.98,
         "so_bb":1.67
     },
     {
         "name":"Chad Patrick",
-        "era+":132.0,
-        "fip":3.92,
+        "era+":131.0,
+        "fip":3.9,
         "so_bb":1.47
     }
 ]
