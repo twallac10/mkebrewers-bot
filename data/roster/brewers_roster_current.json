@@ -252,24 +252,6 @@
     "slug":"william-contreras"
   },
   {
-    "player_id":"596142",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/596142\/headshot\/silo\/current",
-    "name":"Gary Sánchez",
-    "player_url":"\/player\/596142",
-    "jersey":"99",
-    "position_group":"Catchers",
-    "bat_throw":"R\/R",
-    "height":"6' 2\"",
-    "weight":"251",
-    "dob":"12\/02\/1992",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"gary-sanchez"
-  },
-  {
     "player_id":"641343",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/641343\/headshot\/silo\/current",
     "name":"Jake Bauers",
@@ -286,24 +268,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"jake-bauers"
-  },
-  {
-    "player_id":"672012",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/672012\/headshot\/silo\/current",
-    "name":"Tyler Black",
-    "player_url":"\/player\/672012",
-    "jersey":"7",
-    "position_group":"Infielders",
-    "bat_throw":"L\/R",
-    "height":"6' 0\"",
-    "weight":"208",
-    "dob":"07\/26\/2000",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"tyler-black"
   },
   {
     "player_id":"666152",
@@ -466,5 +430,41 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"blake-perkins"
+  },
+  {
+    "player_id":"672012",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/672012\/headshot\/silo\/current",
+    "name":"Tyler Black",
+    "player_url":"\/player\/672012",
+    "jersey":"7",
+    "position_group":"Designated hitter",
+    "bat_throw":"L\/R",
+    "height":"6' 0\"",
+    "weight":"208",
+    "dob":"07\/26\/2000",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"tyler-black"
+  },
+  {
+    "player_id":"596142",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/596142\/headshot\/silo\/current",
+    "name":"Gary Sánchez",
+    "player_url":"\/player\/596142",
+    "jersey":"99",
+    "position_group":"Designated hitter",
+    "bat_throw":"R\/R",
+    "height":"6' 2\"",
+    "weight":"251",
+    "dob":"12\/02\/1992",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"gary-sanchez"
   }
 ]
