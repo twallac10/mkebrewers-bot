@@ -7,21 +7,21 @@
     },
     {
         "name":"Abner Uribe",
-        "era+":111.0,
-        "fip":2.77,
-        "so_bb":3.75
+        "era+":118.0,
+        "fip":2.86,
+        "so_bb":3.2
+    },
+    {
+        "name":"Trevor Megill",
+        "era+":70.0,
+        "fip":1.98,
+        "so_bb":3.17
     },
     {
         "name":"Aaron Ashby*",
         "era+":199.0,
         "fip":2.19,
         "so_bb":2.73
-    },
-    {
-        "name":"Trevor Megill",
-        "era+":72.0,
-        "fip":2.33,
-        "so_bb":2.67
     },
     {
         "name":"Grant Anderson",
