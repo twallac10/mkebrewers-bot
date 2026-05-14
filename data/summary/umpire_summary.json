@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.36363636363637,
-        "incorrect_strikes_pct": 8.636363636363626,
-        "total_called_strikes": 880,
-        "bad_calls_count": 76
+        "correct_strikes_pct": 91.29955947136564,
+        "incorrect_strikes_pct": 8.70044052863436,
+        "total_called_strikes": 908,
+        "bad_calls_count": 79
     },
     "last_game_summary": {
-        "date": "May 12, 2026",
-        "correct_strikes_pct": 100.0,
-        "incorrect_strikes_pct": 0.0,
-        "total_called_strikes": 22,
-        "bad_calls_count": 0,
-        "home_plate_umpire": "Ryan Additon"
+        "date": "May 13, 2026",
+        "correct_strikes_pct": 89.28571428571429,
+        "incorrect_strikes_pct": 10.714285714285708,
+        "total_called_strikes": 28,
+        "bad_calls_count": 3,
+        "home_plate_umpire": "Ryan Wills"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.12516469038208,
-        "incorrect_balls_pct": 4.8748353096179216,
-        "total_called_balls": 1518,
-        "bad_calls_count": 74
+        "correct_balls_pct": 95.10624597553124,
+        "incorrect_balls_pct": 4.8937540244687625,
+        "total_called_balls": 1553,
+        "bad_calls_count": 76
     },
     "pitching_last_game_summary": {
-        "date": "May 12, 2026",
-        "correct_balls_pct": 97.5609756097561,
-        "incorrect_balls_pct": 2.439024390243901,
-        "total_called_balls": 41,
-        "bad_calls_count": 1
+        "date": "May 13, 2026",
+        "correct_balls_pct": 94.28571428571428,
+        "incorrect_balls_pct": 5.714285714285722,
+        "total_called_balls": 35,
+        "bad_calls_count": 2
     },
     "pitching_worst_calls_of_season": []
 }
