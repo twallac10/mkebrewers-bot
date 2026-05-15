@@ -1,22 +1,22 @@
 stat_label,stat,value,category,context_value,context_value_label
-Wins,wins,23,standings,19,This point last season
+Wins,wins,24,standings,20,This point last season
 Losses,losses,17,standings,21,This point last season
-Record,record,23-17,standings,19-21,This point last season
-Win percentage,win_pct,56%,standings,48%,This point last season
-Games up/back,games_up_back,2,standings,2nd,Division rank
-Avg. home attendance,mean_attendance,"29,099",standings,25,Home games this season
-Runs,runs,202,standings,8th,League rank
-Runs against,runs_against,148,standings,179,This point last season
-Run differential,run_differential,54,standings,1,This point last season
-Batting average,batting_average,.243,batting,N/A,Last decade average
+Record,record,24-17,standings,20-21,This point last season
+Win percentage,win_pct,59%,standings,49%,This point last season
+Games up/back,games_up_back,2.5,standings,2nd,Division rank
+Avg. home attendance,mean_attendance,"29,462",standings,25,Home games this season
+Runs,runs,209,standings,8th,League rank
+Runs against,runs_against,149,standings,181,This point last season
+Run differential,run_differential,60,standings,3,This point last season
+Batting average,batting_average,.245,batting,N/A,Last decade average
 Home runs,home_runs,27,batting,30th,League rank
-Home runs/game,home_runs_game,0.68,batting,N/A,Last decade average
-On-base percentage,on_base_pct,.334,batting,N/A,Last decade average
-Stolen bases,stolen_bases,41,batting,5th,League rank
-Stolen bases/game,stolen_bases_game,1.02,batting,N/A,Rate all last season
-Strikeouts,strikeouts,392,pitching,4th,League rank
-Walks,walks,144,pitching,18th,League rank
-ERA,era,3.43,pitching,3rd,League rank
-Last updated,update_time,"May 14, 2026, 6:23 PM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(May 14)</span> — The Brewers have compiled a <span class='highlight'>24-17</span> record in the 2026 regular season, a <span class='highlight'>58%</span> winning percentage.  The last game was a <span class='highlight'>7-1</span> home <span class='highlight'>win</span>. and the next game is Friday at 6:10 p.m. CT at <span class='highlight'>Target Field</span>.",summary,,
+Home runs/game,home_runs_game,0.66,batting,N/A,Last decade average
+On-base percentage,on_base_pct,.336,batting,N/A,Last decade average
+Stolen bases,stolen_bases,43,batting,5th,League rank
+Stolen bases/game,stolen_bases_game,1.05,batting,N/A,Rate all last season
+Strikeouts,strikeouts,402,pitching,4th,League rank
+Walks,walks,147,pitching,18th,League rank
+ERA,era,3.35,pitching,3rd,League rank
+Last updated,update_time,"May 15, 2026, 4:12 AM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(May 15)</span> — The Brewers have compiled a <span class='highlight'>24-17</span> record in the 2026 regular season, a <span class='highlight'>58%</span> winning percentage.  The last game was a <span class='highlight'>7-1</span> home <span class='highlight'>win</span>. and the next game is Friday at 6:10 p.m. CT at <span class='highlight'>Target Field</span>.",summary,,
 Last game result,last_game_result,win,summary,,
