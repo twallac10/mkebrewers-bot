@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.22055674518201,
-        "incorrect_strikes_pct": 8.779443254817991,
-        "total_called_strikes": 934,
+        "correct_strikes_pct": 91.2486659551761,
+        "incorrect_strikes_pct": 8.751334044823906,
+        "total_called_strikes": 937,
         "bad_calls_count": 82
     },
     "last_game_summary": {
-        "date": "May 14, 2026",
-        "correct_strikes_pct": 88.46153846153845,
-        "incorrect_strikes_pct": 11.538461538461547,
-        "total_called_strikes": 26,
-        "bad_calls_count": 3,
-        "home_plate_umpire": "Lance Barksdale"
+        "date": "May 15, 2026",
+        "correct_strikes_pct": 100.0,
+        "incorrect_strikes_pct": 0.0,
+        "total_called_strikes": 3,
+        "bad_calls_count": 0,
+        "home_plate_umpire": "Rob Drake"
     },
     "worst_calls_of_season": [
         {
