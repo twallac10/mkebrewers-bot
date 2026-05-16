@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.2486659551761,
-        "incorrect_strikes_pct": 8.751334044823906,
-        "total_called_strikes": 937,
-        "bad_calls_count": 82
+        "correct_strikes_pct": 91.07332624867162,
+        "incorrect_strikes_pct": 8.92667375132838,
+        "total_called_strikes": 941,
+        "bad_calls_count": 84
     },
     "last_game_summary": {
-        "date": "May 15, 2026",
-        "correct_strikes_pct": 100.0,
-        "incorrect_strikes_pct": 0.0,
-        "total_called_strikes": 3,
-        "bad_calls_count": 0,
-        "home_plate_umpire": "Rob Drake"
+        "date": "May 16, 2026",
+        "correct_strikes_pct": 50.0,
+        "incorrect_strikes_pct": 50.0,
+        "total_called_strikes": 4,
+        "bad_calls_count": 2,
+        "home_plate_umpire": "Stu Scheurwater"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.13677811550151,
-        "incorrect_balls_pct": 4.863221884498486,
-        "total_called_balls": 1645,
+        "correct_balls_pct": 95.14563106796116,
+        "incorrect_balls_pct": 4.854368932038838,
+        "total_called_balls": 1648,
         "bad_calls_count": 80
     },
     "pitching_last_game_summary": {
-        "date": "May 15, 2026",
-        "correct_balls_pct": 96.96969696969697,
-        "incorrect_balls_pct": 3.030303030303031,
-        "total_called_balls": 33,
-        "bad_calls_count": 1
+        "date": "May 16, 2026",
+        "correct_balls_pct": 100.0,
+        "incorrect_balls_pct": 0.0,
+        "total_called_balls": 3,
+        "bad_calls_count": 0
     },
     "pitching_worst_calls_of_season": []
 }
