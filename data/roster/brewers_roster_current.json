@@ -54,6 +54,24 @@
     "slug":"shane-drohan"
   },
   {
+    "player_id":"688107",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/688107\/headshot\/silo\/current",
+    "name":"Robert Gasser",
+    "player_url":"\/player\/688107",
+    "jersey":"54",
+    "position_group":"Pitchers",
+    "bat_throw":"L\/L",
+    "height":"6' 0\"",
+    "weight":"197",
+    "dob":"05\/31\/1999",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"robert-gasser"
+  },
+  {
     "player_id":"669084",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/669084\/headshot\/silo\/current",
     "name":"DL Hall",
@@ -178,24 +196,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"brandon-sproat"
-  },
-  {
-    "player_id":"657265",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/657265\/headshot\/silo\/current",
-    "name":"Peter Strzelecki",
-    "player_url":"\/player\/657265",
-    "jersey":"38",
-    "position_group":"Pitchers",
-    "bat_throw":"R\/R",
-    "height":"6' 2\"",
-    "weight":"210",
-    "dob":"10\/24\/1994",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"peter-strzelecki"
   },
   {
     "player_id":"682842",
