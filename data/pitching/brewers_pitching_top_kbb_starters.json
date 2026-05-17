@@ -7,7 +7,7 @@
     },
     {
         "name":"Kyle Harrison*",
-        "era+":196.0,
+        "era+":195.0,
         "fip":2.86,
         "so_bb":3.69
     },
@@ -20,13 +20,7 @@
     {
         "name":"Brandon Sproat",
         "era+":71.0,
-        "fip":5.74,
+        "fip":5.73,
         "so_bb":1.8
-    },
-    {
-        "name":"Chad Patrick",
-        "era+":134.0,
-        "fip":3.8,
-        "so_bb":1.53
     }
 ]
