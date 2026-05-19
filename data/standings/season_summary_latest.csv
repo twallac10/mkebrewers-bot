@@ -1,22 +1,22 @@
 stat_label,stat,value,category,context_value,context_value_label
-Wins,wins,26,standings,21,This point last season
-Losses,losses,18,standings,23,This point last season
-Record,record,26-18,standings,21-23,This point last season
-Win percentage,win_pct,59%,standings,48%,This point last season
+Wins,wins,27,standings,21,This point last season
+Losses,losses,18,standings,24,This point last season
+Record,record,27-18,standings,21-24,This point last season
+Win percentage,win_pct,60%,standings,47%,This point last season
 Games up/back,games_up_back,0.5,standings,2nd,Division rank
-Avg. home attendance,mean_attendance,"29,363",standings,27,Home games this season
-Runs,runs,218,standings,7th,League rank
-Runs against,runs_against,157,standings,193,This point last season
-Run differential,run_differential,61,standings,0,This point last season
-Batting average,batting_average,.244,batting,N/A,Last decade average
-Home runs,home_runs,30,batting,30th,League rank
-Home runs/game,home_runs_game,0.68,batting,N/A,Last decade average
-On-base percentage,on_base_pct,.333,batting,N/A,Last decade average
-Stolen bases,stolen_bases,49,batting,4th,League rank
+Avg. home attendance,mean_attendance,"29,502",standings,26,Home games this season
+Runs,runs,227,standings,7th,League rank
+Runs against,runs_against,160,standings,196,This point last season
+Run differential,run_differential,67,standings,-3,This point last season
+Batting average,batting_average,.246,batting,N/A,Last decade average
+Home runs,home_runs,32,batting,30th,League rank
+Home runs/game,home_runs_game,0.71,batting,N/A,Last decade average
+On-base percentage,on_base_pct,.335,batting,N/A,Last decade average
+Stolen bases,stolen_bases,50,batting,4th,League rank
 Stolen bases/game,stolen_bases_game,1.11,batting,N/A,Rate all last season
-Strikeouts,strikeouts,426,pitching,4th,League rank
-Walks,walks,152,pitching,20th,League rank
-ERA,era,3.29,pitching,3rd,League rank
-Last updated,update_time,"May 19, 2026, 8:17 AM CT",summary,,
+Strikeouts,strikeouts,436,pitching,4th,League rank
+Walks,walks,155,pitching,20th,League rank
+ERA,era,3.28,pitching,3rd,League rank
+Last updated,update_time,"May 19, 2026, 11:10 AM CT",summary,,
 Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(May 19)</span> — The Brewers have compiled a <span class='highlight'>27-18</span> record in the 2026 regular season, a <span class='highlight'>60%</span> winning percentage.  The last game was a <span class='highlight'>9-3</span> away <span class='highlight'>win</span>. and the next game is Tuesday at 6:40 p.m. CT at <span class='highlight'>Wrigley Field</span>.",summary,,
 Last game result,last_game_result,win,summary,,
