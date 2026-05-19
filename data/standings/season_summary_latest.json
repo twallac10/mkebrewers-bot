@@ -34,7 +34,7 @@
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":1.5,
+        "value":0.5,
         "category":"standings",
         "context_value":"2nd",
         "context_value_label":"Division rank"
@@ -52,7 +52,7 @@
         "stat":"runs",
         "value":218,
         "category":"standings",
-        "context_value":"8th",
+        "context_value":"7th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"3.29",
         "category":"pitching",
-        "context_value":"4th",
+        "context_value":"3rd",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"May 18, 2026, 6:28 PM CT",
+        "value":"May 19, 2026, 4:19 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(May 18)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>26-18<\/span> record in the 2026 regular season, a <span class='highlight'>59%<\/span> winning percentage.  The last game was a <span class='highlight'>4-5<\/span> away <span class='highlight'>loss<\/span>. and the next game is Tuesday at 6:40 p.m. CT at <span class='highlight'>Wrigley Field<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(May 19)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>27-18<\/span> record in the 2026 regular season, a <span class='highlight'>60%<\/span> winning percentage.  The last game was a <span class='highlight'>9-3<\/span> away <span class='highlight'>win<\/span>. and the next game is Tuesday at 6:40 p.m. CT at <span class='highlight'>Wrigley Field<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -162,7 +162,7 @@
     {
         "stat_label":"Last game result",
         "stat":"last_game_result",
-        "value":"loss",
+        "value":"win",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
