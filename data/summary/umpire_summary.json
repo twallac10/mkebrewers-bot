@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.38099902056807,
-        "incorrect_strikes_pct": 8.61900097943193,
-        "total_called_strikes": 1021,
-        "bad_calls_count": 88
+        "correct_strikes_pct": 91.46110056925995,
+        "incorrect_strikes_pct": 8.538899430740045,
+        "total_called_strikes": 1054,
+        "bad_calls_count": 90
     },
     "last_game_summary": {
-        "date": "May 19, 2026",
-        "correct_strikes_pct": 100.0,
-        "incorrect_strikes_pct": 0.0,
-        "total_called_strikes": 23,
-        "bad_calls_count": 0,
-        "home_plate_umpire": "Jansen Visconti"
+        "date": "May 20, 2026",
+        "correct_strikes_pct": 93.93939393939394,
+        "incorrect_strikes_pct": 6.060606060606062,
+        "total_called_strikes": 33,
+        "bad_calls_count": 2,
+        "home_plate_umpire": "Alex Tosi"
     },
     "worst_calls_of_season": [
         {
@@ -56,16 +56,16 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.35014005602241,
-        "incorrect_balls_pct": 4.649859943977589,
-        "total_called_balls": 1785,
-        "bad_calls_count": 83
+        "correct_balls_pct": 95.39473684210526,
+        "incorrect_balls_pct": 4.60526315789474,
+        "total_called_balls": 1824,
+        "bad_calls_count": 84
     },
     "pitching_last_game_summary": {
-        "date": "May 19, 2026",
-        "correct_balls_pct": 97.72727272727273,
-        "incorrect_balls_pct": 2.2727272727272663,
-        "total_called_balls": 44,
+        "date": "May 20, 2026",
+        "correct_balls_pct": 97.43589743589743,
+        "incorrect_balls_pct": 2.564102564102569,
+        "total_called_balls": 39,
         "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": []
