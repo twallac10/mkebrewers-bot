@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.3968547641073,
-        "incorrect_strikes_pct": 8.603145235892697,
-        "total_called_strikes": 1081,
-        "bad_calls_count": 93
+        "correct_strikes_pct": 91.43372407574391,
+        "incorrect_strikes_pct": 8.56627592425609,
+        "total_called_strikes": 1109,
+        "bad_calls_count": 95
     },
     "last_game_summary": {
-        "date": "May 22, 2026",
-        "correct_strikes_pct": 88.88888888888889,
-        "incorrect_strikes_pct": 11.111111111111114,
-        "total_called_strikes": 27,
-        "bad_calls_count": 3,
-        "home_plate_umpire": "Nick Mahrley"
+        "date": "May 23, 2026",
+        "correct_strikes_pct": 92.85714285714286,
+        "incorrect_strikes_pct": 7.142857142857139,
+        "total_called_strikes": 28,
+        "bad_calls_count": 2,
+        "home_plate_umpire": "Tripp Gibson"
     },
     "worst_calls_of_season": [
         {
