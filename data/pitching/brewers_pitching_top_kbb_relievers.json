@@ -2,31 +2,31 @@
     {
         "name":"Coleman Crow (40-man)",
         "era+":160.0,
-        "fip":2.31,
+        "fip":2.3,
         "so_bb":7.0
     },
     {
         "name":"Trevor Megill",
         "era+":78.0,
-        "fip":1.73,
+        "fip":1.72,
         "so_bb":3.67
     },
     {
         "name":"Shane Drohan*",
         "era+":144.0,
-        "fip":2.41,
+        "fip":2.4,
         "so_bb":3.38
+    },
+    {
+        "name":"Aaron Ashby*",
+        "era+":186.0,
+        "fip":2.25,
+        "so_bb":2.76
     },
     {
         "name":"Abner Uribe",
         "era+":93.0,
-        "fip":3.57,
-        "so_bb":2.71
-    },
-    {
-        "name":"Aaron Ashby*",
-        "era+":157.0,
-        "fip":2.28,
+        "fip":3.56,
         "so_bb":2.71
     }
 ]
