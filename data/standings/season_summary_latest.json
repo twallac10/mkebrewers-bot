@@ -34,7 +34,7 @@
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":3.5,
+        "value":4.5,
         "category":"standings",
         "context_value":"1st",
         "context_value_label":"Division rank"
@@ -132,7 +132,7 @@
         "stat":"walks",
         "value":"184",
         "category":"pitching",
-        "context_value":"20th",
+        "context_value":"19th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"3.19",
         "category":"pitching",
-        "context_value":"3rd",
+        "context_value":"2nd",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"May 27, 2026, 11:21 AM CT",
+        "value":"May 27, 2026, 6:32 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(May 27)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>32-20<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>6-0<\/span> home <span class='highlight'>win<\/span>. and the next game is Wednesday at 12:40 p.m. CT at <span class='highlight'>American Family Field<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(May 27)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>33-20<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>2-1<\/span> home <span class='highlight'>win<\/span>. and the next game is Friday at 7:10 p.m. CT at <span class='highlight'>Daikin Park<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""

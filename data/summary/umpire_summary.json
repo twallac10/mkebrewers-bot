@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.76470588235294,
-        "incorrect_strikes_pct": 8.235294117647058,
-        "total_called_strikes": 1190,
-        "bad_calls_count": 98
+        "correct_strikes_pct": 91.61873459326212,
+        "incorrect_strikes_pct": 8.381265406737882,
+        "total_called_strikes": 1217,
+        "bad_calls_count": 102
     },
     "last_game_summary": {
-        "date": "May 26, 2026",
-        "correct_strikes_pct": 100.0,
-        "incorrect_strikes_pct": 0.0,
+        "date": "May 27, 2026",
+        "correct_strikes_pct": 85.18518518518519,
+        "incorrect_strikes_pct": 14.81481481481481,
         "total_called_strikes": 27,
-        "bad_calls_count": 0,
-        "home_plate_umpire": "Adam Hamari"
+        "bad_calls_count": 4,
+        "home_plate_umpire": "Todd Tichenor"
     },
     "worst_calls_of_season": [
         {
@@ -45,28 +45,28 @@
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=2cdc2e40-9539-3b9b-8fa8-25dfbb822ea1"
         },
         {
-            "distance_inches": 2.4982991997,
-            "batter": "Sal Frelick",
-            "pitcher": "Ryne Stanek",
-            "pitch_type": "4-Seam Fastball",
-            "velocity_mph": 97.5,
-            "date": "2026-05-04",
-            "date_formatted": "May 4, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=68bfd3d1-021e-3aa6-8bc6-f9458f1656a7"
+            "distance_inches": 3.0611328019,
+            "batter": "Brice Turang",
+            "pitcher": "Dustin May",
+            "pitch_type": "Cutter",
+            "velocity_mph": 92.5,
+            "date": "2026-05-27",
+            "date_formatted": "May 27, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=6e440aff-b3ba-3c62-ab8f-f332110fc9bb"
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.51282051282051,
-        "incorrect_balls_pct": 4.487179487179489,
-        "total_called_balls": 2028,
-        "bad_calls_count": 91
+        "correct_balls_pct": 95.49854791868344,
+        "incorrect_balls_pct": 4.5014520813165575,
+        "total_called_balls": 2066,
+        "bad_calls_count": 93
     },
     "pitching_last_game_summary": {
-        "date": "May 26, 2026",
-        "correct_balls_pct": 100.0,
-        "incorrect_balls_pct": 0.0,
-        "total_called_balls": 42,
-        "bad_calls_count": 0
+        "date": "May 27, 2026",
+        "correct_balls_pct": 94.73684210526315,
+        "incorrect_balls_pct": 5.26315789473685,
+        "total_called_balls": 38,
+        "bad_calls_count": 2
     },
     "pitching_worst_calls_of_season": []
 }

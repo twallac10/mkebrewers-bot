@@ -3,7 +3,7 @@ Wins,wins,32,standings,25,This point last season
 Losses,losses,20,standings,27,This point last season
 Record,record,32-20,standings,25-27,This point last season
 Win percentage,win_pct,62%,standings,48%,This point last season
-Games up/back,games_up_back,3.5,standings,1st,Division rank
+Games up/back,games_up_back,4.5,standings,1st,Division rank
 Avg. home attendance,mean_attendance,"29,802",standings,33,Home games this season
 Runs,runs,257,standings,6th,League rank
 Runs against,runs_against,180,standings,230,This point last season
@@ -15,8 +15,8 @@ On-base percentage,on_base_pct,.335,batting,N/A,Last decade average
 Stolen bases,stolen_bases,57,batting,2nd,League rank
 Stolen bases/game,stolen_bases_game,1.1,batting,N/A,Rate all last season
 Strikeouts,strikeouts,506,pitching,4th,League rank
-Walks,walks,184,pitching,20th,League rank
-ERA,era,3.19,pitching,3rd,League rank
-Last updated,update_time,"May 27, 2026, 11:21 AM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(May 27)</span> — The Brewers have compiled a <span class='highlight'>32-20</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>6-0</span> home <span class='highlight'>win</span>. and the next game is Wednesday at 12:40 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
+Walks,walks,184,pitching,19th,League rank
+ERA,era,3.19,pitching,2nd,League rank
+Last updated,update_time,"May 27, 2026, 6:32 PM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(May 27)</span> — The Brewers have compiled a <span class='highlight'>33-20</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>2-1</span> home <span class='highlight'>win</span>. and the next game is Friday at 7:10 p.m. CT at <span class='highlight'>Daikin Park</span>.",summary,,
 Last game result,last_game_result,win,summary,,
