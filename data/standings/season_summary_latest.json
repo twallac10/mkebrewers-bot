@@ -2,33 +2,33 @@
     {
         "stat_label":"Wins",
         "stat":"wins",
-        "value":32,
+        "value":16,
         "category":"standings",
-        "context_value":25,
+        "context_value":8,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Losses",
         "stat":"losses",
-        "value":20,
+        "value":10,
         "category":"standings",
-        "context_value":27,
+        "context_value":6,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Record",
         "stat":"record",
-        "value":"32-20",
+        "value":"16-10",
         "category":"standings",
-        "context_value":"25-27",
+        "context_value":"8-6",
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Win percentage",
         "stat":"win_pct",
-        "value":"62%",
+        "value":"113%",
         "category":"standings",
-        "context_value":"48%",
+        "context_value":"56%",
         "context_value_label":"This point last season"
     },
     {
@@ -42,15 +42,15 @@
     {
         "stat_label":"Avg. home attendance",
         "stat":"mean_attendance",
-        "value":"29,802",
+        "value":"32,010",
         "category":"standings",
-        "context_value":33,
+        "context_value":29,
         "context_value_label":"Home games this season"
     },
     {
         "stat_label":"Runs",
         "stat":"runs",
-        "value":257,
+        "value":243,
         "category":"standings",
         "context_value":"7th",
         "context_value_label":"League rank"
@@ -58,23 +58,23 @@
     {
         "stat_label":"Runs against",
         "stat":"runs_against",
-        "value":180,
+        "value":169,
         "category":"standings",
-        "context_value":230,
+        "context_value":74,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Run differential",
         "stat":"run_differential",
-        "value":77,
+        "value":74,
         "category":"standings",
-        "context_value":-5,
+        "context_value":1,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Batting average",
         "stat":"batting_average",
-        "value":".249",
+        "value":".246",
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Last decade average"
@@ -90,7 +90,7 @@
     {
         "stat_label":"Home runs\/game",
         "stat":"home_runs_game",
-        "value":0.71,
+        "value":0.7,
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Last decade average"
@@ -98,7 +98,7 @@
     {
         "stat_label":"On-base percentage",
         "stat":"on_base_pct",
-        "value":".335",
+        "value":".332",
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Last decade average"
@@ -114,7 +114,7 @@
     {
         "stat_label":"Stolen bases\/game",
         "stat":"stolen_bases_game",
-        "value":1.1,
+        "value":4.07,
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Rate all last season"
@@ -122,7 +122,7 @@
     {
         "stat_label":"Strikeouts",
         "stat":"strikeouts",
-        "value":"506",
+        "value":"514",
         "category":"pitching",
         "context_value":"4th",
         "context_value_label":"League rank"
@@ -130,7 +130,7 @@
     {
         "stat_label":"Walks",
         "stat":"walks",
-        "value":"184",
+        "value":"186",
         "category":"pitching",
         "context_value":"20th",
         "context_value_label":"League rank"
@@ -138,7 +138,7 @@
     {
         "stat_label":"ERA",
         "stat":"era",
-        "value":"3.19",
+        "value":"3.14",
         "category":"pitching",
         "context_value":"3rd",
         "context_value_label":"League rank"
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"May 28, 2026, 8:25 AM CT",
+        "value":"May 28, 2026, 11:30 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
