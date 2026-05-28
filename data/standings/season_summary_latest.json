@@ -2,33 +2,33 @@
     {
         "stat_label":"Wins",
         "stat":"wins",
-        "value":16,
+        "value":33,
         "category":"standings",
-        "context_value":8,
+        "context_value":25,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Losses",
         "stat":"losses",
-        "value":10,
+        "value":20,
         "category":"standings",
-        "context_value":6,
+        "context_value":28,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Record",
         "stat":"record",
-        "value":"16-10",
+        "value":"33-20",
         "category":"standings",
-        "context_value":"8-6",
+        "context_value":"25-28",
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Win percentage",
         "stat":"win_pct",
-        "value":"113%",
+        "value":"62%",
         "category":"standings",
-        "context_value":"56%",
+        "context_value":"47%",
         "context_value_label":"This point last season"
     },
     {
@@ -42,33 +42,33 @@
     {
         "stat_label":"Avg. home attendance",
         "stat":"mean_attendance",
-        "value":"32,010",
+        "value":"31,956",
         "category":"standings",
-        "context_value":29,
+        "context_value":30,
         "context_value_label":"Home games this season"
     },
     {
         "stat_label":"Runs",
         "stat":"runs",
-        "value":243,
+        "value":245,
         "category":"standings",
-        "context_value":"7th",
+        "context_value":"8th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Runs against",
         "stat":"runs_against",
-        "value":169,
+        "value":170,
         "category":"standings",
-        "context_value":74,
+        "context_value":232,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Run differential",
         "stat":"run_differential",
-        "value":74,
+        "value":75,
         "category":"standings",
-        "context_value":1,
+        "context_value":-6,
         "context_value_label":"This point last season"
     },
     {
@@ -114,7 +114,7 @@
     {
         "stat_label":"Stolen bases\/game",
         "stat":"stolen_bases_game",
-        "value":4.07,
+        "value":1.08,
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Rate all last season"
@@ -124,7 +124,7 @@
         "stat":"strikeouts",
         "value":"514",
         "category":"pitching",
-        "context_value":"4th",
+        "context_value":"5th",
         "context_value_label":"League rank"
     },
     {
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"May 28, 2026, 11:30 AM CT",
+        "value":"May 28, 2026, 6:33 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
