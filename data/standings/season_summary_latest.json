@@ -52,7 +52,7 @@
         "stat":"runs",
         "value":245,
         "category":"standings",
-        "context_value":"8th",
+        "context_value":"9th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"3.14",
         "category":"pitching",
-        "context_value":"3rd",
+        "context_value":"4th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"May 29, 2026, 11:21 AM CT",
+        "value":"May 29, 2026, 6:34 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
