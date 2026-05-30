@@ -1,32 +1,32 @@
 [
     {
-        "name":"Coleman Crow",
-        "era+":158.0,
-        "fip":2.29,
-        "so_bb":7.0
-    },
-    {
         "name":"Trevor Megill",
-        "era+":86.0,
-        "fip":1.75,
-        "so_bb":3.83
+        "era+":91.0,
+        "fip":1.61,
+        "so_bb":4.17
     },
     {
         "name":"Shane Drohan*",
-        "era+":153.0,
+        "era+":154.0,
         "fip":2.37,
         "so_bb":3.5
     },
     {
         "name":"Aaron Ashby*",
-        "era+":196.0,
-        "fip":2.27,
-        "so_bb":2.72
+        "era+":202.0,
+        "fip":2.17,
+        "so_bb":2.83
+    },
+    {
+        "name":"Coleman Crow",
+        "era+":131.0,
+        "fip":3.69,
+        "so_bb":2.67
     },
     {
         "name":"Abner Uribe",
-        "era+":97.0,
-        "fip":3.48,
-        "so_bb":2.63
+        "era+":102.0,
+        "fip":3.51,
+        "so_bb":2.44
     }
 ]
