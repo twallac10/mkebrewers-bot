@@ -34,7 +34,7 @@
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":4.5,
+        "value":4,
         "category":"standings",
         "context_value":"1st",
         "context_value_label":"Division rank"
@@ -52,7 +52,7 @@
         "stat":"runs",
         "value":250,
         "category":"standings",
-        "context_value":"8th",
+        "context_value":"10th",
         "context_value_label":"League rank"
     },
     {
@@ -132,7 +132,7 @@
         "stat":"walks",
         "value":"191",
         "category":"pitching",
-        "context_value":"19th",
+        "context_value":"18th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"3.12",
         "category":"pitching",
-        "context_value":"2nd",
+        "context_value":"4th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"May 30, 2026, 10:31 AM CT",
+        "value":"May 30, 2026, 6:27 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(May 30)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>34-20<\/span> record in the 2026 regular season, a <span class='highlight'>63%<\/span> winning percentage.  The last game was a <span class='highlight'>5-4<\/span> away <span class='highlight'>win<\/span>. and the next game is Saturday at 3:10 p.m. CT at <span class='highlight'>Daikin Park<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(May 30)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>34-21<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>2-9<\/span> away <span class='highlight'>loss<\/span>. and the next game is Sunday at 1:10 p.m. CT at <span class='highlight'>Daikin Park<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -162,7 +162,7 @@
     {
         "stat_label":"Last game result",
         "stat":"last_game_result",
-        "value":"win",
+        "value":"loss",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
