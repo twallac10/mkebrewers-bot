@@ -162,24 +162,6 @@
     "slug":"chad-patrick"
   },
   {
-    "player_id":"692230",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/692230\/headshot\/silo\/current",
-    "name":"Carlos Rodriguez",
-    "player_url":"\/player\/692230",
-    "jersey":"27",
-    "position_group":"Pitchers",
-    "bat_throw":"R\/R",
-    "height":"5' 11\"",
-    "weight":"203",
-    "dob":"11\/27\/2001",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"carlos-rodriguez"
-  },
-  {
     "player_id":"687075",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/687075\/headshot\/silo\/current",
     "name":"Brandon Sproat",
@@ -232,6 +214,24 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"jake-woodford"
+  },
+  {
+    "player_id":"642239",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/642239\/headshot\/silo\/current",
+    "name":"Rob Zastryzny",
+    "player_url":"\/player\/642239",
+    "jersey":"58",
+    "position_group":"Pitchers",
+    "bat_throw":"R\/L",
+    "height":"6' 3\"",
+    "weight":"231",
+    "dob":"03\/26\/1992",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"rob-zastryzny"
   },
   {
     "player_id":"661388",
