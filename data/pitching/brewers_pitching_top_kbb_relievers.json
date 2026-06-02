@@ -1,32 +1,32 @@
 [
     {
         "name":"Trevor Megill",
-        "era+":96.0,
-        "fip":1.5,
+        "era+":97.0,
+        "fip":1.51,
         "so_bb":4.5
     },
     {
         "name":"Shane Drohan*",
-        "era+":155.0,
-        "fip":2.38,
-        "so_bb":3.5
+        "era+":144.0,
+        "fip":2.76,
+        "so_bb":3.3
     },
     {
         "name":"Aaron Ashby*",
-        "era+":204.0,
+        "era+":206.0,
         "fip":2.19,
         "so_bb":2.83
     },
     {
-        "name":"Coleman Crow",
-        "era+":132.0,
-        "fip":3.7,
-        "so_bb":2.67
+        "name":"Jake Woodford",
+        "era+":67.0,
+        "fip":3.53,
+        "so_bb":2.71
     },
     {
-        "name":"Abner Uribe",
-        "era+":108.0,
-        "fip":3.4,
-        "so_bb":2.56
+        "name":"Coleman Crow",
+        "era+":134.0,
+        "fip":3.71,
+        "so_bb":2.67
     }
 ]
