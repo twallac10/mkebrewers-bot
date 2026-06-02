@@ -3,9 +3,9 @@ Wins,wins,35,standings,28,This point last season
 Losses,losses,21,standings,28,This point last season
 Record,record,35-21,standings,28-28,This point last season
 Win percentage,win_pct,62%,standings,50%,This point last season
-Games up/back,games_up_back,4.5,standings,1st,Division rank
+Games up/back,games_up_back,5.5,standings,1st,Division rank
 Avg. home attendance,mean_attendance,"30,262",standings,36,Home games this season
-Runs,runs,268,standings,11th,League rank
+Runs,runs,268,standings,6th,League rank
 Runs against,runs_against,194,standings,240,This point last season
 Run differential,run_differential,74,standings,0,This point last season
 Batting average,batting_average,.242,batting,N/A,Last decade average
@@ -14,9 +14,9 @@ Home runs/game,home_runs_game,0.71,batting,N/A,Last decade average
 On-base percentage,on_base_pct,.328,batting,N/A,Last decade average
 Stolen bases,stolen_bases,60,batting,2nd,League rank
 Stolen bases/game,stolen_bases_game,1.07,batting,N/A,Rate all last season
-Strikeouts,strikeouts,542,pitching,5th,League rank
-Walks,walks,193,pitching,21st,League rank
-ERA,era,3.17,pitching,3rd,League rank
-Last updated,update_time,"June 1, 2026, 6:35 PM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(June 1)</span> — The Brewers have compiled a <span class='highlight'>35-21</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>2-0</span> away <span class='highlight'>win</span>. and the next game is Tuesday at 6:40 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
+Strikeouts,strikeouts,542,pitching,3rd,League rank
+Walks,walks,193,pitching,19th,League rank
+ERA,era,3.17,pitching,2nd,League rank
+Last updated,update_time,"June 2, 2026, 4:35 AM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(June 2)</span> — The Brewers have compiled a <span class='highlight'>36-21</span> record in the 2026 regular season, a <span class='highlight'>63%</span> winning percentage.  The last game was a <span class='highlight'>16-2</span> home <span class='highlight'>win</span>. and the next game is Tuesday at 6:40 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
 Last game result,last_game_result,win,summary,,
