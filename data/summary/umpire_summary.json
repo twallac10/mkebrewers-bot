@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.86311787072243,
-        "incorrect_strikes_pct": 8.136882129277566,
-        "total_called_strikes": 1315,
-        "bad_calls_count": 107
+        "correct_strikes_pct": 91.72876304023845,
+        "incorrect_strikes_pct": 8.271236959761552,
+        "total_called_strikes": 1342,
+        "bad_calls_count": 111
     },
     "last_game_summary": {
-        "date": "June 1, 2026",
-        "correct_strikes_pct": 96.0,
-        "incorrect_strikes_pct": 4.0,
-        "total_called_strikes": 25,
-        "bad_calls_count": 1,
-        "home_plate_umpire": "Ramon De Jesus"
+        "date": "June 2, 2026",
+        "correct_strikes_pct": 85.18518518518519,
+        "incorrect_strikes_pct": 14.81481481481481,
+        "total_called_strikes": 27,
+        "bad_calls_count": 4,
+        "home_plate_umpire": "Paul Clemons"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.39271610355419,
-        "incorrect_balls_pct": 4.607283896445807,
-        "total_called_balls": 2279,
-        "bad_calls_count": 105
+        "correct_balls_pct": 95.43103448275862,
+        "incorrect_balls_pct": 4.568965517241381,
+        "total_called_balls": 2320,
+        "bad_calls_count": 106
     },
     "pitching_last_game_summary": {
-        "date": "June 1, 2026",
-        "correct_balls_pct": 95.83333333333334,
-        "incorrect_balls_pct": 4.166666666666657,
-        "total_called_balls": 48,
-        "bad_calls_count": 2
+        "date": "June 2, 2026",
+        "correct_balls_pct": 97.5609756097561,
+        "incorrect_balls_pct": 2.439024390243901,
+        "total_called_balls": 41,
+        "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": []
 }
