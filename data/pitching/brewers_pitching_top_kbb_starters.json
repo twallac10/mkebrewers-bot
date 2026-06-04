@@ -1,8 +1,8 @@
 [
     {
         "name":"Jacob Misiorowski",
-        "era+":250.0,
-        "fip":1.84,
+        "era+":249.0,
+        "fip":1.85,
         "so_bb":5.68
     },
     {
@@ -14,13 +14,13 @@
     {
         "name":"Brandon Woodruff (15-day IL)",
         "era+":115.0,
-        "fip":3.96,
+        "fip":3.97,
         "so_bb":3.57
     },
     {
         "name":"Brandon Sproat",
         "era+":66.0,
-        "fip":5.58,
+        "fip":5.59,
         "so_bb":1.93
     }
 ]
