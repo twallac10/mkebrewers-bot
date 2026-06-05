@@ -72,6 +72,24 @@
     "slug":"shane-drohan"
   },
   {
+    "player_id":"702153",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/702153\/headshot\/silo\/current",
+    "name":"Brian Fitzpatrick",
+    "player_url":"\/player\/702153",
+    "jersey":"35",
+    "position_group":"Pitchers",
+    "bat_throw":"S\/L",
+    "height":"6' 7\"",
+    "weight":"225",
+    "dob":"06\/01\/2000",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"brian-fitzpatrick"
+  },
+  {
     "player_id":"688107",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/688107\/headshot\/silo\/current",
     "name":"Robert Gasser",
@@ -88,24 +106,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"robert-gasser"
-  },
-  {
-    "player_id":"669084",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/669084\/headshot\/silo\/current",
-    "name":"DL Hall",
-    "player_url":"\/player\/669084",
-    "jersey":"37",
-    "position_group":"Pitchers",
-    "bat_throw":"L\/L",
-    "height":"6' 1\"",
-    "weight":"209",
-    "dob":"09\/19\/1998",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"dl-hall"
   },
   {
     "player_id":"690986",
@@ -216,22 +216,22 @@
     "slug":"abner-uribe"
   },
   {
-    "player_id":"663765",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/663765\/headshot\/silo\/current",
-    "name":"Jake Woodford",
-    "player_url":"\/player\/663765",
-    "jersey":"41",
+    "player_id":"684974",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/684974\/headshot\/silo\/current",
+    "name":"Craig Yoho",
+    "player_url":"\/player\/684974",
+    "jersey":"48",
     "position_group":"Pitchers",
     "bat_throw":"R\/R",
-    "height":"6' 4\"",
-    "weight":"215",
-    "dob":"10\/28\/1996",
+    "height":"6' 2\"",
+    "weight":"237",
+    "dob":"10\/23\/1999",
     "status":"ACTIVE",
     "is_minors":false,
     "is_il":false,
     "is_active_roster":true,
     "is_40_man":true,
-    "slug":"jake-woodford"
+    "slug":"craig-yoho"
   },
   {
     "player_id":"661388",
