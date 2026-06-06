@@ -72,24 +72,6 @@
     "slug":"shane-drohan"
   },
   {
-    "player_id":"702153",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/702153\/headshot\/silo\/current",
-    "name":"Brian Fitzpatrick",
-    "player_url":"\/player\/702153",
-    "jersey":"35",
-    "position_group":"Pitchers",
-    "bat_throw":"S\/L",
-    "height":"6' 7\"",
-    "weight":"225",
-    "dob":"06\/01\/2000",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"brian-fitzpatrick"
-  },
-  {
     "player_id":"688107",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/688107\/headshot\/silo\/current",
     "name":"Robert Gasser",
@@ -178,6 +160,24 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"chad-patrick"
+  },
+  {
+    "player_id":"680723",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/680723\/headshot\/silo\/current",
+    "name":"Drew Rom",
+    "player_url":"\/player\/680723",
+    "jersey":"38",
+    "position_group":"Pitchers",
+    "bat_throw":"L\/L",
+    "height":"6' 1\"",
+    "weight":"225",
+    "dob":"12\/15\/1999",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"drew-rom"
   },
   {
     "player_id":"687075",
