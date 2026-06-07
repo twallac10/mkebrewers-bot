@@ -5,7 +5,7 @@ Record,record,39-23,standings,33-29,This point last season
 Win percentage,win_pct,63%,standings,53%,This point last season
 Games up/back,games_up_back,5,standings,1st,Division rank
 Avg. home attendance,mean_attendance,"30,427",standings,40,Home games this season
-Runs,runs,317,standings,6th,League rank
+Runs,runs,317,standings,5th,League rank
 Runs against,runs_against,220,standings,262,This point last season
 Run differential,run_differential,97,standings,17,This point last season
 Batting average,batting_average,.248,batting,N/A,Last decade average
@@ -15,8 +15,8 @@ On-base percentage,on_base_pct,.337,batting,N/A,Last decade average
 Stolen bases,stolen_bases,67,batting,2nd,League rank
 Stolen bases/game,stolen_bases_game,1.08,batting,N/A,Rate all last season
 Strikeouts,strikeouts,599,pitching,3rd,League rank
-Walks,walks,215,pitching,16th,League rank
+Walks,walks,215,pitching,19th,League rank
 ERA,era,3.25,pitching,3rd,League rank
-Last updated,update_time,"June 7, 2026, 10:35 AM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(June 7)</span> — The Brewers have compiled a <span class='highlight'>39-23</span> record in the 2026 regular season, a <span class='highlight'>63%</span> winning percentage.  The last game was a <span class='highlight'>7-1</span> away <span class='highlight'>win</span>. and the next game is Sunday at 2:10 p.m. CT at <span class='highlight'>Coors Field</span>.",summary,,
+Last updated,update_time,"June 7, 2026, 6:28 PM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(June 7)</span> — The Brewers have compiled a <span class='highlight'>40-23</span> record in the 2026 regular season, a <span class='highlight'>64%</span> winning percentage.  The last game was a <span class='highlight'>12-4</span> away <span class='highlight'>win</span>. and the next game is Monday at 9:05 p.m. CT at <span class='highlight'>Las Vegas Ballpark</span>.",summary,,
 Last game result,last_game_result,win,summary,,
