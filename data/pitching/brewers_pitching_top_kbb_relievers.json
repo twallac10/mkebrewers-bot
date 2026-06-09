@@ -12,21 +12,21 @@
         "so_bb":3.36
     },
     {
-        "name":"Jake Woodford (DFA)",
+        "name":"Aaron Ashby*",
+        "era+":141.0,
+        "fip":2.86,
+        "so_bb":2.95
+    },
+    {
+        "name":"Jake Woodford",
         "era+":60.0,
-        "fip":3.96,
+        "fip":3.97,
         "so_bb":2.86
     },
     {
-        "name":"Aaron Ashby*",
-        "era+":175.0,
-        "fip":2.32,
-        "so_bb":2.79
-    },
-    {
         "name":"Abner Uribe",
-        "era+":103.0,
-        "fip":3.42,
-        "so_bb":2.56
+        "era+":109.0,
+        "fip":3.36,
+        "so_bb":2.5
     }
 ]
