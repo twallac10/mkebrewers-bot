@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.70568561872909,
-        "incorrect_strikes_pct": 8.294314381270908,
-        "total_called_strikes": 1495,
-        "bad_calls_count": 124
+        "correct_strikes_pct": 91.4452365521711,
+        "incorrect_strikes_pct": 8.554763447828904,
+        "total_called_strikes": 1543,
+        "bad_calls_count": 132
     },
     "last_game_summary": {
-        "date": "June 7, 2026",
-        "correct_strikes_pct": 96.29629629629629,
-        "incorrect_strikes_pct": 3.7037037037037095,
-        "total_called_strikes": 27,
-        "bad_calls_count": 1,
-        "home_plate_umpire": "Junior Valentine"
+        "date": "June 8, 2026",
+        "correct_strikes_pct": 83.33333333333334,
+        "incorrect_strikes_pct": 16.666666666666657,
+        "total_called_strikes": 48,
+        "bad_calls_count": 8,
+        "home_plate_umpire": "Clint Vondrak"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.64710454722115,
-        "incorrect_balls_pct": 4.352895452778853,
-        "total_called_balls": 2573,
-        "bad_calls_count": 112
+        "correct_balls_pct": 95.63732928679818,
+        "incorrect_balls_pct": 4.3626707132018225,
+        "total_called_balls": 2636,
+        "bad_calls_count": 115
     },
     "pitching_last_game_summary": {
-        "date": "June 7, 2026",
+        "date": "June 8, 2026",
         "correct_balls_pct": 95.23809523809523,
         "incorrect_balls_pct": 4.761904761904773,
-        "total_called_balls": 42,
-        "bad_calls_count": 2
+        "total_called_balls": 63,
+        "bad_calls_count": 3
     },
     "pitching_worst_calls_of_season": []
 }
