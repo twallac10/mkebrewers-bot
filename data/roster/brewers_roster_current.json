@@ -36,24 +36,6 @@
     "slug":"aaron-ashby"
   },
   {
-    "player_id":"689441",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/689441\/headshot\/silo\/current",
-    "name":"Coleman Crow",
-    "player_url":"\/player\/689441",
-    "jersey":"57",
-    "position_group":"Pitchers",
-    "bat_throw":"R\/R",
-    "height":"5' 10\"",
-    "weight":"175",
-    "dob":"12\/30\/2000",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"coleman-crow"
-  },
-  {
     "player_id":"675660",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/675660\/headshot\/silo\/current",
     "name":"Shane Drohan",
@@ -232,6 +214,24 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"abner-uribe"
+  },
+  {
+    "player_id":"684974",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/684974\/headshot\/silo\/current",
+    "name":"Craig Yoho",
+    "player_url":"\/player\/684974",
+    "jersey":"48",
+    "position_group":"Pitchers",
+    "bat_throw":"R\/R",
+    "height":"6' 2\"",
+    "weight":"237",
+    "dob":"10\/23\/1999",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"craig-yoho"
   },
   {
     "player_id":"661388",
