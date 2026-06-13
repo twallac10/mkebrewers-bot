@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 91.12649465072373,
-        "incorrect_strikes_pct": 8.873505349276272,
-        "total_called_strikes": 1589,
-        "bad_calls_count": 141
+        "correct_strikes_pct": 91.03831891223733,
+        "incorrect_strikes_pct": 8.96168108776267,
+        "total_called_strikes": 1618,
+        "bad_calls_count": 145
     },
     "last_game_summary": {
-        "date": "June 10, 2026",
-        "correct_strikes_pct": 75.0,
-        "incorrect_strikes_pct": 25.0,
-        "total_called_strikes": 28,
-        "bad_calls_count": 7,
-        "home_plate_umpire": "Brock Ballou"
+        "date": "June 12, 2026",
+        "correct_strikes_pct": 86.20689655172413,
+        "incorrect_strikes_pct": 13.793103448275872,
+        "total_called_strikes": 29,
+        "bad_calls_count": 4,
+        "home_plate_umpire": "Chad Fairchild"
     },
     "worst_calls_of_season": [
         {
@@ -23,6 +23,16 @@
             "date": "2026-04-30",
             "date_formatted": "April 30, 2026",
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=1a4e3ac5-884f-3bb7-8ad1-444a0287a26e"
+        },
+        {
+            "distance_inches": 3.8983702955,
+            "batter": "Jackson Chourio",
+            "pitcher": "Tim Mayza",
+            "pitch_type": "Sinker",
+            "velocity_mph": 94.7,
+            "date": "2026-06-12",
+            "date_formatted": "June 12, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=263737f3-7875-3a73-8ec0-cabee9a63b6f"
         },
         {
             "distance_inches": 3.3385205247,
@@ -43,29 +53,19 @@
             "date": "2026-04-01",
             "date_formatted": "April 1, 2026",
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=2cdc2e40-9539-3b9b-8fa8-25dfbb822ea1"
-        },
-        {
-            "distance_inches": 3.0871078761,
-            "batter": "David Hamilton",
-            "pitcher": "Antonio Senzatela",
-            "pitch_type": "4-Seam Fastball",
-            "velocity_mph": 95.1,
-            "date": "2026-06-05",
-            "date_formatted": "June 5, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=bdd02e2f-4774-36c2-8e5b-5d3d8b759732"
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.72901325478645,
-        "incorrect_balls_pct": 4.270986745213548,
-        "total_called_balls": 2716,
-        "bad_calls_count": 116
+        "correct_balls_pct": 95.72524662038728,
+        "incorrect_balls_pct": 4.274753379612719,
+        "total_called_balls": 2737,
+        "bad_calls_count": 117
     },
     "pitching_last_game_summary": {
-        "date": "June 10, 2026",
-        "correct_balls_pct": 97.5609756097561,
-        "incorrect_balls_pct": 2.439024390243901,
-        "total_called_balls": 41,
+        "date": "June 12, 2026",
+        "correct_balls_pct": 95.23809523809523,
+        "incorrect_balls_pct": 4.761904761904773,
+        "total_called_balls": 21,
         "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": []
