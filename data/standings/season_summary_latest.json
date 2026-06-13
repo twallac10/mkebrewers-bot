@@ -34,7 +34,7 @@
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":5,
+        "value":4.5,
         "category":"standings",
         "context_value":"1st",
         "context_value_label":"Division rank"
@@ -108,7 +108,7 @@
         "stat":"stolen_bases",
         "value":70,
         "category":"batting",
-        "context_value":"2nd",
+        "context_value":"3rd",
         "context_value_label":"League rank"
     },
     {
@@ -124,7 +124,7 @@
         "stat":"strikeouts",
         "value":"654",
         "category":"pitching",
-        "context_value":"1st",
+        "context_value":"2nd",
         "context_value_label":"League rank"
     },
     {
@@ -132,7 +132,7 @@
         "stat":"walks",
         "value":"227",
         "category":"pitching",
-        "context_value":"19th",
+        "context_value":"20th",
         "context_value_label":"League rank"
     },
     {
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"June 13, 2026, 10:38 AM CT",
+        "value":"June 13, 2026, 6:29 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(June 13)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>42-25<\/span> record in the 2026 regular season, a <span class='highlight'>63%<\/span> winning percentage.  The last game was a <span class='highlight'>6-0<\/span> home <span class='highlight'>win<\/span>. and the next game is Saturday at 6:10 p.m. CT at <span class='highlight'>American Family Field<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(June 13)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>42-25<\/span> record in the 2026 regular season, a <span class='highlight'>63%<\/span> winning percentage.  The last game was a <span class='highlight'>6-0<\/span> home <span class='highlight'>win<\/span>. and the next game is Sunday at 1:10 p.m. CT at <span class='highlight'>American Family Field<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
