@@ -1,6 +1,6 @@
 {
-    "last_updated": "Jun. 14 at 4:12 a.m. Central Time",
-    "last_updated_iso": "2026-06-14T04:12:55.656702-05:00",
+    "last_updated": "Jun. 14 at 10:38 a.m. Central Time",
+    "last_updated_iso": "2026-06-14T10:38:11.968050-05:00",
     "teams": [
         {
             "team_id": 147,
@@ -217,7 +217,7 @@
             "winning_percentage": ".394",
             "division_rank": "5",
             "league_rank": "15",
-            "sport_rank": "29",
+            "sport_rank": "28",
             "games_back": 10.5,
             "division_games_back": 10.5,
             "league_games_back": 15,
