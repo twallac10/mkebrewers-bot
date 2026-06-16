@@ -14,9 +14,9 @@ Home runs/game,home_runs_game,0.91,batting,N/A,Last decade average
 On-base percentage,on_base_pct,.340,batting,N/A,Last decade average
 Stolen bases,stolen_bases,70,batting,3rd,League rank
 Stolen bases/game,stolen_bases_game,1.01,batting,N/A,Rate all last season
-Strikeouts,strikeouts,675,pitching,1st,League rank
+Strikeouts,strikeouts,675,pitching,2nd,League rank
 Walks,walks,230,pitching,21st,League rank
 ERA,era,3.45,pitching,4th,League rank
-Last updated,update_time,"June 16, 2026, 11:36 AM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(June 16)</span> — The Brewers have compiled a <span class='highlight'>43-26</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>4-0</span> home <span class='highlight'>win</span>. and the next game is Tuesday at 6:40 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
+Last updated,update_time,"June 16, 2026, 6:36 PM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(June 16)</span> — The Brewers have compiled a <span class='highlight'>43-26</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>4-0</span> home <span class='highlight'>win</span>. and the next game is Wednesday at 6:40 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
 Last game result,last_game_result,win,summary,,
