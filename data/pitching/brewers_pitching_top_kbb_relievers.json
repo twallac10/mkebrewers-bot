@@ -2,14 +2,14 @@
     {
         "name":"Trevor Megill",
         "era+":101.0,
-        "fip":1.37,
+        "fip":1.36,
         "so_bb":4.5
     },
     {
         "name":"Shane Drohan*",
-        "era+":116.0,
-        "fip":2.72,
-        "so_bb":4.0
+        "era+":122.0,
+        "fip":3.16,
+        "so_bb":3.36
     },
     {
         "name":"Jake Woodford",
@@ -19,7 +19,7 @@
     },
     {
         "name":"Aaron Ashby*",
-        "era+":148.0,
+        "era+":149.0,
         "fip":2.85,
         "so_bb":2.77
     },
