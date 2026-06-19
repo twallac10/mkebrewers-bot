@@ -252,6 +252,24 @@
     "slug":"william-contreras"
   },
   {
+    "player_id":"596142",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/596142\/headshot\/silo\/current",
+    "name":"Gary Sánchez",
+    "player_url":"\/player\/596142",
+    "jersey":"99",
+    "position_group":"Catchers",
+    "bat_throw":"R\/R",
+    "height":"6' 2\"",
+    "weight":"251",
+    "dob":"12\/02\/1992",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"gary-sanchez"
+  },
+  {
     "player_id":"641343",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/641343\/headshot\/silo\/current",
     "name":"Jake Bauers",
@@ -430,24 +448,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"blake-perkins"
-  },
-  {
-    "player_id":"596142",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/596142\/headshot\/silo\/current",
-    "name":"Gary Sánchez",
-    "player_url":"\/player\/596142",
-    "jersey":"99",
-    "position_group":"Designated hitter",
-    "bat_throw":"R\/R",
-    "height":"6' 2\"",
-    "weight":"251",
-    "dob":"12\/02\/1992",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"gary-sanchez"
   },
   {
     "player_id":"592885",
