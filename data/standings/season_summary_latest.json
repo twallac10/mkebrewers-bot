@@ -52,7 +52,7 @@
         "stat":"runs",
         "value":383,
         "category":"standings",
-        "context_value":"3rd",
+        "context_value":"4th",
         "context_value_label":"League rank"
     },
     {
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"June 19, 2026, 6:28 PM CT",
+        "value":"June 20, 2026, 4:10 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(June 19)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>45-27<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>2-4<\/span> home <span class='highlight'>loss<\/span>. and the next game is Saturday at 3:10 p.m. CT at <span class='highlight'>Truist Park<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(June 20)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>45-28<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>2-3<\/span> away <span class='highlight'>loss<\/span>. and the next game is Saturday at 3:10 p.m. CT at <span class='highlight'>Truist Park<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
