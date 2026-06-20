@@ -2,7 +2,7 @@
     {
         "name":"Trevor Megill",
         "era+":101.0,
-        "fip":1.36,
+        "fip":1.37,
         "so_bb":4.5
     },
     {
@@ -14,7 +14,7 @@
     {
         "name":"Jake Woodford",
         "era+":60.0,
-        "fip":3.95,
+        "fip":3.96,
         "so_bb":2.86
     },
     {
@@ -25,8 +25,8 @@
     },
     {
         "name":"Abner Uribe",
-        "era+":119.0,
-        "fip":3.29,
-        "so_bb":2.45
+        "era+":113.0,
+        "fip":3.62,
+        "so_bb":2.64
     }
 ]

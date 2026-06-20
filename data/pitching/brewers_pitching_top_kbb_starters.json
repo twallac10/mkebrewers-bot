@@ -1,9 +1,9 @@
 [
     {
         "name":"Jacob Misiorowski",
-        "era+":308.0,
-        "fip":1.68,
-        "so_bb":5.95
+        "era+":285.0,
+        "fip":1.66,
+        "so_bb":6.0
     },
     {
         "name":"Kyle Harrison*",
@@ -20,7 +20,7 @@
     {
         "name":"Brandon Sproat",
         "era+":70.0,
-        "fip":5.51,
+        "fip":5.52,
         "so_bb":1.97
     }
 ]
