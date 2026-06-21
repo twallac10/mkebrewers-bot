@@ -84,7 +84,7 @@
         "stat":"home_runs",
         "value":67,
         "category":"batting",
-        "context_value":"28th",
+        "context_value":"27th",
         "context_value_label":"League rank"
     },
     {
@@ -108,7 +108,7 @@
         "stat":"stolen_bases",
         "value":74,
         "category":"batting",
-        "context_value":"3rd",
+        "context_value":"4th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"3.44",
         "category":"pitching",
-        "context_value":"4th",
+        "context_value":"3rd",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"June 21, 2026, 10:39 AM CT",
+        "value":"June 21, 2026, 6:34 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(June 21)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>45-29<\/span> record in the 2026 regular season, a <span class='highlight'>61%<\/span> winning percentage.  The last game was a <span class='highlight'>3-4<\/span> away <span class='highlight'>loss<\/span>. and the next game is Sunday at 12:35 p.m. CT at <span class='highlight'>Truist Park<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(June 21)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>46-29<\/span> record in the 2026 regular season, a <span class='highlight'>61%<\/span> winning percentage.  The last game was a <span class='highlight'>9-4<\/span> away <span class='highlight'>win<\/span>. and the next game is Monday at 6:10 p.m. CT at <span class='highlight'>Great American Ball Park<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -162,7 +162,7 @@
     {
         "stat_label":"Last game result",
         "stat":"last_game_result",
-        "value":"loss",
+        "value":"win",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
