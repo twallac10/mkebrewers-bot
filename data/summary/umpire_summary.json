@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.94444444444446,
-        "incorrect_strikes_pct": 9.055555555555543,
-        "total_called_strikes": 1800,
+        "correct_strikes_pct": 90.97452934662236,
+        "incorrect_strikes_pct": 9.025470653377639,
+        "total_called_strikes": 1806,
         "bad_calls_count": 163
     },
     "last_game_summary": {
-        "date": "June 22, 2026",
+        "date": "June 23, 2026",
         "correct_strikes_pct": 100.0,
         "incorrect_strikes_pct": 0.0,
-        "total_called_strikes": 11,
+        "total_called_strikes": 6,
         "bad_calls_count": 0,
-        "home_plate_umpire": "Tyler Jones"
+        "home_plate_umpire": "Clint Vondrak"
     },
     "worst_calls_of_season": [
         {
@@ -62,10 +62,10 @@
         "bad_calls_count": 129
     },
     "pitching_last_game_summary": {
-        "date": "June 22, 2026",
-        "correct_balls_pct": 100.0,
-        "incorrect_balls_pct": 0.0,
-        "total_called_balls": 11,
+        "date": "June 23, 2026",
+        "correct_balls_pct": 0,
+        "incorrect_balls_pct": 100,
+        "total_called_balls": 0,
         "bad_calls_count": 0
     },
     "pitching_worst_calls_of_season": []
