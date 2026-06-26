@@ -3,7 +3,7 @@ Wins,wins,49,standings,43,This point last season
 Losses,losses,29,standings,35,This point last season
 Record,record,49-29,standings,43-35,This point last season
 Win percentage,win_pct,63%,standings,55%,This point last season
-Games up/back,games_up_back,7,standings,1st,Division rank
+Games up/back,games_up_back,6.5,standings,1st,Division rank
 Avg. home attendance,mean_attendance,"31,900",standings,40,Home games this season
 Runs,runs,407,standings,4th,League rank
 Runs against,runs_against,284,standings,321,This point last season
@@ -14,9 +14,9 @@ Home runs/game,home_runs_game,0.9,batting,N/A,Last decade average
 On-base percentage,on_base_pct,.338,batting,N/A,Last decade average
 Stolen bases,stolen_bases,77,batting,5th,League rank
 Stolen bases/game,stolen_bases_game,0.99,batting,N/A,Rate all last season
-Strikeouts,strikeouts,769,pitching,1st,League rank
+Strikeouts,strikeouts,769,pitching,2nd,League rank
 Walks,walks,259,pitching,19th,League rank
 ERA,era,3.38,pitching,2nd,League rank
-Last updated,update_time,"June 25, 2026, 6:34 PM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(June 25)</span> — The Brewers have compiled a <span class='highlight'>49-29</span> record in the 2026 regular season, a <span class='highlight'>63%</span> winning percentage.  The last game was a <span class='highlight'>6-5</span> away <span class='highlight'>win</span>. and the next game is Friday at 6:45 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
+Last updated,update_time,"June 26, 2026, 4:14 AM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(June 26)</span> — The Brewers have compiled a <span class='highlight'>49-29</span> record in the 2026 regular season, a <span class='highlight'>63%</span> winning percentage.  The last game was a <span class='highlight'>6-5</span> away <span class='highlight'>win</span>. and the next game is Friday at 6:45 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
 Last game result,last_game_result,win,summary,,
