@@ -1,7 +1,7 @@
 [
     {
         "name":"Jacob Misiorowski",
-        "era+":287.0,
+        "era+":288.0,
         "fip":1.84,
         "so_bb":5.41
     },
@@ -19,14 +19,14 @@
     },
     {
         "name":"Robert Gasser*",
-        "era+":94.0,
-        "fip":5.13,
-        "so_bb":2.58
+        "era+":93.0,
+        "fip":4.98,
+        "so_bb":2.77
     },
     {
         "name":"Brandon Sproat",
         "era+":77.0,
-        "fip":5.06,
+        "fip":5.07,
         "so_bb":2.28
     }
 ]
