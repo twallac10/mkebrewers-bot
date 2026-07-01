@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.96671949286846,
-        "incorrect_strikes_pct": 9.033280507131536,
-        "total_called_strikes": 1893,
-        "bad_calls_count": 171
+        "correct_strikes_pct": 91.008316008316,
+        "incorrect_strikes_pct": 8.991683991683999,
+        "total_called_strikes": 1924,
+        "bad_calls_count": 173
     },
     "last_game_summary": {
-        "date": "June 29, 2026",
-        "correct_strikes_pct": 96.55172413793103,
-        "incorrect_strikes_pct": 3.448275862068968,
-        "total_called_strikes": 29,
-        "bad_calls_count": 1,
-        "home_plate_umpire": "Dan Bellino"
+        "date": "June 30, 2026",
+        "correct_strikes_pct": 93.54838709677419,
+        "incorrect_strikes_pct": 6.451612903225808,
+        "total_called_strikes": 31,
+        "bad_calls_count": 2,
+        "home_plate_umpire": "Mark Ripperger"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.75795383655645,
-        "incorrect_balls_pct": 4.242046163443547,
-        "total_called_balls": 3206,
+        "correct_balls_pct": 95.81924377497695,
+        "incorrect_balls_pct": 4.180756225023046,
+        "total_called_balls": 3253,
         "bad_calls_count": 136
     },
     "pitching_last_game_summary": {
-        "date": "June 29, 2026",
-        "correct_balls_pct": 97.22222222222221,
-        "incorrect_balls_pct": 2.7777777777777857,
-        "total_called_balls": 36,
-        "bad_calls_count": 1
+        "date": "June 30, 2026",
+        "correct_balls_pct": 100.0,
+        "incorrect_balls_pct": 0.0,
+        "total_called_balls": 47,
+        "bad_calls_count": 0
     },
     "pitching_worst_calls_of_season": []
 }

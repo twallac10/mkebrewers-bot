@@ -8,25 +8,25 @@
     {
         "name":"Kyle Harrison*",
         "era+":163.0,
-        "fip":3.02,
+        "fip":3.03,
         "so_bb":5.05
     },
     {
         "name":"Brandon Woodruff",
-        "era+":162.0,
-        "fip":3.1,
+        "era+":163.0,
+        "fip":3.11,
         "so_bb":4.56
     },
     {
-        "name":"Robert Gasser*",
+        "name":"Robert Gasser (40-man)*",
         "era+":93.0,
         "fip":4.98,
         "so_bb":2.77
     },
     {
         "name":"Brandon Sproat",
-        "era+":77.0,
-        "fip":5.07,
-        "so_bb":2.28
+        "era+":80.0,
+        "fip":5.0,
+        "so_bb":2.35
     }
 ]
