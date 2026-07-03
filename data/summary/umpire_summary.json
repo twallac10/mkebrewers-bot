@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.97435897435898,
-        "incorrect_strikes_pct": 9.025641025641022,
-        "total_called_strikes": 1950,
-        "bad_calls_count": 176
+        "correct_strikes_pct": 91.01010101010101,
+        "incorrect_strikes_pct": 8.98989898989899,
+        "total_called_strikes": 1980,
+        "bad_calls_count": 178
     },
     "last_game_summary": {
-        "date": "July 1, 2026",
-        "correct_strikes_pct": 88.46153846153845,
-        "incorrect_strikes_pct": 11.538461538461547,
-        "total_called_strikes": 26,
-        "bad_calls_count": 3,
-        "home_plate_umpire": "Brock Ballou"
+        "date": "July 2, 2026",
+        "correct_strikes_pct": 93.33333333333333,
+        "incorrect_strikes_pct": 6.666666666666671,
+        "total_called_strikes": 30,
+        "bad_calls_count": 2,
+        "home_plate_umpire": "Dan Merzel"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.830797321972,
-        "incorrect_balls_pct": 4.169202678028,
-        "total_called_balls": 3286,
+        "correct_balls_pct": 95.90433482810164,
+        "incorrect_balls_pct": 4.095665171898361,
+        "total_called_balls": 3345,
         "bad_calls_count": 137
     },
     "pitching_last_game_summary": {
-        "date": "July 1, 2026",
-        "correct_balls_pct": 96.96969696969697,
-        "incorrect_balls_pct": 3.030303030303031,
-        "total_called_balls": 33,
-        "bad_calls_count": 1
+        "date": "July 2, 2026",
+        "correct_balls_pct": 100.0,
+        "incorrect_balls_pct": 0.0,
+        "total_called_balls": 59,
+        "bad_calls_count": 0
     },
     "pitching_worst_calls_of_season": []
 }
