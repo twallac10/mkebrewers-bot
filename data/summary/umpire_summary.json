@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.85032322227747,
-        "incorrect_strikes_pct": 9.149676777722533,
-        "total_called_strikes": 2011,
-        "bad_calls_count": 184
+        "correct_strikes_pct": 90.90462143559489,
+        "incorrect_strikes_pct": 9.09537856440511,
+        "total_called_strikes": 2034,
+        "bad_calls_count": 185
     },
     "last_game_summary": {
-        "date": "July 3, 2026",
-        "correct_strikes_pct": 80.64516129032258,
-        "incorrect_strikes_pct": 19.354838709677423,
-        "total_called_strikes": 31,
-        "bad_calls_count": 6,
-        "home_plate_umpire": "David Rackley"
+        "date": "July 4, 2026",
+        "correct_strikes_pct": 95.65217391304348,
+        "incorrect_strikes_pct": 4.347826086956516,
+        "total_called_strikes": 23,
+        "bad_calls_count": 1,
+        "home_plate_umpire": "Chris Guccione"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.88719153936546,
-        "incorrect_balls_pct": 4.11280846063454,
-        "total_called_balls": 3404,
-        "bad_calls_count": 140
+        "correct_balls_pct": 95.89758510328775,
+        "incorrect_balls_pct": 4.102414896712247,
+        "total_called_balls": 3437,
+        "bad_calls_count": 141
     },
     "pitching_last_game_summary": {
-        "date": "July 3, 2026",
-        "correct_balls_pct": 94.91525423728814,
-        "incorrect_balls_pct": 5.0847457627118615,
-        "total_called_balls": 59,
-        "bad_calls_count": 3
+        "date": "July 4, 2026",
+        "correct_balls_pct": 96.96969696969697,
+        "incorrect_balls_pct": 3.030303030303031,
+        "total_called_balls": 33,
+        "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": []
 }
