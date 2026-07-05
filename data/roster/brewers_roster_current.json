@@ -90,24 +90,6 @@
     "slug":"jared-koenig"
   },
   {
-    "player_id":"669270",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/669270\/headshot\/silo\/current",
-    "name":"Joel Kuhnel",
-    "player_url":"\/player\/669270",
-    "jersey":"59",
-    "position_group":"Pitchers",
-    "bat_throw":"R\/R",
-    "height":"6' 5\"",
-    "weight":"290",
-    "dob":"02\/19\/1995",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"joel-kuhnel"
-  },
-  {
     "player_id":"656730",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/656730\/headshot\/silo\/current",
     "name":"Trevor Megill",
@@ -232,6 +214,24 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"brandon-woodruff"
+  },
+  {
+    "player_id":"684974",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/684974\/headshot\/silo\/current",
+    "name":"Craig Yoho",
+    "player_url":"\/player\/684974",
+    "jersey":"48",
+    "position_group":"Pitchers",
+    "bat_throw":"R\/R",
+    "height":"6' 2\"",
+    "weight":"237",
+    "dob":"10\/23\/1999",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"craig-yoho"
   },
   {
     "player_id":"661388",

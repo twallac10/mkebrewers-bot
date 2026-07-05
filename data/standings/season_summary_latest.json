@@ -108,7 +108,7 @@
         "stat":"stolen_bases",
         "value":84,
         "category":"batting",
-        "context_value":"5th",
+        "context_value":"6th",
         "context_value_label":"League rank"
     },
     {
@@ -140,13 +140,13 @@
         "stat":"era",
         "value":"3.35",
         "category":"pitching",
-        "context_value":"2nd",
+        "context_value":"1st",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"July 4, 2026, 11:05 AM CT",
+        "value":"July 4, 2026, 7:04 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(July 4)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>54-32<\/span> record in the 2026 regular season, a <span class='highlight'>63%<\/span> winning percentage.  The last game was a <span class='highlight'>7-4<\/span> away <span class='highlight'>win<\/span>. and the next game is Saturday at 8:40 p.m. CT at <span class='highlight'>Chase Field<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(July 4)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>54-32<\/span> record in the 2026 regular season, a <span class='highlight'>63%<\/span> winning percentage.  The last game was a <span class='highlight'>7-4<\/span> away <span class='highlight'>win<\/span>. and the next game is Sunday at 3:00 p.m. CT at <span class='highlight'>Chase Field<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
