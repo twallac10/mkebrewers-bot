@@ -144,6 +144,24 @@
     "slug":"chad-patrick"
   },
   {
+    "player_id":"680723",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/680723\/headshot\/silo\/current",
+    "name":"Drew Rom",
+    "player_url":"\/player\/680723",
+    "jersey":"38",
+    "position_group":"Pitchers",
+    "bat_throw":"L\/L",
+    "height":"6' 1\"",
+    "weight":"225",
+    "dob":"12\/15\/1999",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"drew-rom"
+  },
+  {
     "player_id":"687075",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/687075\/headshot\/silo\/current",
     "name":"Brandon Sproat",
@@ -196,24 +214,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"abner-uribe"
-  },
-  {
-    "player_id":"605540",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/605540\/headshot\/silo\/current",
-    "name":"Brandon Woodruff",
-    "player_url":"\/player\/605540",
-    "jersey":"53",
-    "position_group":"Pitchers",
-    "bat_throw":"L\/R",
-    "height":"6' 4\"",
-    "weight":"241",
-    "dob":"02\/10\/1993",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"brandon-woodruff"
   },
   {
     "player_id":"684974",
