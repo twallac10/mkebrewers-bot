@@ -54,6 +54,24 @@
     "slug":"shane-drohan"
   },
   {
+    "player_id":"688107",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/688107\/headshot\/silo\/current",
+    "name":"Robert Gasser",
+    "player_url":"\/player\/688107",
+    "jersey":"54",
+    "position_group":"Pitchers",
+    "bat_throw":"L\/L",
+    "height":"6' 0\"",
+    "weight":"197",
+    "dob":"05\/31\/1999",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"robert-gasser"
+  },
+  {
     "player_id":"690986",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/690986\/headshot\/silo\/current",
     "name":"Kyle Harrison",
@@ -414,6 +432,24 @@
     "slug":"sal-frelick"
   },
   {
+    "player_id":"800325",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/800325\/headshot\/silo\/current",
+    "name":"Luis Lara",
+    "player_url":"\/player\/800325",
+    "jersey":"18",
+    "position_group":"Outfielders",
+    "bat_throw":"S\/R",
+    "height":"5' 7\"",
+    "weight":"169",
+    "dob":"11\/17\/2004",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"luis-lara"
+  },
+  {
     "player_id":"669003",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/669003\/headshot\/silo\/current",
     "name":"Garrett Mitchell",
@@ -430,24 +466,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"garrett-mitchell"
-  },
-  {
-    "player_id":"663368",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/663368\/headshot\/silo\/current",
-    "name":"Blake Perkins",
-    "player_url":"\/player\/663368",
-    "jersey":"16",
-    "position_group":"Outfielders",
-    "bat_throw":"S\/R",
-    "height":"6' 0\"",
-    "weight":"185",
-    "dob":"09\/10\/1996",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"blake-perkins"
   },
   {
     "player_id":"592885",
