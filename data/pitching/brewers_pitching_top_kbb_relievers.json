@@ -8,8 +8,14 @@
     {
         "name":"Trevor Megill",
         "era+":143.0,
-        "fip":1.47,
+        "fip":1.48,
         "so_bb":4.6
+    },
+    {
+        "name":"Craig Yoho",
+        "era+":123.0,
+        "fip":4.62,
+        "so_bb":3.33
     },
     {
         "name":"Shane Drohan*",
@@ -20,13 +26,7 @@
     {
         "name":"Jake Woodford",
         "era+":62.0,
-        "fip":3.97,
+        "fip":3.98,
         "so_bb":2.86
-    },
-    {
-        "name":"Abner Uribe",
-        "era+":155.0,
-        "fip":3.31,
-        "so_bb":2.83
     }
 ]

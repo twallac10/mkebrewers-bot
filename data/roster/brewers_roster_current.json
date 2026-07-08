@@ -306,24 +306,6 @@
     "slug":"jake-bauers"
   },
   {
-    "player_id":"666152",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/666152\/headshot\/silo\/current",
-    "name":"David Hamilton",
-    "player_url":"\/player\/666152",
-    "jersey":"6",
-    "position_group":"Infielders",
-    "bat_throw":"L\/R",
-    "height":"5' 10\"",
-    "weight":"192",
-    "dob":"09\/29\/1997",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"david-hamilton"
-  },
-  {
     "player_id":"687401",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/687401\/headshot\/silo\/current",
     "name":"Joey Ortiz",
@@ -430,6 +412,24 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"sal-frelick"
+  },
+  {
+    "player_id":"675659",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/675659\/headshot\/silo\/current",
+    "name":"Greg Jones",
+    "player_url":"\/player\/675659",
+    "jersey":"14",
+    "position_group":"Outfielders",
+    "bat_throw":"S\/R",
+    "height":"6' 0\"",
+    "weight":"189",
+    "dob":"03\/07\/1998",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"greg-jones"
   },
   {
     "player_id":"800325",
