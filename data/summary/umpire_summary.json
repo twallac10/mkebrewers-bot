@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.83094555873924,
-        "incorrect_strikes_pct": 9.169054441260755,
-        "total_called_strikes": 2094,
+        "correct_strikes_pct": 90.85714285714286,
+        "incorrect_strikes_pct": 9.142857142857139,
+        "total_called_strikes": 2100,
         "bad_calls_count": 192
     },
     "last_game_summary": {
-        "date": "July 7, 2026",
-        "correct_strikes_pct": 90.9090909090909,
-        "incorrect_strikes_pct": 9.090909090909093,
-        "total_called_strikes": 33,
-        "bad_calls_count": 3,
-        "home_plate_umpire": "Clint Vondrak"
+        "date": "July 8, 2026",
+        "correct_strikes_pct": 100.0,
+        "incorrect_strikes_pct": 0.0,
+        "total_called_strikes": 6,
+        "bad_calls_count": 0,
+        "home_plate_umpire": "Jen Pawol"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.91894173937517,
-        "incorrect_balls_pct": 4.081058260624829,
-        "total_called_balls": 3553,
-        "bad_calls_count": 145
+        "correct_balls_pct": 95.89887640449439,
+        "incorrect_balls_pct": 4.101123595505612,
+        "total_called_balls": 3560,
+        "bad_calls_count": 146
     },
     "pitching_last_game_summary": {
-        "date": "July 7, 2026",
-        "correct_balls_pct": 95.23809523809523,
-        "incorrect_balls_pct": 4.761904761904773,
-        "total_called_balls": 42,
-        "bad_calls_count": 2
+        "date": "July 8, 2026",
+        "correct_balls_pct": 85.71428571428571,
+        "incorrect_balls_pct": 14.285714285714292,
+        "total_called_balls": 7,
+        "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": []
 }
