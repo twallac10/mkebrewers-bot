@@ -50,7 +50,7 @@
     {
         "stat_label":"Runs",
         "stat":"runs",
-        "value":467,
+        "value":468,
         "category":"standings",
         "context_value":"5th",
         "context_value_label":"League rank"
@@ -58,7 +58,7 @@
     {
         "stat_label":"Runs against",
         "stat":"runs_against",
-        "value":327,
+        "value":335,
         "category":"standings",
         "context_value":365,
         "context_value_label":"This point last season"
@@ -66,7 +66,7 @@
     {
         "stat_label":"Run differential",
         "stat":"run_differential",
-        "value":140,
+        "value":133,
         "category":"standings",
         "context_value":67,
         "context_value_label":"This point last season"
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"July 9, 2026, 6:02 AM CT",
+        "value":"July 9, 2026, 10:16 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
