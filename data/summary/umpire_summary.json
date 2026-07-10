@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.85714285714286,
-        "incorrect_strikes_pct": 9.142857142857139,
-        "total_called_strikes": 2100,
+        "correct_strikes_pct": 90.88319088319088,
+        "incorrect_strikes_pct": 9.116809116809122,
+        "total_called_strikes": 2106,
         "bad_calls_count": 192
     },
     "last_game_summary": {
-        "date": "July 8, 2026",
+        "date": "July 9, 2026",
         "correct_strikes_pct": 100.0,
         "incorrect_strikes_pct": 0.0,
         "total_called_strikes": 6,
         "bad_calls_count": 0,
-        "home_plate_umpire": "Jen Pawol"
+        "home_plate_umpire": "Todd Tichenor"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 95.89887640449439,
-        "incorrect_balls_pct": 4.101123595505612,
-        "total_called_balls": 3560,
+        "correct_balls_pct": 95.90117911285795,
+        "incorrect_balls_pct": 4.098820887142054,
+        "total_called_balls": 3562,
         "bad_calls_count": 146
     },
     "pitching_last_game_summary": {
-        "date": "July 8, 2026",
-        "correct_balls_pct": 85.71428571428571,
-        "incorrect_balls_pct": 14.285714285714292,
-        "total_called_balls": 7,
-        "bad_calls_count": 1
+        "date": "July 9, 2026",
+        "correct_balls_pct": 100.0,
+        "incorrect_balls_pct": 0.0,
+        "total_called_balls": 2,
+        "bad_calls_count": 0
     },
     "pitching_worst_calls_of_season": []
 }
