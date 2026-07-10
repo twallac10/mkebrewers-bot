@@ -1,11 +1,5 @@
 [
     {
-        "name":"Logan Henderson (15-day IL)",
-        "era+":158.0,
-        "fip":2.42,
-        "so_bb":5.0
-    },
-    {
         "name":"Trevor Megill",
         "era+":143.0,
         "fip":1.48,
@@ -14,7 +8,7 @@
     {
         "name":"Craig Yoho",
         "era+":122.0,
-        "fip":4.62,
+        "fip":4.61,
         "so_bb":3.33
     },
     {
@@ -26,7 +20,13 @@
     {
         "name":"Jake Woodford",
         "era+":62.0,
-        "fip":3.98,
+        "fip":3.97,
         "so_bb":2.86
+    },
+    {
+        "name":"Abner Uribe",
+        "era+":163.0,
+        "fip":3.41,
+        "so_bb":2.5
     }
 ]
