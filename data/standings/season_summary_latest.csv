@@ -3,7 +3,7 @@ Wins,wins,59,standings,53,This point last season
 Losses,losses,34,standings,40,This point last season
 Record,record,59-34,standings,53-40,This point last season
 Win percentage,win_pct,63%,standings,56%,This point last season
-Games up/back,games_up_back,7.5,standings,1st,Division rank
+Games up/back,games_up_back,6.5,standings,1st,Division rank
 Avg. home attendance,mean_attendance,"31,453",standings,51,Home games this season
 Runs,runs,476,standings,4th,League rank
 Runs against,runs_against,339,standings,367,This point last season
@@ -12,11 +12,11 @@ Batting average,batting_average,.255,batting,N/A,Last decade average
 Home runs,home_runs,86,batting,28th,League rank
 Home runs/game,home_runs_game,0.92,batting,N/A,Last decade average
 On-base percentage,on_base_pct,.337,batting,N/A,Last decade average
-Stolen bases,stolen_bases,86,batting,7th,League rank
+Stolen bases,stolen_bases,86,batting,5th,League rank
 Stolen bases/game,stolen_bases_game,0.92,batting,N/A,Rate all last season
 Strikeouts,strikeouts,903,pitching,2nd,League rank
 Walks,walks,302,pitching,20th,League rank
 ERA,era,3.33,pitching,1st,League rank
-Last updated,update_time,"July 11, 2026, 10:58 AM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(July 11)</span> — The Brewers have compiled a <span class='highlight'>59-34</span> record in the 2026 regular season, a <span class='highlight'>63%</span> winning percentage.  The last game was a <span class='highlight'>N/A-N/A</span> away <span class='highlight'>loss</span>. and the next game is Saturday at 3:05 p.m. CT at <span class='highlight'>PNC Park</span>.",summary,,
-Last game result,last_game_result,win,summary,,
+Last updated,update_time,"July 11, 2026, 6:58 PM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(July 11)</span> — The Brewers have compiled a <span class='highlight'>59-36</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>2-3</span> away <span class='highlight'>loss</span>. and the next game is Sunday at 11:15 p.m. CT at <span class='highlight'>PNC Park</span>.",summary,,
+Last game result,last_game_result,loss,summary,,
