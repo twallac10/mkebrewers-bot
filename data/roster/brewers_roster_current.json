@@ -162,24 +162,6 @@
     "slug":"chad-patrick"
   },
   {
-    "player_id":"680723",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/680723\/headshot\/silo\/current",
-    "name":"Drew Rom",
-    "player_url":"\/player\/680723",
-    "jersey":"38",
-    "position_group":"Pitchers",
-    "bat_throw":"L\/L",
-    "height":"6' 1\"",
-    "weight":"225",
-    "dob":"12\/15\/1999",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"drew-rom"
-  },
-  {
     "player_id":"687075",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/687075\/headshot\/silo\/current",
     "name":"Brandon Sproat",
@@ -214,6 +196,24 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"abner-uribe"
+  },
+  {
+    "player_id":"669060",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/669060\/headshot\/silo\/current",
+    "name":"Bryse Wilson",
+    "player_url":"\/player\/669060",
+    "jersey":"41",
+    "position_group":"Pitchers",
+    "bat_throw":"R\/R",
+    "height":"6' 2\"",
+    "weight":"255",
+    "dob":"12\/20\/1997",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"bryse-wilson"
   },
   {
     "player_id":"684974",
