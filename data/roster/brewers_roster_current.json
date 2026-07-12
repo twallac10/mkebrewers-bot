@@ -180,24 +180,6 @@
     "slug":"brandon-sproat"
   },
   {
-    "player_id":"668831",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/668831\/headshot\/silo\/current",
-    "name":"Garrett Stallings",
-    "player_url":"\/player\/668831",
-    "jersey":"31",
-    "position_group":"Pitchers",
-    "bat_throw":"R\/R",
-    "height":"6' 1\"",
-    "weight":"218",
-    "dob":"08\/08\/1997",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"garrett-stallings"
-  },
-  {
     "player_id":"682842",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/682842\/headshot\/silo\/current",
     "name":"Abner Uribe",
@@ -342,6 +324,24 @@
     "slug":"cooper-pratt"
   },
   {
+    "player_id":"669699",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/669699\/headshot\/silo\/current",
+    "name":"Braden Shewmake",
+    "player_url":"\/player\/669699",
+    "jersey":"13",
+    "position_group":"Infielders",
+    "bat_throw":"L\/R",
+    "height":"6' 3\"",
+    "weight":"200",
+    "dob":"11\/19\/1997",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"braden-shewmake"
+  },
+  {
     "player_id":"668930",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/668930\/headshot\/silo\/current",
     "name":"Brice Turang",
@@ -412,24 +412,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"sal-frelick"
-  },
-  {
-    "player_id":"675659",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/675659\/headshot\/silo\/current",
-    "name":"Greg Jones",
-    "player_url":"\/player\/675659",
-    "jersey":"14",
-    "position_group":"Outfielders",
-    "bat_throw":"S\/R",
-    "height":"6' 0\"",
-    "weight":"189",
-    "dob":"03\/07\/1998",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"greg-jones"
   },
   {
     "player_id":"800325",
