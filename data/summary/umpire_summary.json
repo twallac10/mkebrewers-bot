@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.93806921675774,
-        "incorrect_strikes_pct": 9.06193078324226,
-        "total_called_strikes": 2196,
-        "bad_calls_count": 199
+        "correct_strikes_pct": 90.9090909090909,
+        "incorrect_strikes_pct": 9.090909090909093,
+        "total_called_strikes": 2233,
+        "bad_calls_count": 203
     },
     "last_game_summary": {
-        "date": "July 17, 2026",
-        "correct_strikes_pct": 66.66666666666666,
-        "incorrect_strikes_pct": 33.33333333333334,
-        "total_called_strikes": 3,
-        "bad_calls_count": 1,
-        "home_plate_umpire": "Nick Mahrley"
+        "date": "July 18, 2026",
+        "correct_strikes_pct": 89.1891891891892,
+        "incorrect_strikes_pct": 10.810810810810807,
+        "total_called_strikes": 37,
+        "bad_calls_count": 4,
+        "home_plate_umpire": "Derek Thomas"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.05405405405405,
-        "incorrect_balls_pct": 3.945945945945951,
-        "total_called_balls": 3700,
-        "bad_calls_count": 146
+        "correct_balls_pct": 96.07476635514018,
+        "incorrect_balls_pct": 3.9252336448598157,
+        "total_called_balls": 3745,
+        "bad_calls_count": 147
     },
     "pitching_last_game_summary": {
-        "date": "July 17, 2026",
-        "correct_balls_pct": 100.0,
-        "incorrect_balls_pct": 0.0,
-        "total_called_balls": 6,
-        "bad_calls_count": 0
+        "date": "July 18, 2026",
+        "correct_balls_pct": 97.77777777777777,
+        "incorrect_balls_pct": 2.2222222222222285,
+        "total_called_balls": 45,
+        "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": []
 }
