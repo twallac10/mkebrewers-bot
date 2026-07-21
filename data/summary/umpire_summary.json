@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.9973521624007,
-        "incorrect_strikes_pct": 9.002647837599298,
-        "total_called_strikes": 2266,
+        "correct_strikes_pct": 91.005291005291,
+        "incorrect_strikes_pct": 8.994708994709,
+        "total_called_strikes": 2268,
         "bad_calls_count": 204
     },
     "last_game_summary": {
-        "date": "July 20, 2026",
-        "correct_strikes_pct": 66.66666666666666,
-        "incorrect_strikes_pct": 33.33333333333334,
-        "total_called_strikes": 3,
-        "bad_calls_count": 1,
-        "home_plate_umpire": "Cory Blaser"
+        "date": "July 21, 2026",
+        "correct_strikes_pct": 100.0,
+        "incorrect_strikes_pct": 0.0,
+        "total_called_strikes": 2,
+        "bad_calls_count": 0,
+        "home_plate_umpire": "Jansen Visconti"
     },
     "worst_calls_of_season": [
         {
@@ -56,16 +56,16 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.10115911485775,
-        "incorrect_balls_pct": 3.898840885142249,
-        "total_called_balls": 3796,
+        "correct_balls_pct": 96.11140304781924,
+        "incorrect_balls_pct": 3.8885969521807624,
+        "total_called_balls": 3806,
         "bad_calls_count": 148
     },
     "pitching_last_game_summary": {
-        "date": "July 20, 2026",
+        "date": "July 21, 2026",
         "correct_balls_pct": 100.0,
         "incorrect_balls_pct": 0.0,
-        "total_called_balls": 4,
+        "total_called_balls": 10,
         "bad_calls_count": 0
     },
     "pitching_worst_calls_of_season": []
