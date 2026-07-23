@@ -1,9 +1,9 @@
 [
     {
         "name":"Trevor Megill",
-        "era+":149.0,
-        "fip":1.45,
-        "so_bb":4.8
+        "era+":141.0,
+        "fip":1.57,
+        "so_bb":4.36
     },
     {
         "name":"Shane Drohan*",
@@ -19,14 +19,14 @@
     },
     {
         "name":"Aaron Ashby*",
-        "era+":123.0,
-        "fip":3.14,
-        "so_bb":2.69
+        "era+":127.0,
+        "fip":3.05,
+        "so_bb":2.73
     },
     {
         "name":"Abner Uribe",
-        "era+":174.0,
-        "fip":3.25,
-        "so_bb":2.6
+        "era+":178.0,
+        "fip":3.15,
+        "so_bb":2.73
     }
 ]
