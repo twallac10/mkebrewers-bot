@@ -8,25 +8,25 @@
     {
         "name":"Kyle Harrison (15-day IL)*",
         "era+":140.0,
-        "fip":3.1,
+        "fip":3.11,
         "so_bb":5.05
     },
     {
         "name":"Brandon Woodruff (60-day IL)",
         "era+":142.0,
-        "fip":3.19,
+        "fip":3.2,
         "so_bb":4.7
+    },
+    {
+        "name":"Robert Gasser*",
+        "era+":90.0,
+        "fip":4.78,
+        "so_bb":3.71
     },
     {
         "name":"Shane Drohan*",
         "era+":120.0,
         "fip":3.01,
         "so_bb":3.57
-    },
-    {
-        "name":"Robert Gasser*",
-        "era+":86.0,
-        "fip":5.13,
-        "so_bb":3.43
     }
 ]
