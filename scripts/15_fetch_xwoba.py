@@ -301,10 +301,15 @@ def fetch_player_ids():
         roster_entries = response.json().get('roster', [])
         logging.info(f"Found {len(roster_entries)} roster entries")
 
-        non_pitcher_ids = [
-            str(e['person']['id']) for e in roster_entries
-            if e.get('position', {}).get('abbreviation') != 'P'
-        ]
+        non_pitcher_ids = []
+        for e in roster_entries:
+            try:
+                if e.get('position', {}).get('abbreviation') == 'P':
+                    continue
+                non_pitcher_ids.append(str(e['person']['id']))
+            except Exception as ex:
+                logging.warning(f"Skipping roster entry {e.get('person', {}).get('id', 'unknown')}: {str(ex)}")
+                continue
         stats_by_id = fetch_hitting_stats(non_pitcher_ids)
 
         if stats_by_id is None:

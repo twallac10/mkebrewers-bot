@@ -224,6 +224,25 @@ class FetchPlayerIdsIntegrationTests(unittest.TestCase):
             result = xwoba.fetch_player_ids()
         self.assertEqual(result, {})
 
+    def test_malformed_roster_entry_does_not_abort_whole_function(self):
+        fake_roster = MagicMock()
+        fake_roster.status_code = 200
+        fake_roster.json.return_value = {
+            "roster": [
+                {"person": {"id": 668930, "fullName": "Brice Turang"}, "position": {"abbreviation": "2B"}},
+                {"position": {"abbreviation": "1B"}},  # missing "person" entirely
+                {"person": {"id": 661388, "fullName": "William Contreras"}, "position": {"abbreviation": "C"}},
+            ]
+        }
+        with patch.object(xwoba, "PIN_BATTERS", []), patch.object(xwoba, "TOP_N", 2):
+            with patch.object(
+                xwoba.requests,
+                "get",
+                side_effect=[fake_roster, self._stats_response()],
+            ):
+                result = xwoba.fetch_player_ids()
+        self.assertEqual(result, {"Brice Turang": "668930", "William Contreras": "661388"})
+
 
 if __name__ == "__main__":
     unittest.main()
