@@ -8,8 +8,10 @@ This script downloads the team's current pitching table from [Baseball Reference
 
 # Import Python tools
 import os
+import re
 import boto3
 import pandas as pd
+import requests
 from io import BytesIO
 
 """
@@ -17,6 +19,48 @@ Fetch
 """
 
 from scripts import config
+
+
+def normalize_pitcher_name(name):
+    """Lowercase and collapse whitespace for name comparison."""
+    return " ".join(name.split()).lower()
+
+
+def clean_br_name(name):
+    """
+    Strip Baseball-Reference's display annotations (trailing '*' for
+    throws-left, and any trailing ' (...)' parenthetical like IL status or
+    '(40-man)') to get a name comparable against the MLB Stats API roster.
+    Used only for matching -- the original annotated name is never changed
+    in the output.
+    """
+    cleaned = name.rstrip("*").strip()
+    cleaned = re.sub(r"\s*\([^)]*\)\s*$", "", cleaned)
+    return normalize_pitcher_name(cleaned)
+
+
+def fetch_current_roster_names():
+    """
+    Fetch the Brewers' current 40-man roster from the MLB Stats API and
+    return a set of normalized full names (pitchers and hitters both -- this
+    only answers "on the roster," not "what position").
+    Returns an empty set if the request fails; callers should treat an
+    empty set as "skip filtering" rather than "roster is empty."
+    """
+    roster_url = (
+        f"https://statsapi.mlb.com/api/v1/teams/{config.TEAM_ID}/roster"
+        f"?rosterType=40Man&season={config.CURRENT_YEAR}"
+    )
+    try:
+        response = requests.get(roster_url, headers={"User-Agent": "Mozilla/5.0"})
+        if response.status_code != 200:
+            print(f"Failed to fetch current roster for pitching filter. Status code: {response.status_code}")
+            return set()
+        roster = response.json().get("roster", [])
+        return {normalize_pitcher_name(e["person"]["fullName"]) for e in roster}
+    except Exception as e:
+        print(f"Error fetching current roster for pitching filter: {e}")
+        return set()
 
 
 def ensure_directory_exists(path):
@@ -142,6 +186,18 @@ def main():
         .query('~player.str.contains("Rank in", na=False)')
         .copy()
     )
+
+    # Filter out players no longer with the organization -- Baseball-
+    # Reference's season table doesn't drop a player once they've been
+    # traded/released/optioned elsewhere, so cross-check against the
+    # current 40-man roster instead of trusting the season-cumulative view.
+    current_roster_names = fetch_current_roster_names()
+    if current_roster_names:
+        players = players[
+            players["player"].apply(clean_br_name).isin(current_roster_names)
+        ].copy()
+    else:
+        print("Roster fetch returned no names; skipping current-roster filter for pitching leaderboard.")
 
     # Convert numeric columns (including SO/BB which Baseball Reference provides)
     numeric_cols = ['era+', 'fip', 'so/bb', 'ip']
