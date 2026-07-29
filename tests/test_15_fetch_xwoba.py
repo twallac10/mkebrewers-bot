@@ -112,6 +112,13 @@ class BuildHitterRecordsTests(unittest.TestCase):
         result = xwoba.build_hitter_records(roster_entries, {})
         self.assertEqual(result, [])
 
+    def test_skips_entry_with_person_none(self):
+        roster_entries = [
+            {"person": None, "position": {"abbreviation": "LF"}},
+        ]
+        result = xwoba.build_hitter_records(roster_entries, {})
+        self.assertEqual(result, [])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -221,7 +221,7 @@ def build_hitter_records(roster_entries, stats_by_id):
             hitters.append({"name": player_name, "id": player_id, "pa": pa})
         except Exception as e:
             logging.warning(
-                f"Skipping roster entry {entry.get('person', {}).get('id', 'unknown')}: {str(e)}"
+                f"Skipping roster entry {(entry.get('person') or {}).get('id', 'unknown')}: {str(e)}"
             )
             continue
     return hitters
