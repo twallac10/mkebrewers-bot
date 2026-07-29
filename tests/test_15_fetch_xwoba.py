@@ -53,5 +53,41 @@ class MatchPinsTests(unittest.TestCase):
         )
 
 
+class SelectTopBattersTests(unittest.TestCase):
+    def setUp(self):
+        self.hitters = [
+            {"name": "Brice Turang", "id": "668930", "pa": 458},
+            {"name": "William Contreras", "id": "661388", "pa": 429},
+            {"name": "Jake Bauers", "id": "641343", "pa": 381},
+            {"name": "Garrett Mitchell", "id": "669003", "pa": 350},
+            {"name": "Jackson Chourio", "id": "694192", "pa": 332},
+            {"name": "Blake Perkins", "id": "663368", "pa": 101},
+        ]
+
+    def test_selects_top_n_by_plate_appearances(self):
+        result = xwoba.select_top_batters(self.hitters, pin_names=[], top_n=3)
+        self.assertEqual(
+            result,
+            {
+                "Brice Turang": "668930",
+                "William Contreras": "661388",
+                "Jake Bauers": "641343",
+            },
+        )
+
+    def test_pinned_player_included_even_with_low_pa(self):
+        result = xwoba.select_top_batters(
+            self.hitters, pin_names=["Blake Perkins"], top_n=3
+        )
+        self.assertEqual(len(result), 3)
+        self.assertIn("Blake Perkins", result)
+        self.assertIn("Brice Turang", result)
+        self.assertIn("William Contreras", result)
+
+    def test_top_n_larger_than_roster_returns_everyone(self):
+        result = xwoba.select_top_batters(self.hitters, pin_names=[], top_n=50)
+        self.assertEqual(len(result), len(self.hitters))
+
+
 if __name__ == "__main__":
     unittest.main()

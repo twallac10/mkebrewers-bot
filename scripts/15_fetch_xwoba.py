@@ -177,6 +177,30 @@ def match_pins(hitters, pin_names):
 
     return pinned
 
+def select_top_batters(hitters, pin_names=None, top_n=None):
+    """
+    Select which hitters to feature: pinned names are always included,
+    remaining slots up to top_n are filled by descending plate appearances.
+    hitters: list of {"name": str, "id": str, "pa": int}
+    pin_names: list of raw names to force-include (defaults to PIN_BATTERS)
+    top_n: total number of batters to return (defaults to TOP_N)
+    Returns: dict {name: id}
+    """
+    pin_names = PIN_BATTERS if pin_names is None else pin_names
+    top_n = TOP_N if top_n is None else top_n
+
+    selected = match_pins(hitters, pin_names)
+    pinned_ids = set(selected.values())
+
+    remaining = [h for h in hitters if h["id"] not in pinned_ids]
+    remaining.sort(key=lambda h: h["pa"], reverse=True)
+
+    slots_left = max(0, top_n - len(selected))
+    for h in remaining[:slots_left]:
+        selected[h["name"]] = h["id"]
+
+    return selected
+
 def fetch_player_ids():
     """
     Fetch the Brewers active roster from the MLB Stats API to get all player IDs.
