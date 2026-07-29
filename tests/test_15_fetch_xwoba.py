@@ -158,5 +158,72 @@ class FetchHittingStatsTests(unittest.TestCase):
         mock_get.assert_not_called()
 
 
+class FetchPlayerIdsIntegrationTests(unittest.TestCase):
+    def _roster_response(self):
+        fake = MagicMock()
+        fake.status_code = 200
+        fake.json.return_value = {
+            "roster": [
+                {"person": {"id": 668930, "fullName": "Brice Turang"}, "position": {"abbreviation": "2B"}},
+                {"person": {"id": 661388, "fullName": "William Contreras"}, "position": {"abbreviation": "C"}},
+                {"person": {"id": 676879, "fullName": "Aaron Ashby"}, "position": {"abbreviation": "P"}},
+            ]
+        }
+        return fake
+
+    def _stats_response(self):
+        fake = MagicMock()
+        fake.status_code = 200
+        fake.json.return_value = {
+            "people": [
+                {"id": 668930, "stats": [{"splits": [{"stat": {"plateAppearances": "458"}}]}]},
+                {"id": 661388, "stats": [{"splits": [{"stat": {"plateAppearances": "429"}}]}]},
+            ]
+        }
+        return fake
+
+    def test_full_selection_excludes_pitcher_and_ranks_by_pa(self):
+        with patch.object(xwoba, "PIN_BATTERS", []), patch.object(xwoba, "TOP_N", 2):
+            with patch.object(
+                xwoba.requests,
+                "get",
+                side_effect=[self._roster_response(), self._stats_response()],
+            ):
+                result = xwoba.fetch_player_ids()
+        self.assertEqual(result, {"Brice Turang": "668930", "William Contreras": "661388"})
+
+    def test_falls_back_to_pins_only_when_stats_fetch_fails(self):
+        failed_stats = MagicMock()
+        failed_stats.status_code = 500
+        failed_stats.text = "server error"
+        with patch.object(xwoba, "PIN_BATTERS", ["William Contreras"]):
+            with patch.object(
+                xwoba.requests, "get", side_effect=[self._roster_response(), failed_stats]
+            ):
+                result = xwoba.fetch_player_ids()
+        self.assertEqual(result, {"William Contreras": "661388"})
+
+    def test_returns_empty_dict_when_stats_fail_and_no_pins(self):
+        failed_stats = MagicMock()
+        failed_stats.status_code = 500
+        failed_stats.text = "server error"
+        with patch.object(xwoba, "PIN_BATTERS", []):
+            with patch.object(
+                xwoba.requests, "get", side_effect=[self._roster_response(), failed_stats]
+            ):
+                result = xwoba.fetch_player_ids()
+        self.assertEqual(result, {})
+
+    def test_returns_empty_dict_when_roster_fetch_fails(self):
+        failed_roster = MagicMock()
+        failed_roster.status_code = 500
+        failed_roster.text = "server error"
+        with patch.object(xwoba.requests, "get", return_value=failed_roster), patch.object(
+            xwoba.time, "sleep"
+        ):
+            result = xwoba.fetch_player_ids()
+        self.assertEqual(result, {})
+
+
 if __name__ == "__main__":
     unittest.main()

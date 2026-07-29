@@ -270,10 +270,10 @@ def fetch_hitting_stats(player_ids):
 
 def fetch_player_ids():
     """
-    Fetch the Brewers active roster from the MLB Stats API to get all player IDs.
-    Baseball Savant's team roster page is now client-rendered and no longer exposes
-    player rows in the static HTML, so we source IDs from MLB's official API instead
-    (MLBAM player IDs are shared between both systems).
+    Select which Brewers batters to feature: fetch the current 40-man
+    roster from the MLB Stats API, batch-fetch season plate appearances for
+    every non-pitcher on it, then pick PIN_BATTERS (if any matched) plus the
+    highest-PA hitters up to TOP_N.
     Uses the current year dynamically to ensure we're getting the current roster.
     """
     logging.info(f"Fetching player IDs from MLB Stats API roster for {CURRENT_YEAR} season.")
@@ -298,47 +298,24 @@ def fetch_player_ids():
             return {}
 
         logging.info("Successfully fetched roster")
-        roster = response.json().get('roster', [])
-        logging.info(f"Found {len(roster)} roster entries")
+        roster_entries = response.json().get('roster', [])
+        logging.info(f"Found {len(roster_entries)} roster entries")
 
-        # Create dictionary mapping player names to IDs
-        player_lookup = {}
-        for entry in roster:
-            try:
-                player_id = str(entry['person']['id'])
-                player_name_raw = entry['person']['fullName']
-                # Format to "First Last" then filter by allowlist
-                formatted_name = format_player_name(player_name_raw)
-                normalized = normalize_name(formatted_name)
-                # Apply corrections map before comparison
-                normalized = NAME_CORRECTIONS.get(normalized, normalized)
-                # Check allowlist: require last name exact match and loose first-name prefix match
-                if normalized not in ALLOWED_NORMALIZED:
-                    # try prefix match on first name with exact last name
-                    # split to first/last for both candidate and allowed
-                    cand_tokens = normalized.split()
-                    if len(cand_tokens) >= 2:
-                        cand_first = " ".join(cand_tokens[:-1])
-                        cand_last = cand_tokens[-1]
-                        matched = False
-                        for allowed in ALLOWED_NORMALIZED:
-                            a_tokens = allowed.split()
-                            if len(a_tokens) >= 2:
-                                a_first = " ".join(a_tokens[:-1])
-                                a_last = a_tokens[-1]
-                                if cand_last == a_last and (cand_first.startswith(a_first) or a_first.startswith(cand_first)):
-                                    matched = True
-                                    break
-                        if not matched:
-                            continue
-                    else:
-                        continue
-                player_lookup[formatted_name] = player_id
-                logging.debug(f"Added allowed player: {formatted_name} (ID: {player_id})")
-            except Exception as e:
-                logging.warning(f"Skipping roster entry {entry.get('person', {}).get('id', 'unknown')}: {str(e)}")
-                continue
+        non_pitcher_ids = [
+            str(e['person']['id']) for e in roster_entries
+            if e.get('position', {}).get('abbreviation') != 'P'
+        ]
+        stats_by_id = fetch_hitting_stats(non_pitcher_ids)
 
+        if stats_by_id is None:
+            logging.error("Falling back to pinned batters only (no playing-time data available).")
+            if not PIN_BATTERS:
+                return {}
+            hitters = build_hitter_records(roster_entries, {})
+            return match_pins(hitters, PIN_BATTERS)
+
+        hitters = build_hitter_records(roster_entries, stats_by_id)
+        player_lookup = select_top_batters(hitters, PIN_BATTERS, TOP_N)
         logging.info(f"Successfully created lookup for {len(player_lookup)} players")
         return player_lookup
 
