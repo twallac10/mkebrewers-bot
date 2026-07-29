@@ -2,15 +2,15 @@
     {
         "stat_label":"Wins",
         "stat":"wins",
-        "value":66,
+        "value":67,
         "category":"standings",
-        "context_value":62,
+        "context_value":64,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Losses",
         "stat":"losses",
-        "value":39,
+        "value":40,
         "category":"standings",
         "context_value":43,
         "context_value_label":"This point last season"
@@ -18,9 +18,9 @@
     {
         "stat_label":"Record",
         "stat":"record",
-        "value":"66-39",
+        "value":"67-40",
         "category":"standings",
-        "context_value":"62-43",
+        "context_value":"64-43",
         "context_value_label":"This point last season"
     },
     {
@@ -28,13 +28,13 @@
         "stat":"win_pct",
         "value":"63%",
         "category":"standings",
-        "context_value":"59%",
+        "context_value":"60%",
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":7,
+        "value":6,
         "category":"standings",
         "context_value":"1st",
         "context_value_label":"Division rank"
@@ -50,7 +50,7 @@
     {
         "stat_label":"Runs",
         "stat":"runs",
-        "value":535,
+        "value":543,
         "category":"standings",
         "context_value":"5th",
         "context_value_label":"League rank"
@@ -58,17 +58,17 @@
     {
         "stat_label":"Runs against",
         "stat":"runs_against",
-        "value":393,
+        "value":398,
         "category":"standings",
-        "context_value":405,
+        "context_value":412,
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Run differential",
         "stat":"run_differential",
-        "value":142,
+        "value":145,
         "category":"standings",
-        "context_value":92,
+        "context_value":102,
         "context_value_label":"This point last season"
     },
     {
@@ -84,13 +84,13 @@
         "stat":"home_runs",
         "value":98,
         "category":"batting",
-        "context_value":"29th",
+        "context_value":"30th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Home runs\/game",
         "stat":"home_runs_game",
-        "value":0.93,
+        "value":0.92,
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Last decade average"
@@ -106,9 +106,9 @@
     {
         "stat_label":"Stolen bases",
         "stat":"stolen_bases",
-        "value":104,
+        "value":106,
         "category":"batting",
-        "context_value":"4th",
+        "context_value":"5th",
         "context_value_label":"League rank"
     },
     {
@@ -122,7 +122,7 @@
     {
         "stat_label":"Strikeouts",
         "stat":"strikeouts",
-        "value":"1,027",
+        "value":"1,042",
         "category":"pitching",
         "context_value":"2nd",
         "context_value_label":"League rank"
@@ -130,7 +130,7 @@
     {
         "stat_label":"Walks",
         "stat":"walks",
-        "value":"329",
+        "value":"335",
         "category":"pitching",
         "context_value":"20th",
         "context_value_label":"League rank"
@@ -138,7 +138,7 @@
     {
         "stat_label":"ERA",
         "stat":"era",
-        "value":"3.43",
+        "value":"3.41",
         "category":"pitching",
         "context_value":"2nd",
         "context_value_label":"League rank"
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"July 27, 2026, 7:04 PM CT",
+        "value":"July 29, 2026, 9:40 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(July 27)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>66-39<\/span> record in the 2026 regular season, a <span class='highlight'>63%<\/span> winning percentage.  The last game was a <span class='highlight'>11-2<\/span> home <span class='highlight'>win<\/span>. and the next game is Tuesday at 8:45 p.m. CT at <span class='highlight'>Oracle Park<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(July 29)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>67-40<\/span> record in the 2026 regular season, a <span class='highlight'>63%<\/span> winning percentage.  The last game was a <span class='highlight'>8-2<\/span> away <span class='highlight'>win<\/span>. and the next game is Wednesday at 2:45 p.m. CT at <span class='highlight'>Oracle Park<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""

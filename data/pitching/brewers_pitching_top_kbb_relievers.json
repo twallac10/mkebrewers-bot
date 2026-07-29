@@ -1,14 +1,14 @@
 [
     {
         "name":"Logan Henderson",
-        "era+":139.0,
-        "fip":2.98,
-        "so_bb":6.71
+        "era+":159.0,
+        "fip":2.82,
+        "so_bb":6.0
     },
     {
         "name":"Trevor Megill",
         "era+":142.0,
-        "fip":1.53,
+        "fip":1.54,
         "so_bb":4.45
     },
     {
@@ -19,13 +19,13 @@
     },
     {
         "name":"Aaron Ashby*",
-        "era+":128.0,
+        "era+":129.0,
         "fip":3.06,
         "so_bb":2.73
     },
     {
         "name":"Abner Uribe",
-        "era+":178.0,
+        "era+":183.0,
         "fip":3.16,
         "so_bb":2.73
     }
