@@ -37,17 +37,14 @@ s3_key_csv = "mkebrewers/data/batting/brewers_xwoba_current.csv"
 s3_key_json = "mkebrewers/data/batting/brewers_xwoba_current.json"
 s3_key_parquet = "mkebrewers/data/batting/brewers_xwoba_current.parquet"
 
-# Allowlist of batter names to include (expected input: "First Last")
-ALLOWED_BATTERS = [
-    "William Contreras",
-    "Jackson Chourio",
-    "Sal Frelick",
-    "Joey Ortiz",
-    "Brice Turang",
-    "Christian Yelich",
-    "Garrett Mitchell",
-    "Blake Perkins",
-]
+# Manual override: names here are always included, filled up to TOP_N with
+# the highest-plate-appearance hitters on the current roster. Starts empty
+# on purpose — add a name here to force-include a specific player
+# regardless of playing time (e.g. a notable rookie call-up).
+PIN_BATTERS = []
+
+# Total number of batters to feature (pins + auto-filled by plate appearances).
+TOP_N = 12
 
 # Known corrections to help match allowlist typos or alternate spellings
 NAME_CORRECTIONS = {
@@ -135,15 +132,50 @@ def to_last_first(name: str) -> str:
         return f"{last}, {first}"
     return name
 
-def build_allowed_set(raw_names: list[str]) -> set[str]:
-    normalized = set()
-    for nm in raw_names:
-        key = normalize_name(nm)
-        key = NAME_CORRECTIONS.get(key, key)
-        normalized.add(key)
-    return normalized
+def match_pins(hitters, pin_names):
+    """
+    Match manually pinned names against the current roster's hitters.
+    hitters: list of {"name": str, "id": str, "pa": int}
+    pin_names: list of raw names (e.g. "First Last") to force-include
+    Returns: dict {name: id} for every pin that matched a current hitter.
+    Unmatched pin names are skipped (the player isn't on the roster).
+    """
+    pinned = {}
+    normalized_hitters = []
+    for h in hitters:
+        normalized = normalize_name(h["name"])
+        normalized = NAME_CORRECTIONS.get(normalized, normalized)
+        normalized_hitters.append((normalized, h))
 
-ALLOWED_NORMALIZED = build_allowed_set(ALLOWED_BATTERS)
+    for pin in pin_names:
+        pin_normalized = normalize_name(pin)
+        pin_normalized = NAME_CORRECTIONS.get(pin_normalized, pin_normalized)
+        matched_hitter = next(
+            (h for normalized, h in normalized_hitters if normalized == pin_normalized),
+            None,
+        )
+
+        if matched_hitter is None:
+            pin_tokens = pin_normalized.split()
+            if len(pin_tokens) >= 2:
+                pin_first, pin_last = " ".join(pin_tokens[:-1]), pin_tokens[-1]
+                for normalized, h in normalized_hitters:
+                    h_tokens = normalized.split()
+                    if len(h_tokens) >= 2:
+                        h_first, h_last = " ".join(h_tokens[:-1]), h_tokens[-1]
+                        if h_last == pin_last and (
+                            pin_first.startswith(h_first) or h_first.startswith(pin_first)
+                        ):
+                            matched_hitter = h
+                            break
+
+        if matched_hitter is None:
+            logging.warning(f"Pinned batter '{pin}' not found on current roster; skipping.")
+            continue
+
+        pinned[matched_hitter["name"]] = matched_hitter["id"]
+
+    return pinned
 
 def fetch_player_ids():
     """
