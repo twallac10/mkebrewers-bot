@@ -22,13 +22,13 @@ jobs:
         working-directory: ${{github.workspace}}
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
 
     - name: Fix git ownership
       run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
     - name: Set up AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v4
+      uses: aws-actions/configure-aws-credentials@v6
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
