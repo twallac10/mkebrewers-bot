@@ -226,6 +226,48 @@ def build_hitter_records(roster_entries, stats_by_id):
             continue
     return hitters
 
+def fetch_hitting_stats(player_ids):
+    """
+    Batch-fetch season plate appearances for the given MLBAM player IDs in a
+    single request.
+    player_ids: list of str/int player IDs
+    Returns: dict {str(player_id): int plateAppearances} on success (a
+      player with no stats yet is simply absent from the dict), or None if
+      the request itself failed.
+    """
+    if not player_ids:
+        return {}
+
+    ids_param = ",".join(str(pid) for pid in player_ids)
+    stats_url = "https://statsapi.mlb.com/api/v1/people"
+    params = {
+        "personIds": ids_param,
+        "hydrate": f"stats(group=[hitting],type=[season],season={CURRENT_YEAR})",
+    }
+
+    try:
+        response = requests.get(stats_url, params=params, headers=headers)
+        if response.status_code != 200:
+            logging.error(f"Failed to fetch hitting stats. Status code: {response.status_code}")
+            logging.error(f"Response content: {response.text[:500]}")
+            return None
+
+        stats_by_id = {}
+        for person in response.json().get("people", []):
+            player_id = str(person["id"])
+            stat_groups = person.get("stats", [])
+            if not stat_groups or not stat_groups[0].get("splits"):
+                continue
+            pa = stat_groups[0]["splits"][0]["stat"].get("plateAppearances")
+            if pa is not None:
+                stats_by_id[player_id] = int(pa)
+
+        return stats_by_id
+
+    except Exception as e:
+        logging.error(f"Error fetching hitting stats: {str(e)}")
+        return None
+
 def fetch_player_ids():
     """
     Fetch the Brewers active roster from the MLB Stats API to get all player IDs.

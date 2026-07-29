@@ -120,5 +120,43 @@ class BuildHitterRecordsTests(unittest.TestCase):
         self.assertEqual(result, [])
 
 
+class FetchHittingStatsTests(unittest.TestCase):
+    def test_returns_pa_by_id_on_success(self):
+        fake_response = MagicMock()
+        fake_response.status_code = 200
+        fake_response.json.return_value = {
+            "people": [
+                {"id": 661388, "stats": [{"splits": [{"stat": {"plateAppearances": "429"}}]}]},
+                {"id": 694192, "stats": [{"splits": [{"stat": {"plateAppearances": "332"}}]}]},
+            ]
+        }
+        with patch.object(xwoba.requests, "get", return_value=fake_response) as mock_get:
+            result = xwoba.fetch_hitting_stats([661388, 694192])
+        self.assertEqual(result, {"661388": 429, "694192": 332})
+        mock_get.assert_called_once()
+
+    def test_player_with_no_stats_yet_is_omitted(self):
+        fake_response = MagicMock()
+        fake_response.status_code = 200
+        fake_response.json.return_value = {"people": [{"id": 668731, "stats": []}]}
+        with patch.object(xwoba.requests, "get", return_value=fake_response):
+            result = xwoba.fetch_hitting_stats([668731])
+        self.assertEqual(result, {})
+
+    def test_returns_none_on_failed_request(self):
+        fake_response = MagicMock()
+        fake_response.status_code = 500
+        fake_response.text = "server error"
+        with patch.object(xwoba.requests, "get", return_value=fake_response):
+            result = xwoba.fetch_hitting_stats([661388])
+        self.assertIsNone(result)
+
+    def test_empty_id_list_returns_empty_dict_without_request(self):
+        with patch.object(xwoba.requests, "get") as mock_get:
+            result = xwoba.fetch_hitting_stats([])
+        self.assertEqual(result, {})
+        mock_get.assert_not_called()
+
+
 if __name__ == "__main__":
     unittest.main()
