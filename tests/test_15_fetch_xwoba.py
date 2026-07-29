@@ -89,5 +89,29 @@ class SelectTopBattersTests(unittest.TestCase):
         self.assertEqual(len(result), len(self.hitters))
 
 
+class BuildHitterRecordsTests(unittest.TestCase):
+    def test_excludes_pitchers(self):
+        roster_entries = [
+            {"person": {"id": 1, "fullName": "Some Pitcher"}, "position": {"abbreviation": "P"}},
+            {"person": {"id": 2, "fullName": "Some Hitter"}, "position": {"abbreviation": "LF"}},
+        ]
+        result = xwoba.build_hitter_records(roster_entries, {"2": 100})
+        self.assertEqual(result, [{"name": "Some Hitter", "id": "2", "pa": 100}])
+
+    def test_missing_stats_default_to_zero(self):
+        roster_entries = [
+            {"person": {"id": 3, "fullName": "New Callup"}, "position": {"abbreviation": "CF"}},
+        ]
+        result = xwoba.build_hitter_records(roster_entries, {})
+        self.assertEqual(result, [{"name": "New Callup", "id": "3", "pa": 0}])
+
+    def test_skips_malformed_entry(self):
+        roster_entries = [
+            {"person": {"id": 4}, "position": {"abbreviation": "1B"}},  # missing fullName
+        ]
+        result = xwoba.build_hitter_records(roster_entries, {})
+        self.assertEqual(result, [])
+
+
 if __name__ == "__main__":
     unittest.main()

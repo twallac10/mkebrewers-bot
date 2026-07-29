@@ -201,6 +201,31 @@ def select_top_batters(hitters, pin_names=None, top_n=None):
 
     return selected
 
+def build_hitter_records(roster_entries, stats_by_id):
+    """
+    Build hitter records from raw MLB Stats API roster entries and a
+    plate-appearances lookup, excluding pitchers.
+    roster_entries: the 'roster' list from the MLB Stats API roster response
+    stats_by_id: dict {str(player_id): int plateAppearances}; a missing id
+      is treated as 0 plate appearances (e.g. a stats fetch that partially failed)
+    Returns: list of {"name": str, "id": str, "pa": int}
+    """
+    hitters = []
+    for entry in roster_entries:
+        try:
+            if entry["position"]["abbreviation"] == "P":
+                continue
+            player_id = str(entry["person"]["id"])
+            player_name = format_player_name(entry["person"]["fullName"])
+            pa = stats_by_id.get(player_id, 0)
+            hitters.append({"name": player_name, "id": player_id, "pa": pa})
+        except Exception as e:
+            logging.warning(
+                f"Skipping roster entry {entry.get('person', {}).get('id', 'unknown')}: {str(e)}"
+            )
+            continue
+    return hitters
+
 def fetch_player_ids():
     """
     Fetch the Brewers active roster from the MLB Stats API to get all player IDs.
