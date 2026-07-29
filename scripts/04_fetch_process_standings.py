@@ -54,7 +54,7 @@ def fetch_current_year_data(url, year):
     logging.info("Fetching current year's data.")
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
-    src = (pd.read_html(StringIO(str(soup)))[0].query("Tm !='Tm' and Inn != 'Game Preview, and Matchups'")
+    src = (pd.read_html(StringIO(str(soup)))[0].query("Tm !='Tm' and Attendance != 'Game Preview, and Matchups'")
               .drop(["Unnamed: 2", "Streak", "Orig. Scheduled"], axis=1)
               .rename(columns={
                   "Gm#": "gm",
