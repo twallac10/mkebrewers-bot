@@ -232,8 +232,9 @@ def fetch_hitting_stats(player_ids):
     single request.
     player_ids: list of str/int player IDs
     Returns: dict {str(player_id): int plateAppearances} on success (a
-      player with no stats yet is simply absent from the dict), or None if
-      the request itself failed.
+      player with no stats yet is simply absent from the dict, and malformed
+      individual entries are skipped with a warning), or None if the HTTP
+      request itself failed (non-200 status or network/timeout error).
     """
     if not player_ids:
         return {}
@@ -254,13 +255,19 @@ def fetch_hitting_stats(player_ids):
 
         stats_by_id = {}
         for person in response.json().get("people", []):
-            player_id = str(person["id"])
-            stat_groups = person.get("stats", [])
-            if not stat_groups or not stat_groups[0].get("splits"):
+            try:
+                player_id = str(person["id"])
+                stat_groups = person.get("stats", [])
+                if not stat_groups or not stat_groups[0].get("splits"):
+                    continue
+                pa = stat_groups[0]["splits"][0]["stat"].get("plateAppearances")
+                if pa is not None:
+                    stats_by_id[player_id] = int(pa)
+            except Exception as e:
+                logging.warning(
+                    f"Skipping malformed stats entry for person {person.get('id', 'unknown')}: {str(e)}"
+                )
                 continue
-            pa = stat_groups[0]["splits"][0]["stat"].get("plateAppearances")
-            if pa is not None:
-                stats_by_id[player_id] = int(pa)
 
         return stats_by_id
 

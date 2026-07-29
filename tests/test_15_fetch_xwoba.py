@@ -157,6 +157,23 @@ class FetchHittingStatsTests(unittest.TestCase):
         self.assertEqual(result, {})
         mock_get.assert_not_called()
 
+    def test_malformed_entry_does_not_discard_valid_entries(self):
+        """Regression test: one malformed person entry should not discard the entire batch."""
+        fake_response = MagicMock()
+        fake_response.status_code = 200
+        fake_response.json.return_value = {
+            "people": [
+                # Malformed entry: missing "id" field
+                {"stats": [{"splits": [{"stat": {"plateAppearances": "100"}}]}]},
+                # Valid entry
+                {"id": 661388, "stats": [{"splits": [{"stat": {"plateAppearances": "429"}}]}]},
+            ]
+        }
+        with patch.object(xwoba.requests, "get", return_value=fake_response):
+            result = xwoba.fetch_hitting_stats([661388])
+        # Should return the valid entry's stats, not None or empty dict
+        self.assertEqual(result, {"661388": 429})
+
 
 class FetchPlayerIdsIntegrationTests(unittest.TestCase):
     def _roster_response(self):
