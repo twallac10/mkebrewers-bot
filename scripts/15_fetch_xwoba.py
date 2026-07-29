@@ -37,17 +37,14 @@ s3_key_csv = "mkebrewers/data/batting/brewers_xwoba_current.csv"
 s3_key_json = "mkebrewers/data/batting/brewers_xwoba_current.json"
 s3_key_parquet = "mkebrewers/data/batting/brewers_xwoba_current.parquet"
 
-# Allowlist of batter names to include (expected input: "First Last")
-ALLOWED_BATTERS = [
-    "William Contreras",
-    "Jackson Chourio",
-    "Sal Frelick",
-    "Joey Ortiz",
-    "Brice Turang",
-    "Christian Yelich",
-    "Garrett Mitchell",
-    "Blake Perkins",
-]
+# Manual override: names here are always included, filled up to TOP_N with
+# the highest-plate-appearance hitters on the current roster. Starts empty
+# on purpose — add a name here to force-include a specific player
+# regardless of playing time (e.g. a notable rookie call-up).
+PIN_BATTERS = []
+
+# Total number of batters to feature (pins + auto-filled by plate appearances).
+TOP_N = 12
 
 # Known corrections to help match allowlist typos or alternate spellings
 NAME_CORRECTIONS = {
@@ -135,22 +132,155 @@ def to_last_first(name: str) -> str:
         return f"{last}, {first}"
     return name
 
-def build_allowed_set(raw_names: list[str]) -> set[str]:
-    normalized = set()
-    for nm in raw_names:
-        key = normalize_name(nm)
-        key = NAME_CORRECTIONS.get(key, key)
-        normalized.add(key)
-    return normalized
+def match_pins(hitters, pin_names):
+    """
+    Match manually pinned names against the current roster's hitters.
+    hitters: list of {"name": str, "id": str, "pa": int}
+    pin_names: list of raw names (e.g. "First Last") to force-include
+    Returns: dict {name: id} for every pin that matched a current hitter.
+    Unmatched pin names are skipped (the player isn't on the roster).
+    """
+    pinned = {}
+    normalized_hitters = []
+    for h in hitters:
+        normalized = normalize_name(h["name"])
+        normalized = NAME_CORRECTIONS.get(normalized, normalized)
+        normalized_hitters.append((normalized, h))
 
-ALLOWED_NORMALIZED = build_allowed_set(ALLOWED_BATTERS)
+    for pin in pin_names:
+        pin_normalized = normalize_name(pin)
+        pin_normalized = NAME_CORRECTIONS.get(pin_normalized, pin_normalized)
+        matched_hitter = next(
+            (h for normalized, h in normalized_hitters if normalized == pin_normalized),
+            None,
+        )
+
+        if matched_hitter is None:
+            pin_tokens = pin_normalized.split()
+            if len(pin_tokens) >= 2:
+                pin_first, pin_last = " ".join(pin_tokens[:-1]), pin_tokens[-1]
+                for normalized, h in normalized_hitters:
+                    h_tokens = normalized.split()
+                    if len(h_tokens) >= 2:
+                        h_first, h_last = " ".join(h_tokens[:-1]), h_tokens[-1]
+                        if h_last == pin_last and (
+                            pin_first.startswith(h_first) or h_first.startswith(pin_first)
+                        ):
+                            matched_hitter = h
+                            break
+
+        if matched_hitter is None:
+            logging.warning(f"Pinned batter '{pin}' not found on current roster; skipping.")
+            continue
+
+        pinned[matched_hitter["name"]] = matched_hitter["id"]
+
+    return pinned
+
+def select_top_batters(hitters, pin_names=None, top_n=None):
+    """
+    Select which hitters to feature: pinned names are always included,
+    remaining slots up to top_n are filled by descending plate appearances.
+    hitters: list of {"name": str, "id": str, "pa": int}
+    pin_names: list of raw names to force-include (defaults to PIN_BATTERS)
+    top_n: total number of batters to return (defaults to TOP_N)
+    Returns: dict {name: id}
+    """
+    pin_names = PIN_BATTERS if pin_names is None else pin_names
+    top_n = TOP_N if top_n is None else top_n
+
+    selected = match_pins(hitters, pin_names)
+    pinned_ids = set(selected.values())
+
+    remaining = [h for h in hitters if h["id"] not in pinned_ids]
+    remaining.sort(key=lambda h: h["pa"], reverse=True)
+
+    slots_left = max(0, top_n - len(selected))
+    for h in remaining[:slots_left]:
+        selected[h["name"]] = h["id"]
+
+    return selected
+
+def build_hitter_records(roster_entries, stats_by_id):
+    """
+    Build hitter records from raw MLB Stats API roster entries and a
+    plate-appearances lookup, excluding pitchers.
+    roster_entries: the 'roster' list from the MLB Stats API roster response
+    stats_by_id: dict {str(player_id): int plateAppearances}; a missing id
+      is treated as 0 plate appearances (e.g. a stats fetch that partially failed)
+    Returns: list of {"name": str, "id": str, "pa": int}
+    """
+    hitters = []
+    for entry in roster_entries:
+        try:
+            if entry["position"]["abbreviation"] == "P":
+                continue
+            player_id = str(entry["person"]["id"])
+            player_name = format_player_name(entry["person"]["fullName"])
+            pa = stats_by_id.get(player_id, 0)
+            hitters.append({"name": player_name, "id": player_id, "pa": pa})
+        except Exception as e:
+            logging.warning(
+                f"Skipping roster entry {(entry.get('person') or {}).get('id', 'unknown')}: {str(e)}"
+            )
+            continue
+    return hitters
+
+def fetch_hitting_stats(player_ids):
+    """
+    Batch-fetch season plate appearances for the given MLBAM player IDs in a
+    single request.
+    player_ids: list of str/int player IDs
+    Returns: dict {str(player_id): int plateAppearances} on success (a
+      player with no stats yet is simply absent from the dict, and malformed
+      individual entries are skipped with a warning), or None if the HTTP
+      request itself failed (non-200 status or network/timeout error).
+    """
+    if not player_ids:
+        return {}
+
+    ids_param = ",".join(str(pid) for pid in player_ids)
+    stats_url = "https://statsapi.mlb.com/api/v1/people"
+    params = {
+        "personIds": ids_param,
+        "hydrate": f"stats(group=[hitting],type=[season],season={CURRENT_YEAR})",
+    }
+
+    try:
+        response = requests.get(stats_url, params=params, headers=headers)
+        if response.status_code != 200:
+            logging.error(f"Failed to fetch hitting stats. Status code: {response.status_code}")
+            logging.error(f"Response content: {response.text[:500]}")
+            return None
+
+        stats_by_id = {}
+        for person in response.json().get("people", []):
+            try:
+                player_id = str(person["id"])
+                stat_groups = person.get("stats", [])
+                if not stat_groups or not stat_groups[0].get("splits"):
+                    continue
+                pa = stat_groups[0]["splits"][0]["stat"].get("plateAppearances")
+                if pa is not None:
+                    stats_by_id[player_id] = int(pa)
+            except Exception as e:
+                logging.warning(
+                    f"Skipping malformed stats entry for person {person.get('id', 'unknown')}: {str(e)}"
+                )
+                continue
+
+        return stats_by_id
+
+    except Exception as e:
+        logging.error(f"Error fetching hitting stats: {str(e)}")
+        return None
 
 def fetch_player_ids():
     """
-    Fetch the Brewers active roster from the MLB Stats API to get all player IDs.
-    Baseball Savant's team roster page is now client-rendered and no longer exposes
-    player rows in the static HTML, so we source IDs from MLB's official API instead
-    (MLBAM player IDs are shared between both systems).
+    Select which Brewers batters to feature: fetch the current 40-man
+    roster from the MLB Stats API, batch-fetch season plate appearances for
+    every non-pitcher on it, then pick PIN_BATTERS (if any matched) plus the
+    highest-PA hitters up to TOP_N.
     Uses the current year dynamically to ensure we're getting the current roster.
     """
     logging.info(f"Fetching player IDs from MLB Stats API roster for {CURRENT_YEAR} season.")
@@ -175,47 +305,29 @@ def fetch_player_ids():
             return {}
 
         logging.info("Successfully fetched roster")
-        roster = response.json().get('roster', [])
-        logging.info(f"Found {len(roster)} roster entries")
+        roster_entries = response.json().get('roster', [])
+        logging.info(f"Found {len(roster_entries)} roster entries")
 
-        # Create dictionary mapping player names to IDs
-        player_lookup = {}
-        for entry in roster:
+        non_pitcher_ids = []
+        for e in roster_entries:
             try:
-                player_id = str(entry['person']['id'])
-                player_name_raw = entry['person']['fullName']
-                # Format to "First Last" then filter by allowlist
-                formatted_name = format_player_name(player_name_raw)
-                normalized = normalize_name(formatted_name)
-                # Apply corrections map before comparison
-                normalized = NAME_CORRECTIONS.get(normalized, normalized)
-                # Check allowlist: require last name exact match and loose first-name prefix match
-                if normalized not in ALLOWED_NORMALIZED:
-                    # try prefix match on first name with exact last name
-                    # split to first/last for both candidate and allowed
-                    cand_tokens = normalized.split()
-                    if len(cand_tokens) >= 2:
-                        cand_first = " ".join(cand_tokens[:-1])
-                        cand_last = cand_tokens[-1]
-                        matched = False
-                        for allowed in ALLOWED_NORMALIZED:
-                            a_tokens = allowed.split()
-                            if len(a_tokens) >= 2:
-                                a_first = " ".join(a_tokens[:-1])
-                                a_last = a_tokens[-1]
-                                if cand_last == a_last and (cand_first.startswith(a_first) or a_first.startswith(cand_first)):
-                                    matched = True
-                                    break
-                        if not matched:
-                            continue
-                    else:
-                        continue
-                player_lookup[formatted_name] = player_id
-                logging.debug(f"Added allowed player: {formatted_name} (ID: {player_id})")
-            except Exception as e:
-                logging.warning(f"Skipping roster entry {entry.get('person', {}).get('id', 'unknown')}: {str(e)}")
+                if e.get('position', {}).get('abbreviation') == 'P':
+                    continue
+                non_pitcher_ids.append(str(e['person']['id']))
+            except Exception as ex:
+                logging.warning(f"Skipping roster entry {e.get('person', {}).get('id', 'unknown')}: {str(ex)}")
                 continue
+        stats_by_id = fetch_hitting_stats(non_pitcher_ids)
 
+        if stats_by_id is None:
+            logging.error("Falling back to pinned batters only (no playing-time data available).")
+            if not PIN_BATTERS:
+                return {}
+            hitters = build_hitter_records(roster_entries, {})
+            return match_pins(hitters, PIN_BATTERS)
+
+        hitters = build_hitter_records(roster_entries, stats_by_id)
+        player_lookup = select_top_batters(hitters, PIN_BATTERS, TOP_N)
         logging.info(f"Successfully created lookup for {len(player_lookup)} players")
         return player_lookup
 
