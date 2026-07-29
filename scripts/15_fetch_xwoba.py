@@ -40,17 +40,13 @@ s3_key_parquet = "mkebrewers/data/batting/brewers_xwoba_current.parquet"
 # Allowlist of batter names to include (expected input: "First Last")
 ALLOWED_BATTERS = [
     "William Contreras",
-    "Willy Adames",
     "Jackson Chourio",
     "Sal Frelick",
     "Joey Ortiz",
     "Brice Turang",
     "Christian Yelich",
     "Garrett Mitchell",
-    "Rhys Hoskins",
     "Blake Perkins",
-    "Oliver Dunn",
-    "Eric Haase",
 ]
 
 # Known corrections to help match allowlist typos or alternate spellings
@@ -151,17 +147,22 @@ ALLOWED_NORMALIZED = build_allowed_set(ALLOWED_BATTERS)
 
 def fetch_player_ids():
     """
-    Scrape the Brewers roster page to get all player IDs.
+    Fetch the Brewers active roster from the MLB Stats API to get all player IDs.
+    Baseball Savant's team roster page is now client-rendered and no longer exposes
+    player rows in the static HTML, so we source IDs from MLB's official API instead
+    (MLBAM player IDs are shared between both systems).
     Uses the current year dynamically to ensure we're getting the current roster.
     """
-    logging.info(f"Fetching player IDs from roster page for {CURRENT_YEAR} season.")
-    team_url = f'https://baseballsavant.mlb.com/team/{config.TEAM_ID}?view=statcast&nav=hitting&season={CURRENT_YEAR}'
-    logging.info(f"Making request to: {team_url}")
+    logging.info(f"Fetching player IDs from MLB Stats API roster for {CURRENT_YEAR} season.")
+    # Use the 40-man roster (not just the active roster) so players on the
+    # injured list, like a batter on a 10-day IL stint, are still included.
+    roster_url = f'https://statsapi.mlb.com/api/v1/teams/{config.TEAM_ID}/roster?rosterType=40Man&season={CURRENT_YEAR}'
+    logging.info(f"Making request to: {roster_url}")
 
     try:
         response = None
         for attempt in range(1, 4):
-            response = requests.get(team_url, headers=headers)
+            response = requests.get(roster_url, headers=headers)
             logging.info(f"Response status code (attempt {attempt}): {response.status_code}")
             if response.status_code == 200:
                 break
@@ -169,26 +170,20 @@ def fetch_player_ids():
             time.sleep(attempt * 10)
 
         if response.status_code != 200:
-            logging.error(f"Failed to fetch roster page after 3 attempts. Status code: {response.status_code}")
+            logging.error(f"Failed to fetch roster after 3 attempts. Status code: {response.status_code}")
             logging.error(f"Response content: {response.text[:500]}")
             return {}
-            
-        logging.info("Successfully fetched roster page")
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # Find all player rows in the roster table
-        player_rows = soup.find_all('tr', id=lambda x: x and x.startswith('scg_'))
-        logging.info(f"Found {len(player_rows)} player rows")
-        
+
+        logging.info("Successfully fetched roster")
+        roster = response.json().get('roster', [])
+        logging.info(f"Found {len(roster)} roster entries")
+
         # Create dictionary mapping player names to IDs
         player_lookup = {}
-        for row in player_rows:
+        for entry in roster:
             try:
-                player_id = row['id'].replace('scg_', '')
-                # Skip team totals and MLB totals rows
-                if player_id in ['119', '999999']:
-                    continue
-                player_name_raw = row.find('a').text.strip()
+                player_id = str(entry['person']['id'])
+                player_name_raw = entry['person']['fullName']
                 # Format to "First Last" then filter by allowlist
                 formatted_name = format_player_name(player_name_raw)
                 normalized = normalize_name(formatted_name)
@@ -218,12 +213,12 @@ def fetch_player_ids():
                 player_lookup[formatted_name] = player_id
                 logging.debug(f"Added allowed player: {formatted_name} (ID: {player_id})")
             except Exception as e:
-                logging.warning(f"Skipping row with ID {row.get('id', 'unknown')}: {str(e)}")
+                logging.warning(f"Skipping roster entry {entry.get('person', {}).get('id', 'unknown')}: {str(e)}")
                 continue
-        
+
         logging.info(f"Successfully created lookup for {len(player_lookup)} players")
         return player_lookup
-        
+
     except Exception as e:
         logging.error(f"Error in fetch_player_ids: {str(e)}")
         logging.error(f"Response object: {response if 'response' in locals() else 'No response object'}")
