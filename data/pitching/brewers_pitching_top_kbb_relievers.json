@@ -12,12 +12,6 @@
         "so_bb":4.45
     },
     {
-        "name":"Jake Woodford",
-        "era+":61.0,
-        "fip":3.97,
-        "so_bb":2.86
-    },
-    {
         "name":"Aaron Ashby*",
         "era+":129.0,
         "fip":3.06,
@@ -28,5 +22,11 @@
         "era+":183.0,
         "fip":3.16,
         "so_bb":2.73
+    },
+    {
+        "name":"Chad Patrick",
+        "era+":122.0,
+        "fip":3.8,
+        "so_bb":2.39
     }
 ]

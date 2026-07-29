@@ -126,6 +126,24 @@
     "slug":"jacob-misiorowski"
   },
   {
+    "player_id":"623381",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/623381\/headshot\/silo\/current",
+    "name":"Thomas Pannone",
+    "player_url":"\/player\/623381",
+    "jersey":"33",
+    "position_group":"Pitchers",
+    "bat_throw":"L\/L",
+    "height":"6' 0\"",
+    "weight":"205",
+    "dob":"04\/28\/1994",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"thomas-pannone"
+  },
+  {
     "player_id":"694477",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/694477\/headshot\/silo\/current",
     "name":"Chad Patrick",
@@ -160,24 +178,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"brandon-sproat"
-  },
-  {
-    "player_id":"668831",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/668831\/headshot\/silo\/current",
-    "name":"Garrett Stallings",
-    "player_url":"\/player\/668831",
-    "jersey":"31",
-    "position_group":"Pitchers",
-    "bat_throw":"R\/R",
-    "height":"6' 1\"",
-    "weight":"218",
-    "dob":"08\/08\/1997",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"garrett-stallings"
   },
   {
     "player_id":"682842",
