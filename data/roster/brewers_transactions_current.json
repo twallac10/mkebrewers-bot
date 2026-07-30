@@ -521,16 +521,16 @@
   },
   {
     "date":"2026-06-24",
-    "transaction":"RHP Abner Uribe suspended.",
+    "transaction":"Brewers signed free agent RHP Peter Strzelecki to a minor league contract.",
     "players":[
-      "Abner Uribe"
+      "Peter Strzelecki"
     ]
   },
   {
     "date":"2026-06-24",
-    "transaction":"Brewers signed free agent RHP Peter Strzelecki to a minor league contract.",
+    "transaction":"RHP Abner Uribe suspended.",
     "players":[
-      "Peter Strzelecki"
+      "Abner Uribe"
     ]
   },
   {
@@ -556,16 +556,16 @@
   },
   {
     "date":"2026-06-16",
-    "transaction":"Brewers sent RHP Brandon Woodruff on a rehab assignment to Wisconsin Timber Rattlers.",
+    "transaction":"Brewers designated 3B Luis Rengifo for assignment.",
     "players":[
-      "Brandon Woodruff"
+      "Luis Rengifo"
     ]
   },
   {
     "date":"2026-06-16",
-    "transaction":"Brewers designated 3B Luis Rengifo for assignment.",
+    "transaction":"Brewers sent RHP Brandon Woodruff on a rehab assignment to Wisconsin Timber Rattlers.",
     "players":[
-      "Luis Rengifo"
+      "Brandon Woodruff"
     ]
   },
   {
@@ -626,23 +626,16 @@
   },
   {
     "date":"2026-06-09",
-    "transaction":"Brewers transferred LHP Brian Fitzpatrick from the 15-day injured list to the 60-day injured list. Left elbow injury.",
-    "players":[
-      "Brian Fitzpatrick"
-    ]
-  },
-  {
-    "date":"2026-06-09",
     "transaction":"RHP Jake Woodford assigned to Brewers.",
     "players":[
       "Jake Woodford"
     ]
   },
   {
-    "date":"2026-06-08",
-    "transaction":"Brewers activated RHP Joel Kuhnel.",
+    "date":"2026-06-09",
+    "transaction":"Brewers transferred LHP Brian Fitzpatrick from the 15-day injured list to the 60-day injured list. Left elbow injury.",
     "players":[
-      "Joel Kuhnel"
+      "Brian Fitzpatrick"
     ]
   },
   {
@@ -654,9 +647,9 @@
   },
   {
     "date":"2026-06-08",
-    "transaction":"Brewers optioned RHP Craig Yoho to Nashville Sounds.",
+    "transaction":"Brewers activated RHP Joel Kuhnel.",
     "players":[
-      "Craig Yoho"
+      "Joel Kuhnel"
     ]
   },
   {
@@ -667,10 +660,10 @@
     ]
   },
   {
-    "date":"2026-06-06",
-    "transaction":"Brewers placed LHP Brian Fitzpatrick on the 15-day injured list. Left elbow injury.",
+    "date":"2026-06-08",
+    "transaction":"Brewers optioned RHP Craig Yoho to Nashville Sounds.",
     "players":[
-      "Brian Fitzpatrick"
+      "Craig Yoho"
     ]
   },
   {
@@ -682,9 +675,9 @@
   },
   {
     "date":"2026-06-06",
-    "transaction":"Athletics traded RHP Joel Kuhnel to Brewers for cash.",
+    "transaction":"Brewers placed LHP Brian Fitzpatrick on the 15-day injured list. Left elbow injury.",
     "players":[
-      "Joel Kuhnel"
+      "Brian Fitzpatrick"
     ]
   },
   {
@@ -695,10 +688,17 @@
     ]
   },
   {
-    "date":"2026-06-05",
-    "transaction":"Brewers designated RHP Jake Woodford for assignment.",
+    "date":"2026-06-06",
+    "transaction":"Athletics traded RHP Joel Kuhnel to Brewers for cash.",
     "players":[
-      "Jake Woodford"
+      "Joel Kuhnel"
+    ]
+  },
+  {
+    "date":"2026-06-05",
+    "transaction":"Brewers placed LHP DL Hall on the 15-day injured list. Left pectoral strain.",
+    "players":[
+      "DL Hall"
     ]
   }
 ]
