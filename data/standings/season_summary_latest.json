@@ -34,7 +34,7 @@
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":6,
+        "value":5.5,
         "category":"standings",
         "context_value":"1st",
         "context_value_label":"Division rank"
@@ -108,7 +108,7 @@
         "stat":"stolen_bases",
         "value":106,
         "category":"batting",
-        "context_value":"5th",
+        "context_value":"4th",
         "context_value_label":"League rank"
     },
     {
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"July 29, 2026, 1:39 PM CT",
+        "value":"July 29, 2026, 7:02 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(July 29)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>67-40<\/span> record in the 2026 regular season, a <span class='highlight'>63%<\/span> winning percentage.  The last game was a <span class='highlight'>8-2<\/span> away <span class='highlight'>win<\/span>. and the next game is Wednesday at 2:45 p.m. CT at <span class='highlight'>Oracle Park<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(July 29)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>67-41<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>3-16<\/span> away <span class='highlight'>loss<\/span>. and the next game is Friday at 8:38 p.m. CT at <span class='highlight'>Angel Stadium<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -162,7 +162,7 @@
     {
         "stat_label":"Last game result",
         "stat":"last_game_result",
-        "value":"win",
+        "value":"loss",
         "category":"summary",
         "context_value":"",
         "context_value_label":""

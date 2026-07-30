@@ -3,7 +3,7 @@ Wins,wins,67,standings,64,This point last season
 Losses,losses,40,standings,43,This point last season
 Record,record,67-40,standings,64-43,This point last season
 Win percentage,win_pct,63%,standings,60%,This point last season
-Games up/back,games_up_back,6,standings,1st,Division rank
+Games up/back,games_up_back,5.5,standings,1st,Division rank
 Avg. home attendance,mean_attendance,"32,330",standings,61,Home games this season
 Runs,runs,543,standings,5th,League rank
 Runs against,runs_against,398,standings,412,This point last season
@@ -12,11 +12,11 @@ Batting average,batting_average,.255,batting,N/A,Last decade average
 Home runs,home_runs,98,batting,30th,League rank
 Home runs/game,home_runs_game,0.92,batting,N/A,Last decade average
 On-base percentage,on_base_pct,.337,batting,N/A,Last decade average
-Stolen bases,stolen_bases,106,batting,5th,League rank
+Stolen bases,stolen_bases,106,batting,4th,League rank
 Stolen bases/game,stolen_bases_game,0.99,batting,N/A,Rate all last season
 Strikeouts,strikeouts,"1,042",pitching,2nd,League rank
 Walks,walks,335,pitching,20th,League rank
 ERA,era,3.41,pitching,2nd,League rank
-Last updated,update_time,"July 29, 2026, 1:39 PM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(July 29)</span> — The Brewers have compiled a <span class='highlight'>67-40</span> record in the 2026 regular season, a <span class='highlight'>63%</span> winning percentage.  The last game was a <span class='highlight'>8-2</span> away <span class='highlight'>win</span>. and the next game is Wednesday at 2:45 p.m. CT at <span class='highlight'>Oracle Park</span>.",summary,,
-Last game result,last_game_result,win,summary,,
+Last updated,update_time,"July 29, 2026, 7:02 PM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(July 29)</span> — The Brewers have compiled a <span class='highlight'>67-41</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>3-16</span> away <span class='highlight'>loss</span>. and the next game is Friday at 8:38 p.m. CT at <span class='highlight'>Angel Stadium</span>.",summary,,
+Last game result,last_game_result,loss,summary,,
