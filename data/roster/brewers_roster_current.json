@@ -72,6 +72,24 @@
     "slug":"robert-gasser"
   },
   {
+    "player_id":"669084",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/669084\/headshot\/silo\/current",
+    "name":"DL Hall",
+    "player_url":"\/player\/669084",
+    "jersey":"37",
+    "position_group":"Pitchers",
+    "bat_throw":"L\/L",
+    "height":"6' 1\"",
+    "weight":"209",
+    "dob":"09\/19\/1998",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"dl-hall"
+  },
+  {
     "player_id":"701656",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/701656\/headshot\/silo\/current",
     "name":"Logan Henderson",
@@ -124,24 +142,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"jacob-misiorowski"
-  },
-  {
-    "player_id":"623381",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/623381\/headshot\/silo\/current",
-    "name":"Thomas Pannone",
-    "player_url":"\/player\/623381",
-    "jersey":"33",
-    "position_group":"Pitchers",
-    "bat_throw":"L\/L",
-    "height":"6' 0\"",
-    "weight":"205",
-    "dob":"04\/28\/1994",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"thomas-pannone"
   },
   {
     "player_id":"694477",
