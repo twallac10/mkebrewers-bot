@@ -285,5 +285,46 @@
       "catchersInterference": 0,
       "atBatsPerHomeRun": "13.00"
     }
+  },
+  {
+    "player_id": "663604",
+    "player_name": "Brandon Lockridge",
+    "season": "2025",
+    "stats": {
+      "age": 28,
+      "gamesPlayed": 4,
+      "groundOuts": 1,
+      "airOuts": 0,
+      "runs": 0,
+      "doubles": 0,
+      "triples": 0,
+      "homeRuns": 0,
+      "strikeOuts": 1,
+      "baseOnBalls": 0,
+      "intentionalWalks": 0,
+      "hits": 0,
+      "hitByPitch": 0,
+      "avg": ".000",
+      "atBats": 2,
+      "obp": ".000",
+      "slg": ".000",
+      "ops": ".000",
+      "caughtStealing": 0,
+      "stolenBases": 0,
+      "stolenBasePercentage": ".---",
+      "caughtStealingPercentage": ".---",
+      "groundIntoDoublePlay": 0,
+      "numberOfPitches": 14,
+      "plateAppearances": 2,
+      "totalBases": 0,
+      "rbi": 0,
+      "leftOnBase": 2,
+      "sacBunts": 0,
+      "sacFlies": 0,
+      "babip": ".000",
+      "groundOutsToAirouts": "1.00",
+      "catchersInterference": 0,
+      "atBatsPerHomeRun": "-.--"
+    }
   }
 ]
