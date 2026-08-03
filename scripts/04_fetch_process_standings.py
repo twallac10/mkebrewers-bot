@@ -156,6 +156,7 @@ def load_historic_data(filepath):
         ["r", "ra", "attendance", "gm", "rank"]
     ].astype(int)
 
+    historic_df['record'] = historic_df['record'].fillna('0-0')
     historic_df[['wins', 'losses']] = historic_df['record'].str.split('-', expand=True).astype(int)
     historic_df['win_pct'] = (historic_df['wins'] / historic_df['gm']).round(2)
     historic_df['game_day'] = pd.to_datetime(historic_df['game_date']).dt.day_name()
