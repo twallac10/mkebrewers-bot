@@ -7,26 +7,26 @@
     },
     {
         "name":"Trevor Megill",
-        "era+":145.0,
-        "fip":1.51,
+        "era+":148.0,
+        "fip":1.55,
         "so_bb":4.55
     },
     {
         "name":"Abner Uribe",
-        "era+":184.0,
-        "fip":3.1,
-        "so_bb":2.8
+        "era+":188.0,
+        "fip":3.01,
+        "so_bb":2.93
     },
     {
         "name":"Aaron Ashby*",
         "era+":109.0,
-        "fip":3.07,
+        "fip":3.06,
         "so_bb":2.68
     },
     {
-        "name":"Grant Anderson",
-        "era+":114.0,
-        "fip":4.45,
-        "so_bb":2.28
+        "name":"Chad Patrick",
+        "era+":120.0,
+        "fip":3.72,
+        "so_bb":2.43
     }
 ]
