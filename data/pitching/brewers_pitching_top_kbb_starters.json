@@ -1,21 +1,21 @@
 [
     {
         "name":"Jacob Misiorowski",
-        "era+":257.0,
+        "era+":256.0,
         "fip":2.05,
         "so_bb":6.72
+    },
+    {
+        "name":"Logan Henderson",
+        "era+":155.0,
+        "fip":3.1,
+        "so_bb":6.2
     },
     {
         "name":"Kyle Harrison (15-day IL)*",
         "era+":139.0,
         "fip":3.1,
         "so_bb":5.05
-    },
-    {
-        "name":"Brandon Woodruff (60-day IL)",
-        "era+":141.0,
-        "fip":3.19,
-        "so_bb":4.7
     },
     {
         "name":"Shane Drohan*",
