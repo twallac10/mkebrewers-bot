@@ -180,6 +180,24 @@
     "slug":"chad-patrick"
   },
   {
+    "player_id":"680689",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/680689\/headshot\/silo\/current",
+    "name":"Lyon Richardson",
+    "player_url":"\/player\/680689",
+    "jersey":"48",
+    "position_group":"Pitchers",
+    "bat_throw":"S\/R",
+    "height":"6' 2\"",
+    "weight":"207",
+    "dob":"01\/18\/2000",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"lyon-richardson"
+  },
+  {
     "player_id":"622608",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/622608\/headshot\/silo\/current",
     "name":"Antonio Senzatela",
@@ -214,24 +232,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"abner-uribe"
-  },
-  {
-    "player_id":"669060",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/669060\/headshot\/silo\/current",
-    "name":"Bryse Wilson",
-    "player_url":"\/player\/669060",
-    "jersey":"41",
-    "position_group":"Pitchers",
-    "bat_throw":"R\/R",
-    "height":"6' 2\"",
-    "weight":"255",
-    "dob":"12\/20\/1997",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"bryse-wilson"
   },
   {
     "player_id":"661388",
