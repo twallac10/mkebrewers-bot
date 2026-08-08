@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.50730207532666,
-        "incorrect_strikes_pct": 9.492697924673337,
-        "total_called_strikes": 2602,
-        "bad_calls_count": 247
+        "correct_strikes_pct": 90.43643263757116,
+        "incorrect_strikes_pct": 9.563567362428842,
+        "total_called_strikes": 2635,
+        "bad_calls_count": 252
     },
     "last_game_summary": {
-        "date": "August 6, 2026",
-        "correct_strikes_pct": 78.78787878787878,
-        "incorrect_strikes_pct": 21.212121212121218,
+        "date": "August 7, 2026",
+        "correct_strikes_pct": 84.84848484848484,
+        "incorrect_strikes_pct": 15.151515151515156,
         "total_called_strikes": 33,
-        "bad_calls_count": 7,
-        "home_plate_umpire": "Sean Barber"
+        "bad_calls_count": 5,
+        "home_plate_umpire": "Brian Walsh"
     },
     "worst_calls_of_season": [
         {
@@ -56,16 +56,16 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.25086785466327,
-        "incorrect_balls_pct": 3.7491321453367306,
-        "total_called_balls": 4321,
-        "bad_calls_count": 162
+        "correct_balls_pct": 96.22339208056763,
+        "incorrect_balls_pct": 3.776607919432365,
+        "total_called_balls": 4369,
+        "bad_calls_count": 165
     },
     "pitching_last_game_summary": {
-        "date": "August 6, 2026",
-        "correct_balls_pct": 93.87755102040816,
-        "incorrect_balls_pct": 6.122448979591837,
-        "total_called_balls": 49,
+        "date": "August 7, 2026",
+        "correct_balls_pct": 93.75,
+        "incorrect_balls_pct": 6.25,
+        "total_called_balls": 48,
         "bad_calls_count": 3
     },
     "pitching_worst_calls_of_season": []
