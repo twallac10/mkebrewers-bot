@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.39759939984997,
-        "incorrect_strikes_pct": 9.602400600150034,
-        "total_called_strikes": 2666,
-        "bad_calls_count": 256
+        "correct_strikes_pct": 90.36323202372128,
+        "incorrect_strikes_pct": 9.636767976278719,
+        "total_called_strikes": 2698,
+        "bad_calls_count": 260
     },
     "last_game_summary": {
-        "date": "August 9, 2026",
-        "correct_strikes_pct": 84.61538461538461,
-        "incorrect_strikes_pct": 15.384615384615387,
-        "total_called_strikes": 26,
+        "date": "August 10, 2026",
+        "correct_strikes_pct": 87.5,
+        "incorrect_strikes_pct": 12.5,
+        "total_called_strikes": 32,
         "bad_calls_count": 4,
-        "home_plate_umpire": "Chad Whitson"
+        "home_plate_umpire": "Lance Barrett"
     },
     "worst_calls_of_season": [
         {
@@ -56,16 +56,16 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.22769369776373,
-        "incorrect_balls_pct": 3.7723063022362737,
-        "total_called_balls": 4427,
-        "bad_calls_count": 167
+        "correct_balls_pct": 96.21500559910415,
+        "incorrect_balls_pct": 3.7849944008958545,
+        "total_called_balls": 4465,
+        "bad_calls_count": 169
     },
     "pitching_last_game_summary": {
-        "date": "August 9, 2026",
-        "correct_balls_pct": 96.29629629629629,
-        "incorrect_balls_pct": 3.7037037037037095,
-        "total_called_balls": 54,
+        "date": "August 10, 2026",
+        "correct_balls_pct": 94.73684210526315,
+        "incorrect_balls_pct": 5.26315789473685,
+        "total_called_balls": 38,
         "bad_calls_count": 2
     },
     "pitching_worst_calls_of_season": []
