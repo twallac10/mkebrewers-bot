@@ -34,7 +34,7 @@
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":5,
+        "value":4,
         "category":"standings",
         "context_value":"1st",
         "context_value_label":"Division rank"
@@ -42,15 +42,15 @@
     {
         "stat_label":"Avg. home attendance",
         "stat":"mean_attendance",
-        "value":"19,582",
+        "value":"19,699",
         "category":"standings",
-        "context_value":109,
+        "context_value":106,
         "context_value_label":"Home games this season"
     },
     {
         "stat_label":"Runs",
         "stat":"runs",
-        "value":583,
+        "value":585,
         "category":"standings",
         "context_value":"5th",
         "context_value_label":"League rank"
@@ -58,7 +58,7 @@
     {
         "stat_label":"Runs against",
         "stat":"runs_against",
-        "value":444,
+        "value":455,
         "category":"standings",
         "context_value":634,
         "context_value_label":"This point last season"
@@ -66,7 +66,7 @@
     {
         "stat_label":"Run differential",
         "stat":"run_differential",
-        "value":139,
+        "value":130,
         "category":"standings",
         "context_value":172,
         "context_value_label":"This point last season"
@@ -122,7 +122,7 @@
     {
         "stat_label":"Strikeouts",
         "stat":"strikeouts",
-        "value":"1,164",
+        "value":"1,169",
         "category":"pitching",
         "context_value":"2nd",
         "context_value_label":"League rank"
@@ -130,7 +130,7 @@
     {
         "stat_label":"Walks",
         "stat":"walks",
-        "value":"373",
+        "value":"376",
         "category":"pitching",
         "context_value":"20th",
         "context_value_label":"League rank"
@@ -138,15 +138,15 @@
     {
         "stat_label":"ERA",
         "stat":"era",
-        "value":"3.47",
+        "value":"3.54",
         "category":"pitching",
-        "context_value":"2nd",
+        "context_value":"4th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"August 11, 2026, 6:43 PM CT",
+        "value":"August 12, 2026, 4:14 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(August 11)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>74-45<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>2-3<\/span> away <span class='highlight'>loss<\/span>. and the next game is Tuesday at 8:40 p.m. CT at <span class='highlight'>Petco Park<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(August 12)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>74-46<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>2-11<\/span> away <span class='highlight'>loss<\/span>. and the next game is Wednesday at 3:10 p.m. CT at <span class='highlight'>Petco Park<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""

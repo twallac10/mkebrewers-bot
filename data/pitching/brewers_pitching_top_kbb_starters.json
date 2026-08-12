@@ -1,32 +1,32 @@
 [
     {
         "name":"Jacob Misiorowski",
-        "era+":237.0,
-        "fip":2.17,
+        "era+":234.0,
+        "fip":2.16,
         "so_bb":6.8
     },
     {
         "name":"Logan Henderson",
-        "era+":146.0,
-        "fip":3.36,
+        "era+":144.0,
+        "fip":3.35,
         "so_bb":6.27
     },
     {
         "name":"Kyle Harrison*",
-        "era+":147.0,
-        "fip":2.9,
-        "so_bb":5.29
+        "era+":119.0,
+        "fip":3.35,
+        "so_bb":4.75
     },
     {
         "name":"Robert Gasser*",
-        "era+":92.0,
-        "fip":4.52,
+        "era+":91.0,
+        "fip":4.51,
         "so_bb":3.39
     },
     {
         "name":"Shane Drohan*",
-        "era+":108.0,
-        "fip":3.35,
+        "era+":107.0,
+        "fip":3.34,
         "so_bb":3.32
     }
 ]

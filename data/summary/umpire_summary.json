@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.36323202372128,
-        "incorrect_strikes_pct": 9.636767976278719,
-        "total_called_strikes": 2698,
-        "bad_calls_count": 260
+        "correct_strikes_pct": 90.40441176470588,
+        "incorrect_strikes_pct": 9.595588235294116,
+        "total_called_strikes": 2720,
+        "bad_calls_count": 261
     },
     "last_game_summary": {
-        "date": "August 10, 2026",
-        "correct_strikes_pct": 87.5,
-        "incorrect_strikes_pct": 12.5,
-        "total_called_strikes": 32,
-        "bad_calls_count": 4,
-        "home_plate_umpire": "Lance Barrett"
+        "date": "August 11, 2026",
+        "correct_strikes_pct": 95.45454545454545,
+        "incorrect_strikes_pct": 4.545454545454547,
+        "total_called_strikes": 22,
+        "bad_calls_count": 1,
+        "home_plate_umpire": "Malachi Moore"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,28 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.21500559910415,
-        "incorrect_balls_pct": 3.7849944008958545,
-        "total_called_balls": 4465,
-        "bad_calls_count": 169
+        "correct_balls_pct": 96.1913197519929,
+        "incorrect_balls_pct": 3.808680248007093,
+        "total_called_balls": 4516,
+        "bad_calls_count": 172
     },
     "pitching_last_game_summary": {
-        "date": "August 10, 2026",
-        "correct_balls_pct": 94.73684210526315,
-        "incorrect_balls_pct": 5.26315789473685,
-        "total_called_balls": 38,
-        "bad_calls_count": 2
+        "date": "August 11, 2026",
+        "correct_balls_pct": 94.11764705882352,
+        "incorrect_balls_pct": 5.882352941176478,
+        "total_called_balls": 51,
+        "bad_calls_count": 3
     },
-    "pitching_worst_calls_of_season": []
+    "pitching_worst_calls_of_season": [
+        {
+            "distance_inches": 2.3088457407,
+            "batter": "Xander Bogaerts",
+            "pitcher": "Gary S\u00e1nchez",
+            "pitch_type": "Curveball",
+            "velocity_mph": 40.8,
+            "date": "2026-08-11",
+            "date_formatted": "August 11, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=f5b47679-b01b-323b-bd5e-06422ba2f8e9"
+        }
+    ]
 }
