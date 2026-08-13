@@ -1,32 +1,32 @@
 [
     {
-        "name":"Trevor Megill",
-        "era+":161.0,
-        "fip":1.54,
-        "so_bb":4.82
-    },
-    {
         "name":"Brandon Woodruff (60-day IL)",
-        "era+":139.0,
+        "era+":141.0,
         "fip":3.17,
         "so_bb":4.7
     },
     {
+        "name":"Trevor Megill",
+        "era+":168.0,
+        "fip":1.65,
+        "so_bb":4.42
+    },
+    {
         "name":"Aaron Ashby*",
-        "era+":116.0,
-        "fip":2.81,
-        "so_bb":2.85
+        "era+":118.0,
+        "fip":2.78,
+        "so_bb":2.88
     },
     {
         "name":"Abner Uribe",
-        "era+":202.0,
+        "era+":204.0,
         "fip":3.08,
         "so_bb":2.67
     },
     {
         "name":"Chad Patrick",
-        "era+":124.0,
-        "fip":3.66,
-        "so_bb":2.44
+        "era+":123.0,
+        "fip":3.72,
+        "so_bb":2.29
     }
 ]
