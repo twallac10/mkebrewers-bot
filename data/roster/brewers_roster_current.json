@@ -1,5 +1,23 @@
 [
   {
+    "player_id":"681982",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/681982\/headshot\/silo\/current",
+    "name":"Grant Anderson",
+    "player_url":"\/player\/681982",
+    "jersey":"56",
+    "position_group":"Pitchers",
+    "bat_throw":"R\/R",
+    "height":"6' 0\"",
+    "weight":"213",
+    "dob":"06\/21\/1997",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"grant-anderson"
+  },
+  {
     "player_id":"676879",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/676879\/headshot\/silo\/current",
     "name":"Aaron Ashby",
@@ -196,24 +214,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"antonio-senzatela"
-  },
-  {
-    "player_id":"682842",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/682842\/headshot\/silo\/current",
-    "name":"Abner Uribe",
-    "player_url":"\/player\/682842",
-    "jersey":"45",
-    "position_group":"Pitchers",
-    "bat_throw":"R\/R",
-    "height":"6' 3\"",
-    "weight":"205",
-    "dob":"06\/20\/2000",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"abner-uribe"
   },
   {
     "player_id":"669060",
