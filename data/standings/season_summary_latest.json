@@ -34,7 +34,7 @@
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":3,
+        "value":3.5,
         "category":"standings",
         "context_value":"1st",
         "context_value_label":"Division rank"
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"August 15, 2026, 10:23 AM CT",
+        "value":"August 15, 2026, 6:23 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(August 15)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>75-48<\/span> record in the 2026 regular season, a <span class='highlight'>61%<\/span> winning percentage.  The last game was a <span class='highlight'>1-3<\/span> away <span class='highlight'>loss<\/span>. and the next game is Saturday at 6:15 p.m. CT at <span class='highlight'>UNIQLO Field at Dodger Stadium<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(August 15)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>75-48<\/span> record in the 2026 regular season, a <span class='highlight'>61%<\/span> winning percentage.  The last game was a <span class='highlight'>1-3<\/span> away <span class='highlight'>loss<\/span>. and the next game is Sunday at 3:10 p.m. CT at <span class='highlight'>UNIQLO Field at Dodger Stadium<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
