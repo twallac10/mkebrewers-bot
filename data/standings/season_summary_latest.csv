@@ -3,7 +3,7 @@ Wins,wins,0,standings,97,This point last season
 Losses,losses,0,standings,65,This point last season
 Record,record,0-0,standings,97-65,This point last season
 Win percentage,win_pct,0%,standings,60%,This point last season
-Games up/back,games_up_back,4,standings,1st,Division rank
+Games up/back,games_up_back,5,standings,1st,Division rank
 Avg. home attendance,mean_attendance,"21,822",standings,119,Home games this season
 Runs,runs,598,standings,5th,League rank
 Runs against,runs_against,469,standings,634,This point last season
@@ -15,8 +15,8 @@ On-base percentage,on_base_pct,.335,batting,N/A,Last decade average
 Stolen bases,stolen_bases,122,batting,5th,League rank
 Stolen bases/game,stolen_bases_game,0.75,batting,N/A,Rate all last season
 Strikeouts,strikeouts,"1,204",pitching,2nd,League rank
-Walks,walks,388,pitching,20th,League rank
-ERA,era,3.51,pitching,3rd,League rank
-Last updated,update_time,"August 16, 2026, 10:24 AM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(August 16)</span> — The Brewers have compiled a <span class='highlight'>76-48</span> record in the 2026 regular season, a <span class='highlight'>61%</span> winning percentage.  The last game was a <span class='highlight'>4-1</span> away <span class='highlight'>win</span>. and the next game is Sunday at 3:10 p.m. CT at <span class='highlight'>UNIQLO Field at Dodger Stadium</span>.",summary,,
+Walks,walks,388,pitching,21st,League rank
+ERA,era,3.51,pitching,2nd,League rank
+Last updated,update_time,"August 16, 2026, 6:22 PM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(August 16)</span> — The Brewers have compiled a <span class='highlight'>77-48</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>6-2</span> away <span class='highlight'>win</span>. and the next game is Tuesday at 6:40 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
 Last game result,last_game_result,win,summary,,
