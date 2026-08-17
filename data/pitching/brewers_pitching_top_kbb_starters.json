@@ -7,9 +7,9 @@
     },
     {
         "name":"Logan Henderson",
-        "era+":145.0,
-        "fip":3.35,
-        "so_bb":6.27
+        "era+":154.0,
+        "fip":3.38,
+        "so_bb":6.25
     },
     {
         "name":"Kyle Harrison*",
@@ -20,13 +20,13 @@
     {
         "name":"Robert Gasser*",
         "era+":92.0,
-        "fip":4.6,
+        "fip":4.59,
         "so_bb":3.58
     },
     {
         "name":"Shane Drohan*",
         "era+":106.0,
-        "fip":3.32,
+        "fip":3.31,
         "so_bb":3.16
     }
 ]
