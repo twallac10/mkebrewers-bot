@@ -1,19 +1,29 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.54813773717498,
-        "incorrect_strikes_pct": 9.451862262825017,
-        "total_called_strikes": 2846,
-        "bad_calls_count": 269
+        "correct_strikes_pct": 90.3259361997226,
+        "incorrect_strikes_pct": 9.674063800277395,
+        "total_called_strikes": 2884,
+        "bad_calls_count": 279
     },
     "last_game_summary": {
-        "date": "August 16, 2026",
-        "correct_strikes_pct": 95.83333333333334,
-        "incorrect_strikes_pct": 4.166666666666657,
-        "total_called_strikes": 24,
-        "bad_calls_count": 1,
-        "home_plate_umpire": "Emil Jimenez"
+        "date": "August 18, 2026",
+        "correct_strikes_pct": 73.68421052631578,
+        "incorrect_strikes_pct": 26.31578947368422,
+        "total_called_strikes": 38,
+        "bad_calls_count": 10,
+        "home_plate_umpire": "Adrian Johnson"
     },
     "worst_calls_of_season": [
+        {
+            "distance_inches": 18.6149073422,
+            "batter": "Luis Lara",
+            "pitcher": "Leo Rivas",
+            "pitch_type": "Eephus",
+            "velocity_mph": 37.8,
+            "date": "2026-08-18",
+            "date_formatted": "August 18, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=3b2acc9d-1d6f-3045-9b52-40c17ace2747"
+        },
         {
             "distance_inches": 11.4791959752,
             "batter": "Tyler Black",
@@ -25,48 +35,38 @@
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=1a4e3ac5-884f-3bb7-8ad1-444a0287a26e"
         },
         {
-            "distance_inches": 3.8983702955,
-            "batter": "Jackson Chourio",
-            "pitcher": "Tim Mayza",
-            "pitch_type": "Sinker",
-            "velocity_mph": 94.7,
-            "date": "2026-06-12",
-            "date_formatted": "June 12, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=263737f3-7875-3a73-8ec0-cabee9a63b6f"
+            "distance_inches": 9.3561222233,
+            "batter": "Christian Yelich",
+            "pitcher": "Leo Rivas",
+            "pitch_type": "Eephus",
+            "velocity_mph": 39.4,
+            "date": "2026-08-18",
+            "date_formatted": "August 18, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=bddde515-f545-36a2-8a50-95797f019ae9"
         },
         {
-            "distance_inches": 3.3385205247,
-            "batter": "Joey Ortiz",
-            "pitcher": "Burch Smith",
-            "pitch_type": "4-Seam Fastball",
-            "velocity_mph": 94.5,
-            "date": "2026-04-23",
-            "date_formatted": "April 23, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=5807f059-02a1-3538-9ad0-f1d1682b306c"
-        },
-        {
-            "distance_inches": 3.1258824816,
-            "batter": "Joey Ortiz",
-            "pitcher": "Drew Rasmussen",
-            "pitch_type": "Cutter",
-            "velocity_mph": 89.0,
-            "date": "2026-04-01",
-            "date_formatted": "April 1, 2026",
-            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=2cdc2e40-9539-3b9b-8fa8-25dfbb822ea1"
+            "distance_inches": 8.720850639,
+            "batter": "William Contreras",
+            "pitcher": "Leo Rivas",
+            "pitch_type": "Eephus",
+            "velocity_mph": 40.1,
+            "date": "2026-08-18",
+            "date_formatted": "August 18, 2026",
+            "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=4aca4469-b040-3f13-8f41-187b4d30c528"
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.27501064282673,
-        "incorrect_balls_pct": 3.7249893571732713,
-        "total_called_balls": 4698,
-        "bad_calls_count": 175
+        "correct_balls_pct": 96.23157894736842,
+        "incorrect_balls_pct": 3.768421052631581,
+        "total_called_balls": 4750,
+        "bad_calls_count": 179
     },
     "pitching_last_game_summary": {
-        "date": "August 16, 2026",
-        "correct_balls_pct": 92.10526315789474,
-        "incorrect_balls_pct": 7.89473684210526,
-        "total_called_balls": 38,
-        "bad_calls_count": 3
+        "date": "August 18, 2026",
+        "correct_balls_pct": 92.3076923076923,
+        "incorrect_balls_pct": 7.692307692307693,
+        "total_called_balls": 52,
+        "bad_calls_count": 4
     },
     "pitching_worst_calls_of_season": [
         {
