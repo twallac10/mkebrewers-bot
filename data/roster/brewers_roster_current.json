@@ -342,6 +342,24 @@
     "slug":"joey-ortiz"
   },
   {
+    "player_id":"806198",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/806198\/headshot\/silo\/current",
+    "name":"Cooper Pratt",
+    "player_url":"\/player\/806198",
+    "jersey":"12",
+    "position_group":"Infielders",
+    "bat_throw":"R\/R",
+    "height":"6' 4\"",
+    "weight":"210",
+    "dob":"08\/18\/2004",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"cooper-pratt"
+  },
+  {
     "player_id":"668930",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/668930\/headshot\/silo\/current",
     "name":"Brice Turang",
@@ -412,24 +430,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"luis-lara"
-  },
-  {
-    "player_id":"663604",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/663604\/headshot\/silo\/current",
-    "name":"Brandon Lockridge",
-    "player_url":"\/player\/663604",
-    "jersey":"20",
-    "position_group":"Outfielders",
-    "bat_throw":"R\/R",
-    "height":"6' 0\"",
-    "weight":"197",
-    "dob":"03\/14\/1997",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"brandon-lockridge"
   },
   {
     "player_id":"669003",
