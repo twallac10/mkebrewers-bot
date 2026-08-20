@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.3082191780822,
-        "incorrect_strikes_pct": 9.691780821917803,
-        "total_called_strikes": 2920,
-        "bad_calls_count": 283
+        "correct_strikes_pct": 90.3313049357674,
+        "incorrect_strikes_pct": 9.668695064232594,
+        "total_called_strikes": 2958,
+        "bad_calls_count": 286
     },
     "last_game_summary": {
-        "date": "August 19, 2026",
-        "correct_strikes_pct": 88.88888888888889,
-        "incorrect_strikes_pct": 11.111111111111114,
-        "total_called_strikes": 36,
-        "bad_calls_count": 4,
-        "home_plate_umpire": "Dexter Kelley"
+        "date": "August 20, 2026",
+        "correct_strikes_pct": 92.10526315789474,
+        "incorrect_strikes_pct": 7.89473684210526,
+        "total_called_strikes": 38,
+        "bad_calls_count": 3,
+        "home_plate_umpire": "Quinn Wolcott"
     },
     "worst_calls_of_season": [
         {
@@ -56,16 +56,16 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.26090569173245,
-        "incorrect_balls_pct": 3.7390943082675534,
-        "total_called_balls": 4814,
-        "bad_calls_count": 180
+        "correct_balls_pct": 96.29250307251127,
+        "incorrect_balls_pct": 3.7074969274887337,
+        "total_called_balls": 4882,
+        "bad_calls_count": 181
     },
     "pitching_last_game_summary": {
-        "date": "August 19, 2026",
-        "correct_balls_pct": 98.4375,
-        "incorrect_balls_pct": 1.5625,
-        "total_called_balls": 64,
+        "date": "August 20, 2026",
+        "correct_balls_pct": 98.52941176470588,
+        "incorrect_balls_pct": 1.470588235294116,
+        "total_called_balls": 68,
         "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": [
