@@ -3,9 +3,9 @@ Wins,wins,0,standings,97,This point last season
 Losses,losses,0,standings,65,This point last season
 Record,record,0-0,standings,97-65,This point last season
 Win percentage,win_pct,0%,standings,60%,This point last season
-Games up/back,games_up_back,5.5,standings,1st,Division rank
+Games up/back,games_up_back,6,standings,1st,Division rank
 Avg. home attendance,mean_attendance,"22,334",standings,107,Home games this season
-Runs,runs,636,standings,4th,League rank
+Runs,runs,636,standings,5th,League rank
 Runs against,runs_against,481,standings,634,This point last season
 Run differential,run_differential,155,standings,172,This point last season
 Batting average,batting_average,.253,batting,N/A,Last decade average
@@ -17,6 +17,6 @@ Stolen bases/game,stolen_bases_game,0.8,batting,N/A,Rate all last season
 Strikeouts,strikeouts,"1,245",pitching,2nd,League rank
 Walks,walks,404,pitching,20th,League rank
 ERA,era,3.46,pitching,2nd,League rank
-Last updated,update_time,"August 21, 2026, 6:26 PM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(August 21)</span> — The Brewers have compiled a <span class='highlight'>80-49</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>2-1</span> home <span class='highlight'>win</span>. and the next game is Saturday at 1:10 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
+Last updated,update_time,"August 22, 2026, 3:33 AM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(August 22)</span> — The Brewers have compiled a <span class='highlight'>80-49</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>2-1</span> home <span class='highlight'>win</span>. and the next game is Saturday at 1:10 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
 Last game result,last_game_result,win,summary,,
