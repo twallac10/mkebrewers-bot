@@ -8,25 +8,25 @@
     {
         "name":"Trevor Megill",
         "era+":178.0,
-        "fip":1.63,
+        "fip":1.62,
         "so_bb":4.67
     },
     {
         "name":"Aaron Ashby*",
-        "era+":126.0,
+        "era+":128.0,
         "fip":2.76,
         "so_bb":2.81
     },
     {
         "name":"Abner Uribe (15-day IL)",
         "era+":204.0,
-        "fip":3.09,
+        "fip":3.08,
         "so_bb":2.67
     },
     {
         "name":"Chad Patrick",
-        "era+":126.0,
-        "fip":3.62,
-        "so_bb":2.41
+        "era+":127.0,
+        "fip":3.64,
+        "so_bb":2.34
     }
 ]
