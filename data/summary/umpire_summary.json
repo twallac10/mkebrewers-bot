@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.43507140484888,
-        "incorrect_strikes_pct": 9.564928595151116,
-        "total_called_strikes": 3011,
+        "correct_strikes_pct": 90.44142051111848,
+        "incorrect_strikes_pct": 9.55857948888152,
+        "total_called_strikes": 3013,
         "bad_calls_count": 288
     },
     "last_game_summary": {
-        "date": "August 22, 2026",
-        "correct_strikes_pct": 96.42857142857143,
-        "incorrect_strikes_pct": 3.5714285714285694,
-        "total_called_strikes": 28,
-        "bad_calls_count": 1,
-        "home_plate_umpire": "John Tumpane"
+        "date": "August 23, 2026",
+        "correct_strikes_pct": 100.0,
+        "incorrect_strikes_pct": 0.0,
+        "total_called_strikes": 2,
+        "bad_calls_count": 0,
+        "home_plate_umpire": "Adam Hamari"
     },
     "worst_calls_of_season": [
         {
@@ -56,16 +56,16 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.34977938227036,
-        "incorrect_balls_pct": 3.6502206177296443,
-        "total_called_balls": 4986,
+        "correct_balls_pct": 96.35270541082164,
+        "incorrect_balls_pct": 3.647294589178358,
+        "total_called_balls": 4990,
         "bad_calls_count": 182
     },
     "pitching_last_game_summary": {
-        "date": "August 22, 2026",
+        "date": "August 23, 2026",
         "correct_balls_pct": 100.0,
         "incorrect_balls_pct": 0.0,
-        "total_called_balls": 49,
+        "total_called_balls": 4,
         "bad_calls_count": 0
     },
     "pitching_worst_calls_of_season": [
