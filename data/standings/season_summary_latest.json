@@ -42,9 +42,9 @@
     {
         "stat_label":"Avg. home attendance",
         "stat":"mean_attendance",
-        "value":"24,290",
+        "value":"23,437",
         "category":"standings",
-        "context_value":133,
+        "context_value":119,
         "context_value_label":"Home games this season"
     },
     {
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"August 23, 2026, 3:33 AM CT",
+        "value":"August 23, 2026, 7:44 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
