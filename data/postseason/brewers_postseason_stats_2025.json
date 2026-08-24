@@ -285,46 +285,5 @@
       "catchersInterference": 0,
       "atBatsPerHomeRun": "13.00"
     }
-  },
-  {
-    "player_id": "666310",
-    "player_name": "Bo Naylor",
-    "season": "2025",
-    "stats": {
-      "age": 25,
-      "gamesPlayed": 3,
-      "groundOuts": 3,
-      "airOuts": 3,
-      "runs": 1,
-      "doubles": 0,
-      "triples": 0,
-      "homeRuns": 1,
-      "strikeOuts": 1,
-      "baseOnBalls": 0,
-      "intentionalWalks": 0,
-      "hits": 1,
-      "hitByPitch": 0,
-      "avg": ".125",
-      "atBats": 8,
-      "obp": ".125",
-      "slg": ".500",
-      "ops": ".625",
-      "caughtStealing": 0,
-      "stolenBases": 0,
-      "stolenBasePercentage": ".---",
-      "caughtStealingPercentage": ".---",
-      "groundIntoDoublePlay": 0,
-      "numberOfPitches": 36,
-      "plateAppearances": 8,
-      "totalBases": 4,
-      "rbi": 3,
-      "leftOnBase": 3,
-      "sacBunts": 0,
-      "sacFlies": 0,
-      "babip": ".000",
-      "groundOutsToAirouts": "1.00",
-      "catchersInterference": 0,
-      "atBatsPerHomeRun": "8.00"
-    }
   }
 ]

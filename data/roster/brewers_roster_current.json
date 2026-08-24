@@ -252,24 +252,6 @@
     "slug":"william-contreras"
   },
   {
-    "player_id":"666310",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/666310\/headshot\/silo\/current",
-    "name":"Bo Naylor",
-    "player_url":"\/player\/666310",
-    "jersey":"14",
-    "position_group":"Catchers",
-    "bat_throw":"L\/R",
-    "height":"5' 9\"",
-    "weight":"205",
-    "dob":"02\/21\/2000",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"bo-naylor"
-  },
-  {
     "player_id":"596142",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/596142\/headshot\/silo\/current",
     "name":"Gary Sánchez",
