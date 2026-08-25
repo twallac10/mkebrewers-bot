@@ -306,24 +306,6 @@
     "slug":"david-hamilton"
   },
   {
-    "player_id":"680716",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/680716\/headshot\/silo\/current",
-    "name":"Jonathan Ornelas",
-    "player_url":"\/player\/680716",
-    "jersey":"13",
-    "position_group":"Infielders",
-    "bat_throw":"R\/R",
-    "height":"6' 1\"",
-    "weight":"196",
-    "dob":"05\/26\/2000",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"jonathan-ornelas"
-  },
-  {
     "player_id":"687401",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/687401\/headshot\/silo\/current",
     "name":"Joey Ortiz",
@@ -412,6 +394,24 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"jackson-chourio"
+  },
+  {
+    "player_id":"686217",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/686217\/headshot\/silo\/current",
+    "name":"Sal Frelick",
+    "player_url":"\/player\/686217",
+    "jersey":"10",
+    "position_group":"Outfielders",
+    "bat_throw":"L\/R",
+    "height":"5' 9\"",
+    "weight":"191",
+    "dob":"04\/19\/2000",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"sal-frelick"
   },
   {
     "player_id":"800325",
