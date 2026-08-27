@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.41777188328912,
-        "incorrect_strikes_pct": 9.58222811671088,
-        "total_called_strikes": 3016,
-        "bad_calls_count": 289
+        "correct_strikes_pct": 90.36065573770492,
+        "incorrect_strikes_pct": 9.639344262295083,
+        "total_called_strikes": 3050,
+        "bad_calls_count": 294
     },
     "last_game_summary": {
-        "date": "August 25, 2026",
-        "correct_strikes_pct": 66.66666666666666,
-        "incorrect_strikes_pct": 33.33333333333334,
-        "total_called_strikes": 3,
-        "bad_calls_count": 1,
-        "home_plate_umpire": "Hunter Wendelstedt"
+        "date": "August 26, 2026",
+        "correct_strikes_pct": 85.29411764705883,
+        "incorrect_strikes_pct": 14.705882352941174,
+        "total_called_strikes": 34,
+        "bad_calls_count": 5,
+        "home_plate_umpire": "Vic Carapazza"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.35708566853482,
-        "incorrect_balls_pct": 3.642914331465178,
-        "total_called_balls": 4996,
-        "bad_calls_count": 182
+        "correct_balls_pct": 96.36038186157518,
+        "incorrect_balls_pct": 3.6396181384248223,
+        "total_called_balls": 5028,
+        "bad_calls_count": 183
     },
     "pitching_last_game_summary": {
-        "date": "August 25, 2026",
-        "correct_balls_pct": 100.0,
-        "incorrect_balls_pct": 0.0,
-        "total_called_balls": 6,
-        "bad_calls_count": 0
+        "date": "August 26, 2026",
+        "correct_balls_pct": 96.875,
+        "incorrect_balls_pct": 3.125,
+        "total_called_balls": 32,
+        "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": [
         {
