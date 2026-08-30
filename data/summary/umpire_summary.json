@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.34749034749035,
-        "incorrect_strikes_pct": 9.65250965250965,
-        "total_called_strikes": 3108,
+        "correct_strikes_pct": 90.4,
+        "incorrect_strikes_pct": 9.599999999999994,
+        "total_called_strikes": 3125,
         "bad_calls_count": 300
     },
     "last_game_summary": {
-        "date": "August 28, 2026",
-        "correct_strikes_pct": 89.28571428571429,
-        "incorrect_strikes_pct": 10.714285714285708,
-        "total_called_strikes": 28,
-        "bad_calls_count": 3,
-        "home_plate_umpire": "Ben May"
+        "date": "August 29, 2026",
+        "correct_strikes_pct": 100.0,
+        "incorrect_strikes_pct": 0.0,
+        "total_called_strikes": 17,
+        "bad_calls_count": 0,
+        "home_plate_umpire": "Chris Conroy"
     },
     "worst_calls_of_season": [
         {
@@ -56,16 +56,16 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.36860601327606,
-        "incorrect_balls_pct": 3.6313939867239355,
-        "total_called_balls": 5122,
-        "bad_calls_count": 186
+        "correct_balls_pct": 96.37596899224806,
+        "incorrect_balls_pct": 3.624031007751938,
+        "total_called_balls": 5160,
+        "bad_calls_count": 187
     },
     "pitching_last_game_summary": {
-        "date": "August 28, 2026",
-        "correct_balls_pct": 97.61904761904762,
-        "incorrect_balls_pct": 2.3809523809523796,
-        "total_called_balls": 42,
+        "date": "August 29, 2026",
+        "correct_balls_pct": 97.36842105263158,
+        "incorrect_balls_pct": 2.631578947368425,
+        "total_called_balls": 38,
         "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": [
