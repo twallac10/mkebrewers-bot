@@ -1,5 +1,11 @@
 [
     {
+        "name":"Bryse Wilson",
+        "era+":164.0,
+        "fip":1.95,
+        "so_bb":22.0
+    },
+    {
         "name":"Brandon Woodruff (60-day IL)",
         "era+":140.0,
         "fip":3.17,
@@ -22,11 +28,5 @@
         "era+":203.0,
         "fip":3.08,
         "so_bb":2.67
-    },
-    {
-        "name":"Chad Patrick",
-        "era+":122.0,
-        "fip":3.9,
-        "so_bb":2.31
     }
 ]
