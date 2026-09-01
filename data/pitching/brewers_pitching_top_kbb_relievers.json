@@ -1,31 +1,31 @@
 [
     {
-        "name":"Bryse Wilson",
-        "era+":164.0,
+        "name":"Bryse Wilson (15-day IL)",
+        "era+":162.0,
         "fip":1.95,
         "so_bb":22.0
     },
     {
         "name":"Brandon Woodruff (60-day IL)",
-        "era+":140.0,
+        "era+":138.0,
         "fip":3.17,
         "so_bb":4.7
     },
     {
         "name":"Trevor Megill",
-        "era+":186.0,
-        "fip":1.76,
+        "era+":184.0,
+        "fip":1.77,
         "so_bb":4.07
     },
     {
         "name":"Aaron Ashby*",
-        "era+":128.0,
+        "era+":127.0,
         "fip":2.91,
         "so_bb":2.81
     },
     {
-        "name":"Abner Uribe (15-day IL)",
-        "era+":203.0,
+        "name":"Abner Uribe",
+        "era+":201.0,
         "fip":3.08,
         "so_bb":2.67
     }
