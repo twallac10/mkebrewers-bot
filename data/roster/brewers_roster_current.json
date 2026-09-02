@@ -198,6 +198,24 @@
     "slug":"chad-patrick"
   },
   {
+    "player_id":"668941",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/668941\/headshot\/silo\/current",
+    "name":"JoJo Romero",
+    "player_url":"\/player\/668941",
+    "jersey":"33",
+    "position_group":"Pitchers",
+    "bat_throw":"L\/L",
+    "height":"5' 11\"",
+    "weight":"215",
+    "dob":"09\/09\/1996",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"jojo-romero"
+  },
+  {
     "player_id":"622608",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/622608\/headshot\/silo\/current",
     "name":"Antonio Senzatela",
@@ -250,6 +268,24 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"william-contreras"
+  },
+  {
+    "player_id":"666310",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/666310\/headshot\/silo\/current",
+    "name":"Bo Naylor",
+    "player_url":"\/player\/666310",
+    "jersey":"14",
+    "position_group":"Catchers",
+    "bat_throw":"L\/R",
+    "height":"5' 9\"",
+    "weight":"205",
+    "dob":"02\/21\/2000",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"bo-naylor"
   },
   {
     "player_id":"596142",

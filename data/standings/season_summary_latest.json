@@ -84,7 +84,7 @@
         "stat":"home_runs",
         "value":127,
         "category":"batting",
-        "context_value":"29th",
+        "context_value":"30th",
         "context_value_label":"League rank"
     },
     {
@@ -108,7 +108,7 @@
         "stat":"stolen_bases",
         "value":135,
         "category":"batting",
-        "context_value":"4th",
+        "context_value":"5th",
         "context_value_label":"League rank"
     },
     {
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"September 1, 2026, 1:15 PM CT",
+        "value":"September 1, 2026, 7:53 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(September 1)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>85-53<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>3-17<\/span> away <span class='highlight'>loss<\/span>. and the next game is Tuesday at 6:40 p.m. CT at <span class='highlight'>Wrigley Field<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(September 1)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>85-53<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>3-17<\/span> away <span class='highlight'>loss<\/span>. and the next game is Wednesday at 6:40 p.m. CT at <span class='highlight'>Wrigley Field<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
