@@ -34,7 +34,7 @@
     {
         "stat_label":"Games up\/back",
         "stat":"games_up_back",
-        "value":7,
+        "value":8,
         "category":"standings",
         "context_value":"1st",
         "context_value_label":"Division rank"
@@ -42,9 +42,9 @@
     {
         "stat_label":"Avg. home attendance",
         "stat":"mean_attendance",
-        "value":"24,723",
+        "value":"24,835",
         "category":"standings",
-        "context_value":103,
+        "context_value":100,
         "context_value_label":"Home games this season"
     },
     {
@@ -74,7 +74,7 @@
     {
         "stat_label":"Batting average",
         "stat":"batting_average",
-        "value":".255",
+        "value":".256",
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Last decade average"
@@ -82,7 +82,7 @@
     {
         "stat_label":"Home runs",
         "stat":"home_runs",
-        "value":127,
+        "value":129,
         "category":"batting",
         "context_value":"30th",
         "context_value_label":"League rank"
@@ -90,7 +90,7 @@
     {
         "stat_label":"Home runs\/game",
         "stat":"home_runs_game",
-        "value":0.92,
+        "value":0.93,
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Last decade average"
@@ -98,7 +98,7 @@
     {
         "stat_label":"On-base percentage",
         "stat":"on_base_pct",
-        "value":".338",
+        "value":".339",
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Last decade average"
@@ -106,15 +106,15 @@
     {
         "stat_label":"Stolen bases",
         "stat":"stolen_bases",
-        "value":135,
+        "value":136,
         "category":"batting",
-        "context_value":"5th",
+        "context_value":"6th",
         "context_value_label":"League rank"
     },
     {
         "stat_label":"Stolen bases\/game",
         "stat":"stolen_bases_game",
-        "value":0.83,
+        "value":0.84,
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Rate all last season"
@@ -122,7 +122,7 @@
     {
         "stat_label":"Strikeouts",
         "stat":"strikeouts",
-        "value":"1,323",
+        "value":"1,331",
         "category":"pitching",
         "context_value":"2nd",
         "context_value_label":"League rank"
@@ -130,7 +130,7 @@
     {
         "stat_label":"Walks",
         "stat":"walks",
-        "value":"437",
+        "value":"440",
         "category":"pitching",
         "context_value":"20th",
         "context_value_label":"League rank"
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"September 1, 2026, 7:53 PM CT",
+        "value":"September 2, 2026, 7:38 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(September 1)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>85-53<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>3-17<\/span> away <span class='highlight'>loss<\/span>. and the next game is Wednesday at 6:40 p.m. CT at <span class='highlight'>Wrigley Field<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(September 2)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>86-53<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>9-4<\/span> away <span class='highlight'>win<\/span>. and the next game is Wednesday at 6:40 p.m. CT at <span class='highlight'>Wrigley Field<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -162,7 +162,7 @@
     {
         "stat_label":"Last game result",
         "stat":"last_game_result",
-        "value":"loss",
+        "value":"win",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
