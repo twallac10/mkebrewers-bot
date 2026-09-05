@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.32761310452419,
-        "incorrect_strikes_pct": 9.67238689547581,
-        "total_called_strikes": 3205,
-        "bad_calls_count": 310
+        "correct_strikes_pct": 90.35658914728683,
+        "incorrect_strikes_pct": 9.643410852713174,
+        "total_called_strikes": 3225,
+        "bad_calls_count": 311
     },
     "last_game_summary": {
-        "date": "September 3, 2026",
-        "correct_strikes_pct": 83.33333333333334,
-        "incorrect_strikes_pct": 16.666666666666657,
-        "total_called_strikes": 18,
-        "bad_calls_count": 3,
-        "home_plate_umpire": "Willie Traynor"
+        "date": "September 4, 2026",
+        "correct_strikes_pct": 95.0,
+        "incorrect_strikes_pct": 5.0,
+        "total_called_strikes": 20,
+        "bad_calls_count": 1,
+        "home_plate_umpire": "James Jean"
     },
     "worst_calls_of_season": [
         {
@@ -56,16 +56,16 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.4089964089964,
-        "incorrect_balls_pct": 3.5910035910035987,
-        "total_called_balls": 5291,
+        "correct_balls_pct": 96.42789998119947,
+        "incorrect_balls_pct": 3.5721000188005263,
+        "total_called_balls": 5319,
         "bad_calls_count": 190
     },
     "pitching_last_game_summary": {
-        "date": "September 3, 2026",
+        "date": "September 4, 2026",
         "correct_balls_pct": 100.0,
         "incorrect_balls_pct": 0.0,
-        "total_called_balls": 29,
+        "total_called_balls": 28,
         "bad_calls_count": 0
     },
     "pitching_worst_calls_of_season": [

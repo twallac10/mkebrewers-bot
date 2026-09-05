@@ -1,5 +1,12 @@
 [
   {
+    "date":"2026-09-04",
+    "transaction":"San Francisco Giants claimed RHP Joel Kuhnel off waivers from Brewers.",
+    "players":[
+      "Joel Kuhnel"
+    ]
+  },
+  {
     "date":"2026-09-02",
     "transaction":"Brewers designated RHP Joel Kuhnel for assignment.",
     "players":[
@@ -8,16 +15,16 @@
   },
   {
     "date":"2026-09-01",
-    "transaction":"Brewers recalled C Bo Naylor from Nashville Sounds.",
+    "transaction":"Brewers activated LHP JoJo Romero from the 15-day injured list.",
     "players":[
-      "Bo Naylor"
+      "JoJo Romero"
     ]
   },
   {
     "date":"2026-09-01",
-    "transaction":"Brewers activated LHP JoJo Romero from the 15-day injured list.",
+    "transaction":"Brewers recalled C Bo Naylor from Nashville Sounds.",
     "players":[
-      "JoJo Romero"
+      "Bo Naylor"
     ]
   },
   {
@@ -57,16 +64,16 @@
   },
   {
     "date":"2026-08-25",
-    "transaction":"Brewers activated RF Sal Frelick from the 10-day injured list.",
+    "transaction":"Brewers sent LHP JoJo Romero on a rehab assignment to Wisconsin Timber Rattlers.",
     "players":[
-      "Sal Frelick"
+      "JoJo Romero"
     ]
   },
   {
     "date":"2026-08-25",
-    "transaction":"Brewers sent LHP JoJo Romero on a rehab assignment to Wisconsin Timber Rattlers.",
+    "transaction":"Brewers activated RF Sal Frelick from the 10-day injured list.",
     "players":[
-      "JoJo Romero"
+      "Sal Frelick"
     ]
   },
   {
@@ -127,16 +134,23 @@
   },
   {
     "date":"2026-08-15",
+    "transaction":"Athletics traded SS Jonathan Ornelas to Brewers for cash.",
+    "players":[
+      "Jonathan Ornelas"
+    ]
+  },
+  {
+    "date":"2026-08-15",
     "transaction":"Brewers designated CF Jihwan Bae for assignment.",
     "players":[
       "Jihwan Bae"
     ]
   },
   {
-    "date":"2026-08-15",
-    "transaction":"Athletics traded SS Jonathan Ornelas to Brewers for cash.",
+    "date":"2026-08-14",
+    "transaction":"Brewers placed RHP Abner Uribe on the 15-day injured list retroactive to August 11, 2026. Right forearm flexor strain.",
     "players":[
-      "Jonathan Ornelas"
+      "Abner Uribe"
     ]
   },
   {
@@ -151,13 +165,6 @@
     "transaction":"Brewers signed free agent RHP Lyon Richardson to a minor league contract.",
     "players":[
       "Lyon Richardson"
-    ]
-  },
-  {
-    "date":"2026-08-14",
-    "transaction":"Brewers placed RHP Abner Uribe on the 15-day injured list retroactive to August 11, 2026. Right forearm flexor strain.",
-    "players":[
-      "Abner Uribe"
     ]
   },
   {
@@ -197,9 +204,9 @@
   },
   {
     "date":"2026-08-09",
-    "transaction":"Brewers placed SS Cooper Pratt on the 10-day injured list. Right hamstring strain.",
+    "transaction":"Brewers designated LHP Drew Rom for assignment.",
     "players":[
-      "Cooper Pratt"
+      "Drew Rom"
     ]
   },
   {
@@ -218,16 +225,9 @@
   },
   {
     "date":"2026-08-09",
-    "transaction":"Brewers designated LHP Drew Rom for assignment.",
+    "transaction":"Brewers placed SS Cooper Pratt on the 10-day injured list. Right hamstring strain.",
     "players":[
-      "Drew Rom"
-    ]
-  },
-  {
-    "date":"2026-08-08",
-    "transaction":"Brewers sent RF Sal Frelick on a rehab assignment to Nashville Sounds.",
-    "players":[
-      "Sal Frelick"
+      "Cooper Pratt"
     ]
   },
   {
@@ -239,6 +239,13 @@
   },
   {
     "date":"2026-08-08",
+    "transaction":"Brewers sent RF Sal Frelick on a rehab assignment to Nashville Sounds.",
+    "players":[
+      "Sal Frelick"
+    ]
+  },
+  {
+    "date":"2026-08-08",
     "transaction":"Brewers selected the contract of RHP Lyon Richardson from Nashville Sounds.",
     "players":[
       "Lyon Richardson"
@@ -246,16 +253,16 @@
   },
   {
     "date":"2026-08-06",
-    "transaction":"Brewers sent RHP Carlos Rodriguez outright to Nashville Sounds.",
+    "transaction":"Brewers sent LHP Thomas Pannone outright to Nashville Sounds.",
     "players":[
-      "Carlos Rodriguez"
+      "Thomas Pannone"
     ]
   },
   {
     "date":"2026-08-06",
-    "transaction":"Brewers sent LHP Thomas Pannone outright to Nashville Sounds.",
+    "transaction":"Brewers sent RHP Carlos Rodriguez outright to Nashville Sounds.",
     "players":[
-      "Thomas Pannone"
+      "Carlos Rodriguez"
     ]
   },
   {
@@ -274,13 +281,6 @@
   },
   {
     "date":"2026-08-04",
-    "transaction":"Brewers optioned RHP Brandon Sproat to Nashville Sounds.",
-    "players":[
-      "Brandon Sproat"
-    ]
-  },
-  {
-    "date":"2026-08-04",
     "transaction":"Brewers optioned RHP Garrett Stallings to Nashville Sounds.",
     "players":[
       "Garrett Stallings"
@@ -288,9 +288,9 @@
   },
   {
     "date":"2026-08-04",
-    "transaction":"Brewers activated RHP Dustin May.",
+    "transaction":"Brewers optioned RHP Brandon Sproat to Nashville Sounds.",
     "players":[
-      "Dustin May"
+      "Brandon Sproat"
     ]
   },
   {
@@ -298,6 +298,13 @@
     "transaction":"Brewers activated RHP Antonio Senzatela.",
     "players":[
       "Antonio Senzatela"
+    ]
+  },
+  {
+    "date":"2026-08-04",
+    "transaction":"Brewers activated RHP Dustin May.",
+    "players":[
+      "Dustin May"
     ]
   },
   {
@@ -316,25 +323,9 @@
   },
   {
     "date":"2026-08-03",
-    "transaction":"Brewers placed LHP JoJo Romero on the 15-day injured list.",
+    "transaction":"RHP Antonio Senzatela roster status changed by Brewers.",
     "players":[
-      "JoJo Romero"
-    ]
-  },
-  {
-    "date":"2026-08-03",
-    "transaction":"Colorado Rockies traded RHP Antonio Senzatela to Brewers for LHP Mark Manfredi and SS Juan Martinez.",
-    "players":[
-      "Antonio Senzatela",
-      "Mark Manfredi",
-      "Juan Martinez"
-    ]
-  },
-  {
-    "date":"2026-08-03",
-    "transaction":"Brewers traded RHP Codi Heuer to Baltimore Orioles for cash.",
-    "players":[
-      "Codi Heuer"
+      "Antonio Senzatela"
     ]
   },
   {
@@ -349,9 +340,25 @@
   },
   {
     "date":"2026-08-03",
-    "transaction":"RHP Antonio Senzatela roster status changed by Brewers.",
+    "transaction":"Brewers traded RHP Codi Heuer to Baltimore Orioles for cash.",
     "players":[
-      "Antonio Senzatela"
+      "Codi Heuer"
+    ]
+  },
+  {
+    "date":"2026-08-03",
+    "transaction":"Colorado Rockies traded RHP Antonio Senzatela to Brewers for LHP Mark Manfredi and SS Juan Martinez.",
+    "players":[
+      "Antonio Senzatela",
+      "Mark Manfredi",
+      "Juan Martinez"
+    ]
+  },
+  {
+    "date":"2026-08-03",
+    "transaction":"Brewers placed LHP JoJo Romero on the 15-day injured list.",
+    "players":[
+      "JoJo Romero"
     ]
   },
   {
@@ -380,16 +387,16 @@
   },
   {
     "date":"2026-08-01",
-    "transaction":"Brewers optioned C Bo Naylor to Nashville Sounds.",
+    "transaction":"Brewers optioned RHP Codi Heuer to Nashville Sounds.",
     "players":[
-      "Bo Naylor"
+      "Codi Heuer"
     ]
   },
   {
     "date":"2026-08-01",
-    "transaction":"Brewers optioned RHP Codi Heuer to Nashville Sounds.",
+    "transaction":"Brewers optioned C Bo Naylor to Nashville Sounds.",
     "players":[
-      "Codi Heuer"
+      "Bo Naylor"
     ]
   },
   {
@@ -429,16 +436,16 @@
   },
   {
     "date":"2026-07-29",
-    "transaction":"Brewers optioned RHP Garrett Stallings to Nashville Sounds.",
+    "transaction":"Brewers selected the contract of LHP Thomas Pannone from Nashville Sounds.",
     "players":[
-      "Garrett Stallings"
+      "Thomas Pannone"
     ]
   },
   {
     "date":"2026-07-29",
-    "transaction":"Brewers selected the contract of LHP Thomas Pannone from Nashville Sounds.",
+    "transaction":"Brewers optioned RHP Garrett Stallings to Nashville Sounds.",
     "players":[
-      "Thomas Pannone"
+      "Garrett Stallings"
     ]
   },
   {
@@ -450,9 +457,9 @@
   },
   {
     "date":"2026-07-28",
-    "transaction":"Brewers signed RHP Brady Smith.",
+    "transaction":"Brewers signed RHP Grant Hill.",
     "players":[
-      "Brady Smith"
+      "Grant Hill"
     ]
   },
   {
@@ -464,9 +471,9 @@
   },
   {
     "date":"2026-07-28",
-    "transaction":"Brewers signed RHP Grant Hill.",
+    "transaction":"Brewers signed RHP Brady Smith.",
     "players":[
-      "Grant Hill"
+      "Brady Smith"
     ]
   },
   {
@@ -474,20 +481,6 @@
     "transaction":"Brewers signed LHP Sam George.",
     "players":[
       "Sam George"
-    ]
-  },
-  {
-    "date":"2026-07-27",
-    "transaction":"Brewers signed OF Carson Hart.",
-    "players":[
-      "Carson Hart"
-    ]
-  },
-  {
-    "date":"2026-07-27",
-    "transaction":"Brewers signed 1B Carsten Sabathia III.",
-    "players":[
-      "Carsten Sabathia III"
     ]
   },
   {
@@ -506,9 +499,30 @@
   },
   {
     "date":"2026-07-27",
+    "transaction":"Brewers signed OF Carson Hart.",
+    "players":[
+      "Carson Hart"
+    ]
+  },
+  {
+    "date":"2026-07-27",
     "transaction":"Brewers signed OF Sawyer Strosnider.",
     "players":[
       "Sawyer Strosnider"
+    ]
+  },
+  {
+    "date":"2026-07-27",
+    "transaction":"Brewers signed SS Chance Ruby.",
+    "players":[
+      "Chance Ruby"
+    ]
+  },
+  {
+    "date":"2026-07-27",
+    "transaction":"Brewers signed 1B Carsten Sabathia III.",
+    "players":[
+      "Carsten Sabathia III"
     ]
   },
   {
@@ -523,13 +537,6 @@
     "transaction":"Brewers signed RHP Marcus Kruzan.",
     "players":[
       "Marcus Kruzan"
-    ]
-  },
-  {
-    "date":"2026-07-27",
-    "transaction":"Brewers signed SS Chance Ruby.",
-    "players":[
-      "Chance Ruby"
     ]
   },
   {
@@ -555,16 +562,16 @@
   },
   {
     "date":"2026-07-24",
-    "transaction":"Brewers designated SS Braden Shewmake for assignment.",
+    "transaction":"Brewers activated 3B David Hamilton from the 10-day injured list.",
     "players":[
-      "Braden Shewmake"
+      "David Hamilton"
     ]
   },
   {
     "date":"2026-07-24",
-    "transaction":"Brewers activated 3B David Hamilton from the 10-day injured list.",
+    "transaction":"Brewers designated SS Braden Shewmake for assignment.",
     "players":[
-      "David Hamilton"
+      "Braden Shewmake"
     ]
   },
   {
@@ -576,16 +583,16 @@
   },
   {
     "date":"2026-07-22",
-    "transaction":"Brewers sent LHP DL Hall on a rehab assignment to Nashville Sounds.",
+    "transaction":"Brewers signed free agent C Kendall Hagedorn to a minor league contract.",
     "players":[
-      "DL Hall"
+      "Kendall Hagedorn"
     ]
   },
   {
     "date":"2026-07-22",
-    "transaction":"Brewers signed free agent C Kendall Hagedorn to a minor league contract.",
+    "transaction":"Brewers sent LHP DL Hall on a rehab assignment to Nashville Sounds.",
     "players":[
-      "Kendall Hagedorn"
+      "DL Hall"
     ]
   },
   {
@@ -646,9 +653,9 @@
   },
   {
     "date":"2026-07-16",
-    "transaction":"Brewers signed OF Kyle Jones.",
+    "transaction":"Brewers signed RHP Ryan Oshinskie.",
     "players":[
-      "Kyle Jones"
+      "Ryan Oshinskie"
     ]
   },
   {
@@ -660,16 +667,16 @@
   },
   {
     "date":"2026-07-16",
-    "transaction":"Brewers signed RHP Chase Mora.",
+    "transaction":"Brewers signed OF Kyle Jones.",
     "players":[
-      "Chase Mora"
+      "Kyle Jones"
     ]
   },
   {
     "date":"2026-07-16",
-    "transaction":"Brewers signed RHP Ryan Oshinskie.",
+    "transaction":"Brewers signed RHP Chase Mora.",
     "players":[
-      "Ryan Oshinskie"
+      "Chase Mora"
     ]
   },
   {
@@ -688,13 +695,6 @@
   },
   {
     "date":"2026-07-15",
-    "transaction":"Brewers optioned LHP Colton Gordon to Nashville Sounds.",
-    "players":[
-      "Colton Gordon"
-    ]
-  },
-  {
-    "date":"2026-07-15",
     "transaction":"Houston Astros traded RHP Lance McCullers Jr., LHP Colton Gordon and cash to Brewers for OF Jadyn Fielder.",
     "players":[
       "Lance McCullers Jr",
@@ -703,10 +703,10 @@
     ]
   },
   {
-    "date":"2026-07-14",
-    "transaction":"Brewers traded RHP Easton McGee to Kansas City Royals for cash.",
+    "date":"2026-07-15",
+    "transaction":"Brewers optioned LHP Colton Gordon to Nashville Sounds.",
     "players":[
-      "Easton McGee"
+      "Colton Gordon"
     ]
   }
 ]
