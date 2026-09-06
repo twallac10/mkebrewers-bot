@@ -4,12 +4,12 @@ Losses,losses,0,standings,65,This point last season
 Record,record,0-0,standings,97-65,This point last season
 Win percentage,win_pct,0%,standings,60%,This point last season
 Games up/back,games_up_back,7,standings,1st,Division rank
-Avg. home attendance,mean_attendance,"27,367",standings,132,Home games this season
+Avg. home attendance,mean_attendance,"26,950",standings,113,Home games this season
 Runs,runs,718,standings,3rd,League rank
 Runs against,runs_against,546,standings,634,This point last season
 Run differential,run_differential,172,standings,172,This point last season
 Batting average,batting_average,.256,batting,N/A,Last decade average
-Home runs,home_runs,132,batting,30th,League rank
+Home runs,home_runs,132,batting,29th,League rank
 Home runs/game,home_runs_game,0.92,batting,N/A,Last decade average
 On-base percentage,on_base_pct,.339,batting,N/A,Last decade average
 Stolen bases,stolen_bases,140,batting,3rd,League rank
@@ -17,6 +17,6 @@ Stolen bases/game,stolen_bases_game,0.86,batting,N/A,Rate all last season
 Strikeouts,strikeouts,"1,370",pitching,2nd,League rank
 Walks,walks,452,pitching,20th,League rank
 ERA,era,3.51,pitching,2nd,League rank
-Last updated,update_time,"September 6, 2026, 7:01 AM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(September 6)</span> — The Brewers have compiled a <span class='highlight'>88-55</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>3-5</span> away <span class='highlight'>loss</span>. and the next game is Sunday at 11:10 p.m. CT at <span class='highlight'>Great American Ball Park</span>.",summary,,
+Last updated,update_time,"September 6, 2026, 12:32 PM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(September 6)</span> — The Brewers have compiled a <span class='highlight'>88-55</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>3-5</span> away <span class='highlight'>loss</span>. and the next game is Monday at 1:10 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
 Last game result,last_game_result,loss,summary,,
