@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.42651119975453,
-        "incorrect_strikes_pct": 9.573488800245471,
-        "total_called_strikes": 3259,
-        "bad_calls_count": 312
+        "correct_strikes_pct": 90.42098840756559,
+        "incorrect_strikes_pct": 9.579011592434412,
+        "total_called_strikes": 3278,
+        "bad_calls_count": 314
     },
     "last_game_summary": {
-        "date": "September 7, 2026",
-        "correct_strikes_pct": 100.0,
-        "incorrect_strikes_pct": 0.0,
-        "total_called_strikes": 7,
-        "bad_calls_count": 0,
-        "home_plate_umpire": "Scott Barry"
+        "date": "September 8, 2026",
+        "correct_strikes_pct": 89.47368421052632,
+        "incorrect_strikes_pct": 10.526315789473685,
+        "total_called_strikes": 19,
+        "bad_calls_count": 2,
+        "home_plate_umpire": "Adam Hamari"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.43586411731947,
-        "incorrect_balls_pct": 3.5641358826805316,
-        "total_called_balls": 5387,
-        "bad_calls_count": 192
+        "correct_balls_pct": 96.43187280458496,
+        "incorrect_balls_pct": 3.5681271954150446,
+        "total_called_balls": 5409,
+        "bad_calls_count": 193
     },
     "pitching_last_game_summary": {
-        "date": "September 7, 2026",
-        "correct_balls_pct": 100.0,
-        "incorrect_balls_pct": 0.0,
-        "total_called_balls": 16,
-        "bad_calls_count": 0
+        "date": "September 8, 2026",
+        "correct_balls_pct": 95.45454545454545,
+        "incorrect_balls_pct": 4.545454545454547,
+        "total_called_balls": 22,
+        "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": [
         {
