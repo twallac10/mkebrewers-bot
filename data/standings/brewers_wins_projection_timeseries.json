@@ -973,7 +973,7 @@
             "game_number": 162,
             "mean_projected_wins": 100.4,
             "lower_ci_wins": 97,
-            "upper_ci_wins": 103
+            "upper_ci_wins": 104
         }
     ],
     "message": "Projection based on bootstrapping 150 past game outcomes for 12 remaining games."
