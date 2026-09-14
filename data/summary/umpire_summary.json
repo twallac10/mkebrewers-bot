@@ -1,17 +1,17 @@
 {
     "season_summary": {
-        "correct_strikes_pct": 90.34296028880865,
-        "incorrect_strikes_pct": 9.657039711191345,
-        "total_called_strikes": 3324,
-        "bad_calls_count": 321
+        "correct_strikes_pct": 90.2089552238806,
+        "incorrect_strikes_pct": 9.791044776119406,
+        "total_called_strikes": 3350,
+        "bad_calls_count": 328
     },
     "last_game_summary": {
-        "date": "September 12, 2026",
-        "correct_strikes_pct": 89.47368421052632,
-        "incorrect_strikes_pct": 10.526315789473685,
-        "total_called_strikes": 19,
-        "bad_calls_count": 2,
-        "home_plate_umpire": "Gabe Morales"
+        "date": "September 13, 2026",
+        "correct_strikes_pct": 73.07692307692307,
+        "incorrect_strikes_pct": 26.923076923076934,
+        "total_called_strikes": 26,
+        "bad_calls_count": 7,
+        "home_plate_umpire": "Doug Eddings"
     },
     "worst_calls_of_season": [
         {
@@ -56,17 +56,17 @@
         }
     ],
     "pitching_season_summary": {
-        "correct_balls_pct": 96.4546783625731,
-        "incorrect_balls_pct": 3.5453216374268948,
-        "total_called_balls": 5472,
-        "bad_calls_count": 194
+        "correct_balls_pct": 96.46931015752308,
+        "incorrect_balls_pct": 3.5306898424769173,
+        "total_called_balls": 5523,
+        "bad_calls_count": 195
     },
     "pitching_last_game_summary": {
-        "date": "September 12, 2026",
-        "correct_balls_pct": 100.0,
-        "incorrect_balls_pct": 0.0,
-        "total_called_balls": 25,
-        "bad_calls_count": 0
+        "date": "September 13, 2026",
+        "correct_balls_pct": 98.0392156862745,
+        "incorrect_balls_pct": 1.9607843137254974,
+        "total_called_balls": 51,
+        "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": [
         {
