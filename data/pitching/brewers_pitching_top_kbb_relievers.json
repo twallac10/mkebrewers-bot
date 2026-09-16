@@ -2,7 +2,7 @@
     {
         "name":"Bryse Wilson (15-day IL)",
         "era+":165.0,
-        "fip":1.97,
+        "fip":1.96,
         "so_bb":22.0
     },
     {
@@ -13,8 +13,8 @@
     },
     {
         "name":"Trevor Megill",
-        "era+":161.0,
-        "fip":1.94,
+        "era+":164.0,
+        "fip":1.95,
         "so_bb":4.2
     },
     {
@@ -25,8 +25,8 @@
     },
     {
         "name":"Aaron Ashby*",
-        "era+":130.0,
-        "fip":3.05,
-        "so_bb":2.79
+        "era+":133.0,
+        "fip":3.04,
+        "so_bb":2.78
     }
 ]
