@@ -8,7 +8,7 @@
     {
         "name":"Brandon Woodruff (60-day IL)",
         "era+":140.0,
-        "fip":3.19,
+        "fip":3.18,
         "so_bb":4.7
     },
     {
@@ -18,15 +18,15 @@
         "so_bb":4.33
     },
     {
+        "name":"Garrett Stallings",
+        "era+":null,
+        "fip":1.74,
+        "so_bb":3.4
+    },
+    {
         "name":"Abner Uribe",
         "era+":197.0,
         "fip":2.86,
         "so_bb":2.95
-    },
-    {
-        "name":"Aaron Ashby*",
-        "era+":133.0,
-        "fip":3.04,
-        "so_bb":2.78
     }
 ]
