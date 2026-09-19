@@ -8,25 +8,25 @@
     {
         "name":"Brandon Woodruff (60-day IL)",
         "era+":140.0,
-        "fip":3.18,
+        "fip":3.19,
         "so_bb":4.7
     },
     {
         "name":"Trevor Megill",
-        "era+":167.0,
-        "fip":1.9,
-        "so_bb":4.33
+        "era+":151.0,
+        "fip":1.89,
+        "so_bb":4.4
     },
     {
-        "name":"Garrett Stallings",
+        "name":"Garrett Stallings (40-man)",
         "era+":null,
         "fip":1.74,
         "so_bb":3.4
     },
     {
         "name":"Abner Uribe",
-        "era+":197.0,
-        "fip":2.86,
-        "so_bb":2.95
+        "era+":201.0,
+        "fip":2.76,
+        "so_bb":3.11
     }
 ]
