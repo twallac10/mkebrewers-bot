@@ -9,7 +9,7 @@ Runs,runs,787,standings,2nd,League rank
 Runs against,runs_against,591,standings,634,This point last season
 Run differential,run_differential,196,standings,172,This point last season
 Batting average,batting_average,.259,batting,N/A,Last decade average
-Home runs,home_runs,147,batting,28th,League rank
+Home runs,home_runs,147,batting,27th,League rank
 Home runs/game,home_runs_game,0.96,batting,N/A,Last decade average
 On-base percentage,on_base_pct,.342,batting,N/A,Last decade average
 Stolen bases,stolen_bases,148,batting,5th,League rank
@@ -17,6 +17,6 @@ Stolen bases/game,stolen_bases_game,0.91,batting,N/A,Rate all last season
 Strikeouts,strikeouts,"1,467",pitching,2nd,League rank
 Walks,walks,491,pitching,20th,League rank
 ERA,era,3.58,pitching,2nd,League rank
-Last updated,update_time,"September 18, 2026, 1:09 PM CT",summary,,
-Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(September 18)</span> — The Brewers have compiled a <span class='highlight'>95-58</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>4-7</span> away <span class='highlight'>loss</span>. and the next game is Friday at 6:05 p.m. CT at <span class='highlight'>Oriole Park at Camden Yards</span>.",summary,,
+Last updated,update_time,"September 18, 2026, 8:01 PM CT",summary,,
+Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(September 18)</span> — The Brewers have compiled a <span class='highlight'>95-58</span> record in the 2026 regular season, a <span class='highlight'>62%</span> winning percentage.  The last game was a <span class='highlight'>4-7</span> away <span class='highlight'>loss</span>. and the next game is Saturday at 3:05 p.m. CT at <span class='highlight'>Oriole Park at Camden Yards</span>.",summary,,
 Last game result,last_game_result,loss,summary,,
