@@ -18,15 +18,15 @@
         "so_bb":3.89
     },
     {
-        "name":"Robert Gasser*",
-        "era+":97.0,
-        "fip":4.32,
-        "so_bb":2.97
-    },
-    {
         "name":"Shane Drohan*",
         "era+":98.0,
         "fip":3.77,
         "so_bb":2.88
+    },
+    {
+        "name":"Robert Gasser*",
+        "era+":104.0,
+        "fip":4.32,
+        "so_bb":2.76
     }
 ]
