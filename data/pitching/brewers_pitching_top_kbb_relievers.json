@@ -13,20 +13,20 @@
     },
     {
         "name":"Trevor Megill",
-        "era+":151.0,
-        "fip":1.89,
-        "so_bb":4.4
+        "era+":153.0,
+        "fip":1.87,
+        "so_bb":4.47
+    },
+    {
+        "name":"JoJo Romero*",
+        "era+":98.0,
+        "fip":4.84,
+        "so_bb":3.5
     },
     {
         "name":"Garrett Stallings (40-man)",
         "era+":null,
         "fip":1.74,
         "so_bb":3.4
-    },
-    {
-        "name":"Abner Uribe",
-        "era+":204.0,
-        "fip":2.73,
-        "so_bb":3.16
     }
 ]
