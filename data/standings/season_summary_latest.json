@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"September 23, 2026, 1:55 PM CT",
+        "value":"September 23, 2026, 8:14 PM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(September 23)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>98-59<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>4-6<\/span> away <span class='highlight'>loss<\/span>. and the next game is Wednesday at 5:40 p.m. CT at <span class='highlight'>Citizens Bank Park<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(September 23)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>98-59<\/span> record in the 2026 regular season, a <span class='highlight'>62%<\/span> winning percentage.  The last game was a <span class='highlight'>4-6<\/span> away <span class='highlight'>loss<\/span>. and the next game is Thursday at 5:05 p.m. CT at <span class='highlight'>Citizens Bank Park<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
