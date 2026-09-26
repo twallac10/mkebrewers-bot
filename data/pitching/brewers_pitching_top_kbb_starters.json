@@ -14,19 +14,19 @@
     {
         "name":"Kyle Harrison*",
         "era+":98.0,
-        "fip":4.08,
+        "fip":4.09,
         "so_bb":3.81
+    },
+    {
+        "name":"Robert Gasser*",
+        "era+":108.0,
+        "fip":4.23,
+        "so_bb":2.94
     },
     {
         "name":"Shane Drohan*",
         "era+":98.0,
         "fip":3.77,
         "so_bb":2.8
-    },
-    {
-        "name":"Robert Gasser*",
-        "era+":104.0,
-        "fip":4.31,
-        "so_bb":2.76
     }
 ]
