@@ -180,24 +180,6 @@
     "slug":"chad-patrick"
   },
   {
-    "player_id":"680689",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/680689\/headshot\/silo\/current",
-    "name":"Lyon Richardson",
-    "player_url":"\/player\/680689",
-    "jersey":"48",
-    "position_group":"Pitchers",
-    "bat_throw":"S\/R",
-    "height":"6' 2\"",
-    "weight":"207",
-    "dob":"01\/18\/2000",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"lyon-richardson"
-  },
-  {
     "player_id":"668941",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/668941\/headshot\/silo\/current",
     "name":"JoJo Romero",
@@ -250,6 +232,24 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"abner-uribe"
+  },
+  {
+    "player_id":"669060",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/669060\/headshot\/silo\/current",
+    "name":"Bryse Wilson",
+    "player_url":"\/player\/669060",
+    "jersey":"41",
+    "position_group":"Pitchers",
+    "bat_throw":"R\/R",
+    "height":"6' 2\"",
+    "weight":"255",
+    "dob":"12\/20\/1997",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"bryse-wilson"
   },
   {
     "player_id":"661388",
@@ -396,24 +396,6 @@
     "slug":"brice-turang"
   },
   {
-    "player_id":"683734",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/683734\/headshot\/silo\/current",
-    "name":"Andrew Vaughn",
-    "player_url":"\/player\/683734",
-    "jersey":"28",
-    "position_group":"Infielders",
-    "bat_throw":"R\/R",
-    "height":"5' 10\"",
-    "weight":"215",
-    "dob":"04\/03\/1998",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"andrew-vaughn"
-  },
-  {
     "player_id":"694192",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/694192\/headshot\/silo\/current",
     "name":"Jackson Chourio",
@@ -466,6 +448,24 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"luis-lara"
+  },
+  {
+    "player_id":"663604",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/663604\/headshot\/silo\/current",
+    "name":"Brandon Lockridge",
+    "player_url":"\/player\/663604",
+    "jersey":"20",
+    "position_group":"Outfielders",
+    "bat_throw":"R\/R",
+    "height":"6' 0\"",
+    "weight":"197",
+    "dob":"03\/14\/1997",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"brandon-lockridge"
   },
   {
     "player_id":"669003",
