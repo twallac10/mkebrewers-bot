@@ -1,9 +1,15 @@
 [
     {
         "name":"Bryse Wilson",
-        "era+":120.0,
-        "fip":2.94,
+        "era+":121.0,
+        "fip":2.95,
         "so_bb":23.0
+    },
+    {
+        "name":"JoJo Romero*",
+        "era+":127.0,
+        "fip":3.85,
+        "so_bb":5.5
     },
     {
         "name":"Brandon Woodruff (60-day IL)",
@@ -13,15 +19,9 @@
     },
     {
         "name":"Trevor Megill",
-        "era+":159.0,
+        "era+":160.0,
         "fip":1.85,
         "so_bb":4.6
-    },
-    {
-        "name":"JoJo Romero*",
-        "era+":111.0,
-        "fip":4.47,
-        "so_bb":4.0
     },
     {
         "name":"Garrett Stallings (40-man)",
