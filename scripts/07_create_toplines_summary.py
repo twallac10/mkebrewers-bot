@@ -544,7 +544,7 @@ def generate_postseason_summary():
     """Generate a summary of the current postseason status"""
     try:
         # Try to load postseason series data
-        postseason_file = "data/postseason/brewers_postseason_series_2025.json"
+        postseason_file = "data/postseason/brewers_postseason_series_2026.json"
         if os.path.exists(postseason_file):
             with open(postseason_file, 'r') as f:
                 postseason_data = json.load(f)
@@ -725,7 +725,7 @@ def generate_summary(
         
         try:
             # Load postseason series data to check for transitions
-            postseason_file = "data/postseason/brewers_postseason_series_2025.json"
+            postseason_file = "data/postseason/brewers_postseason_series_2026.json"
             if os.path.exists(postseason_file):
                 with open(postseason_file, 'r') as f:
                     postseason_data = json.load(f)
@@ -798,7 +798,7 @@ def generate_summary(
                 # Extract current series info to compare
                 current_series_info = ""
                 try:
-                    postseason_file = "data/postseason/brewers_postseason_series_2025.json"
+                    postseason_file = "data/postseason/brewers_postseason_series_2026.json"
                     if os.path.exists(postseason_file):
                         with open(postseason_file, 'r') as f:
                             postseason_data = json.load(f)
