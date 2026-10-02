@@ -30,9 +30,8 @@ twitter:
   </p>
 </div>
 
-<!-- Postseason section hidden for 2026 regular season
 <div class="postseason-stats-section">
-  <h2 class="stat-group postseason-header">Postseason 2025</h2>
+  <h2 class="stat-group postseason-header">Postseason 2026</h2>
 
   <h3 class="visual-subhead">Playoff journey</h3>
   <div class="playoff-journey" id="playoff-journey">
@@ -43,7 +42,6 @@ twitter:
   </div>
   <p class="note">Note: Top 12 players in order of plate appearances.</p>
 </div>
--->
 
 
 

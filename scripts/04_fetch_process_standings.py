@@ -79,6 +79,11 @@ def fetch_current_year_data(url, year):
               })
               .assign(year=year))
 
+    # Keep only played games. After the regular season ends, Baseball Reference lists
+    # postseason placeholders (result "TBD", time "Game Preview, and Matchups") that
+    # would otherwise become the "latest game" with a 0-0 record.
+    src = src[src["result"].fillna("").str.match(r"^[WL]")].copy()
+
     # Convert date types where needed
     src["gm"] = src["gm"].astype(int)
     src["year"] = src["year"].astype(str)
@@ -148,6 +153,9 @@ def fetch_current_year_data(url, year):
 def load_historic_data(filepath):
     logging.info("Loading historic data.")
     historic_df = pd.read_parquet(filepath)
+
+    # Purge unplayed placeholder rows (e.g. postseason "TBD" games) stored by earlier runs
+    historic_df = historic_df[~historic_df["result"].fillna("").eq("TBD")].copy()
 
     # Fill NaN values before integer conversion to avoid "Cannot convert non-finite values" error
     for col in ["r", "ra", "attendance", "gm", "rank"]:
