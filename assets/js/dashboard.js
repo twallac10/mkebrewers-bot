@@ -759,7 +759,7 @@ document.addEventListener('DOMContentLoaded', function() {
   async function fetchData() {
     try {
       const response = await d3.json(
-        'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_historic_pitching_gamelogs_1901-present.json'
+        'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_historic_pitching_gamelogs_1970-present.json'
       );
       const groupedData = d3.group(response, (d) => d.year.toString());
       const maxVal = d3.max(response, d => Math.max(d['so_cum'], d['h_cum']));
@@ -922,7 +922,7 @@ document.addEventListener('DOMContentLoaded', function() {
   async function fetchCumulativeERAData() {
     try {
       const response = await d3.json(
-        'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_historic_pitching_gamelogs_1901-present.json'
+        'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_historic_pitching_gamelogs_1970-present.json'
       );
       // Group data by year
       const groupedByYear = d3.group(response, (d) => d.year.toString());
