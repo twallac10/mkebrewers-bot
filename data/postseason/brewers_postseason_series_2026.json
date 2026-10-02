@@ -9,20 +9,18 @@
   {
     "round": "ALDS",
     "series_name": "AL Division Series",
-    "status": "completed",
-    "opponent": "Chicago Cubs",
-    "result": "MIL wins 3-2",
-    "wins": 3,
-    "losses": 2
+    "status": "in_progress",
+    "opponent": "San Diego Padres",
+    "result": "",
+    "wins": 0,
+    "losses": 0
   },
   {
     "round": "ALCS",
     "series_name": "AL Championship Series",
-    "status": "completed",
-    "opponent": "Los Angeles Dodgers",
-    "result": "LAD wins 4-0",
-    "wins": 4,
-    "losses": 0
+    "status": "upcoming",
+    "opponent": "?",
+    "result": "?"
   },
   {
     "round": "World Series",
