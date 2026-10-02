@@ -200,34 +200,36 @@ def main():
         print("Roster fetch returned no names; skipping current-roster filter for pitching leaderboard.")
 
     # Convert numeric columns (including SO/BB which Baseball Reference provides)
-    numeric_cols = ['era+', 'fip', 'so/bb', 'ip']
+    numeric_cols = ['era', 'era+', 'fip', 'so/bb', 'ip']
     for col in numeric_cols:
         if col in players.columns:
             players[col] = pd.to_numeric(players[col], errors='coerce')
 
     # Split into starters (pos == 'SP') and relievers (pos != 'SP')
     if all(col in players.columns for col in ['pos', 'ip', 'so/bb', 'era+', 'fip']):
+        # ERA is optional so a missing column can't blank the leaderboard
+        leaderboard_cols = ['player'] + (['era'] if 'era' in players.columns else []) + ['era+', 'fip', 'so/bb']
         starters = players[players['pos'] == 'SP']
         relievers = players[players['pos'] != 'SP']
 
         top_starters = (
             starters[starters['ip'] >= 30]
             .nlargest(5, 'so/bb')
-            [['player', 'era+', 'fip', 'so/bb']]
+            [leaderboard_cols]
             .rename(columns={'player': 'name', 'so/bb': 'so_bb'})
             .reset_index(drop=True)
         )
         top_relievers = (
             relievers[relievers['ip'] >= 10]
             .nlargest(5, 'so/bb')
-            [['player', 'era+', 'fip', 'so/bb']]
+            [leaderboard_cols]
             .rename(columns={'player': 'name', 'so/bb': 'so_bb'})
             .reset_index(drop=True)
         )
     else:
         print(f"Available columns: {players.columns.tolist()}")
-        top_starters = pd.DataFrame(columns=['name', 'era+', 'fip', 'so_bb'])
-        top_relievers = pd.DataFrame(columns=['name', 'era+', 'fip', 'so_bb'])
+        top_starters = pd.DataFrame(columns=['name', 'era', 'era+', 'fip', 'so_bb'])
+        top_relievers = pd.DataFrame(columns=['name', 'era', 'era+', 'fip', 'so_bb'])
 
     """
     Export
