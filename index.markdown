@@ -528,6 +528,7 @@ twitter:
             <thead>
                 <tr>
                     <th>Player</th>
+                    <th class="table-value">ERA</th>
                     <th class="table-value">ERA+</th>
                     <th class="table-value">FIP</th>
                     <th class="table-value">SO/BB</th>
@@ -542,6 +543,7 @@ twitter:
             <thead>
                 <tr>
                     <th>Player</th>
+                    <th class="table-value">ERA</th>
                     <th class="table-value">ERA+</th>
                     <th class="table-value">FIP</th>
                     <th class="table-value">SO/BB</th>
