@@ -759,7 +759,7 @@ document.addEventListener('DOMContentLoaded', function() {
   async function fetchData() {
     try {
       const response = await d3.json(
-        'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_historic_pitching_gamelogs_1901-present.json'
+        'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_historic_pitching_gamelogs_1970-present.json'
       );
       const groupedData = d3.group(response, (d) => d.year.toString());
       const maxVal = d3.max(response, d => Math.max(d['so_cum'], d['h_cum']));
@@ -922,7 +922,7 @@ document.addEventListener('DOMContentLoaded', function() {
   async function fetchCumulativeERAData() {
     try {
       const response = await d3.json(
-        'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_historic_pitching_gamelogs_1901-present.json'
+        'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/pitching/brewers_historic_pitching_gamelogs_1970-present.json'
       );
       // Group data by year
       const groupedByYear = d3.group(response, (d) => d.year.toString());
@@ -4304,8 +4304,8 @@ document.addEventListener('DOMContentLoaded', function () {
           const starters = await startersRes.json();
           const relievers = await relieversRes.json();
 
-          renderPitchingTable(starters, 'pitching-kbb-starters-table', ['name', 'era+', 'fip', 'so_bb'], getColorScaleRed);
-          renderPitchingTable(relievers, 'pitching-kbb-relievers-table', ['name', 'era+', 'fip', 'so_bb'], getColorScaleRed);
+          renderPitchingTable(starters, 'pitching-kbb-starters-table', ['name', 'era', 'era+', 'fip', 'so_bb'], getColorScaleRed);
+          renderPitchingTable(relievers, 'pitching-kbb-relievers-table', ['name', 'era', 'era+', 'fip', 'so_bb'], getColorScaleRed);
       } catch (error) {
           console.error('Failed to fetch pitching data:', error);
       }
@@ -4344,7 +4344,7 @@ document.addEventListener('DOMContentLoaded', function () {
                       cell.textContent = parseFloat(value).toFixed(2);
                   }
               } else {
-                  cell.textContent = value;
+                  cell.textContent = value ?? '';
               }
 
               // Apply conditional coloring for numeric fields
@@ -4366,8 +4366,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const getColorScaleRed = (field, value, min, max) => {
       // Red color scale for pitching stats - darker red is better
-      // FIP: lower is better (reverse scale)
-      if (field === 'fip') {
+      // ERA and FIP: lower is better (reverse scale)
+      if (field === 'era' || field === 'fip') {
           return getColorFromScale(value, min, max, '#FFE5E7', '#BD3039', true);
       }
       // ERA+, SO/BB: higher is better (normal scale)
