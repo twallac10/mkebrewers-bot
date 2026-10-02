@@ -200,7 +200,7 @@ def main():
         print("Roster fetch returned no names; skipping current-roster filter for pitching leaderboard.")
 
     # Convert numeric columns (including SO/BB which Baseball Reference provides)
-    numeric_cols = ['era', 'era+', 'fip', 'so/bb', 'ip']
+    numeric_cols = ['era', 'era+', 'fip', 'so/bb', 'ip', 'g', 'gs']
     for col in numeric_cols:
         if col in players.columns:
             players[col] = pd.to_numeric(players[col], errors='coerce')
@@ -209,8 +209,15 @@ def main():
     if all(col in players.columns for col in ['pos', 'ip', 'so/bb', 'era+', 'fip']):
         # ERA is optional so a missing column can't blank the leaderboard
         leaderboard_cols = ['player'] + (['era'] if 'era' in players.columns else []) + ['era+', 'fip', 'so/bb']
-        starters = players[players['pos'] == 'SP']
-        relievers = players[players['pos'] != 'SP']
+        # Classify by usage: a starter made at least half of his appearances as a
+        # starter. Baseball-Reference's pos tag can mislabel pitchers (e.g. a
+        # starter acquired mid-season), so only fall back to it without g/gs.
+        if all(col in players.columns for col in ['g', 'gs']):
+            is_starter = (players['gs'] / players['g']) >= 0.5
+        else:
+            is_starter = players['pos'] == 'SP'
+        starters = players[is_starter]
+        relievers = players[~is_starter]
 
         top_starters = (
             starters[starters['ip'] >= 30]
