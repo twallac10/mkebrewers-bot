@@ -472,7 +472,7 @@ twitter:
       </table>
      
   </div>
-   <p class="note">Note: Tables and charts include top batters by plate appearances.</p>
+   <p class="note">Note: Tables and charts include top batters by plate appearances. Shading compares players within each column: darker red is better, blue is worse (for strikeout rate, lower is better).</p>
 </div>
 
   <h3 class="visual-subhead">Recent form: Expected weighted on-base average</h3>
