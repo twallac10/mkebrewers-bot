@@ -14,6 +14,13 @@
         "so_bb":5.73
     },
     {
+        "name":"Brandon Woodruff",
+        "era":2.98,
+        "era+":141.0,
+        "fip":3.19,
+        "so_bb":4.7
+    },
+    {
         "name":"Kyle Harrison*",
         "era":4.2,
         "era+":100.0,
@@ -33,6 +40,13 @@
         "era+":100.0,
         "fip":3.73,
         "so_bb":2.84
+    },
+    {
+        "name":"Dustin May",
+        "era":5.65,
+        "era+":75.0,
+        "fip":5.06,
+        "so_bb":2.53
     },
     {
         "name":"Brandon Sproat",
