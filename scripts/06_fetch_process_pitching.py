@@ -214,14 +214,14 @@ def main():
 
         top_starters = (
             starters[starters['ip'] >= 30]
-            .nlargest(5, 'so/bb')
+            .nlargest(8, 'so/bb')
             [leaderboard_cols]
             .rename(columns={'player': 'name', 'so/bb': 'so_bb'})
             .reset_index(drop=True)
         )
         top_relievers = (
             relievers[relievers['ip'] >= 10]
-            .nlargest(5, 'so/bb')
+            .nlargest(8, 'so/bb')
             [leaderboard_cols]
             .rename(columns={'player': 'name', 'so/bb': 'so_bb'})
             .reset_index(drop=True)
