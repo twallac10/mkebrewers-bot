@@ -33,5 +33,26 @@
         "era+":null,
         "fip":1.74,
         "so_bb":3.4
+    },
+    {
+        "name":"Abner Uribe",
+        "era":1.97,
+        "era+":213.0,
+        "fip":2.68,
+        "so_bb":3.26
+    },
+    {
+        "name":"Aaron Ashby*",
+        "era":3.12,
+        "era+":134.0,
+        "fip":3.11,
+        "so_bb":2.83
+    },
+    {
+        "name":"Dustin May",
+        "era":5.65,
+        "era+":75.0,
+        "fip":5.06,
+        "so_bb":2.53
     }
 ]

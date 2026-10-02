@@ -8,16 +8,16 @@
   },
   {
     "date":"2026-09-28",
-    "transaction":"Brewers recalled C Jeferson Quero from Nashville Sounds.",
+    "transaction":"Brewers recalled LF Akil Baddoo from Nashville Sounds.",
     "players":[
-      "Jeferson Quero"
+      "Akil Baddoo"
     ]
   },
   {
     "date":"2026-09-28",
-    "transaction":"Brewers recalled DH Tyler Black from Nashville Sounds.",
+    "transaction":"Brewers recalled C Jeferson Quero from Nashville Sounds.",
     "players":[
-      "Tyler Black"
+      "Jeferson Quero"
     ]
   },
   {
@@ -29,6 +29,13 @@
   },
   {
     "date":"2026-09-28",
+    "transaction":"Brewers recalled RHP Brandon Sproat from Nashville Sounds.",
+    "players":[
+      "Brandon Sproat"
+    ]
+  },
+  {
+    "date":"2026-09-28",
     "transaction":"Brewers recalled LHP Jared Koenig from Nashville Sounds.",
     "players":[
       "Jared Koenig"
@@ -36,16 +43,9 @@
   },
   {
     "date":"2026-09-28",
-    "transaction":"Brewers recalled LF Akil Baddoo from Nashville Sounds.",
+    "transaction":"Brewers recalled DH Tyler Black from Nashville Sounds.",
     "players":[
-      "Akil Baddoo"
-    ]
-  },
-  {
-    "date":"2026-09-28",
-    "transaction":"Brewers recalled RHP Brandon Sproat from Nashville Sounds.",
-    "players":[
-      "Brandon Sproat"
+      "Tyler Black"
     ]
   },
   {
@@ -71,23 +71,16 @@
   },
   {
     "date":"2026-09-25",
-    "transaction":"Brewers activated RHP Bryse Wilson from the 15-day injured list.",
-    "players":[
-      "Bryse Wilson"
-    ]
-  },
-  {
-    "date":"2026-09-25",
     "transaction":"Brewers placed 1B Andrew Vaughn on the 10-day injured list retroactive to September 22, 2026. Illness.",
     "players":[
       "Andrew Vaughn"
     ]
   },
   {
-    "date":"2026-09-23",
-    "transaction":"Brewers optioned LHP Colton Gordon to Biloxi Shuckers.",
+    "date":"2026-09-25",
+    "transaction":"Brewers activated RHP Bryse Wilson from the 15-day injured list.",
     "players":[
-      "Colton Gordon"
+      "Bryse Wilson"
     ]
   },
   {
@@ -95,6 +88,13 @@
     "transaction":"Brewers selected the contract of RHP Lyon Richardson from Nashville Sounds.",
     "players":[
       "Lyon Richardson"
+    ]
+  },
+  {
+    "date":"2026-09-23",
+    "transaction":"Brewers optioned LHP Colton Gordon to Biloxi Shuckers.",
+    "players":[
+      "Colton Gordon"
     ]
   },
   {
@@ -134,23 +134,9 @@
   },
   {
     "date":"2026-09-16",
-    "transaction":"RF Luis Lara changed number to 18.",
+    "transaction":"C Gary Sánchez changed number to 99.",
     "players":[
-      "Luis Lara"
-    ]
-  },
-  {
-    "date":"2026-09-16",
-    "transaction":"C William Contreras changed number to 24.",
-    "players":[
-      "William Contreras"
-    ]
-  },
-  {
-    "date":"2026-09-16",
-    "transaction":"RF Sal Frelick changed number to 10.",
-    "players":[
-      "Sal Frelick"
+      "Gary Sánchez"
     ]
   },
   {
@@ -169,9 +155,9 @@
   },
   {
     "date":"2026-09-16",
-    "transaction":"RHP Abner Uribe changed number to 45.",
+    "transaction":"RF Luis Lara changed number to 18.",
     "players":[
-      "Abner Uribe"
+      "Luis Lara"
     ]
   },
   {
@@ -183,51 +169,23 @@
   },
   {
     "date":"2026-09-16",
-    "transaction":"C Gary Sánchez changed number to 99.",
-    "players":[
-      "Gary Sánchez"
-    ]
-  },
-  {
-    "date":"2026-09-15",
-    "transaction":"RF Luis Lara changed number to 21.",
-    "players":[
-      "Luis Lara"
-    ]
-  },
-  {
-    "date":"2026-09-15",
-    "transaction":"DH Christian Yelich changed number to 21.",
-    "players":[
-      "Christian Yelich"
-    ]
-  },
-  {
-    "date":"2026-09-15",
-    "transaction":"Brewers sent RHP Bryse Wilson on a rehab assignment to Nashville Sounds.",
-    "players":[
-      "Bryse Wilson"
-    ]
-  },
-  {
-    "date":"2026-09-15",
-    "transaction":"RF Sal Frelick changed number to 21.",
-    "players":[
-      "Sal Frelick"
-    ]
-  },
-  {
-    "date":"2026-09-15",
-    "transaction":"C William Contreras changed number to 21.",
+    "transaction":"C William Contreras changed number to 24.",
     "players":[
       "William Contreras"
     ]
   },
   {
-    "date":"2026-09-15",
-    "transaction":"LF Jackson Chourio changed number to 21.",
+    "date":"2026-09-16",
+    "transaction":"RF Sal Frelick changed number to 10.",
     "players":[
-      "Jackson Chourio"
+      "Sal Frelick"
+    ]
+  },
+  {
+    "date":"2026-09-16",
+    "transaction":"RHP Abner Uribe changed number to 45.",
+    "players":[
+      "Abner Uribe"
     ]
   },
   {
@@ -246,16 +204,51 @@
   },
   {
     "date":"2026-09-15",
+    "transaction":"LF Jackson Chourio changed number to 21.",
+    "players":[
+      "Jackson Chourio"
+    ]
+  },
+  {
+    "date":"2026-09-15",
+    "transaction":"RF Luis Lara changed number to 21.",
+    "players":[
+      "Luis Lara"
+    ]
+  },
+  {
+    "date":"2026-09-15",
+    "transaction":"RF Sal Frelick changed number to 21.",
+    "players":[
+      "Sal Frelick"
+    ]
+  },
+  {
+    "date":"2026-09-15",
     "transaction":"1B Andrew Vaughn changed number to 21.",
     "players":[
       "Andrew Vaughn"
     ]
   },
   {
-    "date":"2026-09-10",
-    "transaction":"Brewers optioned RHP Brandon Sproat to Nashville Sounds.",
+    "date":"2026-09-15",
+    "transaction":"Brewers sent RHP Bryse Wilson on a rehab assignment to Nashville Sounds.",
     "players":[
-      "Brandon Sproat"
+      "Bryse Wilson"
+    ]
+  },
+  {
+    "date":"2026-09-15",
+    "transaction":"DH Christian Yelich changed number to 21.",
+    "players":[
+      "Christian Yelich"
+    ]
+  },
+  {
+    "date":"2026-09-15",
+    "transaction":"C William Contreras changed number to 21.",
+    "players":[
+      "William Contreras"
     ]
   },
   {
@@ -263,6 +256,13 @@
     "transaction":"Brewers recalled RHP Garrett Stallings from Nashville Sounds.",
     "players":[
       "Garrett Stallings"
+    ]
+  },
+  {
+    "date":"2026-09-10",
+    "transaction":"Brewers optioned RHP Brandon Sproat to Nashville Sounds.",
+    "players":[
+      "Brandon Sproat"
     ]
   },
   {
@@ -323,16 +323,16 @@
   },
   {
     "date":"2026-08-31",
-    "transaction":"Brewers activated RHP Abner Uribe from the 15-day injured list.",
+    "transaction":"Brewers signed free agent SS Jonathan Ornelas to a minor league contract.",
     "players":[
-      "Abner Uribe"
+      "Jonathan Ornelas"
     ]
   },
   {
     "date":"2026-08-31",
-    "transaction":"Brewers signed free agent SS Jonathan Ornelas to a minor league contract.",
+    "transaction":"Brewers activated RHP Abner Uribe from the 15-day injured list.",
     "players":[
-      "Jonathan Ornelas"
+      "Abner Uribe"
     ]
   },
   {
@@ -365,9 +365,9 @@
   },
   {
     "date":"2026-08-25",
-    "transaction":"Brewers activated RF Sal Frelick from the 10-day injured list.",
+    "transaction":"Brewers sent LHP JoJo Romero on a rehab assignment to Wisconsin Timber Rattlers.",
     "players":[
-      "Sal Frelick"
+      "JoJo Romero"
     ]
   },
   {
@@ -379,9 +379,9 @@
   },
   {
     "date":"2026-08-25",
-    "transaction":"Brewers sent LHP JoJo Romero on a rehab assignment to Wisconsin Timber Rattlers.",
+    "transaction":"Brewers activated RF Sal Frelick from the 10-day injured list.",
     "players":[
-      "JoJo Romero"
+      "Sal Frelick"
     ]
   },
   {
@@ -477,16 +477,16 @@
   },
   {
     "date":"2026-08-11",
-    "transaction":"Brewers signed free agent RHP Bryse Wilson.",
+    "transaction":"Brewers designated RHP Lyon Richardson for assignment.",
     "players":[
-      "Bryse Wilson"
+      "Lyon Richardson"
     ]
   },
   {
     "date":"2026-08-11",
-    "transaction":"Brewers designated RHP Lyon Richardson for assignment.",
+    "transaction":"Brewers signed free agent RHP Bryse Wilson.",
     "players":[
-      "Lyon Richardson"
+      "Bryse Wilson"
     ]
   },
   {
@@ -505,16 +505,16 @@
   },
   {
     "date":"2026-08-09",
-    "transaction":"Brewers signed free agent CF JiHwan Bae to a minor league contract.",
+    "transaction":"Brewers designated LHP Drew Rom for assignment.",
     "players":[
-      "JiHwan Bae"
+      "Drew Rom"
     ]
   },
   {
     "date":"2026-08-09",
-    "transaction":"Brewers designated LHP Drew Rom for assignment.",
+    "transaction":"Brewers signed free agent CF JiHwan Bae to a minor league contract.",
     "players":[
-      "Drew Rom"
+      "JiHwan Bae"
     ]
   },
   {
@@ -620,15 +620,6 @@
   },
   {
     "date":"2026-08-03",
-    "transaction":"Colorado Rockies traded RHP Antonio Senzatela to Brewers for LHP Mark Manfredi and SS Juan Martinez.",
-    "players":[
-      "Antonio Senzatela",
-      "Mark Manfredi",
-      "Juan Martinez"
-    ]
-  },
-  {
-    "date":"2026-08-03",
     "transaction":"Brewers traded RHP Codi Heuer to Baltimore Orioles for cash.",
     "players":[
       "Codi Heuer"
@@ -636,16 +627,11 @@
   },
   {
     "date":"2026-08-03",
-    "transaction":"RHP Antonio Senzatela roster status changed by Brewers.",
+    "transaction":"Colorado Rockies traded RHP Antonio Senzatela to Brewers for LHP Mark Manfredi and SS Juan Martinez.",
     "players":[
-      "Antonio Senzatela"
-    ]
-  },
-  {
-    "date":"2026-08-03",
-    "transaction":"RHP Dustin May roster status changed by Brewers.",
-    "players":[
-      "Dustin May"
+      "Antonio Senzatela",
+      "Mark Manfredi",
+      "Juan Martinez"
     ]
   },
   {
@@ -657,9 +643,23 @@
   },
   {
     "date":"2026-08-03",
+    "transaction":"RHP Dustin May roster status changed by Brewers.",
+    "players":[
+      "Dustin May"
+    ]
+  },
+  {
+    "date":"2026-08-03",
     "transaction":"Brewers designated RHP Carlos Rodriguez for assignment.",
     "players":[
       "Carlos Rodriguez"
+    ]
+  },
+  {
+    "date":"2026-08-03",
+    "transaction":"RHP Antonio Senzatela roster status changed by Brewers.",
+    "players":[
+      "Antonio Senzatela"
     ]
   },
   {
@@ -667,27 +667,6 @@
     "transaction":"Brewers sent RHP Joel Kuhnel on a rehab assignment to Nashville Sounds.",
     "players":[
       "Joel Kuhnel"
-    ]
-  },
-  {
-    "date":"2026-08-01",
-    "transaction":"Brewers optioned C Bo Naylor to Nashville Sounds.",
-    "players":[
-      "Bo Naylor"
-    ]
-  },
-  {
-    "date":"2026-08-01",
-    "transaction":"Brewers optioned RHP Codi Heuer to Nashville Sounds.",
-    "players":[
-      "Codi Heuer"
-    ]
-  },
-  {
-    "date":"2026-08-01",
-    "transaction":"Brewers activated LF Brandon Lockridge from the 60-day injured list.",
-    "players":[
-      "Brandon Lockridge"
     ]
   },
   {
@@ -708,10 +687,31 @@
     ]
   },
   {
-    "date":"2026-07-31",
-    "transaction":"CF Blake Perkins roster status changed by Brewers.",
+    "date":"2026-08-01",
+    "transaction":"Brewers activated LF Brandon Lockridge from the 60-day injured list.",
     "players":[
-      "Blake Perkins"
+      "Brandon Lockridge"
+    ]
+  },
+  {
+    "date":"2026-08-01",
+    "transaction":"Brewers optioned C Bo Naylor to Nashville Sounds.",
+    "players":[
+      "Bo Naylor"
+    ]
+  },
+  {
+    "date":"2026-08-01",
+    "transaction":"Brewers optioned RHP Codi Heuer to Nashville Sounds.",
+    "players":[
+      "Codi Heuer"
+    ]
+  },
+  {
+    "date":"2026-07-31",
+    "transaction":"Brewers designated LHP Thomas Pannone for assignment.",
+    "players":[
+      "Thomas Pannone"
     ]
   },
   {
@@ -723,9 +723,9 @@
   },
   {
     "date":"2026-07-31",
-    "transaction":"Brewers designated LHP Thomas Pannone for assignment.",
+    "transaction":"CF Blake Perkins roster status changed by Brewers.",
     "players":[
-      "Thomas Pannone"
+      "Blake Perkins"
     ]
   },
   {
@@ -758,16 +758,16 @@
   },
   {
     "date":"2026-07-28",
-    "transaction":"Brewers signed RHP Brady Smith.",
+    "transaction":"Brewers signed RHP Grant Hill.",
     "players":[
-      "Brady Smith"
+      "Grant Hill"
     ]
   },
   {
     "date":"2026-07-28",
-    "transaction":"Brewers signed RHP Grant Hill.",
+    "transaction":"Brewers signed RHP Brady Smith.",
     "players":[
-      "Grant Hill"
+      "Brady Smith"
     ]
   },
   {
@@ -779,23 +779,9 @@
   },
   {
     "date":"2026-07-27",
-    "transaction":"Brewers signed RHP Keaton Maiorana.",
+    "transaction":"Brewers signed RHP Julian Garcia.",
     "players":[
-      "Keaton Maiorana"
-    ]
-  },
-  {
-    "date":"2026-07-27",
-    "transaction":"Brewers signed SS Chance Ruby.",
-    "players":[
-      "Chance Ruby"
-    ]
-  },
-  {
-    "date":"2026-07-27",
-    "transaction":"Brewers signed OF Sawyer Strosnider.",
-    "players":[
-      "Sawyer Strosnider"
+      "Julian Garcia"
     ]
   },
   {
@@ -807,16 +793,23 @@
   },
   {
     "date":"2026-07-27",
-    "transaction":"Brewers signed RHP Julian Garcia.",
+    "transaction":"Brewers signed OF Sawyer Strosnider.",
     "players":[
-      "Julian Garcia"
+      "Sawyer Strosnider"
     ]
   },
   {
     "date":"2026-07-27",
-    "transaction":"Brewers signed 1B Carsten Sabathia III.",
+    "transaction":"Brewers signed SS Chance Ruby.",
     "players":[
-      "Carsten Sabathia III"
+      "Chance Ruby"
+    ]
+  },
+  {
+    "date":"2026-07-27",
+    "transaction":"Brewers signed RHP Keaton Maiorana.",
+    "players":[
+      "Keaton Maiorana"
     ]
   },
   {
@@ -841,15 +834,22 @@
     ]
   },
   {
+    "date":"2026-07-27",
+    "transaction":"Brewers signed 1B Carsten Sabathia III.",
+    "players":[
+      "Carsten Sabathia III"
+    ]
+  },
+  {
     "date":"2026-07-26",
-    "transaction":"Brewers designated RHP Lance McCullers Jr. for assignment.",
+    "transaction":"Brewers released RHP Lance McCullers Jr..",
     "players":[
       "Lance McCullers Jr"
     ]
   },
   {
     "date":"2026-07-26",
-    "transaction":"Brewers released RHP Lance McCullers Jr..",
+    "transaction":"Brewers designated RHP Lance McCullers Jr. for assignment.",
     "players":[
       "Lance McCullers Jr"
     ]
@@ -884,16 +884,16 @@
   },
   {
     "date":"2026-07-22",
-    "transaction":"Brewers sent LHP DL Hall on a rehab assignment to Nashville Sounds.",
+    "transaction":"Brewers signed free agent C Kendall Hagedorn to a minor league contract.",
     "players":[
-      "DL Hall"
+      "Kendall Hagedorn"
     ]
   },
   {
     "date":"2026-07-22",
-    "transaction":"Brewers signed free agent C Kendall Hagedorn to a minor league contract.",
+    "transaction":"Brewers sent LHP DL Hall on a rehab assignment to Nashville Sounds.",
     "players":[
-      "Kendall Hagedorn"
+      "DL Hall"
     ]
   },
   {
@@ -947,9 +947,9 @@
   },
   {
     "date":"2026-07-16",
-    "transaction":"Brewers signed 1B Kellan Tom.",
+    "transaction":"Brewers signed OF Kyle Jones.",
     "players":[
-      "Kellan Tom"
+      "Kyle Jones"
     ]
   },
   {
@@ -961,9 +961,9 @@
   },
   {
     "date":"2026-07-16",
-    "transaction":"Brewers signed OF Kyle Jones.",
+    "transaction":"Brewers signed RHP Ryan Oshinskie.",
     "players":[
-      "Kyle Jones"
+      "Ryan Oshinskie"
     ]
   },
   {
@@ -982,9 +982,9 @@
   },
   {
     "date":"2026-07-16",
-    "transaction":"Brewers signed RHP Ryan Oshinskie.",
+    "transaction":"Brewers signed 1B Kellan Tom.",
     "players":[
-      "Ryan Oshinskie"
+      "Kellan Tom"
     ]
   },
   {
@@ -1026,9 +1026,9 @@
   },
   {
     "date":"2026-07-12",
-    "transaction":"Brewers transferred RHP Brandon Woodruff from the 15-day injured list to the 60-day injured list. Right shoulder inflammation.",
+    "transaction":"Brewers designated LF Greg Jones for assignment.",
     "players":[
-      "Brandon Woodruff"
+      "Greg Jones"
     ]
   },
   {
@@ -1040,13 +1040,6 @@
   },
   {
     "date":"2026-07-12",
-    "transaction":"Brewers designated LF Greg Jones for assignment.",
-    "players":[
-      "Greg Jones"
-    ]
-  },
-  {
-    "date":"2026-07-12",
     "transaction":"Brewers activated RHP Coleman Crow from the 15-day injured list.",
     "players":[
       "Coleman Crow"
@@ -1054,9 +1047,9 @@
   },
   {
     "date":"2026-07-12",
-    "transaction":"Brewers optioned RHP Garrett Stallings to Nashville Sounds.",
+    "transaction":"Brewers transferred RHP Brandon Woodruff from the 15-day injured list to the 60-day injured list. Right shoulder inflammation.",
     "players":[
-      "Garrett Stallings"
+      "Brandon Woodruff"
     ]
   },
   {
@@ -1074,8 +1067,8 @@
     ]
   },
   {
-    "date":"2026-07-11",
-    "transaction":"Brewers recalled RHP Garrett Stallings from Nashville Sounds.",
+    "date":"2026-07-12",
+    "transaction":"Brewers optioned RHP Garrett Stallings to Nashville Sounds.",
     "players":[
       "Garrett Stallings"
     ]
@@ -1085,6 +1078,13 @@
     "transaction":"Brewers recalled LHP Robert Gasser from Nashville Sounds.",
     "players":[
       "Robert Gasser"
+    ]
+  },
+  {
+    "date":"2026-07-11",
+    "transaction":"Brewers recalled RHP Garrett Stallings from Nashville Sounds.",
+    "players":[
+      "Garrett Stallings"
     ]
   },
   {
@@ -1103,9 +1103,9 @@
   },
   {
     "date":"2026-07-10",
-    "transaction":"Brewers sent LHP Rob Zastryzny on a rehab assignment to Nashville Sounds.",
+    "transaction":"Brewers designated RHP Easton McGee for assignment.",
     "players":[
-      "Rob Zastryzny"
+      "Easton McGee"
     ]
   },
   {
@@ -1117,9 +1117,9 @@
   },
   {
     "date":"2026-07-10",
-    "transaction":"Brewers designated RHP Easton McGee for assignment.",
+    "transaction":"Brewers sent LHP Rob Zastryzny on a rehab assignment to Nashville Sounds.",
     "players":[
-      "Easton McGee"
+      "Rob Zastryzny"
     ]
   },
   {
@@ -1145,6 +1145,13 @@
   },
   {
     "date":"2026-07-07",
+    "transaction":"Brewers selected the contract of LF Greg Jones from Nashville Sounds.",
+    "players":[
+      "Greg Jones"
+    ]
+  },
+  {
+    "date":"2026-07-07",
     "transaction":"Brewers optioned CF Blake Perkins to Nashville Sounds.",
     "players":[
       "Blake Perkins"
@@ -1155,13 +1162,6 @@
     "transaction":"Brewers recalled CF Luis Lara from Nashville Sounds.",
     "players":[
       "Luis Lara"
-    ]
-  },
-  {
-    "date":"2026-07-07",
-    "transaction":"Brewers selected the contract of LF Greg Jones from Nashville Sounds.",
-    "players":[
-      "Greg Jones"
     ]
   },
   {
@@ -1180,16 +1180,16 @@
   },
   {
     "date":"2026-07-07",
-    "transaction":"Brewers transferred LF Brandon Lockridge from the 10-day injured list to the 60-day injured list. Right knee laceration and contusion.",
+    "transaction":"Brewers placed 3B David Hamilton on the 10-day injured list. Strained left hamstring.",
     "players":[
-      "Brandon Lockridge"
+      "David Hamilton"
     ]
   },
   {
     "date":"2026-07-07",
-    "transaction":"Brewers placed 3B David Hamilton on the 10-day injured list. Strained left hamstring.",
+    "transaction":"Brewers transferred LF Brandon Lockridge from the 10-day injured list to the 60-day injured list. Right knee laceration and contusion.",
     "players":[
-      "David Hamilton"
+      "Brandon Lockridge"
     ]
   },
   {

@@ -33,5 +33,12 @@
         "era+":100.0,
         "fip":3.73,
         "so_bb":2.84
+    },
+    {
+        "name":"Brandon Sproat",
+        "era":5.57,
+        "era+":75.0,
+        "fip":5.21,
+        "so_bb":1.94
     }
 ]
