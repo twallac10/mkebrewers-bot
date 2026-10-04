@@ -2,33 +2,33 @@
     {
         "stat_label":"Wins",
         "stat":"wins",
-        "value":103,
+        "value":0,
         "category":"standings",
-        "context_value":97,
+        "context_value":"N\/A",
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Losses",
         "stat":"losses",
-        "value":59,
+        "value":0,
         "category":"standings",
-        "context_value":65,
+        "context_value":"N\/A",
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Record",
         "stat":"record",
-        "value":"103-59",
+        "value":"0-0",
         "category":"standings",
-        "context_value":"97-65",
+        "context_value":"N\/A",
         "context_value_label":"This point last season"
     },
     {
         "stat_label":"Win percentage",
         "stat":"win_pct",
-        "value":"64%",
+        "value":"0%",
         "category":"standings",
-        "context_value":"60%",
+        "context_value":"N\/A%",
         "context_value_label":"This point last season"
     },
     {
@@ -42,9 +42,9 @@
     {
         "stat_label":"Avg. home attendance",
         "stat":"mean_attendance",
-        "value":"33,436",
+        "value":"31,665",
         "category":"standings",
-        "context_value":90,
+        "context_value":120,
         "context_value_label":"Home games this season"
     },
     {
@@ -114,7 +114,7 @@
     {
         "stat_label":"Stolen bases\/game",
         "stat":"stolen_bases_game",
-        "value":1.0,
+        "value":0.98,
         "category":"batting",
         "context_value":"N\/A",
         "context_value_label":"Rate all last season"
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"October 3, 2026, 9:27 PM CT",
+        "value":"October 4, 2026, 8:49 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(October 3)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>103-59<\/span> record in the 2026 regular season, a <span class='highlight'>64%<\/span> winning percentage.  The last game's result is not yet available. and the next game is Sunday at 3:00 p.m. CT at <span class='highlight'>American Family Field<\/span>.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(October 4)<\/span> \u2014 The Brewers have compiled a <span class='highlight'>103-59<\/span> record in the 2026 regular season, a <span class='highlight'>64%<\/span> winning percentage.  The last game was a <span class='highlight'>3-2<\/span> home <span class='highlight'>win<\/span>. and the next game is Sunday at 3:00 p.m. CT at <span class='highlight'>American Family Field<\/span>.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
