@@ -1,10 +1,10 @@
 stat_label,stat,value,category,context_value,context_value_label
-Wins,wins,0,standings,N/A,This point last season
-Losses,losses,0,standings,N/A,This point last season
-Record,record,0-0,standings,N/A,This point last season
-Win percentage,win_pct,0%,standings,N/A%,This point last season
+Wins,wins,103,standings,97,This point last season
+Losses,losses,59,standings,65,This point last season
+Record,record,103-59,standings,97-65,This point last season
+Win percentage,win_pct,64%,standings,60%,This point last season
 Games up/back,games_up_back,14,standings,1st,Division rank
-Avg. home attendance,mean_attendance,"31,665",standings,120,Home games this season
+Avg. home attendance,mean_attendance,"33,735",standings,102,Home games this season
 Runs,runs,832,standings,2nd,League rank
 Runs against,runs_against,618,standings,634,This point last season
 Run differential,run_differential,214,standings,172,This point last season
@@ -13,10 +13,10 @@ Home runs,home_runs,154,batting,28th,League rank
 Home runs/game,home_runs_game,0.95,batting,N/A,Last decade average
 On-base percentage,on_base_pct,.341,batting,N/A,Last decade average
 Stolen bases,stolen_bases,162,batting,5th,League rank
-Stolen bases/game,stolen_bases_game,0.98,batting,N/A,Rate all last season
+Stolen bases/game,stolen_bases_game,1.0,batting,N/A,Rate all last season
 Strikeouts,strikeouts,"1,544",pitching,2nd,League rank
 Walks,walks,518,pitching,20th,League rank
 ERA,era,3.51,pitching,2nd,League rank
-Last updated,update_time,"October 4, 2026, 8:49 AM CT",summary,,
+Last updated,update_time,"October 4, 2026, 10:11 AM CT",summary,,
 Team summary,summary,"<span class='highlight'>MILWAUKEE</span> <span class='updated'>(October 4)</span> — The Brewers have compiled a <span class='highlight'>103-59</span> record in the 2026 regular season, a <span class='highlight'>64%</span> winning percentage.  The last game was a <span class='highlight'>3-2</span> home <span class='highlight'>win</span>. and the next game is Sunday at 3:00 p.m. CT at <span class='highlight'>American Family Field</span>.",summary,,
 Last game result,last_game_result,win,summary,,
