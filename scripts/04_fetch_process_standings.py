@@ -154,8 +154,13 @@ def load_historic_data(filepath):
     logging.info("Loading historic data.")
     historic_df = pd.read_parquet(filepath)
 
-    # Purge unplayed placeholder rows (e.g. postseason "TBD" games) stored by earlier runs
-    historic_df = historic_df[~historic_df["result"].fillna("").eq("TBD")].copy()
+    # Purge unplayed placeholder rows (e.g. scheduled postseason games) for the current
+    # season that earlier runs stored. A played game has a W/L result and a record.
+    unplayed = (
+        (historic_df["year"].astype(str) == str(year))
+        & ~historic_df["result"].fillna("").str.match(r"^(?:[WL]|T$)")
+    )
+    historic_df = historic_df[~unplayed].copy()
 
     # Fill NaN values before integer conversion to avoid "Cannot convert non-finite values" error
     for col in ["r", "ra", "attendance", "gm", "rank"]:
