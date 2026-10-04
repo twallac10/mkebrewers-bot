@@ -4090,6 +4090,11 @@ document.addEventListener('DOMContentLoaded', function() {
     initPostseasonStats();
   }
   
+  // Initialize postseason pitching
+  if (document.getElementById('postseason-pitching-grid')) {
+    initPostseasonPitching();
+  }
+
   // Initialize playoff journey
   if (document.getElementById('playoff-journey')) {
     initPlayoffJourney();
@@ -4117,6 +4122,72 @@ async function fetchPostseasonStats() {
     console.error('Error fetching postseason stats:', error);
     return null;
   }
+}
+
+async function fetchPostseasonPitching() {
+  try {
+    const localUrl = '/assets/data/postseason/brewers_postseason_pitching_2026.json';
+    const s3Url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/postseason/brewers_postseason_pitching_2026.json';
+
+    let response = await fetch(localUrl);
+    if (!response.ok) {
+      response = await fetch(s3Url);
+    }
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching postseason pitching:', error);
+    return null;
+  }
+}
+
+function createPostseasonPitcherCard(pitcher) {
+  const stats = pitcher.stats;
+
+  // Highlight standout lines: sub-2.00 ERA over at least 3 IP, or 5+ strikeouts
+  const outs = (ip) => {
+    const [whole, frac] = String(ip).split('.');
+    return (parseInt(whole) || 0) * 3 + (parseInt(frac) || 0);
+  };
+  const highlightERA = outs(stats.inningsPitched) >= 9 && parseFloat(stats.era) <= 2.0;
+  const highlightSO = stats.strikeOuts >= 5;
+
+  return `
+    <div class="postseason-player-card">
+      <div class="postseason-player-name">${pitcher.player_name}</div>
+      <div class="postseason-stats-grid">
+        <div class="postseason-stat">
+          <div class="postseason-stat-label">ERA</div>
+          <div class="postseason-stat-value ${highlightERA ? 'highlight' : ''}">${stats.era}</div>
+        </div>
+        <div class="postseason-stat">
+          <div class="postseason-stat-label">IP</div>
+          <div class="postseason-stat-value">${stats.inningsPitched}</div>
+        </div>
+        <div class="postseason-stat">
+          <div class="postseason-stat-label">SO</div>
+          <div class="postseason-stat-value ${highlightSO ? 'highlight' : ''}">${stats.strikeOuts}</div>
+        </div>
+        <div class="postseason-stat">
+          <div class="postseason-stat-label">BB</div>
+          <div class="postseason-stat-value">${stats.baseOnBalls}</div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+async function initPostseasonPitching() {
+  const grid = document.getElementById('postseason-pitching-grid');
+  const section = document.getElementById('postseason-pitching');
+  const pitchers = await fetchPostseasonPitching();
+  if (!grid || !pitchers || pitchers.length === 0) {
+    return; // Keep the section hidden until a Brewers pitcher has pitched
+  }
+  grid.innerHTML = pitchers.map(createPostseasonPitcherCard).join('');
+  if (section) section.hidden = false;
 }
 
 function createPostseasonPlayerCard(player) {

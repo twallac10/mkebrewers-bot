@@ -41,6 +41,13 @@ twitter:
   <div class="postseason-grid" id="postseason-grid">
   </div>
   <p class="note">Note: Top 12 players in order of plate appearances.</p>
+
+  <div id="postseason-pitching" hidden>
+    <h3 class="visual-subhead">Pitching</h3>
+    <div class="postseason-grid" id="postseason-pitching-grid">
+    </div>
+    <p class="note">Note: Top 8 pitchers in order of innings pitched.</p>
+  </div>
 </div>
 
 

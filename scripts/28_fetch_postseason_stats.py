@@ -17,11 +17,13 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 output_dir = "data/postseason"
 json_file = f"{output_dir}/brewers_postseason_stats_2026.json"
 series_file = f"{output_dir}/brewers_postseason_series_2026.json"
+pitching_file = f"{output_dir}/brewers_postseason_pitching_2026.json"
 
 # S3 configuration
 s3_bucket = "mkebrewers-data"
 s3_key_stats = "mkebrewers/data/postseason/brewers_postseason_stats_2026.json"
 s3_key_series = "mkebrewers/data/postseason/brewers_postseason_series_2026.json"
+s3_key_pitching = "mkebrewers/data/postseason/brewers_postseason_pitching_2026.json"
 
 # AWS session
 is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true' or os.getenv('AWS_ACCESS_KEY_ID') is not None
@@ -49,6 +51,14 @@ def fetch_roster_data():
         s3_key_json = "https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/roster/brewers_roster_current.json"
         response = requests.get(s3_key_json)
         return response.json()
+
+def get_all_pitchers():
+    """Get all pitchers from roster data"""
+    roster_df = pd.DataFrame(fetch_roster_data())
+    pitchers = roster_df[roster_df['position_group'].isin(['Pitchers'])]
+    player_ids = {row['name']: row['player_id'] for _, row in pitchers.iterrows()}
+    logging.info(f"Total pitchers found: {len(player_ids)}")
+    return player_ids
 
 def get_all_batters():
     """Get all non-pitcher players from roster data"""
@@ -214,8 +224,8 @@ def fetch_postseason_series():
     logging.error("All API URLs failed")
     return []
 
-def fetch_postseason_stats(player_id, player_name):
-    """Fetch postseason stats for a specific player"""
+def fetch_postseason_stats(player_id, player_name, group='hitting'):
+    """Fetch postseason stats for a specific player (group: 'hitting' or 'pitching')"""
     headers = {
         'sec-ch-ua-platform': '"macOS"',
         'Referer': f'https://www.mlb.com/player/{player_name.lower().replace(" ", "-")}-{player_id}',
@@ -224,7 +234,7 @@ def fetch_postseason_stats(player_id, player_name):
         'sec-ch-ua-mobile': '?0',
     }
     
-    url = f'https://statsapi.mlb.com/api/v1/people/{player_id}/stats?stats=yearByYear&gameType=P&leagueListId=mlb_hist&group=hitting&hydrate=team(league)&language=en'
+    url = f'https://statsapi.mlb.com/api/v1/people/{player_id}/stats?stats=yearByYear&gameType=P&leagueListId=mlb_hist&group={group}&hydrate=team(league)&language=en'
     
     try:
         response = requests.get(url, headers=headers)
@@ -257,6 +267,27 @@ def fetch_postseason_stats(player_id, player_name):
     except Exception as e:
         logging.error(f"Error fetching stats for {player_name}: {e}")
         return None
+
+def innings_to_outs(ip):
+    """Convert baseball innings notation ('5.2' = 5 and 2/3) to outs recorded"""
+    try:
+        whole, _, frac = str(ip).partition('.')
+        return int(whole) * 3 + int(frac or 0)
+    except ValueError:
+        return 0
+
+def build_top_pitchers(limit=8):
+    """Top pitchers by postseason innings pitched"""
+    pitchers = []
+    for player_name, player_id in get_all_pitchers().items():
+        stats = fetch_postseason_stats(player_id, player_name, group='pitching')
+        if stats and innings_to_outs(stats['stats'].get('inningsPitched', 0)) > 0:
+            pitchers.append(stats)
+    pitchers.sort(
+        key=lambda p: innings_to_outs(p['stats'].get('inningsPitched', 0)),
+        reverse=True
+    )
+    return pitchers[:limit]
 
 def main():
     """Main function to fetch all postseason stats and series data"""
@@ -367,12 +398,19 @@ def main():
     
     logging.info(f"Saved postseason stats for top {len(top_12_stats)} players (by plate appearances) to {json_file}")
 
+    # Pitching: top 8 by innings pitched
+    top_pitchers = build_top_pitchers()
+    with open(pitching_file, 'w', encoding='utf-8') as f:
+        json.dump(top_pitchers, f, indent=2, ensure_ascii=False)
+    logging.info(f"Saved postseason pitching stats for {len(top_pitchers)} pitchers (by innings pitched) to {pitching_file}")
+
     # Upload to S3
     try:
         s3.Bucket(s3_bucket).upload_file(series_file, s3_key_series)
         logging.info(f"Uploaded {series_file} to S3: s3://{s3_bucket}/{s3_key_series}")
 
         s3.Bucket(s3_bucket).upload_file(json_file, s3_key_stats)
+        s3.Bucket(s3_bucket).upload_file(pitching_file, s3_key_pitching)
         logging.info(f"Uploaded {json_file} to S3: s3://{s3_bucket}/{s3_key_stats}")
     except Exception as e:
         logging.error(f"Failed to upload to S3: {e}")
