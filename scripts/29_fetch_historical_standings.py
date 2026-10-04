@@ -295,6 +295,11 @@ def fetch_year_data(year):
             except Exception as e:
                 logging.warning(f"Record processing failed for year {year}: {e}")
                 
+        # Drop unplayed games (e.g. scheduled postseason placeholders listed after
+        # game 162). A played game always has a non-zero W-L record.
+        if 'record' in src.columns:
+            src = src[src['record'].notna() & (src['record'] != '0-0')].copy()
+
         # Select final columns
         final_columns = [
             "gm", "game_date", "home_away", "opp", "result", "r", "ra", 
