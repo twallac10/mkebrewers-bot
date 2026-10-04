@@ -4167,8 +4167,12 @@ function renderPostseasonStats(playersData) {
     return;
   }
   
-  // Sort players by at-bats (descending) to show most active players first
+  // Sort players by plate appearances (descending), then at-bats, to match the
+  // "order of plate appearances" note under the grid
   const sortedPlayers = playersData.sort((a, b) => {
+    const paA = parseInt(a.stats.plateAppearances) || 0;
+    const paB = parseInt(b.stats.plateAppearances) || 0;
+    if (paB !== paA) return paB - paA;
     const atBatsA = parseInt(a.stats.atBats) || 0;
     const atBatsB = parseInt(b.stats.atBats) || 0;
     return atBatsB - atBatsA;
