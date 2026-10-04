@@ -4144,9 +4144,10 @@ async function fetchPostseasonPitching() {
 }
 
 function createPostseasonPitcherCard(pitcher) {
-  const stats = pitcher.stats;
+  const stats = pitcher.stats || {};
+  const show = (value) => (value ?? '-');
 
-  // Highlight standout lines: sub-2.00 ERA over at least 3 IP, or 5+ strikeouts
+  // Highlight standout lines: ERA of 2.00 or lower over at least 3 IP, or 5+ strikeouts
   const outs = (ip) => {
     const [whole, frac] = String(ip).split('.');
     return (parseInt(whole) || 0) * 3 + (parseInt(frac) || 0);
@@ -4160,19 +4161,19 @@ function createPostseasonPitcherCard(pitcher) {
       <div class="postseason-stats-grid">
         <div class="postseason-stat">
           <div class="postseason-stat-label">ERA</div>
-          <div class="postseason-stat-value ${highlightERA ? 'highlight' : ''}">${stats.era}</div>
+          <div class="postseason-stat-value ${highlightERA ? 'highlight' : ''}">${show(stats.era)}</div>
         </div>
         <div class="postseason-stat">
           <div class="postseason-stat-label">IP</div>
-          <div class="postseason-stat-value">${stats.inningsPitched}</div>
+          <div class="postseason-stat-value">${show(stats.inningsPitched)}</div>
         </div>
         <div class="postseason-stat">
           <div class="postseason-stat-label">SO</div>
-          <div class="postseason-stat-value ${highlightSO ? 'highlight' : ''}">${stats.strikeOuts}</div>
+          <div class="postseason-stat-value ${highlightSO ? 'highlight' : ''}">${show(stats.strikeOuts)}</div>
         </div>
         <div class="postseason-stat">
           <div class="postseason-stat-label">BB</div>
-          <div class="postseason-stat-value">${stats.baseOnBalls}</div>
+          <div class="postseason-stat-value">${show(stats.baseOnBalls)}</div>
         </div>
       </div>
     </div>
