@@ -100,7 +100,15 @@ class SummaryTests(unittest.TestCase):
         self.assertEqual(summary["regular"]["brewers"]["overturned"], 1)
         self.assertEqual(summary["postseason"]["brewers"]["upheld"], 1)
         self.assertEqual(summary["postseason"]["games"], 1)
-        self.assertEqual(len(summary["postseason"]["challenges"]), 1)
+        self.assertEqual(summary["postseason"]["brewers_by_side"]["defense"]["challenges"], 1)
+        self.assertEqual(summary["postseason"]["brewers_by_side"]["offense"]["challenges"], 0)
+        innings = {i["inning"]: i for i in summary["regular"]["brewers_by_inning"]}
+        self.assertEqual(innings["3"]["overturned"], 1)
+        self.assertEqual(len(innings), 10)
+
+    def test_extra_innings_are_grouped(self):
+        self.assertEqual(abs_mod.inning_label(9), "9")
+        self.assertEqual(abs_mod.inning_label(12), "10+")
 
 
 if __name__ == "__main__":

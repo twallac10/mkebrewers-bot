@@ -4527,10 +4527,21 @@ document.addEventListener('DOMContentLoaded', function () {
   const renderSplit = (el, split, limit) => {
     const body = el.querySelector('.abs-split-body');
     const perGame = split.games ? (split.brewers.challenges / split.games).toFixed(1) : '–';
-    const roles = Object.entries(split.brewers_by_role)
-      .filter(([, t]) => t.challenges > 0)
-      .map(([role, t]) => summaryRow(`${role}s`, t))
-      .join('');
+    const sides = split.brewers_by_side;
+    const maxInning = Math.max(1, ...split.brewers_by_inning.map((i) => i.challenges));
+    const innings = split.brewers_by_inning.map((i) => {
+      const lost = (i.upheld / maxInning) * 100;
+      const won = (i.overturned / maxInning) * 100;
+      return `
+        <div class="abs-inning" title="Inning ${i.inning}: ${i.overturned} of ${i.challenges} overturned">
+          <div class="abs-inning-total">${i.challenges}</div>
+          <div class="abs-inning-col">
+            ${i.upheld ? `<div class="abs-bar-lost" style="height: ${lost}%"></div>` : ''}
+            ${i.overturned ? `<div class="abs-bar-won" style="height: ${won}%"></div>` : ''}
+          </div>
+          <div class="abs-inning-label">${i.inning}</div>
+        </div>`;
+    }).join('');
     const players = split.brewers_by_player.slice(0, limit).map((p) => `
       <tr>
         <td>${escapeHTML(p.name)}</td>
@@ -4544,7 +4555,14 @@ document.addEventListener('DOMContentLoaded', function () {
       ${summaryRow('Brewers', split.brewers)}
       ${summaryRow('Opponents', split.opponents)}
       <p class="abs-per-game">${split.brewers.challenges} Brewers challenges in ${split.games} games (${perGame} per game)</p>
-      <div class="abs-roles">${roles}</div>
+      <div class="abs-sides">
+        ${summaryRow('On offense', sides.offense)}
+        ${summaryRow('On defense', sides.defense)}
+      </div>
+      <div class="abs-innings">
+        <div class="abs-innings-title">Brewers challenges by inning</div>
+        <div class="abs-innings-chart">${innings}</div>
+      </div>
       <table class="data-table abs-player-table">
         <thead>
           <tr>
@@ -4557,30 +4575,6 @@ document.addEventListener('DOMContentLoaded', function () {
         </thead>
         <tbody>${players}</tbody>
       </table>`;
-  };
-
-  const renderLog = (challenges) => {
-    const log = document.getElementById('abs-postseason-log');
-    if (!log || !challenges || challenges.length === 0) return;
-    const fmtDate = (iso) => {
-      const [, m, d] = iso.split('-').map(Number);
-      return `${m}/${d}`;
-    };
-    log.querySelector('tbody').innerHTML = challenges.map((c) => {
-      const team = c.challenging_team === 'brewers' ? 'MIL' : escapeHTML(c.opponent);
-      const half = c.half_inning === 'top' ? 'T' : 'B';
-      const call = c.original_call === 'Called Strike' ? 'Strike' : 'Ball';
-      return `
-        <tr class="${c.challenging_team === 'brewers' ? 'abs-brewers-row' : ''}">
-          <td>${fmtDate(c.game_date)} ${c.home_away === 'home' ? 'vs' : '@'} ${escapeHTML(c.opponent)}</td>
-          <td>${half}${c.inning}</td>
-          <td>${escapeHTML(c.challenger)} <span class="abs-log-team">(${team}, ${escapeHTML(c.challenger_role).toLowerCase()})</span></td>
-          <td>${c.balls}-${c.strikes}</td>
-          <td>${call}</td>
-          <td class="${c.overturned ? 'abs-won' : 'abs-lost'}">${c.overturned ? 'Overturned' : 'Upheld'}</td>
-        </tr>`;
-    }).join('');
-    log.hidden = false;
   };
 
   fetch(url)
@@ -4599,7 +4593,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const el = document.getElementById('abs-postseason');
         renderSplit(el, post, 8);
         el.hidden = false;
-        renderLog(post.challenges);
       }
     })
     .catch((error) => {

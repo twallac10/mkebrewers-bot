@@ -523,23 +523,7 @@ twitter:
       <div class="abs-split-body"></div>
     </div>
   </div>
-  <div id="abs-postseason-log" hidden>
-    <h4 class="table-subhead">Every postseason challenge</h4>
-    <table class="data-table abs-log-table">
-      <thead>
-        <tr>
-          <th>Game</th>
-          <th>Inn.</th>
-          <th>Challenger</th>
-          <th>Count</th>
-          <th>Call</th>
-          <th>Result</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
-  <p class="note">Note: Challenges include those made by Brewers batters, catchers and pitchers, and by opponents in Brewers games. Data <a href="https://github.com/twallac10/mkebrewers-bot/blob/main/scripts/30_fetch_abs_challenges.py">collected</a> after each game from MLB's live game feed. Download the data <a href="https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/abs/brewers_abs_challenges_2026.json">here</a>.</p>
+  <p class="note">Note: Offensive challenges are made by Brewers batters; defensive challenges by Brewers catchers and pitchers. Opponent figures cover challenges made against the Brewers. Data <a href="https://github.com/twallac10/mkebrewers-bot/blob/main/scripts/30_fetch_abs_challenges.py">collected</a> after each game from MLB's live game feed. Download the data <a href="https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/abs/brewers_abs_challenges_2026.json">here</a>.</p>
 </div>
 
 

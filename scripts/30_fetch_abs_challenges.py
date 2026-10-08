@@ -180,12 +180,26 @@ def tally(rows):
     }
 
 
+def inning_label(inning):
+    if inning is None:
+        return None
+    return "10+" if inning >= 10 else str(inning)
+
+
 def summarize_split(rows, games_played):
     brewers = [r for r in rows if r["challenging_team"] == "brewers"]
     opponents = [r for r in rows if r["challenging_team"] == "opponent"]
 
-    by_role = {role: tally([r for r in brewers if r["challenger_role"] == role])
-               for role in ("Batter", "Catcher", "Pitcher")}
+    # Batters challenge on offense; catchers and pitchers challenge on defense
+    by_side = {
+        "offense": tally([r for r in brewers if r["challenger_role"] == "Batter"]),
+        "defense": tally([r for r in brewers if r["challenger_role"] != "Batter"]),
+    }
+
+    by_inning = []
+    for label in [str(i) for i in range(1, 10)] + ["10+"]:
+        inning_rows = [r for r in brewers if inning_label(r["inning"]) == label]
+        by_inning.append(dict(inning=label, **tally(inning_rows)))
 
     players = {}
     for r in brewers:
@@ -204,7 +218,8 @@ def summarize_split(rows, games_played):
         "games": games_played,
         "brewers": tally(brewers),
         "opponents": tally(opponents),
-        "brewers_by_role": by_role,
+        "brewers_by_side": by_side,
+        "brewers_by_inning": by_inning,
         "brewers_by_player": by_player,
     }
 
@@ -215,11 +230,6 @@ def build_summary(rows, games):
         split_games = [g for g in games if season_type(g["game_type"]) == split]
         split_rows = [r for r in rows if r["season_type"] == split]
         summary[split] = summarize_split(split_rows, len(split_games))
-    # Postseason samples are small enough to list every challenge
-    summary["postseason"]["challenges"] = sorted(
-        (r for r in rows if r["season_type"] == "postseason"),
-        key=lambda r: (r["game_date"], r["inning"] or 0),
-    )
     return summary
 
 
