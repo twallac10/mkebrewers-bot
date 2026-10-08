@@ -3165,3 +3165,147 @@ label {
     font-weight: 600;
   }
 }
+// ABS challenges
+.abs-challenges {
+  margin-bottom: 10px;
+}
+
+.abs-summary-row {
+  display: grid;
+  grid-template-columns: 96px 44px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.abs-summary-label {
+  font-size: 13px;
+  color: #555;
+}
+
+.abs-summary-rate {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  text-align: right;
+}
+
+.abs-bar {
+  display: flex;
+  height: 14px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #eee;
+}
+
+.abs-bar-won {
+  background: #53A796;
+}
+
+.abs-bar-lost {
+  background: #F18851;
+}
+
+.abs-summary-count {
+  grid-column: 3;
+  font-size: 11px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.abs-per-game {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #666;
+  margin: 4px 0 12px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.abs-sides .abs-summary-row {
+  margin-bottom: 8px;
+}
+
+.abs-sides .abs-summary-rate {
+  font-size: 14px;
+}
+
+.abs-sides .abs-bar {
+  height: 8px;
+}
+
+.abs-innings {
+  margin: 4px 0 16px;
+}
+
+.abs-innings-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.abs-innings-chart {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 4px;
+  align-items: end;
+}
+
+.abs-inning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.abs-inning-total {
+  font-size: 10px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.abs-inning-col {
+  width: 100%;
+  max-width: 28px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.abs-inning-col .abs-bar-won,
+.abs-inning-col .abs-bar-lost {
+  width: 100%;
+}
+
+.abs-inning-col .abs-bar-lost {
+  border-radius: 2px 2px 0 0;
+}
+
+.abs-inning-col .abs-bar-won:first-child {
+  border-radius: 2px 2px 0 0;
+}
+
+.abs-inning-label {
+  font-size: 11px;
+  color: #555;
+  margin-top: 3px;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.abs-player-table {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .abs-summary-row {
+    grid-template-columns: 84px 40px 1fr;
+  }
+}

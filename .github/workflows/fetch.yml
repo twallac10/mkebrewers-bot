@@ -46,6 +46,7 @@ jobs:
         mkdir -p data/batting/archive
         mkdir -p data/pitches
         mkdir -p data/postseason
+        mkdir -p data/abs
 
     - name: Fetch league standings
       id: s00
@@ -166,6 +167,13 @@ jobs:
         PYTHONPATH: ${{ github.workspace }}
       run: python scripts/21_summarize_pitch_data.py
 
+    - name: Fetch ABS challenges
+      id: s30
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/30_fetch_abs_challenges.py
+
     - name: Check for script failures
       run: |
         failed=""
@@ -186,6 +194,7 @@ jobs:
         [ "${{ steps.s11.outcome }}" = "failure" ] && failed="$failed 11_fetch_process_attendance"
         [ "${{ steps.s20.outcome }}" = "failure" ] && failed="$failed 20_fetch_game_pitches"
         [ "${{ steps.s21.outcome }}" = "failure" ] && failed="$failed 21_summarize_pitch_data"
+        [ "${{ steps.s30.outcome }}" = "failure" ] && failed="$failed 30_fetch_abs_challenges"
         if [ -n "$failed" ]; then
           echo "::error::The following scripts failed:$failed"
           exit 1
