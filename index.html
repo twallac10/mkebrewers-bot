@@ -940,7 +940,23 @@
   </div>
 </div>
  <p class="note">Note: Strike zone calls are determined by Baseball Savant and <a href="https://github.com/twallac10/mkebrewers-bot/blob/main/scripts/20_fetch_game_pitches.py">collected</a> after each game from its gamefeed API. Download the data <a href="/data/pitches/brewers_pitches_2026.json">here</a>.</p>
-  
+
+<div id="abs-challenges-section">
+  <h3 class="visual-subhead">ABS challenges</h3>
+  <p class="chart-chatter">How often do Brewers players win their automated ball-strike challenges? Share of challenges <span style="background-color: #53A796; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">overturned</span> vs. calls that were <span style="background-color: #F18851; color: #fff; font-weight: bold; padding: 1px 6px; border-radius: 5px;">upheld</span>:</p>
+  <div class="tables-container abs-challenges">
+    <div class="table-wrapper" id="abs-regular">
+      <h4 class="table-subhead">Regular season</h4>
+      <div class="abs-split-body"></div>
+    </div>
+    <div class="table-wrapper" id="abs-postseason" hidden="">
+      <h4 class="table-subhead">Postseason</h4>
+      <div class="abs-split-body"></div>
+    </div>
+  </div>
+  <p class="note">Note: Player figures show overturned/total challenges. Offensive challenges are made while batting; defensive challenges while catching or pitching. Opponent figures cover challenges made against the Brewers. Data <a href="https://github.com/twallac10/mkebrewers-bot/blob/main/scripts/30_fetch_abs_challenges.py">collected</a> after each game from MLB's live game feed. Download the data <a href="https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/abs/brewers_abs_challenges_2026.json">here</a>.</p>
+</div>
+
 
   <h2 class="stat-group">Pitching</h2>
   <div class="row">

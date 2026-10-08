@@ -1,0 +1,664 @@
+{
+  "regular": {
+    "games": 162,
+    "brewers": {
+      "challenges": 381,
+      "overturned": 201,
+      "upheld": 180,
+      "success_rate": 0.528
+    },
+    "opponents": {
+      "challenges": 357,
+      "overturned": 195,
+      "upheld": 162,
+      "success_rate": 0.546
+    },
+    "brewers_by_side": {
+      "offense": {
+        "challenges": 125,
+        "overturned": 58,
+        "upheld": 67,
+        "success_rate": 0.464
+      },
+      "defense": {
+        "challenges": 256,
+        "overturned": 143,
+        "upheld": 113,
+        "success_rate": 0.559
+      }
+    },
+    "brewers_by_inning": [
+      {
+        "inning": "1",
+        "challenges": 41,
+        "overturned": 24,
+        "upheld": 17,
+        "success_rate": 0.585
+      },
+      {
+        "inning": "2",
+        "challenges": 44,
+        "overturned": 32,
+        "upheld": 12,
+        "success_rate": 0.727
+      },
+      {
+        "inning": "3",
+        "challenges": 35,
+        "overturned": 20,
+        "upheld": 15,
+        "success_rate": 0.571
+      },
+      {
+        "inning": "4",
+        "challenges": 39,
+        "overturned": 20,
+        "upheld": 19,
+        "success_rate": 0.513
+      },
+      {
+        "inning": "5",
+        "challenges": 29,
+        "overturned": 13,
+        "upheld": 16,
+        "success_rate": 0.448
+      },
+      {
+        "inning": "6",
+        "challenges": 40,
+        "overturned": 22,
+        "upheld": 18,
+        "success_rate": 0.55
+      },
+      {
+        "inning": "7",
+        "challenges": 43,
+        "overturned": 18,
+        "upheld": 25,
+        "success_rate": 0.419
+      },
+      {
+        "inning": "8",
+        "challenges": 54,
+        "overturned": 28,
+        "upheld": 26,
+        "success_rate": 0.519
+      },
+      {
+        "inning": "9",
+        "challenges": 51,
+        "overturned": 24,
+        "upheld": 27,
+        "success_rate": 0.471
+      },
+      {
+        "inning": "10+",
+        "challenges": 5,
+        "overturned": 0,
+        "upheld": 5,
+        "success_rate": 0.0
+      }
+    ],
+    "brewers_by_player": [
+      {
+        "name": "William Contreras",
+        "challenges": 195,
+        "overturned": 111,
+        "upheld": 84,
+        "success_rate": 0.569,
+        "offense": {
+          "challenges": 10,
+          "overturned": 6,
+          "upheld": 4,
+          "success_rate": 0.6
+        },
+        "defense": {
+          "challenges": 185,
+          "overturned": 105,
+          "upheld": 80,
+          "success_rate": 0.568
+        }
+      },
+      {
+        "name": "Gary S\u00e1nchez",
+        "challenges": 102,
+        "overturned": 48,
+        "upheld": 54,
+        "success_rate": 0.471,
+        "offense": {
+          "challenges": 37,
+          "overturned": 14,
+          "upheld": 23,
+          "success_rate": 0.378
+        },
+        "defense": {
+          "challenges": 65,
+          "overturned": 34,
+          "upheld": 31,
+          "success_rate": 0.523
+        }
+      },
+      {
+        "name": "Jake Bauers",
+        "challenges": 15,
+        "overturned": 10,
+        "upheld": 5,
+        "success_rate": 0.667,
+        "offense": {
+          "challenges": 15,
+          "overturned": 10,
+          "upheld": 5,
+          "success_rate": 0.667
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Garrett Mitchell",
+        "challenges": 10,
+        "overturned": 3,
+        "upheld": 7,
+        "success_rate": 0.3,
+        "offense": {
+          "challenges": 10,
+          "overturned": 3,
+          "upheld": 7,
+          "success_rate": 0.3
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Christian Yelich",
+        "challenges": 8,
+        "overturned": 6,
+        "upheld": 2,
+        "success_rate": 0.75,
+        "offense": {
+          "challenges": 8,
+          "overturned": 6,
+          "upheld": 2,
+          "success_rate": 0.75
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Brice Turang",
+        "challenges": 7,
+        "overturned": 5,
+        "upheld": 2,
+        "success_rate": 0.714,
+        "offense": {
+          "challenges": 7,
+          "overturned": 5,
+          "upheld": 2,
+          "success_rate": 0.714
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Joey Ortiz",
+        "challenges": 7,
+        "overturned": 4,
+        "upheld": 3,
+        "success_rate": 0.571,
+        "offense": {
+          "challenges": 7,
+          "overturned": 4,
+          "upheld": 3,
+          "success_rate": 0.571
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Luis Lara",
+        "challenges": 7,
+        "overturned": 2,
+        "upheld": 5,
+        "success_rate": 0.286,
+        "offense": {
+          "challenges": 7,
+          "overturned": 2,
+          "upheld": 5,
+          "success_rate": 0.286
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Sal Frelick",
+        "challenges": 7,
+        "overturned": 2,
+        "upheld": 5,
+        "success_rate": 0.286,
+        "offense": {
+          "challenges": 7,
+          "overturned": 2,
+          "upheld": 5,
+          "success_rate": 0.286
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Cooper Pratt",
+        "challenges": 6,
+        "overturned": 5,
+        "upheld": 1,
+        "success_rate": 0.833,
+        "offense": {
+          "challenges": 6,
+          "overturned": 5,
+          "upheld": 1,
+          "success_rate": 0.833
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Bo Naylor",
+        "challenges": 3,
+        "overturned": 2,
+        "upheld": 1,
+        "success_rate": 0.667,
+        "offense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        },
+        "defense": {
+          "challenges": 3,
+          "overturned": 2,
+          "upheld": 1,
+          "success_rate": 0.667
+        }
+      },
+      {
+        "name": "David Hamilton",
+        "challenges": 3,
+        "overturned": 1,
+        "upheld": 2,
+        "success_rate": 0.333,
+        "offense": {
+          "challenges": 3,
+          "overturned": 1,
+          "upheld": 2,
+          "success_rate": 0.333
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Jackson Chourio",
+        "challenges": 3,
+        "overturned": 0,
+        "upheld": 3,
+        "success_rate": 0.0,
+        "offense": {
+          "challenges": 3,
+          "overturned": 0,
+          "upheld": 3,
+          "success_rate": 0.0
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Jeferson Quero",
+        "challenges": 2,
+        "overturned": 2,
+        "upheld": 0,
+        "success_rate": 1.0,
+        "offense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        },
+        "defense": {
+          "challenges": 2,
+          "overturned": 2,
+          "upheld": 0,
+          "success_rate": 1.0
+        }
+      },
+      {
+        "name": "Brandon Lockridge",
+        "challenges": 2,
+        "overturned": 0,
+        "upheld": 2,
+        "success_rate": 0.0,
+        "offense": {
+          "challenges": 2,
+          "overturned": 0,
+          "upheld": 2,
+          "success_rate": 0.0
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Luis Rengifo",
+        "challenges": 2,
+        "overturned": 0,
+        "upheld": 2,
+        "success_rate": 0.0,
+        "offense": {
+          "challenges": 2,
+          "overturned": 0,
+          "upheld": 2,
+          "success_rate": 0.0
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Abner Uribe",
+        "challenges": 1,
+        "overturned": 0,
+        "upheld": 1,
+        "success_rate": 0.0,
+        "offense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        },
+        "defense": {
+          "challenges": 1,
+          "overturned": 0,
+          "upheld": 1,
+          "success_rate": 0.0
+        }
+      },
+      {
+        "name": "Greg Jones",
+        "challenges": 1,
+        "overturned": 0,
+        "upheld": 1,
+        "success_rate": 0.0,
+        "offense": {
+          "challenges": 1,
+          "overturned": 0,
+          "upheld": 1,
+          "success_rate": 0.0
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      }
+    ]
+  },
+  "postseason": {
+    "games": 4,
+    "brewers": {
+      "challenges": 16,
+      "overturned": 8,
+      "upheld": 8,
+      "success_rate": 0.5
+    },
+    "opponents": {
+      "challenges": 8,
+      "overturned": 6,
+      "upheld": 2,
+      "success_rate": 0.75
+    },
+    "brewers_by_side": {
+      "offense": {
+        "challenges": 7,
+        "overturned": 4,
+        "upheld": 3,
+        "success_rate": 0.571
+      },
+      "defense": {
+        "challenges": 9,
+        "overturned": 4,
+        "upheld": 5,
+        "success_rate": 0.444
+      }
+    },
+    "brewers_by_inning": [
+      {
+        "inning": "1",
+        "challenges": 2,
+        "overturned": 0,
+        "upheld": 2,
+        "success_rate": 0.0
+      },
+      {
+        "inning": "2",
+        "challenges": 0,
+        "overturned": 0,
+        "upheld": 0,
+        "success_rate": null
+      },
+      {
+        "inning": "3",
+        "challenges": 2,
+        "overturned": 2,
+        "upheld": 0,
+        "success_rate": 1.0
+      },
+      {
+        "inning": "4",
+        "challenges": 2,
+        "overturned": 1,
+        "upheld": 1,
+        "success_rate": 0.5
+      },
+      {
+        "inning": "5",
+        "challenges": 0,
+        "overturned": 0,
+        "upheld": 0,
+        "success_rate": null
+      },
+      {
+        "inning": "6",
+        "challenges": 2,
+        "overturned": 2,
+        "upheld": 0,
+        "success_rate": 1.0
+      },
+      {
+        "inning": "7",
+        "challenges": 2,
+        "overturned": 1,
+        "upheld": 1,
+        "success_rate": 0.5
+      },
+      {
+        "inning": "8",
+        "challenges": 3,
+        "overturned": 1,
+        "upheld": 2,
+        "success_rate": 0.333
+      },
+      {
+        "inning": "9",
+        "challenges": 3,
+        "overturned": 1,
+        "upheld": 2,
+        "success_rate": 0.333
+      },
+      {
+        "inning": "10+",
+        "challenges": 0,
+        "overturned": 0,
+        "upheld": 0,
+        "success_rate": null
+      }
+    ],
+    "brewers_by_player": [
+      {
+        "name": "William Contreras",
+        "challenges": 10,
+        "overturned": 4,
+        "upheld": 6,
+        "success_rate": 0.4,
+        "offense": {
+          "challenges": 1,
+          "overturned": 0,
+          "upheld": 1,
+          "success_rate": 0.0
+        },
+        "defense": {
+          "challenges": 9,
+          "overturned": 4,
+          "upheld": 5,
+          "success_rate": 0.444
+        }
+      },
+      {
+        "name": "Jake Bauers",
+        "challenges": 2,
+        "overturned": 2,
+        "upheld": 0,
+        "success_rate": 1.0,
+        "offense": {
+          "challenges": 2,
+          "overturned": 2,
+          "upheld": 0,
+          "success_rate": 1.0
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Joey Ortiz",
+        "challenges": 1,
+        "overturned": 1,
+        "upheld": 0,
+        "success_rate": 1.0,
+        "offense": {
+          "challenges": 1,
+          "overturned": 1,
+          "upheld": 0,
+          "success_rate": 1.0
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Sal Frelick",
+        "challenges": 1,
+        "overturned": 1,
+        "upheld": 0,
+        "success_rate": 1.0,
+        "offense": {
+          "challenges": 1,
+          "overturned": 1,
+          "upheld": 0,
+          "success_rate": 1.0
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Cooper Pratt",
+        "challenges": 1,
+        "overturned": 0,
+        "upheld": 1,
+        "success_rate": 0.0,
+        "offense": {
+          "challenges": 1,
+          "overturned": 0,
+          "upheld": 1,
+          "success_rate": 0.0
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      },
+      {
+        "name": "Gary S\u00e1nchez",
+        "challenges": 1,
+        "overturned": 0,
+        "upheld": 1,
+        "success_rate": 0.0,
+        "offense": {
+          "challenges": 1,
+          "overturned": 0,
+          "upheld": 1,
+          "success_rate": 0.0
+        },
+        "defense": {
+          "challenges": 0,
+          "overturned": 0,
+          "upheld": 0,
+          "success_rate": null
+        }
+      }
+    ]
+  }
+}

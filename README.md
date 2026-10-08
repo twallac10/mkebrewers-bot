@@ -44,6 +44,7 @@ The repository includes numerous Python scripts that perform the following daily
 - **Umpires:** `scripts/27_collect_umpires.py`
 - **Postseason Stats:** `scripts/28_fetch_postseason_stats.py`
 - **Historical Standings Fetcher:** `scripts/29_fetch_historical_standings.py`
+- **ABS challenges (regular season and postseason):** `scripts/30_fetch_abs_challenges.py`
   
 Separate tweet/automation scripts are documented in the sections below (lineups, daily summaries, news, etc.).
 
