@@ -3165,3 +3165,111 @@ label {
     font-weight: 600;
   }
 }
+// ABS challenges
+.abs-challenges {
+  margin-bottom: 10px;
+}
+
+.abs-summary-row {
+  display: grid;
+  grid-template-columns: 90px 44px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.abs-summary-label {
+  font-size: 13px;
+  color: #555;
+}
+
+.abs-summary-rate {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  text-align: right;
+}
+
+.abs-bar {
+  display: flex;
+  height: 14px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #eee;
+}
+
+.abs-bar-won {
+  background: #53A796;
+}
+
+.abs-bar-lost {
+  background: #F18851;
+}
+
+.abs-summary-count {
+  grid-column: 3;
+  font-size: 11px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.abs-roles .abs-summary-row {
+  margin-bottom: 8px;
+}
+
+.abs-roles .abs-summary-rate {
+  font-size: 14px;
+}
+
+.abs-roles .abs-bar {
+  height: 8px;
+}
+
+.abs-per-game {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #666;
+  margin: 4px 0 12px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.abs-player-table {
+  margin-top: 10px;
+}
+
+.abs-log-table {
+  margin-bottom: 10px;
+}
+
+.abs-log-team {
+  color: #999;
+}
+
+.abs-log-table .abs-brewers-row td:nth-child(3) {
+  font-weight: bold;
+}
+
+.abs-log-table td.abs-won {
+  color: #3d8a7a;
+  font-weight: bold;
+}
+
+.abs-log-table td.abs-lost {
+  color: #d0662f;
+}
+
+@media (max-width: 600px) {
+  .abs-summary-row {
+    grid-template-columns: 76px 40px 1fr;
+  }
+
+  .abs-log-table th,
+  .abs-log-table td {
+    padding: 4px 5px;
+    font-size: 11px;
+  }
+}

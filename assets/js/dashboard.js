@@ -4492,3 +4492,118 @@ document.addEventListener('DOMContentLoaded', function () {
 
   fetchDataAndRenderPitchingTable();
 });
+
+
+// ABS challenges: regular season and postseason breakouts
+document.addEventListener('DOMContentLoaded', function () {
+  const section = document.getElementById('abs-challenges-section');
+  if (!section) return;
+
+  const url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/abs/brewers_abs_summary_2026.json';
+  const pct = (rate) => (rate == null ? '–' : `${Math.round(rate * 100)}%`);
+  const escapeHTML = (text) => String(text ?? '').replace(/[&<>"']/g, (ch) => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]
+  ));
+
+  // Stacked bar of overturned vs. upheld, matching the umpire scorecard colors
+  const bar = (t) => {
+    if (!t || !t.challenges) return '<div class="abs-bar abs-bar-empty"></div>';
+    const won = (t.overturned / t.challenges) * 100;
+    return `
+      <div class="abs-bar" role="img" aria-label="${t.overturned} overturned, ${t.upheld} upheld">
+        <div class="abs-bar-won" style="width: ${won}%"></div>
+        <div class="abs-bar-lost" style="width: ${100 - won}%"></div>
+      </div>`;
+  };
+
+  const summaryRow = (label, t) => `
+    <div class="abs-summary-row">
+      <div class="abs-summary-label">${label}</div>
+      <div class="abs-summary-rate">${pct(t.success_rate)}</div>
+      ${bar(t)}
+      <div class="abs-summary-count">${t.overturned} of ${t.challenges} overturned</div>
+    </div>`;
+
+  const renderSplit = (el, split, limit) => {
+    const body = el.querySelector('.abs-split-body');
+    const perGame = split.games ? (split.brewers.challenges / split.games).toFixed(1) : '–';
+    const roles = Object.entries(split.brewers_by_role)
+      .filter(([, t]) => t.challenges > 0)
+      .map(([role, t]) => summaryRow(`${role}s`, t))
+      .join('');
+    const players = split.brewers_by_player.slice(0, limit).map((p) => `
+      <tr>
+        <td>${escapeHTML(p.name)}</td>
+        <td>${escapeHTML(p.role)}</td>
+        <td class="table-value">${p.challenges}</td>
+        <td class="table-value">${p.overturned}</td>
+        <td class="table-value">${pct(p.success_rate)}</td>
+      </tr>`).join('');
+
+    body.innerHTML = `
+      ${summaryRow('Brewers', split.brewers)}
+      ${summaryRow('Opponents', split.opponents)}
+      <p class="abs-per-game">${split.brewers.challenges} Brewers challenges in ${split.games} games (${perGame} per game)</p>
+      <div class="abs-roles">${roles}</div>
+      <table class="data-table abs-player-table">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Role</th>
+            <th class="table-value">Chal.</th>
+            <th class="table-value">Won</th>
+            <th class="table-value">Rate</th>
+          </tr>
+        </thead>
+        <tbody>${players}</tbody>
+      </table>`;
+  };
+
+  const renderLog = (challenges) => {
+    const log = document.getElementById('abs-postseason-log');
+    if (!log || !challenges || challenges.length === 0) return;
+    const fmtDate = (iso) => {
+      const [, m, d] = iso.split('-').map(Number);
+      return `${m}/${d}`;
+    };
+    log.querySelector('tbody').innerHTML = challenges.map((c) => {
+      const team = c.challenging_team === 'brewers' ? 'MIL' : escapeHTML(c.opponent);
+      const half = c.half_inning === 'top' ? 'T' : 'B';
+      const call = c.original_call === 'Called Strike' ? 'Strike' : 'Ball';
+      return `
+        <tr class="${c.challenging_team === 'brewers' ? 'abs-brewers-row' : ''}">
+          <td>${fmtDate(c.game_date)} ${c.home_away === 'home' ? 'vs' : '@'} ${escapeHTML(c.opponent)}</td>
+          <td>${half}${c.inning}</td>
+          <td>${escapeHTML(c.challenger)} <span class="abs-log-team">(${team}, ${escapeHTML(c.challenger_role).toLowerCase()})</span></td>
+          <td>${c.balls}-${c.strikes}</td>
+          <td>${call}</td>
+          <td class="${c.overturned ? 'abs-won' : 'abs-lost'}">${c.overturned ? 'Overturned' : 'Upheld'}</td>
+        </tr>`;
+    }).join('');
+    log.hidden = false;
+  };
+
+  fetch(url)
+    .then((res) => {
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+      return res.json();
+    })
+    .then((summary) => {
+      if (summary.regular && summary.regular.brewers.challenges + summary.regular.opponents.challenges > 0) {
+        renderSplit(document.getElementById('abs-regular'), summary.regular, 8);
+      } else {
+        document.getElementById('abs-regular').hidden = true;
+      }
+      const post = summary.postseason;
+      if (post && post.brewers.challenges + post.opponents.challenges > 0) {
+        const el = document.getElementById('abs-postseason');
+        renderSplit(el, post, 8);
+        el.hidden = false;
+        renderLog(post.challenges);
+      }
+    })
+    .catch((error) => {
+      console.error('Failed to fetch ABS challenge data:', error);
+      section.hidden = true;
+    });
+});
