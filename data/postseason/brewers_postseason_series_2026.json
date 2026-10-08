@@ -1,14 +1,14 @@
 [
   {
     "round": "Wild Card",
-    "series_name": "AL Wild Card Series",
+    "series_name": "NL Wild Card Series",
     "status": "upcoming",
     "opponent": "?",
     "result": "?"
   },
   {
-    "round": "ALDS",
-    "series_name": "AL Division Series",
+    "round": "NLDS",
+    "series_name": "NL Division Series",
     "status": "completed",
     "opponent": "San Diego Padres",
     "result": "MIL wins 3-1",
@@ -16,8 +16,8 @@
     "losses": 1
   },
   {
-    "round": "ALCS",
-    "series_name": "AL Championship Series",
+    "round": "NLCS",
+    "series_name": "NL Championship Series",
     "status": "in_progress",
     "opponent": "Los Angeles Dodgers",
     "result": "",
