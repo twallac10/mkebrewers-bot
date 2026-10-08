@@ -314,9 +314,9 @@ def main():
     
     # Create a structured playoff journey
     playoff_journey = [
-        {"round": "Wild Card", "series_name": "AL Wild Card Series", "status": "upcoming", "opponent": "?", "result": "?"},
-        {"round": "ALDS", "series_name": "AL Division Series", "status": "upcoming", "opponent": "?", "result": "?"},
-        {"round": "ALCS", "series_name": "AL Championship Series", "status": "upcoming", "opponent": "?", "result": "?"},
+        {"round": "Wild Card", "series_name": "NL Wild Card Series", "status": "upcoming", "opponent": "?", "result": "?"},
+        {"round": "NLDS", "series_name": "NL Division Series", "status": "upcoming", "opponent": "?", "result": "?"},
+        {"round": "NLCS", "series_name": "NL Championship Series", "status": "upcoming", "opponent": "?", "result": "?"},
         {"round": "World Series", "series_name": "World Series", "status": "upcoming", "opponent": "?", "result": "?"}
     ]
     
@@ -344,7 +344,7 @@ def main():
                 "wins": series.get('wins', 0),
                 "losses": series.get('losses', 0)
             })
-            logging.info(f"Updated ALDS: {playoff_journey[1]}")
+            logging.info(f"Updated NLDS: {playoff_journey[1]}")
         elif 'championship' in series_name or 'alcs' in series_name.lower() or 'championship' in description:
             playoff_journey[2].update({
                 "status": "completed" if series.get('is_over') else "in_progress",
@@ -353,7 +353,7 @@ def main():
                 "wins": series.get('wins', 0),
                 "losses": series.get('losses', 0)
             })
-            logging.info(f"Updated ALCS: {playoff_journey[2]}")
+            logging.info(f"Updated NLCS: {playoff_journey[2]}")
         elif 'world series' in series_name or 'world series' in description:
             playoff_journey[3].update({
                 "status": "completed" if series.get('is_over') else "in_progress",
@@ -457,9 +457,9 @@ def main():
         if journey['status'] == 'in_progress':
             current_series = journey
         elif journey['status'] == 'completed':
-            if previous_series is None or journey['round'] in ['World Series', 'ALCS', 'ALDS', 'Wild Card']:
+            if previous_series is None or journey['round'] in ['World Series', 'NLCS', 'NLDS', 'Wild Card']:
                 # Get the most recent completed series
-                round_order = {'Wild Card': 1, 'ALDS': 2, 'ALCS': 3, 'World Series': 4}
+                round_order = {'Wild Card': 1, 'NLDS': 2, 'NLCS': 3, 'World Series': 4}
                 if previous_series is None or round_order.get(journey['round'], 0) > round_order.get(previous_series['round'], 0):
                     previous_series = journey
     
@@ -469,7 +469,7 @@ def main():
         venue = next_game['venue']
         current_opponent = next_game['opponent']
         
-        print(f"\n📅 Current Status: ALCS Game 1 vs {current_opponent} starts {game_day} at {game_time}")
+        print(f"\n📅 Current Status: NLCS Game 1 vs {current_opponent} starts {game_day} at {game_time}")
         print(f"🏟️ Venue: {venue}")
         
         if previous_series and previous_series['opponent'] != current_opponent:
