@@ -4501,6 +4501,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/abs/brewers_abs_summary_2026.json';
   const pct = (rate) => (rate == null ? '–' : `${Math.round(rate * 100)}%`);
+  // Overturned out of challenged, e.g. "4/7"
+  const record = (t) => (t && t.challenges ? `${t.overturned}/${t.challenges}` : '–');
   const escapeHTML = (text) => String(text ?? '').replace(/[&<>"']/g, (ch) => (
     { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]
   ));
@@ -4527,7 +4529,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const renderSplit = (el, split, limit) => {
     const body = el.querySelector('.abs-split-body');
     const perGame = split.games ? (split.brewers.challenges / split.games).toFixed(1) : '–';
-    const sides = split.brewers_by_side;
     const maxInning = Math.max(1, ...split.brewers_by_inning.map((i) => i.challenges));
     const innings = split.brewers_by_inning.map((i) => {
       const lost = (i.upheld / maxInning) * 100;
@@ -4545,9 +4546,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const players = split.brewers_by_player.slice(0, limit).map((p) => `
       <tr>
         <td>${escapeHTML(p.name)}</td>
-        <td>${escapeHTML(p.role)}</td>
-        <td class="table-value">${p.challenges}</td>
-        <td class="table-value">${p.overturned}</td>
+        <td class="table-value">${record(p.offense)}</td>
+        <td class="table-value">${record(p.defense)}</td>
+        <td class="table-value">${record(p)}</td>
         <td class="table-value">${pct(p.success_rate)}</td>
       </tr>`).join('');
 
@@ -4555,10 +4556,6 @@ document.addEventListener('DOMContentLoaded', function () {
       ${summaryRow('Brewers', split.brewers)}
       ${summaryRow('Opponents', split.opponents)}
       <p class="abs-per-game">${split.brewers.challenges} Brewers challenges in ${split.games} games (${perGame} per game)</p>
-      <div class="abs-sides">
-        ${summaryRow('On offense', sides.offense)}
-        ${summaryRow('On defense', sides.defense)}
-      </div>
       <div class="abs-innings">
         <div class="abs-innings-title">Brewers challenges by inning</div>
         <div class="abs-innings-chart">${innings}</div>
@@ -4567,9 +4564,9 @@ document.addEventListener('DOMContentLoaded', function () {
         <thead>
           <tr>
             <th>Player</th>
-            <th>Role</th>
-            <th class="table-value">Chal.</th>
-            <th class="table-value">Won</th>
+            <th class="table-value">Offense</th>
+            <th class="table-value">Defense</th>
+            <th class="table-value">Total</th>
             <th class="table-value">Rate</th>
           </tr>
         </thead>

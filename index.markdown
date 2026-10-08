@@ -523,7 +523,7 @@ twitter:
       <div class="abs-split-body"></div>
     </div>
   </div>
-  <p class="note">Note: Offensive challenges are made by Brewers batters; defensive challenges by Brewers catchers and pitchers. Opponent figures cover challenges made against the Brewers. Data <a href="https://github.com/twallac10/mkebrewers-bot/blob/main/scripts/30_fetch_abs_challenges.py">collected</a> after each game from MLB's live game feed. Download the data <a href="https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/abs/brewers_abs_challenges_2026.json">here</a>.</p>
+  <p class="note">Note: Player figures show overturned/total challenges. Offensive challenges are made while batting; defensive challenges while catching or pitching. Opponent figures cover challenges made against the Brewers. Data <a href="https://github.com/twallac10/mkebrewers-bot/blob/main/scripts/30_fetch_abs_challenges.py">collected</a> after each game from MLB's live game feed. Download the data <a href="https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/abs/brewers_abs_challenges_2026.json">here</a>.</p>
 </div>
 
 

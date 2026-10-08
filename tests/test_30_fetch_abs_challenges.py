@@ -100,11 +100,19 @@ class SummaryTests(unittest.TestCase):
         self.assertEqual(summary["regular"]["brewers"]["overturned"], 1)
         self.assertEqual(summary["postseason"]["brewers"]["upheld"], 1)
         self.assertEqual(summary["postseason"]["games"], 1)
-        self.assertEqual(summary["postseason"]["brewers_by_side"]["defense"]["challenges"], 1)
-        self.assertEqual(summary["postseason"]["brewers_by_side"]["offense"]["challenges"], 0)
         innings = {i["inning"]: i for i in summary["regular"]["brewers_by_inning"]}
         self.assertEqual(innings["3"]["overturned"], 1)
         self.assertEqual(len(innings), 10)
+
+    def test_player_split_into_offense_and_defense(self):
+        # Player 99 challenges once while catching and once while batting
+        plays = [play([pitch("Ball", False, 1, 0, review(158, 99, True))]),
+                 play([pitch("Called Strike", True, 0, 1, review(158, 99, False))], batter=99)]
+        rows = abs_mod.extract_challenges(feed(plays), GAME)
+        player = abs_mod.build_summary(rows, [GAME])["postseason"]["brewers_by_player"][0]
+        self.assertEqual(player["challenges"], 2)
+        self.assertEqual((player["offense"]["challenges"], player["offense"]["overturned"]), (1, 0))
+        self.assertEqual((player["defense"]["challenges"], player["defense"]["overturned"]), (1, 1))
 
     def test_extra_innings_are_grouped(self):
         self.assertEqual(abs_mod.inning_label(9), "9")
