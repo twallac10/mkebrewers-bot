@@ -4529,6 +4529,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const renderSplit = (el, split, limit) => {
     const body = el.querySelector('.abs-split-body');
     const perGame = split.games ? (split.brewers.challenges / split.games).toFixed(1) : '–';
+    const sides = split.brewers_by_side;
     const maxInning = Math.max(1, ...split.brewers_by_inning.map((i) => i.challenges));
     const innings = split.brewers_by_inning.map((i) => {
       const lost = (i.upheld / maxInning) * 100;
@@ -4556,6 +4557,10 @@ document.addEventListener('DOMContentLoaded', function () {
       ${summaryRow('Brewers', split.brewers)}
       ${summaryRow('Opponents', split.opponents)}
       <p class="abs-per-game">${split.brewers.challenges} Brewers challenges in ${split.games} games (${perGame} per game)</p>
+      <div class="abs-sides">
+        ${summaryRow('On offense', sides.offense)}
+        ${summaryRow('On defense', sides.defense)}
+      </div>
       <div class="abs-innings">
         <div class="abs-innings-title">Brewers challenges by inning</div>
         <div class="abs-innings-chart">${innings}</div>

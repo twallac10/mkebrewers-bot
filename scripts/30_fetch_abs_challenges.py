@@ -190,6 +190,12 @@ def summarize_split(rows, games_played):
     brewers = [r for r in rows if r["challenging_team"] == "brewers"]
     opponents = [r for r in rows if r["challenging_team"] == "opponent"]
 
+    # Batters challenge on offense; catchers and pitchers challenge on defense
+    by_side = {
+        "offense": tally([r for r in brewers if r["challenger_role"] == "Batter"]),
+        "defense": tally([r for r in brewers if r["challenger_role"] != "Batter"]),
+    }
+
     by_inning = []
     for label in [str(i) for i in range(1, 10)] + ["10+"]:
         inning_rows = [r for r in brewers if inning_label(r["inning"]) == label]
@@ -203,7 +209,6 @@ def summarize_split(rows, games_played):
     for p in players.values():
         entry = {"name": p["name"]}
         entry.update(tally(p["rows"]))
-        # Batters challenge on offense; catchers and pitchers challenge on defense
         entry["offense"] = tally([r for r in p["rows"] if r["challenger_role"] == "Batter"])
         entry["defense"] = tally([r for r in p["rows"] if r["challenger_role"] != "Batter"])
         by_player.append(entry)
@@ -213,6 +218,7 @@ def summarize_split(rows, games_played):
         "games": games_played,
         "brewers": tally(brewers),
         "opponents": tally(opponents),
+        "brewers_by_side": by_side,
         "brewers_by_inning": by_inning,
         "brewers_by_player": by_player,
     }

@@ -100,6 +100,8 @@ class SummaryTests(unittest.TestCase):
         self.assertEqual(summary["regular"]["brewers"]["overturned"], 1)
         self.assertEqual(summary["postseason"]["brewers"]["upheld"], 1)
         self.assertEqual(summary["postseason"]["games"], 1)
+        self.assertEqual(summary["postseason"]["brewers_by_side"]["defense"]["challenges"], 1)
+        self.assertEqual(summary["postseason"]["brewers_by_side"]["offense"]["challenges"], 0)
         innings = {i["inning"]: i for i in summary["regular"]["brewers_by_inning"]}
         self.assertEqual(innings["3"]["overturned"], 1)
         self.assertEqual(len(innings), 10)
