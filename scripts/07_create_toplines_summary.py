@@ -520,7 +520,11 @@ def get_next_game_info():
 
                     # Format day and time
                     day_name = game_date_local.strftime('%A')  # Monday, Tuesday, etc.
-                    time_str = game_date_local.strftime('%-I:%M p.m. CT')
+                    time_str = game_date_local.strftime('%-I:%M ') + ('a.m.' if game_date_local.hour < 12 else 'p.m.') + ' CT'
+                    # In the postseason, say which game of the series it is
+                    game_label = ""
+                    if game.get('gameType') in ('F', 'D', 'L', 'W') and game.get('seriesGameNumber'):
+                        game_label = f"Game {game['seriesGameNumber']} on "
                     
                     # Get venue info and highlight it
                     venue_name = game.get('venue', {}).get('name', '')
@@ -532,7 +536,7 @@ def get_next_game_info():
 
                     location_text = f"at {highlighted_venue}" if not is_team_home else f"at {highlighted_venue}"
                     
-                    return f"The next game is {day_name} at {time_str} {location_text}"
+                    return f"The next game is {game_label}{day_name} at {time_str} {location_text}"
         
         return None
         
@@ -540,14 +544,42 @@ def get_next_game_info():
         logging.warning(f"Could not fetch next game info: {e}")
         return None
 
+def load_postseason_series():
+    """Postseason series status from this run's local file, or from S3 when the postseason
+    step hasn't run yet (the summary step runs before it in the workflow)."""
+    local_file = "data/postseason/brewers_postseason_series_2026.json"
+    if os.path.exists(local_file):
+        with open(local_file, 'r') as f:
+            return json.load(f)
+    try:
+        resp = requests.get(
+            "https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/postseason/brewers_postseason_series_2026.json",
+            timeout=15,
+        )
+        resp.raise_for_status()
+        return resp.json()
+    except Exception as e:
+        logging.warning(f"Could not load postseason series data: {e}")
+        return None
+
+
+def join_next_game(text, next_game_info):
+    """Append the next-game sentence to the summary text, as its own sentence when the text
+    already ends one, and finish with a period."""
+    text = (text or "").strip()
+    if not next_game_info:
+        return text if not text or text.endswith(('.', '!', '?')) else f"{text}."
+    if not text or text.endswith(('.', '!', '?')):
+        return f"{text} {next_game_info}.".strip()
+    return f"{text} and the {next_game_info.replace('The next game is ', 'next game is ', 1)}."
+
+
 def generate_postseason_summary():
     """Generate a summary of the current postseason status"""
     try:
         # Try to load postseason series data
-        postseason_file = "data/postseason/brewers_postseason_series_2026.json"
-        if os.path.exists(postseason_file):
-            with open(postseason_file, 'r') as f:
-                postseason_data = json.load(f)
+        postseason_data = load_postseason_series()
+        if postseason_data:
 
             # Find current series status
             current_series = None
@@ -708,10 +740,6 @@ def generate_summary(
     # )
 
     # Format next game info to connect smoothly with series status
-    next_game_text = ""
-    if next_game_info:
-        # Convert "The next game is Monday..." to "and the next game is Monday..."
-        next_game_text = f" and the {next_game_info.replace('The next game is ', 'next game is ')}"
     
     # Handle fallback postseason summary (when no series data available)
     if isinstance(postseason_summary, dict) and ('competing' in postseason_summary or 'series_status' in postseason_summary):
@@ -725,10 +753,8 @@ def generate_summary(
         
         try:
             # Load postseason series data to check for transitions
-            postseason_file = "data/postseason/brewers_postseason_series_2026.json"
-            if os.path.exists(postseason_file):
-                with open(postseason_file, 'r') as f:
-                    postseason_data = json.load(f)
+            postseason_data = load_postseason_series()
+            if postseason_data:
                 
                 # Find current and most recent completed series
                 current_series = None
@@ -788,8 +814,9 @@ def generate_summary(
                 f"The {config.TEAM_NAME_SIMPLE} have compiled a <span class='highlight'>{record}</span> record in the {current_year} regular season, a <span class='highlight'>{win_pct:.0f}%</span> winning percentage. "
                 f"{enhanced_last_game} "
                 f"The team is now competing in the <span class='highlight'>{current_series['round']}</span> against the <span class='highlight'>{current_series['opponent']}</span>. "
-                f"The {series_status.lower()}{next_game_text}."
             )
+            series_sentence = f"The {series_status}." if series_status.startswith(config.TEAM_NAME_SIMPLE) else (f"{series_status}." if series_status else "")
+            summary = join_next_game(f"{summary}{series_sentence}", next_game_info)
         else:
             # Standard format for non-transition periods
             # Check if last game was in the same series to avoid redundancy
@@ -798,10 +825,8 @@ def generate_summary(
                 # Extract current series info to compare
                 current_series_info = ""
                 try:
-                    postseason_file = "data/postseason/brewers_postseason_series_2026.json"
-                    if os.path.exists(postseason_file):
-                        with open(postseason_file, 'r') as f:
-                            postseason_data = json.load(f)
+                    postseason_data = load_postseason_series()
+                    if postseason_data:
                         
                         # Find current series
                         for series in postseason_data:
@@ -832,21 +857,20 @@ def generate_summary(
                 f"The {config.TEAM_NAME_SIMPLE} have compiled a <span class='highlight'>{record}</span> record in the {current_year} regular season, a <span class='highlight'>{win_pct:.0f}%</span> winning percentage. "
                 f"{competing_text} "
                 f"{clean_last_game} "
-                f"{series_status}{next_game_text}."
             )
+            series_sentence = f"The {series_status}." if series_status.startswith(config.TEAM_NAME_SIMPLE) else (f"{series_status}." if series_status else "")
+            summary = join_next_game(f"{summary}{series_sentence}", next_game_info)
     else:
         # Simple text format (fallback)
         postseason_text = postseason_summary.get('text', '') if isinstance(postseason_summary, dict) else postseason_summary
-        
-        # Check if we need to add a period (avoid double punctuation)
-        ending_punctuation = "." if not (postseason_text.endswith('.') or postseason_text.endswith('!') or postseason_text.endswith('?')) else ""
         
         summary = (
             f"<span class='highlight'>{config.TEAM_CITY.upper()}</span> <span class='updated'>({current_date})</span> — "
             f"The {config.TEAM_NAME_SIMPLE} have compiled a <span class='highlight'>{record}</span> record in the {current_year} regular season, a <span class='highlight'>{win_pct:.0f}%</span> winning percentage. "
             f"{postseason_text} "
-            f"{last_game_summary_fragment}{next_game_text}{ending_punctuation}"
+            f"{last_game_summary_fragment}"
         )
+        summary = join_next_game(summary, next_game_info)
     return summary
 
 

@@ -9,7 +9,7 @@ import boto3
 import re
 import unicodedata
 import shutil
-from datetime import datetime
+from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 from scripts import config
 
@@ -130,6 +130,28 @@ def parse_player_row(row, position_group):
         "is_40_man": is_40_man
     }
 
+def fetch_transaction_player_ids(days=400):
+    """Map player names to MLB IDs using the team's transactions from the MLB Stats API."""
+    end = datetime.now()
+    start = end - timedelta(days=days)
+    try:
+        resp = requests.get(
+            "https://statsapi.mlb.com/api/v1/transactions",
+            params={"teamId": config.TEAM_ID, "startDate": start.strftime("%Y-%m-%d"), "endDate": end.strftime("%Y-%m-%d")},
+            timeout=30,
+        )
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        logging.warning(f"Could not fetch transaction player IDs: {e}")
+        return {}
+    ids = {}
+    for t in resp.json().get("transactions", []):
+        person = t.get("person") or {}
+        if person.get("fullName") and person.get("id"):
+            ids[person["fullName"]] = person["id"]
+    return ids
+
+
 def fetch_transactions():
     """
     Fetches team transactions for the current and previous 3 months,
@@ -195,6 +217,12 @@ def fetch_transactions():
     combined_df.drop_duplicates(subset=['date', 'transaction'], keep='last', inplace=True)
     combined_df.sort_values(by='date', ascending=False, inplace=True)
     combined_df['date'] = combined_df['date'].dt.strftime('%Y-%m-%d')
+
+    # Attach MLB player IDs so the transactions page can show headshots
+    player_ids = fetch_transaction_player_ids()
+    combined_df['player_ids'] = combined_df['players'].apply(
+        lambda names: [player_ids.get(n) for n in names] if isinstance(names, list) else None
+    )
 
     # Save full archive
     with open(transactions_archive_json_file, 'w', encoding='utf-8') as f:

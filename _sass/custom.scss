@@ -1695,6 +1695,8 @@ label {
   height: 96px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top;
+  background: #f2f2f2;
   margin-bottom: 14px;
   border: 2px solid #e8e8e8;
 }
@@ -2909,6 +2911,21 @@ label {
         font-weight: 900;
         font-size: 10px;
         animation: spin 2s linear infinite;
+      }
+    }
+  }
+
+  &.bye {
+    border-color: #BD3039;
+    background: #f8f9ff;
+
+    .round-status {
+      background: #BD3039;
+      color: white;
+
+      &::after {
+        content: '✓';
+        font-weight: bold;
       }
     }
   }

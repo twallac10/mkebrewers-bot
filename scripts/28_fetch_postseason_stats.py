@@ -366,6 +366,11 @@ def main():
         else:
             logging.warning(f"Could not categorize series: {series_name} - {description}")
     
+    # A team that skips the Wild Card Series (a top-two seed) never appears in it, so once a
+    # later round has started, mark the Wild Card round as a bye instead of leaving it "upcoming"
+    if playoff_journey[0]["status"] == "upcoming" and any(r["status"] != "upcoming" for r in playoff_journey[1:]):
+        playoff_journey[0].update({"status": "bye", "opponent": "", "result": "Top-two seed"})
+
     # Note: Manual overrides removed to allow live API data to flow through
     # The API now correctly provides real-time series status
     logging.info("Using live API data without manual overrides")

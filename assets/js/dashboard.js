@@ -4328,7 +4328,7 @@ function createPlayoffRoundCard(round) {
     <div class="playoff-round ${statusClass}">
       <div class="round-status"></div>
       <div class="round-title">${round.round}</div>
-      <div class="round-opponent">vs ${opponent}</div>
+      <div class="round-opponent">${round.status === 'bye' ? 'Bye' : `vs ${opponent}`}</div>
       <div class="round-result">${result}</div>
     </div>
   `;
