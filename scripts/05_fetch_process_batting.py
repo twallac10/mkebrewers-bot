@@ -8,6 +8,7 @@
 
 import os
 import boto3
+import requests
 import pandas as pd
 from io import BytesIO
 from io import StringIO
@@ -170,7 +171,46 @@ players_full_df = player_totals_df.sort_values("season", ascending=False).reset_
 #     .sort_values("season", ascending=False)
 #     .reset_index(drop=True)
 # )
-team_full_df = team_totals_df.sort_values("season", ascending=False).reset_index(drop=True)
+
+
+def fetch_team_batting_history(current_season):
+    """Past seasons of team batting totals from the MLB Stats API, in the same columns as the
+    Baseball Reference team totals row, so decade and last-season comparisons have data."""
+    resp = requests.get(
+        f"https://statsapi.mlb.com/api/v1/teams/{config.TEAM_ID}/stats",
+        params={"stats": "yearByYear", "group": "hitting", "sportId": 1},
+        timeout=30,
+    )
+    resp.raise_for_status()
+    fields = {
+        "gamesPlayed": "g", "plateAppearances": "pa", "atBats": "ab", "runs": "r", "hits": "h",
+        "doubles": "2b", "triples": "3b", "homeRuns": "hr", "rbi": "rbi", "stolenBases": "sb",
+        "caughtStealing": "cs", "baseOnBalls": "bb", "strikeOuts": "so", "avg": "ba", "obp": "obp",
+        "slg": "slg", "ops": "ops", "totalBases": "tb", "groundIntoDoublePlay": "gdp",
+        "hitByPitch": "hbp", "sacBunts": "sh", "sacFlies": "sf", "intentionalWalks": "ibb",
+    }
+    rows = []
+    for split in resp.json().get("stats", [{}])[0].get("splits", []):
+        if split.get("season") == current_season:
+            continue
+        stat = split.get("stat", {})
+        row = {col: str(stat[key]) for key, col in fields.items() if key in stat}
+        row.update(name="Team Totals", season=split["season"])
+        rows.append(row)
+    return pd.DataFrame(rows)
+
+
+try:
+    team_totals_archive_df = fetch_team_batting_history(year)
+except Exception as e:
+    print(f"Could not fetch team batting history: {e}")
+    team_totals_archive_df = pd.DataFrame()
+
+team_full_df = (
+    pd.concat([team_totals_df, team_totals_archive_df], ignore_index=True)
+    .sort_values("season", ascending=False)
+    .reset_index(drop=True)
+)
 
 
 # team_ranks_archive_df = pd.read_parquet(

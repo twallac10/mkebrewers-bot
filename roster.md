@@ -23,6 +23,7 @@ twitter:
 
   <div id="roster-active" class="roster-tab-content">
     {% assign players = site.data.roster.brewers_roster_current %}
+    {% assign generic_headshot = "https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/q_auto:best/v1/people/0/headshot/silo/current" %}
     {% assign active_players = players | where: "is_active_roster", true %}
     {% assign position_groups = active_players | map: "position_group" | uniq %}
     {% for group in position_groups %}
@@ -39,7 +40,7 @@ twitter:
             {% elsif player.is_minors %}
               <div class="player-flag player-flag-minors">MINORS</div>
             {% endif %}
-            <img src="{{ '/assets/images/placeholder-avatar.png' | absolute_url }}" alt="{{ player.name }}" class="player-avatar" />
+            <img src="{{ player.thumb_url | default: generic_headshot }}" alt="{{ player.name }}" class="player-avatar" loading="lazy" />
             <div class="player-name">{{ player.name }}</div>
             <div class="player-details">{{ player.bat_throw }} | {{ player.height }}, {{ player.weight }} lbs</div>
             <div class="player-jersey">#{{ player.jersey }}</div>
@@ -66,7 +67,7 @@ twitter:
             {% elsif player.is_minors %}
               <div class="player-flag player-flag-minors">MINORS</div>
             {% endif %}
-            <img src="{{ '/assets/images/placeholder-avatar.png' | absolute_url }}" alt="{{ player.name }}" class="player-avatar" />
+            <img src="{{ player.thumb_url | default: generic_headshot }}" alt="{{ player.name }}" class="player-avatar" loading="lazy" />
             <div class="player-name">{{ player.name }}</div>
             <div class="player-details">{{ player.bat_throw }} | {{ player.height }}, {{ player.weight }} lbs</div>
             <div class="player-jersey">#{{ player.jersey }}</div>

@@ -18,6 +18,7 @@ twitter:
 
   {% assign transactions = site.data.roster.brewers_transactions_current %}
   {% assign players_roster = site.data.roster.brewers_roster_current %}
+  {% assign generic_headshot = "https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/q_auto:best/v1/people/0/headshot/silo/current" %}
 
   <div class="transactions-grid">
     {% for transaction in transactions %}
@@ -27,9 +28,17 @@ twitter:
         {% if transaction.players %}
           <div class="transaction-players-container">
             {% for player_name in transaction.players %}
+              {% assign player_id = transaction.player_ids[forloop.index0] %}
               <div class="player-profile-transaction">
                 <div class="player-name-transaction">{{ player_name }}</div>
-                <img src="{{ '/assets/images/placeholder-avatar.png' | absolute_url }}" alt="{{ player_name }}" title="{{ player_name }}" class="player-avatar-transaction" />
+                {% assign roster_match = players_roster | where: "name", player_name | first %}
+                {% if player_id %}
+                  {% assign people_path = "/people/" | append: player_id | append: "/" %}
+                  {% assign headshot = generic_headshot | replace: "/people/0/", people_path %}
+                {% else %}
+                  {% assign headshot = roster_match.thumb_url | default: generic_headshot %}
+                {% endif %}
+                <img src="{{ headshot }}" alt="{{ player_name }}" title="{{ player_name }}" class="player-avatar-transaction" loading="lazy" />
               </div>
             {% endfor %}
           </div>
