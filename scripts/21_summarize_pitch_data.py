@@ -64,12 +64,29 @@ def analyze_pitches(file_path, thrown_by_file_path=None):
     df_called_strikes = df[df['pitch_call'] == 'called_strike'].copy()
     df_bad_calls = df_called_strikes[~df_called_strikes['pitch_in_zone']].copy()
     
-    # Season Summary
-    season_total_strikes = len(df_called_strikes)
-    season_bad_calls = len(df_bad_calls)
+    # Season Summary (regular season only; postseason pitches are summarized separately).
+    # Rows collected before game_type was recorded are all regular season.
+    game_type = df['game_type'] if 'game_type' in df.columns else pd.Series('R', index=df.index)
+    is_postseason = game_type.fillna('R').isin(['F', 'D', 'L', 'W'])
+    regular_strikes = df_called_strikes[~is_postseason.loc[df_called_strikes.index]]
+    season_total_strikes = len(regular_strikes)
+    season_bad_calls = int((~regular_strikes['pitch_in_zone']).sum())
     season_correct_calls = season_total_strikes - season_bad_calls
     season_correct_pct = (season_correct_calls / season_total_strikes * 100) if season_total_strikes > 0 else 0
     season_incorrect_pct = 100 - season_correct_pct
+
+    postseason_strikes = df_called_strikes[is_postseason.loc[df_called_strikes.index]]
+    postseason_summary = None
+    if len(postseason_strikes) > 0:
+        post_total = len(postseason_strikes)
+        post_bad = int((~postseason_strikes['pitch_in_zone']).sum())
+        post_correct_pct = (post_total - post_bad) / post_total * 100
+        postseason_summary = {
+            "correct_strikes_pct": post_correct_pct,
+            "incorrect_strikes_pct": 100 - post_correct_pct,
+            "total_called_strikes": post_total,
+            "bad_calls_count": post_bad,
+        }
 
     # Last Game Summary
     most_recent_date = df['game_date'].max()
@@ -228,6 +245,8 @@ def analyze_pitches(file_path, thrown_by_file_path=None):
         },
         "worst_calls_of_season": worst_calls_list
     }
+    if postseason_summary is not None:
+        summary_data["postseason_summary"] = postseason_summary
 
     if pitching_summary is not None and pitching_last_game is not None:
         summary_data["pitching_season_summary"] = pitching_summary

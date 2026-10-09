@@ -37,6 +37,29 @@ twitter:
   <div class="playoff-journey" id="playoff-journey">
   </div>
 
+  <div id="postseason-next-game" hidden>
+    <h3 class="visual-subhead">Next game</h3>
+    <div class="next-game-card"></div>
+  </div>
+
+  <div id="postseason-game-log" hidden>
+    <h3 class="visual-subhead">Game by game</h3>
+    <div class="postseason-log-wrapper">
+      <table class="data-table postseason-log-table">
+        <thead>
+          <tr>
+            <th>Game</th>
+            <th>Date</th>
+            <th>Opponent</th>
+            <th>Result</th>
+            <th class="decision-col">Decisions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
   <h3 class="visual-subhead">Team hitting</h3>
   <div class="postseason-grid" id="postseason-grid">
   </div>

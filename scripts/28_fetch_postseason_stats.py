@@ -18,12 +18,14 @@ output_dir = "data/postseason"
 json_file = f"{output_dir}/brewers_postseason_stats_2026.json"
 series_file = f"{output_dir}/brewers_postseason_series_2026.json"
 pitching_file = f"{output_dir}/brewers_postseason_pitching_2026.json"
+games_file = f"{output_dir}/brewers_postseason_games_2026.json"
 
 # S3 configuration
 s3_bucket = "mkebrewers-data"
 s3_key_stats = "mkebrewers/data/postseason/brewers_postseason_stats_2026.json"
 s3_key_series = "mkebrewers/data/postseason/brewers_postseason_series_2026.json"
 s3_key_pitching = "mkebrewers/data/postseason/brewers_postseason_pitching_2026.json"
+s3_key_games = "mkebrewers/data/postseason/brewers_postseason_games_2026.json"
 
 # AWS session
 is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true' or os.getenv('AWS_ACCESS_KEY_ID') is not None
@@ -144,6 +146,125 @@ def get_next_game_info(series_data):
             logging.warning(f"Error fetching detailed game info: {e}")
     
     return next_game_info
+
+
+POSTSEASON_ROUNDS = {"F": "Wild Card", "D": "NLDS", "L": "NLCS", "W": "World Series"}
+SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule"
+
+
+def fetch_postseason_schedule(season=2026):
+    """Every Brewers postseason game this year, with decisions and probable pitchers."""
+    params = {
+        "sportId": 1, "teamId": config.TEAM_ID, "season": season, "gameType": "F,D,L,W",
+        "hydrate": "decisions,probablePitcher,venue,team",
+    }
+    resp = requests.get(SCHEDULE_URL, params=params, timeout=30)
+    resp.raise_for_status()
+    return [g for d in resp.json().get("dates", []) for g in d.get("games", [])]
+
+
+def _sides(game):
+    home, away = game["teams"]["home"], game["teams"]["away"]
+    is_home = home["team"]["id"] == config.TEAM_ID
+    return (home, away, is_home) if is_home else (away, home, is_home)
+
+
+def summarize_postseason_games(games, tz):
+    """Split postseason games into a completed-game log and the next scheduled game."""
+    log, upcoming = [], []
+    for g in sorted(games, key=lambda g: g.get("gameDate", "")):
+        if g.get("status", {}).get("detailedState") in ("Postponed", "Cancelled"):
+            continue
+        mine, theirs, is_home = _sides(g)
+        start = datetime.fromisoformat(g["gameDate"].replace("Z", "+00:00")).astimezone(tz)
+        row = {
+            "game_pk": g.get("gamePk"),
+            "date": start.strftime("%b %-d"),
+            "round": POSTSEASON_ROUNDS.get(g.get("gameType"), "Postseason"),
+            "game_number": g.get("seriesGameNumber"),
+            "opponent": theirs["team"].get("name"),
+            "opponent_id": theirs["team"].get("id"),
+            "home_away": "home" if is_home else "away",
+            "venue": g.get("venue", {}).get("name"),
+        }
+        if g.get("status", {}).get("abstractGameState") == "Final":
+            decisions = g.get("decisions") or {}
+            row.update({
+                "score": f"{mine.get('score')}-{theirs.get('score')}",
+                "result": "win" if mine.get("score", 0) > theirs.get("score", 0) else "loss",
+                "winning_pitcher": (decisions.get("winner") or {}).get("fullName"),
+                "losing_pitcher": (decisions.get("loser") or {}).get("fullName"),
+                "save_pitcher": (decisions.get("save") or {}).get("fullName"),
+            })
+            log.append(row)
+        else:
+            row.update({
+                "start_time": "TBD" if g.get("startTimeTBD") else start.strftime("%-I:%M %p"),
+                "day": start.strftime("%A"),
+                "if_necessary": g.get("ifNecessary") == "Y",
+                "brewers_probable": (mine.get("probablePitcher") or {}).get("id"),
+                "opponent_probable": (theirs.get("probablePitcher") or {}).get("id"),
+            })
+            upcoming.append(row)
+
+    next_game = upcoming[0] if upcoming else None
+    if next_game:
+        # Series score so far in the round the next game belongs to
+        same_round = [r for r in log if r["round"] == next_game["round"]]
+        next_game["series_wins"] = sum(r["result"] == "win" for r in same_round)
+        next_game["series_losses"] = sum(r["result"] == "loss" for r in same_round)
+    return log, next_game
+
+
+def fetch_pitcher_line(person_id, season=2026):
+    """Name, handedness and regular-season W-L/ERA for a probable starter."""
+    if not person_id:
+        return None
+    resp = requests.get(
+        f"https://statsapi.mlb.com/api/v1/people/{person_id}",
+        params={"hydrate": f"stats(group=pitching,type=season,season={season})"},
+        timeout=30,
+    )
+    resp.raise_for_status()
+    person = resp.json()["people"][0]
+    splits = (person.get("stats") or [{}])[0].get("splits") or [{}]
+    stat = splits[0].get("stat", {})
+    return {
+        "id": person_id,
+        "name": person.get("fullName"),
+        "throws": (person.get("pitchHand") or {}).get("code"),
+        "record": f"{stat.get('wins', 0)}-{stat.get('losses', 0)}" if stat else None,
+        "era": stat.get("era"),
+    }
+
+
+def fetch_season_series(opponent_id, season=2026):
+    """Regular-season head-to-head record against an opponent."""
+    resp = requests.get(SCHEDULE_URL, params={
+        "sportId": 1, "teamId": config.TEAM_ID, "opponentId": opponent_id, "season": season, "gameType": "R",
+    }, timeout=30)
+    resp.raise_for_status()
+    wins = losses = 0
+    for d in resp.json().get("dates", []):
+        for g in d.get("games", []):
+            if g.get("status", {}).get("abstractGameState") != "Final":
+                continue
+            mine, theirs, _ = _sides(g)
+            if mine.get("score", 0) > theirs.get("score", 0):
+                wins += 1
+            else:
+                losses += 1
+    return {"wins": wins, "losses": losses}
+
+
+def build_postseason_games():
+    tz = pytz.timezone(config.TEAM_TIMEZONE)
+    log, next_game = summarize_postseason_games(fetch_postseason_schedule(), tz)
+    if next_game:
+        next_game["brewers_probable"] = fetch_pitcher_line(next_game["brewers_probable"])
+        next_game["opponent_probable"] = fetch_pitcher_line(next_game["opponent_probable"])
+        next_game["season_series"] = fetch_season_series(next_game["opponent_id"])
+    return {"games": log, "next_game": next_game}
 
 
 def fetch_postseason_series():
@@ -424,6 +545,16 @@ def main():
     except Exception as e:
         logging.error(f"Postseason pitching update failed: {e}")
         top_pitchers = None
+
+    # Game log and next-game preview. Isolated like pitching so a failure can't block other uploads.
+    try:
+        postseason_games = build_postseason_games()
+        with open(games_file, 'w', encoding='utf-8') as f:
+            json.dump(postseason_games, f, indent=2, ensure_ascii=False)
+        s3.Bucket(s3_bucket).upload_file(games_file, s3_key_games)
+        logging.info(f"Saved {len(postseason_games['games'])} postseason games and next-game preview to {games_file}")
+    except Exception as e:
+        logging.error(f"Postseason game log update failed: {e}")
 
     # Upload to S3
     try:
