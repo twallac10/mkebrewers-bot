@@ -72,17 +72,17 @@ def get_team_game_ids(date_str):
     games = dates[0].get("games", [])
     team_games = []
     for g in games:
-        # Only include regular season games
-        if g.get("gameType") != "R":
+        # Regular season and postseason games (wild card, division series, LCS, World Series)
+        if g.get("gameType") not in ("R", "F", "D", "L", "W"):
             continue
         home_team = _get_team_name(g, "home")
         away_team = _get_team_name(g, "away")
         game_date = g.get("officialDate")
 
         if home_team == config.TEAM_FULL_NAME:
-            team_games.append({"gamePk": g.get("gamePk"), "team_side": "home_batters", "game_date": game_date})
+            team_games.append({"gamePk": g.get("gamePk"), "team_side": "home_batters", "game_date": game_date, "game_type": g.get("gameType")})
         elif away_team == config.TEAM_FULL_NAME:
-            team_games.append({"gamePk": g.get("gamePk"), "team_side": "away_batters", "game_date": game_date})
+            team_games.append({"gamePk": g.get("gamePk"), "team_side": "away_batters", "game_date": game_date, "game_type": g.get("gameType")})
     
     return team_games
 
@@ -104,6 +104,7 @@ def analyze_pitches(game_info, batting_side_override: str = None, team_role: str
     game_pk = game_info["gamePk"]
     team_side = batting_side_override if batting_side_override else game_info["team_side"]
     game_date = game_info.get("game_date")
+    game_type = game_info.get("game_type", "R")
     try:
         data = fetch_game_pitches(game_pk)
     except Exception as e:
@@ -152,6 +153,7 @@ def analyze_pitches(game_info, batting_side_override: str = None, team_role: str
             rows.append({
                 "game_pk": game_pk,
                 "game_date": game_date,
+                "game_type": game_type,
                 "pitch_id": pitch.get("play_id"),
                 "inning": pitch.get("inning"),
                 "ab_number": pitch.get("ab_number"),

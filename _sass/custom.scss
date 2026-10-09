@@ -3326,3 +3326,120 @@ label {
     grid-template-columns: 84px 40px 1fr;
   }
 }
+
+// Postseason next game and game log
+.next-game-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  margin-bottom: 20px;
+
+  .note {
+    margin: 12px 0 0;
+  }
+}
+
+.next-game-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: c.$team-secondary;
+}
+
+.next-game-flag {
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #888;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1px 6px;
+  vertical-align: middle;
+}
+
+.next-game-when,
+.next-game-context {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.next-game-context {
+  color: #777;
+  font-size: 13px;
+}
+
+.next-game-starters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.next-game-starter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.next-game-headshot {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  background: #f2f2f2;
+  border: 2px solid #e8e8e8;
+  flex-shrink: 0;
+}
+
+.next-game-starter-team {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+}
+
+.next-game-starter-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.next-game-starter-line {
+  font-size: 12px;
+  color: #777;
+}
+
+.postseason-log-wrapper {
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.postseason-log-wrapper .postseason-log-table {
+  display: table;
+  width: 100%;
+}
+
+.postseason-log-table td.win,
+.postseason-log-table td.loss {
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .next-game-starters {
+    grid-template-columns: 1fr;
+  }
+
+  .postseason-log-table .decision-col {
+    display: none;
+  }
+}
