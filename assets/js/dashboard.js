@@ -1100,7 +1100,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <td>${game.date}</td>
           <td>${game.opp_name}</td>
           <td>${game.home_away === 'home' ? '<i class="fas fa-home home-icon"></i>' : '<i class="fas fa-road road-icon"></i>'}</td>
-          <td>${game.game_start}</td>  <!-- Display game_start time instead of result -->
+          <td>${game.game_start}${game.if_necessary ? ' *' : ''}</td>  <!-- Display game_start time instead of result; * marks if-necessary games -->
         `;
       }
       tableBody.appendChild(row);
@@ -1117,6 +1117,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       renderTable(lastGames, 'last-games');
       renderTable(nextGames, 'next-games');
+      const ifNecessaryNote = document.getElementById('schedule-if-necessary-note');
+      if (ifNecessaryNote) ifNecessaryNote.hidden = !nextGames.some(game => game.if_necessary);
     } catch (error) {
       console.error('Failed to fetch data:', error);
     }
@@ -1358,7 +1360,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <td>${game.date}</td>
           <td>${game.opp_name}</td>
           <td>${game.home_away === 'home' ? '<i class="fas fa-home home-icon"></i>' : '<i class="fas fa-road road-icon"></i>'}</td>
-          <td>${game.game_start}</td>  <!-- Display game_start time instead of result -->
+          <td>${game.game_start}${game.if_necessary ? ' *' : ''}</td>  <!-- Display game_start time instead of result; * marks if-necessary games -->
         `;
       }
       tableBody.appendChild(row);
@@ -1375,6 +1377,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       renderTable(lastGames, 'last-games');
       renderTable(nextGames, 'next-games');
+      const ifNecessaryNote = document.getElementById('schedule-if-necessary-note');
+      if (ifNecessaryNote) ifNecessaryNote.hidden = !nextGames.some(game => game.if_necessary);
     } catch (error) {
       console.error('Failed to fetch data:', error);
     }
@@ -1616,7 +1620,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <td>${game.date}</td>
           <td>${game.opp_name}</td>
           <td>${game.home_away === 'home' ? '<i class="fas fa-home home-icon"></i>' : '<i class="fas fa-road road-icon"></i>'}</td>
-          <td>${game.game_start}</td>  <!-- Display game_start time instead of result -->
+          <td>${game.game_start}${game.if_necessary ? ' *' : ''}</td>  <!-- Display game_start time instead of result; * marks if-necessary games -->
         `;
       }
       tableBody.appendChild(row);
@@ -1633,6 +1637,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       renderTable(lastGames, 'last-games');
       renderTable(nextGames, 'next-games');
+      const ifNecessaryNote = document.getElementById('schedule-if-necessary-note');
+      if (ifNecessaryNote) ifNecessaryNote.hidden = !nextGames.some(game => game.if_necessary);
     } catch (error) {
       console.error('Failed to fetch data:', error);
     }
@@ -1874,7 +1880,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <td>${game.date}</td>
           <td>${game.opp_name}</td>
           <td>${game.home_away === 'home' ? '<i class="fas fa-home home-icon"></i>' : '<i class="fas fa-road road-icon"></i>'}</td>
-          <td>${game.game_start}</td>  <!-- Display game_start time instead of result -->
+          <td>${game.game_start}${game.if_necessary ? ' *' : ''}</td>  <!-- Display game_start time instead of result; * marks if-necessary games -->
         `;
       }
       tableBody.appendChild(row);
@@ -1891,6 +1897,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       renderTable(lastGames, 'last-games');
       renderTable(nextGames, 'next-games');
+      const ifNecessaryNote = document.getElementById('schedule-if-necessary-note');
+      if (ifNecessaryNote) ifNecessaryNote.hidden = !nextGames.some(game => game.if_necessary);
     } catch (error) {
       console.error('Failed to fetch data:', error);
     }
@@ -2132,7 +2140,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <td>${game.date}</td>
           <td>${game.opp_name}</td>
           <td>${game.home_away === 'home' ? '<i class="fas fa-home home-icon"></i>' : '<i class="fas fa-road road-icon"></i>'}</td>
-          <td>${game.game_start}</td>  <!-- Display game_start time instead of result -->
+          <td>${game.game_start}${game.if_necessary ? ' *' : ''}</td>  <!-- Display game_start time instead of result; * marks if-necessary games -->
         `;
       }
       tableBody.appendChild(row);
@@ -2149,6 +2157,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       renderTable(lastGames, 'last-games');
       renderTable(nextGames, 'next-games');
+      const ifNecessaryNote = document.getElementById('schedule-if-necessary-note');
+      if (ifNecessaryNote) ifNecessaryNote.hidden = !nextGames.some(game => game.if_necessary);
     } catch (error) {
       console.error('Failed to fetch data:', error);
     }

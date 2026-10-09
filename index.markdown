@@ -639,6 +639,7 @@ twitter:
           </table>
       </div>
     </div>
+    <p class="note" id="schedule-if-necessary-note" hidden>* Played only if the series is still undecided.</p>
 
 <h2 class="stat-group">Fan support</h2>
 <p id="max-attendance-info"></p>
