@@ -3374,7 +3374,7 @@ if (document.readyState === 'loading') {
     if (seasonData && seasonData.correct_strikes_pct !== undefined && seasonData.incorrect_strikes_pct !== undefined) {
       const seasonBarWrapper = chartDiv.append('div').attr('class', 'chart-bar-wrapper');
       const seasonLabelLine = seasonBarWrapper.append('div').attr('class', 'chart-label-line');
-      seasonLabelLine.append('div').attr('class', 'chart-label').text('This season');
+      seasonLabelLine.append('div').attr('class', 'chart-label').text(data.postseason_summary ? 'Regular season' : 'This season');
       // Show raw totals above the bar
       seasonLabelLine.append('div').attr('class', 'chart-percentages').html(
         `<span class="good-calls-label">${seasonActualStrikes.toLocaleString()} </span> good calls / <span class="bad-calls-label">${seasonBadCalls} </span> bad calls`
@@ -3399,6 +3399,31 @@ if (document.readyState === 'loading') {
           .style('width', `${incorrectPct}%`)
           // Show percentage inside the bar if wide enough
           .text(incorrectPct >= 15 ? `${incorrectPct.toFixed(0)}%` : '');
+      }
+    }
+
+    // Postseason Chart
+    const postData = data.postseason_summary;
+    if (postData && postData.total_called_strikes > 0) {
+      const postGood = postData.total_called_strikes - postData.bad_calls_count;
+      const postWrapper = chartDiv.append('div').attr('class', 'chart-bar-wrapper');
+      const postLabelLine = postWrapper.append('div').attr('class', 'chart-label-line');
+      postLabelLine.append('div').attr('class', 'chart-label').text('Postseason');
+      postLabelLine.append('div').attr('class', 'chart-percentages').html(
+        `<span class="good-calls-label">${postGood.toLocaleString()} </span> good calls / <span class="bad-calls-label">${postData.bad_calls_count} </span> bad calls`
+      );
+      const postBar = postWrapper.append('div').attr('class', 'chart-bar');
+      if (postData.correct_strikes_pct > 0) {
+        postBar.append('div')
+          .attr('class', 'chart-segment strikes')
+          .style('width', `${postData.correct_strikes_pct}%`)
+          .text(postData.correct_strikes_pct >= 15 ? `${postData.correct_strikes_pct.toFixed(0)}%` : '');
+      }
+      if (postData.incorrect_strikes_pct > 0) {
+        postBar.append('div')
+          .attr('class', 'chart-segment balls')
+          .style('width', `${postData.incorrect_strikes_pct}%`)
+          .text(postData.incorrect_strikes_pct >= 15 ? `${postData.incorrect_strikes_pct.toFixed(0)}%` : '');
       }
     }
 
@@ -4611,4 +4636,92 @@ document.addEventListener('DOMContentLoaded', function () {
       console.error('Failed to fetch ABS challenge data:', error);
       section.hidden = true;
     });
+});
+
+
+// Postseason game log and next-game preview
+document.addEventListener('DOMContentLoaded', function () {
+  const logSection = document.getElementById('postseason-game-log');
+  const nextSection = document.getElementById('postseason-next-game');
+  if (!logSection && !nextSection) return;
+
+  const url = 'https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/postseason/brewers_postseason_games_2026.json';
+  const escapeHTML = (text) => String(text ?? '').replace(/[&<>"']/g, (ch) => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]
+  ));
+  const lastName = (name) => (name ? escapeHTML(name.split(' ').slice(1).join(' ') || name) : '');
+  const headshot = (id) => `https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/q_auto:best/v1/people/${id || 0}/headshot/silo/current`;
+
+  const renderLog = (games) => {
+    if (!logSection || !games || games.length === 0) return;
+    logSection.querySelector('tbody').innerHTML = games.map((g) => {
+      const decisions = [
+        g.winning_pitcher && `W: ${lastName(g.winning_pitcher)}`,
+        g.losing_pitcher && `L: ${lastName(g.losing_pitcher)}`,
+        g.save_pitcher && `S: ${lastName(g.save_pitcher)}`,
+      ].filter(Boolean).join(' · ');
+      return `
+        <tr>
+          <td>${escapeHTML(g.round)} G${g.game_number ?? ''}</td>
+          <td>${escapeHTML(g.date)}</td>
+          <td>${g.home_away === 'home' ? 'vs' : '@'} ${escapeHTML(g.opponent)}</td>
+          <td class="${g.result === 'win' ? 'win' : 'loss'}">${g.result === 'win' ? 'W' : 'L'} ${escapeHTML(g.score)}</td>
+          <td class="decision-col">${decisions}</td>
+        </tr>`;
+    }).join('');
+    logSection.hidden = false;
+  };
+
+  const starter = (p, team) => {
+    if (!p) {
+      return `
+        <div class="next-game-starter">
+          <img src="${headshot(0)}" alt="" class="next-game-headshot" />
+          <div><div class="next-game-starter-team">${team}</div><div class="next-game-starter-name">TBA</div></div>
+        </div>`;
+    }
+    const line = [p.throws ? `${escapeHTML(p.throws)}HP` : '', p.record ? `${escapeHTML(p.record)}` : '', p.era ? `${escapeHTML(p.era)} ERA` : '']
+      .filter(Boolean).join(' · ');
+    return `
+      <div class="next-game-starter">
+        <img src="${headshot(p.id)}" alt="${escapeHTML(p.name)}" class="next-game-headshot" />
+        <div>
+          <div class="next-game-starter-team">${team}</div>
+          <div class="next-game-starter-name">${escapeHTML(p.name)}</div>
+          <div class="next-game-starter-line">${line}</div>
+        </div>
+      </div>`;
+  };
+
+  const renderNext = (g) => {
+    if (!nextSection || !g) return;
+    const w = g.series_wins || 0;
+    const l = g.series_losses || 0;
+    const series = w === l ? `Series tied ${w}-${l}` : (w > l ? `Brewers lead ${w}-${l}` : `Brewers trail ${w}-${l}`);
+    const h2h = g.season_series ? `Regular season vs. ${escapeHTML(g.opponent)}: ${g.season_series.wins}-${g.season_series.losses}` : '';
+    const time = g.start_time === 'TBD' ? 'Time TBD' : `${escapeHTML(g.start_time)} CT`;
+    nextSection.querySelector('.next-game-card').innerHTML = `
+      <div class="next-game-header">
+        <div class="next-game-title">${escapeHTML(g.round)} Game ${g.game_number ?? ''}${g.if_necessary ? ' <span class="next-game-flag">if necessary</span>' : ''}</div>
+        <div class="next-game-when">${escapeHTML(g.day)}, ${escapeHTML(g.date)} · ${time} · ${escapeHTML(g.venue)}</div>
+        <div class="next-game-context">${g.home_away === 'home' ? 'vs' : '@'} ${escapeHTML(g.opponent)} · ${series}${h2h ? ` · ${h2h}` : ''}</div>
+      </div>
+      <div class="next-game-starters">
+        ${starter(g.brewers_probable, 'Brewers')}
+        ${starter(g.opponent_probable, escapeHTML(g.opponent))}
+      </div>
+      <p class="note">Probable starters per MLB; season records are regular season.</p>`;
+    nextSection.hidden = false;
+  };
+
+  fetch(url)
+    .then((res) => {
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+      return res.json();
+    })
+    .then((data) => {
+      renderNext(data.next_game);
+      renderLog(data.games);
+    })
+    .catch((error) => console.error('Failed to fetch postseason games:', error));
 });

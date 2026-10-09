@@ -1,0 +1,85 @@
+{
+  "games": [
+    {
+      "game_pk": 849830,
+      "date": "Oct 3",
+      "round": "NLDS",
+      "game_number": 1,
+      "opponent": "San Diego Padres",
+      "opponent_id": 135,
+      "home_away": "home",
+      "venue": "American Family Field",
+      "score": "3-2",
+      "result": "win",
+      "winning_pitcher": "DL Hall",
+      "losing_pitcher": "Adrian Morejon",
+      "save_pitcher": "Trevor Megill"
+    },
+    {
+      "game_pk": 849825,
+      "date": "Oct 4",
+      "round": "NLDS",
+      "game_number": 2,
+      "opponent": "San Diego Padres",
+      "opponent_id": 135,
+      "home_away": "home",
+      "venue": "American Family Field",
+      "score": "4-3",
+      "result": "win",
+      "winning_pitcher": "Trevor Megill",
+      "losing_pitcher": "Mason Miller",
+      "save_pitcher": null
+    },
+    {
+      "game_pk": 849826,
+      "date": "Oct 6",
+      "round": "NLDS",
+      "game_number": 3,
+      "opponent": "San Diego Padres",
+      "opponent_id": 135,
+      "home_away": "away",
+      "venue": "Petco Park",
+      "score": "3-4",
+      "result": "loss",
+      "winning_pitcher": "Yuki Matsui",
+      "losing_pitcher": "JoJo Romero",
+      "save_pitcher": "Michael King"
+    },
+    {
+      "game_pk": 849827,
+      "date": "Oct 7",
+      "round": "NLDS",
+      "game_number": 4,
+      "opponent": "San Diego Padres",
+      "opponent_id": 135,
+      "home_away": "away",
+      "venue": "Petco Park",
+      "score": "3-1",
+      "result": "win",
+      "winning_pitcher": "Aaron Ashby",
+      "losing_pitcher": "Robbie Ray",
+      "save_pitcher": "Trevor Megill"
+    }
+  ],
+  "next_game": {
+    "game_pk": 849809,
+    "date": "Oct 11",
+    "round": "NLCS",
+    "game_number": 1,
+    "opponent": "Los Angeles Dodgers",
+    "opponent_id": 119,
+    "home_away": "home",
+    "venue": "American Family Field",
+    "start_time": "7:00 PM",
+    "day": "Sunday",
+    "if_necessary": false,
+    "brewers_probable": null,
+    "opponent_probable": null,
+    "series_wins": 0,
+    "series_losses": 0,
+    "season_series": {
+      "wins": 4,
+      "losses": 3
+    }
+  }
+}

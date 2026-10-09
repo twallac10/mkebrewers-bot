@@ -6,12 +6,12 @@
         "bad_calls_count": 352
     },
     "last_game_summary": {
-        "date": "September 27, 2026",
-        "correct_strikes_pct": 85.71428571428571,
-        "incorrect_strikes_pct": 14.285714285714292,
-        "total_called_strikes": 21,
-        "bad_calls_count": 3,
-        "home_plate_umpire": "Derek Thomas"
+        "date": "October 7, 2026",
+        "correct_strikes_pct": 96.0,
+        "incorrect_strikes_pct": 4.0,
+        "total_called_strikes": 25,
+        "bad_calls_count": 1,
+        "home_plate_umpire": "Nic Lentz"
     },
     "worst_calls_of_season": [
         {
@@ -55,17 +55,23 @@
             "video_link": "https://baseballsavant.mlb.com/sporty-videos?playId=4aca4469-b040-3f13-8f41-187b4d30c528"
         }
     ],
+    "postseason_summary": {
+        "correct_strikes_pct": 92.3076923076923,
+        "incorrect_strikes_pct": 7.692307692307693,
+        "total_called_strikes": 104,
+        "bad_calls_count": 8
+    },
     "pitching_season_summary": {
-        "correct_balls_pct": 96.49591189721342,
-        "incorrect_balls_pct": 3.5040881027865822,
-        "total_called_balls": 5993,
-        "bad_calls_count": 210
+        "correct_balls_pct": 96.53609582389122,
+        "incorrect_balls_pct": 3.463904176108784,
+        "total_called_balls": 6178,
+        "bad_calls_count": 214
     },
     "pitching_last_game_summary": {
-        "date": "September 27, 2026",
-        "correct_balls_pct": 95.74468085106383,
-        "incorrect_balls_pct": 4.255319148936167,
-        "total_called_balls": 47,
+        "date": "October 7, 2026",
+        "correct_balls_pct": 94.87179487179486,
+        "incorrect_balls_pct": 5.128205128205138,
+        "total_called_balls": 39,
         "bad_calls_count": 2
     },
     "pitching_worst_calls_of_season": [
