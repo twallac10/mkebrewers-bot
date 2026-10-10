@@ -74,7 +74,13 @@
     "day": "Sunday",
     "if_necessary": false,
     "brewers_probable": null,
-    "opponent_probable": null,
+    "opponent_probable": {
+      "id": 669373,
+      "name": "Tarik Skubal",
+      "throws": "L",
+      "record": "12-7",
+      "era": "2.72"
+    },
     "series_wins": 0,
     "series_losses": 0,
     "season_series": {
