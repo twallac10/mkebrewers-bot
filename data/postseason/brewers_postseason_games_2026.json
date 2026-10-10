@@ -73,7 +73,13 @@
     "start_time": "7:00 PM",
     "day": "Sunday",
     "if_necessary": false,
-    "brewers_probable": null,
+    "brewers_probable": {
+      "id": 694819,
+      "name": "Jacob Misiorowski",
+      "throws": "R",
+      "record": "16-5",
+      "era": "1.80"
+    },
     "opponent_probable": {
       "id": 669373,
       "name": "Tarik Skubal",
