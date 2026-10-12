@@ -445,18 +445,18 @@
     ]
   },
   "postseason": {
-    "games": 4,
+    "games": 5,
     "brewers": {
-      "challenges": 16,
-      "overturned": 8,
-      "upheld": 8,
-      "success_rate": 0.5
+      "challenges": 19,
+      "overturned": 10,
+      "upheld": 9,
+      "success_rate": 0.526
     },
     "opponents": {
-      "challenges": 8,
-      "overturned": 6,
-      "upheld": 2,
-      "success_rate": 0.75
+      "challenges": 11,
+      "overturned": 8,
+      "upheld": 3,
+      "success_rate": 0.727
     },
     "brewers_by_side": {
       "offense": {
@@ -466,10 +466,10 @@
         "success_rate": 0.571
       },
       "defense": {
-        "challenges": 9,
-        "overturned": 4,
-        "upheld": 5,
-        "success_rate": 0.444
+        "challenges": 12,
+        "overturned": 6,
+        "upheld": 6,
+        "success_rate": 0.5
       }
     },
     "brewers_by_inning": [
@@ -489,8 +489,8 @@
       },
       {
         "inning": "3",
-        "challenges": 2,
-        "overturned": 2,
+        "challenges": 3,
+        "overturned": 3,
         "upheld": 0,
         "success_rate": 1.0
       },
@@ -531,10 +531,10 @@
       },
       {
         "inning": "9",
-        "challenges": 3,
-        "overturned": 1,
-        "upheld": 2,
-        "success_rate": 0.333
+        "challenges": 5,
+        "overturned": 2,
+        "upheld": 3,
+        "success_rate": 0.4
       },
       {
         "inning": "10+",
@@ -547,10 +547,10 @@
     "brewers_by_player": [
       {
         "name": "William Contreras",
-        "challenges": 10,
-        "overturned": 4,
-        "upheld": 6,
-        "success_rate": 0.4,
+        "challenges": 13,
+        "overturned": 6,
+        "upheld": 7,
+        "success_rate": 0.462,
         "offense": {
           "challenges": 1,
           "overturned": 0,
@@ -558,10 +558,10 @@
           "success_rate": 0.0
         },
         "defense": {
-          "challenges": 9,
-          "overturned": 4,
-          "upheld": 5,
-          "success_rate": 0.444
+          "challenges": 12,
+          "overturned": 6,
+          "upheld": 6,
+          "success_rate": 0.5
         }
       },
       {
