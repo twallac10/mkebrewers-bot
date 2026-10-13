@@ -6,12 +6,12 @@
         "bad_calls_count": 352
     },
     "last_game_summary": {
-        "date": "October 11, 2026",
+        "date": "October 12, 2026",
         "correct_strikes_pct": 100.0,
         "incorrect_strikes_pct": 0.0,
-        "total_called_strikes": 15,
+        "total_called_strikes": 33,
         "bad_calls_count": 0,
-        "home_plate_umpire": "Edwin Moscoso"
+        "home_plate_umpire": "Chris Segal"
     },
     "worst_calls_of_season": [
         {
@@ -56,23 +56,23 @@
         }
     ],
     "postseason_summary": {
-        "correct_strikes_pct": 93.27731092436974,
-        "incorrect_strikes_pct": 6.722689075630257,
-        "total_called_strikes": 119,
+        "correct_strikes_pct": 94.73684210526315,
+        "incorrect_strikes_pct": 5.26315789473685,
+        "total_called_strikes": 152,
         "bad_calls_count": 8
     },
     "pitching_season_summary": {
-        "correct_balls_pct": 96.52341863833897,
-        "incorrect_balls_pct": 3.476581361661033,
-        "total_called_balls": 6213,
+        "correct_balls_pct": 96.54565808411962,
+        "incorrect_balls_pct": 3.454341915880377,
+        "total_called_balls": 6253,
         "bad_calls_count": 216
     },
     "pitching_last_game_summary": {
-        "date": "October 11, 2026",
-        "correct_balls_pct": 94.28571428571428,
-        "incorrect_balls_pct": 5.714285714285722,
-        "total_called_balls": 35,
-        "bad_calls_count": 2
+        "date": "October 12, 2026",
+        "correct_balls_pct": 100.0,
+        "incorrect_balls_pct": 0.0,
+        "total_called_balls": 40,
+        "bad_calls_count": 0
     },
     "pitching_worst_calls_of_season": [
         {

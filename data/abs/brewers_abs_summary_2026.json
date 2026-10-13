@@ -445,18 +445,18 @@
     ]
   },
   "postseason": {
-    "games": 5,
+    "games": 6,
     "brewers": {
-      "challenges": 19,
-      "overturned": 10,
-      "upheld": 9,
-      "success_rate": 0.526
+      "challenges": 21,
+      "overturned": 11,
+      "upheld": 10,
+      "success_rate": 0.524
     },
     "opponents": {
-      "challenges": 11,
-      "overturned": 8,
+      "challenges": 13,
+      "overturned": 10,
       "upheld": 3,
-      "success_rate": 0.727
+      "success_rate": 0.769
     },
     "brewers_by_side": {
       "offense": {
@@ -466,9 +466,9 @@
         "success_rate": 0.571
       },
       "defense": {
-        "challenges": 12,
-        "overturned": 6,
-        "upheld": 6,
+        "challenges": 14,
+        "overturned": 7,
+        "upheld": 7,
         "success_rate": 0.5
       }
     },
@@ -482,10 +482,10 @@
       },
       {
         "inning": "2",
-        "challenges": 0,
-        "overturned": 0,
+        "challenges": 1,
+        "overturned": 1,
         "upheld": 0,
-        "success_rate": null
+        "success_rate": 1.0
       },
       {
         "inning": "3",
@@ -503,10 +503,10 @@
       },
       {
         "inning": "5",
-        "challenges": 0,
+        "challenges": 1,
         "overturned": 0,
-        "upheld": 0,
-        "success_rate": null
+        "upheld": 1,
+        "success_rate": 0.0
       },
       {
         "inning": "6",
@@ -547,10 +547,10 @@
     "brewers_by_player": [
       {
         "name": "William Contreras",
-        "challenges": 13,
-        "overturned": 6,
-        "upheld": 7,
-        "success_rate": 0.462,
+        "challenges": 15,
+        "overturned": 7,
+        "upheld": 8,
+        "success_rate": 0.467,
         "offense": {
           "challenges": 1,
           "overturned": 0,
@@ -558,9 +558,9 @@
           "success_rate": 0.0
         },
         "defense": {
-          "challenges": 12,
-          "overturned": 6,
-          "upheld": 6,
+          "challenges": 14,
+          "overturned": 7,
+          "upheld": 7,
           "success_rate": 0.5
         }
       },
