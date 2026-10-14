@@ -110,7 +110,13 @@
       "record": "5-5",
       "era": "3.87"
     },
-    "opponent_probable": null,
+    "opponent_probable": {
+      "id": 605483,
+      "name": "Blake Snell",
+      "throws": "L",
+      "record": "4-1",
+      "era": "1.90"
+    },
     "series_wins": 2,
     "series_losses": 0,
     "season_series": {
