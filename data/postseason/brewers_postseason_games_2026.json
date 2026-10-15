@@ -118,7 +118,13 @@
     "start_time": "7:00 PM",
     "day": "Thursday",
     "if_necessary": false,
-    "brewers_probable": null,
+    "brewers_probable": {
+      "id": 675660,
+      "name": "Shane Drohan",
+      "throws": "L",
+      "record": "7-5",
+      "era": "4.19"
+    },
     "opponent_probable": {
       "id": 607192,
       "name": "Tyler Glasnow",
