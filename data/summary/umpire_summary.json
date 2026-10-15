@@ -6,12 +6,12 @@
         "bad_calls_count": 352
     },
     "last_game_summary": {
-        "date": "October 12, 2026",
-        "correct_strikes_pct": 100.0,
-        "incorrect_strikes_pct": 0.0,
-        "total_called_strikes": 33,
-        "bad_calls_count": 0,
-        "home_plate_umpire": "Chris Segal"
+        "date": "October 14, 2026",
+        "correct_strikes_pct": 76.92307692307693,
+        "incorrect_strikes_pct": 23.076923076923066,
+        "total_called_strikes": 13,
+        "bad_calls_count": 3,
+        "home_plate_umpire": "Mark Wegner"
     },
     "worst_calls_of_season": [
         {
@@ -56,22 +56,22 @@
         }
     ],
     "postseason_summary": {
-        "correct_strikes_pct": 94.73684210526315,
-        "incorrect_strikes_pct": 5.26315789473685,
-        "total_called_strikes": 152,
-        "bad_calls_count": 8
+        "correct_strikes_pct": 93.33333333333333,
+        "incorrect_strikes_pct": 6.666666666666671,
+        "total_called_strikes": 165,
+        "bad_calls_count": 11
     },
     "pitching_season_summary": {
-        "correct_balls_pct": 96.54565808411962,
-        "incorrect_balls_pct": 3.454341915880377,
-        "total_called_balls": 6253,
+        "correct_balls_pct": 96.55557327380004,
+        "incorrect_balls_pct": 3.444426726199964,
+        "total_called_balls": 6271,
         "bad_calls_count": 216
     },
     "pitching_last_game_summary": {
-        "date": "October 12, 2026",
+        "date": "October 14, 2026",
         "correct_balls_pct": 100.0,
         "incorrect_balls_pct": 0.0,
-        "total_called_balls": 40,
+        "total_called_balls": 18,
         "bad_calls_count": 0
     },
     "pitching_worst_calls_of_season": [
