@@ -104,39 +104,42 @@
       "winning_pitcher": "DL Hall",
       "losing_pitcher": "Blake Snell",
       "save_pitcher": "Trevor Megill"
+    },
+    {
+      "game_pk": 849810,
+      "date": "Oct 15",
+      "round": "NLCS",
+      "game_number": 4,
+      "opponent": "Los Angeles Dodgers",
+      "opponent_id": 119,
+      "home_away": "away",
+      "venue": "UNIQLO Field at Dodger Stadium",
+      "score": "6-4",
+      "result": "win",
+      "winning_pitcher": "JoJo Romero",
+      "losing_pitcher": "Tanner Scott",
+      "save_pitcher": "Aaron Ashby"
     }
   ],
   "next_game": {
-    "game_pk": 849810,
-    "date": "Oct 15",
-    "round": "NLCS",
-    "game_number": 4,
-    "opponent": "Los Angeles Dodgers",
-    "opponent_id": 119,
-    "home_away": "away",
-    "venue": "UNIQLO Field at Dodger Stadium",
-    "start_time": "7:00 PM",
-    "day": "Thursday",
+    "game_pk": 849805,
+    "date": "Oct 23",
+    "round": "World Series",
+    "game_number": 1,
+    "opponent": "AL Champion",
+    "opponent_id": 21,
+    "home_away": "home",
+    "venue": "American Family Field",
+    "start_time": "3:33 AM",
+    "day": "Friday",
     "if_necessary": false,
-    "brewers_probable": {
-      "id": 675660,
-      "name": "Shane Drohan",
-      "throws": "L",
-      "record": "7-5",
-      "era": "4.19"
-    },
-    "opponent_probable": {
-      "id": 607192,
-      "name": "Tyler Glasnow",
-      "throws": "R",
-      "record": "5-2",
-      "era": "3.53"
-    },
-    "series_wins": 3,
+    "brewers_probable": null,
+    "opponent_probable": null,
+    "series_wins": 0,
     "series_losses": 0,
     "season_series": {
-      "wins": 4,
-      "losses": 3
+      "wins": 0,
+      "losses": 0
     }
   }
 }
