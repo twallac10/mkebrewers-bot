@@ -11,6 +11,16 @@
   },
   {
     "date":"2026-10-03",
+    "transaction":"RHP Garrett Stallings roster status changed by Brewers.",
+    "players":[
+      "Garrett Stallings"
+    ],
+    "player_ids":[
+      668831
+    ]
+  },
+  {
+    "date":"2026-10-03",
     "transaction":"C Bo Naylor roster status changed by Brewers.",
     "players":[
       "Bo Naylor"
@@ -27,16 +37,6 @@
     ],
     "player_ids":[
       669060
-    ]
-  },
-  {
-    "date":"2026-10-03",
-    "transaction":"RHP Garrett Stallings roster status changed by Brewers.",
-    "players":[
-      "Garrett Stallings"
-    ],
-    "player_ids":[
-      668831
     ]
   },
   {
