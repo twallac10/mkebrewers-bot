@@ -126,8 +126,8 @@
     "date": "Oct 23",
     "round": "World Series",
     "game_number": 1,
-    "opponent": "TB/CLE",
-    "opponent_id": 21,
+    "opponent": "Tampa Bay Rays",
+    "opponent_id": 139,
     "home_away": "home",
     "venue": "American Family Field",
     "start_time": "7:00 PM",
@@ -138,8 +138,8 @@
     "series_wins": 0,
     "series_losses": 0,
     "season_series": {
-      "wins": 0,
-      "losses": 0
+      "wins": 2,
+      "losses": 1
     }
   }
 }
