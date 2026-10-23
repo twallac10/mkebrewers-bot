@@ -162,24 +162,6 @@
     "slug":"jacob-misiorowski"
   },
   {
-    "player_id":"694477",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/694477\/headshot\/silo\/current",
-    "name":"Chad Patrick",
-    "player_url":"\/player\/694477",
-    "jersey":"39",
-    "position_group":"Pitchers",
-    "bat_throw":"R\/R",
-    "height":"6' 1\"",
-    "weight":"217",
-    "dob":"08\/14\/1998",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"chad-patrick"
-  },
-  {
     "player_id":"668941",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/668941\/headshot\/silo\/current",
     "name":"JoJo Romero",
@@ -232,6 +214,24 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"abner-uribe"
+  },
+  {
+    "player_id":"605540",
+    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/605540\/headshot\/silo\/current",
+    "name":"Brandon Woodruff",
+    "player_url":"\/player\/605540",
+    "jersey":"53",
+    "position_group":"Pitchers",
+    "bat_throw":"L\/R",
+    "height":"6' 4\"",
+    "weight":"241",
+    "dob":"02\/10\/1993",
+    "status":"ACTIVE",
+    "is_minors":false,
+    "is_il":false,
+    "is_active_roster":true,
+    "is_40_man":true,
+    "slug":"brandon-woodruff"
   },
   {
     "player_id":"661388",
