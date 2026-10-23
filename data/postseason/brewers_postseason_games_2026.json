@@ -140,7 +140,13 @@
       "record": "16-5",
       "era": "1.80"
     },
-    "opponent_probable": null,
+    "opponent_probable": {
+      "id": 607259,
+      "name": "Nick Martinez",
+      "throws": "R",
+      "record": "15-6",
+      "era": "3.10"
+    },
     "series_wins": 0,
     "series_losses": 0,
     "season_series": {
