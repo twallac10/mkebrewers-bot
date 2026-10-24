@@ -6,12 +6,12 @@
         "bad_calls_count": 352
     },
     "last_game_summary": {
-        "date": "October 15, 2026",
-        "correct_strikes_pct": 100.0,
-        "incorrect_strikes_pct": 0.0,
-        "total_called_strikes": 11,
-        "bad_calls_count": 0,
-        "home_plate_umpire": "Ryan Additon"
+        "date": "October 23, 2026",
+        "correct_strikes_pct": 85.71428571428571,
+        "incorrect_strikes_pct": 14.285714285714292,
+        "total_called_strikes": 7,
+        "bad_calls_count": 1,
+        "home_plate_umpire": "Gabe Morales"
     },
     "worst_calls_of_season": [
         {
@@ -56,23 +56,23 @@
         }
     ],
     "postseason_summary": {
-        "correct_strikes_pct": 93.75,
-        "incorrect_strikes_pct": 6.25,
-        "total_called_strikes": 176,
-        "bad_calls_count": 11
+        "correct_strikes_pct": 93.44262295081968,
+        "incorrect_strikes_pct": 6.557377049180317,
+        "total_called_strikes": 183,
+        "bad_calls_count": 12
     },
     "pitching_season_summary": {
-        "correct_balls_pct": 96.56652360515021,
-        "incorrect_balls_pct": 3.433476394849791,
-        "total_called_balls": 6291,
-        "bad_calls_count": 216
+        "correct_balls_pct": 96.55937846836848,
+        "incorrect_balls_pct": 3.440621531631521,
+        "total_called_balls": 6307,
+        "bad_calls_count": 217
     },
     "pitching_last_game_summary": {
-        "date": "October 15, 2026",
-        "correct_balls_pct": 100.0,
-        "incorrect_balls_pct": 0.0,
-        "total_called_balls": 20,
-        "bad_calls_count": 0
+        "date": "October 23, 2026",
+        "correct_balls_pct": 93.75,
+        "incorrect_balls_pct": 6.25,
+        "total_called_balls": 16,
+        "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": [
         {
