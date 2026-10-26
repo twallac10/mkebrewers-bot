@@ -90,6 +90,14 @@ jobs:
         PYTHONPATH: ${{ github.workspace }}
       run: python scripts/06_fetch_process_pitching.py
 
+    # Before the summary step, so a series that just ended (including a title) shows on this run
+    - name: Fetch postseason stats
+      id: s28
+      continue-on-error: true
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/28_fetch_postseason_stats.py
+
     - name: Create toplines summary
       id: s07
       continue-on-error: true
@@ -124,13 +132,6 @@ jobs:
       env:
         PYTHONPATH: ${{ github.workspace }}
       run: python scripts/19_fetch_roster.py
-
-    - name: Fetch postseason stats
-      id: s28
-      continue-on-error: true
-      env:
-        PYTHONPATH: ${{ github.workspace }}
-      run: python scripts/28_fetch_postseason_stats.py
 
     - name: Fetch xwOBA
       id: s15

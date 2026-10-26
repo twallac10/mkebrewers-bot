@@ -1633,6 +1633,11 @@ label {
     color: #ef3e42;
   }
 
+  .fa-trophy {
+    color: #FFC52F;
+    font-size: 40px;
+  }
+
   @media (max-width: 767px) {
     font-size: 20px;
     margin-bottom: 8px;
@@ -2927,6 +2932,30 @@ label {
         content: '✓';
         font-weight: bold;
       }
+    }
+  }
+
+  // World Series won: gold card with a trophy badge
+  &.completed.champion {
+    border-color: #FFC52F;
+    background: #fffaeb;
+    box-shadow: 0 0 0 3px rgba(255, 197, 47, 0.35);
+
+    .round-status {
+      background: #FFC52F;
+      color: #12284B;
+
+      &::after {
+        content: '\f091';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 11px;
+      }
+    }
+
+    .round-result {
+      color: #12284B;
+      font-weight: bold;
     }
   }
 

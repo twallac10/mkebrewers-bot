@@ -21,6 +21,7 @@ import requests
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 from scripts import config
+from scripts.championship import championship_sentence, find_championship
 
 # Base directory calculation for file paths
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -545,8 +546,8 @@ def get_next_game_info():
         return None
 
 def load_postseason_series():
-    """Postseason series status from this run's local file, or from S3 when the postseason
-    step hasn't run yet (the summary step runs before it in the workflow)."""
+    """Postseason series status from this run's local file (the postseason step runs just
+    before the summary step in the workflow), or from S3 when it's missing."""
     local_file = "data/postseason/brewers_postseason_series_2026.json"
     if os.path.exists(local_file):
         with open(local_file, 'r') as f:
@@ -579,6 +580,9 @@ def generate_postseason_summary():
     try:
         # Try to load postseason series data
         postseason_data = load_postseason_series()
+        championship = find_championship(postseason_data)
+        if championship:
+            return {"text": championship_sentence(championship), "champion": True}
         if postseason_data:
 
             # Find current series status
@@ -629,12 +633,7 @@ def generate_postseason_summary():
                 # All completed, check if they advanced or were eliminated
                 last_series = completed_series[-1]
                 if f'{config.TEAM_ABBR} wins' in last_series['result'] or f'{config.TEAM_ABBR} leads' in last_series['result']:
-                    # Check if the last series was the World Series
-                    if last_series['round'] == 'World Series':
-                        opponent = last_series.get('opponent', 'their opponent')
-                        return {"text": f"The team won the <span class='highlight'>World Series</span>, defeating the <span class='highlight'>{opponent}</span>!"}
-                    else:
-                        return {"text": f"The team advanced through the {last_series['round']} and continues in the postseason."}
+                    return {"text": f"The team advanced through the {last_series['round']} and continues in the postseason."}
                 else:
                     return {"text": f"The team was eliminated in the {last_series['round']}."}
             else:
@@ -864,6 +863,16 @@ def generate_summary(
         # Simple text format (fallback)
         postseason_text = postseason_summary.get('text', '') if isinstance(postseason_summary, dict) else postseason_summary
         
+        if isinstance(postseason_summary, dict) and postseason_summary.get('champion'):
+            # Lead with the title, ahead of the regular-season record; there is no next game
+            summary = (
+                f"<span class='highlight'>{config.TEAM_CITY.upper()}</span> <span class='updated'>({current_date})</span> — "
+                f"{postseason_text} "
+                f"{last_game_summary_fragment} "
+                f"The {config.TEAM_NAME_SIMPLE} went <span class='highlight'>{record}</span> in the {current_year} regular season, a <span class='highlight'>{win_pct:.0f}%</span> winning percentage."
+            )
+            return " ".join(summary.split())
+
         summary = (
             f"<span class='highlight'>{config.TEAM_CITY.upper()}</span> <span class='updated'>({current_date})</span> — "
             f"The {config.TEAM_NAME_SIMPLE} have compiled a <span class='highlight'>{record}</span> record in the {current_year} regular season, a <span class='highlight'>{win_pct:.0f}%</span> winning percentage. "
@@ -949,6 +958,12 @@ if last_game_result_final is not None:
         summary_df,
         pd.DataFrame([{ "stat_label": "Last game result", "stat": "last_game_result", "value": last_game_result_final, "category": "summary", "context_value": "", "context_value_label": '' }])
     ], ignore_index=True)
+if find_championship(load_postseason_series()):
+    summary_df = pd.concat([
+        summary_df,
+        pd.DataFrame([{ "stat_label": "Postseason champion", "stat": "postseason_champion", "value": "World Series champions", "category": "summary", "context_value": "", "context_value_label": '' }])
+    ], ignore_index=True)
+
 summary_df.to_csv(os.path.join(base_dir, 'data', 'standings', 'season_summary_latest.csv'), index=False)
 summary_df.to_json(os.path.join(base_dir, 'data', 'standings', 'season_summary_latest.json'), orient='records', indent=4, lines=False)
 summary_df.to_json(os.path.join(base_dir, '_data', 'season_summary_latest.json'), orient='records', indent=4, lines=False)
