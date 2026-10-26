@@ -12,17 +12,24 @@ twitter:
 
 <div class="container">
 
-<div class="minimal-header">
+{% assign champion_array = site.data.season_summary_latest | where: "stat", "postseason_champion" %}
+<div class="minimal-header{% if champion_array.size > 0 %} champion{% endif %}">
   {% assign last_game_result_array = site.data.season_summary_latest | where: "stat", "last_game_result" %}
   {% assign last_game_result = last_game_result_array[0].value %}
   <div class="minimal-trend-icon">
-    {% if last_game_result == 'win' %}
+    {% if champion_array.size > 0 %}
+        <i class="fa-solid fa-trophy"></i>
+    {% elsif last_game_result == 'win' %}
         <i class="fa-solid fa-arrow-trend-up"></i>
     {% else %}
         <i class="fa-solid fa-arrow-trend-down"></i>
     {% endif %}
   </div>
+  {% if champion_array.size > 0 %}
+  <h1 class="minimal-headline">The Brewers are World Series champions</h1>
+  {% else %}
   <h1 class="minimal-headline">{{ site.headline }}</h1>
+  {% endif %}
   <p class="minimal-subhead">
     {% assign summary_info = site.data.season_summary_latest | where: "stat", "summary" %}
     {% assign summary = summary_info[0].value %}
