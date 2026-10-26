@@ -6,6 +6,8 @@ on:
     # Extra early runs so overnight results are up by 6 AM CT; GitHub often delays or drops
     # scheduled runs, and off-the-hour minutes are less congested
     - cron: '17 9,10 * 3-10 *'  # 4:17 AM, 5:17 AM CDT (UTC-5), Mar-Oct only
+    # A World Series Game 7 on Oct 31 ends on Nov 1 UTC, after the Mar-Oct runs stop
+    - cron: '17 9,11,17 1-2 11 *'  # 3:17 AM, 5:17 AM, 11:17 AM CST (UTC-6), Nov 1-2 only
   workflow_dispatch:
   push:
     branches:
