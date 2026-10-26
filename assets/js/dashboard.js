@@ -4342,15 +4342,21 @@ async function fetchPlayoffJourney() {
   }
 }
 
+// True once the team has won the World Series
+function isWorldSeriesChampion(round) {
+  return round.round === 'World Series' && round.status === 'completed' && (round.result || '').startsWith('MIL wins');
+}
+
 function createPlayoffRoundCard(round) {
   const opponent = round.opponent === '?' ? 'TBD' : round.opponent;
   const result = round.result === '?' ? 'TBD' : round.result;
   
   // Convert underscore to hyphen for CSS class names
   const statusClass = round.status.replace(/_/g, '-');
+  const championClass = isWorldSeriesChampion(round) ? ' champion' : '';
   
   return `
-    <div class="playoff-round ${statusClass}">
+    <div class="playoff-round ${statusClass}${championClass}">
       <div class="round-status"></div>
       <div class="round-title">${round.round}</div>
       <div class="round-opponent">${round.status === 'bye' ? 'Bye' : `vs ${opponent}`}</div>
@@ -4369,6 +4375,42 @@ function renderPlayoffJourney(journeyData) {
   // Generate HTML for all rounds
   const roundsHTML = journeyData.map(round => createPlayoffRoundCard(round)).join('');
   container.innerHTML = roundsHTML;
+
+  if (journeyData.some(isWorldSeriesChampion)) {
+    celebrateChampionship();
+  }
+}
+
+// One confetti burst per browser after the title, skipped for reduced-motion viewers
+function celebrateChampionship() {
+  const storageKey = 'mkebrewers-ws-2026-confetti';
+  try {
+    if (localStorage.getItem(storageKey)) return;
+  } catch (e) {
+    // Storage blocked: still celebrate, just without remembering it
+  }
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const script = document.createElement('script');
+  script.src = 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js';
+  script.integrity = 'sha384-sPwMflxqfAN+Q5mvlkLmHiX3PORGbZSXHiSGPTXT9VHCD/AB+b+r+vJWsqprv+7k';
+  script.crossOrigin = 'anonymous';
+  script.onload = () => {
+    if (typeof window.confetti !== 'function') return;
+    const colors = ['#12284B', '#FFC52F', '#ffffff'];
+    const end = Date.now() + 2500;
+    (function frame() {
+      window.confetti({ particleCount: 4, angle: 60, spread: 60, origin: { x: 0 }, colors });
+      window.confetti({ particleCount: 4, angle: 120, spread: 60, origin: { x: 1 }, colors });
+      if (Date.now() < end) requestAnimationFrame(frame);
+    })();
+    try {
+      localStorage.setItem(storageKey, '1');
+    } catch (e) {
+      // Ignore: the burst simply plays again next visit
+    }
+  };
+  document.head.appendChild(script);
 }
 
 async function initPlayoffJourney() {
