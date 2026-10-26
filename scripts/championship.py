@@ -5,11 +5,14 @@ from scripts import config
 
 def find_championship(postseason_data):
     """The World Series round from the postseason series data if the team has won it, else None."""
-    for series in postseason_data or []:
+    if not isinstance(postseason_data, list):
+        return None
+    for series in postseason_data:
         if (
-            series.get('round') == 'World Series'
+            isinstance(series, dict)
+            and series.get('round') == 'World Series'
             and series.get('status') == 'completed'
-            and series.get('result', '').startswith(f"{config.TEAM_ABBR} wins")
+            and (series.get('result') or '').startswith(f"{config.TEAM_ABBR} wins")
         ):
             return series
     return None

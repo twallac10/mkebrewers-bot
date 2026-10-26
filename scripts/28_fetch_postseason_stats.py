@@ -422,6 +422,34 @@ def build_top_pitchers(limit=8):
     )
     return pitchers[:limit]
 
+def load_previous_series():
+    """The last published series file from S3, or None if it can't be read."""
+    try:
+        resp = requests.get(
+            f"https://{s3_bucket}.s3.amazonaws.com/{s3_key_series}",
+            timeout=15,
+        )
+        resp.raise_for_status()
+        return resp.json()
+    except Exception as e:
+        logging.warning(f"Could not load previous postseason series data: {e}")
+        return None
+
+
+def choose_playoff_journey(built_journey, series_data, previous_journey):
+    """The journey to publish. When the API returned no series but the published journey
+    already shows the postseason underway, keep it: a failed fetch must not reset the
+    page (or un-crown a champion) back to all-upcoming."""
+    if series_data:
+        return built_journey
+    if isinstance(previous_journey, list) and any(
+        isinstance(r, dict) and r.get('status') in ('in_progress', 'completed') for r in previous_journey
+    ):
+        logging.warning("No series data from the API; keeping the previously published playoff journey")
+        return previous_journey
+    return built_journey
+
+
 def main():
     """Main function to fetch all postseason stats and series data"""
     os.makedirs(output_dir, exist_ok=True)
@@ -496,11 +524,22 @@ def main():
     # The API now correctly provides real-time series status
     logging.info("Using live API data without manual overrides")
     
+    if not series_data:
+        playoff_journey = choose_playoff_journey(playoff_journey, series_data, load_previous_series())
+
     # Save series data
     with open(series_file, 'w', encoding='utf-8') as f:
         json.dump(playoff_journey, f, indent=2, ensure_ascii=False)
     
     logging.info(f"Saved postseason series data to {series_file}")
+
+    # Upload right away so the page's journey card matches the summary step (which reads the
+    # local file) even if the player stats below fail
+    try:
+        s3.Bucket(s3_bucket).upload_file(series_file, s3_key_series)
+        logging.info(f"Uploaded {series_file} to S3: s3://{s3_bucket}/{s3_key_series}")
+    except Exception as e:
+        logging.error(f"Failed to upload series data to S3: {e}")
     
     # Fetch player stats
     player_ids = get_all_batters()
@@ -563,9 +602,6 @@ def main():
 
     # Upload to S3
     try:
-        s3.Bucket(s3_bucket).upload_file(series_file, s3_key_series)
-        logging.info(f"Uploaded {series_file} to S3: s3://{s3_bucket}/{s3_key_series}")
-
         s3.Bucket(s3_bucket).upload_file(json_file, s3_key_stats)
         logging.info(f"Uploaded {json_file} to S3: s3://{s3_bucket}/{s3_key_stats}")
     except Exception as e:

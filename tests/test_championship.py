@@ -33,6 +33,11 @@ class FindChampionshipTest(unittest.TestCase):
         self.assertIsNone(find_championship(None))
         self.assertIsNone(find_championship([]))
 
+    def test_malformed_data(self):
+        self.assertIsNone(find_championship({"round": "World Series"}))
+        self.assertIsNone(find_championship([{"round": "World Series", "status": "completed", "result": None}]))
+        self.assertIsNone(find_championship(["not a dict"]))
+
 
 class ChampionshipSentenceTest(unittest.TestCase):
     def test_sentence(self):

@@ -958,7 +958,13 @@ if last_game_result_final is not None:
         summary_df,
         pd.DataFrame([{ "stat_label": "Last game result", "stat": "last_game_result", "value": last_game_result_final, "category": "summary", "context_value": "", "context_value_label": '' }])
     ], ignore_index=True)
-if find_championship(load_postseason_series()):
+try:
+    is_champion = bool(find_championship(load_postseason_series()))
+except Exception as e:
+    logging.warning(f"Could not check for a championship: {e}")
+    is_champion = False
+
+if is_champion:
     summary_df = pd.concat([
         summary_df,
         pd.DataFrame([{ "stat_label": "Postseason champion", "stat": "postseason_champion", "value": "World Series champions", "category": "summary", "context_value": "", "context_value_label": '' }])

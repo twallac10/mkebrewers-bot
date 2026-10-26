@@ -81,5 +81,25 @@ class SummarizePostseasonGamesTests(unittest.TestCase):
         self.assertIsNone(nxt)
 
 
+class ChoosePlayoffJourneyTest(unittest.TestCase):
+    BUILT = [{"round": "World Series", "status": "upcoming", "opponent": "?", "result": "?"}]
+    PREVIOUS = [{"round": "World Series", "status": "completed", "opponent": "Tampa Bay Rays", "result": "MIL wins 4-1"}]
+
+    def test_uses_fresh_data_when_the_api_returns_series(self):
+        built = [{"round": "World Series", "status": "in_progress", "result": "MIL leads 3-1"}]
+        self.assertIs(postseason.choose_playoff_journey(built, [{"series": 1}], self.PREVIOUS), built)
+
+    def test_keeps_published_journey_when_the_api_returns_nothing(self):
+        self.assertIs(postseason.choose_playoff_journey(self.BUILT, [], self.PREVIOUS), self.PREVIOUS)
+
+    def test_resets_when_nothing_has_started(self):
+        previous = [{"round": "World Series", "status": "upcoming"}]
+        self.assertIs(postseason.choose_playoff_journey(self.BUILT, [], previous), self.BUILT)
+
+    def test_resets_when_previous_is_unreadable(self):
+        self.assertIs(postseason.choose_playoff_journey(self.BUILT, [], None), self.BUILT)
+        self.assertIs(postseason.choose_playoff_journey(self.BUILT, [], {"error": "x"}), self.BUILT)
+
+
 if __name__ == "__main__":
     unittest.main()
