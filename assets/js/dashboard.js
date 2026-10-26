@@ -4393,6 +4393,8 @@ function celebrateChampionship() {
 
   const script = document.createElement('script');
   script.src = 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js';
+  script.integrity = 'sha384-sPwMflxqfAN+Q5mvlkLmHiX3PORGbZSXHiSGPTXT9VHCD/AB+b+r+vJWsqprv+7k';
+  script.crossOrigin = 'anonymous';
   script.onload = () => {
     if (typeof window.confetti !== 'function') return;
     const colors = ['#12284B', '#FFC52F', '#ffffff'];
