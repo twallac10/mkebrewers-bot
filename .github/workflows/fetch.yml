@@ -3,6 +3,9 @@ name: fetch
 on:
   schedule:
     - cron: '0 8,12,15,23 * 3-10 *'  # 3 AM, 7 AM, 10 AM, 6 PM CDT (UTC-5), Mar-Oct only
+    # Extra early runs so overnight results are up by 6 AM CT; GitHub often delays or drops
+    # scheduled runs, and off-the-hour minutes are less congested
+    - cron: '17 9,10 * 3-10 *'  # 4:17 AM, 5:17 AM CDT (UTC-5), Mar-Oct only
   workflow_dispatch:
   push:
     branches:
