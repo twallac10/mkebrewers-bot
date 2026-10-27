@@ -149,35 +149,44 @@
       "winning_pitcher": "Abner Uribe",
       "losing_pitcher": "Tyler Wells",
       "save_pitcher": "Aaron Ashby"
+    },
+    {
+      "game_pk": 849804,
+      "date": "Oct 26",
+      "round": "World Series",
+      "game_number": 3,
+      "opponent": "Tampa Bay Rays",
+      "opponent_id": 139,
+      "home_away": "away",
+      "venue": "Tropicana Field",
+      "score": "10-1",
+      "result": "win",
+      "winning_pitcher": "Robert Gasser",
+      "losing_pitcher": "Freddy Peralta",
+      "save_pitcher": null
     }
   ],
   "next_game": {
-    "game_pk": 849804,
-    "date": "Oct 26",
+    "game_pk": 849803,
+    "date": "Oct 27",
     "round": "World Series",
-    "game_number": 3,
+    "game_number": 4,
     "opponent": "Tampa Bay Rays",
     "opponent_id": 139,
     "home_away": "away",
     "venue": "Tropicana Field",
     "start_time": "7:00 PM",
-    "day": "Monday",
+    "day": "Tuesday",
     "if_necessary": false,
-    "brewers_probable": {
-      "id": 688107,
-      "name": "Robert Gasser",
-      "throws": "L",
-      "record": "5-5",
-      "era": "3.87"
-    },
+    "brewers_probable": null,
     "opponent_probable": {
-      "id": 642547,
-      "name": "Freddy Peralta",
+      "id": 643377,
+      "name": "Griffin Jax",
       "throws": "R",
-      "record": "10-11",
-      "era": "4.42"
+      "record": "8-10",
+      "era": "3.53"
     },
-    "series_wins": 2,
+    "series_wins": 3,
     "series_losses": 0,
     "season_series": {
       "wins": 2,
