@@ -178,7 +178,13 @@
     "start_time": "7:00 PM",
     "day": "Tuesday",
     "if_necessary": false,
-    "brewers_probable": null,
+    "brewers_probable": {
+      "id": 669160,
+      "name": "Dustin May",
+      "throws": "R",
+      "record": "7-9",
+      "era": "4.70"
+    },
     "opponent_probable": {
       "id": 643377,
       "name": "Griffin Jax",
