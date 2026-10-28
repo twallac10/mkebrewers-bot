@@ -445,18 +445,18 @@
     ]
   },
   "postseason": {
-    "games": 11,
+    "games": 12,
     "brewers": {
-      "challenges": 36,
-      "overturned": 23,
-      "upheld": 13,
-      "success_rate": 0.639
+      "challenges": 39,
+      "overturned": 25,
+      "upheld": 14,
+      "success_rate": 0.641
     },
     "opponents": {
-      "challenges": 25,
-      "overturned": 17,
-      "upheld": 8,
-      "success_rate": 0.68
+      "challenges": 33,
+      "overturned": 22,
+      "upheld": 11,
+      "success_rate": 0.667
     },
     "brewers_by_side": {
       "offense": {
@@ -466,10 +466,10 @@
         "success_rate": 0.571
       },
       "defense": {
-        "challenges": 29,
-        "overturned": 19,
-        "upheld": 10,
-        "success_rate": 0.655
+        "challenges": 32,
+        "overturned": 21,
+        "upheld": 11,
+        "success_rate": 0.656
       }
     },
     "brewers_by_inning": [
@@ -496,10 +496,10 @@
       },
       {
         "inning": "4",
-        "challenges": 4,
-        "overturned": 3,
+        "challenges": 5,
+        "overturned": 4,
         "upheld": 1,
-        "success_rate": 0.75
+        "success_rate": 0.8
       },
       {
         "inning": "5",
@@ -531,26 +531,26 @@
       },
       {
         "inning": "9",
-        "challenges": 6,
-        "overturned": 2,
+        "challenges": 7,
+        "overturned": 3,
         "upheld": 4,
-        "success_rate": 0.333
+        "success_rate": 0.429
       },
       {
         "inning": "10+",
-        "challenges": 0,
+        "challenges": 1,
         "overturned": 0,
-        "upheld": 0,
-        "success_rate": null
+        "upheld": 1,
+        "success_rate": 0.0
       }
     ],
     "brewers_by_player": [
       {
         "name": "William Contreras",
-        "challenges": 30,
-        "overturned": 19,
-        "upheld": 11,
-        "success_rate": 0.633,
+        "challenges": 33,
+        "overturned": 21,
+        "upheld": 12,
+        "success_rate": 0.636,
         "offense": {
           "challenges": 1,
           "overturned": 0,
@@ -558,10 +558,10 @@
           "success_rate": 0.0
         },
         "defense": {
-          "challenges": 29,
-          "overturned": 19,
-          "upheld": 10,
-          "success_rate": 0.655
+          "challenges": 32,
+          "overturned": 21,
+          "upheld": 11,
+          "success_rate": 0.656
         }
       },
       {

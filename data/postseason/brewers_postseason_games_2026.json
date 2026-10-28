@@ -164,36 +164,45 @@
       "winning_pitcher": "Robert Gasser",
       "losing_pitcher": "Freddy Peralta",
       "save_pitcher": null
+    },
+    {
+      "game_pk": 849803,
+      "date": "Oct 27",
+      "round": "World Series",
+      "game_number": 4,
+      "opponent": "Tampa Bay Rays",
+      "opponent_id": 139,
+      "home_away": "away",
+      "venue": "Tropicana Field",
+      "score": "3-4",
+      "result": "loss",
+      "winning_pitcher": "Ian Seymour",
+      "losing_pitcher": "Shane Drohan",
+      "save_pitcher": null
     }
   ],
   "next_game": {
-    "game_pk": 849803,
-    "date": "Oct 27",
+    "game_pk": 849799,
+    "date": "Oct 28",
     "round": "World Series",
-    "game_number": 4,
+    "game_number": 5,
     "opponent": "Tampa Bay Rays",
     "opponent_id": 139,
     "home_away": "away",
     "venue": "Tropicana Field",
     "start_time": "7:00 PM",
-    "day": "Tuesday",
+    "day": "Wednesday",
     "if_necessary": false,
     "brewers_probable": {
-      "id": 669160,
-      "name": "Dustin May",
+      "id": 694819,
+      "name": "Jacob Misiorowski",
       "throws": "R",
-      "record": "7-9",
-      "era": "4.70"
+      "record": "16-5",
+      "era": "1.80"
     },
-    "opponent_probable": {
-      "id": 643377,
-      "name": "Griffin Jax",
-      "throws": "R",
-      "record": "8-10",
-      "era": "3.53"
-    },
+    "opponent_probable": null,
     "series_wins": 3,
-    "series_losses": 0,
+    "series_losses": 1,
     "season_series": {
       "wins": 2,
       "losses": 1
