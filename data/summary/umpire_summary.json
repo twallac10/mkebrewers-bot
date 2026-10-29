@@ -6,12 +6,12 @@
         "bad_calls_count": 352
     },
     "last_game_summary": {
-        "date": "October 27, 2026",
-        "correct_strikes_pct": 88.23529411764706,
-        "incorrect_strikes_pct": 11.764705882352942,
-        "total_called_strikes": 17,
+        "date": "October 28, 2026",
+        "correct_strikes_pct": 87.5,
+        "incorrect_strikes_pct": 12.5,
+        "total_called_strikes": 16,
         "bad_calls_count": 2,
-        "home_plate_umpire": "James Hoye"
+        "home_plate_umpire": "Vic Carapazza"
     },
     "worst_calls_of_season": [
         {
@@ -56,23 +56,23 @@
         }
     ],
     "postseason_summary": {
-        "correct_strikes_pct": 93.21266968325791,
-        "incorrect_strikes_pct": 6.787330316742086,
-        "total_called_strikes": 221,
-        "bad_calls_count": 15
+        "correct_strikes_pct": 92.82700421940928,
+        "incorrect_strikes_pct": 7.172995780590725,
+        "total_called_strikes": 237,
+        "bad_calls_count": 17
     },
     "pitching_season_summary": {
-        "correct_balls_pct": 96.56746968981263,
-        "incorrect_balls_pct": 3.4325303101873743,
-        "total_called_balls": 6351,
-        "bad_calls_count": 218
+        "correct_balls_pct": 96.56578328367571,
+        "incorrect_balls_pct": 3.4342167163242863,
+        "total_called_balls": 6377,
+        "bad_calls_count": 219
     },
     "pitching_last_game_summary": {
-        "date": "October 27, 2026",
-        "correct_balls_pct": 100.0,
-        "incorrect_balls_pct": 0.0,
-        "total_called_balls": 14,
-        "bad_calls_count": 0
+        "date": "October 28, 2026",
+        "correct_balls_pct": 96.15384615384616,
+        "incorrect_balls_pct": 3.8461538461538396,
+        "total_called_balls": 26,
+        "bad_calls_count": 1
     },
     "pitching_worst_calls_of_season": [
         {
