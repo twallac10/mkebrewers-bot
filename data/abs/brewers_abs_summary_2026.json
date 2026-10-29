@@ -445,18 +445,18 @@
     ]
   },
   "postseason": {
-    "games": 12,
+    "games": 13,
     "brewers": {
-      "challenges": 39,
-      "overturned": 25,
+      "challenges": 40,
+      "overturned": 26,
       "upheld": 14,
-      "success_rate": 0.641
+      "success_rate": 0.65
     },
     "opponents": {
-      "challenges": 33,
-      "overturned": 22,
+      "challenges": 34,
+      "overturned": 23,
       "upheld": 11,
-      "success_rate": 0.667
+      "success_rate": 0.676
     },
     "brewers_by_side": {
       "offense": {
@@ -466,10 +466,10 @@
         "success_rate": 0.571
       },
       "defense": {
-        "challenges": 32,
-        "overturned": 21,
+        "challenges": 33,
+        "overturned": 22,
         "upheld": 11,
-        "success_rate": 0.656
+        "success_rate": 0.667
       }
     },
     "brewers_by_inning": [
@@ -503,10 +503,10 @@
       },
       {
         "inning": "5",
-        "challenges": 3,
-        "overturned": 2,
+        "challenges": 4,
+        "overturned": 3,
         "upheld": 1,
-        "success_rate": 0.667
+        "success_rate": 0.75
       },
       {
         "inning": "6",
@@ -547,10 +547,10 @@
     "brewers_by_player": [
       {
         "name": "William Contreras",
-        "challenges": 33,
-        "overturned": 21,
+        "challenges": 34,
+        "overturned": 22,
         "upheld": 12,
-        "success_rate": 0.636,
+        "success_rate": 0.647,
         "offense": {
           "challenges": 1,
           "overturned": 0,
@@ -558,10 +558,10 @@
           "success_rate": 0.0
         },
         "defense": {
-          "challenges": 32,
-          "overturned": 21,
+          "challenges": 33,
+          "overturned": 22,
           "upheld": 11,
-          "success_rate": 0.656
+          "success_rate": 0.667
         }
       },
       {

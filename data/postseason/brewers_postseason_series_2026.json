@@ -27,10 +27,10 @@
   {
     "round": "World Series",
     "series_name": "World Series",
-    "status": "in_progress",
+    "status": "completed",
     "opponent": "Tampa Bay Rays",
-    "result": "MIL leads 3-1",
-    "wins": 3,
+    "result": "MIL wins 4-1",
+    "wins": 4,
     "losses": 1
   }
 ]

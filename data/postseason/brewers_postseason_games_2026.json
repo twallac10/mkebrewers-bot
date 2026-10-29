@@ -179,39 +179,22 @@
       "winning_pitcher": "Ian Seymour",
       "losing_pitcher": "Shane Drohan",
       "save_pitcher": null
+    },
+    {
+      "game_pk": 849799,
+      "date": "Oct 28",
+      "round": "World Series",
+      "game_number": 5,
+      "opponent": "Tampa Bay Rays",
+      "opponent_id": 139,
+      "home_away": "away",
+      "venue": "Tropicana Field",
+      "score": "4-1",
+      "result": "win",
+      "winning_pitcher": "Jacob Misiorowski",
+      "losing_pitcher": "Drew Rasmussen",
+      "save_pitcher": null
     }
   ],
-  "next_game": {
-    "game_pk": 849799,
-    "date": "Oct 28",
-    "round": "World Series",
-    "game_number": 5,
-    "opponent": "Tampa Bay Rays",
-    "opponent_id": 139,
-    "home_away": "away",
-    "venue": "Tropicana Field",
-    "start_time": "7:00 PM",
-    "day": "Wednesday",
-    "if_necessary": false,
-    "brewers_probable": {
-      "id": 694819,
-      "name": "Jacob Misiorowski",
-      "throws": "R",
-      "record": "16-5",
-      "era": "1.80"
-    },
-    "opponent_probable": {
-      "id": 656876,
-      "name": "Drew Rasmussen",
-      "throws": "R",
-      "record": "16-5",
-      "era": "2.67"
-    },
-    "series_wins": 3,
-    "series_losses": 1,
-    "season_series": {
-      "wins": 2,
-      "losses": 1
-    }
-  }
+  "next_game": null
 }
