@@ -162,24 +162,6 @@
     "slug":"jacob-misiorowski"
   },
   {
-    "player_id":"668941",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/668941\/headshot\/silo\/current",
-    "name":"JoJo Romero",
-    "player_url":"\/player\/668941",
-    "jersey":"33",
-    "position_group":"Pitchers",
-    "bat_throw":"L\/L",
-    "height":"5' 11\"",
-    "weight":"215",
-    "dob":"09\/09\/1996",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"jojo-romero"
-  },
-  {
     "player_id":"622608",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/622608\/headshot\/silo\/current",
     "name":"Antonio Senzatela",
@@ -216,24 +198,6 @@
     "slug":"abner-uribe"
   },
   {
-    "player_id":"605540",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/605540\/headshot\/silo\/current",
-    "name":"Brandon Woodruff",
-    "player_url":"\/player\/605540",
-    "jersey":"53",
-    "position_group":"Pitchers",
-    "bat_throw":"L\/R",
-    "height":"6' 4\"",
-    "weight":"241",
-    "dob":"02\/10\/1993",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"brandon-woodruff"
-  },
-  {
     "player_id":"661388",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/661388\/headshot\/silo\/current",
     "name":"William Contreras",
@@ -268,24 +232,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"gary-sanchez"
-  },
-  {
-    "player_id":"641343",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/641343\/headshot\/silo\/current",
-    "name":"Jake Bauers",
-    "player_url":"\/player\/641343",
-    "jersey":"9",
-    "position_group":"Infielders",
-    "bat_throw":"L\/L",
-    "height":"6' 0\"",
-    "weight":"216",
-    "dob":"10\/06\/1995",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"jake-bauers"
   },
   {
     "player_id":"666152",

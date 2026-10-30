@@ -7,13 +7,6 @@
         "so_bb":23.0
     },
     {
-        "name":"JoJo Romero*",
-        "era":3.38,
-        "era+":127.0,
-        "fip":3.85,
-        "so_bb":5.5
-    },
-    {
         "name":"Trevor Megill",
         "era":2.63,
         "era+":160.0,
@@ -54,5 +47,12 @@
         "era+":123.0,
         "fip":4.17,
         "so_bb":1.98
+    },
+    {
+        "name":"DL Hall*",
+        "era":1.91,
+        "era+":220.0,
+        "fip":3.88,
+        "so_bb":1.83
     }
 ]
