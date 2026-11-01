@@ -42,9 +42,9 @@
     {
         "stat_label":"Avg. home attendance",
         "stat":"mean_attendance",
-        "value":"34,076",
+        "value":"32,604",
         "category":"standings",
-        "context_value":103,
+        "context_value":121,
         "context_value_label":"Home games this season"
     },
     {
@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"October 31, 2026, 8:58 PM CT",
+        "value":"November 1, 2026, 10:02 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(October 31)<\/span> \u2014 The Brewers are <span class='highlight'>World Series champions<\/span>, beating the <span class='highlight'>Tampa Bay Rays<\/span> <span class='highlight'>4-1<\/span> for the first title in franchise history. The last game was a <span class='highlight'>4-1<\/span> away <span class='highlight'>win<\/span>. The Brewers went <span class='highlight'>103-59<\/span> in the 2026 regular season, a <span class='highlight'>64%<\/span> winning percentage.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(November 1)<\/span> \u2014 The Brewers are <span class='highlight'>World Series champions<\/span>, beating the <span class='highlight'>Tampa Bay Rays<\/span> <span class='highlight'>4-1<\/span> for the first title in franchise history. The last game was a <span class='highlight'>4-1<\/span> away <span class='highlight'>win<\/span>. The Brewers went <span class='highlight'>103-59<\/span> in the 2026 regular season, a <span class='highlight'>64%<\/span> winning percentage.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
