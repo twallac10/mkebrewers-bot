@@ -86,6 +86,23 @@ def post_to_bluesky(post_text, post_type):
         logging.error(f"Failed to post to Bluesky: {e}")
 
 # --- Main Logic ---
+# Longer than the All-Star break, so batting/pitching reports keep running through in-season off days
+STALE_STATS_DAYS = 5
+
+def parse_summary_date(summary_html, today_date):
+    """Returns the last game date from the summary, or None if it has none (e.g. off-season "February 2026")."""
+    date_match = re.search(r"\((\w+\s\d+)\)", summary_html)
+    if not date_match or re.search(r'\d{4}', date_match.group(1)):
+        return None
+    try:
+        game_date = datetime.strptime(f"{date_match.group(1)} {today_date.year}", "%B %d %Y").date()
+    except ValueError:
+        return None
+    # The summary has no year, so a late-season game read in January parses as a future date
+    if game_date > today_date:
+        game_date = game_date.replace(year=game_date.year - 1)
+    return game_date
+
 def determine_summary_type():
     """Determines which type of summary to post based on current time in Team Timezone."""
     team_tz = ZoneInfo(config.TEAM_TIMEZONE)
@@ -152,6 +169,13 @@ def main():
     # Process data into a dictionary for easy access
     stats = {item['stat']: item for item in data}
     post_text = ""
+
+    # Don't keep posting final-season numbers all winter
+    if summary_type in ('batting', 'pitching'):
+        last_game_date = parse_summary_date(stats.get('summary', {}).get('value', ''), today_date)
+        if last_game_date is None or (today_date - last_game_date).days > STALE_STATS_DAYS:
+            logging.info(f"No game in the last {STALE_STATS_DAYS} days (last game: {last_game_date}). Skipping {summary_type} report.")
+            return
 
     # Format post based on type
     if summary_type == 'summary':
