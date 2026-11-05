@@ -1,0 +1,69 @@
+name: offseason
+
+# The season-stat scripts in fetch.yml look up the calendar year, so they fail from Jan 1 until
+# the new season has data. Off-season, only the roster and transactions change, so refresh those
+# (S3 feeds post_transactions.yml) and redeploy just their pages. The rest of the site needs the
+# git-ignored _data that only fetch.yml generates, so it's left as fetch.yml last deployed it.
+on:
+  schedule:
+    # Runs through March because fetch.yml's season scripts keep failing until Opening Day;
+    # the shared concurrency group keeps it from colliding with fetch.yml then
+    - cron: '17 12 * 11,12,1,2,3 *'  # 6:17 AM CST (UTC-6) / 7:17 AM CDT, Nov-Mar only
+  workflow_dispatch:
+
+concurrency:
+  group: fetch-data
+  cancel-in-progress: false
+
+jobs:
+  update_roster_and_deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Push to gh-pages
+      packages: read
+    container:
+      image: ghcr.io/twallac10/mkebrewers-bot:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+    defaults:
+      run:
+        working-directory: ${{github.workspace}}
+
+    steps:
+    - uses: actions/checkout@v7
+
+    - name: Fix git ownership
+      run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+    - name: Set up AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v6
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-2
+
+    - name: Fetch roster
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/19_fetch_roster.py
+
+    - name: Build Jekyll site
+      run: bundle exec jekyll build
+      env:
+        TZ: America/Chicago
+
+    - name: Stage roster and transactions pages
+      run: |
+        mkdir -p _offseason_site
+        cp -r _site/roster _site/transactions _offseason_site/
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_offseason_site
+        publish_branch: gh-pages
+        keep_files: true  # Only replace these two pages; keep the rest of the deployed site
+        force_orphan: false
+        allow_empty_commit: false

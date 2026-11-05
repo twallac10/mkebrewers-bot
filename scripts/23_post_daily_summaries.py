@@ -86,6 +86,36 @@ def post_to_bluesky(post_text, post_type):
         logging.error(f"Failed to post to Bluesky: {e}")
 
 # --- Main Logic ---
+# Longer than the All-Star break, so batting/pitching reports keep running through in-season off days
+STALE_STATS_DAYS = 5
+
+def get_last_game_date(schedule_rows, today_date):
+    """Returns the date of the most recent completed game in the schedule, or None if there isn't one."""
+    completed = [row for row in schedule_rows if row.get('placement') == 'last']
+    if not completed:
+        return None
+    # Rows are chronological, and dates look like "Oct 28" with no year. A late-season game
+    # read in January lands in the future this year, so fall back to last year.
+    for year in (today_date.year, today_date.year - 1):
+        try:
+            game_date = datetime.strptime(f"{completed[-1].get('date')} {year}", "%b %d %Y").date()
+        except ValueError:
+            continue
+        if game_date <= today_date:
+            return game_date
+    return None
+
+def fetch_last_game_date(today_date):
+    """Fetches the schedule and returns the most recent completed game's date, or None on failure."""
+    url = "https://mkebrewers-data.s3.amazonaws.com/mkebrewers/data/standings/brewers_schedule.json"
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        return get_last_game_date(response.json(), today_date)
+    except (requests.exceptions.RequestException, ValueError) as e:
+        logging.error(f"Failed to fetch schedule from {url}: {e}")
+        return None
+
 def determine_summary_type():
     """Determines which type of summary to post based on current time in Team Timezone."""
     team_tz = ZoneInfo(config.TEAM_TIMEZONE)
@@ -152,6 +182,13 @@ def main():
     # Process data into a dictionary for easy access
     stats = {item['stat']: item for item in data}
     post_text = ""
+
+    # Don't keep posting final-season numbers all winter
+    if summary_type in ('batting', 'pitching'):
+        last_game_date = fetch_last_game_date(today_date)
+        if last_game_date is None or (today_date - last_game_date).days > STALE_STATS_DAYS:
+            logging.info(f"No game in the last {STALE_STATS_DAYS} days (last game: {last_game_date}). Skipping {summary_type} report.")
+            return
 
     # Format post based on type
     if summary_type == 'summary':
