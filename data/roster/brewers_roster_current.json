@@ -144,24 +144,6 @@
     "slug":"jacob-misiorowski"
   },
   {
-    "player_id":"622608",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/622608\/headshot\/silo\/current",
-    "name":"Antonio Senzatela",
-    "player_url":"\/player\/622608",
-    "jersey":"49",
-    "position_group":"Pitchers",
-    "bat_throw":"R\/R",
-    "height":"6' 1\"",
-    "weight":"235",
-    "dob":"01\/21\/1995",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"antonio-senzatela"
-  },
-  {
     "player_id":"682842",
     "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/682842\/headshot\/silo\/current",
     "name":"Abner Uribe",
@@ -196,24 +178,6 @@
     "is_active_roster":true,
     "is_40_man":true,
     "slug":"william-contreras"
-  },
-  {
-    "player_id":"596142",
-    "thumb_url":"https:\/\/img.mlbstatic.com\/mlb-photos\/image\/upload\/d_people:generic:headshot:silo:current.png\/r_max\/q_auto:best\/v1\/people\/596142\/headshot\/silo\/current",
-    "name":"Gary Sánchez",
-    "player_url":"\/player\/596142",
-    "jersey":"99",
-    "position_group":"Catchers",
-    "bat_throw":"R\/R",
-    "height":"6' 2\"",
-    "weight":"251",
-    "dob":"12\/02\/1992",
-    "status":"ACTIVE",
-    "is_minors":false,
-    "is_il":false,
-    "is_active_roster":true,
-    "is_40_man":true,
-    "slug":"gary-sanchez"
   },
   {
     "player_id":"666152",

@@ -146,7 +146,7 @@
     {
         "stat_label":"Last updated",
         "stat":"update_time",
-        "value":"November 2, 2026, 1:30 PM CT",
+        "value":"November 5, 2026, 10:43 AM CT",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
@@ -154,7 +154,7 @@
     {
         "stat_label":"Team summary",
         "stat":"summary",
-        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(November 2)<\/span> \u2014 The Brewers are <span class='highlight'>World Series champions<\/span>, beating the <span class='highlight'>Tampa Bay Rays<\/span> <span class='highlight'>4-1<\/span> for the first title in franchise history. The last game was a <span class='highlight'>4-1<\/span> away <span class='highlight'>win<\/span>. The Brewers went <span class='highlight'>103-59<\/span> in the 2026 regular season, a <span class='highlight'>64%<\/span> winning percentage.",
+        "value":"<span class='highlight'>MILWAUKEE<\/span> <span class='updated'>(November 5)<\/span> \u2014 The Brewers are <span class='highlight'>World Series champions<\/span>, beating the <span class='highlight'>Tampa Bay Rays<\/span> <span class='highlight'>4-1<\/span> for the first title in franchise history. The last game's result is not yet available. The Brewers went <span class='highlight'>103-59<\/span> in the 2026 regular season, a <span class='highlight'>64%<\/span> winning percentage.",
         "category":"summary",
         "context_value":"",
         "context_value_label":""
