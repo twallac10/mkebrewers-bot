@@ -211,8 +211,8 @@ No changes are needed when the season ends; the workflows wind down on their own
 
 - **`fetch.yml`** drops to one run a day (6:17 AM CT, Nov-Feb) so the roster, transactions and site stay current
 - **`post_transactions.yml`** keeps posting off-season moves from that daily fetch
-- **`post_summaries.yml`** skips the batting and pitching reports once there hasn't been a game in 5 days
-- **`tweet_lineup.yml`** only runs Mar-Oct (plus Nov 1-2 for a possible World Series Game 7)
+- **`post_summaries.yml`** skips the batting and pitching reports once the schedule shows no game in the last 5 days
+- **`tweet_lineup.yml`** only runs Feb-Oct, from spring training on (plus Nov 1-2 for a possible World Series Game 7)
 
 ## Troubleshooting
 
