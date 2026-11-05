@@ -57,7 +57,7 @@ python scripts/05_fetch_process_batting.py
 python scripts/06_fetch_process_pitching.py
 ```
 
-**Note:** During off-season, these will fail with "No tables found". This is expected. Once the season starts, they should work.
+**Note:** From Jan 1 until the season starts, these will fail with "No tables found". This is expected, and why the off-season runs only `offseason.yml` (see Off-Season Behavior below). Once the season starts, they should work.
 
 ### 4. Review Workflow Schedules
 
@@ -209,8 +209,9 @@ The postseason section will now display on the homepage with playoff journey and
 
 No changes are needed when the season ends; the workflows wind down on their own:
 
-- **`fetch.yml`** drops to one run a day (6:17 AM CT, Nov-Feb) so the roster, transactions and site stay current
-- **`post_transactions.yml`** keeps posting off-season moves from that daily fetch
+- **`fetch.yml`** stops after Nov 2. Its season-stat scripts use the calendar year, so they fail from Jan 1 until the new season has data
+- **`offseason.yml`** takes over once a day (6:17 AM CT, Nov-Feb), refreshing only the roster and transactions and rebuilding the site
+- **`post_transactions.yml`** keeps posting off-season moves from that daily refresh
 - **`post_summaries.yml`** skips the batting and pitching reports once the schedule shows no game in the last 5 days
 - **`tweet_lineup.yml`** only runs Feb-Oct, from spring training on (plus Nov 1-2 for a possible World Series Game 7)
 

@@ -1,0 +1,79 @@
+name: offseason
+
+# The season-stat scripts in fetch.yml look up the calendar year, so they fail from Jan 1 until
+# the new season has data. Off-season, only the roster and transactions change, so refresh those
+# (S3 feeds post_transactions.yml) and rebuild the site.
+on:
+  schedule:
+    - cron: '17 12 * 11,12,1,2 *'  # 6:17 AM CST (UTC-6), Nov-Feb only
+  workflow_dispatch:
+
+concurrency:
+  group: fetch-data
+  cancel-in-progress: false
+
+jobs:
+  update_roster_and_deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: read
+    container:
+      image: ghcr.io/twallac10/mkebrewers-bot:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+    defaults:
+      run:
+        working-directory: ${{github.workspace}}
+
+    steps:
+    - uses: actions/checkout@v7
+
+    - name: Fix git ownership
+      run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+    - name: Set up AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v6
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-2
+
+    - name: Fetch roster
+      env:
+        PYTHONPATH: ${{ github.workspace }}
+      run: python scripts/19_fetch_roster.py
+
+    - name: Build Jekyll site
+      run: bundle exec jekyll build
+      env:
+        TZ: America/Chicago
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
+        publish_branch: gh-pages
+        force_orphan: false
+        allow_empty_commit: false
+
+    - name: Check for changes
+      id: changes
+      run: |
+        git add .
+        git diff --staged --quiet || echo "changes=true" >> $GITHUB_OUTPUT
+
+    - name: Commit updated files
+      if: steps.changes.outputs.changes == 'true'
+      run: |
+        git config --global user.name 'Terry Wallace'
+        git config --global user.email 'twallac10@example.com'
+        git commit -m "Automated off-season update of Brewers roster and transactions"
+
+    - name: Push changes
+      if: steps.changes.outputs.changes == 'true'
+      run: git pull --rebase && git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
