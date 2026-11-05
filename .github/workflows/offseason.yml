@@ -6,7 +6,9 @@ name: offseason
 # git-ignored _data that only fetch.yml generates, so it's left as fetch.yml last deployed it.
 on:
   schedule:
-    - cron: '17 12 * 11,12,1,2 *'  # 6:17 AM CST (UTC-6), Nov-Feb only
+    # Runs through March because fetch.yml's season scripts keep failing until Opening Day;
+    # the shared concurrency group keeps it from colliding with fetch.yml then
+    - cron: '17 12 * 11,12,1,2,3 *'  # 6:17 AM CST (UTC-6) / 7:17 AM CDT, Nov-Mar only
   workflow_dispatch:
 
 concurrency:
