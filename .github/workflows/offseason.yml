@@ -2,7 +2,8 @@ name: offseason
 
 # The season-stat scripts in fetch.yml look up the calendar year, so they fail from Jan 1 until
 # the new season has data. Off-season, only the roster and transactions change, so refresh those
-# (S3 feeds post_transactions.yml) and rebuild the site.
+# (S3 feeds post_transactions.yml) and redeploy just their pages. The rest of the site needs the
+# git-ignored _data that only fetch.yml generates, so it's left as fetch.yml last deployed it.
 on:
   schedule:
     - cron: '17 12 * 11,12,1,2 *'  # 6:17 AM CST (UTC-6), Nov-Feb only
@@ -16,7 +17,7 @@ jobs:
   update_roster_and_deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write  # Push to gh-pages
       packages: read
     container:
       image: ghcr.io/twallac10/mkebrewers-bot:latest
@@ -50,30 +51,17 @@ jobs:
       env:
         TZ: America/Chicago
 
+    - name: Stage roster and transactions pages
+      run: |
+        mkdir -p _offseason_site
+        cp -r _site/roster _site/transactions _offseason_site/
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+        publish_dir: ./_offseason_site
         publish_branch: gh-pages
+        keep_files: true  # Only replace these two pages; keep the rest of the deployed site
         force_orphan: false
         allow_empty_commit: false
-
-    - name: Check for changes
-      id: changes
-      run: |
-        git add .
-        git diff --staged --quiet || echo "changes=true" >> $GITHUB_OUTPUT
-
-    - name: Commit updated files
-      if: steps.changes.outputs.changes == 'true'
-      run: |
-        git config --global user.name 'Terry Wallace'
-        git config --global user.email 'twallac10@example.com'
-        git commit -m "Automated off-season update of Brewers roster and transactions"
-
-    - name: Push changes
-      if: steps.changes.outputs.changes == 'true'
-      run: git pull --rebase && git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
